@@ -1,0 +1,238 @@
+
+{% comment %} Wholesale_Hub_Product_Prices Start {% endcomment %}
+{% assign base_product = product %}
+{% assign base_variant = product.selected_or_first_available_variant %}
+
+{% if shop.metafields.sawholesale['base_price'] == blank %}
+  {% assign base_price = 'compare_at_price' %}
+{% else %}
+  {% assign base_price = shop.metafields.sawholesale['base_price'] %}
+{% endif %}
+
+{% assign saw_discount = 0 %}{% assign saw_has_discount = false %}
+
+{% if customer.tags != blank %}
+  {% for mf in base_product.metafields.sawholesale %}
+{%- comment -%} Wholesale_Hub_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "orbit_wholesale_product_visibility", resource: mf %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Hub_Product_Visibility_For_Loop End {%- endcomment -%}
+
+    {% capture product_customer_tag %}{{ mf | first | replace: 'discount_', '' }}{% endcapture %}
+    {% if customer.tags contains product_customer_tag %}
+      {% assign saw_has_discount = true %}
+      {% assign discount_key = product_customer_tag | prepend: 'discount_' %}
+      {% assign price_key = product_customer_tag | prepend: 'price_' %}
+      {% assign saw_discount = base_product.metafields.sawholesale[discount_key] | divided_by: 100.0 %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% assign saw_discount = 1 | minus: saw_discount %}
+
+{% if base_price == 'price' or base_variant.compare_at_price == blank  or base_variant.compare_at_price == 0 or base_variant.compare_at_price < base_variant.price %}
+  {% assign saw_variant_compare_at_price = base_variant.price %}
+{% else %}
+  {% assign saw_variant_compare_at_price = base_variant.compare_at_price %}
+{% endif %}
+
+{% assign cpe = shop.metafields.sawholesale['cpe'] | default: "true" %}
+{% if base_variant.metafields.sawholesale[price_key] != blank and cpe == "true" %}
+  {% assign saw_variant_price = base_variant.metafields.sawholesale[price_key] %}
+{% else %}
+  {% assign saw_variant_price = saw_variant_compare_at_price | times: saw_discount %}
+{% endif %}
+
+{% if saw_has_discount == false or saw_variant_price >= saw_variant_compare_at_price %}
+  {% assign WCProduct_Price = base_product.price %}
+  {% assign WCProduct_ComparePrice = base_product.compare_at_price %}
+  {% assign WCProduct_PriceMin = base_product.price_min %}
+  {% assign WCProduct_ComparePriceMin = base_product.compare_at_price_min %}
+  {% assign WCProduct_PriceMax = base_product.price_max %}
+  {% assign WCProduct_ComparePriceMax = base_product.compare_at_price_max %}
+  {% assign WCProduct_VariantPrice = base_variant.price %}
+  {% assign WCProduct_VariantComparePrice = base_variant.compare_at_price %}
+{% else %}
+  {% assign WCProduct_Price = saw_variant_price %}
+  {% assign WCProduct_PriceMin = base_product.price_min | times: saw_discount %}
+  {% assign WCProduct_PriceMax = base_product.price_max | times: saw_discount %}
+  {% assign WCProduct_ComparePrice = saw_variant_compare_at_price %}
+  {% if base_product.compare_at_price_min != 0 %}{% assign WCProduct_ComparePriceMin = base_product.compare_at_price_min %}{% else %}{% assign WCProduct_ComparePriceMin = base_product.price_min %}{% endif %}
+  {% if base_product.compare_at_price_max != 0 %}{% assign WCProduct_ComparePriceMax = base_product.compare_at_price_max %}{% else %}{% assign WCProduct_ComparePriceMax = base_product.price_max %}{% endif %}
+  {% assign WCProduct_VariantPrice = saw_variant_price %}
+  {% assign WCProduct_VariantComparePrice = saw_variant_compare_at_price %}
+{% endif %}
+{% comment %} Wholesale_Hub_Product_Prices End {% endcomment %}
+{%- liquid
+  assign current_variant = product.selected_or_first_available_variant
+  assign price_font_size = block.settings.text_font_size
+  assign units = product.variants | map: 'unit_price' | compact
+  if units[0]
+    assign has_units = true
+  else
+    assign has_units = false
+  endif
+-%}
+
+<div
+  class="product__block block-padding"
+  {{ block_style }}
+  {% if animation_name %}
+    data-animation="{{ animation_name }}"
+    data-animation-duration="{{ animation_duration }}"
+    data-animation-delay="{{ animation_delay }}"
+  {% endif %}
+>
+  <div class="product__price__wrap">
+    <div
+      class="product__price{% if has_units %} product__price--has-units{% endif %}{% if price_font_size != blank %} {{ price_font_size }}{% endif %}"
+      data-price-wrapper
+    >
+
+      <!-- This is the begining of the strikethrough price merge code -->
+  
+      {% if customer and customer.tags contains 'cartfix' %}
+  <!-- Use WCProduct_ Variables for Special Customers -->
+  <span
+    {% if WCProduct_VariantComparePrice > WCProduct_VariantPrice %}
+      class="product__price--sale"
+    {% endif %}
+  >
+    {%- if WCProduct_VariantPrice == 0 -%}
+      {{ 'general.money.free' | t }}
+    {%- else -%}
+      {{ WCProduct_VariantPrice | money }}
+    {%- endif -%}
+  </span>
+
+  {%- if WCProduct_VariantComparePrice > WCProduct_VariantPrice -%}
+    <span class="visually-hidden" data-compare-text>{{ 'products.product.regular_price' | t }}</span>
+    <s class="product__price--strike">
+      {{ WCProduct_VariantComparePrice | money }}
+    </s>
+  {%- endif -%}
+
+{% else %}
+  <!-- Default Shopify Pricing for Regular Customers -->
+  <span
+    data-product-price
+    {% if current_variant.compare_at_price > current_variant.price %}
+      class="product__price--sale"
+    {% endif %}
+  >
+    {%- if current_variant.price == 0 -%}
+      {{ 'general.money.free' | t }}
+    {%- else -%}
+      {{ current_variant.price | money }}
+    {%- endif -%}
+  </span>
+
+  <!-- Ensure Strikethrough Compare Price is Shown When Discount Applies -->
+  {%- if current_variant.compare_at_price > current_variant.price -%}
+    <span class="visually-hidden" data-compare-text>{{ 'products.product.regular_price' | t }}</span>
+    <s class="product__price--strike" data-compare-price>
+      {{ current_variant.compare_at_price | money }}
+    </s>
+  {%- endif -%}
+
+{% endif %}
+
+            <!-- This is the end of the strikethrough price merge code -->
+
+      {%- if has_units -%}
+        {%- capture show_units -%}
+          {%- unless current_variant.unit_price -%}style="display: none;"{%- endunless -%}
+        {%- endcapture -%}
+
+        {%- capture unit_price_separator -%}
+          <span aria-hidden="true">/</span><span class="visually-hidden">{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
+        {%- endcapture -%}
+
+        {%- capture unit_price_base_unit -%}
+          <span>
+            {% if current_variant.unit_price_measurement %}
+              {% if current_variant.unit_price_measurement.reference_value != 1 %}
+                {{ current_variant.unit_price_measurement.reference_value }}
+              {%- endif -%}
+              {{ current_variant.unit_price_measurement.reference_unit }}
+            {% endif %}
+          </span>
+        {%- endcapture -%}
+
+        <div class="product__price__meta">
+          <span data-product-unit {{ show_units }} class="product__price--unit">
+            <span class="visually-hidden visually-hidden--inline">{{ 'products.product.unit_price_label' | t }}</span>
+            <span data-product-unit-price id="unit-price-{{ unique }}">{{ current_variant.unit_price | money }}</span>
+            {{ unit_price_separator }}
+            <span data-product-base id="unit-price-base-{{ unique }}">{{ unit_price_base_unit }}</span>
+          </span>
+          <span data-price-each class="product__price--unit hidden">
+            {{ 'products.product.each' | t }}
+            <span data-price-each-amount></span>
+          </span>
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- liquid
+      assign sale_badge = settings.sale_badge
+      assign final_sale = settings.final_sale | default: product.metafields.theme.final_sale.value
+      assign final_sale_variant = false
+
+      for variant in product.variants
+        if variant.metafields.theme.final_sale.value == true
+          assign final_sale_variant = true
+        endif
+      endfor
+    -%}
+
+    {%- if sale_badge or final_sale or final_sale_variant -%}
+      <div
+        class="product__sale"
+        data-price-off
+        {% if final_sale %}
+          data-final-sale
+        {% endif %}
+      >
+        {%- if sale_badge -%}
+          <span class="product__price--off hidden" data-price-off-badge>
+            <span data-price-off-amount></span>
+            {{ 'products.product.off' | t }}
+          </span>
+        {%- endif -%}
+
+        {%- if final_sale or final_sale_variant -%}
+          <div class="product__final-sale-wrap hidden" data-final-sale-badge>
+            <div class="product__final-sale">{{ 'products.product.final_sale' | t }}</div>
+            <tooltip-component
+              class="product__final-sale-question"
+              data-tooltip="<div style='--text: var(--COLOR-SALE);'>{{ settings.final_sale_tooltip | replace: '"', "'" }}</div>"
+            >
+              {%- render 'icon-question' -%}
+            </tooltip-component>
+          </div>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+
+  {% comment %} Shop pay split payment terms {% endcomment %}
+  <div class="shop-pay-terms">
+    {%- assign product_form_installment_id = 'product-form-installment-'
+      | append: unique
+      | append: '-'
+      | append: product.id
+    -%}
+    {%- form 'product',
+      product,
+      id: product_form_installment_id,
+      class: 'installment',
+      data-product-form-installment: ''
+    -%}
+      <input type="hidden" name="id" value="{{ current_variant.id }}">
+      {{ form | payment_terms }}
+    {%- endform -%}
+  </div>
+</div>

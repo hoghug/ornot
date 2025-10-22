@@ -1,0 +1,298 @@
+<!doctype html>
+<html class="no-js no-touch supports-no-cookies" lang="{{ request.locale.iso_code }}">
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "rr8sdpfv14");
+</script>
+<head>
+  {%- render 'head' -%}
+  {{ content_for_header }}
+
+  <link rel="preload" as="font" href="{{ 'TradeGothic-Regular.woff2' | file_url }}" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="{{ 'TradeGothicLTPro-Bold.woff2' | file_url }}" type="font/woff2" crossorigin>
+
+  {{ 'custom-fonts.css' | asset_url | stylesheet_tag }}
+  {{ 'custom-overrides.css' | asset_url | stylesheet_tag }}
+</head>
+
+
+
+
+
+
+  
+  <body
+    id="{{ page_title | handle }}"
+    class="template-{{ template.name | handle }} grid-{{ settings.grid_style }}{% if customer %} customer-logged-in{% endif %}{% if settings.animations_enable %} aos-initialized{% endif %}{% if settings.product_grid_outline %} has-line-design{% endif %}"
+    data-animations="{{ settings.animations_enable }}"
+  >
+    {%- render 'loading' -%}
+
+    <a class="in-page-link visually-hidden skip-link" data-skip-content href="#MainContent">
+      {{- 'general.accessibility.skip_to_content' | t -}}
+    </a>
+
+    <div class="container" data-site-container>
+      <div class="header-sections">
+        {% sections 'group-header' %}
+      </div>
+
+      {% sections 'group-overlay' %}
+
+      <!-- CONTENT -->
+      <main role="main" id="MainContent" class="main-content">
+        {{ content_for_layout }}
+      </main>
+    </div>
+
+    {% sections 'group-pre-footer' %}
+
+    <footer class="footer-sections">
+      {% sections 'group-footer' %}
+    </footer>
+
+    {%- if settings.swatches_type != 'disabled' -%}
+      {% render 'template-swatch' %}
+    {%- endif -%}
+
+    {% render 'zoom-pswp' %}
+
+    {%- if template.name != 'product' and settings.show_scroll_top_button -%}
+      <button
+        type="button"
+        class="btn btn--scroll-top btn--black btn--solid"
+        aria-label="{{ 'general.accessibility.scroll_to_top' | t }}"
+        data-scroll-top-button
+      >
+        {%- render 'icon-arrow-up' -%}
+      </button>
+    {%- endif -%}
+
+    {%- comment -%}
+      In order to use your custom javascript file at assets/custom.js
+      just cut this next line and paste it outside this comment:
+      <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
+    {%- endcomment -%}
+    <!-- Paste marketing code or third party scripts below this comment line ============== -->
+
+
+     <!-- AMP UPSELL EDITS - START -->
+
+     <style>
+      .amp-cart-drawer header.amp-cart__header {
+        padding: 20px 30px 0 30px;
+        border-bottom: 0;
+        background: #dee0e4 !important;
+        justify-content: flex-end;
+      }
+      .amp-cart-drawer header.amp-cart__header .amp-cart__header-content {
+        display: none;
+      }
+      .amp-cart-drawer .amp-cart__rewards {
+        padding-top: 0;
+      }
+  </style>
+  
+    <script>
+    function ampCheckoutBtnToCart () {
+      let ampIntervalCounter = 0;
+      
+      const ampInterval = setInterval(() => {
+        ampIntervalCounter++;
+        const ampCheckoutBtn = document.querySelector('.amp-cart-drawer .amp-cart__footer .amp-cart__footer-checkout-button');
+        
+        if (ampCheckoutBtn) {
+          clearInterval(ampInterval);
+          ampCheckoutBtn.addEventListener('click', event => {
+            event.stopImmediatePropagation();
+            window.location.href = `${window.Shopify.routes.root}cart`;
+          });
+        } else if (ampIntervalCounter >= 60) {
+          clearInterval(ampInterval);
+        }
+      }, 500);
+    }
+  
+    window.AMP_CART_LOADED = cart => {
+      {% if customer and customer.tags contains 'cartfix' %}
+        ampCheckoutBtnToCart();
+      {% endif %}
+    }
+  </script>
+  <!-- AMP UPSELL EDITS - END -->
+
+     <!-- Klaviyo - Begin Script-->  <script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>  
+<script>  
+    var klaviyo = klaviyo || [];  
+    klaviyo.init({  
+      account: "e7aakT",  
+      list: 'JzWXSC', 
+      platform: "shopify",  
+      include_on_tags: 'backinstock'  
+    }); 
+    klaviyo.enable("backinstock",{  
+    trigger: {  
+      product_page_text: "Notify Me When Available",  
+      product_page_class: "btn btn--primary btn--solid",  
+      product_page_text_align: "center",  
+      product_page_margin: "10px 0px 0px 0px",  
+      replace_anchor: false 
+        
+    },  
+    modal: {  
+     headline: "{product_name}",  
+     body_content: "Register to receive a notification when this item comes back in stock.",  
+     email_field_label: "Email",  
+     button_label: "Notify me when available",  
+     subscription_success_label: "You're in! We'll let you know when it's back.", 
+     footer_content: '',  
+     additional_styles: "@import url('https://fonts.googleapis.com/css?family=Gothic+A1');",  
+     drop_background_color: "#000", 
+     background_color: "#fff",  
+     text_color: "#222",  
+     button_text_color: "#fff", 
+     button_background_color: "#00B5E2",  
+     close_button_color: "#ccc",  
+     error_background_color: "#fcd6d7", 
+     error_text_color: "#C72E2F", 
+     success_background_color: "#d3efcd", 
+     success_text_color: "#1B9500"  
+    } 
+  }); 
+</script><!-- Klaviyo - End Script -->  
+
+    <!--Loopt Start-->
+    <script src="https://unpkg.com/@loophq/onstore-sdk@latest/dist/loop-onstore-sdk.js"></script> 
+<script>  
+  LoopOnstore.init({  
+    key: "735bd68332f0289736e4f120fff92f68135d0c60",  
+    attach: ".cart__checkout"   
+  }); 
+</script>
+
+  <!--Loop End-->
+
+    <!--Gorgias Chat Widget Start--><script id="gorgias-chat-widget-install-v2" src="https://config.gorgias.chat/gorgias-chat-bundle-loader.js?applicationId=3196"></script><!--Gorgias Chat Widget End-->
+<style>
+  iframe#chat-button {
+    z-index: 214748363 !important;
+  }
+</style>
+<script>
+    window.GORGIASCHAT_DISABLE_CONTRAST_COLOR = true
+
+
+  function addToCart(event, form) {
+    event.preventDefault(); // Prevent the default redirect behavior
+
+    let formData = new FormData(form);
+
+    fetch('/cart/add.js', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log("Product added to cart:", data);
+
+        // Update the cart count
+        updateCartCount();
+
+        // Show a confirmation message (Replace this with a custom popup if needed)
+        alert("Item added to cart!");
+
+        // Optional: Open the cart drawer if your theme supports it
+        if (typeof openCartDrawer === "function") {
+            openCartDrawer(); 
+        }
+    })
+    .catch(error => console.error("Error adding to cart:", error));
+}
+
+function updateCartCount() {
+    fetch('/cart.js')
+        .then(response => response.json())
+        .then(cart => {
+            let cartCount = cart.item_count;
+            let cartIcon = document.querySelector(".cart-count"); // Adjust class based on your theme
+            if (cartIcon) cartIcon.textContent = cartCount;
+        });
+}
+</script>
+    <!-- And above this comment line ================================================== -->
+  <!-- Badge text wrapper: ensures we can nudge text without moving the box -->
+<script>
+(function() {
+  // Wrap the visible text of badge elements in <span class="badge-text">…</span>
+  function wrapBadge(el) {
+    if (!el || el.nodeType !== 1) return;
+
+    // Don't double-wrap
+    if (el.querySelector('.badge-text')) return;
+
+    // Grab trimmed text content; if there's no direct text (e.g., pseudo-only), skip
+    var t = (el.textContent || '').trim();
+    if (!t) return;
+
+    // Replace current text with a single inner span so we can offset text-only
+    var span = document.createElement('span');
+    span.className = 'badge-text';
+    span.textContent = t;
+    el.textContent = '';
+    el.appendChild(span);
+  }
+
+  // Find all badge elements we care about and wrap their text
+  function scan() {
+    document.querySelectorAll(
+      [
+        // Manual badges (e.g., NEW)
+        '.badge-box',
+        // Auto sale badge you showed
+        '.sale-box',
+        // Common sale/price badge variants seen in Broadcast & apps
+        '.price__badge',
+        '.price__badge--sale',
+        '.badge--sale',
+        '.sale-badge',
+        // Fallback: any class that contains both "badge" and "sale" (case-insensitive)
+        '[class*="badge"][class*="sale" i]'
+      ].join(',')
+    ).forEach(wrapBadge);
+  }
+
+  // Run on initial load and when Shopify sections/apps inject content
+  document.addEventListener('DOMContentLoaded', scan);
+  document.addEventListener('shopify:section:load', scan);
+
+  // Watch for dynamically added nodes (app widgets, lazy renders)
+  var obs = new MutationObserver(function(muts){
+    for (var i = 0; i < muts.length; i++) {
+      var m = muts[i];
+      if (!m.addedNodes) continue;
+      for (var j = 0; j < m.addedNodes.length; j++) {
+        var n = m.addedNodes[j];
+        if (n.nodeType !== 1) continue; // element nodes only
+        // If the added node itself is a badge, wrap it
+        if (n.matches && ( n.matches('.badge-box, .sale-box, .price__badge, .price__badge--sale, .badge--sale, .sale-badge, [class*="badge"][class*="sale" i]') )) {
+          wrapBadge(n);
+        }
+        // Also scan any badges inside the added subtree
+        if (n.querySelectorAll) {
+          n.querySelectorAll('.badge-box, .sale-box, .price__badge, .price__badge--sale, .badge--sale, .sale-badge, [class*="badge"][class*="sale" i]')
+            .forEach(wrapBadge);
+        }
+      }
+    }
+  });
+  obs.observe(document.documentElement, { childList: true, subtree: true });
+})();
+</script>
+
+
+
+  </body>
+</html>
