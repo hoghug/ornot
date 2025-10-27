@@ -18,18 +18,13 @@
   {{ 'custom-overrides.css' | asset_url | stylesheet_tag }}
 </head>
 
-
-
-
-
-
-  
   <body
     id="{{ page_title | handle }}"
     class="template-{{ template.name | handle }} grid-{{ settings.grid_style }}{% if customer %} customer-logged-in{% endif %}{% if settings.animations_enable %} aos-initialized{% endif %}{% if settings.product_grid_outline %} has-line-design{% endif %}"
     data-animations="{{ settings.animations_enable }}"
   >
     {%- render 'loading' -%}
+    {% render 'amp-upsells' %}
 
     <a class="in-page-link visually-hidden skip-link" data-skip-content href="#MainContent">
       {{- 'general.accessibility.skip_to_content' | t -}}
@@ -77,52 +72,6 @@
       <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
     {%- endcomment -%}
     <!-- Paste marketing code or third party scripts below this comment line ============== -->
-
-
-     <!-- AMP UPSELL EDITS - START -->
-
-     <style>
-      .amp-cart-drawer header.amp-cart__header {
-        padding: 20px 30px 0 30px;
-        border-bottom: 0;
-        background: #dee0e4 !important;
-        justify-content: flex-end;
-      }
-      .amp-cart-drawer header.amp-cart__header .amp-cart__header-content {
-        display: none;
-      }
-      .amp-cart-drawer .amp-cart__rewards {
-        padding-top: 0;
-      }
-  </style>
-  
-    <script>
-    function ampCheckoutBtnToCart () {
-      let ampIntervalCounter = 0;
-      
-      const ampInterval = setInterval(() => {
-        ampIntervalCounter++;
-        const ampCheckoutBtn = document.querySelector('.amp-cart-drawer .amp-cart__footer .amp-cart__footer-checkout-button');
-        
-        if (ampCheckoutBtn) {
-          clearInterval(ampInterval);
-          ampCheckoutBtn.addEventListener('click', event => {
-            event.stopImmediatePropagation();
-            window.location.href = `${window.Shopify.routes.root}cart`;
-          });
-        } else if (ampIntervalCounter >= 60) {
-          clearInterval(ampInterval);
-        }
-      }, 500);
-    }
-  
-    window.AMP_CART_LOADED = cart => {
-      {% if customer and customer.tags contains 'cartfix' %}
-        ampCheckoutBtnToCart();
-      {% endif %}
-    }
-  </script>
-  <!-- AMP UPSELL EDITS - END -->
 
      <!-- Klaviyo - Begin Script-->  <script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>  
 <script>  
@@ -183,45 +132,8 @@
 </style>
 <script>
     window.GORGIASCHAT_DISABLE_CONTRAST_COLOR = true
-
-
-  function addToCart(event, form) {
-    event.preventDefault(); // Prevent the default redirect behavior
-
-    let formData = new FormData(form);
-
-    fetch('/cart/add.js', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log("Product added to cart:", data);
-
-        // Update the cart count
-        updateCartCount();
-
-        // Show a confirmation message (Replace this with a custom popup if needed)
-        alert("Item added to cart!");
-
-        // Optional: Open the cart drawer if your theme supports it
-        if (typeof openCartDrawer === "function") {
-            openCartDrawer(); 
-        }
-    })
-    .catch(error => console.error("Error adding to cart:", error));
-}
-
-function updateCartCount() {
-    fetch('/cart.js')
-        .then(response => response.json())
-        .then(cart => {
-            let cartCount = cart.item_count;
-            let cartIcon = document.querySelector(".cart-count"); // Adjust class based on your theme
-            if (cartIcon) cartIcon.textContent = cartCount;
-        });
-}
 </script>
+
     <!-- And above this comment line ================================================== -->
   <!-- Badge text wrapper: ensures we can nudge text without moving the box -->
 <script>

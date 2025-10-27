@@ -1,0 +1,620 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_hero_4jfiPM": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_mhFrdg": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "NORDIC COLLECTION",
+            "heading_font_size": "heading-x-large",
+            "heading_tag": "automatic"
+          }
+        },
+        "text_8ViWnz": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Call it a comeback, Ornot.</p>",
+            "text_font_size": "body-large"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mhFrdg",
+        "text_8ViWnz"
+      ],
+      "settings": {
+        "image_1": "shopify://shop_images/web-hero-sliver-desktop-socks.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-left-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/web-hero-sliver-desktop-socks.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "overlay_opacity": 0,
+        "show_overlay_text": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_columns_9FmHhN": {
+      "type": "section-columns",
+      "blocks": {
+        "image_grDCDa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wolly.jpg",
+            "image_shape": "normal",
+            "title": "Winter Merino",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Made in the USA from domestically sourced RWS-certified Wool.</p>",
+            "text_font_size": "body-small",
+            "button_text": "SHOP WINTER SOCKS",
+            "button_url": "shopify://collections/s-winter-sock",
+            "button_type": "btn--black",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_RQQnR8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wool-socks.jpg",
+            "image_shape": "normal",
+            "title": "LIGHTWEIGHT MERINO",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Breathable and made in the USA from domestically sourced RWS-certified Wool.</p>",
+            "text_font_size": "body-small",
+            "button_text": "SHOP MERINO SOCKS",
+            "button_url": "shopify://collections/s-merino-socks",
+            "button_type": "btn--black",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_GBYUnd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/syntheric.jpg",
+            "image_shape": "normal",
+            "title": "lightweight",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Breathable, moisture-wicking & made in the USA from recycled water bottles.</p>",
+            "text_font_size": "body-small",
+            "button_text": "SHOP Lightweight SOCKS",
+            "button_url": "shopify://collections/s-synthetic-socks",
+            "button_type": "btn--black",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_grDCDa",
+        "image_RQQnR8",
+        "image_GBYUnd"
+      ],
+      "name": "Text columns with images",
+      "settings": {
+        "title": "",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-center",
+        "align_text": "text-left",
+        "width": "wrapper--full-padded",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "1",
+        "color_scheme": "scheme-1",
+        "padding_top": 30,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_collection_4XQkB4": {
+      "type": "section-collection",
+      "name": "Featured collection",
+      "settings": {
+        "featured_collection": "s-winter-sock",
+        "heading": "Winter Merino socks",
+        "heading_font_size": "heading-medium",
+        "description": "<p>Made in the USA from domestically sourced RWS-certified Wool.</p>",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 4,
+        "rows": 8,
+        "width": "wrapper--full-padded",
+        "layout_mobile": "2",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_divider_wC3VPA": {
+      "type": "section-divider",
+      "name": "Divider",
+      "settings": {
+        "show_line": true,
+        "width": "wrapper--full-padded",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_FHpFEc": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_dQnYpG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/NORDIC-BOOT_updated_color.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_hXerzK": {
+          "type": "text",
+          "settings": {
+            "subheading": "NORDIC COLLECTION",
+            "title": "INSPIRED BY MY 1992 NORDIC SKI BOOTS",
+            "heading_font_size": "heading-large",
+            "text": "<p>Growing up in the Midwest, cross-country skiing was practically a rite of passage in my family. It wasn't so much about the sport or fitness as it was about finding a way to embrace the outdoors during the long, cold winters. My passion for bike racing, combined with my job at a bike shop that transitioned into a ski shop during the winter, naturally led me to nordic/skate skiing. I've cherished these boots from '92 for their distinct colorway. Now, in 2023, we've designed a 9-piece “Nordic Collection” inspired by this vibrant 90s color palette. You can call it a comeback, Ornot.</p><p><strong>                                   – MATT Q </strong>(Founder / Chief Bike Rider)</p><p></p><p></p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_dQnYpG",
+        "text_hXerzK"
+      ],
+      "disabled": true,
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_collection_nKJG8q": {
+      "type": "section-collection",
+      "name": "Featured collection",
+      "settings": {
+        "featured_collection": "s-merino-socks",
+        "heading": "lightweight Merino SOCKS",
+        "heading_font_size": "heading-medium",
+        "description": "<p>Breathable and made in the USA from domestically sourced RWS-certified Wool.</p>",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 4,
+        "rows": 8,
+        "width": "wrapper--full-padded",
+        "layout_mobile": "2",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_divider_tpWdjU": {
+      "type": "section-divider",
+      "name": "Divider",
+      "settings": {
+        "show_line": true,
+        "width": "wrapper--full-padded",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_collection_bda3Nf": {
+      "type": "section-collection",
+      "settings": {
+        "featured_collection": "s-synthetic-socks",
+        "heading": "Lightweight socks",
+        "heading_font_size": "heading-medium",
+        "description": "<p>Breathable, moisture-wicking & made in the USA from recycled water bottles.</p>",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 4,
+        "rows": 8,
+        "width": "wrapper--full-padded",
+        "layout_mobile": "2",
+        "color_scheme": "",
+        "padding_top": 35,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_custom_content_WYi9ez": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_HcidjD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Web_1920_23.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_beizHx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Web_1920_25.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_HcidjD",
+        "image_beizHx"
+      ],
+      "disabled": true,
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_TGmxaP": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_Ucr7eK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Web_1920_24.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_jiPqY8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Web_1920_26.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_Ucr7eK",
+        "image_jiPqY8"
+      ],
+      "disabled": true,
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_R3i33i": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_fPMeJq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Web_1920_33.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_BtfLx4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Web_1920_29.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_fPMeJq",
+        "image_BtfLx4"
+      ],
+      "disabled": true,
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_W3ppip": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_n4gJgz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_seat_bag_Nordic_4.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_cqWknV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Web_1920_32.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_n4gJgz",
+        "image_cqWknV"
+      ],
+      "disabled": true,
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_hero_4jfiPM",
+    "section_columns_9FmHhN",
+    "section_collection_4XQkB4",
+    "section_divider_wC3VPA",
+    "section_custom_content_FHpFEc",
+    "section_collection_nKJG8q",
+    "section_divider_tpWdjU",
+    "section_collection_bda3Nf",
+    "section_custom_content_WYi9ez",
+    "section_custom_content_TGmxaP",
+    "section_custom_content_R3i33i",
+    "section_custom_content_W3ppip"
+  ]
+}

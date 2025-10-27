@@ -80,12 +80,18 @@
 {% comment %} Wholesale_Hub_Line_Item_Prices End {% endcomment %}
 
   {%- liquid
-    assign line_item_final_price = WCLineItem_FinalPrice | money
-    assign line_item_variant_compare_at_price = line_item.variant.compare_at_price | money
-    assign line_item_original_price = WCLineItem_OriginalPrice | money
-    assign line_item_unit_price = line_item.unit_price | money
-    assign cart_products = cart_products | append: line_item.product.id | append: ','
-    assign unique = 'cart-item-' | append: line_item.key | append: '-' | append: line_item.product.id
+    if saw_has_discount
+  assign line_item_final_price = WCLineItem_FinalPrice | money
+  assign line_item_variant_compare_at_price = line_item.variant.compare_at_price | money
+  assign line_item_original_price = WCLineItem_OriginalPrice | money
+else
+  assign line_item_final_price = line_item.final_price | money
+  assign line_item_variant_compare_at_price = line_item.variant.compare_at_price | money
+  assign line_item_original_price = line_item.original_price | money
+endif
+assign line_item_unit_price = line_item.unit_price | money
+
+
   -%}
 
   {%- capture cart_line_item -%}
@@ -183,41 +189,93 @@
 
         <p class="cart__price">
           {%- liquid
-            assign discounted = false
-            assign sale = false
+  assign discounted = false
+  assign sale = false
 
-            if WCLineItem_OriginalPrice > line_item.final_price
-              assign discounted = true
-            endif
+  if saw_has_discount
+    if WCLineItem_OriginalPrice > WCLineItem_FinalPrice
+      assign discounted = true
+    endif
 
-            if line_item.variant.compare_at_price > line_item.final_price
-              assign sale = true
-            endif
+    if line_item.variant.compare_at_price > WCLineItem_FinalPrice
+      assign sale = true
+    endif
+  else
+    if line_item.original_price > line_item.final_price
+      assign discounted = true
+    endif
+
+    if line_item.variant.compare_at_price > line_item.final_price
+      assign sale = true
+    endif
+  endif
+-%}
+
           -%}
 
-          {%- if sale or discounted -%}
-            <ins>
-              {%- if WCLineItem_FinalPrice == 0 -%}
-                {{ 'general.money.free' | t }}
-              {%- else -%}
-                {{- line_item_final_price -}}
-              {%- endif -%}
-            </ins>
-          {%- else -%}
-            {%- if WCLineItem_FinalPrice == 0 -%}
-              {{ 'general.money.free' | t }}
-            {%- else -%}
-              {{- line_item_final_price -}}
-            {%- endif -%}
-          {%- endif -%}
+          {%- if customer and customer.tags contains 'cartfix' -%}
+  {%- comment -%} Wholesale customers see WCLineItem prices {%- endcomment -%}
+  {%- if sale or discounted -%}
+    <ins>
+      {%- if WCLineItem_FinalPrice == 0 -%}
+        {{ 'general.money.free' | t }}
+      {%- else -%}
+        {{- line_item_final_price -}}
+      {%- endif -%}
+    </ins>
+  {%- else -%}
+    {%- if WCLineItem_FinalPrice == 0 -%}
+      {{ 'general.money.free' | t }}
+    {%- else -%}
+      {{- line_item_final_price -}}
+    {%- endif -%}
+  {%- endif -%}
 
-          {%- if sale and discounted == false -%}
-            <del>{{- line_item_variant_compare_at_price -}}</del>
-          {%- endif -%}
+  {%- if sale and discounted == false -%}
+    <del>{{- line_item_variant_compare_at_price -}}</del>
+  {%- endif -%}
 
-          {%- if discounted -%}
-            <del>{{- line_item_original_price -}}</del>
-          {%- endif -%}
+  {%- if discounted -%}
+    <del>{{- line_item_original_price -}}</del>
+  {%- endif -%}
+{%- else -%}
+  {%- comment -%} Regular customers see standard Shopify prices {%- endcomment -%}
+  {%- assign regular_discounted = false -%}
+  {%- assign regular_sale = false -%}
+
+  {%- if line_item.original_price > line_item.final_price -%}
+    {%- assign regular_discounted = true -%}
+  {%- endif -%}
+
+  {%- if line_item.variant.compare_at_price > line_item.final_price -%}
+    {%- assign regular_sale = true -%}
+  {%- endif -%}
+
+  {%- if regular_sale or regular_discounted -%}
+    <ins>
+      {%- if line_item.final_price == 0 -%}
+        {{ 'general.money.free' | t }}
+      {%- else -%}
+        {{ line_item.final_price | money }}
+      {%- endif -%}
+    </ins>
+  {%- else -%}
+    {%- if line_item.final_price == 0 -%}
+      {{ 'general.money.free' | t }}
+    {%- else -%}
+      {{ line_item.final_price | money }}
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- if regular_sale and regular_discounted == false -%}
+    <del>{{ line_item.variant.compare_at_price | money }}</del>
+  {%- endif -%}
+
+  {%- if regular_discounted -%}
+    <del>{{ line_item.original_price | money }}</del>
+  {%- endif -%}
+{%- endif -%}
+
 
           {%- if line_item.unit_price -%}
             {%- capture unit_price_separator -%}
