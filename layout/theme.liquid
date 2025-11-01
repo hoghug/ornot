@@ -4,6 +4,12 @@
     {%- render 'head' -%}
 
     {{ content_for_header }}
+
+    <link rel="preload" as="font" href="{{ 'TradeGothic-Regular.woff2' | file_url }}" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="{{ 'TradeGothicLTPro-Bold.woff2' | file_url }}" type="font/woff2" crossorigin>
+
+    {{ 'custom-fonts.css' | asset_url | stylesheet_tag }}
+    {{ 'custom-overrides.css' | asset_url | stylesheet_tag }}
   </head>
 
   <body

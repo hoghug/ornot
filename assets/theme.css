@@ -24719,3 +24719,81 @@ body.has-header-sticky .timeline {
 }
 
 /*! ============ Add any custom styles below this line ================== */
+:root {
+  --FONT-STACK-BODY: "Trade Gothic","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --FONT-STACK-HEADING: "Trade Gothic","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --FONT-STACK-SUBHEADING: var(--FONT-STACK-HEADING);
+}
+/* --- Ensure all stacks point to Trade Gothic --- */
+:root{
+  --FONT-STACK-BODY: "Trade Gothic","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --FONT-STACK-HEADING: "Trade Gothic","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --FONT-STACK-SUBHEADING: var(--FONT-STACK-HEADING);
+  /* Some themes use a separate UI stack; define it too */
+  --FONT-STACK-UI: "Trade Gothic","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/* Buttons */
+button,
+.button,
+.btn,
+.btn--primary,
+.btn--secondary,
+.shopify-payment-button,
+.shopify-payment-button__button,
+a.button,
+a.btn {
+  font-family: var(--FONT-STACK-UI) !important;
+  font-weight: 700; /* If you want bold buttons */
+}
+
+/* Badges / pills / labels */
+.badge,
+.pill,
+.tag,
+.label,
+.product__badge,
+.card__badge,
+.facets__label,
+.price__badge {
+  font-family: var(--FONT-STACK-UI) !important;
+}
+
+/* Variant pickers & selects */
+.variant-picker,
+.variant-picker *,
+.product-form__input,
+.product-form__input *,
+.product-options,
+.product-options *,
+.select,
+.select * {
+  font-family: var(--FONT-STACK-UI) !important;
+}
+
+/* Header / navigation (desktop + mobile) */
+.header,
+.header * ,
+.header__inline-menu a,
+.header__menu-item,
+.site-nav a,
+.list-menu__item,
+.menu-drawer__menu-item,
+.menu-drawer__menu a,
+.navbar,
+.navbar a {
+  font-family: var(--FONT-STACK-HEADING) !important;
+  font-weight: 700; /* If you want bold nav labels */
+}
+
+/* Product Accordion Icons */
+.no-js [data-collapsible][open] [data-collapsible-trigger] .icon-minus,
+[data-collapsible][open=true] [data-collapsible-trigger] .icon-minus {
+  visibility: visible;
+  opacity: 1;
+}
+.no-js [data-collapsible][open] [data-collapsible-trigger] .icon-plus,
+[data-collapsible][open=true] [data-collapsible-trigger] .icon-plus {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-50%) rotate(90deg);
+}
