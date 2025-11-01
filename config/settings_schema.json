@@ -2,10 +2,10 @@
   {
     "name": "theme_info",
     "theme_name": "Broadcast",
-    "theme_version": "6.1.0",
-    "theme_author": "Invisible",
-    "theme_support_url": "https://broadcast.invisiblethemes.com/support/contacting-support",
-    "theme_documentation_url": "https://broadcast.invisiblethemes.com"
+    "theme_version": "8.0.0",
+    "theme_author": "Presidio Creative",
+    "theme_support_url": "https://broadcast.presidiocreative.com/support/contacting-support",
+    "theme_documentation_url": "https://broadcast.presidiocreative.com"
   },
   {
     "name": "Colors",
@@ -22,20 +22,23 @@
             "type": "color",
             "id": "section_text",
             "label": "Text",
-            "default": "#282C2E"
+            "default": "#282C2E",
+            "alpha": true
           },
           {
             "type": "color",
             "id": "section_bg",
             "label": "Background",
-            "default": "#ffffff"
+            "default": "#ffffff",
+            "alpha": true
           },
           {
             "type": "color",
             "id": "section_bg_light",
             "label": "Light background",
             "default": "#F7F9FA",
-            "info": "Used for background accents on the home page"
+            "info": "Used for background accents on the home page",
+            "alpha": true
           },
           {
             "type": "color_background",
@@ -51,19 +54,22 @@
             "type": "color",
             "id": "btn_primary_bg",
             "label": "Background",
-            "default": "#AB8C52"
+            "default": "#AB8C52",
+            "alpha": true
           },
           {
             "type": "color",
             "id": "btn_primary_text",
             "label": "Text",
-            "default": "#fff"
+            "default": "#fff",
+            "alpha": true
           },
           {
             "type": "color",
             "id": "btn_primary_border",
             "label": "Outline and text",
-            "default": "#AB8C52"
+            "default": "#AB8C52",
+            "alpha": true
           },
           {
             "type": "header",
@@ -73,19 +79,22 @@
             "type": "color",
             "id": "btn_secondary_bg",
             "label": "Background",
-            "default": "#8191A4"
+            "default": "#8191A4",
+            "alpha": true
           },
           {
             "type": "color",
             "id": "btn_secondary_text",
             "label": "Text",
-            "default": "#212121"
+            "default": "#212121",
+            "alpha": true
           },
           {
             "type": "color",
             "id": "btn_secondary_border",
             "label": "Outline and text",
-            "default": "#8191A4"
+            "default": "#8191A4",
+            "alpha": true
           },
           {
             "type": "header",
@@ -95,25 +104,29 @@
             "type": "color",
             "id": "accent",
             "label": "Accent",
-            "default": "#E03386"
+            "default": "#E03386",
+            "alpha": true
           },
           {
             "type": "color",
             "id": "lines_and_border",
             "label": "Lines and borders",
-            "default": "#F3F3F3"
+            "default": "#F3F3F3",
+            "alpha": true
           },
           {
             "type": "color",
             "id": "overlay",
             "label": "Overlay",
-            "default": "#000000"
+            "default": "#0000004D",
+            "alpha": true
           },
           {
             "type": "color",
             "id": "links",
             "label": "Links",
-            "default": "#282C2E"
+            "default": "#282C2E",
+            "alpha": true
           }
         ],
         "role": {
@@ -146,31 +159,36 @@
         "type": "color",
         "id": "menu_bg_color",
         "label": "Background",
-        "default": "#ffffff"
+        "default": "#ffffff",
+        "alpha": true
       },
       {
         "type": "color",
         "id": "header_link",
         "label": "Navigation",
-        "default": "#282C2E"
+        "default": "#282C2E",
+        "alpha": true
       },
       {
         "type": "color",
         "id": "submenu_bg_color",
         "label": "Dropdown background",
-        "default": "#ffffff"
+        "default": "#ffffff",
+        "alpha": true
       },
       {
         "type": "color",
         "id": "submenu_link_color",
         "label": "Dropdown navigation",
-        "default": "#282C2E"
+        "default": "#282C2E",
+        "alpha": true
       },
       {
         "type": "color",
         "id": "menu_transparent_color",
         "label": "Transparent navigation",
-        "default": "#ffffff"
+        "default": "#ffffff",
+        "alpha": true
       },
       {
         "type": "header",
@@ -180,7 +198,8 @@
         "type": "color",
         "id": "sale_color",
         "label": "Sale",
-        "default": "#d20000"
+        "default": "#d20000",
+        "alpha": true
       }
     ]
   },
@@ -500,6 +519,40 @@
         "id": "btn_caps",
         "label": "Uppercase",
         "default": true
+      },
+      {
+        "type": "header",
+        "content": "Size"
+      },
+      {
+        "type": "range",
+        "id": "button_small",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "unit": "px",
+        "label": "Small",
+        "default": 7
+      },
+      {
+        "type": "range",
+        "id": "button_medium",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "unit": "px",
+        "label": "Medium",
+        "default": 12
+      },
+      {
+        "type": "range",
+        "id": "button_large",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "unit": "px",
+        "label": "Large",
+        "default": 16
       }
     ]
   },
@@ -765,6 +818,18 @@
     ]
   },
   {
+    "name": "Pagination",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_infinity_scroll",
+        "label": "Enable infinity scroll",
+        "default": false,
+        "info": "It applies to the Collection page"
+      }
+    ]
+  },
+  {
     "name": "Product grid",
     "settings": [
       {
@@ -799,6 +864,12 @@
         "default": false
       },
       {
+        "type": "checkbox",
+        "id": "show_recently_viewed_indicator",
+        "label": "Show recently viewed indicator",
+        "default": false
+      },
+      {
         "type": "header",
         "content": "Images"
       },
@@ -830,88 +901,12 @@
       },
       {
         "type": "header",
-        "content": "Sale badges"
-      },
-      {
-        "type": "checkbox",
-        "id": "sale_tags_enable",
-        "label": "Show sale badges",
-        "default": true
-      },
-      {
-        "type": "color",
-        "id": "sale_bg_color",
-        "label": "Background",
-        "default": "#c84242"
-      },
-      {
-        "type": "color",
-        "id": "sale_text_color",
-        "label": "Text",
-        "default": "#ffffff"
-      },
-      {
-        "type": "header",
-        "content": "Product badges",
-        "info": "Add tag '_preorder' or '_badge_with_custom_text' to a product in order to show the badge"
-      },
-      {
-        "type": "color",
-        "id": "badge_bg_color",
-        "label": "Background",
-        "default": "#444444"
-      },
-      {
-        "type": "color",
-        "id": "badge_text_color",
-        "label": "Text",
-        "default": "#ffffff"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_sold_out_badge",
-        "label": "Show sold out badge",
-        "default": false
-      },
-      {
-        "type": "checkbox",
-        "id": "show_automatic_new_badge",
-        "label": "Show automatic new badge",
-        "default": false
-      },
-      {
-        "type": "range",
-        "id": "badge_new_date_limit",
-        "label": "Date limit",
-        "min": 0,
-        "max": 20,
-        "step": 1,
-        "default": 5,
-        "info": "Badge appears if product was created within this many days"
-      },
-      {
-        "type": "select",
-        "id": "badge_alignment",
-        "label": "Alignment",
-        "options": [
-          { "value": "align--top-left", "label": "Top left" },
-          { "value": "align--top-center", "label": "Top center" },
-          { "value": "align--top-right", "label": "Top right" },
-          { "value": "align--bottom-left", "label": "Bottom left" },
-          { "value": "align--bottom-center", "label": "Bottom center" },
-          { "value": "align--bottom-right", "label": "Bottom right" }
-        ],
-        "default": "align--top-left",
-        "info": "Not recommended to use bottom alignment when quick add is enabled"
-      },
-      {
-        "type": "header",
         "content": "Quick add"
       },
       {
         "type": "checkbox",
         "id": "quickview_enable",
-        "label": "Enable quick add. [Learn more](https://broadcast.invisiblethemes.com/collections/collection-pages/quick-add)",
+        "label": "Enable quick add. [Learn more](https://broadcast.presidiocreative.com/collections/collection-pages/quick-add)",
         "default": true
       },
       {
@@ -925,13 +920,31 @@
         "type": "color",
         "id": "quick_add_bg_color",
         "label": "Button background",
-        "default": "#ffffff"
+        "default": "#ffffff",
+        "alpha": true
       },
       {
         "type": "color",
         "id": "quick_add_text_color",
         "label": "Button text",
-        "default": "#000000"
+        "default": "#000000",
+        "alpha": true
+      },
+      {
+        "type": "select",
+        "id": "quick_add_mobile_style",
+        "label": "Mobile style",
+        "default": "button",
+        "options": [
+          { "value": "mini_button", "label": "Mini button" },
+          { "value": "button", "label": "Button" }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "quickview_hide_mobile",
+        "label": "Hide on mobile",
+        "default": false
       },
       {
         "type": "header",
@@ -941,7 +954,7 @@
         "type": "checkbox",
         "label": "Show siblings on collections",
         "id": "show_siblings",
-        "info": "Learn more about linked [color siblings](https://broadcast.invisiblethemes.com/siblings/product-siblings/about-product-siblings)",
+        "info": "Learn more about linked [color siblings](https://broadcast.presidiocreative.com/siblings/product-siblings/about-product-siblings)",
         "default": true
       },
       {
@@ -958,13 +971,14 @@
         "type": "checkbox",
         "label": "Show cutline",
         "id": "show_cutline",
-        "info": "Learn more about [cutlines](https://broadcast.invisiblethemes.com/collections/collection-pages/cutline)",
+        "info": "Learn more about [cutlines](https://broadcast.presidiocreative.com/collections/collection-pages/cutline)",
         "default": true
       },
       {
         "type": "color",
         "id": "cutline_color",
-        "label": "Text"
+        "label": "Text",
+        "alpha": true
       }
     ]
   },
@@ -995,7 +1009,7 @@
       },
       {
         "type": "checkbox",
-        "id": "variant_lines",
+        "id": "variant_boxes",
         "label": "Show variants as boxes",
         "default": true
       },
@@ -1006,14 +1020,25 @@
         "default": true
       },
       {
+        "type": "select",
+        "id": "sale_badge_type",
+        "label": "Sale type",
+        "options": [
+          { "value": "percentage", "label": "Percentage" },
+          { "value": "money", "label": "Money" }
+        ],
+        "default": "percentage"
+      },
+      {
         "type": "header",
         "content": "Variant image",
-        "info": "Show an image with your size or custom variant. Works best when form style is set to classic. [Learn more](https://invisiblethemes.com/link/broadcast/size-variant-image)"
+        "info": "Show an image with your size or custom variant. Works best when form style is set to classic. [Learn more](https://broadcast.presidiocreative.com/products/product-pages/variant-images)"
       },
       {
         "type": "checkbox",
         "id": "show_variant_image",
         "label": "Show variant image",
+        "info": "Show variants as boxes should be enabled",
         "default": false
       },
       {
@@ -1034,7 +1059,7 @@
         "type": "checkbox",
         "id": "show_newsletter",
         "label": "Show \"Notify me when available\" popup",
-        "info": "[Learn more](https://invisiblethemes.com/link/broadcast/back-in-stock)",
+        "info": "[Learn more](https://broadcast.presidiocreative.com/products/product-pages/out-of-stock-notification)",
         "default": true
       },
       {
@@ -1053,7 +1078,7 @@
       },
       {
         "type": "paragraph",
-        "content": "For specific products or variants use metafields. [Learn more](https://invisiblethemes.com/link/broadcast/final-sale)"
+        "content": "For specific products or variants use metafields. [Learn more](https://broadcast.presidiocreative.com/products/product-pages/final-sale)"
       },
       {
         "type": "richtext",
@@ -1074,6 +1099,16 @@
           { "value": "standard", "label": "Standard" }
         ],
         "default": "dropdown"
+      },
+      {
+        "type": "header",
+        "content": "Add to cart"
+      },
+      {
+        "type": "checkbox",
+        "id": "atc_show_product_price",
+        "label": "Display product price",
+        "default": false
       }
     ]
   },
@@ -1085,15 +1120,10 @@
         "content": "To use swatches on variants other than color, visit your [language files](/admin/settings/languages)"
       },
       {
-        "type": "select",
-        "id": "swatches_type",
-        "label": "Swatches type",
-        "options": [
-          { "value": "theme", "label": "Theme" },
-          { "value": "native", "label": "Native" },
-          { "value": "disabled", "label": "None" }
-        ],
-        "default": "theme"
+        "type": "checkbox",
+        "id": "enable_swatches",
+        "label": "Enable swatches",
+        "default": true
       },
       {
         "type": "checkbox",
@@ -1116,7 +1146,7 @@
         "type": "select",
         "id": "swatch_style",
         "label": "Swatch style",
-        "info": "[Learn more](https://invisiblethemes.com/link/broadcast/swatch-styles)",
+        "info": "[Learn more](https://broadcast.presidiocreative.com/collections/collection-pages/swatch-collection-styles)",
         "options": [
           { "value": "circle", "label": "Circle" },
           { "value": "square", "label": "Square" }
@@ -1144,14 +1174,200 @@
           { "value": "limited", "label": "Swatch with text" },
           { "value": "grid", "label": "Grid" }
         ],
-        "default": "text-slider"
+        "default": "text-slider",
+        "info": "Partially applies when mobile layout is set to 2 items per row."
       },
       {
         "type": "textarea",
         "id": "swatch_color_list",
         "label": "HEX codes and files",
         "default": "Black: #000000\nWhite: #fafafa\nBlank: blank.png",
-        "info": "Each rule must be in its own line. HEX codes and [image files](/admin/content/files?selectedView=all&media_type=IMAGE) accepted. [Learn more](https://broadcast.invisiblethemes.com/products/swatches)"
+        "info": "Each rule must be in its own line. HEX codes and [image files](/admin/content/files?selectedView=all&media_type=IMAGE) accepted. [Learn more](https://broadcast.presidiocreative.com/products/product-pages/swatches)"
+      }
+    ]
+  },
+  {
+    "name": "Badges",
+    "settings": [
+      {
+        "type": "select",
+        "id": "badge_font_size",
+        "label": "Badge text size",
+        "info": "Automatically generated by the base size.",
+        "default": "body-medium",
+        "options": [
+          {"value": "body-x-small", "label": "Extra small"},
+          {"value": "body-small", "label": "Small"},
+          {"value": "body-medium", "label": "Medium"},
+          {"value": "body-large", "label": "Large"},
+          {"value": "body-x-large", "label": "Extra large"}
+        ]
+      },
+      {
+        "type": "select",
+        "id": "badge_alignment",
+        "label": "Alignment",
+        "options": [
+          { "value": "align--top-left", "label": "Top left" },
+          { "value": "align--top-center", "label": "Top center" },
+          { "value": "align--top-right", "label": "Top right" },
+          { "value": "align--bottom-left", "label": "Bottom left" },
+          { "value": "align--bottom-center", "label": "Bottom center" },
+          { "value": "align--bottom-right", "label": "Bottom right" }
+        ],
+        "default": "align--top-left",
+        "info": "Not recommended to use bottom alignment when quick add is enabled"
+      },
+      {
+        "type": "header",
+        "content": "Sale badge"
+      },
+      {
+        "type": "checkbox",
+        "id": "sale_tags_enable",
+        "label": "Show sale badge",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_saving_badge",
+        "visible_if": "{{ settings.sale_tags_enable }}",
+        "label": "Show savings",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "saving_badge_type",
+        "visible_if": "{{ settings.sale_tags_enable and settings.show_saving_badge }}",
+        "label": "Saving type",
+        "options": [
+          { "value": "percentage", "label": "Percentage" },
+          { "value": "money", "label": "Money" }
+        ],
+        "default": "percentage"
+      },
+      {
+        "type": "color",
+        "id": "sale_bg_color",
+        "visible_if": "{{ settings.sale_tags_enable }}",
+        "label": "Background",
+        "default": "#c84242"
+      },
+      {
+        "type": "color",
+        "id": "sale_text_color",
+        "visible_if": "{{ settings.sale_tags_enable }}",
+        "label": "Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Custom badge",
+        "info": "Add tag '_badge_with_custom_text' to a product in order to show the badge"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_custom_badge",
+        "label": "Show custom badge",
+        "default": true
+      },
+      {
+        "type": "color",
+        "id": "badge_bg_color",
+        "visible_if": "{{ settings.show_custom_badge }}",
+        "label": "Background",
+        "default": "#444444"
+      },
+      {
+        "type": "color",
+        "id": "badge_text_color",
+        "visible_if": "{{ settings.show_custom_badge }}",
+        "label": "Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Sold badge"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_sold_out_badge",
+        "label": "Show sold out badge",
+        "default": true
+      },
+      {
+        "type": "color",
+        "id": "sold_out_bg_color",
+        "visible_if": "{{ settings.show_sold_out_badge }}",
+        "label": "Background",
+        "default": "#444444"
+      },
+      {
+        "type": "color",
+        "id": "sold_out_text_color",
+        "visible_if": "{{ settings.show_sold_out_badge }}",
+        "label": "Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "New badge"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_automatic_new_badge",
+        "label": "Show automatic new badge",
+        "default": false
+      },
+      {
+        "type": "color",
+        "id": "new_badge_bg_color",
+        "visible_if": "{{ settings.show_automatic_new_badge }}",
+        "label": "Background",
+        "default": "#444444"
+      },
+      {
+        "type": "color",
+        "id": "new_badge_text_color",
+        "visible_if": "{{ settings.show_automatic_new_badge }}",
+        "label": "Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "range",
+        "id": "badge_new_date_limit",
+        "visible_if": "{{ settings.show_automatic_new_badge }}",
+        "label": "Date limit",
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "default": 5,
+        "info": "Badge appears if product was created within this many days"
+      },
+      {
+        "type": "header",
+        "content": "Preorder",
+        "info": "Add tag '_preorder' to a product in order to show the badge"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_preorder_badge",
+        "label": "Show pre-order badge",
+        "default": false
+      },
+      {
+        "type": "color",
+        "id": "preorder_bg_color",
+        "visible_if": "{{ settings.show_preorder_badge }}",
+        "label": "Background",
+        "default": "#444444"
+      },
+      {
+        "type": "color",
+        "id": "preorder_text_color",
+        "visible_if": "{{ settings.show_preorder_badge }}",
+        "label": "Text",
+        "default": "#ffffff"
       }
     ]
   },
@@ -1275,16 +1491,6 @@
         "label": "Exclude collections if they contain",
         "default": "sibling",
         "info": "Use comma to separate the collections"
-      },
-      {
-        "type": "select",
-        "id": "mobile_menu_type",
-        "label": "Mobile menu type",
-        "default": "new",
-        "options": [
-          { "label": "Old style", "value": "old" },
-          { "label": "New style", "value": "new" }
-        ]
       }
     ]
   }

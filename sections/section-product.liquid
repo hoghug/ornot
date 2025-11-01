@@ -2,6 +2,7 @@
 {%- liquid
   assign product = all_products[section.settings.product]
   assign unique = section.id
+  assign show_recently_viewed_indicator = settings.show_recently_viewed_indicator
   assign color_scheme = 'color-' | append: section.settings.color_scheme
   assign limit = section.settings.limit
   assign featured_image = section.settings.image
@@ -27,6 +28,14 @@
 -%}
 
 <script src="{{ 'featured-product.js' | asset_url }}" defer="defer"></script>
+
+{%- if show_recently_viewed_indicator -%}
+  <script src="{{ 'grid-item.js' | asset_url }}" defer></script>
+{%- endif -%}
+
+{%- if settings.quickview_enable -%}
+  <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
 
 {%- style -%}
   {%- if request.visual_preview_mode -%}
@@ -67,7 +76,8 @@
             product: product,
             index: forloop.index,
             show_product_card: section.settings.show_product_card,
-            sizes: grid_item_sizes
+            sizes: grid_item_sizes,
+            disable_image_hover: true
           -%}
         {%- else -%}
           {%- render 'onboarding-product-grid-item',
@@ -135,7 +145,7 @@
       "type": "checkbox",
       "id": "show_product_card",
       "label": "Show product card",
-      "default": true
+      "default": false
     },
     {
       "type": "header",
@@ -168,7 +178,7 @@
       "type": "image_picker",
       "id": "image",
       "label": "Background image",
-      "info": "2000 x 1400px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+      "info": "2000 x 1400px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
     },
     {
       "type": "select",
@@ -187,16 +197,9 @@
       "default": "vertical"
     },
     {
-      "type": "header",
-      "content": "Horizontal"
-    },
-    {
-      "type": "paragraph",
-      "content": "Applies only if scrolling styles are set to horizontal and no background image is used"
-    },
-    {
       "type": "checkbox",
       "id": "horizontal_scroll",
+      "visible_if": "{{ section.settings.scrolling_styles == 'horizontal' and section.settings.image == blank }}",
       "label": "Full-width scroll",
       "default": false
     },
@@ -208,7 +211,7 @@
       "type": "image_picker",
       "id": "image_mobile",
       "label": "Background image",
-      "info": "1200 x 1600px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+      "info": "1200 x 1600px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
     },
     {
       "type": "header",
@@ -223,7 +226,8 @@
   ],
   "presets": [
     {
-      "name": "Featured product"
+      "name": "Featured product",
+      "category": "Products"
     }
   ],
   "disabled_on": {

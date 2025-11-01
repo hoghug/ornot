@@ -1,9 +1,11 @@
 <!-- /sections/collections.liquid -->
 
 {%- liquid
+  assign enable_infinity_scroll = settings.enable_infinity_scroll
   assign enable_sort = section.settings.enable_sort
   assign enable_filters = section.settings.enable_filters
   assign filter_layout = section.settings.filter_layout
+  assign show_recently_viewed_indicator = settings.show_recently_viewed_indicator
   assign color_scheme = 'color-' | append: section.settings.color_scheme
 
   if filter_layout == 'inline-open'
@@ -27,6 +29,11 @@
 
   assign animation_anchor = '.collection-' | append: collection.handle
   assign animation_duration = 800
+
+  assign items_container_tag = 'div'
+  if enable_infinity_scroll
+    assign items_container_tag = 'ajaxinate-items'
+  endif
 -%}
 
 {%- capture image_sizes -%}
@@ -217,7 +224,12 @@
       {%- endif -%}
 
       <div class="grid-outer" data-products-grid>
-        <div class="grid" id="CollectionLoop">
+        <{{ items_container_tag }}
+          class="grid"
+          {% if enable_infinity_scroll %}
+            id="AjaxinateLoop" data-ajaxinate-id="{{ section.id }}"
+          {% endif %}
+        >
           {%- if collection.products_count > 0 -%}
             {%- if featured_images_array.size > 0 -%}
               {%- liquid
@@ -286,13 +298,33 @@
               >
             </div>
           {%- endif -%}
-        </div>
+        </{{ items_container_tag }}>
 
-        {%- render 'pagination', paginate: paginate -%}
-
-        <div class="grid__loader">
-          <div class="loader grid__loader-line"><div class="loader-indeterminate"></div></div>
-        </div>
+        {%- if enable_infinity_scroll -%}
+          <div
+            class="pagination pagination--infinite"
+            id="AjaxinatePagination"
+            data-ajaxinate-id="{{ section.id }}"
+          >
+            {%- if paginate.next -%}
+              <div class="pagination__loading">
+                <span class="btn__loader">
+                  <svg height="18" width="18" class="svg-loader">
+                    <circle r="7" cx="9" cy="9" />
+                    <circle stroke-dasharray="87.96459430051421 87.96459430051421" r="7" cx="9" cy="9" />
+                  </svg>
+                </span>
+                <a href="{{ paginate.next.url }}">
+                  <span class="visually-hidden">{{ 'general.pagination.next' | t }}</span>
+                </a>
+              </div>
+            {%- endif -%}
+          </div>
+        {%- else -%}
+          {%- if paginate.pages > 1 -%}
+            {%- render 'pagination', paginate: paginate -%}
+          {%- endif -%}
+        {%- endif -%}
       </div>
     </div>
   </collection-component>
@@ -300,6 +332,18 @@
   {%- if enable_sort or enable_filters -%}
     <script src="{{ 'collection.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'collection-filters-form.js' | asset_url }}" defer="defer"></script>
+  {%- endif -%}
+
+  {%- if settings.quickview_enable -%}
+    <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
+  {%- endif -%}
+
+  {%- if enable_infinity_scroll -%}
+    <script src="{{ 'ajaxinate.js' | asset_url }}" defer="defer"></script>
+  {%- endif -%}
+
+  {%- if show_recently_viewed_indicator -%}
+    <script src="{{ 'grid-item.js' | asset_url }}" defer></script>
   {%- endif -%}
 {%- endpaginate -%}
 
@@ -425,7 +469,7 @@
           "type": "image_picker",
           "id": "featured_image",
           "label": "Image",
-          "info": "1400 x 1400px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "1400 x 1400px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "type": "range",
@@ -533,23 +577,18 @@
           "type": "color",
           "id": "featured_color_text",
           "label": "Text",
-          "default": "#ffffff"
+          "default": "#ffffff",
+          "alpha": true
         },
         {
-          "type": "color",
-          "id": "featured_color_overlay",
-          "label": "Overlay",
-          "default": "#222222"
-        },
-        {
-          "type": "range",
-          "id": "featured_overlay_opacity",
-          "label": "Overlay opacity",
-          "step": 5,
-          "max": 100,
-          "min": 0,
-          "unit": "%",
-          "default": 10
+          "type": "select",
+          "id": "overlay_type",
+          "label": "Overlay type",
+          "default": "disabled",
+          "options": [
+            {"value": "disabled", "label": "Disabled"},
+            {"value": "opacity", "label": "Opacity overlay"}
+          ]
         },
         {
           "type": "header",

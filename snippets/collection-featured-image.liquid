@@ -1,11 +1,11 @@
 {% comment %}
-    Renders a Featured image block on Collection pages
+  Renders a Featured image block on Collection pages
 
-    Accepts:
-    - block: {Object} The block object (required)
+  Accepts:
+  - block: {Object} The block object (required)
 
-    Usage:
-    {% render 'collection-featured-image', block: block %}
+  Usage:
+  {% render 'collection-featured-image', block: block %}
 {% endcomment %}
 
 {%- liquid
@@ -15,8 +15,12 @@
   assign featured_button_text = block.settings.featured_button_text
   assign featured_button_link = block.settings.featured_button_link
   assign featured_color_text = block.settings.featured_color_text
-  assign featured_color_overlay = block.settings.featured_color_overlay
-  assign featured_overlay_opacity = block.settings.featured_overlay_opacity | times: 0.01
+  assign overlay_type = block.settings.overlay_type
+  assign opacity_overlay = false
+
+  if overlay_type == 'opacity'
+    assign opacity_overlay = true
+  endif
 
   assign button_style = block.settings.button_style
   if button_style == 'btn--text' and block.settings.show_arrow
@@ -28,11 +32,10 @@
   {%- unless featured_color_text == 'rgba(0,0,0,0)' or featured_color_text == blank -%}
     --text: {{ featured_color_text }};
   {%- endunless -%}
-  --overlay-opacity: {{ featured_overlay_opacity }};
-  --overlay-bg: {{ featured_color_overlay }};
 {%- endcapture -%}
 
-<div class="grid-item product-item product-item--featured-image"
+<div
+  class="grid-item product-item product-item--featured-image"
   id="Product-item--{{ block.id }}"
   style="{{ style }}"
   {{ block.shopify_attributes }}
@@ -60,7 +63,7 @@
             <span>{{ featured_button_text }}</span>
 
             {%- if block.settings.show_arrow -%}
-              {%- render 'icon-arrow-right' -%}
+              {%- render 'icon-nav-arrow-right' -%}
             {%- endif -%}
           </a>
         {%- endif -%}
@@ -74,16 +77,26 @@
 
   {%- unless featured_image == blank -%}
     <div class="product-item__image">
-      <div class="product-item__bg"
+      <div
+        class="product-item__bg"
         data-aos="img-in"
         data-aos-anchor="{{ animation_anchor }}"
         data-aos-delay="{{ animation_delay | times: 150 }}"
         data-aos-duration="{{ animation_duration }}"
         data-aos-easing="ease-out-quart"
       >
-        {%- render 'image' image: featured_image, sizes: image_sizes, loading: 'eager', preload: 'true', fetchpriority: 'high', cover: true -%}
+        {%- render 'image',
+          image: featured_image,
+          sizes: image_sizes,
+          loading: 'eager',
+          preload: 'true',
+          fetchpriority: 'high',
+          cover: true
+        -%}
       </div>
-
+      {%- if opacity_overlay -%}
+        <div class="image-overlay"></div>
+      {%- endif -%}
       {{ featured_image_content }}
     </div>
   {%- else -%}
@@ -91,7 +104,6 @@
       <div class="svg-placeholder">
         {{ 'collection-1' | placeholder_svg_tag }}
       </div>
-
       {{ featured_image_content }}
     </div>
   {%- endunless -%}

@@ -20,9 +20,14 @@
 
   assign bg_color = block.settings.bg_color | default: scheme_bg_color
   assign text_color = block.settings.color
-  assign overlay_opacity = block.settings.overlay_opacity | times: 0.01
-  assign overlay_color = block.settings.overlay_color
-  assign show_overlay_text = block.settings.show_overlay_text
+  assign overlay_type = block.settings.overlay_type
+  assign opacity_overlay = false
+  assign text_underlay = false
+  if overlay_type == 'opacity'
+    assign opacity_overlay = true
+  elsif overlay_type == 'text'
+    assign text_underlay = true
+  endif
   assign show_text_background = block.settings.show_text_background
   assign desktop_height = section.settings.height
   assign mobile_height = block.settings.mobile_height | default: section.settings.mobile_height
@@ -34,7 +39,7 @@
   endif
 
   assign show_header_backdrop = false
-  if hero_transparent and show_overlay_text
+  if hero_transparent and text_underlay
     assign show_header_backdrop = true
   endif
 
@@ -56,10 +61,6 @@
     --text-light: {{ text_color | color_mix: bg_color, 70 }};
     --text-dark: {{ text_color | color_saturate: 10 | color_darken: 15 }};
   {%- endunless -%}
-
-  {%- unless overlay_color.alpha == 0.0 or overlay_color == blank -%}
-    --overlay-bg: {{ overlay_color }};
-  {%- endunless -%}
 {%- endcapture -%}
 
 <div
@@ -76,9 +77,9 @@
       <div class="frame__item">
     {%- endif -%}
 
-    {%- unless show_overlay_text or overlay_opacity == 0.0 -%}
-      <div class="image-overlay" style="--overlay-opacity: {{ overlay_opacity }};"></div>
-    {%- endunless -%}
+    {%- if opacity_overlay -%}
+      <div class="image-overlay"></div>
+    {%- endif -%}
 
     {%- liquid
       capture image_sizes
@@ -113,15 +114,9 @@
     {%- if title != blank or text != blank or link_text != blank -%}
       <div
         class="hero__content__wrapper frame__item {{ block.settings.flex_align }}{% if show_header_backdrop %} backdrop--linear{% endif %}"
-        {% if show_header_backdrop %}
-          style="--header-overlay-color: var(--overlay-bg); --header-overlay-opacity: {{ overlay_opacity }};"
-        {% endif %}
       >
         <div
-          class="hero__content{% if hero_transparent %} hero__content--transparent{% endif %}{% if show_overlay_text %} backdrop--radial{% endif %}"
-          {% if overlay_opacity != 0.0 %}
-            style="--overlay-opacity: {{ overlay_opacity }};"
-          {% endif %}
+          class="hero__content{% if hero_transparent %} hero__content--transparent{% endif %}{% if text_underlay %} backdrop--radial{% endif %}"
         >
           {%- if title != blank -%}
             {%- liquid
@@ -170,7 +165,7 @@
                 <span>{{ link_text | escape }}</span>
 
                 {%- if block.settings.show_arrow -%}
-                  {%- render 'icon-arrow-right' -%}
+                  {%- render 'icon-nav-arrow-right' -%}
                 {%- endif -%}
               </a>
             </div>

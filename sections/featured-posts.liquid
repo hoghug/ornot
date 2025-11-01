@@ -70,7 +70,6 @@
                     {% if subheading != blank %}
                       data-subheading="{{ subheading }}"
                     {% endif %}
-                    data-editorial-aside
                   >
                     {%- if subheading != blank -%}
                       <p class="editorial__subheading subheading">{{ subheading }}</p>
@@ -127,7 +126,7 @@
                             <span>{{ button_text }}</span>
 
                             {%- if section.settings.show_arrow -%}
-                              {%- render 'icon-arrow-right' -%}
+                              {%- render 'icon-nav-arrow-right' -%}
                             {%- endif -%}
                           </a>
                         </div>
@@ -341,7 +340,7 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image",
-          "info": "Optional: replace the article featured image. 2000 x 1400px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "Optional: replace the article featured image. 2000 x 1400px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "type": "header",
@@ -359,6 +358,7 @@
   "presets": [
     {
       "name": "Featured blog posts",
+      "category": "Storytelling",
       "blocks": [
         {
           "type": "featured_post"

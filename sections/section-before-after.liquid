@@ -104,7 +104,7 @@
                     <span>{{ block.settings.link_text | escape }}</span>
 
                     {%- if block.settings.show_arrow -%}
-                      {%- render 'icon-arrow-right' -%}
+                      {%- render 'icon-nav-arrow-right' -%}
                     {%- endif -%}
                   </a>
                 {%- endcapture -%}
@@ -170,13 +170,13 @@
       "type": "image_picker",
       "id": "image_1",
       "label": "Primary image",
-      "info": "2000 x 1400px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+      "info": "2000 x 1400px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
     },
     {
       "type": "image_picker",
       "id": "image_2",
       "label": "Secondary image",
-      "info": "2000 x 1400px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+      "info": "2000 x 1400px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
     },
     {
       "type": "range",
@@ -441,6 +441,7 @@
   "presets": [
     {
       "name": "Before and after",
+      "category": "Storytelling",
       "blocks": [{"type": "heading"}, {"type": "text"}, {"type": "button"}]
     }
   ],

@@ -1,26 +1,11 @@
-{%- liquid
-  layout none
+{% layout none %}
+{%- assign formatted_balance = gift_card.balance | money_without_trailing_zeros | strip_html -%}
 
-  if settings.currency_code_enable
-    assign gift_card_initial_value = gift_card.initial_value | money_with_currency
-    assign gift_card_balance = gift_card.balance | money_with_currency
-  else
-    assign gift_card_initial_value = gift_card.initial_value | money_without_trailing_zeros
-    assign gift_card_balance = gift_card.balance | money
-  endif
-
-  assign formatted_initial_value = gift_card_initial_value | strip_html
-
-  for scheme in settings.color_schemes limit: 1
-    assign scheme = scheme
-  endfor
--%}
-
-<!DOCTYPE html>
-<html class="no-js no-touch supports-no-cookies" lang="{{ request.locale.iso_code }}">
+<!doctype html>
+<html class="no-touch supports-no-cookies" lang="{{ request.locale.iso_code }}">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ 'gift_cards.issued.title' | t: value: formatted_initial_value, shop: shop.name }}</title>
+    <title>{{ 'gift_cards.issued.title' | t: value: formatted_balance, shop: shop.name }}</title>
     <meta name="description" content="{{ 'gift_cards.issued.subtext' | t }}">
     <link rel="canonical" href="{{ canonical_url }}">
 
@@ -31,6 +16,8 @@
     <script src="{{ 'vendor/qrcode.js' | shopify_asset_url }}" defer="defer"></script>
 
     {%- liquid
+      assign scheme = settings.color_schemes | first
+
       assign heading_font = settings.type_header_font
       assign base_font = settings.type_base_font
 
@@ -56,62 +43,61 @@
     -%}
 
     {% style %}
+      {{ heading_font | font_face: font_display: 'swap' }}
+      {{ base_font | font_face: font_display: 'swap' }}
 
-    {{ heading_font | font_face: font_display: 'swap' }}
-    {{ base_font | font_face: font_display: 'swap' }}
+      {% if base_font_bold %}
+        {{ base_font_bold | font_face: font_display: 'swap' }}
+      {% endif %}
 
-    {% if base_font_bold %}
-      {{ base_font_bold | font_face: font_display: 'swap' }}
-    {% endif %}
+      :root {
+        /* === Typography ===*/
+        --FONT-HEADING-MINI: {{ settings.heading_mini | append: 'px' }};
+        --FONT-HEADING-X-SMALL: {{ settings.heading_x_small | append: 'px' }};
+        --FONT-HEADING-SMALL: {{ settings.heading_small | append: 'px' }};
+        --FONT-HEADING-MEDIUM: {{ settings.heading_medium | append: 'px' }};
+        --FONT-HEADING-LARGE: {{ settings.heading_large | append: 'px' }};
+        --FONT-HEADING-X-LARGE: {{ settings.heading_x_large | append: 'px' }};
 
-    :root {
-      /* === Typography ===*/
-      --FONT-HEADING-MINI: {{ settings.heading_mini | append: 'px' }};
-      --FONT-HEADING-X-SMALL: {{ settings.heading_x_small | append: 'px' }};
-      --FONT-HEADING-SMALL: {{ settings.heading_small | append: 'px' }};
-      --FONT-HEADING-MEDIUM: {{ settings.heading_medium | append: 'px' }};
-      --FONT-HEADING-LARGE: {{ settings.heading_large | append: 'px' }};
-      --FONT-HEADING-X-LARGE: {{ settings.heading_x_large | append: 'px' }};
+        --FONT-HEADING-MINI-MOBILE: {{ settings.heading_mini_mobile | append: 'px' }};
+        --FONT-HEADING-X-SMALL-MOBILE: {{ settings.heading_x_small_mobile | append: 'px' }};
+        --FONT-HEADING-SMALL-MOBILE: {{ settings.heading_small_mobile | append: 'px' }};
+        --FONT-HEADING-MEDIUM-MOBILE: {{ settings.heading_medium_mobile | append: 'px' }};
+        --FONT-HEADING-LARGE-MOBILE: {{ settings.heading_large_mobile | append: 'px' }};
+        --FONT-HEADING-X-LARGE-MOBILE: {{ settings.heading_x_large_mobile | append: 'px' }};
 
-      --FONT-HEADING-MINI-MOBILE: {{ settings.heading_mini_mobile | append: 'px' }};
-      --FONT-HEADING-X-SMALL-MOBILE: {{ settings.heading_x_small_mobile | append: 'px' }};
-      --FONT-HEADING-SMALL-MOBILE: {{ settings.heading_small_mobile | append: 'px' }};
-      --FONT-HEADING-MEDIUM-MOBILE: {{ settings.heading_medium_mobile | append: 'px' }};
-      --FONT-HEADING-LARGE-MOBILE: {{ settings.heading_large_mobile | append: 'px' }};
-      --FONT-HEADING-X-LARGE-MOBILE: {{ settings.heading_x_large_mobile | append: 'px' }};
+        --FONT-STACK-BODY: {{ base_font.family }}, {{ base_font.fallback_families }};
+        --FONT-STYLE-BODY: {{ base_font.style }};
+        --FONT-WEIGHT-BODY: {{ base_font.weight }};
+        --FONT-WEIGHT-BODY-BOLD: {{ base_font_bold.weight | default: 700 }};
 
-      --FONT-STACK-BODY: {{ base_font.family }}, {{ base_font.fallback_families }};
-      --FONT-STYLE-BODY: {{ base_font.style }};
-      --FONT-WEIGHT-BODY: {{ base_font.weight }};
-      --FONT-WEIGHT-BODY-BOLD: {{ base_font_bold.weight | default: 700 }};
+        --LETTER-SPACING-BODY: {{ settings.body_letter_spacing | divided_by: 1000.0 | append: 'em' }};
 
-      --LETTER-SPACING-BODY: {{ settings.body_letter_spacing | divided_by: 1000.0 | append: 'em' }};
+        --FONT-STACK-HEADING: {{ heading_font.family }}, {{ heading_font.fallback_families }};
+        --FONT-WEIGHT-HEADING: {{ heading_font.weight }};
+        --FONT-STYLE-HEADING: {{ heading_font.style }};
 
-      --FONT-STACK-HEADING: {{ heading_font.family }}, {{ heading_font.fallback_families }};
-      --FONT-WEIGHT-HEADING: {{ heading_font.weight }};
-      --FONT-STYLE-HEADING: {{ heading_font.style }};
+        --FONT-UPPERCASE-HEADING: {{ heading_font_uppercase }};
+        --LETTER-SPACING-HEADING: {{ settings.heading_letter_spacing | divided_by: 1000.0 | append: 'em' }};
 
-      --FONT-UPPERCASE-HEADING: {{ heading_font_uppercase }};
-      --LETTER-SPACING-HEADING: {{ settings.heading_letter_spacing | divided_by: 1000.0 | append: 'em' }};
+        --COLOR-BG-GRADIENT: {{ scheme.settings.section_bg_gradient | default: scheme.settings.section_bg }};
+        --COLOR-BG: {{ scheme.settings.section_bg }};
+        --COLOR-TEXT: {{ scheme.settings.section_text }};
+        --COLOR-TEXT-LIGHT: {{ scheme.settings.section_text | color_mix: scheme.settings.section_bg, 70 }};
+        --COLOR-LINK: {{ scheme.settings.links }};
+        --COLOR-LINK-HOVER: {{ scheme.settings.links | color_modify: 'alpha', hover_opacity }};
 
-      --COLOR-BG-GRADIENT: {{ scheme.settings.section_bg_gradient | default: scheme.settings.section_bg }};
-      --COLOR-BG: {{ scheme.settings.section_bg }};
-      --COLOR-TEXT: {{ scheme.settings.section_text }};
-      --COLOR-TEXT-LIGHT: {{ scheme.settings.section_text | color_mix: scheme.settings.section_bg, 70 }};
-      --COLOR-LINK: {{ scheme.settings.links }};
-      --COLOR-LINK-HOVER: {{ scheme.settings.links | color_modify: 'alpha', hover_opacity }};
+        --COLOR-BORDER: {{ scheme.settings.lines_and_border | color_to_rgb }};
+        --COLOR-BORDER-HAIRLINE: {{ scheme.settings.section_bg | color_darken: 3 }};
 
-      --COLOR-BORDER: {{ scheme.settings.lines_and_border | color_to_rgb }};
-      --COLOR-BORDER-HAIRLINE: {{ scheme.settings.section_bg | color_darken: 3 }};
-
-      --bg: var(--COLOR-BG-GRADIENT, var(--COLOR-BG));
-      --text: var(--COLOR-TEXT);
-      --text-light: var(--COLOR-TEXT-LIGHT);
-      --link: var(--COLOR-LINK);
-      --link-hover: var(--COLOR-LINK-HOVER);
-      --border: var(--COLOR-BORDER);
-      --border-hairline: var(--COLOR-BORDER-HAIRLINE);
-    }
+        --bg: var(--COLOR-BG-GRADIENT, var(--COLOR-BG));
+        --text: var(--COLOR-TEXT);
+        --text-light: var(--COLOR-TEXT-LIGHT);
+        --link: var(--COLOR-LINK);
+        --link-hover: var(--COLOR-LINK-HOVER);
+        --border: var(--COLOR-BORDER);
+        --border-hairline: var(--COLOR-BORDER-HAIRLINE);
+      }
     {% endstyle %}
 
     {%- unless settings.type_base_font.system? -%}
@@ -145,14 +131,18 @@
                     <span class="giftcard__tag">{{ 'gift_cards.issued.disabled' | t }}</span>
                   {%- endunless -%}
 
-                  {%- assign gift_card_expiry_date = gift_card.expires_on | date: "%d/%m/%y" -%}
+                  {%- assign gift_card_expiry_date = gift_card.expires_on | date: '%d/%m/%y' -%}
 
                   {%- if gift_card.expired and gift_card.enabled -%}
-                    <span class="giftcard__tag">{{ 'gift_cards.issued.expired' | t: expiry: gift_card_expiry_date }}</span>
+                    <span class="giftcard__tag">
+                      {{- 'gift_cards.issued.expired' | t: expiry: gift_card_expiry_date -}}
+                    </span>
                   {%- endif -%}
 
                   {%- if gift_card.expired == false and gift_card.expires_on and gift_card.enabled -%}
-                    <span class="giftcard__tag giftcard__tag--active">{{ 'gift_cards.issued.active' | t: expiry: gift_card_expiry_date }}</span>
+                    <span class="giftcard__tag giftcard__tag--active">
+                      {{- 'gift_cards.issued.active' | t: expiry: gift_card_expiry_date -}}
+                    </span>
                   {%- endif -%}
                 </div>
 
@@ -164,7 +154,10 @@
                   <div class="h1 giftcard__amount{% if initial_value_size > 6 %} giftcard__amount--medium{% endif %}">
                     {%- if gift_card.balance != gift_card.initial_value -%}
                       <span class="tooltip">
-                        <span class="tooltip__label">{{ gift_card_balance }} <small>left</small></span>
+                        <span class="tooltip__label">
+                          {{- gift_card_balance }}
+                          <small>left</small></span
+                        >
                       </span>
                     {%- endif -%}
 
@@ -172,9 +165,14 @@
                   </div>
 
                   {%- assign code_size = gift_card.code | format_code | size -%}
-                  <div class="giftcard__code{% if code_size <= 25 %} giftcard__code--large{% elsif code_size > 25 and code_size <= 30 %} giftcard__code--medium{% else %} giftcard__code--small{% endif %}" onclick="selectText('GiftCardDigits');">
+                  <div
+                    class="giftcard__code{% if code_size <= 25 %} giftcard__code--large{% elsif code_size > 25 and code_size <= 30 %} giftcard__code--medium{% else %} giftcard__code--small{% endif %}"
+                    onclick="selectText('GiftCardDigits');"
+                  >
                     <div class="giftcard__code__inner">
-                      <strong class="giftcard__code__text" id="GiftCardDigits">{{ gift_card.code | format_code }}</strong>
+                      <strong class="giftcard__code__text" id="GiftCardDigits">
+                        {{- gift_card.code | format_code -}}
+                      </strong>
                     </div>
                   </div>
                 </div>
@@ -184,17 +182,18 @@
                 <div id="QrCode"></div>
 
                 <script>
-                  window.onload = function() {
+                  window.onload = function () {
                     new QRCode(document.getElementById('QrCode'), {
-                      text: "{{ gift_card.qr_identifier }}",
+                      text: '{{ gift_card.qr_identifier }}',
                       width: 120,
-                      height: 120
+                      height: 120,
                     });
-                  }
+                  };
                 </script>
 
                 <div class="giftcard__actions">
-                  <a href="{{ shop.url }}" class="btn" target="_blank">{{ 'gift_cards.issued.shop_link' | t }}</a> &nbsp;
+                  <a href="{{ shop.url }}" class="btn" target="_blank">{{ 'gift_cards.issued.shop_link' | t }}</a>
+                  &nbsp;
 
                   <a href="#" class="action-link" onclick="window.print();">
                     <i class="action-link__print"></i>{{ 'gift_cards.issued.print' | t }}
@@ -214,13 +213,15 @@
       ==============================================================================*/
       function selectText(element) {
         var doc = document,
-        text = doc.getElementById(element);
+          text = doc.getElementById(element);
 
-        if (doc.body.createTextRange) { // ms
+        if (doc.body.createTextRange) {
+          // ms
           var range = doc.body.createTextRange();
           range.moveToElementText(text);
           range.select();
-        } else if (window.getSelection) { // moz, opera, webkit
+        } else if (window.getSelection) {
+          // moz, opera, webkit
           var selection = window.getSelection(),
             range = doc.createRange();
           range.selectNodeContents(text);
@@ -233,7 +234,14 @@
     {%- if gift_card.pass_url -%}
       <footer role="contentinfo" class="gift-card-footer">
         <a href="{{ gift_card.pass_url }}">
-          <img id="apple-wallet-badge" src="{{ 'gift-card/add-to-apple-wallet.svg' | shopify_asset_url }}" loading="lazy" width="120" height="40" alt="Add To Apple Wallet">
+          <img
+            id="apple-wallet-badge"
+            src="{{ 'gift-card/add-to-apple-wallet.svg' | shopify_asset_url }}"
+            loading="lazy"
+            width="120"
+            height="40"
+            alt="Add To Apple Wallet"
+          >
         </a>
       </footer>
     {%- endif -%}

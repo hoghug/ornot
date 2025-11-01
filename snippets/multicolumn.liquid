@@ -17,6 +17,7 @@
   assign description = section.settings.description
   assign color_scheme = 'color-' | append: section.settings.color_scheme
   assign blocks_size = section.blocks.size
+  assign show_recently_viewed_indicator = settings.show_recently_viewed_indicator
 
   assign layout = section.settings.layout
   assign layout_mobile = section.settings.layout_mobile
@@ -72,6 +73,13 @@
     if grid_columns == 4
       assign eager_images_limit = grid_columns | times: 2
     endif
+  endif
+
+  assign min_image_width = section.blocks | map: 'settings' | map: 'image_width' | compact | sort | first | default: 100
+  assign max_image_width = section.blocks | map: 'settings' | map: 'image_width' | compact | sort | last | default: 100
+
+  if min_image_width == max_image_width
+    assign all_widths_same = true
   endif
 
   capture layout_class
@@ -169,7 +177,10 @@
               assign column_width = block.settings.column_width | default: column_width
               assign title = block.settings.title
               assign text = block.settings.text
+              assign text_color = block.settings.color
+              assign overlay_type = block.settings.overlay_type
               assign image = block.settings.image
+              assign image_width = block.settings.image_width | default: 100
               assign image_aspect_ratio = block.settings.image_aspect_ratio | default: section.settings.image_aspect_ratio | default: 1
               assign image_aspect_ratio_mobile = block.settings.mobile_image_aspect_ratio | default: section.settings.mobile_image_aspect_ratio | default: aspect_ratio
               assign aspect_ratio = 1 | divided_by: image_aspect_ratio
@@ -177,6 +188,14 @@
               assign button_text = block.settings.button_text
               assign icon_color = block.settings.icon_color
               assign icon_size = block.settings.icon_size
+
+              assign opacity_overlay = false
+              assign text_underlay = false
+              if overlay_type == 'opacity'
+                assign opacity_overlay = true
+              elsif overlay_type == 'text'
+                assign text_underlay = true
+              endif
 
               if forloop.index > eager_images_limit and layout != 'slider' or forloop.index > 4 and layout == 'slider'
                 assign loading = 'lazy'
@@ -223,8 +242,16 @@
                   echo '--desktop-width: ' | append: column_width | append: '%;'
                 endif
 
+                if block.type == 'image' or block.type == 'image-overlay'
+                  echo '--image-width: ' | append: image_width | append: '%;'
+                endif
+
                 if icon_color.alpha != 0.0 and icon_color != blank
                   echo ' --icons: ' | append: icon_color | append: ';'
+                endif
+
+                if text_color.alpha != 0.0 and text_color != blank
+                  echo ' --text: ' | append: text_color | append: ';'
                 endif
 
                 echo '"'
@@ -232,19 +259,29 @@
             -%}
 
             {%- case block.type -%}
-              {%- when 'image' -%}
+              {%- when 'image', 'image-overlay' -%}
+                {%- liquid
+                  assign column_inner_class = 'column__inner'
+                  assign is_image_overlay = false
+                  if block.type == 'image-overlay'
+                    assign is_image_overlay = true
+                    assign column_inner_class = column_inner_class | append: ' frame'
+                  endif
+                -%}
                 <div class="grid-item"
                   {{ block_style }}
                   {% if enable_slider %}
                     data-grid-item
                   {% endif %}
-                  {{ block.shopify_attributes }}
-                >
-                  <div class="column__inner"
+                  {{ block.shopify_attributes }}>
+                  {% if block.settings.button_url != blank and block.settings.button_text == blank %}
+                    <a href="{{ block.settings.button_url | default: '#' }}" aria-label="{{ image.alt | default: title | default: text | strip_html | escape }}">
+                  {% endif %}
+                  <div class="{{ column_inner_class }}"
                     data-aos="hero"
                     data-aos-anchor="{{ animation_anchor }}"
                     data-aos-order="{{ animation_order }}">
-                    <div class="column__image{{ image_shape_class }}" data-column-image>
+                    <div class="column__image{{ image_shape_class }}{% if is_image_overlay %} frame__item{% endif %}" data-column-image>
                       {%- liquid
                         capture column_image
                           assign class_desktop = ''
@@ -271,49 +308,56 @@
                         endcapture
                       -%}
 
-                      {%- if block.settings.button_url != blank and button_text == blank -%}
-                        <a href="{{ block.settings.button_url }}" aria-label="{{ image.alt | default: title | default: text | strip_html | escape }}">
-                          {{ column_image }}
-                        </a>
-                      {%- else -%}
                         {{ column_image }}
-                      {%- endif -%}
+                        {%- if opacity_overlay -%}
+                          <div class="image-overlay"></div>
+                        {%- endif -%}
+
                     </div>
 
-                    <div class="column__content">
-                      {%- if title != blank -%}
-                        {%- liquid
-                          assign heading_tag = 'h2'
-
-                          unless block.settings.heading_tag == 'automatic' or block.settings.heading_tag == blank
-                            assign heading_tag = block.settings.heading_tag
-                          endunless
-                        -%}
-
-                        <{{ heading_tag }} class="column__heading {{ block.settings.heading_font_size }}">
-                          {{- title -}}
-                        </{{ heading_tag }}>
+                    <div class="column__content{% if is_image_overlay %} {{ block.settings.alignment }} frame__item{% endif %}">
+                      {%- if is_image_overlay -%}
+                      <div class="column__content-inner{% if text_underlay %} backdrop--radial{% endif %}">
                       {%- endif -%}
+                        {%- if title != blank -%}
+                          {%- liquid
+                            assign heading_tag = 'h2'
 
-                      {%- if text != blank -%}
-                        <div class="column__text rte {{ block.settings.text_font_size }}">
-                          {{- text -}}
-                        </div>
-                      {%- endif -%}
+                            unless block.settings.heading_tag == 'automatic' or block.settings.heading_tag == blank
+                              assign heading_tag = block.settings.heading_tag
+                            endunless
+                          -%}
 
-                      {%- if button_text != blank -%}
-                        <div class="column__btn">
-                          <a href="{{ block.settings.button_url | default: '#!' }}" class="btn {{ button_style }} {{ block.settings.button_size }} {{ block.settings.button_type }}" aria-label="{{ button_text }}">
-                            <span>{{ button_text }}</span>
+                          <{{ heading_tag }} class="column__heading {{ block.settings.heading_font_size }}">
+                            {{- title -}}
+                          </{{ heading_tag }}>
+                        {%- endif -%}
 
-                            {%- if block.settings.show_arrow -%}
-                              {%- render 'icon-arrow-right' -%}
-                            {%- endif -%}
-                          </a>
-                        </div>
+                        {%- if text != blank -%}
+                          <div class="column__text rte {{ block.settings.text_font_size }}">
+                            {{- text -}}
+                          </div>
+                        {%- endif -%}
+
+                        {%- if button_text != blank -%}
+                          <div class="column__btn">
+                            <a href="{{ block.settings.button_url | default: '#!' }}" class="btn {{ button_style }} {{ block.settings.button_size }} {{ block.settings.button_type }}" aria-label="{{ button_text }}">
+                              <span>{{ button_text }}</span>
+
+                              {%- if block.settings.show_arrow -%}
+                                {%- render 'icon-nav-arrow-right' -%}
+                              {%- endif -%}
+                            </a>
+                          </div>
+                        {%- endif -%}
+                      {%- if is_image_overlay -%}
+                      </div>
                       {%- endif -%}
                     </div>
                   </div>
+                  {% if block.settings.button_url != blank and block.settings.button_text == blank %}
+                  </a>
+                  {% endif %}
                 </div>
 
               {%- when 'icon' -%}
@@ -420,7 +464,7 @@
                             <span>{{ button_text }}</span>
 
                             {%- if block.settings.show_arrow -%}
-                              {%- render 'icon-arrow-right' -%}
+                              {%- render 'icon-nav-arrow-right' -%}
                             {%- endif -%}
                           </a>
                         </div>
@@ -466,13 +510,26 @@
                   endif
                 -%}
 
+                {%- if settings.quickview_enable -%}
+                  <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
+                {%- endif -%}
+
+                {%- if show_recently_viewed_indicator -%}
+                  <script src="{{ 'grid-item.js' | asset_url }}" defer></script>
+                {%- endif -%}
+
             {%- endcase -%}
           {%- endfor -%}
         </div>
       {%- endcapture -%}
 
       {%- if enable_slider -%}
-        <grid-slider align-arrows>
+        <grid-slider
+          align-arrows
+          {% unless all_widths_same %}
+            images-widths-different
+          {% endunless %}
+        >
           {{ columns_content }}
         </grid-slider>
       {%- else -%}

@@ -13,6 +13,9 @@
     <div data-api-upsell-items>
       {%- render 'cart-line-items', part: 'upsell-items' -%}
     </div>
+    <div data-api-bundle-items>
+      {%- render 'cart-line-items', part: 'bundle-items' -%}
+    </div>
   {%- else -%}
     {% comment %}
       The cart is empty

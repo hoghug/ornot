@@ -1,1 +1,605 @@
-{"sections":{"section_hero_t4phQQ":{"type":"section-hero","disabled":true,"settings":{"image_1":"{{ product.metafields.my_fields.hero_header_image.value }}","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-center-desktop","content_width":50,"mobile_image":"shopify:\/\/shop_images\/TransparentLineThin_c68a9c99-40f9-4a8b-abbe-2d9d16677ec6.gif","mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"section_hero_K97rPG":{"type":"section-hero","blocks":{"heading_xjYhJg":{"type":"heading","settings":{"title":"4 POCKETS, MANY OPTIONS","heading_font_size":"heading-large","heading_tag":"automatic"}},"text_ByLyjV":{"type":"text","settings":{"text":"<p>Flexible dressing options. wear them with a jersey, trail shirt, our favorite fleece, or a jacket.<\/p>","text_font_size":"body-large"}}},"block_order":["heading_xjYhJg","text_ByLyjV"],"settings":{"image_1":"shopify:\/\/shop_images\/WOMENS-_DROPTAIL_UNCTION_BANNER_c496998f-9927-4091-8a60-38a305c8de8f.jpg","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-left-desktop","content_width":50,"mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-left-mobile","color_scheme":"scheme-2","show_text_background":false,"overlay_opacity":50,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"main":{"type":"product","blocks":{"title":{"type":"title","settings":{"subheading_option":"none","heading_font_size":"heading-medium","padding_bottom":8}},"text_xY8whh":{"type":"text","disabled":true,"settings":{"title":"","heading_font_size":"body-medium","text":"<p>{{ product.metafields.custom.tagline | metafield_tag }}<\/p>","text_font_size":"body-medium","text_alignment":"text-left","layout":"left","padding_bottom":16}},"junip_product_reviews_ugc_junip_product_summary_46cMCr":{"type":"shopify:\/\/apps\/junip\/blocks\/junip-product-summary\/dc14f5a8-ed15-41b1-ad08-cfba23f9789b","settings":{"product":"{{product}}"}},"price":{"type":"price","settings":{"text_font_size":"body-x-large","padding_bottom":16}},"siblings_6N6EiR":{"type":"siblings","settings":{"siblings_collection":"{{ product.metafields.theme.siblings.value }}","sibling_color":"{{ product.metafields.theme.sibling_color.value }}","padding_bottom":16}},"variants":{"type":"variants","settings":{"info_page":"","size_chart_style":"text","subscriptions_enable_selectors":false,"padding_bottom":16}},"text_YaA3iH":{"type":"text","settings":{"title":"{{ product.metafields.custom.extra_product_text.value }}","heading_font_size":"body-medium","text":"","text_font_size":"body-medium","text_alignment":"text-left","layout":"left","padding_bottom":16}},"pickup":{"type":"pickup","settings":{"padding_bottom":32}},"buttons":{"type":"buttons","settings":{"show_quantity":false,"button_type":"btn--primary","button_style":"btn--solid","show_payment_button":false,"button_type_dynamic":"btn--secondary","button_style_dynamic":"btn--solid","show_gift_card_recipient":false,"padding_bottom":32}},"accordion_wVm6kG":{"type":"accordion","settings":{"show_description":true,"show_read_more":false,"default_open":true,"heading":"DESCRIPTION","text":"","padding_bottom":0}},"accordion_q78G3M":{"type":"accordion","settings":{"show_description":false,"show_read_more":false,"default_open":false,"heading":"FEATURES","text":"<p>{{ product.metafields.custom.product_features | metafield_tag }}<\/p>","padding_bottom":0}},"accordion_yaHHGy":{"type":"accordion","settings":{"show_description":false,"show_read_more":false,"default_open":false,"heading":"SHIPPING, EXCHANGES, AND RETURNS","text":"<p>· Most orders will ship within 48 hours from our warehouse located in San Diego. Orders are processed Monday - Friday during normal business hours.<\/p><p>· Free (and easy) exchanges, we want you in the correct size.<\/p><p>· 30-day return window.<\/p><p>· Sale items are eligible for exchanges and store credit only.<\/p>","padding_bottom":0}},"accordion_iGRQkG":{"type":"accordion","settings":{"show_description":false,"show_read_more":false,"default_open":false,"heading":"1 YEAR WARRANTY","text":"<p>· Our clothing is made by hand and made to last. We stand by our construction and fabrics and offer a 1-year warranty against manufacturing defects. The most sustainable clothing is the kind that lasts many seasons. Need a repair? Questions? <a href=\"mailto:info@ornotbike.com\">Email us<\/a>, we’re pretty good at typing.<\/p><p>· Crash Replacement Assistance - We offer a discounted replacement if you happen to fall and destroy your clothing. (We recommend that you don’t use this)<\/p>","padding_bottom":0}},"upsell":{"type":"upsell","disabled":true,"settings":{"upsell_product":"","upsell_product_list":["handlebar-bag-ecopak-all-white","mens-micro-climate-jacket-azul","block-sock-prism"],"show_available_upsell_only":true,"layout":"stacked","autoplay":false,"autoplay_speed":8,"bg_color":"","padding_bottom":16}},"divider_1":{"type":"divider","disabled":true,"settings":{"show_line":true,"padding_bottom":16}},"features_p9gq4m":{"type":"features","disabled":true,"settings":{"icon_name":"icon-award","icon_size":20,"title":"Feature","text_font_size":"body-medium","text":"<p>This content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>","bg_color":"#f7f9fa","color":"#212121","padding_bottom":16}}},"block_order":["title","text_xY8whh","junip_product_reviews_ugc_junip_product_summary_46cMCr","price","siblings_6N6EiR","variants","text_YaA3iH","pickup","buttons","accordion_wVm6kG","accordion_q78G3M","accordion_yaHHGy","accordion_iGRQkG","upsell","divider_1","features_p9gq4m"],"custom_css":[],"settings":{"product_sticky_enable":true,"variant_image_scroll":true,"show_cart_bar":false,"enable_zoom":false,"enable_video_looping":true,"image_layout":"grid-1","image_size":"normal","mobile_image_style":"thumbs","color_scheme":"","padding_top":25,"padding_bottom":30}},"section_hero_HA9yBc":{"type":"section-hero","disabled":true,"settings":{"image_1":"shopify:\/\/shop_images\/CARGO-VS-WORK-bib.jpg","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-center-desktop","content_width":50,"mobile_image":"shopify:\/\/shop_images\/CARGO-VS-WORK-bib-_Recovered_26ea62f7-0b7b-4f20-b9cb-e2f86db6d3ea.jpg","mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"section_hero_cBpzVB":{"type":"section-hero","disabled":true,"settings":{"image_1":"shopify:\/\/shop_images\/CARGO-VS-WORK-bib-_work-bib.jpg","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-center-desktop","content_width":50,"mobile_image":"shopify:\/\/shop_images\/CARGO-VS-WORK-bib-1x1_d00e8539-09e1-480d-9c5b-9dba103e55af.jpg","mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"section_hero_mFmGmX":{"type":"section-hero","blocks":{"heading_JnVTxh":{"type":"heading","settings":{"title":"\"BEST CARGO BIB\"","heading_font_size":"heading-x-large","heading_tag":"automatic"}},"text_QGnjcV":{"type":"text","settings":{"text":"<p>- BICYCLING MAGAZINE, ISSUE 4, 2022<\/p>","text_font_size":"body-large"}}},"block_order":["heading_JnVTxh","text_QGnjcV"],"disabled":true,"settings":{"image_1":"shopify:\/\/shop_images\/BIKE_MAG_8a10d40e-76fe-4187-91b6-5366c51e0608.jpg","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-right-desktop","content_width":50,"mobile_image":"shopify:\/\/shop_images\/cycling_mag_bibs_review.jpg","mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"scheme-2","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"section_hero_AXLMwy":{"type":"section-hero","disabled":true,"settings":{"image_1":"shopify:\/\/shop_images\/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.png","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-center-desktop","content_width":50,"mobile_image":"shopify:\/\/shop_images\/CN_1FTP_BannerMobile.png","mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"1706135782d1067a10":{"type":"apps","blocks":{"junip_product_reviews_ugc_junip_product_review_9ByW79":{"type":"shopify:\/\/apps\/junip\/blocks\/junip-product-review\/dc14f5a8-ed15-41b1-ad08-cfba23f9789b","settings":{"product":"{{product}}"}}},"block_order":["junip_product_reviews_ugc_junip_product_review_9ByW79"],"settings":{"include_margins":false}},"section_hero_8nY6LC":{"type":"section-hero","settings":{"image_1":"{{ product.metafields.custom.web_size_chart.value }}","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-center-desktop","content_width":50,"mobile_image":"{{ product.metafields.custom.mobile_size_chart.value }}","mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"section_custom_content_kgVBJE":{"type":"section-custom-content","blocks":{"image_LYC9qC":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Ornot_MarinoRidingShirt_Squares-17.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}},"text_JddKwq":{"type":"text","settings":{"subheading":"","title":"YOU COULD WEAR A JERSEY, ORNOT","heading_font_size":"heading-large","text":"<p>These bibs perform just like \"normal\" bibs with no pockets. The great thing about cargo bibs is the flexibility they provide. Flexibility to spread your items throughout more pockets, or to skip a regular jersey in favor of a trail shirt or pull-over. Ever fumble with your phone or wallet when getting coffee? Simply slide them in the left or right cargo pockets. <\/p><p><\/p><p><\/p><p>We admit that we were cargo bib skeptics in the beginning, especially because we are all about the bar bag. But after spending time with these, paired with a bar bag... we are sold. <\/p>","text_font_size":"body-medium","button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"","color":"","heading_tag":"automatic"}}},"block_order":["image_LYC9qC","text_JddKwq"],"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":false,"color_scheme":"","padding_top":0,"padding_bottom":0}},"section_custom_content_3Hy8cr":{"type":"section-custom-content","blocks":{"text_DaTmMk":{"type":"text","settings":{"subheading":"","title":"SUSTAINABILITY","heading_font_size":"heading-large","text":"<p>When designing these cargo bibs, we sourced sustainable and recycled content when possible. The face fabric is a Oeko-Tex certified knit and the endurance chamois is made using recycled content. The shorts are sewn in a facility powered by sustainable energy via rooftop solar panels. <\/p><p><\/p><p>Every product we make is Climate Neutral Certified. This means that we measure, reduce, and remove all of our carbon emissions. Learn more about it <a href=\"https:\/\/www.ornotbike.com\/pages\/climate-neutral\" title=\"https:\/\/www.ornotbike.com\/pages\/climate-neutral\">here<\/a>.<\/p>","text_font_size":"body-medium","button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"","color":"","heading_tag":"automatic"}},"image_Mw7iUH":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/mem-sale-1x1_9d475a68-4c5e-4d00-a837-c75830de8610.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}}},"block_order":["text_DaTmMk","image_Mw7iUH"],"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":true,"color_scheme":"","padding_top":0,"padding_bottom":0}},"section_hero_tiMVb7":{"type":"section-hero","disabled":true,"settings":{"image_1":"shopify:\/\/shop_images\/nuyarn-homepage_cb7afbd9-731c-467a-b9bc-25ed75053f08.jpg","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-center-desktop","content_width":50,"mobile_image":"shopify:\/\/shop_images\/TNUT0544.jpg","mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"related":{"type":"related","blocks":{"related":{"type":"related","settings":{"product_recommendations_heading":"Related products","limit":6}},"recent":{"type":"recent","settings":{"product_recently_heading":"Recently viewed","product_recently_limit":4}}},"block_order":["related","recent"],"custom_css":[".product-item--swatches {padding: 0px 10px 0px 10px;}",".product-item--centered {padding: 0px 10px 0px 10px;}"],"settings":{"enable_tabs":true,"heading_alignment":"text-center","heading_font_size":"heading-small","layout_mobile":"slider","color_scheme":"","padding_top":30,"padding_bottom":0}}},"order":["section_hero_t4phQQ","section_hero_K97rPG","main","section_hero_HA9yBc","section_hero_cBpzVB","section_hero_mFmGmX","section_hero_AXLMwy","1706135782d1067a10","section_hero_8nY6LC","section_custom_content_kgVBJE","section_custom_content_3Hy8cr","section_hero_tiMVb7","related"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section_hero_t4phQQ": {
+      "type": "section-hero",
+      "disabled": true,
+      "settings": {
+        "image_1": "{{ product.metafields.my_fields.hero_header_image.value }}",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/TransparentLineThin_c68a9c99-40f9-4a8b-abbe-2d9d16677ec6.gif",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_hero_K97rPG": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_xjYhJg": {
+          "type": "heading",
+          "settings": {
+            "title": "4 POCKETS, MANY OPTIONS",
+            "heading_font_size": "heading-large",
+            "heading_tag": "automatic"
+          }
+        },
+        "text_ByLyjV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Flexible dressing options. wear them with a jersey, trail shirt, our favorite fleece, or a jacket.</p>",
+            "text_font_size": "body-large"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xjYhJg",
+        "text_ByLyjV"
+      ],
+      "settings": {
+        "image_1": "shopify://shop_images/WOMENS-_DROPTAIL_UNCTION_BANNER_c496998f-9927-4091-8a60-38a305c8de8f.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-left-desktop",
+        "content_width": 50,
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-left-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "main": {
+      "type": "product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "subheading_option": "none",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 8
+          }
+        },
+        "text_xY8whh": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "heading_font_size": "body-medium",
+            "text": "<p>{{ product.metafields.custom.tagline | metafield_tag }}</p>",
+            "text_font_size": "body-medium",
+            "text_alignment": "text-left",
+            "layout": "left",
+            "padding_bottom": 16
+          }
+        },
+        "junip_product_reviews_ugc_junip_product_summary_46cMCr": {
+          "type": "shopify://apps/junip/blocks/junip-product-summary/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "text_font_size": "body-x-large",
+            "padding_bottom": 16
+          }
+        },
+        "siblings_6N6EiR": {
+          "type": "siblings",
+          "settings": {
+            "siblings_collection": "{{ product.metafields.theme.siblings.value }}",
+            "sibling_color": "{{ product.metafields.theme.sibling_color.value }}",
+            "padding_bottom": 16
+          }
+        },
+        "variants": {
+          "type": "variants",
+          "settings": {
+            "info_page": "",
+            "size_chart_style": "text",
+            "padding_bottom": 16
+          }
+        },
+        "text_YaA3iH": {
+          "type": "text",
+          "settings": {
+            "title": "{{ product.metafields.custom.extra_product_text.value }}",
+            "heading_font_size": "body-medium",
+            "text": "",
+            "text_font_size": "body-medium",
+            "text_alignment": "text-left",
+            "layout": "left",
+            "padding_bottom": 16
+          }
+        },
+        "pickup": {
+          "type": "pickup",
+          "settings": {
+            "padding_bottom": 32
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "show_quantity": false,
+            "button_type": "btn--primary",
+            "button_style": "btn--solid",
+            "button_type_dynamic": "btn--secondary",
+            "button_style_dynamic": "btn--solid",
+            "show_gift_card_recipient": false,
+            "padding_bottom": 32
+          }
+        },
+        "accordion_wVm6kG": {
+          "type": "accordion",
+          "settings": {
+            "show_description": true,
+            "show_read_more": false,
+            "default_open": true,
+            "heading": "DESCRIPTION",
+            "text": "",
+            "padding_bottom": 0
+          }
+        },
+        "accordion_q78G3M": {
+          "type": "accordion",
+          "settings": {
+            "show_description": false,
+            "show_read_more": false,
+            "default_open": false,
+            "heading": "FEATURES",
+            "text": "<p>{{ product.metafields.custom.product_features | metafield_tag }}</p>",
+            "padding_bottom": 0
+          }
+        },
+        "accordion_yaHHGy": {
+          "type": "accordion",
+          "settings": {
+            "show_description": false,
+            "show_read_more": false,
+            "default_open": false,
+            "heading": "SHIPPING, EXCHANGES, AND RETURNS",
+            "text": "<p>· Most orders will ship within 48 hours from our warehouse located in San Diego. Orders are processed Monday - Friday during normal business hours.</p><p>· Free (and easy) exchanges, we want you in the correct size.</p><p>· 30-day return window.</p><p>· Sale items are eligible for exchanges and store credit only.</p>",
+            "padding_bottom": 0
+          }
+        },
+        "accordion_iGRQkG": {
+          "type": "accordion",
+          "settings": {
+            "show_description": false,
+            "show_read_more": false,
+            "default_open": false,
+            "heading": "1 YEAR WARRANTY",
+            "text": "<p>· Our clothing is made by hand and made to last. We stand by our construction and fabrics and offer a 1-year warranty against manufacturing defects. The most sustainable clothing is the kind that lasts many seasons. Need a repair? Questions? <a href=\"mailto:info@ornotbike.com\">Email us</a>, we’re pretty good at typing.</p><p>· Crash Replacement Assistance - We offer a discounted replacement if you happen to fall and destroy your clothing. (We recommend that you don’t use this)</p>",
+            "padding_bottom": 0
+          }
+        },
+        "upsell": {
+          "type": "upsell",
+          "disabled": true,
+          "settings": {
+            "upsell_product": "",
+            "upsell_product_list": [
+              "handlebar-bag-ecopak-all-white",
+              "mens-micro-climate-jacket-azul",
+              "block-sock-prism"
+            ],
+            "show_available_upsell_only": true,
+            "layout": "stacked",
+            "autoplay": false,
+            "autoplay_speed": 8,
+            "bg_color": "",
+            "padding_bottom": 16
+          }
+        },
+        "divider_1": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_line": true,
+            "padding_bottom": 16
+          }
+        },
+        "features_p9gq4m": {
+          "type": "features",
+          "disabled": true,
+          "settings": {
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "title": "Feature",
+            "text_font_size": "body-medium",
+            "text": "<p>This content type will accept <strong>rich text</strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.</p>",
+            "bg_color": "#f7f9fa",
+            "color": "#212121",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "text_xY8whh",
+        "junip_product_reviews_ugc_junip_product_summary_46cMCr",
+        "price",
+        "siblings_6N6EiR",
+        "variants",
+        "text_YaA3iH",
+        "pickup",
+        "buttons",
+        "accordion_wVm6kG",
+        "accordion_q78G3M",
+        "accordion_yaHHGy",
+        "accordion_iGRQkG",
+        "upsell",
+        "divider_1",
+        "features_p9gq4m"
+      ],
+      "custom_css": [],
+      "settings": {
+        "product_sticky_enable": true,
+        "variant_image_scroll": true,
+        "show_cart_bar": false,
+        "enable_zoom": false,
+        "enable_video_looping": true,
+        "image_layout": "grid-1",
+        "image_size": "normal",
+        "mobile_image_style": "thumbs",
+        "color_scheme": "",
+        "padding_top": 25,
+        "padding_bottom": 30
+      }
+    },
+    "section_hero_HA9yBc": {
+      "type": "section-hero",
+      "disabled": true,
+      "settings": {
+        "image_1": "shopify://shop_images/CARGO-VS-WORK-bib.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/CARGO-VS-WORK-bib-_Recovered_26ea62f7-0b7b-4f20-b9cb-e2f86db6d3ea.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_hero_cBpzVB": {
+      "type": "section-hero",
+      "disabled": true,
+      "settings": {
+        "image_1": "shopify://shop_images/CARGO-VS-WORK-bib-_work-bib.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/CARGO-VS-WORK-bib-1x1_d00e8539-09e1-480d-9c5b-9dba103e55af.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_hero_mFmGmX": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_JnVTxh": {
+          "type": "heading",
+          "settings": {
+            "title": "\"BEST CARGO BIB\"",
+            "heading_font_size": "heading-x-large",
+            "heading_tag": "automatic"
+          }
+        },
+        "text_QGnjcV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>- BICYCLING MAGAZINE, ISSUE 4, 2022</p>",
+            "text_font_size": "body-large"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JnVTxh",
+        "text_QGnjcV"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_1": "shopify://shop_images/BIKE_MAG_8a10d40e-76fe-4187-91b6-5366c51e0608.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-right-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/cycling_mag_bibs_review.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_hero_AXLMwy": {
+      "type": "section-hero",
+      "disabled": true,
+      "settings": {
+        "image_1": "shopify://shop_images/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.png",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/CN_1FTP_BannerMobile.png",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "1706135782d1067a10": {
+      "type": "apps",
+      "blocks": {
+        "junip_product_reviews_ugc_junip_product_review_9ByW79": {
+          "type": "shopify://apps/junip/blocks/junip-product-review/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "junip_product_reviews_ugc_junip_product_review_9ByW79"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "section_hero_8nY6LC": {
+      "type": "section-hero",
+      "settings": {
+        "image_1": "{{ product.metafields.custom.web_size_chart.value }}",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "{{ product.metafields.custom.mobile_size_chart.value }}",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_custom_content_kgVBJE": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_LYC9qC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_MarinoRidingShirt_Squares-17.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_JddKwq": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "YOU COULD WEAR A JERSEY, ORNOT",
+            "heading_font_size": "heading-large",
+            "text": "<p>These bibs perform just like \"normal\" bibs with no pockets. The great thing about cargo bibs is the flexibility they provide. Flexibility to spread your items throughout more pockets, or to skip a regular jersey in favor of a trail shirt or pull-over. Ever fumble with your phone or wallet when getting coffee? Simply slide them in the left or right cargo pockets. </p><p></p><p></p><p>We admit that we were cargo bib skeptics in the beginning, especially because we are all about the bar bag. But after spending time with these, paired with a bar bag... we are sold. </p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_LYC9qC",
+        "text_JddKwq"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_3Hy8cr": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_DaTmMk": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "SUSTAINABILITY",
+            "heading_font_size": "heading-large",
+            "text": "<p>When designing these cargo bibs, we sourced sustainable and recycled content when possible. The face fabric is a Oeko-Tex certified knit and the endurance chamois is made using recycled content. The shorts are sewn in a facility powered by sustainable energy via rooftop solar panels. </p><p></p><p>Every product we make is Climate Neutral Certified. This means that we measure, reduce, and remove all of our carbon emissions. Learn more about it <a href=\"https://www.ornotbike.com/pages/climate-neutral\" title=\"https://www.ornotbike.com/pages/climate-neutral\">here</a>.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
+        "image_Mw7iUH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mem-sale-1x1_9d475a68-4c5e-4d00-a837-c75830de8610.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_DaTmMk",
+        "image_Mw7iUH"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_hero_tiMVb7": {
+      "type": "section-hero",
+      "disabled": true,
+      "settings": {
+        "image_1": "shopify://shop_images/nuyarn-homepage_cb7afbd9-731c-467a-b9bc-25ed75053f08.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/TNUT0544.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "related": {
+      "type": "related",
+      "blocks": {
+        "related": {
+          "type": "related",
+          "settings": {
+            "product_recommendations_heading": "Related products"
+          }
+        },
+        "recent": {
+          "type": "recent",
+          "settings": {
+            "product_recently_heading": "Recently viewed"
+          }
+        }
+      },
+      "block_order": [
+        "related",
+        "recent"
+      ],
+      "custom_css": [
+        ".product-item--swatches {padding: 0px 10px 0px 10px;}",
+        ".product-item--centered {padding: 0px 10px 0px 10px;}"
+      ],
+      "settings": {
+        "enable_tabs": true,
+        "heading_alignment": "text-center",
+        "heading_font_size": "heading-small",
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 30,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "section_hero_t4phQQ",
+    "section_hero_K97rPG",
+    "main",
+    "section_hero_HA9yBc",
+    "section_hero_cBpzVB",
+    "section_hero_mFmGmX",
+    "section_hero_AXLMwy",
+    "1706135782d1067a10",
+    "section_hero_8nY6LC",
+    "section_custom_content_kgVBJE",
+    "section_custom_content_3Hy8cr",
+    "section_hero_tiMVb7",
+    "related"
+  ]
+}

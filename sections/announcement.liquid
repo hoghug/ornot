@@ -31,16 +31,9 @@
       ]
     },
     {
-      "type": "header",
-      "content": "Slider"
-    },
-    {
-      "type": "paragraph",
-      "content": "Applies only if Layout is set to Slider"
-    },
-    {
       "type": "range",
       "id": "slider_speed",
+      "visible_if": "{{ section.settings.layout == 'slider' }}",
       "label": "Autoplay speed",
       "unit": "sec",
       "min": 5,
@@ -51,6 +44,7 @@
     {
       "type": "select",
       "id": "text_alignment",
+      "visible_if": "{{ section.settings.layout == 'slider' }}",
       "label": "Text alignment",
       "default": "center",
       "options": [
@@ -67,20 +61,14 @@
     {
       "type": "checkbox",
       "id": "show_arrows",
+      "visible_if": "{{ section.settings.layout == 'slider' }}",
       "label": "Show arrows",
       "default": false
     },
     {
-      "type": "header",
-      "content": "Scrolling text"
-    },
-    {
-      "type": "paragraph",
-      "content": "Applies only if Layout is set to Scrolling text"
-    },
-    {
       "type": "range",
       "id": "marquee_speed",
+      "visible_if": "{{ section.settings.layout == 'marquee' }}",
       "label": "Autoplay speed",
       "unit": "%",
       "min": 50,
@@ -91,6 +79,7 @@
     {
       "type": "range",
       "id": "message_spacing",
+      "visible_if": "{{ section.settings.layout == 'marquee' }}",
       "label": "Space between messages",
       "default": 10,
       "min": 5,
@@ -129,7 +118,8 @@
     {
       "type": "color",
       "id": "border_color",
-      "label": "Border"
+      "label": "Border",
+      "alpha": true
     },
     {
       "type": "header",

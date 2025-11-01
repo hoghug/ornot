@@ -107,7 +107,7 @@
                     <span>{{ section.settings.button | escape }}</span>
 
                     {%- if section.settings.show_arrow -%}
-                      {%- render 'icon-arrow-right' -%}
+                      {%- render 'icon-nav-arrow-right' -%}
                     {%- endif -%}
                   </a>
                 </div>
@@ -189,7 +189,7 @@
       "type": "image_picker",
       "id": "image",
       "label": "Image",
-      "info": "Displayed if the map isn't loaded. 3200 x 1200px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+      "info": "Displayed if the map isn't loaded. 3200 x 1200px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
     },
     {
       "type": "header",
@@ -407,7 +407,8 @@
   ],
   "presets": [
     {
-      "name": "Map"
+      "name": "Map",
+      "category": "Storytelling"
     }
   ],
   "disabled_on": {

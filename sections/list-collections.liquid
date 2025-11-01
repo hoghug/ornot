@@ -16,6 +16,7 @@
 
   assign excluded_collections_strict = settings.exclude_collections_strict | split: ','
   assign excluded_collections = settings.exclude_collections_contain | split: ','
+  assign show_recently_viewed_indicator = settings.show_recently_viewed_indicator
 -%}
 
 {%- style -%}
@@ -29,6 +30,10 @@
     --COLUMNS-MOBILE: {{ columns_mobile }};
   }
 {%- endstyle -%}
+
+{%- if show_recently_viewed_indicator -%}
+  <script src="{{ 'grid-item.js' | asset_url }}" defer></script>
+{%- endif -%}
 
 <div
   class="index-list-collections section-padding {{ color_scheme }}"
@@ -256,7 +261,7 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image",
-          "info": "Replace the collection image with a custom image. 2000 x 1400px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "Replace the collection image with a custom image. 2000 x 1400px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         }
       ]
     }

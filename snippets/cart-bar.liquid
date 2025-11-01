@@ -15,15 +15,17 @@
   endif
 
   assign any_variant_available = false
-  for variant in product.variants
-    if variant.available
-      assign any_variant_available = true
-      break
-    endif
+  for option in product.options_with_values
+    for option_value in option.values
+      if option_value.available
+        assign any_variant_available = true
+        break
+      endif
+    endfor
   endfor
 -%}
 
-{% if product.selling_plan_groups.size > 0 and blocks_form.size > 0 and blocks_form[0].settings.subscriptions_enable_selectors %}
+{% if product.selling_plan_groups.size > 0 and blocks_form.size > 0 %}
   {%- assign selling_plan_hide = false -%}
 {% endif %}
 
@@ -31,13 +33,29 @@
   {%- assign button_add = true -%}
 {%- endif -%}
 
-<div id="cart-bar" class="cart-bar">
-  <div class="cart-bar__form__wrapper form__wrapper{% if button_add and current_variant.available != true %} variant--soldout{% endif %}{% if settings.show_newsletter %} show-product-notification{% endif %}{% unless any_variant_available %} all-variants--soldout{% endunless %}" data-form-wrapper>
+{%- style -%}
+  :root {
+    --cart-bar-height: 80px;
+  }
+{%- endstyle -%}
+
+<script src="{{ 'cart-bar.js' | asset_url }}" defer="defer"></script>
+
+<cart-bar id="CartBar-{{ section.id }}" class="cart-bar">
+  <div
+    class="cart-bar__form__wrapper form__wrapper{% if button_add and current_variant.available != true %} variant--soldout{% endif %}{% if settings.show_newsletter %} show-product-notification{% endif %}{% unless any_variant_available %} all-variants--soldout{% endunless %}"
+    data-form-wrapper
+  >
     <div class="cart-bar__info">
       <h4 class="cart-bar__product__title">{{ product.title | strip_html }}</h4>
 
-      <div class="body-small cart-bar__product__price product__price" data-price-wrapper>
-        <span data-product-price {% if current_variant.compare_at_price > current_variant.price %} class="product__price--sale"{% endif %}>
+      <div class="body-small cart-bar__product__price product__price">
+        <span
+          data-product-price
+          {% if current_variant.compare_at_price > current_variant.price %}
+            class="product__price--sale"
+          {% endif %}
+        >
           {%- if current_variant.price == 0 -%}
             {{ 'general.money.free' | t }}
           {%- else -%}
@@ -47,7 +65,7 @@
 
         {% if product.compare_at_price_max > product.price %}
           <span class="visually-hidden" data-compare-text>{{ 'products.product.regular_price' | t }}</span>
-          <s class="product__price--strike" data-compare-price>
+          <s class="product__price--strike">
             {% if current_variant.compare_at_price > current_variant.price %}
               {{ current_variant_compare_at_price }}
             {% endif %}
@@ -58,11 +76,24 @@
 
     <div class="cart-bar__form">
       <div class="cart-bar__submit product__submit product__submit--spb">
-        <button type="button"
+        <button
+          type="button"
           class="btn btn--primary btn--outline product__submit__add{% unless button_add %} product__submit__add--default{% endunless %}"
-          {% if button_add %} data-add-to-cart-bar{% elsif any_variant_available %} data-cart-bar-scroll{% endif %}
-          {% if any_variant_available == false or button_add and current_variant.available != true %} disabled="disabled"{% endif %}>
-          <span class="btn__text"{% if button_add %} data-add-to-cart-text{% endif %}>
+          {% if button_add %}
+            data-cart-bar-add-to-cart
+          {% elsif any_variant_available %}
+            data-cart-bar-scroll
+          {% endif %}
+          {% if any_variant_available == false or button_add and current_variant.available != true %}
+            disabled="disabled"
+          {% endif %}
+        >
+          <span
+            class="btn__text"
+            {% if button_add %}
+              data-add-to-cart-text
+            {% endif %}
+          >
             {%- if button_add -%}
               {%- assign preorder_check = false -%}
 
@@ -100,15 +131,21 @@
 
         {%- if settings.show_newsletter -%}
           {%- assign newsletter_text = 'general.newsletter_form.newsletter_product_availability' | t -%}
-          {%- assign button_text = 'products.product.sold_out' | t | append: ' - ' | append: newsletter_text -%}
+          {%- assign newsletter_button_text = 'products.product.sold_out'
+            | t
+            | append: ' - '
+            | append: newsletter_text
+          -%}
 
-          <button type="button"
+          <button
+            type="button"
             class="btn btn--primary btn--outline product__submit__add product__submit__add--default product__cart-bar-notification-button"
-            data-cart-bar-product-notification>
-            <span class="btn__text">{{ button_text }}</span>
+            data-notification-popup-button
+          >
+            <span class="btn__text">{{ newsletter_button_text }}</span>
           </button>
         {%- endif -%}
       </div>
     </div>
   </div>
-</div>
+</cart-bar>

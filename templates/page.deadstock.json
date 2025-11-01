@@ -1,1 +1,903 @@
-{"sections":{"section_hero_jidFMm":{"type":"section-hero","blocks":{"heading_347FkQ":{"type":"heading","disabled":true,"settings":{"title":"Business As Usual. ORNOT","heading_font_size":"heading-x-large","heading_tag":"automatic"}},"text_GKEXzd":{"type":"text","disabled":true,"settings":{"text":"<p><strong>MADE IN THE USA FROM  DEADSTOCK FABRIC  \/\/'DED,STAK\/\/<\/strong><\/p>","text_font_size":"body-large"}},"button_7zPFTX":{"type":"button","disabled":true,"settings":{"link_text":"View products","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false}}},"block_order":["heading_347FkQ","text_GKEXzd","button_7zPFTX"],"settings":{"image_2":"shopify:\/\/shop_images\/biz-as-usual.jpg","link":"","width":"wrapper--full","height":"four-fifty-height-hero","flex_align_desktop":"align--middle-center-desktop","content_width":68,"mobile_height":"screen-height-three-quarters--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"scheme-2","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"section_announcement_G3DD43":{"type":"section-announcement","blocks":{"text_pgmXii":{"type":"text","settings":{"text":"<p><strong>\/\/ SPECIAL PROJECTS \/\/<\/strong><\/p>","text_font_size":"body-medium","color":"","target_device_enabled":false,"target_device":"mobile"}},"text_x6mpMH":{"type":"text","settings":{"text":"","text_font_size":"body-small","color":"","target_device_enabled":false,"target_device":"mobile"}},"message_a6qTHC":{"type":"message","settings":{"show_wheel":false,"message":"\/\/\/\/  CUT & SEWN IN CALIFORNIA \/\/\/\/","text_font_size":"body-small","target_device_enabled":false,"target_device":"mobile"}},"text_rg7tUF":{"type":"text","settings":{"text":"","text_font_size":"body-small","color":"","target_device_enabled":false,"target_device":"mobile"}}},"block_order":["text_pgmXii","text_x6mpMH","message_a6qTHC","text_rg7tUF"],"name":"Scrolling text","settings":{"slider_speed":7,"text_alignment":"center","marquee_speed":100,"direction":"ticker-rtl","message_spacing":10,"show_border":false,"layout":"marquee","color_scheme":"","padding_top":0,"padding_bottom":0}},"section_text_with_products_A4XmWX":{"type":"section-text-with-products","blocks":{"image_eDKCEk":{"type":"image","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/Ornot_Mens_MissionShorts_MidnightBlue_07_740ea98a-f293-4f4c-9409-e96dec2c6faa.jpg","image_position":5,"aspect_ratio":1,"width":80,"mobile_aspect_ratio":1,"mobile_width":60}},"collection_UCbM9R":{"type":"collection","disabled":true,"settings":{"collection":"","image":"shopify:\/\/shop_images\/Ornot_Bottle_Clement_1.jpg","image_position":7,"aspect_ratio":1,"width":80,"mobile_aspect_ratio":1,"mobile_width":60}}},"block_order":["image_eDKCEk","collection_UCbM9R"],"disabled":true,"settings":{"subheading":"","heading":"MADE IN THE USA FROM  DEADSTOCK FABRIC","width":"wrapper","text_font_size_px_desktop":40,"text_align_desktop":"text-left","text_font_size_px_mobile":24,"text_align_mobile":"text-left--mobile","color_scheme":"scheme-1","padding_top":30,"padding_bottom":0}},"main":{"type":"main-page","disabled":true,"settings":{"subheading":"","show_title":true,"heading_font_size":"heading-large","show_content":true,"text_font_size":"body-medium","align_text":"text-left","width":"wrapper","color_scheme":"","padding_top":50,"padding_bottom":50,"heading_tag":"automatic"}},"section_rich_text_CARfLR":{"type":"section-rich-text","blocks":{"subheading_9acQwW":{"type":"subheading","disabled":true,"settings":{"subheading":"MADE IN THE USA FROM  DEADSTOCK FABRIC  \/\/'DED,STAK\/\/","padding_bottom":12}},"heading_NTeJx8":{"type":"heading","disabled":true,"settings":{"title":"The most sustainable option?","heading_font_size":"heading-medium","padding_bottom":0,"heading_tag":"automatic"}},"text_dUBk3j":{"type":"text","disabled":true,"settings":{"text":"<p>Wearing what you already have.<\/p>","text_font_size":"body-medium","padding_bottom":16}},"heading_d9BLNN":{"type":"heading","disabled":true,"settings":{"title":"THE second most sustainable?","heading_font_size":"heading-medium","padding_bottom":0,"heading_tag":"automatic"}},"text_fpFe9b":{"type":"text","disabled":true,"settings":{"text":"<p>Giving forgotten fabric a second life. That’s where our Special Projects come in.<\/p>","text_font_size":"body-medium","padding_bottom":28}},"text_YM7yQc":{"type":"text","disabled":true,"settings":{"text":"<p>We work with deadstock fabric—textiles that were overproduced, abandoned, or just never made it to the cutting table. Instead of letting it sit in a warehouse (or worse, a landfill), we turn it into something new. The catch? We only get one shot. Each roll of fabric is a creative puzzle—jersey? Hoodie? Something totally unexpected? Once it’s used up, it’s gone. No restocks, no do-overs.<\/p>","text_font_size":"body-medium","padding_bottom":16}},"buttons_t3paFc":{"type":"buttons","disabled":true,"settings":{"button_text":"Learn more","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"padding_bottom":16}}},"block_order":["subheading_9acQwW","heading_NTeJx8","text_dUBk3j","heading_d9BLNN","text_fpFe9b","text_YM7yQc","buttons_t3paFc"],"disabled":true,"settings":{"align_text":"text-left","width":"wrapper","color_scheme":"scheme-1","overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":56}},"section_custom_content_AyDzny":{"type":"section-custom-content","blocks":{"text_Jikqa8":{"type":"text","settings":{"subheading":"Introducing:","title":"SPECIAL PROJECTS","heading_font_size":"heading-large","text":"<p>One of the most sustainable things we can do? <strong>Use what already exists.<\/strong> That’s the concept behind Special Projects—limited-run garments made from premium deadstock fabrics, cut and sewn in California. When they're gone, they're gone. <\/p><p>Some of our most beloved pieces (remember that decadent merino? Or the original microgrid?) were born this way. It’s a sustainability win, a creative constraint, and a chance to make something out of something forgotten. <\/p>","text_font_size":"body-small","button_text":"Latest Special Projects","button_url":"shopify:\/\/collections\/special-projects","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"","color":"","heading_tag":"automatic"}},"image_EARKyB":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/FabricStoryOrnot.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"","overlay_opacity":0,"overlay_color":"","show_overlay_text":false,"link_text":"","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}}},"block_order":["text_Jikqa8","image_EARKyB"],"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":false,"color_scheme":"","padding_top":0,"padding_bottom":0}},"section_custom_content_jkJ6gB":{"type":"section-custom-content","blocks":{"image_rDfE8k":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/TNUT3195.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"","overlay_opacity":0,"overlay_color":"","show_overlay_text":false,"link_text":"","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}},"text_JKDkzQ":{"type":"text","settings":{"subheading":"\/'DED,STAAK\/","title":"DEADSTOCK FABRIC","heading_font_size":"heading-large","text":"<p>Deadstock—textiles that were overproduced, abandoned, or just never made it to the cutting table. Sometimes, a color runs off-spec, and that fabric becomes “deadstock.” Instead of letting it sit in a warehouse (or worse, a landfill), <strong>we turn it into something new.<\/strong> The catch? We only get one shot. One opportunity. <\/p><p>Deadstock isn’t just leftover fabric—it’s an invitation to make something unforgettable. That’s why we collaborate with <strong>Polartec®<\/strong>, the pioneers who redefined performance textiles and never stopped innovating.<\/p>","text_font_size":"body-small","button_text":"Latest Special Projects","button_url":"shopify:\/\/collections\/special-projects","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"","color":"","heading_tag":"automatic"}}},"block_order":["image_rDfE8k","text_JKDkzQ"],"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":false,"color_scheme":"","padding_top":0,"padding_bottom":0}},"section_custom_content_pxc3kc":{"type":"section-custom-content","blocks":{"text_MTXQhY":{"type":"text","settings":{"subheading":"IN PARTNERSHIP","title":"ORNOT x POLARTEC","heading_font_size":"heading-large","text":"<p>Great minds think alike—and by great minds, we mean anyone who sees the potential in leftover fabric. Polartec has been pioneering recycled textiles for years, which makes them a natural fit for our Special Projects. Whether it’s upcycling deadstock or reinventing performance fabrics, we’re both on a mission to <strong>make more out of what’s already here.<\/strong><br\/><br\/>As our partnership grows, so does our lineup of smarter, more responsible gear. Ride in it, geek out over it, or both.<\/p>","text_font_size":"body-small","button_text":"LEARN MORE","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"","color":"","heading_tag":"automatic"}},"image_ejCFH6":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Ornot_Mens_Micro_Grid_Olive_08_c7df03b4-476b-4cc4-87ee-c1a4657884f6.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"","overlay_opacity":0,"overlay_color":"","show_overlay_text":false,"link_text":"","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}}},"block_order":["text_MTXQhY","image_ejCFH6"],"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":true,"color_scheme":"","padding_top":0,"padding_bottom":0}},"section_custom_content_Y4Hh78":{"type":"section-custom-content","blocks":{"text_LrcwAR":{"type":"text","settings":{"subheading":"Introducing","title":"POLARTEC","heading_font_size":"heading-large","text":"<p>Polartec and the outdoors go together like bikes and snacks—so teaming up was a no-brainer.<\/p><p>With a shared commitment to sustainability, we're turning recycled and deadstock fabrics into high-performance gear, offsetting emissions, and keeping plastic out of landfills.<\/p><p>Polartec has a history of firsts—Soda-Bottle Green fleece, softshell revolutions, and fabrics that shed fewer microfibers. Now? Waterproofing made partly from plants. Science!<\/p><p>As our partnership grows, so does our lineup of smarter, more responsible gear. Ride in it, geek out over it, or both.<\/p>","text_font_size":"body-small","button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"","color":"","heading_tag":"automatic"}},"image_dWqaUz":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/pie-ride.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"","overlay_opacity":0,"overlay_color":"","show_overlay_text":false,"link_text":"","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}}},"block_order":["text_LrcwAR","image_dWqaUz"],"disabled":true,"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":false,"color_scheme":"","padding_top":0,"padding_bottom":0}},"section_custom_code_9eMerq":{"type":"section-custom-code","settings":{"code":"","width":"wrapper","color_scheme":"","padding_top":0,"padding_bottom":0}},"section_columns_FnTytU":{"type":"section-columns","blocks":{"image_nVeNVc":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Ornot_Lightweight_Base_Layer_DarkOlive_07.jpg","image_shape":"normal","title":"Delta","heading_font_size":"heading-small","text":"<p>Polartec Delta works <em>with<\/em> your body’s natural cooling system—so you stay cool, dry, and ready to keep pedaling. We wear these year-round, but they really shine during <em>“<\/em>San Francisco summer.”<\/p>","text_font_size":"body-small","button_text":"See Products","button_url":"","button_type":"btn--secondary","button_size":"btn--small","button_style":"btn--text","show_arrow":true,"image_aspect_ratio":1,"mobile_image_aspect_ratio":1,"heading_tag":"automatic"}},"image_4nFPma":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Ornot_BaseLayer_Merino_Gravel_04.jpg","image_shape":"normal","title":"Power Wool","heading_font_size":"heading-small","text":"<p>Power Wool blends Merino’s natural magic with high-tech synthetics to handle wild temp swings like a pro. We wear these on most rides—because layering should be easy, Ornot.<\/p><p><strong>Products<\/strong>: <a href=\"\/products\/merino-base-layer-gravel\" title=\"Merino Base Layer - Gravel\">Merino base layer,<\/a> Grid thermal jersey, crewneck, decadent cap<\/p>","text_font_size":"body-small","button_text":"See Products","button_url":"","button_type":"btn--secondary","button_size":"btn--small","button_style":"btn--text","show_arrow":true,"image_aspect_ratio":1,"mobile_image_aspect_ratio":1,"heading_tag":"automatic"}},"image_cwtx4V":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Ornot_Mens_Micro_Grid_Olive_07_7b3432cb-2ff6-47c2-8f3d-73975acb0b79.jpg","image_shape":"normal","title":"Power Grid","heading_font_size":"heading-small","text":"<p>Power Grid’s lightweight grid design moves air between your skin and the jersey, keeping you cool when things heat up. It’s our signature, award-winning jersey—because breathable should actually <em>mean<\/em> breathable.<\/p>","text_font_size":"body-small","button_text":"See products","button_url":"","button_type":"btn--secondary","button_size":"btn--small","button_style":"btn--text","show_arrow":true,"image_aspect_ratio":1,"mobile_image_aspect_ratio":1,"heading_tag":"automatic"}},"image_BKXtyf":{"type":"image","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/Ornot_BaseLayer_Merino_Gravel_04.jpg","image_shape":"normal","title":"Power Grid Fleece","heading_font_size":"heading-small","text":"<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>","text_font_size":"body-small","button_text":"Learn more","button_url":"","button_type":"btn--secondary","button_size":"btn--small","button_style":"btn--text","show_arrow":true,"image_aspect_ratio":1,"mobile_image_aspect_ratio":1,"heading_tag":"automatic"}},"image_AieWct":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Ornot_Lightweight_Base_Layer_DarkOlive_07_d42759aa-0645-4c2f-b0ad-090ebe8b4b11.jpg","image_shape":"normal","title":"Power Dry","heading_font_size":"heading-small","text":"<p>Power Dry’s fast-wicking, quick-drying fabric keeps sweat in check and odor at bay—so you can push hard without smelling like it. We wear these on the bike, off the bike, and sometimes way too many days in a row.<\/p>","text_font_size":"body-small","button_text":"Learn more","button_url":"","button_type":"btn--secondary","button_size":"btn--small","button_style":"btn--text","show_arrow":true,"image_aspect_ratio":1,"mobile_image_aspect_ratio":1,"heading_tag":"automatic"}},"image_rqH79r":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/MensquiltedpulloverWhite_6.jpg","image_shape":"normal","title":"Power Air","heading_font_size":"heading-small","text":"<p>Power Air traps warmth <em>and<\/em> fiber fragments—so you stay cozy while keeping microplastics in check. Why does that matter? Traditional fleece sheds tiny plastic fibers with every wash, which end up in our water, our food, and yep, even us. Power Air cuts that shedding by up to 85%, so you can stay warm without warming the planet. We wear these Every. Single. Day. (Seriously, try to take it off. Bet you can't.)<\/p>","text_font_size":"body-small","button_text":"Learn more","button_url":"","button_type":"btn--secondary","button_size":"btn--small","button_style":"btn--text","show_arrow":true,"image_aspect_ratio":1,"mobile_image_aspect_ratio":1,"heading_tag":"automatic"}},"image_zMwfQA":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Ornot_Mens_MagicShell_Jacket_Mars_09.jpg","image_shape":"normal","title":"Power Shield Pro","heading_font_size":"heading-small","text":"<p>Power Shield’s ultra-breathable, waterproof membrane keeps the rain out <em>and <\/em> lets sweat escape—because nobody likes a personal sauna. Every time we wear these, we’re reminded that staying dry <em>and<\/em> comfortable is actually possible.<\/p>","text_font_size":"body-small","button_text":"Learn more","button_url":"","button_type":"btn--secondary","button_size":"btn--small","button_style":"btn--text","show_arrow":true,"image_aspect_ratio":1,"mobile_image_aspect_ratio":1,"heading_tag":"automatic"}},"image_PkWQMt":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Ornot_Watchman_Cap_08.jpg","image_shape":"normal","title":"Thermal Pro","heading_font_size":"heading-small","text":"<p>Watchman cap<\/p>","text_font_size":"body-small","button_text":"Learn more","button_url":"","button_type":"btn--secondary","button_size":"btn--small","button_style":"btn--text","show_arrow":true,"image_aspect_ratio":1,"mobile_image_aspect_ratio":1,"heading_tag":"automatic"}},"image_LHcaHM":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Ornot_Womens_AlphaRiding_Orange_08.jpg","image_shape":"normal","title":"ALPHA","heading_font_size":"heading-small","text":"<p>Polartec Alpha is built for warmth <em>without<\/em> the swampiness. It regulates heat like a pro, adapting to changing conditions and stop-and-go efforts. We wear these all winter—because staying warm shouldn’t mean overheating.<\/p>","text_font_size":"body-small","button_text":"See Products","button_url":"","button_type":"btn--secondary","button_size":"btn--small","button_style":"btn--text","show_arrow":true,"image_aspect_ratio":1,"mobile_image_aspect_ratio":1,"heading_tag":"automatic"}}},"block_order":["image_nVeNVc","image_4nFPma","image_cwtx4V","image_BKXtyf","image_AieWct","image_rqH79r","image_zMwfQA","image_PkWQMt","image_LHcaHM"],"disabled":true,"settings":{"title":"Our Fabrics:","heading_font_size":"heading-medium","align_heading":"text-left","align_text":"text-left","width":"wrapper--full-padded","align_columns":"flex-align-top","layout":"slider","grid":6,"layout_mobile":"slider","color_scheme":"scheme-1","padding_top":50,"padding_bottom":0,"heading_tag":"automatic"}},"section_reviews_AEM49y":{"type":"section-reviews","blocks":{"review_ecJzKT":{"type":"review","settings":{"title":"Matt Quann","subheading":"Chief Bike Rider","review_content":"<p>Deadstock’s great because we don't mill new fabric and we start with what already exists. We let the fabric lead—if it feels like it could make a rad ____, we dive into the design from there.<\/p>","featured_image":"shopify:\/\/shop_images\/TNUT6926.jpg","review_url":""}},"review_b3RjAj":{"type":"review","settings":{"title":"AJ Scheichl","subheading":"Designer","review_content":"<p>Deadstock is a design puzzle—only you start at the end and work your way backwards.<\/p>","featured_image":"shopify:\/\/shop_images\/womens-shirts.jpg","review_url":""}},"review_QYg3aB":{"type":"review","disabled":true,"settings":{"title":"Kenneth Powell","subheading":"Industry Expert","review_content":"<p>Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.<\/p>","featured_image":"shopify:\/\/shop_images\/Ornot_Womens_MerinoGridPullover_Charcoal_Squares-1.jpg","review_url":""}}},"block_order":["review_ecJzKT","review_b3RjAj","review_QYg3aB"],"settings":{"show_featured_image":true,"image_aspect_ratio":1.3,"show_quotation_marks":true,"heading_font_size":"heading-small","text_align":"text-left","color_scheme":"scheme-1","card_bg_color":"#e0e0e0","padding_top":0,"padding_bottom":0}},"section_collection_ABegUK":{"type":"section-collection","settings":{"featured_collection":"special-projects","heading":"special projects collection","heading_font_size":"heading-medium","description":"","text_font_size":"body-medium","layout":"inline","link_text":"Shop collection","link_url":"","button_type":"btn--black","button_size":"","button_style":"btn--text","show_arrow":true,"layout_desktop":"grid","grid":4,"rows":2,"width":"wrapper","layout_mobile":"slider","color_scheme":"","padding_top":50,"padding_bottom":30,"heading_tag":"automatic"}},"section_before_after_iTUk3J":{"type":"section-before-after","blocks":{"heading_CapxCH":{"type":"heading","settings":{"heading":"Wear it on your bike, ornot","heading_font_size":"heading-medium","padding_bottom":16,"heading_tag":"automatic"}},"text_jL3eR7":{"type":"text","settings":{"description":"<p>Our <a href=\"https:\/\/www.ornotbike.com\/collections\/mens_shirts_and_pullovers\/products\/mens-merino-gravel-sweater-charcoal\" title=\"https:\/\/www.ornotbike.com\/collections\/mens_shirts_and_pullovers\/products\/mens-merino-gravel-sweater-charcoal\">Gravel Sweater<\/a> is an everyday essential built with three of our favorite things: a gridded fleecy interior, Merino Wool, and, of course, deadstock fabric.<\/p>","text_font_size":"body-medium","padding_bottom":16}},"button_8ay8yE":{"type":"button","settings":{"link_text":"Shop now","link_url":"shopify:\/\/pages\/merino-gravel-sweater","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"padding_bottom":16}}},"block_order":["heading_CapxCH","text_jL3eR7","button_8ay8yE"],"settings":{"image_1":"shopify:\/\/shop_images\/Ornot_Mens_MerinoGridPullover_Charcoal_Squares-2.jpg","image_2":"shopify:\/\/shop_images\/gravel-sweater.jpg","aspect_ratio":1,"width":"wrapper","color_scheme":"scheme-2","padding_top":50,"padding_bottom":50}}},"order":["section_hero_jidFMm","section_announcement_G3DD43","section_text_with_products_A4XmWX","main","section_rich_text_CARfLR","section_custom_content_AyDzny","section_custom_content_jkJ6gB","section_custom_content_pxc3kc","section_custom_content_Y4Hh78","section_custom_code_9eMerq","section_columns_FnTytU","section_reviews_AEM49y","section_collection_ABegUK","section_before_after_iTUk3J"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section_hero_jidFMm": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_347FkQ": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Business As Usual. ORNOT",
+            "heading_font_size": "heading-x-large",
+            "heading_tag": "automatic"
+          }
+        },
+        "text_GKEXzd": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><strong>MADE IN THE USA FROM  DEADSTOCK FABRIC  //'DED,STAK//</strong></p>",
+            "text_font_size": "body-large"
+          }
+        },
+        "button_7zPFTX": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_347FkQ",
+        "text_GKEXzd",
+        "button_7zPFTX"
+      ],
+      "settings": {
+        "image_2": "shopify://shop_images/biz-as-usual.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "four-fifty-height-hero",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 68,
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_announcement_G3DD43": {
+      "type": "section-announcement",
+      "blocks": {
+        "text_pgmXii": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>// SPECIAL PROJECTS //</strong></p>",
+            "text_font_size": "body-medium",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_x6mpMH": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_font_size": "body-small",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "message_a6qTHC": {
+          "type": "message",
+          "settings": {
+            "show_wheel": false,
+            "message": "////  CUT & SEWN IN CALIFORNIA ////",
+            "text_font_size": "body-small",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_rg7tUF": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_font_size": "body-small",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text_pgmXii",
+        "text_x6mpMH",
+        "message_a6qTHC",
+        "text_rg7tUF"
+      ],
+      "name": "Scrolling text",
+      "settings": {
+        "slider_speed": 7,
+        "text_alignment": "center",
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "message_spacing": 10,
+        "show_border": false,
+        "layout": "marquee",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_text_with_products_A4XmWX": {
+      "type": "section-text-with-products",
+      "blocks": {
+        "image_eDKCEk": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_MissionShorts_MidnightBlue_07_740ea98a-f293-4f4c-9409-e96dec2c6faa.jpg",
+            "image_position": 5,
+            "aspect_ratio": 1,
+            "width": 80,
+            "mobile_aspect_ratio": 1,
+            "mobile_width": 60
+          }
+        },
+        "collection_UCbM9R": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/Ornot_Bottle_Clement_1.jpg",
+            "image_position": 7,
+            "aspect_ratio": 1,
+            "width": 80,
+            "mobile_aspect_ratio": 1,
+            "mobile_width": 60
+          }
+        }
+      },
+      "block_order": [
+        "image_eDKCEk",
+        "collection_UCbM9R"
+      ],
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "heading": "MADE IN THE USA FROM  DEADSTOCK FABRIC",
+        "width": "wrapper",
+        "text_font_size_px_desktop": 40,
+        "text_align_desktop": "text-left",
+        "text_font_size_px_mobile": 24,
+        "text_align_mobile": "text-left--mobile",
+        "color_scheme": "scheme-1",
+        "padding_top": 30,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_rich_text_CARfLR": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_9acQwW": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "MADE IN THE USA FROM  DEADSTOCK FABRIC  //'DED,STAK//",
+            "padding_bottom": 12
+          }
+        },
+        "heading_NTeJx8": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "The most sustainable option?",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 0,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_dUBk3j": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Wearing what you already have.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "heading_d9BLNN": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "THE second most sustainable?",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 0,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_fpFe9b": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Giving forgotten fabric a second life. That’s where our Special Projects come in.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 28
+          }
+        },
+        "text_YM7yQc": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>We work with deadstock fabric—textiles that were overproduced, abandoned, or just never made it to the cutting table. Instead of letting it sit in a warehouse (or worse, a landfill), we turn it into something new. The catch? We only get one shot. Each roll of fabric is a creative puzzle—jersey? Hoodie? Something totally unexpected? Once it’s used up, it’s gone. No restocks, no do-overs.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_t3paFc": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_9acQwW",
+        "heading_NTeJx8",
+        "text_dUBk3j",
+        "heading_d9BLNN",
+        "text_fpFe9b",
+        "text_YM7yQc",
+        "buttons_t3paFc"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 56
+      }
+    },
+    "section_custom_content_AyDzny": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_Jikqa8": {
+          "type": "text",
+          "settings": {
+            "subheading": "Introducing:",
+            "title": "SPECIAL PROJECTS",
+            "heading_font_size": "heading-large",
+            "text": "<p>One of the most sustainable things we can do? <strong>Use what already exists.</strong> That’s the concept behind Special Projects—limited-run garments made from premium deadstock fabrics, cut and sewn in California. When they're gone, they're gone. </p><p>Some of our most beloved pieces (remember that decadent merino? Or the original microgrid?) were born this way. It’s a sustainability win, a creative constraint, and a chance to make something out of something forgotten. </p>",
+            "text_font_size": "body-small",
+            "button_text": "Latest Special Projects",
+            "button_url": "shopify://collections/special-projects",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
+        "image_EARKyB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/FabricStoryOrnot.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_Jikqa8",
+        "image_EARKyB"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_jkJ6gB": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_rDfE8k": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TNUT3195.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_JKDkzQ": {
+          "type": "text",
+          "settings": {
+            "subheading": "/'DED,STAAK/",
+            "title": "DEADSTOCK FABRIC",
+            "heading_font_size": "heading-large",
+            "text": "<p>Deadstock—textiles that were overproduced, abandoned, or just never made it to the cutting table. Sometimes, a color runs off-spec, and that fabric becomes “deadstock.” Instead of letting it sit in a warehouse (or worse, a landfill), <strong>we turn it into something new.</strong> The catch? We only get one shot. One opportunity. </p><p>Deadstock isn’t just leftover fabric—it’s an invitation to make something unforgettable. That’s why we collaborate with <strong>Polartec®</strong>, the pioneers who redefined performance textiles and never stopped innovating.</p>",
+            "text_font_size": "body-small",
+            "button_text": "Latest Special Projects",
+            "button_url": "shopify://collections/special-projects",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_rDfE8k",
+        "text_JKDkzQ"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_pxc3kc": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_MTXQhY": {
+          "type": "text",
+          "settings": {
+            "subheading": "IN PARTNERSHIP",
+            "title": "ORNOT x POLARTEC",
+            "heading_font_size": "heading-large",
+            "text": "<p>Great minds think alike—and by great minds, we mean anyone who sees the potential in leftover fabric. Polartec has been pioneering recycled textiles for years, which makes them a natural fit for our Special Projects. Whether it’s upcycling deadstock or reinventing performance fabrics, we’re both on a mission to <strong>make more out of what’s already here.</strong><br/><br/>As our partnership grows, so does our lineup of smarter, more responsible gear. Ride in it, geek out over it, or both.</p>",
+            "text_font_size": "body-small",
+            "button_text": "LEARN MORE",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
+        "image_ejCFH6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_Micro_Grid_Olive_08_c7df03b4-476b-4cc4-87ee-c1a4657884f6.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_MTXQhY",
+        "image_ejCFH6"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_Y4Hh78": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_LrcwAR": {
+          "type": "text",
+          "settings": {
+            "subheading": "Introducing",
+            "title": "POLARTEC",
+            "heading_font_size": "heading-large",
+            "text": "<p>Polartec and the outdoors go together like bikes and snacks—so teaming up was a no-brainer.</p><p>With a shared commitment to sustainability, we're turning recycled and deadstock fabrics into high-performance gear, offsetting emissions, and keeping plastic out of landfills.</p><p>Polartec has a history of firsts—Soda-Bottle Green fleece, softshell revolutions, and fabrics that shed fewer microfibers. Now? Waterproofing made partly from plants. Science!</p><p>As our partnership grows, so does our lineup of smarter, more responsible gear. Ride in it, geek out over it, or both.</p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
+        "image_dWqaUz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pie-ride.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_LrcwAR",
+        "image_dWqaUz"
+      ],
+      "disabled": true,
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_code_9eMerq": {
+      "type": "section-custom-code",
+      "settings": {
+        "code": "",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_columns_FnTytU": {
+      "type": "section-columns",
+      "blocks": {
+        "image_nVeNVc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Lightweight_Base_Layer_DarkOlive_07.jpg",
+            "image_shape": "normal",
+            "title": "Delta",
+            "heading_font_size": "heading-small",
+            "text": "<p>Polartec Delta works <em>with</em> your body’s natural cooling system—so you stay cool, dry, and ready to keep pedaling. We wear these year-round, but they really shine during <em>“</em>San Francisco summer.”</p>",
+            "text_font_size": "body-small",
+            "button_text": "See Products",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_4nFPma": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_BaseLayer_Merino_Gravel_04.jpg",
+            "image_shape": "normal",
+            "title": "Power Wool",
+            "heading_font_size": "heading-small",
+            "text": "<p>Power Wool blends Merino’s natural magic with high-tech synthetics to handle wild temp swings like a pro. We wear these on most rides—because layering should be easy, Ornot.</p><p><strong>Products</strong>: <a href=\"/products/merino-base-layer-gravel\" title=\"Merino Base Layer - Gravel\">Merino base layer,</a> Grid thermal jersey, crewneck, decadent cap</p>",
+            "text_font_size": "body-small",
+            "button_text": "See Products",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_cwtx4V": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_Micro_Grid_Olive_07_7b3432cb-2ff6-47c2-8f3d-73975acb0b79.jpg",
+            "image_shape": "normal",
+            "title": "Power Grid",
+            "heading_font_size": "heading-small",
+            "text": "<p>Power Grid’s lightweight grid design moves air between your skin and the jersey, keeping you cool when things heat up. It’s our signature, award-winning jersey—because breathable should actually <em>mean</em> breathable.</p>",
+            "text_font_size": "body-small",
+            "button_text": "See products",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_BKXtyf": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Ornot_BaseLayer_Merino_Gravel_04.jpg",
+            "image_shape": "normal",
+            "title": "Power Grid Fleece",
+            "heading_font_size": "heading-small",
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+            "text_font_size": "body-small",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_AieWct": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Lightweight_Base_Layer_DarkOlive_07_d42759aa-0645-4c2f-b0ad-090ebe8b4b11.jpg",
+            "image_shape": "normal",
+            "title": "Power Dry",
+            "heading_font_size": "heading-small",
+            "text": "<p>Power Dry’s fast-wicking, quick-drying fabric keeps sweat in check and odor at bay—so you can push hard without smelling like it. We wear these on the bike, off the bike, and sometimes way too many days in a row.</p>",
+            "text_font_size": "body-small",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_rqH79r": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MensquiltedpulloverWhite_6.jpg",
+            "image_shape": "normal",
+            "title": "Power Air",
+            "heading_font_size": "heading-small",
+            "text": "<p>Power Air traps warmth <em>and</em> fiber fragments—so you stay cozy while keeping microplastics in check. Why does that matter? Traditional fleece sheds tiny plastic fibers with every wash, which end up in our water, our food, and yep, even us. Power Air cuts that shedding by up to 85%, so you can stay warm without warming the planet. We wear these Every. Single. Day. (Seriously, try to take it off. Bet you can't.)</p>",
+            "text_font_size": "body-small",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_zMwfQA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_MagicShell_Jacket_Mars_09.jpg",
+            "image_shape": "normal",
+            "title": "Power Shield Pro",
+            "heading_font_size": "heading-small",
+            "text": "<p>Power Shield’s ultra-breathable, waterproof membrane keeps the rain out <em>and </em> lets sweat escape—because nobody likes a personal sauna. Every time we wear these, we’re reminded that staying dry <em>and</em> comfortable is actually possible.</p>",
+            "text_font_size": "body-small",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_PkWQMt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Watchman_Cap_08.jpg",
+            "image_shape": "normal",
+            "title": "Thermal Pro",
+            "heading_font_size": "heading-small",
+            "text": "<p>Watchman cap</p>",
+            "text_font_size": "body-small",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_LHcaHM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Womens_AlphaRiding_Orange_08.jpg",
+            "image_shape": "normal",
+            "title": "ALPHA",
+            "heading_font_size": "heading-small",
+            "text": "<p>Polartec Alpha is built for warmth <em>without</em> the swampiness. It regulates heat like a pro, adapting to changing conditions and stop-and-go efforts. We wear these all winter—because staying warm shouldn’t mean overheating.</p>",
+            "text_font_size": "body-small",
+            "button_text": "See Products",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_nVeNVc",
+        "image_4nFPma",
+        "image_cwtx4V",
+        "image_BKXtyf",
+        "image_AieWct",
+        "image_rqH79r",
+        "image_zMwfQA",
+        "image_PkWQMt",
+        "image_LHcaHM"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Our Fabrics:",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "width": "wrapper--full-padded",
+        "align_columns": "flex-align-top",
+        "layout": "slider",
+        "grid": 6,
+        "layout_mobile": "slider",
+        "color_scheme": "scheme-1",
+        "padding_top": 50,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_reviews_AEM49y": {
+      "type": "section-reviews",
+      "blocks": {
+        "review_ecJzKT": {
+          "type": "review",
+          "settings": {
+            "title": "Matt Quann",
+            "subheading": "Chief Bike Rider",
+            "review_content": "<p>Deadstock’s great because we don't mill new fabric and we start with what already exists. We let the fabric lead—if it feels like it could make a rad ____, we dive into the design from there.</p>",
+            "featured_image": "shopify://shop_images/TNUT6926.jpg",
+            "review_url": ""
+          }
+        },
+        "review_b3RjAj": {
+          "type": "review",
+          "settings": {
+            "title": "AJ Scheichl",
+            "subheading": "Designer",
+            "review_content": "<p>Deadstock is a design puzzle—only you start at the end and work your way backwards.</p>",
+            "featured_image": "shopify://shop_images/womens-shirts.jpg",
+            "review_url": ""
+          }
+        },
+        "review_QYg3aB": {
+          "type": "review",
+          "disabled": true,
+          "settings": {
+            "title": "Kenneth Powell",
+            "subheading": "Industry Expert",
+            "review_content": "<p>Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.</p>",
+            "featured_image": "shopify://shop_images/Ornot_Womens_MerinoGridPullover_Charcoal_Squares-1.jpg",
+            "review_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "review_ecJzKT",
+        "review_b3RjAj",
+        "review_QYg3aB"
+      ],
+      "settings": {
+        "show_featured_image": true,
+        "image_aspect_ratio": 1.3,
+        "show_quotation_marks": true,
+        "heading_font_size": "heading-small",
+        "text_align": "text-left",
+        "color_scheme": "scheme-1",
+        "card_bg_color": "#e0e0e0",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_collection_ABegUK": {
+      "type": "section-collection",
+      "settings": {
+        "featured_collection": "special-projects",
+        "heading": "special projects collection",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "Shop collection",
+        "link_url": "",
+        "button_type": "btn--black",
+        "button_size": "",
+        "button_style": "btn--text",
+        "show_arrow": true,
+        "layout_desktop": "grid",
+        "grid": 4,
+        "rows": 2,
+        "width": "wrapper",
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 30,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_before_after_iTUk3J": {
+      "type": "section-before-after",
+      "blocks": {
+        "heading_CapxCH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wear it on your bike, ornot",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_jL3eR7": {
+          "type": "text",
+          "settings": {
+            "description": "<p>Our <a href=\"https://www.ornotbike.com/collections/mens_shirts_and_pullovers/products/mens-merino-gravel-sweater-charcoal\" title=\"https://www.ornotbike.com/collections/mens_shirts_and_pullovers/products/mens-merino-gravel-sweater-charcoal\">Gravel Sweater</a> is an everyday essential built with three of our favorite things: a gridded fleecy interior, Merino Wool, and, of course, deadstock fabric.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "button_8ay8yE": {
+          "type": "button",
+          "settings": {
+            "link_text": "Shop now",
+            "link_url": "shopify://pages/merino-gravel-sweater",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_CapxCH",
+        "text_jL3eR7",
+        "button_8ay8yE"
+      ],
+      "settings": {
+        "image_1": "shopify://shop_images/Ornot_Mens_MerinoGridPullover_Charcoal_Squares-2.jpg",
+        "image_2": "shopify://shop_images/gravel-sweater.jpg",
+        "aspect_ratio": 1,
+        "width": "wrapper",
+        "color_scheme": "scheme-2",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    }
+  },
+  "order": [
+    "section_hero_jidFMm",
+    "section_announcement_G3DD43",
+    "section_text_with_products_A4XmWX",
+    "main",
+    "section_rich_text_CARfLR",
+    "section_custom_content_AyDzny",
+    "section_custom_content_jkJ6gB",
+    "section_custom_content_pxc3kc",
+    "section_custom_content_Y4Hh78",
+    "section_custom_code_9eMerq",
+    "section_columns_FnTytU",
+    "section_reviews_AEM49y",
+    "section_collection_ABegUK",
+    "section_before_after_iTUk3J"
+  ]
+}

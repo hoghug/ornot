@@ -71,8 +71,7 @@
 
                 {{ section.settings.title }}
 
-                {%- render 'icon-plus' -%}
-                {%- render 'icon-minus' -%}
+                {%- render 'icon-nav-arrow-down' -%}
               </summary>
             {%- endif -%}
 
@@ -353,7 +352,7 @@
       "type": "image_picker",
       "id": "icon_image",
       "label": "Alternative icon/image",
-      "info": "160 x 160px .svg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+      "info": "160 x 160px .svg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
     },
     {
       "type": "range",
@@ -392,7 +391,8 @@
     {
       "type": "color",
       "id": "icon_color",
-      "label": "Icon"
+      "label": "Icon",
+      "alpha": true
     },
     {
       "type": "header",
@@ -489,7 +489,7 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image",
-          "info": "1400 x 1400px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "1400 x 1400px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "type": "range",
@@ -568,7 +568,8 @@
         {
           "type": "color",
           "id": "icon_color",
-          "label": "Icon color"
+          "label": "Icon color",
+          "alpha": true
         },
         {
           "type": "text",
@@ -647,6 +648,7 @@
   "presets": [
     {
       "name": "Accordion",
+      "category": "Storytelling",
       "blocks": [
         {
           "type": "text"

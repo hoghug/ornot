@@ -1,9 +1,7 @@
 {%- liquid
   assign is_top = false
-  assign show_browser_error = false
   if section.location == 'header'
     assign is_top = true
-    assign show_browser_error = true
   endif
 
   assign href = request.origin | append: request.path
@@ -148,7 +146,7 @@
 
             {%- when 'message' -%}
               {%- if block.settings.message -%}
-                {%- render 'free-shipping' message: block.settings.message, gradient: block.settings.free_shipping_gradient, show_wheel: block.settings.show_wheel, show_progress_bar: false -%}
+                {%- render 'free-shipping' message: block.settings.message, show_wheel: block.settings.show_wheel, show_progress_bar: false -%}
               {%- endif -%}
 
             {%- when 'code' -%}
@@ -320,16 +318,6 @@
   data-section-type="announcement"
   style="{{ style }}"
 >
-  {%- if show_browser_error -%}
-    <div class="announcement__bar announcement__bar--error section-padding">
-      <div class="announcement__message">
-        <div class="announcement__text {{ text_font_size }}">
-          <div class="announcement__main">{{ 'general.ie11_support_message' | t }}</div>
-        </div>
-      </div>
-    </div>
-  {%- endif -%}
-
   {%- if is_top == false and section.settings.background_image != blank -%}
     <div class="announcement__bg-image">
       {%- render 'image', image: section.settings.background_image, sizes: '100vw', cover: true -%}

@@ -10,7 +10,7 @@
 <meta name="theme-color" content="{{ scheme_accent }}">
 <link rel="canonical" href="{{ canonical_url }}">
 
-<!-- ======================= Broadcast Theme V6.1.0 ========================= -->
+<!-- ======================= Broadcast Theme V8.0.0 ========================= -->
 
 {% if settings.favicon %}
   <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
@@ -210,6 +210,8 @@
       /* === Link Color ===*/
 
       --COLOR-LINK: {{ scheme.settings.links }};
+      --COLOR-LINK-A50: {{ scheme.settings.links | color_modify: 'alpha', 0.5 }};
+      --COLOR-LINK-A70: {{ scheme.settings.links | color_modify: 'alpha', 0.7 }};
       --COLOR-LINK-HOVER: {{ scheme.settings.links | color_modify: 'alpha', hover_opacity }};
       --COLOR-LINK-OPPOSITE: {{ link_opposite }};
 
@@ -244,10 +246,11 @@
       --BTN-PRIMARY-BG: {{ scheme.settings.btn_primary_bg }};
       --BTN-PRIMARY-TEXT: {{ scheme.settings.btn_primary_text }};
       --BTN-PRIMARY-BORDER: {{ scheme.settings.btn_primary_border }};
+      --BTN-PRIMARY-BORDER-A70: {{ scheme.settings.btn_primary_border | color_modify: 'alpha', 0.7 }};
 
       {% assign btn_primary_brightness = scheme.settings.btn_primary_bg | color_brightness %}
       {% if btn_primary_brightness <= 65 %}
-        --BTN-PRIMARY-BG-BRIGHTER: {{ scheme.settings.btn_primary_bg | color_lighten: 10 }};
+        --BTN-PRIMARY-BG-BRIGHTER: {{ scheme.settings.btn_primary_bg | color_lighten: 5 }};
       {% else %}
         --BTN-PRIMARY-BG-BRIGHTER: {{ scheme.settings.btn_primary_bg | color_darken: 5 }};
       {% endif %}
@@ -255,10 +258,11 @@
       --BTN-SECONDARY-BG: {{ scheme.settings.btn_secondary_bg }};
       --BTN-SECONDARY-TEXT: {{ scheme.settings.btn_secondary_text }};
       --BTN-SECONDARY-BORDER: {{ scheme.settings.btn_secondary_border }};
+      --BTN-SECONDARY-BORDER-A70: {{ scheme.settings.btn_secondary_border | color_modify: 'alpha', 0.7 }};
 
       {% assign btn_secondary_brightness = scheme.settings.btn_secondary_bg | color_brightness %}
       {% if btn_secondary_brightness <= 65 %}
-        --BTN-SECONDARY-BG-BRIGHTER: {{ scheme.settings.btn_secondary_bg | color_lighten: 10 }};
+        --BTN-SECONDARY-BG-BRIGHTER: {{ scheme.settings.btn_secondary_bg | color_lighten: 5 }};
       {% else %}
         --BTN-SECONDARY-BG-BRIGHTER: {{ scheme.settings.btn_secondary_bg | color_darken: 5 }};
       {% endif %}
@@ -306,6 +310,8 @@
       --bg-accent-lighten: var(--COLOR-BG-ACCENT-LIGHTEN);
       --icons: var(--COLOR-TEXT);
       --link: var(--COLOR-LINK);
+      --link-a50: var(--COLOR-LINK-A50);
+      --link-a70: var(--COLOR-LINK-A70);
       --link-hover: var(--COLOR-LINK-HOVER);
       --link-opposite: var(--COLOR-LINK-OPPOSITE);
       --text: var(--COLOR-TEXT);
@@ -327,16 +333,25 @@
   :root {
     --scrollbar-width: 0px;
 
-    /* === Product grid sale tags ===*/
-    --COLOR-SALE-BG: {{ settings.sale_bg_color }};
-    --COLOR-SALE-TEXT: {{ settings.sale_text_color }};
-
     /* === Product grid badges ===*/
+    --COLOR-SALE-BG: {{ settings.saving_bg_color | default: settings.sale_bg_color }};
+    --COLOR-SALE-TEXT: {{ settings.saving_text_color | default: settings.sale_text_color }};
+
     --COLOR-BADGE-BG: {{ settings.badge_bg_color }};
     --COLOR-BADGE-TEXT: {{ settings.badge_text_color }};
 
+    --COLOR-SOLD-BG: {{ settings.sold_out_bg_color }};
+    --COLOR-SOLD-TEXT: {{ settings.sold_out_text_color }};
+
+    --COLOR-NEW-BADGE-BG: {{ settings.new_badge_bg_color }};
+    --COLOR-NEW-BADGE-TEXT: {{ settings.new_badge_text_color }};
+
+    --COLOR-PREORDER-BG: {{ settings.preorder_bg_color }};
+    --COLOR-PREORDER-TEXT: {{ settings.preorder_text_color }};
+
     /* === Quick Add ===*/
     --COLOR-QUICK-ADD-BG: {{ settings.quick_add_bg_color }};
+    --COLOR-QUICK-ADD-BG-BRIGHTER: {{ settings.quick_add_bg_color | color_darken: 5 }};
     --COLOR-QUICK-ADD-TEXT: {{ settings.quick_add_text_color }};
 
     /* === Product sale color ===*/
@@ -381,7 +396,6 @@
     --TRANSPARENT: rgba(255, 255, 255, 0);
 
     /* === Default overlay opacity ===*/
-    --overlay-opacity: 0;
     --underlay-opacity: {{ backdrop_opacity }};
     --underlay-bg: {{ backdrop_bg }};
     --header-overlay-color: transparent;
@@ -396,22 +410,22 @@
       {% comment %} Icon style Bold {% endcomment %}
       --ICON-ADD-BAG: url( "{{ 'icon-add-bag-bold.svg' | asset_url }}" );
       --ICON-ADD-CART: url( "{{ 'icon-add-cart-bold.svg' | asset_url }}" );
-      --ICON-ARROW-LEFT: url( "{{ 'icon-arrow-left-bold.svg' | asset_url }}" );
-      --ICON-ARROW-RIGHT: url( "{{ 'icon-arrow-right-bold.svg' | asset_url }}" );
+      --ICON-ARROW-LEFT: url( "{{ 'icon-nav-arrow-left-bold.svg' | asset_url }}" );
+      --ICON-ARROW-RIGHT: url( "{{ 'icon-nav-arrow-right-bold.svg' | asset_url }}" );
       --ICON-SELECT: url("{{ 'icon-select-bold.svg' | asset_url }}");
     {% elsif icon_style == '1.5' %}
       {% comment %} Icon style Medium {% endcomment %}
       --ICON-ADD-BAG: url( "{{ 'icon-add-bag-medium.svg' | asset_url }}" );
       --ICON-ADD-CART: url( "{{ 'icon-add-cart-medium.svg' | asset_url }}" );
-      --ICON-ARROW-LEFT: url( "{{ 'icon-arrow-left-medium.svg' | asset_url }}" );
-      --ICON-ARROW-RIGHT: url( "{{ 'icon-arrow-right-medium.svg' | asset_url }}" );
+      --ICON-ARROW-LEFT: url( "{{ 'icon-nav-arrow-left-medium.svg' | asset_url }}" );
+      --ICON-ARROW-RIGHT: url( "{{ 'icon-nav-arrow-right-medium.svg' | asset_url }}" );
       --ICON-SELECT: url("{{ 'icon-select-medium.svg' | asset_url }}");
     {% else %}
       {% comment %} Icon style Regular {% endcomment %}
       --ICON-ADD-BAG: url( "{{ 'icon-add-bag.svg' | asset_url }}" );
       --ICON-ADD-CART: url( "{{ 'icon-add-cart.svg' | asset_url }}" );
-      --ICON-ARROW-LEFT: url( "{{ 'icon-arrow-left.svg' | asset_url }}" );
-      --ICON-ARROW-RIGHT: url( "{{ 'icon-arrow-right.svg' | asset_url }}" );
+      --ICON-ARROW-LEFT: url( "{{ 'icon-nav-arrow-left.svg' | asset_url }}" );
+      --ICON-ARROW-RIGHT: url( "{{ 'icon-nav-arrow-right.svg' | asset_url }}" );
       --ICON-SELECT: url("{{ 'icon-select.svg' | asset_url }}");
     {% endif %}
 
@@ -517,6 +531,9 @@
     --BTN-FONT-WEIGHT: {{ btn_font.weight }};
     --BTN-FONT-STYLE: {{ btn_font.style }};
     --BTN-FONT-SIZE: {{ settings.btn_size }}px;
+    --BTN-SIZE-SMALL: {{ settings.button_small }}px;
+    --BTN-SIZE-MEDIUM: {{ settings.button_medium }}px;
+    --BTN-SIZE-LARGE: {{ settings.button_large }}px;
 
     {%- assign font_size_base_decimal = settings.base_font_size | append: '.0' -%}
     --BTN-FONT-SIZE-BODY: {{ settings.btn_size | divided_by: font_size_base_decimal }}rem;
@@ -529,13 +546,15 @@
     --COLOR-TEXT-BTN-BG-WHITE: #fff;
     --COLOR-TEXT-BTN-BORDER-WHITE: #fff;
     --COLOR-TEXT-BTN-WHITE: #000;
+    --COLOR-TEXT-BTN-WHITE-A70: {{ '#fff' | color_modify: 'alpha', 0.7 }};
     --COLOR-TEXT-BTN-BG-WHITE-BRIGHTER: {{ '#fff' | color_darken: 5 }};
 
     /* === Button Black ===*/
     --COLOR-TEXT-BTN-BG-BLACK: #000;
     --COLOR-TEXT-BTN-BORDER-BLACK: #000;
     --COLOR-TEXT-BTN-BLACK: #fff;
-    --COLOR-TEXT-BTN-BG-BLACK-BRIGHTER: {{ '#000' | color_lighten: 10 }};
+    --COLOR-TEXT-BTN-BLACK-A70: {{ '#000' | color_modify: 'alpha', 0.7 }};
+    --COLOR-TEXT-BTN-BG-BLACK-BRIGHTER: {{ '#000' | color_lighten: 5 }};
 
     /* === Swatch Size ===*/
     --swatch-size-filters: {{ swatch_size_filters }}rem;
@@ -614,7 +633,7 @@
 
 {{ 'theme.css' | asset_url | stylesheet_tag }}
 
-{%- if settings.swatches_type != 'disabled' or settings.show_siblings -%}
+{%- if settings.show_siblings or settings.enable_swatches -%}
   {{ 'swatches.css' | asset_url | stylesheet_tag }}
   {%- render 'swatch-color-list' -%}
 {%- endif %}
@@ -624,19 +643,6 @@
 {%- endif -%}
 
 <script>
-    if (window.navigator.userAgent.indexOf('MSIE ') > 0 || window.navigator.userAgent.indexOf('Trident/') > 0) {
-      document.documentElement.className = document.documentElement.className + ' ie';
-
-      var scripts = document.getElementsByTagName('script')[0];
-      var polyfill = document.createElement("script");
-      polyfill.defer = true;
-      polyfill.src = "{{ 'ie11.js' | asset_url }}";
-
-      scripts.parentNode.insertBefore(polyfill, scripts);
-    } else {
-      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-    }
-
     document.documentElement.style.setProperty('--scrollbar-width', `${getScrollbarWidth()}px`);
 
     function getScrollbarWidth() {
@@ -668,9 +674,11 @@
     window.theme = {
       routes: {
         root: root,
+        shop_url: '{{ request.origin }}',
         cart_url: '{{ routes.cart_url }}',
         cart_add_url: '{{ routes.cart_add_url }}',
         cart_change_url: '{{ routes.cart_change_url }}',
+        cart_update_url: '{{ routes.cart_update_url }}',
         product_recommendations_url: '{{ routes.product_recommendations_url }}',
         predictive_search_url: '{{ routes.predictive_search_url }}',
         addresses_url: '{{ routes.account_addresses_url }}'
@@ -682,37 +690,32 @@
       },
       strings: {
         addToCart: {{ 'products.product.add_to_cart' | t | json }},
-        cartAcceptanceError: {{ 'cart.general.accept_terms' | t | json }},
-        soldOut: {{ 'products.product.sold_out' | t | json }},
-        from: {{ 'products.general.from' | t | json }},
-        preOrder: {{ 'products.product.pre_order' | t | json }},
         sale: {{ 'products.product.on_sale' | t | json }},
+        soldOut: {{ 'products.product.sold_out' | t | json }},
+        preOrder: {{ 'products.product.pre_order' | t | json }},
         subscription: {{ 'products.product.subscription' | t | json }},
         unavailable: {{ 'products.product.unavailable' | t | json }},
-        unitPrice: {{ 'products.product.unit_price_label' | t | json }},
-        unitPriceSeparator: {{ 'general.accessibility.unit_price_separator' | t | json }},
+        unavailable_with_option: `{{ 'products.product.value_unavailable' | t: option_value: '[value]' }}`,
+        cartAcceptanceError: {{ 'cart.general.accept_terms' | t | json }},
+        discount_not_applicable: {{ 'cart.general.discount_not_applicable' | t | json }},
+        discount_already_applied: {{ 'cart.general.discount_already_applied' | t | json }},
         shippingCalcSubmitButton: {{ 'cart.shipping_calculator.calculate_shipping' | t | json }},
         shippingCalcSubmitButtonDisabled: {{ 'cart.shipping_calculator.calculating' | t | json }},
-        selectValue: {{ 'products.product.select_value' | t | json }},
-        selectColor: {{ 'products.product.select_color' | t | json }},
         oneColor: {{ 'collections.general.colors_with_count.one' | t | json }},
         otherColor: {{ 'collections.general.colors_with_count.other' | t | json }},
-        upsellAddToCart: {{ 'products.general.upsell_add_to_cart' | t | json }},
         free: {{ 'general.money.free' | t | json }},
-        swatchesColor: {{ 'general.swatches.color' | t | json }},
         sku: {{ 'products.product.sku' | t | json }},
+        playVideo: {{ 'general.accessibility.play_video' | t | json }},
+        pauseVideo: {{ 'general.accessibility.pause_video' | t | json }},
       },
       settings: {
         cartType: {{ settings.cart_type | json }},
         customerLoggedIn: {{ customer | json }} ? true : false,
         enableQuickAdd: {{ settings.quickview_enable | json }},
         enableAnimations: {{ settings.animations_enable | json }},
-        variantOnSale: {{ settings.variant_on_sale | json }},
         collectionSwatchStyle: {{ settings.collection_swatch_style | json }},
-        swatchesType: {{ settings.swatches_type | json }},
         mobileMenuType: {{ settings.mobile_menu_type | json }},
-      },
-      variables: {
+        atcButtonShowPrice: {{ settings.atc_show_product_price | json }},
         productPageSticky: false,
       },
       sliderArrows: {
@@ -724,9 +727,10 @@
       moneyWithCurrencyFormat: {{ shop.money_with_currency_format | json }},
       subtotal: {{ cart.total_price | json }},
       info: {
-        name: 'broadcast'
+        name: 'broadcast',
+        version: '8.0.0',
+        role: '{{ theme.role }}'
       },
-      version: '6.1.0'
     };
 
     let windowInnerHeight = window.innerHeight;

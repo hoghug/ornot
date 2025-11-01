@@ -1,1 +1,313 @@
-{"sections":{"section_hero_t4phQQ":{"type":"section-hero","settings":{"image_1":"{{ product.metafields.my_fields.hero_header_image.value }}","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-center-desktop","content_width":50,"mobile_image":"shopify:\/\/shop_images\/TransparentLineThin_c68a9c99-40f9-4a8b-abbe-2d9d16677ec6.gif","mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"main":{"type":"product","blocks":{"title":{"type":"title","settings":{"subheading_option":"breadcrumb","heading_font_size":"heading-medium","padding_bottom":8}},"text_aCVqmj":{"type":"text","settings":{"title":"","heading_font_size":"body-medium","text":"<p>{{ product.metafields.custom.tagline | metafield_tag }}<\/p>","text_font_size":"body-medium","text_alignment":"text-left","layout":"left","padding_bottom":16}},"junip_product_reviews_ugc_junip_product_summary_46cMCr":{"type":"shopify:\/\/apps\/junip\/blocks\/junip-product-summary\/dc14f5a8-ed15-41b1-ad08-cfba23f9789b","settings":{"product":"{{product}}","alignment":""}},"price":{"type":"price","settings":{"text_font_size":"body-x-large","padding_bottom":16}},"siblings_6N6EiR":{"type":"siblings","settings":{"siblings_collection":"{{ product.metafields.theme.siblings.value }}","sibling_color":"{{ product.metafields.theme.sibling_color.value }}","padding_bottom":16}},"variants":{"type":"variants","settings":{"info_page":"","size_chart_style":"text","subscriptions_enable_selectors":false,"padding_bottom":16}},"text_rUQBrk":{"type":"text","settings":{"title":"{{ product.metafields.custom.extra_product_text.value }}","heading_font_size":"body-medium","text":"","text_font_size":"body-medium","text_alignment":"text-left","layout":"left","padding_bottom":16}},"buttons":{"type":"buttons","settings":{"show_quantity":false,"button_type":"btn--primary","button_style":"btn--solid","show_payment_button":false,"button_type_dynamic":"btn--secondary","button_style_dynamic":"btn--solid","show_gift_card_recipient":false,"padding_bottom":32}},"accordion_E3FAbY":{"type":"accordion","settings":{"show_description":true,"show_read_more":false,"default_open":true,"heading":"DESCRIPTION","text":"","padding_bottom":0}},"accordion_xzTzzU":{"type":"accordion","settings":{"show_description":false,"show_read_more":false,"default_open":false,"heading":"FEATURES","text":"<p>{{ product.metafields.custom.product_features | metafield_tag }}<\/p>","padding_bottom":0}},"accordion_ARNrpD":{"type":"accordion","settings":{"show_description":false,"show_read_more":false,"default_open":false,"heading":"SHIPPING, EXCHANGES, AND RETURNS","text":"<p>· Most orders will ship within 48 hours from our warehouse located in San Diego. Orders are processed Monday - Friday during normal business hours. <\/p><p>· Free (and easy) exchanges, we want you in the correct size.<\/p><p>· 30-day return window.<\/p><p>· Sale items are eligible for exchanges and store credit only.<\/p>","padding_bottom":0}},"accordion_FbypEj":{"type":"accordion","settings":{"show_description":false,"show_read_more":false,"default_open":false,"heading":"1 YEAR WARRANTY","text":"<p>· Our clothing is made by hand and made to last. We stand by our construction and fabrics and offer a 1-year warranty against manufacturing defects. The most sustainable clothing is the kind that lasts many seasons. Need a repair? Questions? <a href=\"mailto:info@ornotbike.com\" title=\"mailto:info@ornotbike.com\">Email us<\/a>, we’re pretty good at typing.<\/p><p>· Crash Replacement Assistance - We offer a discounted replacement if you happen to fall and destroy your clothing. (We recommend that you don’t use this)<\/p>","padding_bottom":10}},"upsell":{"type":"upsell","settings":{"upsell_product":"","upsell_product_list":["mission-pants-coffee","handlebar-bag-mini-ecopak-white","mens-merino-gravel-sweater-zissou"],"show_available_upsell_only":true,"layout":"stacked","autoplay":false,"autoplay_speed":8,"bg_color":"rgba(0,0,0,0)","padding_bottom":16}},"upsell_by_amp_embedded_product_nAD6PW":{"type":"shopify:\/\/apps\/upsell-by-amp\/blocks\/embedded-product\/04a7ddf7-3a4c-4228-9a44-33ba2380f058","settings":{"override_url":""}}},"block_order":["title","text_aCVqmj","junip_product_reviews_ugc_junip_product_summary_46cMCr","price","siblings_6N6EiR","variants","text_rUQBrk","buttons","accordion_E3FAbY","accordion_xzTzzU","accordion_ARNrpD","accordion_FbypEj","upsell","upsell_by_amp_embedded_product_nAD6PW"],"custom_css":[".product-upsell__holder__title {font-weight: bold; text-transform: uppercase;}",".product-upsell__title {font-weight: bold; font-size: calc(var(--font-3) * var(--FONT-ADJUST-BODY)); color: #00b5e2;}",".product-upsell__price {font-weight: bold; font-size: calc(var(--font-2) * var(--FONT-ADJUST-BODY)); color: #00b5e2;}",".product-upsell__variant-title {display: none;}","shopify-payment-terms {display: none !important;}"],"settings":{"product_sticky_enable":true,"variant_image_scroll":true,"show_cart_bar":false,"enable_zoom":true,"enable_video_looping":true,"image_layout":"grid-1","image_size":"normal","mobile_image_style":"thumbs","color_scheme":"","padding_top":25,"padding_bottom":30}},"section_hero_8nY6LC":{"type":"section-hero","settings":{"image_1":"{{ product.metafields.custom.web_size_chart.value }}","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-center-desktop","content_width":50,"mobile_image":"{{ product.metafields.custom.mobile_size_chart.value }}","mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"section_hero_NN4xAd":{"type":"section-hero","settings":{"image_1":"shopify:\/\/shop_images\/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.png","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-center-desktop","content_width":50,"mobile_image":"shopify:\/\/shop_images\/CN_1FTP_BannerMobile.png","mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"1706135782d1067a10":{"type":"apps","blocks":{"junip_product_reviews_ugc_junip_product_review_9ByW79":{"type":"shopify:\/\/apps\/junip\/blocks\/junip-product-review\/dc14f5a8-ed15-41b1-ad08-cfba23f9789b","settings":{"product":"{{product}}","title":"","alignment":""}}},"block_order":["junip_product_reviews_ugc_junip_product_review_9ByW79"],"settings":{"include_margins":false}},"related":{"type":"related","blocks":{"related":{"type":"related","settings":{"product_recommendations_heading":"Related products","limit":6}},"recent":{"type":"recent","settings":{"product_recently_heading":"Recently viewed","product_recently_limit":6}}},"block_order":["related","recent"],"custom_css":[".product-item--swatches {padding: 0px 10px 0px 10px;}",".product-item--centered {padding: 0px 10px 0px 10px;}"],"settings":{"enable_tabs":true,"heading_alignment":"text-center","heading_font_size":"heading-small","layout_mobile":"slider","color_scheme":"","padding_top":30,"padding_bottom":0}}},"order":["section_hero_t4phQQ","main","section_hero_8nY6LC","section_hero_NN4xAd","1706135782d1067a10","related"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section_hero_t4phQQ": {
+      "type": "section-hero",
+      "settings": {
+        "image_1": "{{ product.metafields.my_fields.hero_header_image.value }}",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/TransparentLineThin_c68a9c99-40f9-4a8b-abbe-2d9d16677ec6.gif",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "main": {
+      "type": "product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "subheading_option": "breadcrumb",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 8
+          }
+        },
+        "text_aCVqmj": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "heading_font_size": "body-medium",
+            "text": "<p>{{ product.metafields.custom.tagline | metafield_tag }}</p>",
+            "text_font_size": "body-medium",
+            "text_alignment": "text-left",
+            "layout": "left",
+            "padding_bottom": 16
+          }
+        },
+        "junip_product_reviews_ugc_junip_product_summary_46cMCr": {
+          "type": "shopify://apps/junip/blocks/junip-product-summary/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
+          "settings": {
+            "product": "{{product}}",
+            "alignment": ""
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "text_font_size": "body-x-large",
+            "padding_bottom": 16
+          }
+        },
+        "siblings_6N6EiR": {
+          "type": "siblings",
+          "settings": {
+            "siblings_collection": "{{ product.metafields.theme.siblings.value }}",
+            "sibling_color": "{{ product.metafields.theme.sibling_color.value }}",
+            "padding_bottom": 16
+          }
+        },
+        "variants": {
+          "type": "variants",
+          "settings": {
+            "info_page": "",
+            "size_chart_style": "text",
+            "padding_bottom": 16
+          }
+        },
+        "text_rUQBrk": {
+          "type": "text",
+          "settings": {
+            "title": "{{ product.metafields.custom.extra_product_text.value }}",
+            "heading_font_size": "body-medium",
+            "text": "",
+            "text_font_size": "body-medium",
+            "text_alignment": "text-left",
+            "layout": "left",
+            "padding_bottom": 16
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "show_quantity": false,
+            "button_type": "btn--primary",
+            "button_style": "btn--solid",
+            "button_type_dynamic": "btn--secondary",
+            "button_style_dynamic": "btn--solid",
+            "show_gift_card_recipient": false,
+            "padding_bottom": 32
+          }
+        },
+        "accordion_E3FAbY": {
+          "type": "accordion",
+          "settings": {
+            "show_description": true,
+            "show_read_more": false,
+            "default_open": true,
+            "heading": "DESCRIPTION",
+            "text": "",
+            "padding_bottom": 0
+          }
+        },
+        "accordion_xzTzzU": {
+          "type": "accordion",
+          "settings": {
+            "show_description": false,
+            "show_read_more": false,
+            "default_open": false,
+            "heading": "FEATURES",
+            "text": "<p>{{ product.metafields.custom.product_features | metafield_tag }}</p>",
+            "padding_bottom": 0
+          }
+        },
+        "accordion_ARNrpD": {
+          "type": "accordion",
+          "settings": {
+            "show_description": false,
+            "show_read_more": false,
+            "default_open": false,
+            "heading": "SHIPPING, EXCHANGES, AND RETURNS",
+            "text": "<p>· Most orders will ship within 48 hours from our warehouse located in San Diego. Orders are processed Monday - Friday during normal business hours. </p><p>· Free (and easy) exchanges, we want you in the correct size.</p><p>· 30-day return window.</p><p>· Sale items are eligible for exchanges and store credit only.</p>",
+            "padding_bottom": 0
+          }
+        },
+        "accordion_FbypEj": {
+          "type": "accordion",
+          "settings": {
+            "show_description": false,
+            "show_read_more": false,
+            "default_open": false,
+            "heading": "1 YEAR WARRANTY",
+            "text": "<p>· Our clothing is made by hand and made to last. We stand by our construction and fabrics and offer a 1-year warranty against manufacturing defects. The most sustainable clothing is the kind that lasts many seasons. Need a repair? Questions? <a href=\"mailto:info@ornotbike.com\" title=\"mailto:info@ornotbike.com\">Email us</a>, we’re pretty good at typing.</p><p>· Crash Replacement Assistance - We offer a discounted replacement if you happen to fall and destroy your clothing. (We recommend that you don’t use this)</p>",
+            "padding_bottom": 10
+          }
+        },
+        "upsell": {
+          "type": "upsell",
+          "settings": {
+            "upsell_product": "",
+            "upsell_product_list": [
+              "mission-pants-coffee",
+              "handlebar-bag-mini-ecopak-white",
+              "mens-merino-gravel-sweater-zissou"
+            ],
+            "show_available_upsell_only": true,
+            "layout": "stacked",
+            "autoplay": false,
+            "autoplay_speed": 8,
+            "bg_color": "rgba(0,0,0,0)",
+            "padding_bottom": 16
+          }
+        },
+        "upsell_by_amp_embedded_product_nAD6PW": {
+          "type": "shopify://apps/upsell-by-amp/blocks/embedded-product/04a7ddf7-3a4c-4228-9a44-33ba2380f058",
+          "settings": {
+            "override_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "text_aCVqmj",
+        "junip_product_reviews_ugc_junip_product_summary_46cMCr",
+        "price",
+        "siblings_6N6EiR",
+        "variants",
+        "text_rUQBrk",
+        "buttons",
+        "accordion_E3FAbY",
+        "accordion_xzTzzU",
+        "accordion_ARNrpD",
+        "accordion_FbypEj",
+        "upsell",
+        "upsell_by_amp_embedded_product_nAD6PW"
+      ],
+      "custom_css": [
+        ".product-upsell__holder__title {font-weight: bold; text-transform: uppercase;}",
+        ".product-upsell__title {font-weight: bold; font-size: calc(var(--font-3) * var(--FONT-ADJUST-BODY)); color: #00b5e2;}",
+        ".product-upsell__price {font-weight: bold; font-size: calc(var(--font-2) * var(--FONT-ADJUST-BODY)); color: #00b5e2;}",
+        ".product-upsell__variant-title {display: none;}",
+        "shopify-payment-terms {display: none !important;}"
+      ],
+      "settings": {
+        "product_sticky_enable": true,
+        "variant_image_scroll": true,
+        "show_cart_bar": false,
+        "enable_zoom": true,
+        "enable_video_looping": true,
+        "image_layout": "grid-1",
+        "image_size": "normal",
+        "mobile_image_style": "thumbs",
+        "color_scheme": "",
+        "padding_top": 25,
+        "padding_bottom": 30
+      }
+    },
+    "section_hero_8nY6LC": {
+      "type": "section-hero",
+      "settings": {
+        "image_1": "{{ product.metafields.custom.web_size_chart.value }}",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "{{ product.metafields.custom.mobile_size_chart.value }}",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_hero_NN4xAd": {
+      "type": "section-hero",
+      "settings": {
+        "image_1": "shopify://shop_images/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.png",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/CN_1FTP_BannerMobile.png",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "1706135782d1067a10": {
+      "type": "apps",
+      "blocks": {
+        "junip_product_reviews_ugc_junip_product_review_9ByW79": {
+          "type": "shopify://apps/junip/blocks/junip-product-review/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
+          "settings": {
+            "product": "{{product}}",
+            "title": "",
+            "alignment": ""
+          }
+        }
+      },
+      "block_order": [
+        "junip_product_reviews_ugc_junip_product_review_9ByW79"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "related": {
+      "type": "related",
+      "blocks": {
+        "related": {
+          "type": "related",
+          "settings": {
+            "product_recommendations_heading": "Related products"
+          }
+        },
+        "recent": {
+          "type": "recent",
+          "settings": {
+            "product_recently_heading": "Recently viewed"
+          }
+        }
+      },
+      "block_order": [
+        "related",
+        "recent"
+      ],
+      "custom_css": [
+        ".product-item--swatches {padding: 0px 10px 0px 10px;}",
+        ".product-item--centered {padding: 0px 10px 0px 10px;}"
+      ],
+      "settings": {
+        "enable_tabs": true,
+        "heading_alignment": "text-center",
+        "heading_font_size": "heading-small",
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 30,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "section_hero_t4phQQ",
+    "main",
+    "section_hero_8nY6LC",
+    "section_hero_NN4xAd",
+    "1706135782d1067a10",
+    "related"
+  ]
+}

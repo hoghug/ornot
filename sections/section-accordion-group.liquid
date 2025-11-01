@@ -99,8 +99,7 @@
 
                     {{ title }}
 
-                    {%- render 'icon-plus' -%}
-                    {%- render 'icon-minus' -%}
+                    {%- render 'icon-nav-arrow-down' -%}
                   </summary>
 
                   <div
@@ -320,7 +319,7 @@
           "type": "image_picker",
           "id": "icon_image",
           "label": "Alternative icon/image",
-          "info": "160 x 160px .svg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "160 x 160px .svg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "type": "range",
@@ -343,7 +342,8 @@
         {
           "type": "color",
           "id": "icon_color",
-          "label": "Icon"
+          "label": "Icon",
+          "alpha": true
         }
       ]
     }
@@ -351,6 +351,7 @@
   "presets": [
     {
       "name": "Accordion group",
+      "category": "Storytelling",
       "blocks": [
         {
           "type": "heading"

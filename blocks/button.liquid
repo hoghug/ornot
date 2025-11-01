@@ -1,30 +1,14 @@
-{%- liquid
-  assign button_style = block.settings.style
-  assign show_arrow = block.settings.show_arrow
-
-  if button_style == 'btn--text' and show_arrow
-    assign button_style = button_style | append: ' btn--text-no-underline'
-  endif
+{%- render 'button',
+  text: block.settings.text,
+  link: block.settings.link,
+  type: block.settings.type,
+  size: block.settings.size,
+  style: block.settings.style,
+  show_arrow: block.settings.show_arrow,
+  full_width: block.settings.full_width,
+  padding_bottom: block.settings.padding_bottom,
+  shopify_attributes: block.shopify_attributes
 -%}
-
-<div
-  class="hero__button"
-  data-aos="hero"
-  data-aos-order="auto"
-  data-aos-anchor="#{{ section.id }}"
-  {{ block.shopify_attributes }}
->
-  <a
-    class="btn {{ block.settings.size }} {{ button_style }} {{ block.settings.type }}"
-    href="{{ block.settings.link }}"
-  >
-    <span>{{ block.settings.text | escape }}</span>
-
-    {%- if show_arrow -%}
-      {%- render 'icon-arrow-right' -%}
-    {%- endif -%}
-  </a>
-</div>
 
 {% schema %}
 {
@@ -81,6 +65,26 @@
       "id": "show_arrow",
       "label": "Show arrow",
       "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full-width",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "label": "Bottom",
+      "default": 8
     }
   ],
   "presets": [

@@ -1,1 +1,663 @@
-{"sections":{"section_hero_t4phQQ":{"type":"section-hero","settings":{"image_1":"{{ product.metafields.my_fields.hero_header_image.value }}","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-center-desktop","content_width":50,"mobile_image":"shopify:\/\/shop_images\/TransparentLineThin_c68a9c99-40f9-4a8b-abbe-2d9d16677ec6.gif","mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"main":{"type":"product","blocks":{"title":{"type":"title","settings":{"subheading_option":"none","heading_font_size":"heading-medium","padding_bottom":8}},"text_Nzq6xK":{"type":"text","settings":{"title":"","heading_font_size":"body-medium","text":"<p>{{ product.metafields.custom.tagline | metafield_tag }}<\/p>","text_font_size":"body-medium","text_alignment":"text-left","layout":"left","padding_bottom":16}},"junip_product_reviews_ugc_junip_product_summary_46cMCr":{"type":"shopify:\/\/apps\/junip\/blocks\/junip-product-summary\/dc14f5a8-ed15-41b1-ad08-cfba23f9789b","settings":{"product":"{{product}}"}},"price":{"type":"price","settings":{"text_font_size":"body-x-large","padding_bottom":16}},"siblings_6N6EiR":{"type":"siblings","settings":{"siblings_collection":"{{ product.metafields.theme.siblings.value }}","sibling_color":"{{ product.metafields.theme.sibling_color.value }}","padding_bottom":16}},"variants":{"type":"variants","settings":{"info_page":"","size_chart_style":"text","subscriptions_enable_selectors":false,"padding_bottom":16}},"pickup":{"type":"pickup","settings":{"padding_bottom":32}},"text_ehDM83":{"type":"text","settings":{"title":"{{ product.metafields.custom.extra_product_text.value }}","heading_font_size":"body-medium","text":"","text_font_size":"body-medium","text_alignment":"text-left","layout":"left","padding_bottom":16}},"buttons":{"type":"buttons","settings":{"show_quantity":false,"button_type":"btn--primary","button_style":"btn--solid","show_payment_button":false,"button_type_dynamic":"btn--secondary","button_style_dynamic":"btn--solid","show_gift_card_recipient":false,"padding_bottom":32}},"accordion_8T8N4Y":{"type":"accordion","settings":{"show_description":true,"show_read_more":false,"default_open":true,"heading":"DESCRIPTION","text":"","padding_bottom":0}},"accordion_eCDbXD":{"type":"accordion","settings":{"show_description":false,"show_read_more":false,"default_open":false,"heading":"FEATURES","text":"<p>{{ product.metafields.custom.product_features | metafield_tag }}<\/p>","padding_bottom":0}},"accordion_cRURyb":{"type":"accordion","settings":{"show_description":false,"show_read_more":false,"default_open":false,"heading":"SHIPPING, EXCHANGES, AND RETURNS","text":"<p>· Most orders will ship within 48 hours from our warehouse located in San Diego. Orders are processed Monday - Friday during normal business hours.<\/p><p>· Free (and easy) exchanges, we want you in the correct size.<\/p><p>· 30-day return window.<\/p><p>· Sale items are eligible for exchanges and store credit only.<\/p>","padding_bottom":0}},"accordion_jEzb83":{"type":"accordion","settings":{"show_description":false,"show_read_more":false,"default_open":false,"heading":"1 YEAR WARRANTY","text":"<p>· Our clothing is made by hand and made to last. We stand by our construction and fabrics and offer a 1-year warranty against manufacturing defects. The most sustainable clothing is the kind that lasts many seasons. Need a repair? Questions? <a href=\"mailto:info@ornotbike.com\">Email us<\/a>, we’re pretty good at typing.<\/p><p>· Crash Replacement Assistance - We offer a discounted replacement if you happen to fall and destroy your clothing. (We recommend that you don’t use this)<\/p>","padding_bottom":0}},"upsell":{"type":"upsell","settings":{"upsell_product":"","upsell_product_list":["ass-saver-ornot","merino-gloves","decadentwinter-cap"],"show_available_upsell_only":true,"layout":"stacked","autoplay":false,"autoplay_speed":8,"bg_color":"","padding_bottom":16}},"divider_1":{"type":"divider","disabled":true,"settings":{"show_line":true,"padding_bottom":16}},"features_p9gq4m":{"type":"features","disabled":true,"settings":{"icon_name":"icon-award","icon_size":20,"title":"Feature","text_font_size":"body-medium","text":"<p>This content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>","bg_color":"#f7f9fa","color":"#212121","padding_bottom":16}}},"block_order":["title","text_Nzq6xK","junip_product_reviews_ugc_junip_product_summary_46cMCr","price","siblings_6N6EiR","variants","pickup","text_ehDM83","buttons","accordion_8T8N4Y","accordion_eCDbXD","accordion_cRURyb","accordion_jEzb83","upsell","divider_1","features_p9gq4m"],"custom_css":[],"settings":{"product_sticky_enable":true,"variant_image_scroll":true,"show_cart_bar":false,"enable_zoom":false,"enable_video_looping":true,"image_layout":"thumbnails","image_size":"normal","mobile_image_style":"thumbs","color_scheme":"","padding_top":25,"padding_bottom":30}},"section_hero_8nY6LC":{"type":"section-hero","settings":{"image_1":"{{ product.metafields.custom.web_size_chart.value }}","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-center-desktop","content_width":50,"mobile_image":"{{ product.metafields.custom.mobile_size_chart.value }}","mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"section_hero_AXLMwy":{"type":"section-hero","blocks":{"heading_PQR349":{"type":"heading","settings":{"title":"EXTREMELY BREATHABLE","heading_font_size":"heading-x-large","heading_tag":"automatic"}},"text_tRPGRG":{"type":"text","settings":{"text":"<p>WEAR IT ALL DAY, ORNOT<\/p>","text_font_size":"body-x-large"}}},"block_order":["heading_PQR349","text_tRPGRG"],"settings":{"image_1":"shopify:\/\/shop_images\/MAGIC-SHELL-web-sliver-1.jpg","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-center-desktop","content_width":50,"mobile_image":"shopify:\/\/shop_images\/Ornot_Mens_MagicShell_Jacket_StoneBlue_Hero-1.jpg","mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-left-mobile","color_scheme":"scheme-2","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"section_custom_content_kgVBJE":{"type":"section-custom-content","blocks":{"text_JddKwq":{"type":"text","settings":{"subheading":"","title":"Taped & Bonded in the US","heading_font_size":"heading-large","text":"<p>The best water-resistant jackets use a technological process that melts a special tape between fabric layers and bonds them together when heat is applied. This process creates a seam without the need for traditional sewing stitches. Classic sewing methods are great but allow some moisture to seep in during heavy and sustained rain. <\/p><p>Bonded seams create a smooth transition between panels to improve comfort and increase water repellency. The Magic Shell is one of the only taped & bonded jackets constructed in the US. We're still not going to call it 100% waterproof, but it's in the 99% zone.<\/p>","text_font_size":"body-medium","button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"","color":"","heading_tag":"automatic"}},"image_LYC9qC":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Ornot_Womens_MagicShell_Jacket_StoneBlue_10.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}}},"block_order":["text_JddKwq","image_LYC9qC"],"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":false,"color_scheme":"","padding_top":0,"padding_bottom":0}},"section_hero_3WTwzL":{"type":"section-hero","blocks":{"heading_i4kqrc":{"type":"heading","settings":{"title":"polartec® power shield™","heading_font_size":"heading-x-large","heading_tag":"automatic"}},"text_U8p4We":{"type":"text","settings":{"text":"<p>2-WAY YKK ZIP \/ PACKABLE \/ STRETCHY AND SOFT<\/p>","text_font_size":"body-x-large"}}},"block_order":["heading_i4kqrc","text_U8p4We"],"settings":{"image_1":"shopify:\/\/shop_images\/MAGIC-SHELL-sliver-2.jpg","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-center-desktop","content_width":50,"mobile_image":"shopify:\/\/shop_images\/MAGIC-SHELL-sliver-2.jpg","mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"scheme-2","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"section_custom_content_3Hy8cr":{"type":"section-custom-content","blocks":{"image_Mw7iUH":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/ORNT6631.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}},"text_DaTmMk":{"type":"text","settings":{"subheading":"","title":"WHAT YOU GET","heading_font_size":"heading-large","text":"<p>• Extremely breathable microporous hydrophobic membrane.<\/p><p>• Perfect from 55 degrees to below freezing with appropriate layers.<\/p><p>• Stretchy and Quiet - Doesn't flap in the wind.<\/p><p>• PFAS Free DWR coating + bluesign®-approved fabric.<\/p><p>• 99% windproof and waterproof.<\/p><p>• Low-key reflective detailing on front and back.<\/p><p>• Bonded and taped seams \/ YKK 2-way double zipper \/ Made in California.<\/p><p>• Back pockets + Secure zipper pocket (new for 2025) \/ Still packs down to the size of a water bottle.<\/p>","text_font_size":"body-medium","button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"","color":"","heading_tag":"automatic"}}},"block_order":["image_Mw7iUH","text_DaTmMk"],"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":true,"color_scheme":"","padding_top":0,"padding_bottom":0}},"section_custom_content_gUh4xU":{"type":"section-custom-content","blocks":{"text_GBQbE7":{"type":"text","settings":{"subheading":"","title":"WHY MAGIC?","heading_font_size":"heading-large","text":"<p>Years of real-world testing across various conditions, including heavy fog, biting winds, and more rain than we prefer, have left us with no other explanation. This jacket is pure Magic when you need protection from the elements. Every inch of the 3-layer 4-way stretch knit fabric is waterproof and breathable, especially in inclement weather. You could call it California waterproof, Ornot.<\/p>","text_font_size":"body-medium","button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"","color":"","heading_tag":"automatic"}},"image_xFNF4g":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/TNUT0623.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}}},"block_order":["text_GBQbE7","image_xFNF4g"],"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":false,"color_scheme":"","padding_top":0,"padding_bottom":0}},"section_custom_content_LXG6mA":{"type":"section-custom-content","blocks":{"image_rxjBGw":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Ornot_Womens_MagicShell_Jacket_StoneBlue_08.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}},"text_zXjBRp":{"type":"text","settings":{"subheading":"","title":"HOW DOES IT WORK?","heading_font_size":"heading-large","text":"<p>Polartec® Power Shield® features a proprietary, patented construction process creating a new hydrophobiac, microporous membrane with a tightly controlled range of pore sizes.  It has the durability and stretch of a polyurethane film plus the breathability of a microporous structure.  This unique construction allows for positive air exchange to drive moisture vapor release while remaining completely waterproof.  It does all of this at a fraction of the weight of current membrane technologies so a garment made of Neoshell is lighter, softer, and more supple.<\/p>","text_font_size":"body-medium","button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"","color":"","heading_tag":"automatic"}}},"block_order":["image_rxjBGw","text_zXjBRp"],"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":true,"color_scheme":"","padding_top":0,"padding_bottom":0}},"section_hero_F6FA3T":{"type":"section-hero","settings":{"image_1":"shopify:\/\/shop_images\/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.png","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-center-desktop","content_width":50,"mobile_image":"shopify:\/\/shop_images\/CN_1FTP_BannerMobile.png","mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"1706135782d1067a10":{"type":"apps","blocks":{"junip_product_reviews_ugc_junip_product_review_9ByW79":{"type":"shopify:\/\/apps\/junip\/blocks\/junip-product-review\/dc14f5a8-ed15-41b1-ad08-cfba23f9789b","settings":{"product":"{{product}}"}}},"block_order":["junip_product_reviews_ugc_junip_product_review_9ByW79"],"settings":{"include_margins":false}},"related":{"type":"related","blocks":{"related":{"type":"related","settings":{"product_recommendations_heading":"Related products","limit":6}},"recent":{"type":"recent","settings":{"product_recently_heading":"Recently viewed","product_recently_limit":6}}},"block_order":["related","recent"],"custom_css":[],"settings":{"enable_tabs":true,"heading_alignment":"text-center","heading_font_size":"heading-small","layout_mobile":"slider","color_scheme":"","padding_top":30,"padding_bottom":0}}},"order":["section_hero_t4phQQ","main","section_hero_8nY6LC","section_hero_AXLMwy","section_custom_content_kgVBJE","section_hero_3WTwzL","section_custom_content_3Hy8cr","section_custom_content_gUh4xU","section_custom_content_LXG6mA","section_hero_F6FA3T","1706135782d1067a10","related"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section_hero_t4phQQ": {
+      "type": "section-hero",
+      "settings": {
+        "image_1": "{{ product.metafields.my_fields.hero_header_image.value }}",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/TransparentLineThin_c68a9c99-40f9-4a8b-abbe-2d9d16677ec6.gif",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "main": {
+      "type": "product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "subheading_option": "none",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 8
+          }
+        },
+        "text_Nzq6xK": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "heading_font_size": "body-medium",
+            "text": "<p>{{ product.metafields.custom.tagline | metafield_tag }}</p>",
+            "text_font_size": "body-medium",
+            "text_alignment": "text-left",
+            "layout": "left",
+            "padding_bottom": 16
+          }
+        },
+        "junip_product_reviews_ugc_junip_product_summary_46cMCr": {
+          "type": "shopify://apps/junip/blocks/junip-product-summary/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "text_font_size": "body-x-large",
+            "padding_bottom": 16
+          }
+        },
+        "siblings_6N6EiR": {
+          "type": "siblings",
+          "settings": {
+            "siblings_collection": "{{ product.metafields.theme.siblings.value }}",
+            "sibling_color": "{{ product.metafields.theme.sibling_color.value }}",
+            "padding_bottom": 16
+          }
+        },
+        "variants": {
+          "type": "variants",
+          "settings": {
+            "info_page": "",
+            "size_chart_style": "text",
+            "padding_bottom": 16
+          }
+        },
+        "pickup": {
+          "type": "pickup",
+          "settings": {
+            "padding_bottom": 32
+          }
+        },
+        "text_ehDM83": {
+          "type": "text",
+          "settings": {
+            "title": "{{ product.metafields.custom.extra_product_text.value }}",
+            "heading_font_size": "body-medium",
+            "text": "",
+            "text_font_size": "body-medium",
+            "text_alignment": "text-left",
+            "layout": "left",
+            "padding_bottom": 16
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "show_quantity": false,
+            "button_type": "btn--primary",
+            "button_style": "btn--solid",
+            "button_type_dynamic": "btn--secondary",
+            "button_style_dynamic": "btn--solid",
+            "show_gift_card_recipient": false,
+            "padding_bottom": 32
+          }
+        },
+        "accordion_8T8N4Y": {
+          "type": "accordion",
+          "settings": {
+            "show_description": true,
+            "show_read_more": false,
+            "default_open": true,
+            "heading": "DESCRIPTION",
+            "text": "",
+            "padding_bottom": 0
+          }
+        },
+        "accordion_eCDbXD": {
+          "type": "accordion",
+          "settings": {
+            "show_description": false,
+            "show_read_more": false,
+            "default_open": false,
+            "heading": "FEATURES",
+            "text": "<p>{{ product.metafields.custom.product_features | metafield_tag }}</p>",
+            "padding_bottom": 0
+          }
+        },
+        "accordion_cRURyb": {
+          "type": "accordion",
+          "settings": {
+            "show_description": false,
+            "show_read_more": false,
+            "default_open": false,
+            "heading": "SHIPPING, EXCHANGES, AND RETURNS",
+            "text": "<p>· Most orders will ship within 48 hours from our warehouse located in San Diego. Orders are processed Monday - Friday during normal business hours.</p><p>· Free (and easy) exchanges, we want you in the correct size.</p><p>· 30-day return window.</p><p>· Sale items are eligible for exchanges and store credit only.</p>",
+            "padding_bottom": 0
+          }
+        },
+        "accordion_jEzb83": {
+          "type": "accordion",
+          "settings": {
+            "show_description": false,
+            "show_read_more": false,
+            "default_open": false,
+            "heading": "1 YEAR WARRANTY",
+            "text": "<p>· Our clothing is made by hand and made to last. We stand by our construction and fabrics and offer a 1-year warranty against manufacturing defects. The most sustainable clothing is the kind that lasts many seasons. Need a repair? Questions? <a href=\"mailto:info@ornotbike.com\">Email us</a>, we’re pretty good at typing.</p><p>· Crash Replacement Assistance - We offer a discounted replacement if you happen to fall and destroy your clothing. (We recommend that you don’t use this)</p>",
+            "padding_bottom": 0
+          }
+        },
+        "upsell": {
+          "type": "upsell",
+          "settings": {
+            "upsell_product": "",
+            "upsell_product_list": [
+              "ass-saver-ornot",
+              "merino-gloves",
+              "decadentwinter-cap"
+            ],
+            "show_available_upsell_only": true,
+            "layout": "stacked",
+            "autoplay": false,
+            "autoplay_speed": 8,
+            "bg_color": "",
+            "padding_bottom": 16
+          }
+        },
+        "divider_1": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_line": true,
+            "padding_bottom": 16
+          }
+        },
+        "features_p9gq4m": {
+          "type": "features",
+          "disabled": true,
+          "settings": {
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "title": "Feature",
+            "text_font_size": "body-medium",
+            "text": "<p>This content type will accept <strong>rich text</strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.</p>",
+            "bg_color": "#f7f9fa",
+            "color": "#212121",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "text_Nzq6xK",
+        "junip_product_reviews_ugc_junip_product_summary_46cMCr",
+        "price",
+        "siblings_6N6EiR",
+        "variants",
+        "pickup",
+        "text_ehDM83",
+        "buttons",
+        "accordion_8T8N4Y",
+        "accordion_eCDbXD",
+        "accordion_cRURyb",
+        "accordion_jEzb83",
+        "upsell",
+        "divider_1",
+        "features_p9gq4m"
+      ],
+      "custom_css": [],
+      "settings": {
+        "product_sticky_enable": true,
+        "variant_image_scroll": true,
+        "show_cart_bar": false,
+        "enable_zoom": false,
+        "enable_video_looping": true,
+        "image_layout": "thumbnails",
+        "image_size": "normal",
+        "mobile_image_style": "thumbs",
+        "color_scheme": "",
+        "padding_top": 25,
+        "padding_bottom": 30
+      }
+    },
+    "section_hero_8nY6LC": {
+      "type": "section-hero",
+      "settings": {
+        "image_1": "{{ product.metafields.custom.web_size_chart.value }}",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "{{ product.metafields.custom.mobile_size_chart.value }}",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_hero_AXLMwy": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_PQR349": {
+          "type": "heading",
+          "settings": {
+            "title": "EXTREMELY BREATHABLE",
+            "heading_font_size": "heading-x-large",
+            "heading_tag": "automatic"
+          }
+        },
+        "text_tRPGRG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>WEAR IT ALL DAY, ORNOT</p>",
+            "text_font_size": "body-x-large"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PQR349",
+        "text_tRPGRG"
+      ],
+      "settings": {
+        "image_1": "shopify://shop_images/MAGIC-SHELL-web-sliver-1.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/Ornot_Mens_MagicShell_Jacket_StoneBlue_Hero-1.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-left-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_custom_content_kgVBJE": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_JddKwq": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "Taped & Bonded in the US",
+            "heading_font_size": "heading-large",
+            "text": "<p>The best water-resistant jackets use a technological process that melts a special tape between fabric layers and bonds them together when heat is applied. This process creates a seam without the need for traditional sewing stitches. Classic sewing methods are great but allow some moisture to seep in during heavy and sustained rain. </p><p>Bonded seams create a smooth transition between panels to improve comfort and increase water repellency. The Magic Shell is one of the only taped & bonded jackets constructed in the US. We're still not going to call it 100% waterproof, but it's in the 99% zone.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
+        "image_LYC9qC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Womens_MagicShell_Jacket_StoneBlue_10.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_JddKwq",
+        "image_LYC9qC"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_hero_3WTwzL": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_i4kqrc": {
+          "type": "heading",
+          "settings": {
+            "title": "polartec® power shield™",
+            "heading_font_size": "heading-x-large",
+            "heading_tag": "automatic"
+          }
+        },
+        "text_U8p4We": {
+          "type": "text",
+          "settings": {
+            "text": "<p>2-WAY YKK ZIP / PACKABLE / STRETCHY AND SOFT</p>",
+            "text_font_size": "body-x-large"
+          }
+        }
+      },
+      "block_order": [
+        "heading_i4kqrc",
+        "text_U8p4We"
+      ],
+      "settings": {
+        "image_1": "shopify://shop_images/MAGIC-SHELL-sliver-2.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/MAGIC-SHELL-sliver-2.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_custom_content_3Hy8cr": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_Mw7iUH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ORNT6631.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_DaTmMk": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "WHAT YOU GET",
+            "heading_font_size": "heading-large",
+            "text": "<p>• Extremely breathable microporous hydrophobic membrane.</p><p>• Perfect from 55 degrees to below freezing with appropriate layers.</p><p>• Stretchy and Quiet - Doesn't flap in the wind.</p><p>• PFAS Free DWR coating + bluesign®-approved fabric.</p><p>• 99% windproof and waterproof.</p><p>• Low-key reflective detailing on front and back.</p><p>• Bonded and taped seams / YKK 2-way double zipper / Made in California.</p><p>• Back pockets + Secure zipper pocket (new for 2025) / Still packs down to the size of a water bottle.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_Mw7iUH",
+        "text_DaTmMk"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_gUh4xU": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_GBQbE7": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "WHY MAGIC?",
+            "heading_font_size": "heading-large",
+            "text": "<p>Years of real-world testing across various conditions, including heavy fog, biting winds, and more rain than we prefer, have left us with no other explanation. This jacket is pure Magic when you need protection from the elements. Every inch of the 3-layer 4-way stretch knit fabric is waterproof and breathable, especially in inclement weather. You could call it California waterproof, Ornot.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
+        "image_xFNF4g": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TNUT0623.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_GBQbE7",
+        "image_xFNF4g"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_LXG6mA": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_rxjBGw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Womens_MagicShell_Jacket_StoneBlue_08.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_zXjBRp": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "HOW DOES IT WORK?",
+            "heading_font_size": "heading-large",
+            "text": "<p>Polartec® Power Shield® features a proprietary, patented construction process creating a new hydrophobiac, microporous membrane with a tightly controlled range of pore sizes.  It has the durability and stretch of a polyurethane film plus the breathability of a microporous structure.  This unique construction allows for positive air exchange to drive moisture vapor release while remaining completely waterproof.  It does all of this at a fraction of the weight of current membrane technologies so a garment made of Neoshell is lighter, softer, and more supple.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_rxjBGw",
+        "text_zXjBRp"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_hero_F6FA3T": {
+      "type": "section-hero",
+      "settings": {
+        "image_1": "shopify://shop_images/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.png",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/CN_1FTP_BannerMobile.png",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "1706135782d1067a10": {
+      "type": "apps",
+      "blocks": {
+        "junip_product_reviews_ugc_junip_product_review_9ByW79": {
+          "type": "shopify://apps/junip/blocks/junip-product-review/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "junip_product_reviews_ugc_junip_product_review_9ByW79"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "related": {
+      "type": "related",
+      "blocks": {
+        "related": {
+          "type": "related",
+          "settings": {
+            "product_recommendations_heading": "Related products"
+          }
+        },
+        "recent": {
+          "type": "recent",
+          "settings": {
+            "product_recently_heading": "Recently viewed"
+          }
+        }
+      },
+      "block_order": [
+        "related",
+        "recent"
+      ],
+      "custom_css": [],
+      "settings": {
+        "enable_tabs": true,
+        "heading_alignment": "text-center",
+        "heading_font_size": "heading-small",
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 30,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "section_hero_t4phQQ",
+    "main",
+    "section_hero_8nY6LC",
+    "section_hero_AXLMwy",
+    "section_custom_content_kgVBJE",
+    "section_hero_3WTwzL",
+    "section_custom_content_3Hy8cr",
+    "section_custom_content_gUh4xU",
+    "section_custom_content_LXG6mA",
+    "section_hero_F6FA3T",
+    "1706135782d1067a10",
+    "related"
+  ]
+}

@@ -20,8 +20,6 @@
 -%}
 
 {%- unless cart_total_hidden -%}
-  <span style="display: block; text-align: right;" class="saw-extra-note"></span>
-
   <div class="cart__total">
     <span class="cart__total__label">{{ 'cart.general.subtotal_items' | t }}</span>
 
@@ -29,12 +27,7 @@
       {%- if original_subtotal == 0 -%}
         {{ 'general.money.free' | t }}
       {%- else -%}
-          <span class="saw-cart-original-total">
-
         {{- original_subtotal_formatted -}}
-          </span>
-          <span class="saw-cart-total"></span>
-
       {%- endif -%}
     </span>
   </div>
@@ -52,17 +45,22 @@
           endif
         -%}
 
-        <div class="cart__total">
+        <div class="cart__total" data-discount-body data-discount-code="{{ discount.title | handleize }}">
           <div>
             {%- render 'icon-tags' -%}
 
             <span>
               {{- discount.title -}}
             </span>
+
+            <span class="remove-discount" aria-label="{{ 'cart.general.remove_discount' | t }}" data-remove-discount>
+              {%- render 'icon-cancel' -%}
+            </span>
           </div>
 
           <span>
-            -{{- discount_total_allocated_amount -}}
+            -
+            {{- discount_total_allocated_amount -}}
           </span>
         </div>
       {%- endfor -%}

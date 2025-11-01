@@ -20,6 +20,9 @@
   if settings.show_labels == false
     assign hide_labels_class = ' variant__labels--hide'
   endif
+
+  assign option_font_size = block.settings.option_font_size
+  assign value_font_size = block.settings.value_font_size
 -%}
 
 {%- if show_siblings -%}
@@ -46,10 +49,33 @@
         <div class="radio__fieldset radio__fieldset--swatches">
           <legend class="radio__legend">
             <span class="radio__legend__label">
-              <span class="radio__legend__option-name">{{ 'general.siblings.label' | t }}</span>
+              <span class="radio__legend__option-name {{ option_font_size }}">
+                {{- 'general.siblings.label' | t -}}
+              </span>
 
-              {%- if sibling_color != blank -%}
-                <small class="radio__legend__value">{{ sibling_color }}</small>
+              {%- if settings.show_labels -%}
+                {%- capture label -%}
+                  {%- if sibling_color != blank -%}
+                    <small class="radio__legend__value {{ value_font_size }}">{{ sibling_color }}</small>
+                  {%- endif -%}
+                {%- endcapture -%}
+              {%- endif -%}
+
+              {%- if current_variant.metafields.theme.color_description != blank -%}
+                {%- assign form_style = settings.form_style -%}
+
+                {%- capture color_description -%}
+                  <small class="radio__legend__value radio__legend__color__description {{ value_font_size }}">{{ current_variant.metafields.theme.color_description }}</small>
+                {%- endcapture -%}
+              {%- endif -%}
+
+              {%- if form_style == 'classic' -%}
+                <div class="radio__legend__values">
+              {%- endif -%}
+              {{ label -}}
+              {{ color_description }}
+              {%- if form_style == 'classic' -%}
+                </div>
               {%- endif -%}
             </span>
           </legend>
@@ -102,6 +128,8 @@
                         href="{{ sib_product.url }}"
                         class="sibling__link{{ modifier_class }}"
                         data-quick-add-btn
+                        data-swap-url="{{ sib_product.url }}"
+                        data-swap-target="{{ section.id }}--{{ sib_product.handle }}"
                         data-sibling-swapper
                         data-quick-add-modal-handle="{{ sib_product.handle }}"
                       >

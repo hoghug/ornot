@@ -23,8 +23,10 @@
     }
   {%- endstyle -%}
 
-  <section class="subcollections collection-{{ collection.handle }} section-padding {{ color_scheme }}"
-    id="Subcollections--{{ section.id }}">
+  <section
+    class="subcollections collection-{{ collection.handle }} section-padding {{ color_scheme }}"
+    id="Subcollections--{{ section.id }}"
+  >
     {%- if sub_collections.size > 0 -%}
       {%- for sublink in sub_collections -%}
         {%- liquid
@@ -120,7 +122,7 @@
   "settings": [
     {
       "type": "paragraph",
-      "content": "Create a [navigation list](/admin/menus) with the same name as this collection and link to other collections. [Learn more](https://broadcast.invisiblethemes.com/collections/collection-pages/sub-collections)"
+      "content": "Create a [navigation list](/admin/content/menus) with the same name as this collection and link to other collections. [Learn more](https://broadcast.presidiocreative.com/collections/collection-pages/sub-collections)"
     },
     {
       "type": "select",
@@ -173,12 +175,14 @@
       "type": "color",
       "id": "color",
       "label": "Text",
-      "default": "#ffffff"
+      "default": "#ffffff",
+      "alpha": true
     },
     {
       "type": "color",
       "id": "bg_color",
-      "label": "Background"
+      "label": "Background",
+      "alpha": true
     },
     {
       "type": "header",

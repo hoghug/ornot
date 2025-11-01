@@ -1,25 +1,25 @@
 <!-- /snippets/collection-block.liquid -->
 
 {% comment %}
-    Renders a list of products from a collection
+  Renders a list of products from a collection
 
-    Accepts:
-    - collection: {Object} Image to render (required)
-    - section: {Object} Image to render (required)
-    - block: {Object} Image section settings (required)
-    - limit: {Number} contains a value of products to render in grid (required)
+  Accepts:
+  - collection: {Object} Image to render (required)
+  - section: {Object} Image to render (required)
+  - block: {Object} Image section settings (required)
+  - limit: {Number} contains a value of products to render in grid (required)
 
-    Usage:
-    {%- render 'collection-block' collection: collection, section: section, block: block, limit: limit -%}
+  Usage:
+  {%- render 'collection-block' collection: collection, section: section, block: block, limit: limit -%}
 {% endcomment %}
 
 {%- liquid
   assign collection_title = block.settings.collection_name
   assign collection_image = block.settings.image | default: collection.image
 
-  assign mobile_slider = "grid--mobile-vertical"
+  assign mobile_slider = 'grid--mobile-vertical'
   if section.settings.layout_mobile == 'slider'
-    assign mobile_slider = "grid--mobile-slider"
+    assign mobile_slider = 'grid--mobile-slider'
   endif
 
   assign products_block_html = ''
@@ -117,14 +117,18 @@
 
     <a href="{{ collection.url }}" class="collection-block__image" aria-label="{{ image_aria_label }}">
       <div class="collection-block__image-bg">
-        {%- render 'image' image: collection_image, sizes: sizes, cover: true -%}
+        {%- render 'image', image: collection_image, sizes: sizes, cover: true -%}
       </div>
     </a>
   {%- endif -%}
 </div>
 
 {%- if products_list_html != '' -%}
-  <section class="index-products{% if products_list_index <= 2 and collection_image == blank %} mobile{% endif %}" data-section-id="{{ section.id }}" data-section-type="product-grid">
+  <section
+    class="index-products{% if products_list_index <= 2 and collection_image == blank %} mobile{% endif %}"
+    data-section-id="{{ section.id }}"
+    data-section-type="product-grid"
+  >
     <div class="grid-outer">
       <div class="grid {{ mobile_slider }}">
         {{ products_list_html }}
@@ -134,7 +138,13 @@
 {%- elsif products_list_index == 0 -%}
   <div class="collection-block__empty">
     <div class="no-results">
-      <p><strong>{{ 'collections.general.no_matches' | t }}</strong></p>
+      <p>
+        <strong>{{ 'collections.general.no_matches' | t }}</strong>
+      </p>
     </div>
   </div>
+{%- endif -%}
+
+{%- if settings.quickview_enable -%}
+  <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}

@@ -42,23 +42,33 @@
   <div class="wrapper">
     <div id="predictive-search-results" role="listbox">
       {%- if first_column_results_size > 0 or product_count > 0 -%}
-        <div class="predictive-search__layout{% unless product_count > 0 %} predictive-search__layout--no-products{% endunless %}{% unless query_count > 0 or collection_count > 0 or article_count > 0 %} predictive-search__layout--no-suggestions{% endunless %}" data-search-results-groups-wrapper>
+        <div
+          class="predictive-search__layout{% unless product_count > 0 %} predictive-search__layout--no-products{% endunless %}{% unless query_count > 0 or collection_count > 0 or article_count > 0 %} predictive-search__layout--no-suggestions{% endunless %}"
+          data-search-results-groups-wrapper
+        >
       {%- endif -%}
 
       {%- if first_column_results_size > 0 -%}
         <div class="predictive-search__column">
           {%- if query_count > 0 or collection_count > 0 -%}
             {%- assign animation_delay = animation_delay | plus: 100 -%}
-            <div class="predictive-search__group"
+            <div
+              class="predictive-search__group"
               data-aos="fade"
               data-aos-delay="{{ animation_delay }}"
               data-aos-duration="{{ animation_duration }}"
-              data-aos-anchor="{{ animation_anchor }}">
+              data-aos-anchor="{{ animation_anchor }}"
+            >
               <p class="predictive-search__heading">{{ 'general.search.suggestions' | t }}</p>
 
               {%- if query_count > 0 -%}
                 {%- for query in predictive_search.resources.queries -%}
-                  <div class="predictive-search__item" id="predictive-search-option-query-{{ forloop.index }}" role="option" aria-selected="false">
+                  <div
+                    class="predictive-search__item"
+                    id="predictive-search-option-query-{{ forloop.index }}"
+                    role="option"
+                    aria-selected="false"
+                  >
                     <a class="predictive-search__link" href="{{ query.url }}" tabindex="-1">
                       <span aria-label="{{ query.text }}">{{ query.styled_text }}</span>
                     </a>
@@ -68,8 +78,15 @@
 
               {%- if collection_count > 0 -%}
                 {%- for collection in predictive_search.resources.collections -%}
-                  <div class="predictive-search__item" id="predictive-search-option-collection-{{ forloop.index }}" role="option" aria-selected="false">
-                    <a class="predictive-search__link" href="{{ collection.url }}" tabindex="-1">{{ collection.title }}</a>
+                  <div
+                    class="predictive-search__item"
+                    id="predictive-search-option-collection-{{ forloop.index }}"
+                    role="option"
+                    aria-selected="false"
+                  >
+                    <a class="predictive-search__link" href="{{ collection.url }}" tabindex="-1">
+                      {{- collection.title -}}
+                    </a>
                   </div>
                 {%- endfor -%}
               {%- endif -%}
@@ -78,15 +95,22 @@
 
           {%- if page_count > 0 -%}
             {%- assign animation_delay = animation_delay | plus: 100 -%}
-            <div class="predictive-search__group"
+            <div
+              class="predictive-search__group"
               data-aos="fade"
               data-aos-delay="{{ animation_delay }}"
               data-aos-duration="{{ animation_duration }}"
-              data-aos-anchor="{{ animation_anchor }}">
+              data-aos-anchor="{{ animation_anchor }}"
+            >
               <p class="predictive-search__heading">{{ 'general.search.pages' | t }}</p>
 
               {%- for page in predictive_search.resources.pages -%}
-                <div class="predictive-search__item" id="predictive-search-option-page-{{ forloop.index }}" role="option" aria-selected="false">
+                <div
+                  class="predictive-search__item"
+                  id="predictive-search-option-page-{{ forloop.index }}"
+                  role="option"
+                  aria-selected="false"
+                >
                   <a class="predictive-search__link" href="{{ page.url }}" tabindex="-1">{{ page.title }}</a>
                 </div>
               {%- endfor -%}
@@ -95,15 +119,22 @@
 
           {%- if article_count > 0 -%}
             {%- assign animation_delay = animation_delay | plus: 100 -%}
-            <div class="predictive-search__group"
+            <div
+              class="predictive-search__group"
               data-aos="fade"
               data-aos-delay="{{ animation_delay }}"
               data-aos-duration="{{ animation_duration }}"
-              data-aos-anchor="{{ animation_anchor }}">
+              data-aos-anchor="{{ animation_anchor }}"
+            >
               <p class="predictive-search__heading">{{ 'general.search.articles' | t }}</p>
 
               {%- for article in predictive_search.resources.articles -%}
-                <div class="predictive-search__item" id="predictive-search-option-article-{{ forloop.index }}"  role="option" aria-selected="false">
+                <div
+                  class="predictive-search__item"
+                  id="predictive-search-option-article-{{ forloop.index }}"
+                  role="option"
+                  aria-selected="false"
+                >
                   <a href="{{ article.url }}" class="predictive-search__link" tabindex="-1">{{ article.title }}</a>
                 </div>
               {%- endfor -%}
@@ -115,13 +146,22 @@
       {%- if product_count > 0 -%}
         {%- assign animation_delay = animation_delay | plus: 100 -%}
         <div class="predictive-search__column">
-          <div class="predictive-search__group"
+          <div
+            class="predictive-search__group"
             data-aos="fade"
             data-aos-delay="{{ animation_delay }}"
             data-aos-duration="{{ animation_duration }}"
-            data-aos-anchor="{{ animation_anchor }}">
-            <p class="predictive-search__heading" id="predictive-search-products">{{ 'general.search.products' | t }}</p>
-            <div class="predictive-search__products__list grid-outer" role="listbox" aria-labelledby="predictive-search-products" data-search-results>
+            data-aos-anchor="{{ animation_anchor }}"
+          >
+            <p class="predictive-search__heading" id="predictive-search-products">
+              {{ 'general.search.products' | t }}
+            </p>
+            <div
+              class="predictive-search__products__list grid-outer"
+              role="listbox"
+              aria-labelledby="predictive-search-products"
+              data-search-results
+            >
               <div class="grid">
                 {%- for product in predictive_search.resources.products -%}
                   {%- render 'search-product-item',
@@ -129,9 +169,10 @@
                     animation_delay: animation_delay,
                     animation_duration: animation_duration,
                     animation_anchor: animation_anchor,
-                    product_item_classes: product_item_classes
+                    product_item_classes: product_item_classes,
                     tabindex: false,
-                    index: forloop.index -%}
+                    index: forloop.index
+                  -%}
                   {%- assign animation_delay = animation_delay | plus: 150 -%}
                 {%- endfor -%}
               </div>
@@ -145,19 +186,25 @@
       {%- endif -%}
 
       {%- assign animation_delay = animation_delay | plus: 100 -%}
-        <div class="predictive-search__actions"
-          data-aos="fade"
-          data-aos-delay="{{ animation_delay }}"
-          data-aos-duration="{{ animation_duration }}"
-          data-aos-anchor="{{ animation_anchor }}">
-          <button class="btn btn--outline btn--primary"
-            tabindex="-1"
-            role="option"
-            aria-selected="false">
-            <span data-predictive-search-search-for-text>{{ 'general.search.search_for' | t: terms: predictive_search.terms }}</span>
-            {%- render 'icon-arrow-right' -%}
-          </button>
-        </div>
+      <div
+        class="predictive-search__actions"
+        data-aos="fade"
+        data-aos-delay="{{ animation_delay }}"
+        data-aos-duration="{{ animation_duration }}"
+        data-aos-anchor="{{ animation_anchor }}"
+      >
+        <button
+          class="btn btn--outline btn--primary"
+          tabindex="-1"
+          role="option"
+          aria-selected="false"
+        >
+          <span data-predictive-search-search-for-text>
+            {{- 'general.search.search_for' | t: terms: predictive_search.terms -}}
+          </span>
+          {%- render 'icon-nav-arrow-right' -%}
+        </button>
+      </div>
 
       <div class="predictive-search__loading-state">
         <div class="predictive-search__loader loader"><div class="loader-indeterminate"></div></div>

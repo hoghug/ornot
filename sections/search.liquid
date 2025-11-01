@@ -3,12 +3,13 @@
   assign enable_filters = section.settings.enable_filters
   assign filter_layout = section.settings.filter_layout
   assign hidden_products_count = 0
+  assign show_recently_viewed_indicator = settings.show_recently_viewed_indicator
   assign color_scheme = 'color-' | append: section.settings.color_scheme
 
   assign columns_desktop = 4
   assign columns_medium = 3
   assign columns_small = 2
-  assign columns_mobile = 1
+  assign columns_mobile = section.settings.grid_mobile | plus: 0
 
   if filter_layout == 'inline-open'
     assign show_group_filters = true
@@ -27,6 +28,7 @@
   .search-page {
     --PT: {{ section.settings.padding_top }}px;
     --PB: {{ section.settings.padding_bottom }}px;
+    --COLUMNS-MOBILE: {{ columns_mobile }};
   }
 {%- endstyle -%}
 
@@ -214,6 +216,14 @@
   <script src="{{ 'collection-filters-form.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
+{%- if settings.quickview_enable -%}
+  <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+{%- if show_recently_viewed_indicator -%}
+  <script src="{{ 'grid-item.js' | asset_url }}" defer></script>
+{%- endif -%}
+
 {% schema %}
 {
   "name": "Search",
@@ -246,6 +256,20 @@
       "id": "collection_linklist",
       "label": "Sidebar navigation",
       "info": "This menu won't show dropdown items."
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "select",
+      "id": "grid_mobile",
+      "label": "Product items per row",
+      "default": "1",
+      "options": [
+        {"value": "1", "label": "One"},
+        {"value": "2", "label": "Two"}
+      ]
     },
     {
       "type": "header",

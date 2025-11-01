@@ -1,6 +1,14 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
-    "ie11_support_message": "Este site tem certas restrições de navegação. Recomendamos o uso de navegadores web como: Edge, Chrome, Safari ou Firefox.",
     "swatches": {
       "color": "Cor"
     },
@@ -48,11 +56,10 @@
     },
     "search": {
       "articles": "Artigos",
-      "no_results": "Não foram encontrados resultados para “{{ terms }}”. Verifique a ortografia ou use uma palavra ou frase diferente.",
+      "no_results": "Não foram encontrados resultados para \"{{ terms }}\". Verifique a ortografia ou use uma palavra ou frase diferente.",
       "results_with_count": {
         "one": "{{ count }} resultado",
-        "other": "{{ count }} resultados",
-        "many": "{{ count }} resultados"
+        "other": "{{ count }} resultados"
       },
       "title": "Resultados da pesquisa",
       "page": "Página",
@@ -61,24 +68,20 @@
       "reset": "Réinitialiser",
       "clear": "Limpar",
       "results_with_count_and_term": {
-        "one": "{{ count }} resultado encontrado para “{{ terms }}”",
-        "other": "{{ count }} resultados encontrados para “{{ terms }}”",
-        "many": "{{ count }} resultados encontrados para “{{ terms }}”"
+        "one": "{{ count }} resultado encontrado para \"{{ terms }}\"",
+        "other": "{{ count }} resultados encontrados para \"{{ terms }}\""
       },
       "results_pages_with_count": {
         "one": "{{ count }} página",
-        "other": "{{ count }} páginas",
-        "many": "{{ count }} páginas"
+        "other": "{{ count }} páginas"
       },
       "results_suggestions_with_count": {
         "one": "{{ count }} sugestão",
-        "other": "{{ count }} sugestões",
-        "many": "{{ count }} sugestões"
+        "other": "{{ count }} sugestões"
       },
       "results_products_with_count": {
         "one": "{{ count }} produto",
-        "other": "{{ count }} produtos",
-        "many": "{{ count }} produtos"
+        "other": "{{ count }} produtos"
       },
       "suggestions": "Sugestões",
       "pages": "Páginas",
@@ -98,7 +101,9 @@
       "scroll_to_product": "Role até o produto",
       "scroll_to_logo": "Role até o logotipo",
       "footer_logo": "Logotipo do rodapé",
-      "slide_image": "Imagem do slide"
+      "slide_image": "Imagem do slide",
+      "play_video": "Reproduzir vídeo",
+      "pause_video": "Pausar vídeo"
     },
     "social": {
       "share_on_facebook": "Compartilhar",
@@ -168,10 +173,6 @@
       "subtotal_note": "Antes de impostos e custos de frete",
       "customer_note": "Deixe um comentário sobre seu pedido",
       "cart_notes_label": "Adicionar notas de pedido",
-      "products_with_count": {
-        "one": "Produto",
-        "other": "Produtos"
-      },
       "pair_products": "Par com",
       "estimate_shipping_label": "Estimativa de envio",
       "gift_notes_label": "Isto é um presente?",
@@ -189,8 +190,13 @@
       "decrease_quantity_label": "Diminuir quantidade do botão",
       "quantity_field_label": "Campo quantidade",
       "continue_shopping": "Continuar comprando.",
+      "discount_code_label": "Código de desconto",
+      "discount_code_placeholder": "Insira o código de desconto",
+      "discount_not_applicable": "Desconto não aplicável",
+      "discount_already_applied": "Desconto já aplicado",
+      "apply_button": "Aplicar",
       "discount_label": "Você está economizando {{ amount }} com {{ title }}",
-      "limit_message": "Não há mais produtos disponíveis para compra",
+      "limit_message": "Desculpe, parece que não temos esse produto em quantidade suficiente.",
       "add_message": "Você adicionou um produto: ",
       "total_message": {
         "one": "e você tem {{ count }} produto no carrinho",
@@ -440,8 +446,7 @@
       "upsell_out_of_stock": "Fora de estoque",
       "upsell_error_title": "Escolha um produto upsell",
       "upsell_error_info": "Use metacampos para mostrar um produto aqui. Upsells vazios não serão exibidos no site ao vivo.",
-      "missing_metafield_image": "Utilize um metacampo para mostrar uma imagem aqui. Os metacampos vazios não serão exibidos no site ativo.",
-      "shop_now": "Compre agora"
+      "missing_metafield_image": "Utilize um metacampo para mostrar uma imagem aqui. Os metacampos vazios não serão exibidos no site ativo."
     },
     "product": {
       "regular_price": "Preço regular",
@@ -450,16 +455,27 @@
       "new": "Novo",
       "pre_order": "Pedido antecipado",
       "on_sale": "À Venda",
+      "save_badge_html": "Economize {{ discount }}",
+      "save_badge_up_to_html": "Economize até {{ discount }}",
       "final_sale": "Venda final",
       "unavailable": "Indisponível",
+      "value_unavailable": "{{ option_value }} - Indisponível",
+      "variant_sold_out_or_unavailable": "Variante esgotada ou indisponível",
       "compare_at": "Compare em",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Envio</a> calculado no checkout.",
       "unit_price_label": "Preço unitário",
       "subscription": "Inscrição",
       "save": "Salve",
       "off": "de desconto",
       "sku": "SKU",
       "one_time_purchase": "Compra de uma só vez",
-      "quantity": "Quantidade",
+      "quantity": {
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}<\/span> no carrinho",
+        "decrease": "Diminuir quantidade para {{ product }}",
+        "multiples_of": "Incrementos de {{ quantity }}",
+        "minimum_of": "Mínimo de {{ quantity }}",
+        "maximum_of": "Máximo de {{ quantity }}"
+      },
       "add_to_cart": "Adicionar ao carrinho",
       "added": "Adicionado ao seu carrinho:",
       "vendor": "Vendedor",
@@ -478,6 +494,27 @@
       "item_unavailable": "Item não está disponível",
       "remaining_html": "Rápido, só restam {{ inventory }}!",
       "remaining_no_count": "Apresse-se! Baixo estoque",
+      "inventory_low_stock_show_count": "Estoque baixo: {{ quantity }} restantes",
+      "inventory_low_stock": "Estoque baixo",
+      "inventory_in_stock_show_count": "{{ quantity }} em estoque",
+      "inventory_in_stock": "Em estoque",
+      "inventory_out_of_stock_continue_selling": "Em estoque",
+      "inventory_out_of_stock": "Fora de estoque",
+      "duties_and_taxes_included": "Taxas alfandegárias e impostos incluídos.",
+      "taxes_included": "Impostos incluídos.",
+      "duties_included": "Taxas alfandegárias incluídas.",
+      "price": {
+        "from_price_html": "A partir de {{ price }}",
+        "regular_price": "Preço regular",
+        "sale_price": "Preço de venda",
+        "unit_price": "Preço unitário"
+      },
+      "volume_pricing": {
+        "price_range": "{{ minimum }} - {{ maximum }}",
+        "price_at_each_html": "a {{ price }}\/un",
+        "title": "Preços por volume",
+        "note": "Preços por volume disponíveis"
+      },
       "pickup_availability": {
         "pickup_options": "Opções de pickup",
         "view_store_info": "Ver as informações da loja",
@@ -488,6 +525,9 @@
         "unavailable": "Não foi possível carregar a disponibilidade de retirada.",
         "refresh": "Atualizar"
       }
+    },
+    "facets": {
+      "show_more": "Mostrar mais"
     }
   },
   "countdown": {
@@ -538,6 +578,11 @@
       "store_login": "Login da Loja",
       "newsletter_signup": "Assine o Boletim de Notícias",
       "login": "Login"
+    }
+  },
+  "sections": {
+    "quick_order_list": {
+      "each": "{{ money }}\/un"
     }
   }
 }

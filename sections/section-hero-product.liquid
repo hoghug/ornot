@@ -14,7 +14,7 @@
       "type": "image_picker",
       "id": "image_1",
       "label": "Image",
-      "info": "3200 x 1200px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+      "info": "3200 x 1200px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
     },
     {
       "type": "url",
@@ -60,13 +60,15 @@
       "type": "color",
       "id": "color_product_bg",
       "default": "#F5F2EC",
-      "label": "Background"
+      "label": "Background",
+      "alpha": true
     },
     {
       "type": "color",
       "id": "color_product_text",
       "default": "#212121",
-      "label": "Text"
+      "label": "Text",
+      "alpha": true
     },
     {
       "type": "header",
@@ -112,7 +114,7 @@
       "type": "image_picker",
       "id": "mobile_image",
       "label": "Image",
-      "info": "1200 x 1600px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+      "info": "1200 x 1600px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
     },
     {
       "type": "select",
@@ -160,22 +162,15 @@
       "default": false
     },
     {
-      "type": "range",
-      "id": "overlay_opacity",
-      "label": "Overlay opacity",
-      "info": "Increase contrast for legible text.",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "unit": "%",
-      "default": 0
-    },
-    {
-      "type": "checkbox",
-      "id": "show_overlay_text",
-      "label": "Overlay behind text only",
-      "info": "Overlay opacity must be greater than 0",
-      "default": false
+      "type": "select",
+      "id": "overlay_type",
+      "label": "Overlay type",
+      "default": "disabled",
+      "options": [
+        {"value": "disabled", "label": "Disabled"},
+        {"value": "opacity", "label": "Opacity overlay"},
+        {"value": "text", "label": "Text underlay"}
+      ]
     },
     {
       "type": "header",
@@ -290,7 +285,7 @@
     },
     {
       "type": "button",
-      "name": "Button",
+      "name": "Single button",
       "limit": 2,
       "settings": [
         {
@@ -343,6 +338,129 @@
           "id": "show_arrow",
           "label": "Show arrow",
           "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "full_width",
+          "label": "Full-width",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "group-buttons",
+      "name": "Side by side buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Primary button"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Text",
+          "default": "View products"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Link"
+        },
+        {
+          "type": "select",
+          "id": "button_type",
+          "label": "Color",
+          "default": "btn--primary",
+          "options": [
+            {"value": "btn--black", "label": "Black"},
+            {"value": "btn--white", "label": "White"},
+            {"value": "btn--primary", "label": "Primary"},
+            {"value": "btn--secondary", "label": "Secondary"}
+          ]
+        },
+        {
+          "type": "select",
+          "id": "button_size",
+          "label": "Size",
+          "default": "",
+          "options": [
+            {"label": "Small", "value": "btn--small"},
+            {"label": "Medium", "value": ""},
+            {"label": "Large", "value": "btn--large"}
+          ]
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Style",
+          "default": "btn--solid",
+          "options": [
+            {"label": "Solid", "value": "btn--solid"},
+            {"label": "Outline", "value": "btn--outline"},
+            {"label": "Text", "value": "btn--text"}
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "show_arrow",
+          "label": "Show arrow",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "Secondary button"
+        },
+        {
+          "type": "text",
+          "id": "button_secondary_text",
+          "label": "Text",
+          "default": "Shop sale"
+        },
+        {
+          "type": "url",
+          "id": "button_secondary_url",
+          "label": "Link"
+        },
+        {
+          "type": "select",
+          "id": "button_secondary_type",
+          "label": "Color",
+          "default": "btn--secondary",
+          "options": [
+            {"value": "btn--black", "label": "Black"},
+            {"value": "btn--white", "label": "White"},
+            {"value": "btn--primary", "label": "Primary"},
+            {"value": "btn--secondary", "label": "Secondary"}
+          ]
+        },
+        {
+          "type": "select",
+          "id": "button_secondary_size",
+          "label": "Size",
+          "default": "",
+          "options": [
+            {"label": "Small", "value": "btn--small"},
+            {"label": "Medium", "value": ""},
+            {"label": "Large", "value": "btn--large"}
+          ]
+        },
+        {
+          "type": "select",
+          "id": "button_secondary_style",
+          "label": "Style",
+          "default": "btn--solid",
+          "options": [
+            {"label": "Solid", "value": "btn--solid"},
+            {"label": "Outline", "value": "btn--outline"},
+            {"label": "Text", "value": "btn--text"}
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "show_secondary_arrow",
+          "label": "Show arrow",
+          "default": false
         }
       ]
     },
@@ -362,6 +480,7 @@
   "presets": [
     {
       "name": "Image with product",
+      "category": "Products",
       "blocks": [
         {
           "type": "heading"

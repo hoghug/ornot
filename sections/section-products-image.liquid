@@ -1,6 +1,7 @@
 {%- liquid
   assign animation_anchor = '#ProductsImage--' | append: section.id
   assign wrapper_width = section.settings.width
+  assign show_recently_viewed_indicator = settings.show_recently_viewed_indicator
   assign color_scheme = 'color-' | append: section.settings.color_scheme
 -%}
 
@@ -8,6 +9,10 @@
   --PT: {{ section.settings.padding_top }}px;
   --PB: {{ section.settings.padding_bottom }}px;
 {%- endcapture -%}
+
+{%- if show_recently_viewed_indicator -%}
+  <script src="{{ 'grid-item.js' | asset_url }}" defer></script>
+{%- endif -%}
 
 <section
   id="ProductsImage--{{ section.id }}"
@@ -147,7 +152,7 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image",
-          "info": "2000 x 1400px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "2000 x 1400px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "type": "select",
@@ -227,26 +232,15 @@
           ]
         },
         {
-          "type": "range",
-          "id": "overlay_opacity",
-          "label": "Overlay opacity",
-          "info": "Increase contrast for legible text.",
-          "min": 0,
-          "max": 100,
-          "step": 5,
-          "unit": "%",
-          "default": 0
-        },
-        {
-          "type": "color",
-          "id": "overlay_color",
-          "label": "Overlay color"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_overlay_text",
-          "label": "Overlay behind text only",
-          "default": false
+          "type": "select",
+          "id": "overlay_type",
+          "label": "Overlay type",
+          "default": "disabled",
+          "options": [
+            {"value": "disabled", "label": "Disabled"},
+            {"value": "opacity", "label": "Opacity overlay"},
+            {"value": "text", "label": "Text underlay"}
+          ]
         },
         {
           "type": "header",
@@ -320,12 +314,14 @@
         {
           "type": "color",
           "id": "bg_color",
-          "label": "Background"
+          "label": "Background",
+          "alpha": true
         },
         {
           "type": "color",
           "id": "color",
-          "label": "Text"
+          "label": "Text",
+          "alpha": true
         },
         {
           "type": "header",
@@ -352,6 +348,7 @@
   "presets": [
     {
       "name": "Products with image",
+      "category": "Products",
       "blocks": [
         {
           "type": "products"

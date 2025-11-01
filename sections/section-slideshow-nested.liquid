@@ -81,7 +81,7 @@
 {
   "name": "Slideshow (Nested)",
   "class": "section-overlay-header",
-  "blocks": [{"type": "_slide"}, {"type": "@app"}],
+  "blocks": [{"type": "_slide-image"}, {"type": "_slide-video"}, {"type": "@app"}],
   "settings": [
     {
       "type": "select",
@@ -217,12 +217,13 @@
   "presets": [
     {
       "name": "Slideshow (Nested)",
+      "category": "Banners",
       "settings": {
         "height": "screen-height-two-thirds"
       },
       "blocks": [
         {
-          "type": "_slide",
+          "type": "_slide-image",
           "blocks": [
             {
               "type": "heading"
@@ -236,7 +237,7 @@
           ]
         },
         {
-          "type": "_slide",
+          "type": "_slide-image",
           "blocks": [
             {
               "type": "heading"

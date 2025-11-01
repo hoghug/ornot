@@ -187,7 +187,7 @@
       "type": "image_picker",
       "id": "image",
       "label": "Image",
-      "info": "Displayed if the video isn't loaded. 3200 x 1200px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+      "info": "Displayed if the video isn't loaded. 3200 x 1200px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
     },
     {
       "type": "select",
@@ -215,7 +215,7 @@
       "type": "image_picker",
       "id": "mobile_image",
       "label": "Image",
-      "info": "Displayed if the video isn't loaded. 1200 x 1600px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+      "info": "Displayed if the video isn't loaded. 1200 x 1600px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
     },
     {
       "type": "select",
@@ -268,24 +268,19 @@
     {
       "type": "color",
       "id": "color",
-      "label": "Text"
+      "label": "Text",
+      "alpha": true
     },
     {
-      "type": "range",
-      "id": "overlay_opacity",
-      "label": "Overlay opacity",
-      "info": "Increase contrast for legible text.",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "unit": "%",
-      "default": 0
-    },
-    {
-      "type": "checkbox",
-      "id": "show_overlay_text",
-      "label": "Overlay behind text only",
-      "default": false
+      "type": "select",
+      "id": "overlay_type",
+      "label": "Overlay",
+      "default": "disabled",
+      "options": [
+        {"value": "disabled", "label": "Disabled"},
+        {"value": "opacity", "label": "Opacity overlay"},
+        {"value": "text", "label": "Text underlay"}
+      ]
     },
     {
       "type": "header",
@@ -333,7 +328,8 @@
   ],
   "presets": [
     {
-      "name": "Video"
+      "name": "Video",
+      "category": "Banners"
     }
   ],
   "disabled_on": {

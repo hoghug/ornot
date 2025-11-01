@@ -5,28 +5,47 @@
   assign enable_tabs = section.settings.enable_tabs
   assign heading_alignment = section.settings.heading_alignment
   assign heading_size_class = section.settings.heading_font_size
+  assign limit = section.settings.limit
+  assign layout_desktop = section.settings.layout_desktop
+  assign layout_mobile = section.settings.layout_mobile
+  assign grid_columns = section.settings.grid
   assign has_related_products = false
   assign has_recently_products = false
+  assign columns_mobile = section.settings.layout_mobile | plus: 0
+  assign columns_desktop = grid_columns | plus: 0
+  assign columns_medium = 3
+  assign columns_small = 2
+  assign column_count = limit | at_most: 4
+
   assign wrapper_tag = 'div'
   if enable_tabs
     assign wrapper_tag = 'tabs-component'
+  endif
+
+  if columns_desktop == 2 or columns_desktop == 4
+    assign columns_medium = 2
+  endif
+
+  if layout_desktop == 'grid'
+    assign limit = grid_columns | times: section.settings.rows
+    assign column_count = columns_desktop
+
+    if grid_columns == 2 or grid_columns == 4
+      assign columns_medium = 2
+    endif
   endif
 -%}
 
 {%- for block in section.blocks -%}
   {%- if block.type == 'related' and product.collections.size > 0 -%}
-    {%- liquid
-      assign has_related_products = true
-      assign layout_mobile = section.settings.layout_mobile
-      assign columns_small = 2
-      assign columns_mobile = layout_mobile | plus: 0
-    -%}
+    {%- assign has_related_products = true -%}
 
     {%- capture related -%}
       <div data-related-section
-        data-limit="{{ block.settings.limit }}"
+        data-limit="{{ limit }}"
+        data-layout="{{ layout_desktop }}"
         data-product-id="{{ product.id }}"
-        style="--column-count: {{ block.settings.limit | at_most: 4 }}; --COLUMNS-SMALL: {{ columns_small }}; --COLUMNS-MOBILE: {{ columns_mobile }};"
+        style="--column-count: {{ column_count }}; --COLUMNS: {{ columns_desktop }}; --COLUMNS-MEDIUM: {{ columns_medium }}; --COLUMNS-SMALL: {{ columns_small }}; --COLUMNS-MOBILE: {{ columns_mobile }};"
         {{ block.shopify_attributes }}></div>
     {%- endcapture -%}
 
@@ -39,10 +58,9 @@
 
   {%- if block.type == 'recent' -%}
     {%- assign has_recently_products = true -%}
-    {%- assign product_recently_limit = block.settings.product_recently_limit -%}
 
     {%- capture recent -%}
-      {%- render 'products-recently-viewed', product: product, limit: product_recently_limit, block: block -%}
+      {%- render 'products-recently-viewed', product: product, limit: limit, block: block, columns_desktop: columns_desktop, columns_medium: columns_medium, columns_small: columns_small, columns_mobile: columns_mobile, column_count: column_count, layout_desktop: layout_desktop, layout_mobile: layout_mobile -%}
     {%- endcapture -%}
 
     {%- capture recent_title -%}
@@ -61,7 +79,7 @@
 <script src="{{ 'related-products.js' | asset_url }}" defer="defer"></script>
 
 <related-products
-  class="related__wrapper {{ color_scheme }} js"
+  class="related__wrapper {{ color_scheme }}"
   id="RelatedProducts--{{ section.id }}"
   data-section-id="{{ section.id }}"
   data-section-type="related"
@@ -78,7 +96,7 @@
           data-aos-anchor="{{ animation_anchor }}"
           data-aos-order="1"
         >
-          <div class="grid__heading-holder">
+          <div class="grid__heading-holder{% if heading_alignment == 'text-left' %} grid__heading-holder--left{% endif %}">
             <native-scrollbar class="grid__heading-actions">
               <ul class="tabs {{ heading_alignment }}" data-scrollbar data-scrollbar-slider>
                 {%- if related -%}
@@ -91,7 +109,8 @@
 
                 {%- if recent -%}
                   <li
-                    class="tab-link tab-link-1 tab-link__recent{% if related == nil %} current{% endif %}"
+                    class="tab-link tab-link-1 tab-link__recent{% if related == nil %} current{% endif %} hidden"
+                    data-recently-viewed-wrapper
                     data-tab="1"
                     tabindex="0"
                   >
@@ -137,7 +156,7 @@
         <div
           class="tab-content tab-content-1 tabs__recently-viewed{% if enable_tabs == false or related == nil %} current{% endif %}"
           data-tab-index="1"
-          style="--column-count: {{ product_recently_limit }}"
+          style="--column-count: {{ limit }}"
         >
           {%- if recent_title != blank and enable_tabs == false -%}
             <h6
@@ -184,6 +203,7 @@
     {
       "type": "select",
       "id": "heading_font_size",
+      "visible_if": "{{ section.settings.enable_tabs == false }}",
       "label": "Heading size",
       "default": "heading-small",
       "options": [
@@ -193,8 +213,63 @@
         {"value": "heading-medium", "label": "Medium"},
         {"value": "heading-large", "label": "Large"},
         {"value": "heading-x-large", "label": "Extra large"}
+      ]
+    },
+    {
+      "type": "range",
+      "id": "limit",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "label": "Product limit",
+      "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Desktop"
+    },
+    {
+      "type": "select",
+      "id": "layout_desktop",
+      "label": "Product grid layout",
+      "options": [
+        {
+          "value": "grid",
+          "label": "Grid"
+        },
+        {
+          "value": "slider",
+          "label": "Slider"
+        }
       ],
-      "info": "Applies only when tabs are disabled"
+      "default": "slider"
+    },
+    {
+      "type": "header",
+      "content": "Grid",
+      "info": "Applies only when product grid layout is set to Grid"
+    },
+    {
+      "type": "range",
+      "id": "grid",
+      "label": "Products per row",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "rows",
+      "label": "Number of rows",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
     },
     {
       "type": "select",
@@ -248,7 +323,7 @@
       "step": 1,
       "unit": "px",
       "label": "Bottom",
-      "default": 0
+      "default": 30
     }
   ],
   "blocks": [
@@ -262,15 +337,6 @@
           "id": "product_recommendations_heading",
           "label": "Heading",
           "default": "Related products"
-        },
-        {
-          "type": "range",
-          "id": "limit",
-          "min": 1,
-          "max": 6,
-          "step": 1,
-          "label": "Product limit",
-          "default": 4
         }
       ]
     },
@@ -284,15 +350,6 @@
           "id": "product_recently_heading",
           "label": "Heading",
           "default": "Recently viewed"
-        },
-        {
-          "type": "range",
-          "id": "product_recently_limit",
-          "min": 1,
-          "max": 6,
-          "step": 1,
-          "label": "Product limit",
-          "default": 4
         }
       ]
     }

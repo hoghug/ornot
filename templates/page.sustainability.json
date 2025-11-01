@@ -1,1 +1,310 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"subheading":"","show_title":true,"heading_font_size":"heading-large","show_content":true,"text_font_size":"body-medium","align_text":"text-left","width":"wrapper","color_scheme":"","padding_top":50,"padding_bottom":50,"heading_tag":"automatic"}},"section_custom_content_8GDcfi":{"type":"section-custom-content","blocks":{"image_fzCQTV":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/SampleSaleRack-home.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}},"text_bDheeR":{"type":"text","settings":{"subheading":"","title":"IN-store Sample sale","heading_font_size":"heading-large","text":"<p>It's time for another sample sale. This is where we offer up Men's and Women's (all sizes) pre-production samples, photo samples, never produced items, cosmetic blemished pieces, repairs, and warehouse overstocks, all between 40% - 70% off.<\/p><p>Mark your calendar for <strong>Saturday, May 18th<\/strong> and make a plan to be here <a href=\"https:\/\/www.ornotbike.com\/pages\/showroom\">(55 Clement St)<\/a><strong>.<\/strong> Our Sample Sale will begin at 9am.<\/p><p>Come and get it, Ornot.<\/p>","text_font_size":"body-medium","button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"","color":"","heading_tag":"automatic"}}},"block_order":["image_fzCQTV","text_bDheeR"],"disabled":true,"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":true,"color_scheme":"","padding_top":0,"padding_bottom":0}},"section_hero_4jfiPM":{"type":"section-hero","settings":{"image_1":"shopify:\/\/shop_images\/TNUT6199-crop.jpg","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-center-desktop","content_width":50,"mobile_image":"shopify:\/\/shop_images\/TNUT6199-crop.jpg","mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"section_custom_content_FHpFEc":{"type":"section-custom-content","blocks":{"image_dQnYpG":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/TNUT6403-square.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}},"text_hXerzK":{"type":"text","settings":{"subheading":"","title":"Come and visit us, Ornot.","heading_font_size":"heading-medium","text":"<p>Our showroom is located in the Inner Richmond just a few blocks from the Presidio, with easy access to the Golden Gate Bridge. The address is <a href=\"https:\/\/www.google.com\/maps\/place\/55+Clement+St,+San+Francisco,+CA+94118\/@37.7830396,-122.4620764,17z\/data=!3m1!4b1!4m5!3m4!1s0x808587398e9a001d:0x6cb66c01313394a0!8m2!3d37.7830396!4d-122.4598824\" target=\"_blank\">59 Clement Street<\/a> (at 2nd) right around the corner from <a href=\"https:\/\/arsicault-bakery.com\/\">Arsicault<\/a>. <\/p><p><strong>NEW:<\/strong> We now offer in-store pickup for Bay Area residents. At checkout, just choose in-store pickup as your shipping option.<\/p><p>Questions? <a href=\"mailto:info@ornotbike.com\">Email us<\/a> anytime or give us a call during store hours - <a href=\"https:\/\/www.google.com\/search?q=ornot+phone&rlz=1C5CHFA_enUS980US987&oq=ornot+phone&aqs=chrome..69i57j0i22i30j0i15i22i30j0i390l2j69i64.2633j0j7&sourceid=chrome&ie=UTF-8#\">(628) 256-2250<\/a>.<\/p><p>Our current hours are:<br\/>Tuesday - Friday: <strong>12pm - 6pm<\/strong><\/p><p>Saturday:<strong> 12pm - 4pm <\/strong><\/p><p>Sunday:<strong> 10am - 2pm <\/strong><\/p><p><\/p>","text_font_size":"body-medium","button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"","color":"","heading_tag":"automatic"}}},"block_order":["image_dQnYpG","text_hXerzK"],"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":true,"color_scheme":"","padding_top":0,"padding_bottom":0}},"section_custom_content_WYi9ez":{"type":"section-custom-content","blocks":{"text_9k47Rf":{"type":"text","settings":{"subheading":"","title":"Join a shop ride, Ornot","heading_font_size":"heading-medium","text":"<h4>After Cake, Ornot - Tue AM shop rides.<\/h4><p>We lead a city ride from the shop Tuesday mornings at 8:30am. This is a mixed terrain ride at a pretty chill pace with total ride duration right around 1.5 hrs. Everyone is welcome and most bikes will do fine, although you should be comfortable on some dirt and gravel paths. <a href=\"https:\/\/www.strava.com\/activities\/7420088633\" target=\"_blank\">Here is an example<\/a> of a typical After Cake ride. <\/p>","text_font_size":"body-medium","button_text":"Join us on strava","button_url":"https:\/\/www.strava.com\/clubs\/183693","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"","color":"","heading_tag":"automatic"}},"image_beizHx":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/AfterCakeOrnot_Dec20-3.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}}},"block_order":["text_9k47Rf","image_beizHx"],"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":false,"color_scheme":"","padding_top":0,"padding_bottom":0}},"section_custom_content_TGmxaP":{"type":"section-custom-content","blocks":{"image_Ucr7eK":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/TNUT6327-Edit.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}},"text_hCGdGT":{"type":"text","settings":{"subheading":"","title":"We carry a select few other brands in our Showroom.","heading_font_size":"heading-medium","text":"<p>We're pretty particular when it comes to the gear we use. However, when we find something we like, we try to bring it into our showroom. We proudly carry: QUOC shoes, Ultradynamico tires, Rene Herse tires, Spurcycle Bells, and Andytown Coffee.<\/p><p>Keep an eye on our <a href=\"https:\/\/www.instagram.com\/ornotbike\/\" target=\"_blank\">Instagram<\/a> feed for new ride announcements and events! Come stop by and say hi, Ornot.<\/p>","text_font_size":"body-medium","button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"","color":"","heading_tag":"automatic"}}},"block_order":["image_Ucr7eK","text_hCGdGT"],"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":true,"color_scheme":"","padding_top":0,"padding_bottom":0}}},"order":["main","section_custom_content_8GDcfi","section_hero_4jfiPM","section_custom_content_FHpFEc","section_custom_content_WYi9ez","section_custom_content_TGmxaP"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_custom_content_8GDcfi": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_fzCQTV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SampleSaleRack-home.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_bDheeR": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "IN-store Sample sale",
+            "heading_font_size": "heading-large",
+            "text": "<p>It's time for another sample sale. This is where we offer up Men's and Women's (all sizes) pre-production samples, photo samples, never produced items, cosmetic blemished pieces, repairs, and warehouse overstocks, all between 40% - 70% off.</p><p>Mark your calendar for <strong>Saturday, May 18th</strong> and make a plan to be here <a href=\"https://www.ornotbike.com/pages/showroom\">(55 Clement St)</a><strong>.</strong> Our Sample Sale will begin at 9am.</p><p>Come and get it, Ornot.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_fzCQTV",
+        "text_bDheeR"
+      ],
+      "disabled": true,
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_hero_4jfiPM": {
+      "type": "section-hero",
+      "settings": {
+        "image_1": "shopify://shop_images/TNUT6199-crop.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/TNUT6199-crop.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_custom_content_FHpFEc": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_dQnYpG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TNUT6403-square.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_hXerzK": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "Come and visit us, Ornot.",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Our showroom is located in the Inner Richmond just a few blocks from the Presidio, with easy access to the Golden Gate Bridge. The address is <a href=\"https://www.google.com/maps/place/55+Clement+St,+San+Francisco,+CA+94118/@37.7830396,-122.4620764,17z/data=!3m1!4b1!4m5!3m4!1s0x808587398e9a001d:0x6cb66c01313394a0!8m2!3d37.7830396!4d-122.4598824\" target=\"_blank\">59 Clement Street</a> (at 2nd) right around the corner from <a href=\"https://arsicault-bakery.com/\">Arsicault</a>. </p><p><strong>NEW:</strong> We now offer in-store pickup for Bay Area residents. At checkout, just choose in-store pickup as your shipping option.</p><p>Questions? <a href=\"mailto:info@ornotbike.com\">Email us</a> anytime or give us a call during store hours - <a href=\"https://www.google.com/search?q=ornot+phone&rlz=1C5CHFA_enUS980US987&oq=ornot+phone&aqs=chrome..69i57j0i22i30j0i15i22i30j0i390l2j69i64.2633j0j7&sourceid=chrome&ie=UTF-8#\">(628) 256-2250</a>.</p><p>Our current hours are:<br/>Tuesday - Friday: <strong>12pm - 6pm</strong></p><p>Saturday:<strong> 12pm - 4pm </strong></p><p>Sunday:<strong> 10am - 2pm </strong></p><p></p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_dQnYpG",
+        "text_hXerzK"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_WYi9ez": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_9k47Rf": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "Join a shop ride, Ornot",
+            "heading_font_size": "heading-medium",
+            "text": "<h4>After Cake, Ornot - Tue AM shop rides.</h4><p>We lead a city ride from the shop Tuesday mornings at 8:30am. This is a mixed terrain ride at a pretty chill pace with total ride duration right around 1.5 hrs. Everyone is welcome and most bikes will do fine, although you should be comfortable on some dirt and gravel paths. <a href=\"https://www.strava.com/activities/7420088633\" target=\"_blank\">Here is an example</a> of a typical After Cake ride. </p>",
+            "text_font_size": "body-medium",
+            "button_text": "Join us on strava",
+            "button_url": "https://www.strava.com/clubs/183693",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
+        "image_beizHx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/AfterCakeOrnot_Dec20-3.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_9k47Rf",
+        "image_beizHx"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_TGmxaP": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_Ucr7eK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TNUT6327-Edit.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_hCGdGT": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "We carry a select few other brands in our Showroom.",
+            "heading_font_size": "heading-medium",
+            "text": "<p>We're pretty particular when it comes to the gear we use. However, when we find something we like, we try to bring it into our showroom. We proudly carry: QUOC shoes, Ultradynamico tires, Rene Herse tires, Spurcycle Bells, and Andytown Coffee.</p><p>Keep an eye on our <a href=\"https://www.instagram.com/ornotbike/\" target=\"_blank\">Instagram</a> feed for new ride announcements and events! Come stop by and say hi, Ornot.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_Ucr7eK",
+        "text_hCGdGT"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_custom_content_8GDcfi",
+    "section_hero_4jfiPM",
+    "section_custom_content_FHpFEc",
+    "section_custom_content_WYi9ez",
+    "section_custom_content_TGmxaP"
+  ]
+}

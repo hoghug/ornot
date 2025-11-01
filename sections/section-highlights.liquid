@@ -357,7 +357,7 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image",
-          "info": "1400 x 1400px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "1400 x 1400px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "type": "header",
@@ -385,17 +385,20 @@
         {
           "type": "color",
           "id": "color",
-          "label": "Text"
+          "label": "Text",
+          "alpha": true
         },
         {
           "type": "color",
           "id": "bg_color",
-          "label": "Background"
+          "label": "Background",
+          "alpha": true
         },
         {
           "type": "color",
           "id": "border_color",
-          "label": "Border"
+          "label": "Border",
+          "alpha": true
         }
       ]
     }
@@ -403,6 +406,7 @@
   "presets": [
     {
       "name": "Highlights",
+      "category": "Text",
       "blocks": [
         {
           "type": "highlight",

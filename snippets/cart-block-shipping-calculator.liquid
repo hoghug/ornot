@@ -1,19 +1,18 @@
 {% comment %}
-    Renders Shipping calculator on Cart page and Cart drawer
+  Renders Shipping calculator on Cart page and Cart drawer
 
-    Accepts:
-    - block: {Object} Block object (required)
+  Accepts:
+  - block: {Object} Block object (required)
 
-    Usage:
-    {% render 'cart-block-shipping-calculator', block: block %}
+  Usage:
+  {% render 'cart-block-shipping-calculator', block: block %}
 {% endcomment %}
 
-<details class="cart__widget accordion js" data-collapsible>
+<details class="cart__widget accordion" data-collapsible>
   <summary class="cart__widget__title" data-collapsible-trigger>
     {{- 'cart.general.estimate_shipping_label' | t -}}
 
-    {%- render 'icon-plus' -%}
-    {%- render 'icon-minus' -%}
+    {%- render 'icon-nav-arrow-down' -%}
   </summary>
 
   <div class="cart__widget__content" data-collapsible-body>
@@ -55,17 +54,43 @@
 
             <div class="p">
               <label for="address_country">{{ 'customer.addresses.country' | t }}</label>
-              <select id="address_country" name="address[country]" class="cart__field" {% if shop.customer_accounts_enabled and customer %}data-default="{{ customer.default_address.country_code }}" data-default-fullname="{{ customer.default_address.country }}"{% elsif default_country != '' %}data-default="{{ default_country.iso_code }}" data-default-fullname="{{ default_country }}"{% endif %}></select>
+              <select
+                id="address_country"
+                name="address[country]"
+                class="cart__field"
+                {% if shop.customer_accounts_enabled and customer %}
+                  data-default="{{ customer.default_address.country_code }}"
+                  data-default-fullname="{{ customer.default_address.country }}"
+                {% elsif default_country != '' %}
+                  data-default="{{ default_country.iso_code }}" data-default-fullname="{{ default_country }}"
+                {% endif %}
+              ></select>
             </div>
 
-            <div id="address_province_container"  class="p shipping-calculator__province">
+            <div id="address_province_container" class="p shipping-calculator__province">
               <label for="address_province" id="address_province_label">{{ 'customer.addresses.province' | t }}</label>
-              <select id="address_province" class="address_form cart__field" name="address[province]" {% if shop.customer_accounts_enabled and customer and customer.default_address.province != '' %}data-default="{{ customer.default_address.province_code }}" data-default-fullname="{{ customer.default_address.province }}"{% endif %}></select>
+              <select
+                id="address_province"
+                class="address_form cart__field"
+                name="address[province]"
+                {% if shop.customer_accounts_enabled and customer and customer.default_address.province != '' %}
+                  data-default="{{ customer.default_address.province_code }}"
+                  data-default-fullname="{{ customer.default_address.province }}"
+                {% endif %}
+              ></select>
             </div>
 
             <div class="p">
               <label for="address_zip">{{ 'customer.addresses.zip' | t }}</label>
-              <input type="text" id="address_zip" class="cart__field" name="address[zip]"{% if shop.customer_accounts_enabled and customer %} value="{{ customer.default_address.zip }}"{% endif %}>
+              <input
+                type="text"
+                id="address_zip"
+                class="cart__field"
+                name="address[zip]"
+                {% if shop.customer_accounts_enabled and customer %}
+                  value="{{ customer.default_address.zip }}"
+                {% endif %}
+              >
             </div>
 
             <div class="is-hidden">
@@ -76,7 +101,12 @@
 
           <div id="wrapper-response" class="fade-toggle"></div>
 
-          <button type="button" class="get-rates{% if cart.item_count > 0 %} get-rates--trigger{% endif %} btn btn--outline btn--primary btn--full">{{ calculate_shipping_btn }}</button>
+          <button
+            type="button"
+            class="get-rates{% if cart.item_count > 0 %} get-rates--trigger{% endif %} btn btn--outline btn--primary btn--full"
+          >
+            {{ calculate_shipping_btn }}
+          </button>
         </div>
 
         <script id="shipping-calculator-response-template" type="text/template">

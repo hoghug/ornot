@@ -1,26 +1,28 @@
 <!-- /snippets/localization.liquid -->
 {% comment %}
-    Renders language and currency popouts in Header, Toolbar and Footer
+  Renders language and currency popouts in Header, Toolbar and Footer
 
-    Accepts:
-    - class: {String} Class name (optional)
-    - show_locale_selector: {Boolean} True or false
-    - show_country_selector: {Boolean} True or false
-    - show_country_flag: {Boolean} True or false
-    - show_country_name: {Boolean} True or false
-    - unique: {String} Unique id - section.id or block.id
-    - show_icon: {Boolean} True or false
+  Accepts:
+  - class: {String} Class name (optional)
+  - show_locale_selector: {Boolean} True or false
+  - show_locale_code: {Boolean} True or false
+  - show_country_selector: {Boolean} True or false
+  - show_country_flag: {Boolean} True or false
+  - show_country_name: {Boolean} True or false
+  - unique: {String} Unique id - section.id or block.id
+  - show_icon: {Boolean} True or false
 
-    Usage:
-    {% render 'localization',
-        class: class,
-        show_locale_selector: show_locale_selector,
-        show_country_selector: show_country_selector,
-        show_country_flag: show_country_flag,
-        show_country_name: show_country_name,
-        unique: section.id,
-        show_icon: show_icon,
-      %}
+  Usage:
+  {% render 'localization',
+      class: class,
+      show_locale_selector: show_locale_selector,
+      show_locale_code: show_locale_code,
+      show_country_selector: show_country_selector,
+      show_country_flag: show_country_flag,
+      show_country_name: show_country_name,
+      unique: section.id,
+      show_icon: show_icon,
+    %}
 {% endcomment %}
 
 {%- liquid
@@ -32,6 +34,7 @@
   assign languages = false
   assign countries = false
   assign show_locale_selector = show_locale_selector | default: false
+  assign show_locale_code = show_locale_code | default: false
   assign show_country_selector = show_country_selector | default: false
   assign show_country_flag = show_country_flag | default: false
   assign show_country_name = show_country_name | default: false
@@ -56,14 +59,26 @@
         </h2>
 
         <popout-select class="popout" submit>
-          <button type="button" class="popout__toggle" aria-expanded="false" aria-controls="lang-list-{{ unique }}" aria-describedby="lang-heading-{{ unique }}" data-popout-toggle>
+          <button
+            type="button"
+            class="popout__toggle"
+            aria-expanded="false"
+            aria-controls="lang-list-{{ unique }}"
+            aria-describedby="lang-heading-{{ unique }}"
+            data-popout-toggle
+          >
             <span class="popout__toggle__text" data-popout-toggle-text>
               {%- if show_globe_icon -%}
                 <span class="popout__icon-globe">
                   {%- render 'icon-globe' -%}
                 </span>
               {%- endif -%}
-              {{- localization.language.endonym_name -}}
+
+              {%- if show_locale_code -%}
+                {{- localization.language.iso_code | upcase -}}
+              {%- else -%}
+                {{- localization.language.endonym_name | capitalize -}}
+              {%- endif -%}
             </span>
 
             {%- if show_icon -%}
@@ -71,10 +86,16 @@
             {%- endif -%}
           </button>
 
-          <ul id="lang-list-{{ unique }}" class="popout-list" data-popout-list data-scroll-lock-scrollable>
+          <ul
+            id="lang-list-{{ unique }}"
+            class="popout-list {% if show_locale_code %}popout-list--code{% endif %}"
+            data-popout-list
+            data-scroll-lock-scrollable
+          >
             {%- for language in localization.available_languages -%}
               <li class="popout-list__item{% if language.iso_code == localization.language.iso_code %} is-active{% endif %}">
-                <a class="popout-list__option"
+                <a
+                  class="popout-list__option"
                   href="#"
                   hreflang="{{ language.iso_code }}"
                   lang="{{ language.iso_code }}"
@@ -82,14 +103,21 @@
                     aria-current="true"
                   {% endif %}
                   data-value="{{ language.iso_code }}"
-                  data-popout-option>
-                  <span>{{ language.endonym_name }}</span>
+                  data-popout-option
+                >
+                  <span>{{ language.endonym_name | capitalize }}</span>
                 </a>
               </li>
             {%- endfor -%}
           </ul>
 
-          <input type="hidden" name="locale_code" id="LocaleSelector-{{ unique }}" value="{{ localization.language.iso_code }}" data-popout-input>
+          <input
+            type="hidden"
+            name="locale_code"
+            id="LocaleSelector-{{ unique }}"
+            value="{{ localization.language.iso_code }}"
+            data-popout-input
+          >
         </popout-select>
       </div>
     {%- endif -%}
@@ -106,7 +134,14 @@
         </h2>
 
         <popout-select class="popout" submit>
-          <button type="button" class="popout__toggle" aria-expanded="false" aria-controls="country-list-{{ unique }}" aria-describedby="country-heading-{{ unique }}" data-popout-toggle>
+          <button
+            type="button"
+            class="popout__toggle"
+            aria-expanded="false"
+            aria-controls="country-list-{{ unique }}"
+            aria-describedby="country-heading-{{ unique }}"
+            data-popout-toggle
+          >
             <span class="popout__toggle__text" data-popout-toggle-text>
               {%- if show_country_flag -%}
                 {{ localization.country | image_url: width: 40 | image_tag: loading: 'lazy', class: 'popout__flag' }}
@@ -117,7 +152,7 @@
               {%- endif -%}
 
               {%- if show_country_name -%}
-               {{ localization.country.name }}
+                {{ localization.country.name }}
 
                 ({{ currency }})
               {%- else -%}
@@ -139,7 +174,8 @@
                     aria-current="true"
                   {% endif %}
                   data-value="{{ country.iso_code }}"
-                  data-popout-option>
+                  data-popout-option
+                >
                   {%- if show_country_flag -%}
                     {{ country | image_url: width: 40 | image_tag: loading: 'lazy', class: 'popout__flag' }}
                   {%- endif -%}
@@ -155,10 +191,15 @@
             {%- endfor -%}
           </ul>
 
-          <input type="hidden" name="country_code" id="CountrySelector-{{ unique }}" value="{{ localization.country.iso_code }}" data-popout-input>
+          <input
+            type="hidden"
+            name="country_code"
+            id="CountrySelector-{{ unique }}"
+            value="{{ localization.country.iso_code }}"
+            data-popout-input
+          >
         </popout-select>
       </div>
     {%- endif -%}
-
   {%- endform -%}
 {%- endif -%}

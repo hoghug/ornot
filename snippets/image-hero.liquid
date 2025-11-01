@@ -26,7 +26,7 @@
   assign animation_delay = animation_delay | default: false
   assign image = image_mobile | default: image_desktop | default: image
   assign image_desktop = image_desktop | default: image
-  assign image_mobile = image_mobile | default: nil
+  assign image_mobile = image_mobile | default: null
   assign aspect_ratio = aspect_ratio | default: image_desktop.aspect_ratio | default: 2.63
   assign aspect_ratio_mobile = image_mobile.aspect_ratio | default: aspect_ratio
   assign image_width = image.width | at_most: 5760 | default: 5760
@@ -37,8 +37,8 @@
   assign widths = widths | default: widths_default
   assign alt = alt | default: image.alt
   assign alt = alt | escape
-  assign preload = preload | default: nil
-  assign fetchpriority = fetchpriority | default: nil
+  assign preload = preload | default: null
+  assign fetchpriority = fetchpriority | default: null
   assign is_mixed_picture = false
   assign wrapper_tag = 'div'
 
@@ -59,7 +59,7 @@
     assign loading = 'lazy'
   endif
 
-  if show_backfill == nil
+  if show_backfill == null
     assign show_backfill = true
   endif
 
@@ -85,10 +85,6 @@
     echo '--aspect-ratio-mobile: ' | append: aspect_ratio_mobile | append: ';'
     echo '"'
 
-    if settings.parallax_enable
-      echo ' data-parallax-wrapper'
-    endif
-
     if attributes != blank
       echo ' ' | append: attributes
     endif
@@ -113,7 +109,6 @@
   endif
 -%}
 
-
 {%- capture aos_animation -%}
   {%- if animation_delay -%}
     data-aos="img-in"
@@ -130,11 +125,12 @@
 
 <{{ wrapper_tag }} class="{{ wrapper_classes }}" {{ wrapper_attributes }}>
   <div class="image__hero__pane" {{ aos_animation }}>
-    <div class="image__hero__scale image__fill lazy-image{% if show_backfill %} lazy-image--backfill{% endif %} is-loading"
+    <div
+      class="image__hero__scale image__fill lazy-image{% if show_backfill %} lazy-image--backfill{% endif %} is-loading"
       {% if settings.parallax_enable %}
         data-parallax-img
-      {% endif %}>
-
+      {% endif %}
+    >
       {%- if is_mixed_picture -%}
         {%- style -%}
           @media (min-width: 750px) {
@@ -146,30 +142,36 @@
         {%- endstyle -%}
 
         <picture id="{{ id }}">
-          <source media="(min-width: 750px)" sizes="{{ sizes }}" srcset="{{ srcset_desktop }}" />
-          <source media="(max-width: 749px)" sizes="{{ sizes }}" srcset="{{ srcset_mobile }}" />
+          <source media="(min-width: 750px)" sizes="{{ sizes }}" srcset="{{ srcset_desktop }}">
+          <source media="(max-width: 749px)" sizes="{{ sizes }}" srcset="{{ srcset_mobile }}">
 
-          {{ image | image_url: width: image.width | image_tag:
-            loading: loading,
-            fetchpriority: fetchpriority,
-            alt: alt,
-            sizes: sizes,
-            srcset: srcset_mobile,
-            class: 'is-loading',
-            style: 'object-position: var(--focal-point, center)'
+          {{
+            image
+            | image_url: width: image.width
+            | image_tag:
+              loading: loading,
+              fetchpriority: fetchpriority,
+              alt: alt,
+              sizes: sizes,
+              srcset: srcset_mobile,
+              class: 'is-loading',
+              style: 'object-position: var(--focal-point, center)'
           }}
         </picture>
       {%- elsif image contains 'blank.svg' or image == blank -%}
         <img src="{{ 'blank.svg' | asset_url }}" loading="lazy" class="is-loading">
       {%- else -%}
-        {{ image | image_url: width: width | image_tag:
-          loading: loading,
-          srcset: srcset,
-          sizes: sizes,
-          alt: alt,
-          fetchpriority: fetchpriority,
-          preload: preload,
-          class: 'is-loading'
+        {{
+          image
+          | image_url: width: width
+          | image_tag:
+            loading: loading,
+            srcset: srcset,
+            sizes: sizes,
+            alt: alt,
+            fetchpriority: fetchpriority,
+            preload: preload,
+            class: 'is-loading'
         }}
       {%- endif -%}
     </div>

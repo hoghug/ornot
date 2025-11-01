@@ -80,7 +80,7 @@
         {{ target_referrer_attribute }}
       >
         <form method="dialog">
-          <button class="visually-hidden no-js" aria-label="{{ 'general.accessibility.close' | t }}"></button>
+          <button class="visually-hidden" aria-label="{{ 'general.accessibility.close' | t }}"></button>
         </form>
 
         <div class="popup-promo__inner">
@@ -102,7 +102,7 @@
               <span>{{ section.settings.button_text }}</span>
 
               {%- if section.settings.show_arrow -%}
-                {%- render 'icon-arrow-right' -%}
+                {%- render 'icon-nav-arrow-right' -%}
               {%- endif -%}
             </a>
           {%- endif -%}
@@ -225,12 +225,14 @@
     {
       "type": "color",
       "id": "color",
-      "label": "Text"
+      "label": "Text",
+      "alpha": true
     },
     {
       "type": "color",
       "id": "bg_color",
-      "label": "Background"
+      "label": "Background",
+      "alpha": true
     },
     {
       "type": "header",
@@ -298,7 +300,8 @@
   ],
   "presets": [
     {
-      "name": "Text promotion"
+      "name": "Text promotion",
+      "category": "Text"
     }
   ],
   "enabled_on": {

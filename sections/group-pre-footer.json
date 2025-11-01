@@ -1,1 +1,135 @@
-{"type":"custom.pre_footer","name":"Pre-footer","sections":{"section-newsletter":{"type":"section-newsletter","blocks":{"image_dgHQb9":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/climate-neutral-1p-footer_white2.gif","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-left","show_text_background":false,"bg_color":"","color":"rgba(0,0,0,0)","overlay_opacity":0,"overlay_color":"rgba(0,0,0,0)","show_overlay_text":false,"link_text":"","link":"","button_type":"btn--primary","button_size":"btn--small","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}},"newsletter-1":{"type":"newsletter","settings":{"subheading":"","heading":"WE COULD SEND EMAIL, ORNOT.","heading_font_size":"heading-medium","text":"<p>We only send good emails, promise.<\/p>","text_font_size":"body-medium","text_columns":1,"align_text":"text-center","show_name":false,"button_text":"","show_arrow":true,"terms":true,"button_type":"btn--secondary","button_size":"","button_style":"btn--solid","show_social_links":false,"bg_color":"#e0e0e0","color":"#616161","heading_tag":"automatic"}}},"block_order":["image_dgHQb9","newsletter-1"],"settings":{"width":"wrapper--full","height":"three-fifty-height-hero","mobile_height":"two-fifty-height-hero--mobile","color_scheme":"","padding_top":0,"padding_bottom":0}},"section_hero_aCAcUj":{"type":"section-hero","blocks":{"heading_MHpeqL":{"type":"heading","settings":{"title":"NEW PARK JERSEYS","heading_font_size":"heading-medium","heading_tag":"automatic"}},"text_dxNtjX":{"type":"text","disabled":true,"settings":{"text":"<p>Tell your brand's story through images.<\/p>","text_font_size":"body-large"}},"button_7K64Mw":{"type":"button","settings":{"link_text":"SHOP NOW","link":"shopify:\/\/collections\/park-jerseys-all","button_type":"btn--white","button_size":"","button_style":"btn--solid","show_arrow":false}}},"block_order":["heading_MHpeqL","text_dxNtjX","button_7K64Mw"],"disabled":true,"name":"Image banner","settings":{"image_1":"shopify:\/\/shop_images\/Ornot_Womens_ParkJersey_BlackStripes_09_756e67fe-cb21-475f-8be0-d45620531f0d.jpg","link":"","width":"wrapper--full","height":"four-fifty-height-hero","flex_align_desktop":"align--middle-center-desktop","content_width":38,"mobile_image":"shopify:\/\/shop_images\/Ornot_Womens_LongSleeve_ParkJersey_Fog_09.jpg","mobile_height":"screen-height-one-half--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"scheme-2","show_text_background":false,"overlay_opacity":25,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}}},"order":["section-newsletter","section_hero_aCAcUj"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "custom.pre_footer",
+  "name": "Pre-footer",
+  "sections": {
+    "section-newsletter": {
+      "type": "section-newsletter",
+      "blocks": {
+        "image_dgHQb9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/climate-neutral-1p-footer_white2.gif",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-left",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "rgba(0,0,0,0)",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "newsletter-1": {
+          "type": "newsletter",
+          "settings": {
+            "subheading": "",
+            "heading": "WE COULD SEND EMAIL, ORNOT.",
+            "heading_font_size": "heading-medium",
+            "text": "<p>We only send good emails, promise.</p>",
+            "text_font_size": "body-medium",
+            "text_columns": 1,
+            "align_text": "text-center",
+            "button_text": "",
+            "show_arrow": true,
+            "terms": true,
+            "show_name": false,
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_social_links": false,
+            "bg_color": "#e0e0e0",
+            "color": "#616161",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_dgHQb9",
+        "newsletter-1"
+      ],
+      "settings": {
+        "width": "wrapper--full",
+        "height": "three-fifty-height-hero",
+        "mobile_height": "two-fifty-height-hero--mobile",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_hero_aCAcUj": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_MHpeqL": {
+          "type": "heading",
+          "settings": {
+            "title": "NEW PARK JERSEYS",
+            "heading_font_size": "heading-medium",
+            "heading_tag": "automatic"
+          }
+        },
+        "text_dxNtjX": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Tell your brand's story through images.</p>",
+            "text_font_size": "body-large"
+          }
+        },
+        "button_7K64Mw": {
+          "type": "button",
+          "settings": {
+            "link_text": "SHOP NOW",
+            "link": "shopify://collections/park-jerseys-all",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_MHpeqL",
+        "text_dxNtjX",
+        "button_7K64Mw"
+      ],
+      "disabled": true,
+      "name": "Image banner",
+      "settings": {
+        "image_1": "shopify://shop_images/Ornot_Womens_ParkJersey_BlackStripes_09_756e67fe-cb21-475f-8be0-d45620531f0d.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "four-fifty-height-hero",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 38,
+        "mobile_image": "shopify://shop_images/Ornot_Womens_LongSleeve_ParkJersey_Fog_09.jpg",
+        "mobile_height": "screen-height-one-half--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    }
+  },
+  "order": [
+    "section-newsletter",
+    "section_hero_aCAcUj"
+  ]
+}

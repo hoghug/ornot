@@ -1,6 +1,14 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
-    "ie11_support_message": "Diese Seite unterstützt deinen Browser nur begrenzt. Wir empfehlen dir, zu Edge, Chrome, Safari oder Firefox zu wechseln.",
     "swatches": {
       "color": "Farbe"
     },
@@ -93,7 +101,9 @@
       "scroll_to_product": "Zum Produkt blättern",
       "scroll_to_logo": "Scrollen Sie zu Logo",
       "footer_logo": "Fußzeilenlogo",
-      "slide_image": "Diabild"
+      "slide_image": "Diabild",
+      "play_video": "Video abspielen",
+      "pause_video": "Video anhalten"
     },
     "social": {
       "share_on_facebook": "Teilen",
@@ -163,10 +173,6 @@
       "subtotal_note": "Versand, Mehrwertsteuer und Rabattcodes werden an der Kasse berechnet",
       "customer_note": "Hinterlasse einen Hinweis zu deiner Bestellung",
       "cart_notes_label": "Bestellhinweise hinzufügen",
-      "products_with_count": {
-        "one": "Produkt",
-        "other": "Produkte"
-      },
       "pair_products": "Kombinieren mit",
       "estimate_shipping_label": "Versandkosten schätzen",
       "gift_notes_label": "Ist dies ein Geschenk?",
@@ -184,8 +190,13 @@
       "decrease_quantity_label": "Verringern Schaltfläche Menge",
       "quantity_field_label": "Mengenfeld",
       "continue_shopping": "Weiter einkaufen",
+      "discount_code_label": "Rabattcode",
+      "discount_code_placeholder": "Rabattcode eingeben",
+      "discount_not_applicable": "Rabatt nicht anwendbar",
+      "discount_already_applied": "Rabatt bereits angewendet",
+      "apply_button": "Anwenden",
       "discount_label": "Du sparst {{ amount }} mit {{ title }}",
-      "limit_message": "Keine weiteren Produkte zum Kauf verfügbar",
+      "limit_message": "Sorry, sieht so aus, als hätten wir nicht genug von diesem Produkt.",
       "add_message": "Du hast ein Produkt hinzugefügt:",
       "total_message": {
         "one": "und du hast {{ count }} Produkt im Warenkorb",
@@ -435,8 +446,7 @@
       "upsell_out_of_stock": "Ausverkauft",
       "upsell_error_title": "Wählen Sie ein Upsell-Produkt",
       "upsell_error_info": "Verwenden Sie Metafelder, um hier ein Produkt anzuzeigen. Leere Upsells werden auf der Live-Website nicht angezeigt.",
-      "missing_metafield_image": "Verwenden Sie ein Metafeld, um hier ein Bild anzuzeigen. Leere Metafelder werden auf der Live-Site nicht angezeigt.",
-      "shop_now": "Jetzt einkaufen"
+      "missing_metafield_image": "Verwenden Sie ein Metafeld, um hier ein Bild anzuzeigen. Leere Metafelder werden auf der Live-Site nicht angezeigt."
     },
     "product": {
       "regular_price": "Regulärer Preis",
@@ -445,16 +455,20 @@
       "new": "Neue",
       "pre_order": "Vorbestellung",
       "on_sale": "Sale",
+      "save_badge_html": "Sparen Sie {{ discount }}",
+      "save_badge_up_to_html": "Sparen Sie bis zu {{ discount }}",
       "final_sale": "Endverkauf",
       "unavailable": "Nicht verfügbar",
+      "value_unavailable": "{{ option_value }} - Nicht verfügbar",
+      "variant_sold_out_or_unavailable": "Variante ausverkauft oder nicht verfügbar",
       "compare_at": "Vergleichen bei",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Versand</a> wird an der Kasse berechnet.",
       "unit_price_label": "Einheitspreis",
       "subscription": "Abonnement",
       "save": "Sparen",
       "off": "Rabatt",
       "sku": "SKU",
       "one_time_purchase": "Einmaliger Kauf",
-      "quantity": "Menge",
       "add_to_cart": "Zum Warenkorb",
       "added": "Zu deinem Warenkorb hinzugefügt:",
       "vendor": "Verkäufer",
@@ -473,6 +487,34 @@
       "item_unavailable": "Artikel ist nicht verfügbar",
       "remaining_html": "Beeil dich! Nur noch {{ inventory }} übrig!",
       "remaining_no_count": "Beeilen Sie sich! Geringer Bestand",
+      "inventory_low_stock_show_count": "Geringer Bestand: {{ quantity }} übrig",
+      "inventory_low_stock": "Geringer Bestand",
+      "inventory_in_stock_show_count": "{{ quantity }} auf Lager",
+      "inventory_in_stock": "Auf Lager",
+      "inventory_out_of_stock_continue_selling": "Auf Lager",
+      "inventory_out_of_stock": "Nicht auf Lager",
+      "duties_and_taxes_included": "Zölle und Steuern inbegriffen.",
+      "taxes_included": "Steuern inbegriffen.",
+      "duties_included": "Zölle inbegriffen.",
+      "quantity": {
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}<\/span> im Warenkorb",
+        "decrease": "Menge für {{ product }} verringern",
+        "multiples_of": "Schritte von {{ quantity }}",
+        "minimum_of": "Minimum von {{ quantity }}",
+        "maximum_of": "Maximum von {{ quantity }}"
+      },
+      "price": {
+        "from_price_html": "Ab {{ price }}",
+        "regular_price": "Regulärer Preis",
+        "sale_price": "Verkaufspreis",
+        "unit_price": "Einheitspreis"
+      },
+      "volume_pricing": {
+        "price_range": "{{ minimum }} - {{ maximum }}",
+        "price_at_each_html": "zu {{ price }}\/Stk.",
+        "title": "Mengenrabatt",
+        "note": "Mengenrabatt verfügbar"
+      },
       "pickup_availability": {
         "pickup_options": "Abholoptionen",
         "view_store_info": "Shopinformationen anzeigen",
@@ -483,6 +525,14 @@
         "unavailable": "Verfügbarkeit für die Abholung konnte nicht geladen werden",
         "refresh": "Aktualisieren"
       }
+    },
+    "facets": {
+      "show_more": "Mehr anzeigen"
+    }
+  },
+  "sections": {
+    "quick_order_list": {
+      "each": "{{ money }}\/Stk."
     }
   },
   "countdown": {

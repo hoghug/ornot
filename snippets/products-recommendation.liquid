@@ -1,13 +1,18 @@
 <!-- /snippets/products-recommendation.liquid -->
 {%- if recommendations.performed -%}
-  {%- assign products_count = recommendations.products_count -%}
+  {%- liquid
+    assign products_count = recommendations.products_count
+    assign show_recently_viewed_indicator = settings.show_recently_viewed_indicator
+  -%}
 
   {%- if products_count > 0 -%}
     <div class="grid-outer">
       <grid-slider align-arrows>
-        <div class="grid grid--slider{% if products_count <= 4 %} grid--slider-disabled{% endif %}"
+        <div
+          class="grid grid--slider{% if products_count <= 4 %} grid--slider-disabled{% endif %}"
           data-grid-slider
-          id="product-recommendations">
+          id="product-recommendations"
+        >
           {%- liquid
             for product in recommendations.products
               assign hidden_product = false
@@ -27,4 +32,12 @@
   {%- endif -%}
 {%- else -%}
   <div class="related__placeholder"></div>
+{%- endif -%}
+
+{%- if settings.quickview_enable -%}
+  <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+{%- if show_recently_viewed_indicator -%}
+  <script src="{{ 'grid-item.js' | asset_url }}" defer></script>
 {%- endif -%}

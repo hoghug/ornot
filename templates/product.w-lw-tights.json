@@ -1,1 +1,499 @@
-{"sections":{"section_hero_t4phQQ":{"type":"section-hero","settings":{"image_1":"{{ product.metafields.my_fields.hero_header_image.value }}","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-center-desktop","content_width":50,"mobile_image":"shopify:\/\/shop_images\/TransparentLineThin_c68a9c99-40f9-4a8b-abbe-2d9d16677ec6.gif","mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"main":{"type":"product","blocks":{"title":{"type":"title","settings":{"subheading_option":"breadcrumb","heading_font_size":"heading-medium","padding_bottom":8}},"text_RbJEG4":{"type":"text","settings":{"title":"","heading_font_size":"body-medium","text":"<p>{{ product.metafields.custom.tagline | metafield_tag }}<\/p>","text_font_size":"body-medium","text_alignment":"text-left","layout":"left","padding_bottom":16}},"junip_product_reviews_ugc_junip_product_summary_46cMCr":{"type":"shopify:\/\/apps\/junip\/blocks\/junip-product-summary\/dc14f5a8-ed15-41b1-ad08-cfba23f9789b","settings":{"product":"{{product}}"}},"price":{"type":"price","settings":{"text_font_size":"body-x-large","padding_bottom":16}},"siblings_6N6EiR":{"type":"siblings","settings":{"siblings_collection":"{{ product.metafields.theme.siblings.value }}","sibling_color":"{{ product.metafields.theme.sibling_color.value }}","padding_bottom":16}},"variants":{"type":"variants","settings":{"info_page":"","size_chart_style":"text","subscriptions_enable_selectors":false,"padding_bottom":16}},"pickup":{"type":"pickup","settings":{"padding_bottom":32}},"text_8gVcP7":{"type":"text","settings":{"title":"{{ product.metafields.custom.extra_product_text.value }}","heading_font_size":"body-medium","text":"","text_font_size":"body-medium","text_alignment":"text-left","layout":"left","padding_bottom":16}},"buttons":{"type":"buttons","settings":{"show_quantity":false,"button_type":"btn--primary","button_style":"btn--solid","show_payment_button":false,"button_type_dynamic":"btn--secondary","button_style_dynamic":"btn--solid","show_gift_card_recipient":false,"padding_bottom":32}},"accordion_Lfpd9e":{"type":"accordion","settings":{"show_description":true,"show_read_more":false,"default_open":true,"heading":"DESCRIPTION","text":"","padding_bottom":0}},"accordion_zP8Ke4":{"type":"accordion","settings":{"show_description":false,"show_read_more":false,"default_open":false,"heading":"FEATURES","text":"<p>{{ product.metafields.custom.product_features | metafield_tag }}<\/p>","padding_bottom":0}},"accordion_LmMz4Y":{"type":"accordion","settings":{"show_description":false,"show_read_more":false,"default_open":false,"heading":"SHIPPING, EXCHANGES, AND RETURNS","text":"<p>· Most orders will ship within 48 hours from our warehouse located in San Diego. Orders are processed Monday - Friday during normal business hours.<\/p><p>· Free (and easy) exchanges, we want you in the correct size.<\/p><p>· 30-day return window.<\/p><p>· Sale items are eligible for exchanges and store credit only.<\/p>","padding_bottom":0}},"accordion_e7x6Rm":{"type":"accordion","settings":{"show_description":false,"show_read_more":false,"default_open":false,"heading":"1 YEAR WARRANTY","text":"<p>· Our clothing is made by hand and made to last. We stand by our construction and fabrics and offer a 1-year warranty against manufacturing defects. The most sustainable clothing is the kind that lasts many seasons. Need a repair? Questions? <a href=\"mailto:info@ornotbike.com\">Email us<\/a>, we’re pretty good at typing.<\/p><p>· Crash Replacement Assistance - We offer a discounted replacement if you happen to fall and destroy your clothing. (We recommend that you don’t use this)<\/p>","padding_bottom":0}},"upsell":{"type":"upsell","settings":{"upsell_product":"","upsell_product_list":["womens-grid-thermal-jersey-golden","womens-micro-climate-jacket-azul","merino-gloves"],"show_available_upsell_only":true,"layout":"stacked","autoplay":false,"autoplay_speed":8,"bg_color":"","padding_bottom":16}},"divider_1":{"type":"divider","disabled":true,"settings":{"show_line":true,"padding_bottom":16}},"features_p9gq4m":{"type":"features","disabled":true,"settings":{"icon_name":"icon-award","icon_size":20,"title":"Feature","text_font_size":"body-medium","text":"<p>This content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>","bg_color":"#f7f9fa","color":"#212121","padding_bottom":16}}},"block_order":["title","text_RbJEG4","junip_product_reviews_ugc_junip_product_summary_46cMCr","price","siblings_6N6EiR","variants","pickup","text_8gVcP7","buttons","accordion_Lfpd9e","accordion_zP8Ke4","accordion_LmMz4Y","accordion_e7x6Rm","upsell","divider_1","features_p9gq4m"],"custom_css":[],"settings":{"product_sticky_enable":true,"variant_image_scroll":true,"show_cart_bar":false,"enable_zoom":false,"enable_video_looping":true,"image_layout":"thumbnails","image_size":"normal","mobile_image_style":"thumbs","color_scheme":"","padding_top":25,"padding_bottom":30}},"section_hero_GidLRG":{"type":"section-hero","settings":{"image_1":"{{ product.metafields.custom.web_size_chart.value }}","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-center-desktop","content_width":50,"mobile_image":"{{ product.metafields.custom.mobile_size_chart.value }}","mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"section_hero_caAf89":{"type":"section-hero","blocks":{"heading_8KDAxD":{"type":"heading","settings":{"title":"DROP TAIL!","heading_font_size":"heading-x-large","heading_tag":"automatic"}},"text_MAmadU":{"type":"text","settings":{"text":"<p>THESE BIBS ARE BATHROOM BREAK READY. YOU COULD HANG YOUR TOP UP IN THE BATHROOM, ORNOT.<\/p>","text_font_size":"body-x-large"}}},"block_order":["heading_8KDAxD","text_MAmadU"],"settings":{"image_1":"shopify:\/\/shop_images\/w-summer-tights-sliver.jpg","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-right-desktop","content_width":50,"mobile_image":"shopify:\/\/shop_images\/droptail_espresso-mobile-square.jpg","mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-right-mobile","color_scheme":"scheme-2","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"section_custom_content_LXG6mA":{"type":"section-custom-content","blocks":{"text_zXjBRp":{"type":"text","settings":{"subheading":"","title":"Bicycling Magazine","heading_font_size":"heading-large","text":"<p>\"Ornot’s lightweight bibs are perfect for the rides you typically wear leg warmers but know you won’t remove them. The fit is dialed and they use a droptail design for rest stops.\" <\/p><p>-Trevor Raab<\/p>","text_font_size":"body-medium","button_text":"Learn More","button_url":"https:\/\/www.bicycling.com\/bikes-gear\/a62389074\/gear-of-the-year-2024\/","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"#fafafa","color":"","heading_tag":"automatic"}},"image_rxjBGw":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/LW-Tights-BM-1x1-Black.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}}},"block_order":["text_zXjBRp","image_rxjBGw"],"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":true,"color_scheme":"","padding_top":0,"padding_bottom":0}},"section_custom_content_mKNHmY":{"type":"section-custom-content","blocks":{"image_6digpT":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/square_caetie_molly.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}},"text_tiV7Ry":{"type":"text","settings":{"subheading":"","title":"SUSTAINABILITY","heading_font_size":"heading-large","text":"<p>When designing these tights, we sourced as much recycled content as possible. The face fabric is a recycled bluesign®-approved knit and the endurance pad is made using recycled content. The shorts are sewn in a facility powered by sustainable energy via rooftop solar panels. <\/p><p>Every product we make is Climate Neutral Certified. This means that we measure, reduce, and remove all of our carbon emissions. Learn more about it <a href=\"https:\/\/www.ornotbike.com\/pages\/climate-neutral\" title=\"https:\/\/www.ornotbike.com\/pages\/climate-neutral\">here<\/a>.<\/p>","text_font_size":"body-medium","button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"#fafafa","color":"","heading_tag":"automatic"}}},"block_order":["image_6digpT","text_tiV7Ry"],"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":false,"color_scheme":"","padding_top":0,"padding_bottom":0}},"section_hero_AXLMwy":{"type":"section-hero","settings":{"image_1":"shopify:\/\/shop_images\/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.png","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-center-desktop","content_width":50,"mobile_image":"shopify:\/\/shop_images\/CN_1FTP_BannerMobile.png","mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"1706135782d1067a10":{"type":"apps","blocks":{"junip_product_reviews_ugc_junip_product_review_9ByW79":{"type":"shopify:\/\/apps\/junip\/blocks\/junip-product-review\/dc14f5a8-ed15-41b1-ad08-cfba23f9789b","settings":{"product":"{{product}}","title":"","alignment":""}}},"block_order":["junip_product_reviews_ugc_junip_product_review_9ByW79"],"settings":{"include_margins":false}},"related":{"type":"related","blocks":{"related":{"type":"related","settings":{"product_recommendations_heading":"Related products","limit":6}},"recent":{"type":"recent","settings":{"product_recently_heading":"Recently viewed","product_recently_limit":4}}},"block_order":["related","recent"],"custom_css":[".product-item--swatches {padding: 0px 10px 0px 10px;}",".product-item--centered {padding: 0px 10px 0px 10px;}"],"settings":{"enable_tabs":true,"heading_alignment":"text-center","heading_font_size":"heading-small","layout_mobile":"slider","color_scheme":"","padding_top":30,"padding_bottom":0}}},"order":["section_hero_t4phQQ","main","section_hero_GidLRG","section_hero_caAf89","section_custom_content_LXG6mA","section_custom_content_mKNHmY","section_hero_AXLMwy","1706135782d1067a10","related"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section_hero_t4phQQ": {
+      "type": "section-hero",
+      "settings": {
+        "image_1": "{{ product.metafields.my_fields.hero_header_image.value }}",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/TransparentLineThin_c68a9c99-40f9-4a8b-abbe-2d9d16677ec6.gif",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "main": {
+      "type": "product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "subheading_option": "breadcrumb",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 8
+          }
+        },
+        "text_RbJEG4": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "heading_font_size": "body-medium",
+            "text": "<p>{{ product.metafields.custom.tagline | metafield_tag }}</p>",
+            "text_font_size": "body-medium",
+            "text_alignment": "text-left",
+            "layout": "left",
+            "padding_bottom": 16
+          }
+        },
+        "junip_product_reviews_ugc_junip_product_summary_46cMCr": {
+          "type": "shopify://apps/junip/blocks/junip-product-summary/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "text_font_size": "body-x-large",
+            "padding_bottom": 16
+          }
+        },
+        "siblings_6N6EiR": {
+          "type": "siblings",
+          "settings": {
+            "siblings_collection": "{{ product.metafields.theme.siblings.value }}",
+            "sibling_color": "{{ product.metafields.theme.sibling_color.value }}",
+            "padding_bottom": 16
+          }
+        },
+        "variants": {
+          "type": "variants",
+          "settings": {
+            "info_page": "",
+            "size_chart_style": "text",
+            "padding_bottom": 16
+          }
+        },
+        "pickup": {
+          "type": "pickup",
+          "settings": {
+            "padding_bottom": 32
+          }
+        },
+        "text_8gVcP7": {
+          "type": "text",
+          "settings": {
+            "title": "{{ product.metafields.custom.extra_product_text.value }}",
+            "heading_font_size": "body-medium",
+            "text": "",
+            "text_font_size": "body-medium",
+            "text_alignment": "text-left",
+            "layout": "left",
+            "padding_bottom": 16
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "show_quantity": false,
+            "button_type": "btn--primary",
+            "button_style": "btn--solid",
+            "button_type_dynamic": "btn--secondary",
+            "button_style_dynamic": "btn--solid",
+            "show_gift_card_recipient": false,
+            "padding_bottom": 32
+          }
+        },
+        "accordion_Lfpd9e": {
+          "type": "accordion",
+          "settings": {
+            "show_description": true,
+            "show_read_more": false,
+            "default_open": true,
+            "heading": "DESCRIPTION",
+            "text": "",
+            "padding_bottom": 0
+          }
+        },
+        "accordion_zP8Ke4": {
+          "type": "accordion",
+          "settings": {
+            "show_description": false,
+            "show_read_more": false,
+            "default_open": false,
+            "heading": "FEATURES",
+            "text": "<p>{{ product.metafields.custom.product_features | metafield_tag }}</p>",
+            "padding_bottom": 0
+          }
+        },
+        "accordion_LmMz4Y": {
+          "type": "accordion",
+          "settings": {
+            "show_description": false,
+            "show_read_more": false,
+            "default_open": false,
+            "heading": "SHIPPING, EXCHANGES, AND RETURNS",
+            "text": "<p>· Most orders will ship within 48 hours from our warehouse located in San Diego. Orders are processed Monday - Friday during normal business hours.</p><p>· Free (and easy) exchanges, we want you in the correct size.</p><p>· 30-day return window.</p><p>· Sale items are eligible for exchanges and store credit only.</p>",
+            "padding_bottom": 0
+          }
+        },
+        "accordion_e7x6Rm": {
+          "type": "accordion",
+          "settings": {
+            "show_description": false,
+            "show_read_more": false,
+            "default_open": false,
+            "heading": "1 YEAR WARRANTY",
+            "text": "<p>· Our clothing is made by hand and made to last. We stand by our construction and fabrics and offer a 1-year warranty against manufacturing defects. The most sustainable clothing is the kind that lasts many seasons. Need a repair? Questions? <a href=\"mailto:info@ornotbike.com\">Email us</a>, we’re pretty good at typing.</p><p>· Crash Replacement Assistance - We offer a discounted replacement if you happen to fall and destroy your clothing. (We recommend that you don’t use this)</p>",
+            "padding_bottom": 0
+          }
+        },
+        "upsell": {
+          "type": "upsell",
+          "settings": {
+            "upsell_product": "",
+            "upsell_product_list": [
+              "womens-grid-thermal-jersey-golden",
+              "womens-micro-climate-jacket-azul",
+              "merino-gloves"
+            ],
+            "show_available_upsell_only": true,
+            "layout": "stacked",
+            "autoplay": false,
+            "autoplay_speed": 8,
+            "bg_color": "",
+            "padding_bottom": 16
+          }
+        },
+        "divider_1": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_line": true,
+            "padding_bottom": 16
+          }
+        },
+        "features_p9gq4m": {
+          "type": "features",
+          "disabled": true,
+          "settings": {
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "title": "Feature",
+            "text_font_size": "body-medium",
+            "text": "<p>This content type will accept <strong>rich text</strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.</p>",
+            "bg_color": "#f7f9fa",
+            "color": "#212121",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "text_RbJEG4",
+        "junip_product_reviews_ugc_junip_product_summary_46cMCr",
+        "price",
+        "siblings_6N6EiR",
+        "variants",
+        "pickup",
+        "text_8gVcP7",
+        "buttons",
+        "accordion_Lfpd9e",
+        "accordion_zP8Ke4",
+        "accordion_LmMz4Y",
+        "accordion_e7x6Rm",
+        "upsell",
+        "divider_1",
+        "features_p9gq4m"
+      ],
+      "custom_css": [],
+      "settings": {
+        "product_sticky_enable": true,
+        "variant_image_scroll": true,
+        "show_cart_bar": false,
+        "enable_zoom": false,
+        "enable_video_looping": true,
+        "image_layout": "thumbnails",
+        "image_size": "normal",
+        "mobile_image_style": "thumbs",
+        "color_scheme": "",
+        "padding_top": 25,
+        "padding_bottom": 30
+      }
+    },
+    "section_hero_GidLRG": {
+      "type": "section-hero",
+      "settings": {
+        "image_1": "{{ product.metafields.custom.web_size_chart.value }}",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "{{ product.metafields.custom.mobile_size_chart.value }}",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_hero_caAf89": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_8KDAxD": {
+          "type": "heading",
+          "settings": {
+            "title": "DROP TAIL!",
+            "heading_font_size": "heading-x-large",
+            "heading_tag": "automatic"
+          }
+        },
+        "text_MAmadU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>THESE BIBS ARE BATHROOM BREAK READY. YOU COULD HANG YOUR TOP UP IN THE BATHROOM, ORNOT.</p>",
+            "text_font_size": "body-x-large"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8KDAxD",
+        "text_MAmadU"
+      ],
+      "settings": {
+        "image_1": "shopify://shop_images/w-summer-tights-sliver.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-right-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/droptail_espresso-mobile-square.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-right-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_custom_content_LXG6mA": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_zXjBRp": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "Bicycling Magazine",
+            "heading_font_size": "heading-large",
+            "text": "<p>\"Ornot’s lightweight bibs are perfect for the rides you typically wear leg warmers but know you won’t remove them. The fit is dialed and they use a droptail design for rest stops.\" </p><p>-Trevor Raab</p>",
+            "text_font_size": "body-medium",
+            "button_text": "Learn More",
+            "button_url": "https://www.bicycling.com/bikes-gear/a62389074/gear-of-the-year-2024/",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "#fafafa",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
+        "image_rxjBGw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LW-Tights-BM-1x1-Black.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_zXjBRp",
+        "image_rxjBGw"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_mKNHmY": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_6digpT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/square_caetie_molly.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_tiV7Ry": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "SUSTAINABILITY",
+            "heading_font_size": "heading-large",
+            "text": "<p>When designing these tights, we sourced as much recycled content as possible. The face fabric is a recycled bluesign®-approved knit and the endurance pad is made using recycled content. The shorts are sewn in a facility powered by sustainable energy via rooftop solar panels. </p><p>Every product we make is Climate Neutral Certified. This means that we measure, reduce, and remove all of our carbon emissions. Learn more about it <a href=\"https://www.ornotbike.com/pages/climate-neutral\" title=\"https://www.ornotbike.com/pages/climate-neutral\">here</a>.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "#fafafa",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_6digpT",
+        "text_tiV7Ry"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_hero_AXLMwy": {
+      "type": "section-hero",
+      "settings": {
+        "image_1": "shopify://shop_images/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.png",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/CN_1FTP_BannerMobile.png",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "1706135782d1067a10": {
+      "type": "apps",
+      "blocks": {
+        "junip_product_reviews_ugc_junip_product_review_9ByW79": {
+          "type": "shopify://apps/junip/blocks/junip-product-review/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
+          "settings": {
+            "product": "{{product}}",
+            "title": "",
+            "alignment": ""
+          }
+        }
+      },
+      "block_order": [
+        "junip_product_reviews_ugc_junip_product_review_9ByW79"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "related": {
+      "type": "related",
+      "blocks": {
+        "related": {
+          "type": "related",
+          "settings": {
+            "product_recommendations_heading": "Related products"
+          }
+        },
+        "recent": {
+          "type": "recent",
+          "settings": {
+            "product_recently_heading": "Recently viewed"
+          }
+        }
+      },
+      "block_order": [
+        "related",
+        "recent"
+      ],
+      "custom_css": [
+        ".product-item--swatches {padding: 0px 10px 0px 10px;}",
+        ".product-item--centered {padding: 0px 10px 0px 10px;}"
+      ],
+      "settings": {
+        "enable_tabs": true,
+        "heading_alignment": "text-center",
+        "heading_font_size": "heading-small",
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 30,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "section_hero_t4phQQ",
+    "main",
+    "section_hero_GidLRG",
+    "section_hero_caAf89",
+    "section_custom_content_LXG6mA",
+    "section_custom_content_mKNHmY",
+    "section_hero_AXLMwy",
+    "1706135782d1067a10",
+    "related"
+  ]
+}

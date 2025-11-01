@@ -4,6 +4,7 @@
   data-aos-order="auto"
   data-aos-anchor="#{{ section.id }}"
   {{ block.shopify_attributes }}
+  style="--block-padding-bottom: {{ block.settings.padding_bottom }}px;"
 >
   {{ block.settings.text }}
 </p>
@@ -32,6 +33,20 @@
         {"value": "body-large", "label": "Large"},
         {"value": "body-x-large", "label": "Extra large"}
       ]
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "label": "Bottom",
+      "default": 8
     }
   ],
   "presets": [

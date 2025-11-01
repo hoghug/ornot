@@ -40,10 +40,10 @@
           {%- assign animation_order = animation_order | plus: 1 -%}
 
           {%- capture quote_font_size -%}
-            calc(var(--font-{{ block.settings.text_font_size }}) * 2.5)
+            calc(var(--font-{{ block.settings.heading_font_size }}) * 2.5)
           {%- endcapture -%}
 
-          <blockquote class="{{ block.settings.text_font_size }}"
+          <blockquote class="{{ block.settings.heading_font_size }}"
             data-aos="hero"
             data-aos-anchor="{{ animation_anchor }}"
             data-aos-order="{{ animation_order }}">

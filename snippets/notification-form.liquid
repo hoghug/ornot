@@ -38,7 +38,7 @@
       <input type="email" class="contactFormEmail field" id="NotificaitonFormEmail" name="contact[email]" placeholder="{{ 'general.newsletter_form.email' | t }}" autocorrect="off" autocapitalize="off" required>
 
       <label for="NotificationFormProduct" class="visually-hidden">{{ product_notification_for }}</label>
-      <input type="hidden" id="NotificationFormProduct" name="contact[{{ product_notification_for | handle }}]" autocapitalize="words" value="{{ product_title }} - {{ current_variant.title }}" data-notification-product>
+      <input type="hidden" id="NotificationFormProduct" name="contact[{{ product_notification_for | handle }}]" autocapitalize="words" value="{{ product_title | escape }} - {{ current_variant.title | escape }}" data-notification-product>
 
       <button type="submit" name="subscribe" class="btn btn--primary btn--solid">
         <span>{{ 'general.newsletter_form.notify' | t }}</span>

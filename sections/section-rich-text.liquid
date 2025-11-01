@@ -3,8 +3,14 @@
   assign color_scheme = 'color-' | append: section.settings.color_scheme
   assign image_desktop = section.settings.image
   assign image_mobile = section.settings.image_mobile
-  assign overlay_opacity = section.settings.overlay_opacity | times: 0.01
-  assign show_overlay_text = section.settings.show_overlay_text
+  assign overlay_type = section.settings.overlay_type
+  assign opacity_overlay = false
+  assign text_underlay = false
+  if overlay_type == 'opacity'
+    assign opacity_overlay = true
+  elsif overlay_type == 'text'
+    assign text_underlay = true
+  endif
   assign animation_anchor = '#Rte--' | append: section.id
   assign animation_order = 0
 -%}
@@ -28,19 +34,16 @@
         {%- render 'image-hero', image_desktop: image_desktop, image_mobile: image_mobile -%}
       </div>
 
-      {%- unless show_overlay_text or overlay_opacity == 0.0 -%}
-        <div class="image-overlay" style="--overlay-opacity: {{ overlay_opacity }};"></div>
-      {%- endunless -%}
+      {%- if opacity_overlay -%}
+        <div class="image-overlay"></div>
+      {%- endif -%}
     </div>
   {%- endif -%}
 
   {%- if section.blocks.size > 0 -%}
     <div class="hero__content__wrapper {{ section.settings.align_text }} {{ section.settings.width }}">
       <div
-        class="hero__content hero__content--compact hero__content--transparent{% if show_overlay_text %} backdrop--radial{% endif %}"
-        {% if show_overlay_text %}
-          style="--overlay-opacity: {{ overlay_opacity }};"
-        {% endif %}
+        class="hero__content hero__content--compact hero__content--transparent{% if text_underlay %} backdrop--radial{% endif %}"
       >
         {%- for block in section.blocks -%}
           {%- liquid
@@ -185,7 +188,7 @@
                     <span>{{ block.settings.button_text }}</span>
 
                     {%- if block.settings.show_arrow -%}
-                      {%- render 'icon-arrow-right' -%}
+                      {%- render 'icon-nav-arrow-right' -%}
                     {%- endif -%}
                   </a>
                 </div>
@@ -259,7 +262,7 @@
     {
       "type": "image_picker",
       "id": "image",
-      "info": "Optional. 3200 x 1200px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)",
+      "info": "Optional. 3200 x 1200px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)",
       "label": "Background image"
     },
     {
@@ -270,7 +273,7 @@
       "type": "image_picker",
       "id": "image_mobile",
       "label": "Background image",
-      "info": "Optional. 1200 x 1600px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+      "info": "Optional. 1200 x 1600px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
     },
     {
       "type": "header",
@@ -283,21 +286,15 @@
       "label": "Color scheme"
     },
     {
-      "type": "range",
-      "id": "overlay_opacity",
-      "label": "Overlay opacity",
-      "info": "Increase contrast for legible text.",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "unit": "%",
-      "default": 0
-    },
-    {
-      "type": "checkbox",
-      "id": "show_overlay_text",
-      "label": "Overlay behind text only",
-      "default": false
+      "type": "select",
+      "id": "overlay_type",
+      "label": "Overlay type",
+      "default": "disabled",
+      "options": [
+        {"value": "disabled", "label": "Disabled"},
+        {"value": "opacity", "label": "Opacity overlay"},
+        {"value": "text", "label": "Text underlay"}
+      ]
     },
     {
       "type": "header",
@@ -529,7 +526,7 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image",
-          "info": "200 x 200px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "200 x 200px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "type": "range",
@@ -583,6 +580,7 @@
   "presets": [
     {
       "name": "Rich text",
+      "category": "Text",
       "blocks": [
         {
           "type": "subheading"

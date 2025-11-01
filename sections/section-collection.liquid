@@ -6,6 +6,7 @@
   assign heading = section.settings.heading
   assign description = section.settings.description
   assign link_text = section.settings.link_text
+  assign show_recently_viewed_indicator = settings.show_recently_viewed_indicator
   assign color_scheme = 'color-' | append: section.settings.color_scheme
   assign has_content = false
   if heading != blank or description != blank or link_text != blank
@@ -134,7 +135,7 @@
               <span>{{ link_text | escape }}</span>
 
               {%- if section.settings.show_arrow -%}
-                {%- render 'icon-arrow-right' -%}
+                {%- render 'icon-nav-arrow-right' -%}
               {%- endif -%}
             </a>
           </div>
@@ -187,6 +188,14 @@
     </div>
   </div>
 </section>
+
+{%- if settings.quickview_enable -%}
+  <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+{%- if show_recently_viewed_indicator -%}
+  <script src="{{ 'grid-item.js' | asset_url }}" defer></script>
+{%- endif -%}
 
 {% schema %}
 {
@@ -340,13 +349,9 @@
       "default": "grid"
     },
     {
-      "type": "header",
-      "content": "Grid",
-      "info": "Applies only when product grid layout is set to Grid"
-    },
-    {
       "type": "range",
       "id": "grid",
+      "visible_if": "{{ section.settings.layout_desktop == 'grid' }}",
       "label": "Products per row",
       "min": 2,
       "max": 6,
@@ -356,6 +361,7 @@
     {
       "type": "range",
       "id": "rows",
+      "visible_if": "{{ section.settings.layout_desktop == 'grid' }}",
       "label": "Number of rows",
       "min": 1,
       "max": 8,
@@ -365,6 +371,7 @@
     {
       "type": "select",
       "id": "width",
+      "visible_if": "{{ section.settings.layout_desktop == 'grid' }}",
       "label": "Width",
       "default": "wrapper",
       "options": [
@@ -452,7 +459,8 @@
   ],
   "presets": [
     {
-      "name": "Featured collection"
+      "name": "Featured collection",
+      "category": "Collections"
     }
   ],
   "disabled_on": {

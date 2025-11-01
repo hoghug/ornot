@@ -258,13 +258,9 @@
           "default": 100
         },
         {
-          "type": "header",
-          "content": "Link",
-          "info": "Applies if 'enable heading slider' is disabled"
-        },
-        {
           "type": "url",
           "id": "link",
+          "visible_if": "{{ section.settings.enable_heading_slider == false }}",
           "label": "Link"
         },
         {
@@ -314,13 +310,9 @@
           "default": 100
         },
         {
-          "type": "header",
-          "content": "Link",
-          "info": "Applies if 'enable heading slider' is disabled"
-        },
-        {
           "type": "url",
           "id": "link",
+          "visible_if": "{{ section.settings.enable_heading_slider == false }}",
           "label": "Link"
         },
         {
@@ -353,6 +345,7 @@
   "presets": [
     {
       "name": "Press logos",
+      "category": "Storytelling",
       "blocks": [
         {
           "type": "logo-item-header"

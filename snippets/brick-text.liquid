@@ -1,14 +1,14 @@
 {% comment %}
-    Renders text block for custom content or newsletter sections
+  Renders text block for custom content or newsletter sections
 
-    Accepts:
-    - block: {Object} Block object
-    - style: {String} Block inline style
-    - padding_class: {String} Set class "has-padding" if background colors of the block and the body are different
-    - animation_anchor: {String} ID of the element that will trigger animations
+  Accepts:
+  - block: {Object} Block object
+  - style: {String} Block inline style
+  - padding_class: {String} Set class "has-padding" if background colors of the block and the body are different
+  - animation_anchor: {String} ID of the element that will trigger animations
 
-    Usage:
-    {% render 'brick-text', block: block, style: style, padding_class: padding_class, animation_anchor: animation_anchor %}
+  Usage:
+  {% render 'brick-text', block: block, style: style, padding_class: padding_class, animation_anchor: animation_anchor %}
 {% endcomment %}
 
 {%- liquid
@@ -45,15 +45,25 @@
   {%- endunless -%}
 {%- endcapture -%}
 
-<div class="brick__block brick__block--text"{% if style != blank %} style="{{ style }}"{% endif %} {{ block.shopify_attributes }}>
+<div
+  class="brick__block brick__block--text"
+  {% if style != blank %}
+    style="{{ style }}"
+  {% endif %}
+  {{ block.shopify_attributes }}
+>
   <div class="brick__block__text{{ padding_class }}">
     <div class="hero__content hero__content--compact {{ block.settings.align_text }}">
       {%- if subheading != blank -%}
         {%- assign animation_order = animation_order | plus: 1 -%}
-        <p class="hero__subheading"
+        <p
+          class="hero__subheading"
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
-          data-aos-order="{{ animation_order }}">{{ subheading }}</p>
+          data-aos-order="{{ animation_order }}"
+        >
+          {{ subheading }}
+        </p>
       {%- endif -%}
 
       {%- if title != blank -%}
@@ -66,32 +76,45 @@
           endunless
         -%}
 
-        <{{ heading_tag }} class="hero__title {{ block.settings.heading_font_size }}"
+        <{{ heading_tag }}
+          class="hero__title {{ block.settings.heading_font_size }}"
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
-          data-aos-order="{{ animation_order }}">{{ title }}</{{ heading_tag }}>
+          data-aos-order="{{ animation_order }}"
+        >
+          {{- title -}}
+        </{{ heading_tag }}>
       {%- endif -%}
 
       {%- if text != blank -%}
         {%- assign text_columns_class = block.settings.text_columns | prepend: 'columns--' -%}
         {%- assign animation_order = animation_order | plus: 1 -%}
-        <div class="hero__rte {{ block.settings.text_font_size }} {{ text_columns_class }}"
+        <div
+          class="hero__rte {{ block.settings.text_font_size }} {{ text_columns_class }}"
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
-          data-aos-order="{{ animation_order }}">{{ text }}</div>
+          data-aos-order="{{ animation_order }}"
+        >
+          {{ text }}
+        </div>
       {%- endif -%}
 
       {%- if button_text != blank -%}
         {%- assign animation_order = animation_order | plus: 1 -%}
-        <div class="hero__button"
+        <div
+          class="hero__button"
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
-          data-aos-order="{{ animation_order }}">
-          <a href="{{ block.settings.button_url | default: '#!' }}" class="btn {{ button_style }} {{ block.settings.button_size }} {{ block.settings.button_type }}">
+          data-aos-order="{{ animation_order }}"
+        >
+          <a
+            href="{{ block.settings.button_url | default: '#!' }}"
+            class="btn {{ button_style }} {{ block.settings.button_size }} {{ block.settings.button_type }}"
+          >
             <span>{{ button_text }}</span>
 
             {%- if block.settings.show_arrow -%}
-              {%- render 'icon-arrow-right' -%}
+              {%- render 'icon-nav-arrow-right' -%}
             {%- endif -%}
           </a>
         </div>

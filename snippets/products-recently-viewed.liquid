@@ -13,20 +13,37 @@
 
 {%- liquid
   assign limit = limit | default: 4
-  assign column_count = limit
-  assign layout_mobile = section.settings.layout_mobile
-  assign columns_small = 2
-  assign columns_mobile = layout_mobile | plus: 0
+  assign column_count = column_count | default: limit
+  assign layout_mobile = layout_mobile
+  assign layout_desktop = layout_desktop
+  assign columns_desktop = columns_desktop
+  assign columns_medium = columns_medium
+  assign columns_small = columns_small
+  assign columns_mobile = columns_mobile
 
-  if limit > 4
+  if layout_desktop == 'slider' and limit > 4
     assign column_count = '4'
   endif
+
+  capture product_grid_classes
+    echo 'grid'
+
+    if layout_desktop == 'slider'
+      echo ' grid--slider'
+    endif
+
+    if layout_mobile == 'slider' or layout_mobile == nil
+      echo ' grid--mobile-slider'
+    else
+      echo ' grid--mobile-vertical'
+    endif
+  endcapture
 -%}
 
 <script src="{{ 'recently-viewed.js' | asset_url }}" defer="defer"></script>
 
 <recently-viewed
-  class="recent__wrapper fade-toggle is-hidden"
+  class="recent__wrapper fade-toggle hidden"
   id="RecentlyViewed-{{ section.id }}"
   data-wrapper-id="recently-viewed-products-{{ section.id }}"
   data-limit="{{ limit }}"
@@ -38,11 +55,11 @@
 >
   <div
     class="grid-outer"
-    style="--column-count: {{ column_count }}; --COLUMNS-SMALL: {{ columns_small }}; --COLUMNS-MOBILE: {{ columns_mobile }};"
+    style="--column-count: {{ column_count }}; --COLUMNS: {{ columns_desktop }}; --COLUMNS-MEDIUM: {{ columns_medium }}; --COLUMNS-SMALL: {{ columns_small }}; --COLUMNS-MOBILE: {{ columns_mobile }};"
   >
     <grid-slider align-arrows>
       <div
-        class="recent__content grid grid--slider{% if layout_mobile == nil or layout_mobile == 'slider' %} grid--mobile-slider{% endif %}{% if limit <= 4 %} grid--slider-disabled{% endif %} hidden"
+        class="recent__content {{ product_grid_classes }}{% if limit <= 4 %} grid--slider-disabled{% endif %} hidden"
         data-grid-slider
         id="recently-viewed-products-{{ section.id }}"
       ></div>

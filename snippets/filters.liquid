@@ -41,8 +41,7 @@
           <summary class="filter-group__heading" data-collapsible-trigger>
             <span>{{ linklists[custom_nav_list].title }}</span>
 
-            {%- render 'icon-plus' -%}
-            {%- render 'icon-minus' -%}
+            {%- render 'icon-nav-arrow-down' -%}
           </summary>
 
           <div
@@ -121,8 +120,7 @@
               <span>({{ filter.active_values.size }})</span>
             {%- endif -%}
 
-            {%- render 'icon-plus' -%}
-            {%- render 'icon-minus' -%}
+            {%- render 'icon-nav-arrow-down' -%}
           </summary>
 
           <div
@@ -133,31 +131,6 @@
             {% endif %}
           >
             <div class="filter-group__content" data-collapsible-content>
-              {% comment %} Determine if current option matches swatch handle translations {% endcomment %}
-              {%- liquid
-                assign option_name_handle_separator = filter.label | handle | prepend: ',' | append: ','
-                assign is_swatch_option = false
-                assign is_native_swatch_option = false
-
-                if settings.swatches_type == 'theme'
-                  assign swatch_translation = 'general.swatches.color' | t
-                  assign translation_string = swatch_translation | remove: '  ' | replace: ', ', ',' | replace: ' ,', ',' | replace: ',', '____' | handle | replace: '____', ',' | append: ',' | prepend: ','
-
-                  if translation_string contains option_name_handle_separator
-                    assign is_swatch_option = true
-                  endif
-                endif
-
-                if settings.swatches_type == 'native'
-                  for value in option.values
-                    if value.swatch
-                      assign is_native_swatch_option = true
-                      break
-                    endif
-                  endfor
-                endif
-              -%}
-
               {%- case filter.type -%}
                 {%- when 'list', 'boolean' -%}
                   <ul class="collection-nav{% if filter.presentation == "image" %} collection-nav--image-grid{% endif %}">
@@ -181,14 +154,7 @@
                           {%- endif %}
                         >
                         <label for="filter-{{ filter.label }}-{{ forloop.index }}">
-                          {%- if is_swatch_option and filter.presentation != 'swatch' -%}
-                            <span
-                              class="swatches swatch__button {{ swatch_button_style }} swatch-{{ filter_value.label | handle }}"
-                              data-swatch="{{ filter_value.label | escape_once }}"
-                              style="--swatch: var(--{{ filter_value.label | handle }});"
-                            ></span>
-
-                          {%- elsif filter.presentation == 'swatch' -%}
+                          {%- if filter.presentation == 'swatch' -%}
                             {%- liquid
                               assign empty_swatch = false
                               if filter_value.swatch.color == blank and filter_value.swatch.image == blank
@@ -197,7 +163,7 @@
                             -%}
 
                             <div class="shopify-swatch">
-                              {%- if settings.swatches_type != 'disabled' -%}
+                              {%- if settings.enable_swatches -%}
                                 {%- if filter_value.swatch.image != blank -%}
                                   <div class="swatch__button {{ swatch_button_style }}">
                                     {%- render 'image',
@@ -374,15 +340,5 @@
         </details>
       </div>
     {%- endfor -%}
-
-    <noscript>
-      <button
-        type="submit"
-        class="collection__filters__btn btn btn--primary btn--outline btn--full"
-        aria-label="{{ 'collections.general.filters' | t }}"
-      >
-        <span>{{ 'collections.general.filters' | t }}</span>
-      </button>
-    </noscript>
   </form>
 </collapsible-elements>

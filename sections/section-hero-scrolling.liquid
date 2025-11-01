@@ -1,8 +1,14 @@
 <!-- /sections/section-hero.liquid -->
 {%- liquid
   assign color_scheme = 'color-' | append: section.settings.color_scheme
-  assign overlay_opacity = section.settings.overlay_opacity | times: 0.01
-  assign show_overlay_text = section.settings.show_overlay_text
+  assign overlay_type = section.settings.overlay_type
+  assign opacity_overlay = false
+  assign text_underlay = false
+  if overlay_type == 'opacity'
+    assign opacity_overlay = true
+  elsif overlay_type == 'text'
+    assign text_underlay = true
+  endif
   assign show_text_background = section.settings.show_text_background
   assign animation_anchor = '#Hero--' | append: section.id
   assign desktop_height = section.settings.height
@@ -36,7 +42,7 @@
   endif
 
   assign show_header_backdrop = false
-  if hero_transparent and show_overlay_text
+  if hero_transparent and text_underlay
     assign show_header_backdrop = true
   endif
 
@@ -61,6 +67,7 @@
       --ticker-direction: {{ section.settings.direction | default: 'ticker-rtl' }};
       --scrolling-font-family: {{ scrolling_font.family }}, {{ scrolling_font.fallback_families }};
       --scrolling-font-size: {{ section.settings.text_font_size_px }}px;
+      --scrolling-mobile-font-size: {{ section.settings.mobile_text_font_size_px }}px;
       --scrolling-font-style: {{ scrolling_font.style }};
       --scrolling-font-weight: {{ scrolling_font.weight }};
       --scrolling-letter-spacing: {{ section.settings.type_letter_spacing | divided_by: 1000.0 | append: 'em' }};
@@ -160,7 +167,7 @@
                 <span>{{ link_text | escape }}</span>
 
                 {%- if block.settings.show_arrow -%}
-                  {% render 'icon-arrow-right' %}
+                  {% render 'icon-nav-arrow-right' %}
                 {%- endif -%}
               </a>
             </div>
@@ -238,9 +245,9 @@
         <div class="image__hero__missing-metafield-image">{{ 'products.general.missing_metafield_image' | t }}</div>
       {%- endif -%}
 
-      {%- unless show_overlay_text or overlay_opacity == 0.0 -%}
-        <div class="image-overlay" style="--overlay-opacity: {{ overlay_opacity }};"></div>
-      {%- endunless -%}
+      {%- if opacity_overlay -%}
+        <div class="image-overlay"></div>
+      {%- endif -%}
 
       {%- if banner_link != blank -%}
         </a>
@@ -251,9 +258,6 @@
       {%- if section_content != '' or section_scrolling != '' -%}
         <div
           class="hero__content__wrapper frame__item{% if show_header_backdrop %} backdrop--linear{% endif %}{% if section_content != '' and section_scrolling != '' %} content-{{ text_align }} scrolling-{{ scrolling_align }}{% elsif section_content != '' %} {{ text_align }}{% elsif section_scrolling != '' %} {{ scrolling_align }}{% endif %}"
-          {% if show_header_backdrop %}
-            style="--header-overlay-color: var(--overlay-bg); --header-overlay-opacity: {{ overlay_opacity }};"
-          {% endif %}
         >
           {%- if section_scrolling != '' -%}
             <div
@@ -286,10 +290,7 @@
 
           {%- if section_content != '' -%}
             <div
-              class="hero__content{% if hero_transparent %} hero__content--transparent{% endif %}{% if show_overlay_text %} backdrop--radial{% endif %}"
-              {% if overlay_opacity != 0.0 %}
-                style="--overlay-opacity: {{ overlay_opacity }};"
-              {% endif %}
+              class="hero__content{% if hero_transparent %} hero__content--transparent{% endif %}{% if text_underlay %} backdrop--radial{% endif %}"
             >
               {{ section_content }}
             </div>
@@ -313,7 +314,7 @@
       "type": "image_picker",
       "id": "image_1",
       "label": "Image",
-      "info": "3200 x 1200px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+      "info": "3200 x 1200px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
     },
     {
       "type": "url",
@@ -374,6 +375,16 @@
       "unit": "px",
       "label": "Text size",
       "default": 20
+    },
+    {
+      "type": "range",
+      "id": "mobile_text_font_size_px",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile text size",
+      "default": 16
     },
     {
       "type": "range",
@@ -443,7 +454,7 @@
       "type": "image_picker",
       "id": "mobile_image",
       "label": "Image",
-      "info": "1200 x 1600px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+      "info": "1200 x 1600px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
     },
     {
       "type": "select",
@@ -474,22 +485,15 @@
       "label": "Color scheme"
     },
     {
-      "type": "range",
-      "id": "overlay_opacity",
-      "label": "Overlay opacity",
-      "info": "Increase contrast for legible text.",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "unit": "%",
-      "default": 0
-    },
-    {
-      "type": "checkbox",
-      "id": "show_overlay_text",
-      "label": "Overlay behind text only",
-      "info": "Overlay opacity must be greater than 0.",
-      "default": false
+      "type": "select",
+      "id": "overlay_type",
+      "label": "Overlay type",
+      "default": "disabled",
+      "options": [
+        {"value": "disabled", "label": "Disabled"},
+        {"value": "opacity", "label": "Opacity overlay"},
+        {"value": "text", "label": "Text underlay"}
+      ]
     },
     {
       "type": "header",
@@ -549,7 +553,8 @@
         {
           "type": "color",
           "id": "color",
-          "label": "Text"
+          "label": "Text",
+          "alpha": true
         }
       ]
     },
@@ -635,7 +640,8 @@
         {
           "type": "color",
           "id": "color",
-          "label": "Text"
+          "label": "Text",
+          "alpha": true
         }
       ]
     },
@@ -701,6 +707,7 @@
   "presets": [
     {
       "name": "Image with scrolling text",
+      "category": "Banners",
       "blocks": [
         {
           "type": "text"

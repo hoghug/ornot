@@ -1,10 +1,14 @@
-<div class="product__block product__head block-padding"
+{%- assign onboarding_product = onboarding_product | default: false -%}
+
+<div
+  class="product__block product__head block-padding"
   {{ block_style }}
   {% if animation_name %}
     data-animation="{{ animation_name }}"
     data-animation-duration="{{ animation_duration }}"
     data-animation-delay="{{ animation_delay }}"
-  {% endif %}>
+  {% endif %}
+>
   {%- case block.settings.subheading_option -%}
     {%- when 'vendor' -%}
       {%- if product.vendor -%}
@@ -21,18 +25,22 @@
         </nav>
       {%- endif -%}
     {%- when 'breadcrumb' -%}
-      {% render 'breadcrumbs' breadcrumbs_modifier: 'breadcrumbs--no-padding product__breadcrumbs' %}
+      {% render 'breadcrumbs', breadcrumbs_modifier: 'breadcrumbs--no-padding product__breadcrumbs' %}
   {%- endcase -%}
 
   <div class="product__title__wrapper" {{ block.shopify_attributes }}>
     <h1 class="product__title {{ block.settings.heading_font_size | default: 'heading-small' }}">
-      {%- unless is_title_linked -%}
-        <span data-zoom-caption>{{ product.title | strip_html }}</span>
+      {%- if onboarding_product -%}
+        <span data-zoom-caption>{{ 'home_page.onboarding.product_title' | t }}</span>
       {%- else -%}
-        <a href="{{ product.url }}">
+        {%- unless is_title_linked -%}
           <span data-zoom-caption>{{ product.title | strip_html }}</span>
-        </a>
-      {%- endunless -%}
+        {%- else -%}
+          <a href="{{ product.url }}">
+            <span data-zoom-caption>{{ product.title | strip_html }}</span>
+          </a>
+        {%- endunless -%}
+      {%- endif -%}
     </h1>
   </div>
 </div>

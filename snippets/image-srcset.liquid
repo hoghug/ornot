@@ -9,7 +9,6 @@
   {% render 'image-srcset', image: image, widths: image_widths %}
 {%- endcomment -%}
 
-
 {%- liquid
   assign image_width = image.width | default: image.preview_image.width
 
@@ -18,11 +17,11 @@
     assign srcs = ''
 
     for string_width in widths
-      assign width = string_width | times: 1
+      assign width = string_width | times: 1 | round
 
       if image_width >= width
         if mobile and width >= 1500
-          continue;
+          continue
         endif
 
         capture src

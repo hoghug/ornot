@@ -2,6 +2,7 @@
   assign desktop_height = section.settings.height
   assign mobile_height = section.settings.mobile_height
   assign width = section.settings.width
+  assign show_recently_viewed_indicator = settings.show_recently_viewed_indicator
   assign color_scheme = 'color-' | append: section.settings.color_scheme
 
   assign border_class = ''
@@ -42,6 +43,10 @@
   <script src="{{ 'video-popup.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
+{%- if show_recently_viewed_indicator -%}
+  <script src="{{ 'grid-item.js' | asset_url }}" defer></script>
+{%- endif -%}
+
 {%- style -%}
   #BrickSection--{{ section.id }} {
     --PT: {{ section.settings.padding_top }}px;
@@ -74,11 +79,11 @@
         -%}
 
         {%- capture style -%}
-          {%- unless bg_color == 'rgba(0,0,0,0)' or bg_color == blank -%}
+          {%- unless bg_color.alpha == 0.0 or bg_color == blank -%}
             --bg: {{ bg_color }};
           {%- endunless -%}
 
-          {%- unless text_color == 'rgba(0,0,0,0)' or text_color == blank -%}
+          {%- unless text_color.alpha == 0.0 or text_color == blank -%}
             --text: {{ text_color }};
             --text-light: {{ text_color | color_mix: bg_color, 70 }};
             --text-dark: {{ text_color | color_saturate: 10 | color_darken: 15 }};
@@ -114,6 +119,14 @@
             -%}
 
           {%- when 'product' -%}
+            {%- liquid
+              assign show_product_card = false
+
+              if bg_color.alpha != 0.0 and bg_color != blank
+                assign show_product_card = true
+              endif
+            -%}
+
             <div
               class="brick__block"
               {% if style != blank %}
@@ -143,13 +156,26 @@
                 >
                   {%- assign product = all_products[block.settings.product] -%}
                   {%- if product != blank -%}
-                    {%- render 'product-grid-item', product: product, index: forloop.index -%}
+                    {%- render 'product-grid-item',
+                      product: product,
+                      index: forloop.index,
+                      show_product_card: show_product_card
+                    -%}
                   {%- else -%}
-                    {%- render 'onboarding-product-grid-item', index: forloop.index, animation_delay: forloop.index0 -%}
+                    {%- render 'onboarding-product-grid-item',
+                      index: forloop.index,
+                      animation_delay: forloop.index0,
+                      show_product_card: show_product_card
+                    -%}
                   {%- endif -%}
                 </div>
               </div>
             </div>
+
+            {%- if settings.quickview_enable -%}
+              <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
+            {%- endif -%}
+
           {%- when 'video' -%}
             <div
               class="brick__block {{ desktop_height }} {{ mobile_height }}"
@@ -168,7 +194,15 @@
               </div>
             </div>
           {%- when 'collection' -%}
-            {%- assign block_collection = collections[block.settings.collection] -%}
+            {%- liquid
+              assign block_collection = collections[block.settings.collection]
+              assign show_product_card = false
+
+              if bg_color.alpha != 0.0 and bg_color != blank
+                assign show_product_card = true
+              endif
+            -%}
+
             <div
               class="brick__block brick__block--collection"
               {% if style != blank %}
@@ -210,7 +244,11 @@
                           data-slide="{{ block.id }}-{{ forloop.index0 }}"
                           {{ block.shopify_attributes }}
                         >
-                          {%- render 'product-grid-item', product: product, index: forloop.index -%}
+                          {%- render 'product-grid-item',
+                            product: product,
+                            index: forloop.index,
+                            show_product_card: show_product_card
+                          -%}
                         </div>
 
                         {%- liquid
@@ -240,7 +278,7 @@
                           capture title
                             cycle 'Nomad X Sunglasses', 'Nomad X Hat'
                           endcapture
-                          render 'onboarding-product-grid-item', title: title, placeholder: placeholder, index: forloop.index, animation_delay: forloop.index0
+                          render 'onboarding-product-grid-item', title: title, placeholder: placeholder, index: forloop.index, animation_delay: forloop.index0, show_product_card: show_product_card
                         -%}
                       </div>
                     {%- endfor -%}
@@ -276,7 +314,7 @@
 
 {% schema %}
 {
-  "name": "Custom content",
+  "name": "Custom section",
   "max_blocks": 2,
   "settings": [
     {
@@ -400,7 +438,7 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image",
-          "info": "2000 x 1400px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "2000 x 1400px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "type": "header",
@@ -478,34 +516,25 @@
         {
           "type": "color",
           "id": "bg_color",
-          "label": "Background"
+          "label": "Background",
+          "alpha": true
         },
         {
           "type": "color",
           "id": "color",
-          "label": "Text"
+          "label": "Text",
+          "alpha": true
         },
         {
-          "type": "range",
-          "id": "overlay_opacity",
-          "label": "Overlay opacity",
-          "info": "Increase contrast for legible text.",
-          "min": 0,
-          "max": 100,
-          "step": 5,
-          "unit": "%",
-          "default": 0
-        },
-        {
-          "type": "color",
-          "id": "overlay_color",
-          "label": "Overlay color"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_overlay_text",
-          "label": "Overlay behind text only",
-          "default": false
+          "type": "select",
+          "id": "overlay_type",
+          "label": "Overlay type",
+          "default": "disabled",
+          "options": [
+            {"value": "disabled", "label": "Disabled"},
+            {"value": "opacity", "label": "Opacity overlay"},
+            {"value": "text", "label": "Text underlay"}
+          ]
         },
         {
           "type": "header",
@@ -601,7 +630,7 @@
           "type": "text",
           "id": "title",
           "label": "Heading",
-          "default": "Custom content"
+          "default": "Custom section"
         },
         {
           "type": "select",
@@ -730,12 +759,14 @@
         {
           "type": "color",
           "id": "bg_color",
-          "label": "Background"
+          "label": "Background",
+          "alpha": true
         },
         {
           "type": "color",
           "id": "color",
-          "label": "Text"
+          "label": "Text",
+          "alpha": true
         },
         {
           "type": "header",
@@ -868,12 +899,13 @@
         },
         {
           "type": "header",
-          "content": "Button",
-          "info": "Applies if \"Show name field\" is enabled."
+          "visible_if": "{{ block.settings.show_name }}",
+          "content": "Button"
         },
         {
           "type": "select",
           "id": "button_type",
+          "visible_if": "{{ block.settings.show_name }}",
           "label": "Color",
           "default": "btn--primary",
           "options": [
@@ -886,6 +918,7 @@
         {
           "type": "select",
           "id": "button_size",
+          "visible_if": "{{ block.settings.show_name }}",
           "label": "Size",
           "default": "",
           "options": [
@@ -897,6 +930,7 @@
         {
           "type": "select",
           "id": "button_style",
+          "visible_if": "{{ block.settings.show_name }}",
           "label": "Style",
           "default": "btn--solid",
           "options": [
@@ -927,12 +961,14 @@
         {
           "type": "color",
           "id": "bg_color",
-          "label": "Background"
+          "label": "Background",
+          "alpha": true
         },
         {
           "type": "color",
           "id": "color",
-          "label": "Text"
+          "label": "Text",
+          "alpha": true
         },
         {
           "type": "header",
@@ -983,23 +1019,23 @@
         },
         {
           "type": "select",
-          "id": "text_font_size",
-          "label": "Text size",
-          "info": "Automatically generated by the base size. Applies only when content in Text field is set to Paragraph.",
-          "default": "body-medium",
+          "id": "heading_font_size",
+          "label": "Heading size",
+          "default": "heading-small",
           "options": [
-            {"value": "body-x-small", "label": "Extra small"},
-            {"value": "body-small", "label": "Small"},
-            {"value": "body-medium", "label": "Medium"},
-            {"value": "body-large", "label": "Large"},
-            {"value": "body-x-large", "label": "Extra large"}
+            {"value": "heading-mini", "label": "Mini"},
+            {"value": "heading-x-small", "label": "Extra small"},
+            {"value": "heading-small", "label": "Small"},
+            {"value": "heading-medium", "label": "Medium"},
+            {"value": "heading-large", "label": "Large"},
+            {"value": "heading-x-large", "label": "Extra large"}
           ]
         },
         {
           "type": "image_picker",
           "id": "bio_image",
           "label": "Bio image",
-          "info": "70 x 70px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "70 x 70px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "type": "header",
@@ -1042,12 +1078,14 @@
         {
           "type": "color",
           "id": "bg_color",
-          "label": "Background"
+          "label": "Background",
+          "alpha": true
         },
         {
           "type": "color",
           "id": "color",
-          "label": "Text"
+          "label": "Text",
+          "alpha": true
         }
       ]
     },
@@ -1081,12 +1119,14 @@
         {
           "type": "color",
           "id": "bg_color",
-          "label": "Background"
+          "label": "Background",
+          "alpha": true
         },
         {
           "type": "color",
           "id": "color",
-          "label": "Text"
+          "label": "Text",
+          "alpha": true
         }
       ]
     },
@@ -1130,13 +1170,13 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image",
-          "info": "3200 x 1200px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "3200 x 1200px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "type": "image_picker",
           "id": "mobile_image",
           "label": "Mobile image",
-          "info": "1200 x 1600px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "1200 x 1600px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "type": "header",
@@ -1271,35 +1311,26 @@
         {
           "type": "color",
           "id": "bg_color",
-          "label": "Background"
+          "label": "Background",
+          "alpha": true
         },
         {
           "type": "color",
           "id": "color",
           "label": "Text",
-          "default": "#FFFFFF"
+          "default": "#FFFFFF",
+          "alpha": true
         },
         {
-          "type": "range",
-          "id": "overlay_opacity",
-          "label": "Overlay opacity",
-          "info": "Increase contrast for legible text.",
-          "min": 0,
-          "max": 100,
-          "step": 5,
-          "unit": "%",
-          "default": 0
-        },
-        {
-          "type": "color",
-          "id": "overlay_color",
-          "label": "Overlay color"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_overlay_text",
-          "label": "Overlay behind text only",
-          "default": false
+          "type": "select",
+          "id": "overlay_type",
+          "label": "Overlay type",
+          "default": "disabled",
+          "options": [
+            {"value": "disabled", "label": "Disabled"},
+            {"value": "opacity", "label": "Opacity overlay"},
+            {"value": "text", "label": "Text underlay"}
+          ]
         },
         {
           "type": "header",
@@ -1352,12 +1383,14 @@
         {
           "type": "color",
           "id": "bg_color",
-          "label": "Background"
+          "label": "Background",
+          "alpha": true
         },
         {
           "type": "color",
           "id": "color",
-          "label": "Text"
+          "label": "Text",
+          "alpha": true
         }
       ]
     },
@@ -1369,20 +1402,21 @@
           "type": "image_picker",
           "id": "image_1",
           "label": "Image 1",
-          "info": "2000 x 1400px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "2000 x 1400px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "type": "image_picker",
           "id": "image_2",
           "label": "Image 2",
-          "info": "2000 x 1400px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "2000 x 1400px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Custom content",
+      "name": "Custom section",
+      "category": "Advanced",
       "blocks": [
         {
           "type": "image"

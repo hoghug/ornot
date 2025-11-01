@@ -1,1 +1,81 @@
-{"type":"aside","name":"Overlay","sections":{"cart-drawer":{"type":"cart-drawer","blocks":{"upsell-products":{"type":"upsell-products","settings":{"upsell_auto_open":true,"pin_to_bottom":true}},"cart-message":{"type":"cart-message","settings":{"cart_custom_message_text":"<p>IBS Ornot<\/p>","cart_custom_message_color":"","pin_to_bottom":false}},"free-shipping":{"type":"free-shipping","settings":{"message":"You are ||amount|| away from free shipping.","free_shipping_gradient":"linear-gradient(46deg, rgba(0, 181, 226, 1) 12%, rgba(0, 181, 226, 1) 55%)","pin_to_bottom":false}},"title":{"type":"title","settings":{"title":"Cool Cool"}},"products":{"type":"products","settings":{"pin_to_bottom":false}},"checkout-buttons":{"type":"checkout-buttons","settings":{"enable_additional_buttons":false,"show_view_cart_button":false,"pin_to_bottom":true}}},"block_order":["upsell-products","cart-message","free-shipping","title","products","checkout-buttons"],"disabled":true,"custom_css":[".product-upsell__holder {--bg-accent: transparent;}",".product-upsell__image {width: 120px; height: 120px;}"],"settings":{"color_scheme":""}}},"order":["cart-drawer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "aside",
+  "name": "Overlay",
+  "sections": {
+    "cart-drawer": {
+      "type": "cart-drawer",
+      "blocks": {
+        "upsell-products": {
+          "type": "upsell-products",
+          "settings": {
+            "upsell_auto_open": true,
+            "pin_to_bottom": true
+          }
+        },
+        "cart-message": {
+          "type": "cart-message",
+          "settings": {
+            "cart_custom_message_text": "<p>IBS Ornot</p>",
+            "cart_custom_message_color": "",
+            "pin_to_bottom": false
+          }
+        },
+        "free-shipping": {
+          "type": "free-shipping",
+          "settings": {
+            "message": "You are ||amount|| away from free shipping.",
+            "pin_to_bottom": false
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title": "Cool Cool"
+          }
+        },
+        "products": {
+          "type": "products",
+          "settings": {
+            "pin_to_bottom": false
+          }
+        },
+        "checkout-buttons": {
+          "type": "checkout-buttons",
+          "settings": {
+            "enable_additional_buttons": false,
+            "show_view_cart_button": false,
+            "pin_to_bottom": true
+          }
+        }
+      },
+      "block_order": [
+        "upsell-products",
+        "cart-message",
+        "free-shipping",
+        "title",
+        "products",
+        "checkout-buttons"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".product-upsell__holder {--bg-accent: transparent;}",
+        ".product-upsell__image {width: 120px; height: 120px;}"
+      ],
+      "settings": {
+        "color_scheme": ""
+      }
+    }
+  },
+  "order": [
+    "cart-drawer"
+  ]
+}

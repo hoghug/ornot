@@ -121,7 +121,7 @@
               <span>{{ button_text | escape }}</span>
 
               {%- if section.settings.show_arrow -%}
-                {%- render 'icon-arrow-right' -%}
+                {%- render 'icon-nav-arrow-right' -%}
               {%- endif -%}
             </a>
           </div>
@@ -130,7 +130,7 @@
     {%- endif -%}
 
     <div class="grid__items-holder">
-      <div class="grid-outer collection-list-outer">
+      <div class="grid-outer">
         {%- liquid
           capture collection_items
             if section.blocks.size > 0
@@ -324,13 +324,9 @@
       "default": "grid"
     },
     {
-      "type": "header",
-      "content": "Grid",
-      "info": "Applies only when layout is set to Grid"
-    },
-    {
       "type": "range",
       "id": "grid",
+      "visible_if": "{{ section.settings.layout == 'grid' }}",
       "label": "Collections per row",
       "min": 2,
       "max": 6,
@@ -430,12 +426,105 @@
           "type": "image_picker",
           "id": "collection_image",
           "label": "Image",
-          "info": "1400 x 1400px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "1400 x 1400px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "label": "Text",
           "id": "title",
-          "type": "text"
+          "type": "text",
+          "info": "Defaults to collection title if blank."
+        }
+      ]
+    },
+    {
+      "type": "collection_overlay",
+      "name": "Collection text overlay",
+      "limit": 12,
+      "settings": [
+        {
+          "label": "Collection",
+          "id": "collection",
+          "type": "collection"
+        },
+        {
+          "type": "image_picker",
+          "id": "collection_image",
+          "label": "Image",
+          "info": "1400 x 1400px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
+        },
+        {
+          "label": "Heading",
+          "id": "title",
+          "type": "text",
+          "info": "Defaults to collection title if blank."
+        },
+        {
+          "type": "select",
+          "id": "heading_font_size",
+          "label": "Heading size",
+          "default": "heading-small",
+          "options": [
+            {"value": "heading-mini", "label": "Mini"},
+            {"value": "heading-x-small", "label": "Extra small"},
+            {"value": "heading-small", "label": "Small"},
+            {"value": "heading-medium", "label": "Medium"},
+            {"value": "heading-large", "label": "Large"},
+            {"value": "heading-x-large", "label": "Extra large"}
+          ]
+        },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "label": "Text alignment",
+          "default": "align--middle-center",
+          "options": [
+            {"value": "align--top-left", "label": "Top left"},
+            {"value": "align--top-center", "label": "Top center"},
+            {"value": "align--top-right", "label": "Top right"},
+            {"value": "align--middle-left", "label": "Middle left"},
+            {"value": "align--middle-center", "label": "Absolute center"},
+            {"value": "align--middle-right", "label": "Middle right"},
+            {"value": "align--bottom-left", "label": "Bottom left"},
+            {"value": "align--bottom-center", "label": "Bottom center"},
+            {"value": "align--bottom-right", "label": "Bottom right"}
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Colors"
+        },
+        {
+          "type": "paragraph",
+          "content": "Overrides color scheme. Set to Transparent to revert back to using color schemes."
+        },
+        {
+          "type": "checkbox",
+          "id": "show_text_background",
+          "label": "Show text background",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Background",
+          "alpha": true
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Text",
+          "alpha": true
+        },
+        {
+          "type": "select",
+          "id": "overlay_type",
+          "label": "Overlay type",
+          "default": "disabled",
+          "options": [
+            {"value": "disabled", "label": "Disabled"},
+            {"value": "opacity", "label": "Opacity overlay"},
+            {"value": "text", "label": "Text underlay"}
+          ]
         }
       ]
     }
@@ -443,6 +532,7 @@
   "presets": [
     {
       "name": "Collection list",
+      "category": "Collections",
       "blocks": [
         {
           "type": "collection"

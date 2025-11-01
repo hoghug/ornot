@@ -3,13 +3,35 @@
 {%- liquid
   assign look_dots = ''
   assign look_slider = ''
+  assign enable_slider = section.settings.enable_slider
   assign enable_aspect_ratio = section.settings.enable_aspect_ratio
   assign image_aspect_ratio = 1 | divided_by: section.settings.image_aspect_ratio
   assign image = section.settings.image
+  assign show_recently_viewed_indicator = settings.show_recently_viewed_indicator
   assign color_scheme = 'color-' | append: section.settings.color_scheme
   assign dot_color = section.settings.dot_color
   assign dot_background = section.settings.dot_background
   assign show_dots = section.settings.show_dots
+  assign blocks_count = section.blocks.size | plus: 0
+  assign slider_grid = false
+
+  if blocks_count == 0
+    assign blocks_count = 2
+  endif
+
+  if section.settings.products_per_row == '1'
+    if blocks_count == 2 and enable_slider
+      assign slider_grid = true
+    endif
+  else
+    if blocks_count >= 2
+      assign slider_grid = true
+    endif
+  endif
+
+  if blocks_count <= 2 and enable_slider
+    assign enable_slider = false
+  endif
 
   assign button_style = section.settings.button_style
   if button_style == 'btn--text' and section.settings.show_arrow
@@ -32,7 +54,7 @@
   }
 
   {%- if dot_background != 'rgba(0,0,0,0)' and dot_background != '' -%}
-    #IndexLook--{{ section.id }} .look__dot { --bg: {{ dot_background }}; }
+    #IndexLook--{{ section.id }} .look__dot__button { --bg: {{ dot_background }}; }
   {%- endif -%}
 
   {%- if dot_color != 'rgba(0,0,0,0)' and dot_color != '' -%}
@@ -45,6 +67,14 @@
 {%- endstyle -%}
 
 <script src="{{ 'look.js' | asset_url }}" defer="defer"></script>
+
+{%- if show_recently_viewed_indicator -%}
+  <script src="{{ 'grid-item.js' | asset_url }}" defer></script>
+{%- endif -%}
+
+{%- if settings.quickview_enable -%}
+  <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
 
 <section
   id="IndexLook--{{ section.id }}"
@@ -70,9 +100,7 @@
             aria-label="{{ 'general.accessibility.scroll_to_product' | t }}"
             data-slider-thumb="{{ forloop.index0 }}"
           >
-            <span class="look__dot">
-              <span class="look__dot__icon"></span>
-            </span>
+            {%- render 'icon-bag' -%}
           </button>
         {%- endcapture -%}
 
@@ -81,7 +109,7 @@
 
           {%- assign product = all_products[block.settings.product] -%}
 
-          <div class="look__slide look__slide--{{ block.id }}" data-slide="{{ block.id }}" {{ block.shopify_attributes }}>
+          <div class="{% if enable_slider %}grid-item {% endif %}look__slide look__slide--{{ block.id }}" data-slide="{{ block.id }}" data-grid-item {{ block.shopify_attributes }}>
             {%- if product != blank -%}
               {%- render 'product-grid-item', product: product, index: forloop.index, show_product_card: block.settings.show_product_card -%}
             {%- else -%}
@@ -102,9 +130,7 @@
           {{ look_dots }}
 
           <button type="button" class="look__dot__button" style="{{ style }}" aria-label="{{ 'general.accessibility.scroll_to_product' | t }}" data-slider-thumb="{{ forloop.index0 }}">
-            <span class="look__dot">
-              <span class="look__dot__icon"></span>
-            </span>
+            {%- render 'icon-bag' -%}
           </button>
         {%- endcapture -%}
 
@@ -155,7 +181,7 @@
             <span>{{ 'general.shop_the_look.button' | t }}</span>
 
             {%- if section.settings.show_arrow -%}
-              {%- render 'icon-arrow-right' -%}
+              {%- render 'icon-nav-arrow-right' -%}
             {%- endif -%}
           </button>
         </div>
@@ -194,8 +220,12 @@
             {%- render 'icon-cancel' -%}
           </button>
 
+          {%- if enable_slider -%}
+            <grid-slider data-arrow-position-middle>
+          {%- endif -%}
           <div
-            class="look__slider{% if section.settings.products_per_row == '2' and section.blocks.size != 1 %} look__slider--grid{% endif %}"
+            class="{% if enable_slider %}grid--slider{% endif %} look__slider{% if slider_grid %} look__slider--grid{% endif %}"
+            data-grid-slider
             data-slider-mobile="{{ section.id }}"
             data-arrow-position-middle
             data-scroll-lock-scrollable
@@ -205,6 +235,9 @@
           >
             {{ look_slider }}
           </div>
+          {%- if enable_slider -%}
+            </grid-slider>
+          {%- endif -%}
         </div>
       </div>
     </look-component>
@@ -223,7 +256,7 @@
       "type": "image_picker",
       "id": "image",
       "label": "Image",
-      "info": "2000 x 1400px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+      "info": "2000 x 1400px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
     },
     {
       "type": "select",
@@ -278,6 +311,7 @@
     {
       "type": "select",
       "id": "products_per_row",
+      "visible_if": "{{ section.settings.enable_slider == false }}",
       "label": "Products per row",
       "options": [
         {
@@ -290,6 +324,12 @@
         }
       ],
       "default": "1"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_slider",
+      "label": "Enable slider",
+      "default": false
     },
     {
       "type": "header",
@@ -369,12 +409,16 @@
     {
       "type": "color",
       "id": "dot_color",
-      "label": "Dot icon"
+      "label": "Dot icon",
+      "default": "rgba(0,0,0,0)",
+      "alpha": true
     },
     {
       "type": "color",
       "id": "dot_background",
-      "label": "Dot background"
+      "label": "Dot background",
+      "default": "rgba(0,0,0,0)",
+      "alpha": true
     },
     {
       "type": "header",
@@ -436,7 +480,7 @@
           "type": "checkbox",
           "id": "show_product_card",
           "label": "Show product card",
-          "default": true
+          "default": false
         },
         {
           "type": "header",
@@ -468,6 +512,7 @@
   "presets": [
     {
       "name": "Shop the look",
+      "category": "Products",
       "blocks": [
         {
           "type": "product",

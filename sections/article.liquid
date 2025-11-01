@@ -142,7 +142,7 @@
                       >
                         <span>{{ 'blogs.article.newer_post' | t }}</span>
 
-                        {%- render 'icon-arrow-right' -%}
+                        {%- render 'icon-nav-arrow-right' -%}
                       </a>
                     {%- endif -%}
                   {%- endfor -%}
@@ -158,7 +158,7 @@
                         class="btn btn--text btn--text-no-underline btn--small"
                         title="{{ post.title | strip_html | escape }}"
                       >
-                        {%- render 'icon-arrow-left' -%}
+                        {%- render 'icon-nav-arrow-left' -%}
 
                         <span>{{ 'blogs.article.older_post' | t }}</span>
                       </a>
@@ -217,8 +217,7 @@
                                   <summary class="widget__accordion-title" data-collapsible-trigger>
                                     {{- link.title -}}
 
-                                    {%- render 'icon-plus' -%}
-                                    {%- render 'icon-minus' -%}
+                                    {%- render 'icon-nav-arrow-down' -%}
                                   </summary>
 
                                   <div data-collapsible-body{% if open_submenu %} style="height: auto;"{% endif %}>

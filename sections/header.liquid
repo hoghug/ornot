@@ -26,7 +26,7 @@
   assign toolbar_height = 0
 
   assign transparent_header = false
-  if template contains 'collection' and collection.image and section.settings.transparent_collection
+  if template contains 'collection' and section.settings.transparent_collection
     assign transparent_header = true
   elsif template contains 'article' and section.settings.transparent_article
     assign transparent_header = true
@@ -39,13 +39,7 @@
   endif
 
   assign main_menu_linklist = section.settings.main_menu_linklist | default: 'main-menu'
-  assign mobile_menu_linklist = section.settings.mobile_menu_linklist
   assign secondary_menu_linklist = section.settings.secondary_menu_linklist
-  assign tertiary_menu_linklist = section.settings.tertiary_menu_linklist
-  assign has_mobile_menu = false
-  if mobile_menu_linklist != blank and linklists[mobile_menu_linklist].links.size > 0 and mobile_menu_linklist != main_menu_linklist
-    assign has_mobile_menu = true
-  endif
 
   assign logo = section.settings.logo
   assign transparent_logo = section.settings.transparent_logo
@@ -93,9 +87,9 @@
     assign header_height_mobile = header_upper_height_mobile | plus: padding_top_mobile | plus: padding_bottom_mobile
   endif
 
-  if tertiary_menu_linklist != blank and linklists[tertiary_menu_linklist].links.size > 0
-    assign tertiary_menu_height = 0.75 | times: settings.nav_font_size | times: 1.2 | plus: 32
-    assign header_height_mobile = header_height_mobile | plus: tertiary_menu_height
+  if secondary_menu_linklist != blank and linklists[secondary_menu_linklist].links.size > 0
+    assign secondary_menu_height = 0.75 | times: settings.nav_font_size | times: 1.2 | plus: 32
+    assign header_height_mobile = header_height_mobile | plus: secondary_menu_height
   endif
 
   if toolbar_block
@@ -263,7 +257,7 @@
 {%- endcapture -%}
 
 {%- capture cta -%}
-  {%- if section.settings.button_text != blank -%}
+  {%- if section.settings.enable_call_to_action and section.settings.button_text != blank -%}
     <div class="header__desktop__button header__desktop__button--cta">
       <a class="btn btn--small btn--solid {{ section.settings.button_type }}" href="{{ section.settings.button_link }}">
         <span>{{ section.settings.button_text | escape }}</span>
@@ -278,6 +272,7 @@
   assign header_popouts = false
 
   assign show_locale_selector = section.settings.show_locale_selector
+  assign show_locale_code = section.settings.show_locale_code
   assign show_locale_selector_toolbar = toolbar_block.settings.show_locale_selector
 
   assign show_globe_icon = section.settings.show_globe_icon
@@ -362,7 +357,16 @@
     {%- if header_popouts -%}
       {%- assign unique = section.id | append: '-header-mobile-top' -%}
       <div class="header__mobile__button desktop">
-        {%- render 'localization' unique: unique, show_locale_selector: show_locale_selector, show_globe_icon: show_globe_icon, show_country_selector: show_country_selector, show_country_flag: show_country_flag, show_country_name: show_country_name, class: 'header', unique: section.id, short_country_name: true -%}
+        {%- render 'localization',
+          unique: unique,
+          show_locale_selector: show_locale_selector,
+          show_locale_code: show_locale_code,
+          show_globe_icon: show_globe_icon,
+          show_country_selector: show_country_selector,
+          show_country_flag: show_country_flag,
+          show_country_name: show_country_name,
+          class: 'header',
+          unique: section.id -%}
       </div>
     {%- endif -%}
 
@@ -381,11 +385,11 @@
     </div>
   </div>
 
-  {%- if tertiary_menu_linklist != blank and linklists[tertiary_menu_linklist].links.size > 0 -%}
+  {%- if secondary_menu_linklist != blank and linklists[secondary_menu_linklist].links.size > 0 -%}
     <div class="header__mobile__bottom">
       <nav class="header__mobile__nav{% if settings.type_nav_caps %} caps{% endif %}" data-mobile-nav>
         <div class="header__mobile__nav__scroller">
-          {%- for link in linklists[tertiary_menu_linklist].links -%}
+          {%- for link in linklists[secondary_menu_linklist].links -%}
             <a class="navlink" href="{{ link.url }}">
               <span class="navtext">{{ link.title }}</span>
             </a>
@@ -412,7 +416,15 @@
       {%- assign unique = section.id | append: '-header-desktop' -%}
 
       <div class="header__desktop__button">
-        {%- render 'localization' unique: unique, show_locale_selector: show_locale_selector, show_globe_icon: show_globe_icon, show_country_selector: show_country_selector, show_country_flag: show_country_flag, show_country_name: show_country_name, class: 'header', short_country_name: true -%}
+        {%- render 'localization'
+          unique: unique,
+          show_locale_selector: show_locale_selector,
+          show_locale_code: show_locale_code,
+          show_globe_icon: show_globe_icon,
+          show_country_selector: show_country_selector,
+          show_country_flag: show_country_flag,
+          show_country_name: show_country_name,
+          class: 'header' -%}
       </div>
     {%- endif -%}
 
@@ -461,114 +473,6 @@
 
     <div class="hover__bg"></div>
   </nav>
-{%- endcapture -%}
-
-{%- capture drawer -%}
-  <header-drawer class="drawer drawer--header{% if settings.type_nav_caps %} caps{% endif %}"
-    data-drawer="hamburger"
-    aria-label="{{ 'layout.header.menu' | t }}"
-    id="header-menu">
-    <div class="drawer__inner" data-drawer-inner>
-      <header class="drawer__head">
-        <button class="drawer__close"
-          data-drawer-close
-          aria-label="{{ 'general.accessibility.show_menu' | t }}"
-          aria-haspopup="true"
-          aria-expanded="true"
-          aria-controls="header-menu">
-
-          {%- render 'icon-cancel' -%}
-        </button>
-      </header>
-
-      <div class="drawer__body">
-        <div class="drawer__content" data-drawer-content>
-          <div class="drawer__content__scroll" data-scroll-lock-scrollable>
-            <nav class="drawer__menu" data-scroll-lock-scrollable data-sliderule-pane="0" {{ highlight_style }}>
-              <div class="drawer__main-menu{% if has_mobile_menu %} drawer__main-menu--desktop{% endif %}">
-                {%- for link in linklists[main_menu_linklist].links -%}
-                  {%- assign item_animation_delay = animation_delay_increment | times: forloop.index | plus: animation_delay -%}
-                  {%- render 'nav-item-mobile', link: link, index: forloop.index, forloop_index: forloop.index, highlight_item: highlight_item, animation_delay: item_animation_delay, unique: 'mobile-menu--desktop' -%}
-                {%- endfor -%}
-              </div>
-
-              {%- if has_mobile_menu -%}
-                <div class="drawer__main-menu drawer__main-menu--mobile">
-                  {%- for link in linklists[mobile_menu_linklist].links -%}
-                    {%- assign item_animation_delay = animation_delay_increment | times: forloop.index | plus: animation_delay -%}
-                    {%- render 'nav-item-mobile', link: link, index: forloop.index, forloop_index: forloop.index, highlight_item: highlight_item, animation_delay: item_animation_delay, unique: 'mobile-menu--mobile' -%}
-                  {%- endfor -%}
-                </div>
-              {%- endif -%}
-
-              {%- unless secondary_menu_linklist == blank -%}
-                {%- for link in linklists[secondary_menu_linklist].links -%}
-                  {%- assign item_animation_delay = animation_delay_increment | times: forloop.index | plus: animation_delay -%}
-                  {%- render 'nav-item-mobile', link: link, index: forloop.index, forloop_index: forloop.index, secondary_menu: true, highlight_item: highlight_item, animation_delay: item_animation_delay, unique: 'secondary-menu' -%}
-                {%- endfor -%}
-              {%- endunless -%}
-            </nav>
-          </div>
-        </div>
-
-        {%- if show_toolbar_menu or header_popouts_mobile or show_toolbar_gift_card or show_socials -%}
-
-          <div class="drawer__bottom{% unless show_socials %} mobile{% endunless %}">
-            {%- if show_toolbar_menu -%}
-              {%- assign animation_delay = item_animation_delay | plus: animation_delay_increment -%}
-              <div class="drawer__bottom__row drawer__bottom__row--menu mobile"
-                data-animation="{{ animation_name }}"
-                data-animation-delay="{{ animation_delay }}"
-                data-animation-duration="{{ animation_duration }}">
-                <div class="toolbar__menu">
-                  {{ toolbar_menu }}
-                </div>
-              </div>
-            {%- endif -%}
-
-            {%- if header_popouts_mobile or show_toolbar_gift_card -%}
-              {%- liquid
-                assign animation_delay = animation_delay | plus: animation_delay_increment
-                assign unique = section.id | append: '-header-mobile'
-              -%}
-
-              <div class="drawer__bottom__row drawer__bottom__row--localization-gift"
-                data-animation="{{ animation_name }}"
-                data-animation-delay="{{ animation_delay }}"
-                data-animation-duration="{{ animation_duration }}">
-                {%- if header_popouts_mobile -%}
-                  {%- liquid
-                    assign show_locale_selector = show_locale_selector | default: show_locale_selector_toolbar
-                    assign show_globe_icon = show_globe_icon | default: show_globe_icon_toolbar
-                    assign show_country_selector = show_country_selector | default: show_country_selector_toolbar
-                    assign show_country_flag = show_country_flag | default: show_country_flag_toolbar
-                    assign show_country_name = show_country_name | default: show_country_name_toolbar
-                  -%}
-                  {%- render 'localization' unique: unique, show_locale_selector: show_locale_selector, show_globe_icon: show_globe_icon, show_country_selector: show_country_selector, show_country_flag: show_country_flag, show_country_name: show_country_name, class: 'header', short_country_name: true -%}
-                {%- endif -%}
-
-                {%- if show_toolbar_gift_card -%}
-                  {{ gift_card_link }}
-                {%- endif -%}
-              </div>
-            {%- endif -%}
-
-            {%- if show_socials or show_toolbar_socials -%}
-              {%- assign animation_delay = animation_delay | plus: animation_delay_increment -%}
-              <div class="drawer__bottom__row drawer__bottom__row--socials"
-                data-animation="{{ animation_name }}"
-                data-animation-delay="{{ animation_delay }}"
-                data-animation-duration="{{ animation_duration }}">
-                {%- render 'social-icons' -%}
-              </div>
-            {%- endif -%}
-          </div>
-        {%- endif -%}
-      </div>
-    </div>
-
-    <span class="underlay drawer__underlay" data-drawer-underlay></span>
-  </header-drawer>
 {%- endcapture -%}
 
 {%- if show_toolbar -%}
@@ -621,9 +525,7 @@
 
               <div data-child-takes-space class="header__desktop__bar__r">{{ buttons }}</div>
             </div>
-          {%- when 'drawer' -%}
-            {%- comment -%} Do nothing for drawer {%- endcomment -%}
-          {%- else -%}
+          {%- when 'logo_above' -%}
             {%- comment -%} 'logo_above' is default case, this covers migrated settings {%- endcomment -%}
             <div class="header__desktop__upper" data-takes-space-wrapper>
               <div data-child-takes-space class="header__desktop__bar__l">
@@ -644,8 +546,6 @@
       </div>
     </div>
   </header>
-
-  {{ drawer }}
 </header-component>
 
 <div class="header__backfill" data-header-backfill></div>
@@ -704,6 +604,12 @@
       "default": false
     },
     {
+      "type": "checkbox",
+      "id": "enable_search",
+      "default": true,
+      "label": "Show search"
+    },
+    {
       "type": "header",
       "content": "Style"
     },
@@ -729,7 +635,8 @@
       "type": "color",
       "id": "header_border_color",
       "label": "Border color",
-      "info": "Not applied to Transparent headers"
+      "info": "Not applied to Transparent headers",
+      "alpha": true
     },
     {
       "type": "range",
@@ -775,7 +682,7 @@
       "type": "image_picker",
       "id": "logo",
       "label": "Image",
-      "info": "300 x 90px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+      "info": "300 x 90px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
     },
     {
       "type": "header",
@@ -803,7 +710,7 @@
     },
     {
       "type": "header",
-      "content": "Navigation"
+      "content": "Desktop"
     },
     {
       "type": "link_list",
@@ -811,16 +718,35 @@
       "id": "main_menu_linklist"
     },
     {
-      "type": "link_list",
-      "label": "Mobile menu",
-      "info": "This will be deprecated in the future, please use the new Mobile menu section",
-      "id": "mobile_menu_linklist"
+      "type": "checkbox",
+      "id": "enable_call_to_action",
+      "label": "Show call to action",
+      "default": false
     },
     {
-      "type": "checkbox",
-      "id": "enable_search",
-      "default": true,
-      "label": "Show search"
+      "type": "text",
+      "id": "button_text",
+      "visible_if": "{{ section.settings.enable_call_to_action }}",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "visible_if": "{{ section.settings.enable_call_to_action }}",
+      "label": "Link"
+    },
+    {
+      "type": "select",
+      "id": "button_type",
+      "visible_if": "{{ section.settings.enable_call_to_action }}",
+      "label": "Color",
+      "default": "btn--primary",
+      "options": [
+        {"value": "btn--black", "label": "Black"},
+        {"value": "btn--white", "label": "White"},
+        {"value": "btn--primary", "label": "Primary"},
+        {"value": "btn--secondary", "label": "Secondary"}
+      ]
     },
     {
       "type": "checkbox",
@@ -830,33 +756,17 @@
     },
     {
       "type": "header",
-      "content": "Call to action"
+      "content": "Mobile"
     },
     {
       "type": "paragraph",
-      "content": "Applies to desktop only"
+      "content": "Configure the hamburger menu in the Mobile menu section"
     },
     {
-      "type": "text",
-      "id": "button_text",
-      "label": "Text"
-    },
-    {
-      "type": "url",
-      "id": "button_link",
-      "label": "Link"
-    },
-    {
-      "type": "select",
-      "id": "button_type",
-      "label": "Color",
-      "default": "btn--primary",
-      "options": [
-        {"value": "btn--black", "label": "Black"},
-        {"value": "btn--white", "label": "White"},
-        {"value": "btn--primary", "label": "Primary"},
-        {"value": "btn--secondary", "label": "Secondary"}
-      ]
+      "type": "link_list",
+      "id": "secondary_menu_linklist",
+      "label": "Below header menu",
+      "info": "Visible on mobile below the header."
     },
     {
       "type": "header",
@@ -868,6 +778,12 @@
       "id": "show_locale_selector",
       "label": "Show language selector",
       "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_locale_code",
+      "label": "Show language code only",
+      "default": false
     },
     {
       "type": "checkbox",
@@ -912,7 +828,8 @@
       "type": "color",
       "id": "highlight_item_color",
       "label": "Color",
-      "default": "#D02E2E"
+      "default": "#D02E2E",
+      "alpha": true
     },
     {
       "type": "header",
@@ -922,7 +839,7 @@
       "type": "image_picker",
       "id": "transparent_logo",
       "label": "Logo",
-      "info": "300 x 90px .png recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+      "info": "300 x 90px .png recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
     },
     {
       "type": "checkbox",
@@ -959,24 +876,7 @@
       "type": "image_picker",
       "id": "transparent_logo_pdp",
       "label": "Product pages logo",
-      "info": "300 x 90px .png recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
-    },
-    {
-      "type": "header",
-      "content": "Mobile menu",
-      "info": "These menus won't show dropdown items."
-    },
-    {
-      "type": "link_list",
-      "id": "secondary_menu_linklist",
-      "label": "Secondary menu",
-      "info": "This will be deprecated in the future, please use the new Mobile menu section"
-    },
-    {
-      "type": "link_list",
-      "id": "tertiary_menu_linklist",
-      "label": "Navigation menu",
-      "info": "Visible on mobile below the header."
+      "info": "300 x 90px .png recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
     },
     {
       "type": "header",
@@ -1030,7 +930,7 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image",
-          "info": "1400 x 1400px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "1400 x 1400px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "type": "range",
@@ -1054,21 +954,15 @@
           "content": "Overlay"
         },
         {
-          "type": "range",
-          "id": "overlay_opacity",
-          "label": "Overlay opacity",
-          "info": "Increase contrast for legible text.",
-          "unit": "%",
-          "min": 0,
-          "max": 100,
-          "step": 5,
-          "default": 0
-        },
-        {
-          "type": "color",
-          "id": "overlay_color",
-          "label": "Overlay color",
-          "default": "#000"
+          "type": "select",
+          "id": "overlay_type",
+          "label": "Overlay type",
+          "default": "text",
+          "options": [
+            {"value": "disabled", "label": "Disabled"},
+            {"value": "opacity", "label": "Opacity overlay"},
+            {"value": "text", "label": "Text underlay"}
+          ]
         },
         {
           "type": "header",
@@ -1129,7 +1023,8 @@
         {
           "type": "color",
           "id": "text_color",
-          "label": "Text"
+          "label": "Text",
+          "alpha": true
         }
       ]
     },
@@ -1160,7 +1055,8 @@
           "type": "color",
           "id": "border_color",
           "label": "Border color",
-          "info": "Not applied to Transparent headers"
+          "info": "Not applied to Transparent headers",
+          "alpha": true
         },
         {
           "type": "range",
@@ -1203,6 +1099,12 @@
           "id": "show_locale_selector",
           "label": "Show language selector",
           "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_locale_code",
+          "label": "Show language code only",
+          "default": false
         },
         {
           "type": "checkbox",

@@ -225,7 +225,7 @@
                         <span>{{ button_text }}</span>
 
                         {%- if block.settings.show_arrow -%}
-                          {%- render 'icon-arrow-right' -%}
+                          {%- render 'icon-nav-arrow-right' -%}
                         {%- endif -%}
                       </a>
                     </div>
@@ -351,7 +351,7 @@
                           <span>{{ block.settings.button_text }}</span>
 
                           {%- if block.settings.show_arrow -%}
-                            {%- render 'icon-arrow-right' -%}
+                            {%- render 'icon-nav-arrow-right' -%}
                           {%- endif -%}
                         </a>
                       </div>
@@ -453,7 +453,7 @@
                           <span>{{ block.settings.button_text }}</span>
 
                           {%- if block.settings.show_arrow -%}
-                            {%- render 'icon-arrow-right' -%}
+                            {%- render 'icon-nav-arrow-right' -%}
                           {%- endif -%}
                         </a>
                       </div>
@@ -524,8 +524,7 @@
 
                           {{ title }}
 
-                          {%- render 'icon-plus' -%}
-                          {%- render 'icon-minus' -%}
+                          {%- render 'icon-nav-arrow-down' -%}
                         </summary>
 
                         <div class="accordion__body rte" data-collapsible-body>
@@ -644,6 +643,7 @@
                       endif
                       assign style_products = columns_style | replace: item_placeholder, product_list_columns
                       assign block_style = block_style | append: style_products
+                      assign show_recently_viewed_indicator = settings.show_recently_viewed_indicator
                     -%}
 
                     <div
@@ -668,6 +668,14 @@
                         endif
                       -%}
                     </div>
+
+                    {%- if settings.quickview_enable -%}
+                      <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
+                    {%- endif -%}
+
+                    {%- if show_recently_viewed_indicator -%}
+                      <script src="{{ 'grid-item.js' | asset_url }}" defer></script>
+                    {%- endif -%}
 
                   {%- when 'collection' -%}
                     {%- liquid
@@ -739,7 +747,7 @@
                                     <span>{{ button_text }}</span>
 
                                     {%- if show_arrow -%}
-                                      {%- render 'icon-arrow-right' -%}
+                                      {%- render 'icon-nav-arrow-right' -%}
                                     {%- endif -%}
                                   </a>
                                 </div>

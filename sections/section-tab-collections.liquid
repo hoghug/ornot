@@ -11,6 +11,7 @@
   assign animation_order = 0
   assign animation_anchor = '#TabCollections--' | append: section.id
   assign has_content = false
+  assign show_recently_viewed_indicator = settings.show_recently_viewed_indicator
 
   assign product_limit = section.settings.product_limit
   if layout_desktop == 'grid'
@@ -91,6 +92,14 @@
   }
 {%- endstyle -%}
 
+{%- if settings.quickview_enable -%}
+  <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+{%- if show_recently_viewed_indicator -%}
+  <script src="{{ 'grid-item.js' | asset_url }}" defer></script>
+{%- endif -%}
+
 <section
   id="TabCollections--{{ section.id }}"
   class="index-tab-collections section-padding {{ color_scheme }}"
@@ -153,8 +162,11 @@
               {%- capture featured_image -%}
                 {%- if show_image -%}
                   {%- liquid
-                    assign overlay_opacity = block.settings.overlay_opacity | times: 0.01
-                    assign overlay_color = block.settings.overlay_color
+                    assign overlay_type = block.settings.overlay_type
+                    assign opacity_overlay = true
+                    if overlay_type == 'disabled'
+                      assign opacity_overlay = false
+                    endif
                     assign description = block.settings.description
                     assign link = block.settings.link | default: featured_collection.url
                     assign link_text = block.settings.link_text
@@ -220,16 +232,9 @@
                       -%}
                     </div>
 
-                    {%- liquid
-                      capture overlay_style
-                        echo '--overlay-opacity: ' | append: overlay_opacity | append: ';'
-                        if overlay_color.alpha != 0.0 and overlay_color != blank
-                          echo '--overlay-bg: ' | append: overlay_color | append: ';'
-                        endif
-                      endcapture
-                    -%}
-
-                    <div class="image-overlay" style="{{ overlay_style }}"></div>
+                    {%- if opacity_overlay -%}
+                      <div class="image-overlay"></div>
+                    {%- endif -%}
 
                     <div class="grid__content">
                       {{- products_counter -}}
@@ -257,7 +262,7 @@
                             <span>{{ link_text | escape }}</span>
 
                             {%- if block.settings.show_arrow -%}
-                              {%- render 'icon-arrow-right' -%}
+                              {%- render 'icon-nav-arrow-right' -%}
                             {%- endif -%}
                           </a>
                         </div>
@@ -513,6 +518,36 @@
       "default": "slider"
     },
     {
+      "type": "range",
+      "id": "product_limit",
+      "visible_if": "{{ section.settings.layout_desktop == 'slider' }}",
+      "min": 4,
+      "max": 12,
+      "step": 1,
+      "label": "Product limit",
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "grid",
+      "visible_if": "{{ section.settings.layout_desktop == 'grid' }}",
+      "label": "Products per row",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "rows",
+      "visible_if": "{{ section.settings.layout_desktop == 'grid' }}",
+      "label": "Number of rows",
+      "min": 1,
+      "max": 8,
+      "step": 1,
+      "default": 3
+    },
+    {
       "type": "header",
       "content": "Mobile"
     },
@@ -535,43 +570,6 @@
         }
       ],
       "default": "slider"
-    },
-    {
-      "type": "header",
-      "content": "Slider",
-      "info": "Applies only when layout is set to Slider"
-    },
-    {
-      "type": "range",
-      "id": "product_limit",
-      "min": 4,
-      "max": 12,
-      "step": 1,
-      "label": "Product limit",
-      "default": 6
-    },
-    {
-      "type": "header",
-      "content": "Grid",
-      "info": "Applies only when layout is set to Grid"
-    },
-    {
-      "type": "range",
-      "id": "grid",
-      "label": "Products per row",
-      "min": 2,
-      "max": 6,
-      "step": 1,
-      "default": 4
-    },
-    {
-      "type": "range",
-      "id": "rows",
-      "label": "Number of rows",
-      "min": 1,
-      "max": 8,
-      "step": 1,
-      "default": 3
     },
     {
       "type": "header",
@@ -667,23 +665,17 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image",
-          "info": " 1400 x 1400px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": " 1400 x 1400px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
-          "type": "range",
-          "id": "overlay_opacity",
-          "label": "Overlay opacity",
-          "info": "Increase contrast for legible text.",
-          "min": 0,
-          "max": 100,
-          "step": 5,
-          "unit": "%",
-          "default": 0
-        },
-        {
-          "type": "color",
-          "id": "overlay_color",
-          "label": "Overlay color"
+          "type": "select",
+          "id": "overlay_type",
+          "label": "Overlay type",
+          "default": "disabled",
+          "options": [
+            {"value": "disabled", "label": "Disabled"},
+            {"value": "opacity", "label": "Opacity overlay"}
+          ]
         },
         {
           "type": "header",
@@ -697,7 +689,8 @@
         {
           "type": "color",
           "id": "color",
-          "label": "Text"
+          "label": "Text",
+          "alpha": true
         },
         {
           "type": "header",
@@ -761,6 +754,7 @@
   "presets": [
     {
       "name": "Tab collections",
+      "category": "Collections",
       "blocks": [
         {
           "type": "collection",

@@ -29,6 +29,10 @@
     --text-products-font-size-desktop: {{ section.settings.text_font_size_px_desktop }}px;
     --text-products-font-size-mobile: {{ section.settings.text_font_size_px_mobile }}px;
   }
+
+  #TextProducts--{{ section.id }} .inline-image__inner {
+    --radius: {{ section.settings.image_border_radius }}%;
+  }
 {%- endstyle -%}
 
 {%- if section.blocks.size > 0 -%}
@@ -237,6 +241,16 @@
       "content": "Layout"
     },
     {
+      "type": "range",
+      "id": "image_border_radius",
+      "label": "Image border radius",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "%",
+      "default": 20
+    },
+    {
       "type": "select",
       "id": "width",
       "label": "Width",
@@ -344,7 +358,7 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image",
-          "info": "Overrides default collection image. 600 x 600px recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "Overrides default collection image. 600 x 600px recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "type": "header",
@@ -425,7 +439,7 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image",
-          "info": "Overrides default collection image. 600 x 600px recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "Overrides default collection image. 600 x 600px recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "type": "header",
@@ -501,7 +515,7 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image",
-          "info": "600 x 600px recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "600 x 600px recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "type": "header",
@@ -573,6 +587,7 @@
   "presets": [
     {
       "name": "Text with products",
+      "category": "Products",
       "blocks": [
         {
           "type": "product",

@@ -44,7 +44,7 @@
 -%}
 
 {%- style -%}
-  #Reviews--{{ section.id }} {
+  [data-section-id="{{ section.id }}"] {
     --PT: {{ section.settings.padding_top }}px;
     --PB: {{ section.settings.padding_bottom }}px;
 
@@ -282,7 +282,8 @@
     {
       "type": "color",
       "id": "card_bg_color",
-      "label": "Card background"
+      "label": "Card background",
+      "alpha": true
     },
     {
       "type": "header",
@@ -344,13 +345,13 @@
           "type": "image_picker",
           "id": "featured_image",
           "label": "Featured image",
-          "info": "1400 x 1400px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "1400 x 1400px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "type": "image_picker",
           "id": "bio_image",
           "label": "Bio image",
-          "info": "70 x 70px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "70 x 70px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "type": "header",
@@ -368,6 +369,7 @@
   "presets": [
     {
       "name": "Testimonials",
+      "category": "Storytelling",
       "blocks": [
         {
           "type": "review",

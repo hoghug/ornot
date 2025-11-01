@@ -3,7 +3,6 @@
 
   Accepts:
   - message: {String} Free shipping text (required)
-  - gradient: {String} Progress bar gradient color
   - show_wheel: {Boolean} Show progress wheel
   - show_progress_bar: {Boolean} Show progress bar
   - is_cart_drawer: {Boolean} Is cart drawer
@@ -17,10 +16,6 @@
   assign show_message = false
   if message != blank
     assign show_message = true
-  endif
-
-  if gradient != blank
-    assign style = '--FREE-SHIPPING-GRADIENT: ' | append: gradient | append: ';'
   endif
 -%}
 
@@ -62,12 +57,10 @@
     endcapture
   -%}
 
-  <div class="{{ free_shipping_classes }}"
+  <div
+    class="{{ free_shipping_classes }}"
     data-free-shipping="{% if qualified_shipping_message != blank %}true{% else %}false{% endif %}"
     data-free-shipping-limit="{{ limit }}"
-    {% if style != blank %}
-      style="{{ style }}"
-    {% endif %}
   >
     {%- if show_wheel -%}
       <div class="free-shipping__graph" data-progress-graph style="--stroke-dashoffset: 87.96459430051421;">
@@ -87,7 +80,12 @@
     </span>
 
     {%- if show_progress_bar -%}
-      <progress class="free-shipping__progress-bar" data-progress-bar value="{{ percent }}" max="100"></progress>
+      <progress
+        class="free-shipping__progress-bar"
+        data-progress-bar
+        value="{{ percent }}"
+        max="100"
+      ></progress>
     {%- endif -%}
 
     <div class="confetti">

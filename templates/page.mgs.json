@@ -1,1 +1,372 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"subheading":"","show_title":true,"heading_font_size":"heading-large","show_content":true,"text_font_size":"body-medium","align_text":"text-left","width":"wrapper","color_scheme":"","padding_top":50,"padding_bottom":50,"heading_tag":"automatic"}},"section_hero_scrolling_YWApfe":{"type":"section-hero-scrolling","blocks":{"scrolling_text_aCphHe":{"type":"scrolling_text","settings":{"text":"<h3>MERINO GRAVEL S<strong>WEATER<\/strong><\/h3>","color":""}},"scrolling_text_kNE3GM":{"type":"scrolling_text","settings":{"text":"<p><strong>WEAR IT ON YOUR BIKE ORNOT<\/strong><\/p>","color":""}},"button_bxgQj9":{"type":"button","disabled":true,"settings":{"link_text":"SHOP WOMEN'S","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":true}},"button_RAtYAL":{"type":"button","disabled":true,"settings":{"link_text":"SHOP MEN'S","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":true}}},"block_order":["scrolling_text_aCphHe","scrolling_text_kNE3GM","button_bxgQj9","button_RAtYAL"],"settings":{"image_1":"shopify:\/\/shop_images\/women_s-sale-hero_5fd883bd-32aa-415a-921b-bbf30c1a696f.jpg","link":"","message_spacing":10,"marquee_speed":100,"flex_align":"align--middle-center","type_font":"libre_franklin_n6","text_font_size_px":20,"type_letter_spacing":0,"type_font_caps":false,"scrolling_align":"align--middle-center","direction":"ticker-rtl","height":"image-height","mobile_height":"image-height--mobile","color_scheme":"scheme-2","overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"section_hero_4jfiPM":{"type":"section-hero","blocks":{"heading_mhFrdg":{"type":"heading","settings":{"title":"Merino Gravel Sweater","heading_font_size":"heading-x-large","heading_tag":"automatic"}},"button_g6zz6P":{"type":"button","disabled":true,"settings":{"link_text":"Shop men's","link":"","button_type":"btn--primary","button_size":"btn--small","button_style":"btn--solid","show_arrow":true}},"button_cHcBQz":{"type":"button","disabled":true,"settings":{"link_text":"Shop Women's","link":"","button_type":"btn--primary","button_size":"btn--small","button_style":"btn--solid","show_arrow":true}}},"block_order":["heading_mhFrdg","button_g6zz6P","button_cHcBQz"],"disabled":true,"settings":{"image_1":"shopify:\/\/shop_images\/women_s-sale-hero_5fd883bd-32aa-415a-921b-bbf30c1a696f.jpg","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-center-desktop","content_width":50,"mobile_image":"shopify:\/\/shop_images\/Ornot_Womens_MicroClimateJacket_Olive_05_7cd5164b-64ea-49ed-b59f-02f20dfcea93.jpg","mobile_height":"image-height--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"scheme-2","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"section_custom_content_DVxjMT":{"type":"section-custom-content","blocks":{"image_CfaAc3":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/ORNT1464.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}},"text_7DQEMD":{"type":"text","settings":{"subheading":"","title":"MERINO GRAVEL SWEATER","heading_font_size":"heading-large","text":"<p>Merino and gravel go together like long dirt roads and questionable gas station snacks. But let’s be honest—the Merino Gravel Sweater isn’t just for the bike. Made in the USA, it’s got all the perks of extra-fine Merino without the need to spin up new fabric. The grid structure locks in warmth when you want it and lets it go when you don’t—ideal for layering, lounging, or just looking like you have plans.<\/p><p>San Francisco is the unofficial layering capital of the world, so trust us—we don’t leave home without this sweater. It’s naturally antimicrobial, moisture-wicking, and stays warm, even in HEAVY FOG.<\/p>","text_font_size":"body-medium","button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"","color":"","heading_tag":"automatic"}}},"block_order":["image_CfaAc3","text_7DQEMD"],"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":false,"color_scheme":"","padding_top":0,"padding_bottom":0}},"section_custom_content_WYi9ez":{"type":"section-custom-content","blocks":{"product_Bd8VzW":{"type":"product","settings":{"product":"mens-merino-gravel-sweater-zissou","title":"","bg_color":"","color":""}},"image_HcidjD":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Ornot_Mens_MerinoGridPullover_Charcoal_Squares-4.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"MEN'S","link":"https:\/\/www.ornotbike.com\/products\/mens-merino-gravel-sweater-charcoal","button_type":"btn--white","button_size":"btn--small","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}}},"block_order":["product_Bd8VzW","image_HcidjD"],"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":true,"color_scheme":"","padding_top":0,"padding_bottom":0}},"section_custom_content_znBCHV":{"type":"section-custom-content","blocks":{"image_P4EYbb":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Ornot_Womens_MerinoGridPullover_Charcoal_Squares-1.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"","overlay_opacity":0,"overlay_color":"","show_overlay_text":false,"link_text":"WOMEN'S","link":"https:\/\/www.ornotbike.com\/products\/womens-merino-gravel-sweater-charcoal","button_type":"btn--white","button_size":"","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}},"product_dFkaKL":{"type":"product","settings":{"product":"womens-merino-gravel-sweater-nightshady","title":"","bg_color":"","color":""}}},"block_order":["image_P4EYbb","product_dFkaKL"],"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":false,"color_scheme":"","padding_top":0,"padding_bottom":0}},"section_tab_collections_JcLBaQ":{"type":"section-tab-collections","blocks":{"collection_mYeGrW":{"type":"collection","settings":{"title":"","featured_collection":"casual","show_image":true,"align_with_product_images":false,"image":"shopify:\/\/shop_images\/Ornot_Mens_MissionPants_Slate_Squares-2.jpg","overlay_opacity":0,"overlay_color":"#000000","description":"","color":"#ffffff","link_text":"SHOP CASUAL","link":"","button_type":"btn--white","button_size":"","button_style":"btn--solid","show_arrow":true}}},"block_order":["collection_mYeGrW"],"settings":{"show_product_count":false,"title":"","heading_font_size":"heading-medium","text":"","text_font_size":"body-medium","layout":"left","layout_desktop":"slider","layout_mobile":"slider","product_limit":12,"grid":4,"rows":3,"color_scheme":"","padding_top":17,"padding_bottom":0,"heading_tag":"automatic"}}},"order":["main","section_hero_scrolling_YWApfe","section_hero_4jfiPM","section_custom_content_DVxjMT","section_custom_content_WYi9ez","section_custom_content_znBCHV","section_tab_collections_JcLBaQ"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_hero_scrolling_YWApfe": {
+      "type": "section-hero-scrolling",
+      "blocks": {
+        "scrolling_text_aCphHe": {
+          "type": "scrolling_text",
+          "settings": {
+            "text": "<h3>MERINO GRAVEL S<strong>WEATER</strong></h3>",
+            "color": ""
+          }
+        },
+        "scrolling_text_kNE3GM": {
+          "type": "scrolling_text",
+          "settings": {
+            "text": "<p><strong>WEAR IT ON YOUR BIKE ORNOT</strong></p>",
+            "color": ""
+          }
+        },
+        "button_bxgQj9": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text": "SHOP WOMEN'S",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": true
+          }
+        },
+        "button_RAtYAL": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text": "SHOP MEN'S",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": true
+          }
+        }
+      },
+      "block_order": [
+        "scrolling_text_aCphHe",
+        "scrolling_text_kNE3GM",
+        "button_bxgQj9",
+        "button_RAtYAL"
+      ],
+      "settings": {
+        "image_1": "shopify://shop_images/women_s-sale-hero_5fd883bd-32aa-415a-921b-bbf30c1a696f.jpg",
+        "link": "",
+        "message_spacing": 10,
+        "marquee_speed": 100,
+        "flex_align": "align--middle-center",
+        "type_font": "libre_franklin_n6",
+        "text_font_size_px": 20,
+        "type_letter_spacing": 0,
+        "type_font_caps": false,
+        "scrolling_align": "align--middle-center",
+        "direction": "ticker-rtl",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "color_scheme": "scheme-2",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_hero_4jfiPM": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_mhFrdg": {
+          "type": "heading",
+          "settings": {
+            "title": "Merino Gravel Sweater",
+            "heading_font_size": "heading-x-large",
+            "heading_tag": "automatic"
+          }
+        },
+        "button_g6zz6P": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text": "Shop men's",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": true
+          }
+        },
+        "button_cHcBQz": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text": "Shop Women's",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_mhFrdg",
+        "button_g6zz6P",
+        "button_cHcBQz"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_1": "shopify://shop_images/women_s-sale-hero_5fd883bd-32aa-415a-921b-bbf30c1a696f.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/Ornot_Womens_MicroClimateJacket_Olive_05_7cd5164b-64ea-49ed-b59f-02f20dfcea93.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_custom_content_DVxjMT": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_CfaAc3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ORNT1464.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_7DQEMD": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "MERINO GRAVEL SWEATER",
+            "heading_font_size": "heading-large",
+            "text": "<p>Merino and gravel go together like long dirt roads and questionable gas station snacks. But let’s be honest—the Merino Gravel Sweater isn’t just for the bike. Made in the USA, it’s got all the perks of extra-fine Merino without the need to spin up new fabric. The grid structure locks in warmth when you want it and lets it go when you don’t—ideal for layering, lounging, or just looking like you have plans.</p><p>San Francisco is the unofficial layering capital of the world, so trust us—we don’t leave home without this sweater. It’s naturally antimicrobial, moisture-wicking, and stays warm, even in HEAVY FOG.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_CfaAc3",
+        "text_7DQEMD"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_WYi9ez": {
+      "type": "section-custom-content",
+      "blocks": {
+        "product_Bd8VzW": {
+          "type": "product",
+          "settings": {
+            "product": "mens-merino-gravel-sweater-zissou",
+            "title": "",
+            "bg_color": "",
+            "color": ""
+          }
+        },
+        "image_HcidjD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_MerinoGridPullover_Charcoal_Squares-4.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "MEN'S",
+            "link": "https://www.ornotbike.com/products/mens-merino-gravel-sweater-charcoal",
+            "button_type": "btn--white",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "product_Bd8VzW",
+        "image_HcidjD"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_znBCHV": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_P4EYbb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Womens_MerinoGridPullover_Charcoal_Squares-1.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "link_text": "WOMEN'S",
+            "link": "https://www.ornotbike.com/products/womens-merino-gravel-sweater-charcoal",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "product_dFkaKL": {
+          "type": "product",
+          "settings": {
+            "product": "womens-merino-gravel-sweater-nightshady",
+            "title": "",
+            "bg_color": "",
+            "color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_P4EYbb",
+        "product_dFkaKL"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_tab_collections_JcLBaQ": {
+      "type": "section-tab-collections",
+      "blocks": {
+        "collection_mYeGrW": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "featured_collection": "casual",
+            "show_image": true,
+            "align_with_product_images": false,
+            "image": "shopify://shop_images/Ornot_Mens_MissionPants_Slate_Squares-2.jpg",
+            "description": "",
+            "color": "#ffffff",
+            "link_text": "SHOP CASUAL",
+            "link": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_mYeGrW"
+      ],
+      "settings": {
+        "show_product_count": false,
+        "title": "",
+        "heading_font_size": "heading-medium",
+        "text": "",
+        "text_font_size": "body-medium",
+        "layout": "left",
+        "layout_desktop": "slider",
+        "product_limit": 12,
+        "grid": 4,
+        "rows": 3,
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 17,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_hero_scrolling_YWApfe",
+    "section_hero_4jfiPM",
+    "section_custom_content_DVxjMT",
+    "section_custom_content_WYi9ez",
+    "section_custom_content_znBCHV",
+    "section_tab_collections_JcLBaQ"
+  ]
+}

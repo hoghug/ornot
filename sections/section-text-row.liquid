@@ -125,8 +125,8 @@
     {
       "type": "range",
       "id": "grid",
+      "visible_if": "{{ section.settings.layout == 'grid' }}",
       "label": "Items per row",
-      "info": "Applies only when layout is set to Grid",
       "min": 2,
       "max": 6,
       "step": 1,
@@ -263,6 +263,12 @@
           ]
         },
         {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Alternative icon/image",
+          "info": "160 x 160px .svg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
+        },
+        {
           "type": "range",
           "id": "icon_size",
           "label": "Icon size",
@@ -275,12 +281,8 @@
         {
           "type": "color",
           "id": "icon_color",
-          "label": "Color"
-        },
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Alternative icon/image"
+          "label": "Color",
+          "alpha": true
         },
         {
           "type": "header",
@@ -351,6 +353,7 @@
   "presets": [
     {
       "name": "Text columns with icons",
+      "category": "Storytelling",
       "blocks": [
         {
           "type": "icon",

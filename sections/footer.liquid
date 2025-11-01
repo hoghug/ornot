@@ -105,8 +105,7 @@
                         &nbsp;
                       {%- endif -%}
 
-                      {%- render 'icon-plus' -%}
-                      {%- render 'icon-minus' -%}
+                      {%- render 'icon-nav-arrow-down' -%}
                     </summary>
 
                     {%- if linklist != blank -%}
@@ -132,8 +131,7 @@
                           {{ shop.name }}
                         {%- endif -%}
 
-                        {%- render 'icon-plus' -%}
-                        {%- render 'icon-minus' -%}
+                        {%- render 'icon-nav-arrow-down' -%}
                       </summary>
 
                       <div data-collapsible-body>
@@ -149,8 +147,7 @@
                           {{ page.title | escape }}
                         {%- endif -%}
 
-                        {%- render 'icon-plus' -%}
-                        {%- render 'icon-minus' -%}
+                        {%- render 'icon-nav-arrow-down' -%}
                       </summary>
 
                       <div data-collapsible-body>
@@ -168,8 +165,7 @@
                         &nbsp;
                       {%- endif -%}
 
-                      {%- render 'icon-plus' -%}
-                      {%- render 'icon-minus' -%}
+                      {%- render 'icon-nav-arrow-down' -%}
                     </summary>
 
                     <div data-collapsible-body>
@@ -192,8 +188,7 @@
                         &nbsp;
                       {%- endif -%}
 
-                      {%- render 'icon-plus' -%}
-                      {%- render 'icon-minus' -%}
+                      {%- render 'icon-nav-arrow-down' -%}
                     </summary>
 
                     <div data-collapsible-body>
@@ -271,7 +266,7 @@
       "label": "Logo",
       "type": "image_picker",
       "id": "logo",
-      "info": "300 x 90px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+      "info": "300 x 90px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
     },
     {
       "type": "range",
@@ -298,6 +293,7 @@
       "id": "border_color",
       "label": "Borders and lines",
       "default": "#212121",
+      "alpha": true,
       "info": "Applies to Divider and Newsletter"
     },
     {
@@ -416,12 +412,6 @@
           "default": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>"
         },
         {
-          "type": "checkbox",
-          "id": "show_name",
-          "label": "Show name field",
-          "default": false
-        },
-        {
           "type": "text",
           "id": "button_text",
           "label": "Button text",
@@ -441,16 +431,22 @@
           "info": "Recommended if your online store preferences have spam protection enabled."
         },
         {
+          "type": "checkbox",
+          "id": "show_name",
+          "label": "Show name field",
+          "default": false
+        },
+        {
           "type": "header",
-          "content": "Button",
-          "info": "Applies if \"Show name field\" is enabled."
+          "visible_if": "{{ block.settings.show_name }}",
+          "content": "Button"
         },
         {
           "type": "select",
           "id": "button_type",
+          "visible_if": "{{ block.settings.show_name }}",
           "label": "Color",
           "default": "btn--secondary",
-          "info": "Full width button only",
           "options": [
             {"value": "btn--black", "label": "Black"},
             {"value": "btn--white", "label": "White"},
@@ -461,6 +457,7 @@
         {
           "type": "select",
           "id": "button_size",
+          "visible_if": "{{ block.settings.show_name }}",
           "label": "Size",
           "default": "",
           "options": [
@@ -472,6 +469,7 @@
         {
           "type": "select",
           "id": "button_style",
+          "visible_if": "{{ block.settings.show_name }}",
           "label": "Style",
           "default": "btn--solid",
           "options": [
@@ -580,7 +578,7 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image",
-          "info": "1400 x 1400px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "1400 x 1400px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "type": "range",

@@ -4,8 +4,14 @@
   assign animation_order = 0
   assign animation_anchor = '#CollectionsListHover--' | append: section.id
   assign block_count = section.blocks.size
-  assign overlay_opacity = section.settings.overlay_opacity | times: 0.01
-  assign show_overlay_text = section.settings.show_overlay_text
+  assign overlay_type = section.settings.overlay_type
+  assign opacity_overlay = false
+  assign text_underlay = false
+  if overlay_type == 'opacity'
+    assign opacity_overlay = true
+  elsif overlay_type == 'text'
+    assign text_underlay = true
+  endif
   assign color_scheme = 'color-' | append: section.settings.color_scheme
   assign desktop_height = section.settings.height
   if request.visual_preview_mode
@@ -72,7 +78,7 @@
           data-scroll-trigger-point="middle"
           data-scroll-spy="#{{ unique }}"
           data-scroll-spy-mobile>
-          {{- title -}}
+          <span>{{- title -}}</span>
 
           {%- render 'superscript', superscript_collection: collection -%}
         </a>
@@ -93,11 +99,10 @@
     {%- if block_count > 0 -%}
       <div class="collections-hover__inner frame__item">
         <div class="collections-hover__content wrapper--full-padded">
-          <div
-            class="collections-hover__actions{% if show_overlay_text %} backdrop--radial{% endif %}"
-            style="--overlay-opacity: {{ overlay_opacity }};"
-          >
-            {{ links }}
+          <div class="collections-hover__actions">
+            <div class="collections-hover__actions-inner {% if text_underlay %} backdrop--radial{% endif %}">
+              {{ links }}
+            </div>
           </div>
         </div>
       </div>
@@ -105,9 +110,9 @@
       <div class="collections-hover__images frame__item">
         {{ images }}
 
-        {%- unless show_overlay_text or overlay_opacity == 0.0 -%}
-          <div class="image-overlay" style="--overlay-opacity: {{ overlay_opacity }};"></div>
-        {%- endunless -%}
+        {%- if opacity_overlay -%}
+          <div class="image-overlay"></div>
+        {%- endif -%}
       </div>
     {%- else -%}
       {%- render 'no-blocks' -%}
@@ -193,21 +198,15 @@
       "label": "Color scheme"
     },
     {
-      "type": "range",
-      "id": "overlay_opacity",
-      "label": "Overlay opacity",
-      "info": "Increase contrast for legible text.",
-      "unit": "%",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "default": 20
-    },
-    {
-      "type": "checkbox",
-      "id": "show_overlay_text",
-      "label": "Overlay behind text only",
-      "default": false
+      "type": "select",
+      "id": "overlay_type",
+      "label": "Overlay type",
+      "default": "disabled",
+      "options": [
+        {"value": "disabled", "label": "Disabled"},
+        {"value": "opacity", "label": "Opacity overlay"},
+        {"value": "text", "label": "Text underlay"}
+      ]
     },
     {
       "type": "header",
@@ -249,7 +248,7 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image",
-          "info": "3200 x 1200px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "3200 x 1200px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "label": "Heading",
@@ -262,6 +261,7 @@
   "presets": [
     {
       "name": "Collection list hover",
+      "category": "Collections",
       "blocks": [
         {
           "type": "collection"

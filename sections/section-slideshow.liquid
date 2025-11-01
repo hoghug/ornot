@@ -77,9 +77,14 @@
             assign image_mobile = block.settings.mobile_image
             assign image_link = block.settings.image_link
             assign alt = image_mobile.alt | default: image_desktop.alt | default: block.settings.title | default: default_slide_label
-            assign overlay_color = block.settings.overlay_color
-            assign overlay_opacity = block.settings.overlay_opacity | times: 0.01
-            assign show_overlay_text = block.settings.show_overlay_text
+            assign overlay_type = block.settings.overlay_type
+            assign opacity_overlay = false
+            assign text_underlay = false
+            if overlay_type == 'opacity'
+              assign opacity_overlay = true
+            elsif overlay_type == 'text'
+              assign text_underlay = true
+            endif
             assign show_text_background = block.settings.show_text_background
             assign bg_color = block.settings.bg_color
             assign text_color = block.settings.color
@@ -116,7 +121,7 @@
             endif
 
             assign show_header_backdrop = false
-            if hero_transparent and show_overlay_text
+            if hero_transparent and text_underlay
               assign show_header_backdrop = true
             endif
 
@@ -130,17 +135,9 @@
           -%}
 
           {%- capture block_style -%}
-            --overlay-opacity: {{ overlay_opacity }};
-
-            {%- unless overlay_color.alpha == 0.0 or overlay_color == blank -%}
-              --overlay-bg: {{ overlay_color }};
-            {%- endunless -%}
-
             {% if show_header_backdrop %}
               --header-overlay-color: var(--overlay-bg);
-              --header-overlay-opacity: {{ overlay_opacity }};"
             {% endif %}
-
             {%- if bg != blank or text != blank -%}
               {{ bg }}
               {{ text }}
@@ -164,9 +161,9 @@
               <div class="hero__image frame__item">
             {%- endif -%}
 
-            {%- unless show_overlay_text or overlay_opacity == 0.0 -%}
+            {%- if opacity_overlay -%}
               <div class="image-overlay"></div>
-            {%- endunless -%}
+            {%- endif -%}
 
             {%- liquid
               if forloop.first and section.index < 3
@@ -199,10 +196,7 @@
                 data-aos-order="{{ animation_order }}"
               >
                 <div
-                  class="hero__content{% if hero_transparent %} hero__content--transparent{% endif %}{% if show_overlay_text %} backdrop--radial{% endif %}"
-                  {% if show_header_backdrop %}
-                    style="--overlay-opacity: {{ overlay_opacity }};"
-                  {% endif %}
+                  class="hero__content{% if hero_transparent %} hero__content--transparent{% endif %}{% if text_underlay %} backdrop--radial{% endif %}"
                 >
                   {%- unless block.settings.title == '' -%}
                     {%- liquid
@@ -252,7 +246,7 @@
                             <span>{{ first_button_text | escape }}</span>
 
                             {%- if first_button_show_arrow -%}
-                              {%- render 'icon-arrow-right' -%}
+                              {%- render 'icon-nav-arrow-right' -%}
                             {%- endif -%}
                           </a>
                         </div>
@@ -272,7 +266,7 @@
                             <span>{{ second_button_text | escape }}</span>
 
                             {%- if second_button_show_arrow -%}
-                              {%- render 'icon-arrow-right' -%}
+                              {%- render 'icon-nav-arrow-right' -%}
                             {%- endif -%}
                           </a>
                         </div>
@@ -455,7 +449,7 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image",
-          "info": "Match size to other slides. 3200 x 1200px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)"
+          "info": "Match size to other slides. 3200 x 1200px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
         },
         {
           "type": "url",
@@ -644,7 +638,7 @@
           "type": "image_picker",
           "id": "mobile_image",
           "label": "Mobile image",
-          "info": "Match size to other slides. 1200 x 1600px .jpg recommended. [Learn more](https://invisiblethemes.com/link/broadcast/images)."
+          "info": "Match size to other slides. 1200 x 1600px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)."
         },
         {
           "type": "select",
@@ -680,34 +674,25 @@
         {
           "type": "color",
           "id": "bg_color",
-          "label": "Background"
+          "label": "Background",
+          "alpha": true
         },
         {
           "type": "color",
           "id": "color",
-          "label": "Text"
+          "label": "Text",
+          "alpha": true
         },
         {
-          "type": "range",
-          "id": "overlay_opacity",
-          "label": "Overlay opacity",
-          "info": "Increase contrast for legible text.",
-          "unit": "%",
-          "min": 0,
-          "max": 100,
-          "step": 5,
-          "default": 0
-        },
-        {
-          "type": "color",
-          "id": "overlay_color",
-          "label": "Overlay color"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_overlay_text",
-          "label": "Overlay behind text only",
-          "default": false
+          "type": "select",
+          "id": "overlay_type",
+          "label": "Overlay type",
+          "default": "disabled",
+          "options": [
+            {"value": "disabled", "label": "Disabled"},
+            {"value": "opacity", "label": "Opacity overlay"},
+            {"value": "text", "label": "Text underlay"}
+          ]
         },
         {
           "type": "header",
@@ -734,6 +719,7 @@
   "presets": [
     {
       "name": "Slideshow (Legacy)",
+      "category": "Banners",
       "settings": {
         "height": "screen-height-two-thirds"
       },

@@ -1,5 +1,29 @@
 <!-- /sections/section-recent-products.liquid -->
-{%- assign color_scheme = 'color-' | append: section.settings.color_scheme -%}
+{%- liquid
+  assign limit = section.settings.product_recently_limit
+  assign color_scheme = 'color-' | append: section.settings.color_scheme
+  assign layout_desktop = section.settings.layout_desktop
+  assign grid_columns = section.settings.grid
+  assign layout_mobile = section.settings.layout_mobile
+  assign columns_mobile = layout_mobile | plus: 0
+  assign columns_desktop = grid_columns | plus: 0
+  assign columns_medium = 3
+  assign columns_small = 2
+  assign column_count = limit | at_most: 4
+
+  if columns_desktop == 2 or columns_desktop == 4
+    assign columns_medium = 2
+  endif
+
+  if layout_desktop == 'grid'
+    assign limit = grid_columns | times: section.settings.rows
+    assign column_count = columns_desktop
+
+    if grid_columns == 2 or grid_columns == 4
+      assign columns_medium = 2
+    endif
+  endif
+-%}
 
 {%- style -%}
   #RecentProducts--{{ section.id }} {
@@ -12,11 +36,11 @@
 
 <related-products
   id="RecentProducts--{{ section.id }}"
-  class="recent__container section-padding js {{ color_scheme }}"
+  class="recent__container section-padding {{ color_scheme }}"
   data-section-id="{{ section.id }}"
   data-section-type="related"
 >
-  <div class="recent__container__inner is-hidden" data-recently-viewed-wrapper>
+  <div class="recent__container__inner hidden" data-recently-viewed-wrapper>
     <tabs-component class="tabs-wrapper related__products">
       <div class="grid__heading-holder">
         <div class="grid__heading-actions">
@@ -55,8 +79,15 @@
       <div class="tab-content tab-content-0 tabs__recently-viewed current" data-tab-index="0">
         {%- render 'products-recently-viewed',
           product: product,
-          limit: section.settings.product_recently_limit,
-          product_recently_minimum: section.settings.product_recently_minimum
+          limit: limit,
+          product_recently_minimum: section.settings.product_recently_minimum,
+          layout_desktop: layout_desktop,
+          layout_mobile: layout_mobile,
+          columns_desktop: columns_desktop,
+          columns_medium: columns_medium,
+          columns_small: columns_small,
+          columns_mobile: columns_mobile,
+          column_count: column_count
         -%}
       </div>
     </tabs-component>
@@ -71,7 +102,7 @@
       "type": "range",
       "id": "product_recently_limit",
       "min": 1,
-      "max": 6,
+      "max": 10,
       "step": 1,
       "label": "Product limit",
       "default": 6
@@ -109,6 +140,49 @@
         {"value": "heading-large", "label": "Large"},
         {"value": "heading-x-large", "label": "Extra large"}
       ]
+    },
+    {
+      "type": "header",
+      "content": "Desktop"
+    },
+    {
+      "type": "select",
+      "id": "layout_desktop",
+      "label": "Product grid layout",
+      "options": [
+        {
+          "value": "grid",
+          "label": "Grid"
+        },
+        {
+          "value": "slider",
+          "label": "Slider"
+        }
+      ],
+      "default": "slider"
+    },
+    {
+      "type": "header",
+      "content": "Grid",
+      "info": "Applies only when product grid layout is set to Grid"
+    },
+    {
+      "type": "range",
+      "id": "grid",
+      "label": "Products per row",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "rows",
+      "label": "Number of rows",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 3
     },
     {
       "type": "header",
@@ -190,7 +264,8 @@
   ],
   "presets": [
     {
-      "name": "Recently viewed products"
+      "name": "Recently viewed products",
+      "category": "Products"
     }
   ],
   "disabled_on": {

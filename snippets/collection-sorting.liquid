@@ -1,32 +1,38 @@
 <!-- /snippets/collection-sorting.liquid -->
 
 {% comment %}
-    Renders a sorting dropdown for a collection
+  Renders a sorting dropdown for a collection
 
-    Accepts:
-    - collection: {Object} current collection
+  Accepts:
+  - collection: {Object} current collection
 
-    Usage:
-    {%- render 'collection-sorting' collection: collection -%}
+  Usage:
+  {%- render 'collection-sorting' collection: collection -%}
 {% endcomment %}
 
 {%- assign sort_options = search.sort_options | default: collection.sort_options -%}
 {%- assign sort_by = search.sort_by | default: collection.sort_by -%}
 {%- assign sort_translation = 'collections.general.sort' | t -%}
-{%- assign currently_selected = sort_options | where: "value", sort_by | first -%}
+{%- assign currently_selected = sort_options | where: 'value', sort_by | first -%}
 {%- assign select_options = '' -%}
 
 <div class="popout--sort">
   <h2 class="visually-hidden" id="sort-heading">
     {{ sort_translation }}
   </h2>
-  <popout-select class="popout{% if currently_selected.name %} is-active{% endif %}" data-sort-enabled="{{ sort_by }}" submit>
-    <button type="button"
+  <popout-select
+    class="popout{% if currently_selected.name %} is-active{% endif %}"
+    data-sort-enabled="{{ sort_by }}"
+    submit
+  >
+    <button
+      type="button"
       class="popout__toggle"
       aria-expanded="false"
       aria-controls="sort-list"
       aria-describedby="sort-heading"
-      data-popout-toggle>
+      data-popout-toggle
+    >
       <span class="popout__toggle__text">{{ sort_translation }}</span>
 
       <span class="popout__toggle__text" data-sort-button-text>{{ currently_selected.name }}</span>
@@ -40,12 +46,16 @@
           {% assign active = true %}
         {%- endif -%}
         <li class="popout-list__item{% if active %} is-active{% endif %}">
-          <a class="popout-list__option"
+          <a
+            class="popout-list__option"
             data-value="{{ option.value }}"
             href="#"
-            {% if active %}aria-current="true"{% endif %}
+            {% if active %}
+              aria-current="true"
+            {% endif %}
             data-popout-option
-            data-sort-link>
+            data-sort-link
+          >
             <span>{{ option.name }}</span>
           </a>
         </li>
@@ -70,21 +80,7 @@
       form="{{ section.id }}-form-filter"
       value="{{ currently_selected.value }}"
       class="js"
-      data-popout-input>
-
-    <noscript>
-      <div class="popout__select__outer">
-        <button type="submit"
-          class="no-js btn btn--primary btn--outline"
-          form="{{ section.id }}-form-filter">{{ sort_translation }}</button>
-
-        <select
-          name="sort_by"
-          form="{{ section.id }}-form-filter"
-          class="no-js popout__toggle">
-          {{ select_options }}
-        </select>
-      </div>
-    </noscript>
+      data-popout-input
+    >
   </popout-select>
 </div>
