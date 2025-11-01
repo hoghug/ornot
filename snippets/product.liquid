@@ -356,11 +356,15 @@
 
               {%- for block in section.blocks -%}
                 {%- liquid
+                  assign padding_top = block.settings.padding_top
                   assign padding_bottom = block.settings.padding_bottom
                   assign bg_accent = block.settings.bg_color
                   assign icon_size = block.settings.icon_size
 
                   capture block_style
+                    if padding_top
+                      echo '--block-padding-top: ' | append: block.settings.padding_top | append: 'px;'
+                    endif
                     if padding_bottom
                       echo '--block-padding-bottom: ' | append: block.settings.padding_bottom | append: 'px;'
                     endif
