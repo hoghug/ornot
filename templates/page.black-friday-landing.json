@@ -1,1 +1,450 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"subheading":"","show_title":true,"heading_font_size":"heading-large","show_content":true,"text_font_size":"body-medium","align_text":"text-left","width":"wrapper--full-padded","color_scheme":"","padding_top":50,"padding_bottom":50,"heading_tag":"automatic"}},"section_custom_code_9eMerq":{"type":"section-custom-code","custom_css":["body {background-color: black !important;}"],"settings":{"code":"<div class=\"klaviyo-form-XivSu6\"><\/div>","width":"wrapper--full","color_scheme":"scheme-3","padding_top":0,"padding_bottom":22}},"section_hero_LLbCVW":{"type":"section-hero","blocks":{"heading_LJ9NW4":{"type":"heading","disabled":true,"settings":{"title":"Image banner","heading_font_size":"heading-x-large","heading_tag":"automatic"}},"text_eyka6D":{"type":"text","disabled":true,"settings":{"text":"<p>Tell your brand's story through images.<\/p>","text_font_size":"body-large"}},"button_QHMxMw":{"type":"button","disabled":true,"settings":{"link_text":"View products","link":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false}}},"block_order":["heading_LJ9NW4","text_eyka6D","button_QHMxMw"],"disabled":true,"settings":{"image_1":"shopify:\/\/shop_images\/black-friday-early-accesshomepage.jpg","link":"","width":"wrapper--full","height":"image-height","flex_align_desktop":"align--middle-center-desktop","content_width":50,"mobile_height":"screen-height-three-quarters--mobile","flex_align_mobile":"align--middle-center-mobile","color_scheme":"","show_text_background":false,"overlay_opacity":0,"show_overlay_text":false,"padding_top":0,"padding_bottom":0,"show_placeholder":true}},"section_custom_content_WzxUi9":{"type":"section-custom-content","blocks":{"image_TMqFfb":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Ornot_Mens_MicroClimateJacket_Azul_03_bbbd6207-11c1-4f82-9a3d-c9a8bf8e3277.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"Shop men's collection","link":"https:\/\/www.ornotbike.com\/collections\/fall-2024-mens?page=1","button_type":"btn--white","button_size":"btn--small","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}},"image_GwV8B9":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Ornot_Womens_MicroClimateJacket_Olive_05_7cd5164b-64ea-49ed-b59f-02f20dfcea93.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"Shop women's collection","link":"https:\/\/www.ornotbike.com\/collections\/fall-2024-womens?_pos=1&_psq=womens%27s+fal&_ss=e&_v=1.0","button_type":"btn--white","button_size":"btn--small","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}}},"block_order":["image_TMqFfb","image_GwV8B9"],"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":false,"color_scheme":"","padding_top":0,"padding_bottom":0}},"section_custom_content_8NweWn":{"type":"section-custom-content","blocks":{"image_hNKLTB":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/mobile-assesories.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"","link":"https:\/\/www.ornotbike.com\/products\/ass-saver-win-wing-kom","button_type":"btn--white","button_size":"btn--small","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}},"image_YdgTAi":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Ornot_Mens_LW_Vest_Golden_07.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"","link":"","button_type":"btn--white","button_size":"btn--small","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}}},"block_order":["image_hNKLTB","image_YdgTAi"],"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":false,"color_scheme":"","padding_top":0,"padding_bottom":0}},"section_custom_content_DyewbH":{"type":"section-custom-content","blocks":{"image_dwpFmA":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/alpha_header_phone1.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"","link":"https:\/\/www.ornotbike.com\/products\/mens-alpha-riding-vest-mars","button_type":"btn--white","button_size":"btn--small","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}},"image_gy3UEN":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/olive.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"","link":"https:\/\/www.ornotbike.com\/products\/handlebar-bag-ultragrid-avacado","button_type":"btn--white","button_size":"btn--small","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}}},"block_order":["image_dwpFmA","image_gy3UEN"],"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":false,"color_scheme":"","padding_top":0,"padding_bottom":0}},"section_custom_content_9HQWNC":{"type":"section-custom-content","blocks":{"image_NgDnfE":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/mens-brown-tights-w-color-edits.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"","link":"https:\/\/www.ornotbike.com\/products\/womens-droptail-thermal-cargo-bib-tight-midnight-plum","button_type":"btn--white","button_size":"btn--small","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}},"image_kW6cUx":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Ornot_Mens_TrailShirt_Stripes_BLK_07.jpg","title":"","heading_font_size":"heading-large","text":"","text_font_size":"body-medium","flex_align":"align--middle-center","show_text_background":false,"bg_color":"","color":"#ffffff","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"link_text":"","link":"https:\/\/www.ornotbike.com\/products\/mens-bamboo-tech-shirt-charcoal-stripes","button_type":"btn--white","button_size":"btn--small","button_style":"btn--solid","show_arrow":false,"heading_tag":"automatic"}}},"block_order":["image_NgDnfE","image_kW6cUx"],"settings":{"borders":false,"gutters":false,"width":"wrapper--full","height":"image-height","mobile_height":"image-height--mobile","reverse_blocks":false,"color_scheme":"","padding_top":0,"padding_bottom":0}}},"order":["main","section_custom_code_9eMerq","section_hero_LLbCVW","section_custom_content_WzxUi9","section_custom_content_8NweWn","section_custom_content_DyewbH","section_custom_content_9HQWNC"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-left",
+        "width": "wrapper--full-padded",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_custom_code_9eMerq": {
+      "type": "section-custom-code",
+      "disabled": true,
+      "custom_css": [
+        "body {background-color: black !important;}"
+      ],
+      "settings": {
+        "code": "<div class=\"klaviyo-form-XivSu6\"></div>",
+        "width": "wrapper--full",
+        "color_scheme": "scheme-3",
+        "padding_top": 0,
+        "padding_bottom": 22
+      }
+    },
+    "section_hero_LLbCVW": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_LJ9NW4": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image banner",
+            "heading_font_size": "heading-x-large",
+            "heading_tag": "automatic"
+          }
+        },
+        "text_eyka6D": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Tell your brand's story through images.</p>",
+            "text_font_size": "body-large"
+          }
+        },
+        "button_QHMxMw": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_LJ9NW4",
+        "text_eyka6D",
+        "button_QHMxMw"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_1": "shopify://shop_images/black-friday-early-accesshomepage.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "scheme-3",
+        "show_text_background": false,
+        "overlay_opacity": 0,
+        "show_overlay_text": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_tab_collections_XErerU": {
+      "type": "section-tab-collections",
+      "blocks": {
+        "collection_aLbhNJ": {
+          "type": "collection",
+          "settings": {
+            "title": "Men's Winter",
+            "featured_collection": "new-winter-release-2025",
+            "show_image": true,
+            "align_with_product_images": false,
+            "image": "shopify://shop_images/shop-mens_dc258cc4-ab38-4fa0-b037-82d8e77144e1.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "",
+            "description": "",
+            "color": "",
+            "link_text": "Mens",
+            "link": "",
+            "button_type": "btn--black",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true
+          }
+        },
+        "collection_PReBbY": {
+          "type": "collection",
+          "settings": {
+            "title": "women's winter",
+            "featured_collection": "everything-womens-ornot",
+            "show_image": true,
+            "align_with_product_images": false,
+            "image": "shopify://shop_images/W_LW_Cargo_tights_5.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "",
+            "description": "",
+            "color": "",
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--white",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_aLbhNJ",
+        "collection_PReBbY"
+      ],
+      "name": "Tab collections",
+      "settings": {
+        "show_product_count": false,
+        "title": "Black Friday",
+        "heading_font_size": "heading-x-large",
+        "text": "<p>25% OFF // 48 HOURS ONLY </p>",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "layout_desktop": "grid",
+        "layout_mobile": "2",
+        "product_limit": 12,
+        "grid": 4,
+        "rows": 3,
+        "color_scheme": "scheme-1",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_custom_content_WzxUi9": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_TMqFfb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_MicroClimateJacket_Azul_03_bbbd6207-11c1-4f82-9a3d-c9a8bf8e3277.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "link_text": "Shop men's collection",
+            "link": "https://www.ornotbike.com/collections/fall-2024-mens?page=1",
+            "button_type": "btn--white",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_GwV8B9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Womens_MicroClimateJacket_Olive_05_7cd5164b-64ea-49ed-b59f-02f20dfcea93.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "link_text": "Shop women's collection",
+            "link": "https://www.ornotbike.com/collections/fall-2024-womens?_pos=1&_psq=womens%27s+fal&_ss=e&_v=1.0",
+            "button_type": "btn--white",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_TMqFfb",
+        "image_GwV8B9"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_8NweWn": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_hNKLTB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mobile-assesories.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "link_text": "",
+            "link": "https://www.ornotbike.com/products/ass-saver-win-wing-kom",
+            "button_type": "btn--white",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_YdgTAi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_LW_Vest_Golden_07.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--white",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_hNKLTB",
+        "image_YdgTAi"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_DyewbH": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_dwpFmA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/alpha_header_phone1.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "link_text": "",
+            "link": "https://www.ornotbike.com/products/mens-alpha-riding-vest-mars",
+            "button_type": "btn--white",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_gy3UEN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/olive.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "link_text": "",
+            "link": "https://www.ornotbike.com/products/handlebar-bag-ultragrid-avacado",
+            "button_type": "btn--white",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_dwpFmA",
+        "image_gy3UEN"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_9HQWNC": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_NgDnfE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mens-brown-tights-w-color-edits.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "link_text": "",
+            "link": "https://www.ornotbike.com/products/womens-droptail-thermal-cargo-bib-tight-midnight-plum",
+            "button_type": "btn--white",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_kW6cUx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_TrailShirt_Stripes_BLK_07.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "link_text": "",
+            "link": "https://www.ornotbike.com/products/mens-bamboo-tech-shirt-charcoal-stripes",
+            "button_type": "btn--white",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_NgDnfE",
+        "image_kW6cUx"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_custom_code_9eMerq",
+    "section_hero_LLbCVW",
+    "section_tab_collections_XErerU",
+    "section_custom_content_WzxUi9",
+    "section_custom_content_8NweWn",
+    "section_custom_content_DyewbH",
+    "section_custom_content_9HQWNC"
+  ]
+}

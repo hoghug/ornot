@@ -299,6 +299,17 @@
         "padding_bottom": 0
       }
     },
+    "section_divider_8NVGBj": {
+      "type": "section-divider",
+      "name": "Divider",
+      "settings": {
+        "show_line": true,
+        "width": "wrapper--full-padded",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_collection_bda3Nf": {
       "type": "section-collection",
       "settings": {
@@ -606,11 +617,12 @@
     "main",
     "section_hero_4jfiPM",
     "section_columns_9FmHhN",
+    "section_divider_tpWdjU",
     "section_collection_4XQkB4",
     "section_divider_wC3VPA",
     "section_custom_content_FHpFEc",
     "section_collection_nKJG8q",
-    "section_divider_tpWdjU",
+    "section_divider_8NVGBj",
     "section_collection_bda3Nf",
     "section_custom_content_WYi9ez",
     "section_custom_content_TGmxaP",
