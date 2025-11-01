@@ -274,9 +274,7 @@
                     data-grid-item
                   {% endif %}
                   {{ block.shopify_attributes }}>
-                  {% if block.settings.button_url != blank and block.settings.button_text == blank %}
-                    <a href="{{ block.settings.button_url | default: '#' }}" aria-label="{{ image.alt | default: title | default: text | strip_html | escape }}">
-                  {% endif %}
+                  
                   <div class="{{ column_inner_class }}"
                     data-aos="hero"
                     data-aos-anchor="{{ animation_anchor }}"
@@ -308,13 +306,18 @@
                         endcapture
                       -%}
 
+                        {% if block.settings.button_url != blank and block.settings.button_text == blank %}
+                          <a href="{{ block.settings.button_url | default: '#' }}" aria-label="{{ image.alt | default: title | default: text | strip_html | escape }}">
+                        {% endif %}
                         {{ column_image }}
+                        {% if block.settings.button_url != blank and block.settings.button_text == blank %}
+                          </a>
+                        {% endif %}
                         {%- if opacity_overlay -%}
                           <div class="image-overlay"></div>
                         {%- endif -%}
 
                     </div>
-
                     <div class="column__content{% if is_image_overlay %} {{ block.settings.alignment }} frame__item{% endif %}">
                       {%- if is_image_overlay -%}
                       <div class="column__content-inner{% if text_underlay %} backdrop--radial{% endif %}">
@@ -355,9 +358,7 @@
                       {%- endif -%}
                     </div>
                   </div>
-                  {% if block.settings.button_url != blank and block.settings.button_text == blank %}
-                  </a>
-                  {% endif %}
+                  
                 </div>
 
               {%- when 'icon' -%}
