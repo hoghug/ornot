@@ -211,6 +211,12 @@
           ]
         },
         {
+          "type": "checkbox",
+          "id": "show_shipping_policy",
+          "label": "Show shipping policy",
+          "default": false
+        },
+        {
           "type": "header",
           "content": "Padding"
         },
@@ -336,7 +342,7 @@
           "type": "select",
           "id": "button_size",
           "label": "Size",
-          "default": "btn--large",
+          "default": "",
           "options": [
             {"label": "Small", "value": "btn--small"},
             {"label": "Medium", "value": ""},
@@ -854,6 +860,16 @@
         {
           "type": "header",
           "content": "Padding"
+        },
+        {
+          "type": "range",
+          "id": "padding_top",
+          "min": 0,
+          "max": 50,
+          "step": 2,
+          "unit": "px",
+          "label": "Top",
+          "default": 16
         },
         {
           "type": "range",
