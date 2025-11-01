@@ -6334,6 +6334,7 @@ toggle-ellipsis {
 .cart__item__selected-options,
 .cart__item__property {
   margin: 2px 0 0;
+  font-size: var(--font-body-x-small);
   line-height: 1.3;
 }
 
@@ -10013,7 +10014,7 @@ body.has-line-design.grid-compact .section-columns .grid--slider .grid-item {
   transition: transform 2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .column__inner:hover .image-wrapper {
-  transform: scale(1.08);
+  /* transform: scale(1.08); */
 }
 
 .column__inner:not(.frame) {
@@ -11603,13 +11604,18 @@ main-search .input-holder {
   text-align: center;
   color: inherit;
   background-color: transparent;
-  border: 1px solid var(--text);
+  border: 1px solid var(--text-a35);
   border-radius: min(var(--RADIUS), 20px);
   transition: color 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), background 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), border 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .radio__fieldset .radio__button label:hover, .radio__fieldset .radio__button label:active, .radio__fieldset .radio__button label:focus {
-  background: var(--text);
-  color: var(--bg);
+  border: 1px solid var(--accent);
+}
+.radio__fieldset .radio__button input:disabled + label,
+.radio__fieldset .radio__button input.sold-out + label,
+.radio__fieldset .radio__button input.unavailable + label {
+  background-color: var(--text-a5);
+  color: var(--text-a35);
 }
 @media (hover: none) and (pointer: coarse) {
   .radio__fieldset .radio__button label:hover {
@@ -11630,8 +11636,7 @@ main-search .input-holder {
   border-color: var(--text-a35);
 }
 .radio__fieldset .radio__button input:checked ~ label {
-  background: var(--text);
-  color: var(--bg);
+  border-color: var(--accent);
 }
 
 .radio__fieldset .radio__buttons {
@@ -12130,6 +12135,8 @@ main-search .input-holder {
   font-style: var(--BTN-FONT-STYLE);
   font-weight: var(--BTN-FONT-WEIGHT);
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: var(--LETTER-SPACING-BODY);
   padding: var(--padding-vertical) 15px;
   width: auto;
   max-width: 100%;
@@ -16093,6 +16100,12 @@ a.review {
     align-items: center;
   }
 }
+.cart__items .cart__item__content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
 @media only screen and (min-width: 750px) and (max-width: 989px) {
   .cart__items .cart__item__content {
     padding-left: var(--inner);
@@ -16551,8 +16564,9 @@ input.cart__acceptance__input {
 /*====== Cart Price ======*/
 .cart__price {
   margin-bottom: 8px;
-  font-size: var(--font-body-x-small);
+  font-size: var(--font-body-small);
   line-height: 1.33;
+  font-weight: var(--FONT-WEIGHT-BODY-BOLD);
 }
 .cart__price ins {
   background: none;
@@ -21703,7 +21717,9 @@ recently-viewed {
 .related__wrapper {
   background: var(--bg);
 }
-
+.related__wrapper .tabs__head li {
+  font-family: var(--FONT-STACK-HEADING);
+}
 .related__products {
   text-align: center;
 }
@@ -22447,12 +22463,11 @@ cart-drawer .select-popout__list {
 }
 .select-popout--quantity .select-popout__toggle {
   width: 100%;
-  border-color: var(--border);
-  padding: 5px 12px;
+  border-color: var(--BTN-PRIMARY-BORDER);
+  font-size: max(0.6875rem, var(--font-body-small));
   line-height: 1.36;
   color: inherit;
 }
-
 predictive-search {
   display: block;
   width: 100%;
