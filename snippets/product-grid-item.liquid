@@ -511,19 +511,17 @@
       elsif product.available == false and sold_badge_text != blank
         render 'product-badge', badge_class: sold_badge_class, badge_text: sold_badge_text, aos_delay: aos_delay, aos_duration: aos_duration, aos_anchor: aos_anchor
       endif
+      
+      if custom_badge_text != blank
+        render 'product-badge', badge_class: custom_badge_class, badge_text: custom_badge_text, aos_delay: aos_delay, aos_duration: aos_duration, aos_anchor: aos_anchor
+      endif
 
-      if product.available
-        if custom_badge_text != blank
-          render 'product-badge', badge_class: custom_badge_class, badge_text: custom_badge_text, aos_delay: aos_delay, aos_duration: aos_duration, aos_anchor: aos_anchor
-        endif
+      if new_badge_text != blank and preorder == false
+        render 'product-badge', badge_class: new_badge_class, badge_text: new_badge_text, aos_delay: aos_delay, aos_duration: aos_duration, aos_anchor: aos_anchor
+      endif
 
-        if new_badge_text != blank and preorder == false
-          render 'product-badge', badge_class: new_badge_class, badge_text: new_badge_text, aos_delay: aos_delay, aos_duration: aos_duration, aos_anchor: aos_anchor
-        endif
-
-        if sale_badge_text != blank
-          render 'product-badge', badge_class: sale_badge_class, badge_text: sale_badge_text, aos_delay: aos_delay, aos_duration: aos_duration, aos_anchor: aos_anchor
-        endif
+      if sale_badge_text != blank
+        render 'product-badge', badge_class: sale_badge_class, badge_text: sale_badge_text, aos_delay: aos_delay, aos_duration: aos_duration, aos_anchor: aos_anchor
       endif
     -%}
   </div>
@@ -757,6 +755,8 @@
               {%- render 'product-grid-price', product: product, current_variant: current_variant -%}
             </div>
           </div>
+
+          {% render 'junip-product-summary', product: product %}
         </a>
 
         {%- if siblings_html != blank -%}
