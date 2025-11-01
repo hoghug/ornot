@@ -1,13 +1,13 @@
+{% comment %} disabled for now {% endcomment %}
+{% if false %}
 <script>
-window.AMP_FLAGS = {
-  cartDisabled: true
-};
-/*document.addEventListener(
+document.addEventListener(
 "click",
 function (event) {
-event.preventDefault();
+event.stopImmediatePropagation(event);
 const button = event.target.closest("form[action='/cart/add'] button.btn--primary, form[action='/cart/add'] button.btn--primary *");
 if (button) {
+    console.log("clicked")
     try {
         setTimeout(function () {
         window.AMP_API.OPEN_CART()
@@ -19,5 +19,26 @@ if (button) {
 }
 },
 false
-);*/
+);
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  window.AMP_CART_UPDATED = function (cart) {
+    const cartLinkBubbleNum = document.querySelectorAll(".navlink--cart--icon .header__cart__status")[1];
+    if (cartLinkBubbleNum) {
+      cartLinkBubbleNum.innerText = cart.item_count;
+    }
+
+    setTimeout(()=>{
+        if (cart.item_count > 0) {
+        console.log("total count pass", cart.item_count)
+        cartLinkBubbleNum.style.display = "block !important";
+        } else {
+        console.log("total count", cart.item_count)
+        cartLinkBubbleNum.style.display = 'inline-flex';
+        cartLinkBubbleNum.style.justifyContent = 'center';
+        }
+    },500)
+  }
+});
 </script>
+{% endif %}

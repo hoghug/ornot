@@ -21,6 +21,7 @@
     data-animations="{{ settings.animations_enable }}"
   >
     {%- render 'loading' -%}
+    {% render 'amp-upsells' %}
 
     <a class="in-page-link visually-hidden skip-link" data-skip-content href="#MainContent">
       {{- 'general.accessibility.skip_to_content' | t -}}
