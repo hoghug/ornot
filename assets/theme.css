@@ -7960,7 +7960,7 @@ html.supports-touch ticker-bar[data-slide]:not([paused]) .ticker--animated {
 }
 .drawer--header .drawer__head {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   border: 0;
 }
 .drawer--header .drawer__close {
