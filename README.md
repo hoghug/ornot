@@ -1,0 +1,1 @@
+shopify theme dev --store=testornot --theme=chris-amp-v8
