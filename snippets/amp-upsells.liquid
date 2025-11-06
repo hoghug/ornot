@@ -1,6 +1,6 @@
 <script>
 
-const updateTickerBarFreeShippingThreshold = (cart) => {
+const updateTickerBarFreeShippingMessage = (cart) => {
   const tickerBar = document.querySelector('ticker-bar');
   if (!tickerBar) return;
 
@@ -65,7 +65,7 @@ window.AMP_CART_UPDATED = function(cart) {
     cartCountEl.style.display = 'none';
   }
 
-  updateTickerBarFreeShippingThreshold(cart);
+  updateTickerBarFreeShippingMessage(cart);
   
 };
 </script>
