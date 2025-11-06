@@ -4,6 +4,8 @@
 - theme.liquid
 - font links + custom CSS files
 
+### Third Part Scripts (Gorgias, Klaviyo, etc...)
+- theme.liquid before </body> added - 'footer-scripts'
 
 ### Multicolumn
 - snippets/multicolumn.liquid
