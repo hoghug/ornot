@@ -1,4 +1,36 @@
 <script>
+
+const updateTickerBarFreeShippingThreshold = (cart) => {
+  const tickerBar = document.querySelector('ticker-bar');
+  if (!tickerBar) return;
+
+  const freeShippingEle = tickerBar.querySelector('.free-shipping');
+  if (!freeShippingEle) return;
+
+  const freeShippingLimit = parseInt(freeShippingEle.dataset.freeShippingLimit)
+  const leftToSpendMessage = freeShippingEle.querySelector('[data-left-to-spend]');
+
+  
+  if (freeShippingEle.dataset.freeShipping === 'true') {
+    if (!cart || !cart.total_price) {
+      freeShippingEle.classList.remove('is-success');
+      leftToSpendMessage.innerText = `$${freeShippingLimit}`;
+      return;
+    }
+    
+    const subtotal = cart.total_price / 100;
+    const leftToSpend = Math.min(freeShippingLimit - subtotal, freeShippingLimit);
+    
+    if (leftToSpend <= 0) {
+      freeShippingEle.classList.add('is-success');
+    } else {
+      freeShippingEle.classList.remove('is-success');
+      leftToSpendMessage.innerText = `$${leftToSpend.toFixed(2).replace('.00', '')}`;
+    }
+  }
+  
+};
+  
 document.addEventListener("click", function (event) {
     event.stopImmediatePropagation(event);
     const button = event.target.closest("form[action='/cart/add'] button.btn--primary, form[action='/cart/add'] button.btn--primary *");
@@ -32,5 +64,8 @@ window.AMP_CART_UPDATED = function(cart) {
   } else {
     cartCountEl.style.display = 'none';
   }
+
+  updateTickerBarFreeShippingThreshold(cart);
+  
 };
 </script>
