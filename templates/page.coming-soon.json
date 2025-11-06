@@ -18,7 +18,8 @@
           "settings": {
             "title": "Business As Usual. ORNOT",
             "heading_font_size": "heading-x-large",
-            "heading_tag": "automatic"
+            "heading_tag": "automatic",
+            "padding_bottom": 8
           }
         },
         "text_GKEXzd": {
@@ -26,7 +27,8 @@
           "disabled": true,
           "settings": {
             "text": "<p><strong>MADE IN THE USA FROM  DEADSTOCK FABRIC  //'DED,STAK//</strong></p>",
-            "text_font_size": "body-large"
+            "text_font_size": "body-large",
+            "padding_bottom": 8
           }
         },
         "button_7zPFTX": {
@@ -38,7 +40,9 @@
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
-            "show_arrow": false
+            "show_arrow": false,
+            "full_width": false,
+            "padding_bottom": 8
           }
         }
       },
@@ -59,8 +63,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "scheme-2",
         "show_text_background": false,
-        "overlay_opacity": 0,
-        "show_overlay_text": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -168,6 +171,7 @@
       "settings": {
         "subheading": "",
         "heading": "MADE IN THE USA FROM  DEADSTOCK FABRIC",
+        "image_border_radius": 20,
         "width": "wrapper",
         "text_font_size_px_desktop": 40,
         "text_align_desktop": "text-left",
@@ -281,8 +285,7 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "scheme-1",
-        "overlay_opacity": 0,
-        "show_overlay_text": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 56
       }
@@ -315,7 +318,7 @@
         "image_EARKyB": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/soon_zissou_merino.jpg",
+            "image": "shopify://shop_images/mens_merino_zissou_9.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -324,9 +327,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "",
-            "overlay_opacity": 0,
-            "overlay_color": "",
-            "show_overlay_text": false,
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -345,8 +346,8 @@
         "borders": false,
         "gutters": false,
         "width": "wrapper--full",
-        "height": "four-fifty-height-hero",
-        "mobile_height": "screen-height-one-half--mobile",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
         "reverse_blocks": true,
         "color_scheme": "",
         "padding_top": 0,
@@ -359,7 +360,7 @@
         "image_rDfE8k": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ornot_Cargo_Thermal_Bib_Tights_Black_08copy.jpg",
+            "image": "shopify://shop_images/MENS-LW-cargo-tights-brown-4.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -368,9 +369,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "",
-            "overlay_opacity": 0,
-            "overlay_color": "",
-            "show_overlay_text": false,
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -411,8 +410,8 @@
         "borders": false,
         "gutters": false,
         "width": "wrapper--full",
-        "height": "four-fifty-height-hero",
-        "mobile_height": "screen-height-one-half--mobile",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
         "reverse_blocks": false,
         "color_scheme": "",
         "padding_top": 0,
@@ -456,9 +455,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "",
-            "overlay_opacity": 0,
-            "overlay_color": "",
-            "show_overlay_text": false,
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -477,8 +474,8 @@
         "borders": false,
         "gutters": false,
         "width": "wrapper--full",
-        "height": "four-fifty-height-hero",
-        "mobile_height": "screen-height-one-half--mobile",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
         "reverse_blocks": true,
         "color_scheme": "",
         "padding_top": 0,
@@ -500,9 +497,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "",
-            "overlay_opacity": 0,
-            "overlay_color": "",
-            "show_overlay_text": false,
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -588,13 +583,13 @@
         "text_ggdm79": {
           "type": "text",
           "settings": {
-            "subheading": "Arriving early nov",
+            "subheading": "Made is usa - wasabi is here!",
             "title": "grid hoodies",
             "heading_font_size": "heading-medium",
-            "text": "<p>Midweight grid hoodies made using deadstock Polartec Power Dry. These have an updated pattern and are the perfect midlayer for any activity. Don't miss the hidden rear pocket. Limited availability, available mid-October. </p>",
+            "text": "<p>Midweight grid hoodies made using deadstock Polartec Power Dry. These have an updated pattern and are the perfect midlayer for any activity. Don't miss the hidden rear pocket. Limited availability.</p>",
             "text_font_size": "body-medium",
-            "button_text": "",
-            "button_url": "",
+            "button_text": "Shop Wasabi",
+            "button_url": "shopify://products/mens-bodega-hooded-pullover-olive",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -610,7 +605,7 @@
         "image_rcEibn": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/soon_grid_hood.jpg",
+            "image": "shopify://shop_images/wasabi-Bodega-hoodie-5.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -619,9 +614,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "",
-            "overlay_opacity": 0,
-            "overlay_color": "",
-            "show_overlay_text": false,
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -641,8 +634,8 @@
         "borders": false,
         "gutters": false,
         "width": "wrapper--full",
-        "height": "four-fifty-height-hero",
-        "mobile_height": "screen-height-one-half--mobile",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
         "reverse_blocks": true,
         "color_scheme": "",
         "padding_top": 0,
@@ -655,7 +648,7 @@
         "image_JycfgN": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/soon_waffle.jpg",
+            "image": "shopify://shop_images/waffel-grid-teaser.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -664,9 +657,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "",
-            "overlay_opacity": 0,
-            "overlay_color": "",
-            "show_overlay_text": false,
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -679,7 +670,7 @@
         "text_AUF8Wx": {
           "type": "text",
           "settings": {
-            "subheading": "arriving november",
+            "subheading": "arriving november 20th",
             "title": "WAFFLE THERMAL",
             "heading_font_size": "heading-medium",
             "text": "<p>An updated thermal jersey with an extremely soft interior, super stretchy and made with eveyrthing you would expect including 3 rear pockes and a secure zipper pocket. </p>",
@@ -708,8 +699,8 @@
         "borders": false,
         "gutters": false,
         "width": "wrapper--full",
-        "height": "four-fifty-height-hero",
-        "mobile_height": "screen-height-one-half--mobile",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
         "reverse_blocks": false,
         "color_scheme": "",
         "padding_top": 0,
@@ -722,7 +713,7 @@
         "text_pqmjpJ": {
           "type": "text",
           "settings": {
-            "subheading": "arriving november",
+            "subheading": "Made is usa -arriving november",
             "title": "micro grid long sleeve",
             "heading_font_size": "heading-medium",
             "text": "<p>Our Micro Grid Jersey comes with a secret; it boasts the same fabric weight as a lightweight summer jersey, and its fine grid structure allows excellent airflow to keep you cool in the heat. However, when paired with a layer, the Polartec® Power Grid® fabric traps heat, keeping you warm. Made in the USA.</p>",
@@ -744,7 +735,7 @@
         "image_MAkyLd": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ornot_Womens_LS_MicroGrid_nightshady.jpg",
+            "image": "shopify://shop_images/W-MG-LS-Nightshady-1_34840b9e-92bb-4fbb-a983-181127d29a58.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -753,9 +744,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "",
-            "overlay_opacity": 0,
-            "overlay_color": "",
-            "show_overlay_text": false,
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -775,7 +764,7 @@
         "borders": false,
         "gutters": false,
         "width": "wrapper--full",
-        "height": "four-fifty-height-hero",
+        "height": "image-height",
         "mobile_height": "screen-height-one-half--mobile",
         "reverse_blocks": true,
         "color_scheme": "",
@@ -798,9 +787,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "",
-            "overlay_opacity": 0,
-            "overlay_color": "",
-            "show_overlay_text": false,
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -813,7 +800,7 @@
         "text_GQfXDz": {
           "type": "text",
           "settings": {
-            "subheading": "arriving November",
+            "subheading": "Made is usa - arriving November",
             "title": "Alpha Riding Vest",
             "heading_font_size": "heading-medium",
             "text": "<p>\"Like a warm hug\", this vest is built around Polartec® Alpha® Direct insulation, wrapping you all the way around with warmth while wicking moisture—even during intense efforts. The front panel features a wind-blocking, recycled stretch-woven fabric to shield you from the elements without compromising breathability. Made in the USA.</p>",
@@ -842,8 +829,8 @@
         "borders": false,
         "gutters": false,
         "width": "wrapper--full",
-        "height": "four-fifty-height-hero",
-        "mobile_height": "screen-height-one-half--mobile",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
         "reverse_blocks": false,
         "color_scheme": "",
         "padding_top": 0,
@@ -876,9 +863,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "",
-            "overlay_opacity": 0,
-            "overlay_color": "",
-            "show_overlay_text": false,
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -898,10 +883,10 @@
             "text_font_size": "body-medium",
             "text_columns": 1,
             "align_text": "text-center",
-            "show_name": true,
             "button_text": "notify me",
             "show_arrow": true,
             "terms": false,
+            "show_name": true,
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -934,6 +919,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Ornot_Lightweight_Base_Layer_DarkOlive_07.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "Delta",
             "heading_font_size": "heading-small",
@@ -954,6 +940,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Ornot_BaseLayer_Merino_Gravel_04.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "Power Wool",
             "heading_font_size": "heading-small",
@@ -974,6 +961,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Ornot_Mens_Micro_Grid_Olive_07_7b3432cb-2ff6-47c2-8f3d-73975acb0b79.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "Power Grid",
             "heading_font_size": "heading-small",
@@ -995,6 +983,7 @@
           "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Ornot_BaseLayer_Merino_Gravel_04.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "Power Grid Fleece",
             "heading_font_size": "heading-small",
@@ -1015,6 +1004,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Ornot_Lightweight_Base_Layer_DarkOlive_07_d42759aa-0645-4c2f-b0ad-090ebe8b4b11.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "Power Dry",
             "heading_font_size": "heading-small",
@@ -1035,6 +1025,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/MensquiltedpulloverWhite_6.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "Power Air",
             "heading_font_size": "heading-small",
@@ -1055,6 +1046,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Ornot_Mens_MagicShell_Jacket_Mars_09.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "Power Shield Pro",
             "heading_font_size": "heading-small",
@@ -1075,6 +1067,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Ornot_Watchman_Cap_08.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "Thermal Pro",
             "heading_font_size": "heading-small",
@@ -1095,6 +1088,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Ornot_Womens_AlphaRiding_Orange_08.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "ALPHA",
             "heading_font_size": "heading-small",

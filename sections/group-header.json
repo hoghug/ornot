@@ -16,7 +16,6 @@
       "blocks": {
         "message_R9RT6x": {
           "type": "message",
-          "disabled": true,
           "settings": {
             "show_wheel": false,
             "message": "YOU'RE  ||amount|| AWAY FROM FREE USA SHIPPING",
@@ -30,6 +29,7 @@
         },
         "text_aNKTYF": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Having trouble checking out? We’re fixing it ASAP. Thanks for your patience!</p>",
             "target_url_enabled": false,
@@ -103,6 +103,7 @@
             "show_social_links": true,
             "show_gift_card": true,
             "show_locale_selector": true,
+            "show_locale_code": false,
             "show_globe_icon": true,
             "show_country_selector": true,
             "show_country_name": false,
@@ -137,12 +138,14 @@
         "logo_max_limit": 175,
         "logo_max_limit_mobile": 120,
         "main_menu_linklist": "new-menu",
+        "enable_call_to_action": false,
         "button_text": "",
         "button_link": "",
         "button_type": "btn--primary",
         "show_social_icons": false,
         "secondary_menu_linklist": "",
         "show_locale_selector": false,
+        "show_locale_code": false,
         "show_globe_icon": false,
         "show_country_selector": false,
         "show_country_name": false,

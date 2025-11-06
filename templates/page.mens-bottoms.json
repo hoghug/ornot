@@ -40,68 +40,10 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
-      }
-    },
-    "section_rich_text_dgpcbP": {
-      "type": "section-rich-text",
-      "blocks": {
-        "heading_QjAAAD": {
-          "type": "heading",
-          "settings": {
-            "title": "WORK BIB SHORTS",
-            "heading_font_size": "heading-medium",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_XEJBYK": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our work bib shorts are designed with recycled bluesign®-approved fabric, and a 'Goldilocks' chamois pad. The blend of value and performance makes these bibs the perfect weekday workhorse so you can get straight to it. A single cargo pocket on the right leg lets you bring all your snacks, Ornot.</p>",
-            "text_font_size": "body-large",
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_QjAAAD",
-        "text_XEJBYK"
-      ],
-      "settings": {
-        "align_text": "text-left",
-        "width": "wrapper",
-        "color_scheme": "",
-        "padding_top": 50,
-        "padding_bottom": 40
-      }
-    },
-    "section_collection_n7jT6i": {
-      "type": "section-collection",
-      "settings": {
-        "featured_collection": "mens-work-bib-short",
-        "heading": "",
-        "heading_font_size": "heading-medium",
-        "description": "",
-        "text_font_size": "body-medium",
-        "layout": "inline",
-        "link_text": "",
-        "link_url": "",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "layout_desktop": "grid",
-        "grid": 2,
-        "rows": 4,
-        "width": "wrapper--full-padded",
-        "layout_mobile": "2",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "heading_tag": "automatic"
       }
     },
     "section_rich_text_VxWf4z": {
@@ -134,8 +76,69 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 50,
         "padding_bottom": 50
+      }
+    },
+    "section_rich_text_dgpcbP": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_QjAAAD": {
+          "type": "heading",
+          "settings": {
+            "title": "WORK BIB SHORTS",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_XEJBYK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our work bib shorts are designed with recycled bluesign®-approved fabric, and a 'Goldilocks' chamois pad. The blend of value and performance makes these bibs the perfect weekday workhorse so you can get straight to it. A single cargo pocket on the right leg lets you bring all your snacks, Ornot.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_QjAAAD",
+        "text_XEJBYK"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 50,
+        "padding_bottom": 40
+      }
+    },
+    "section_collection_n7jT6i": {
+      "type": "section-collection",
+      "settings": {
+        "featured_collection": "mens-work-bib-short",
+        "heading": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 2,
+        "rows": 4,
+        "width": "wrapper--full-padded",
+        "layout_mobile": "2",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
       }
     },
     "section_collection_fmGhdA": {
@@ -193,6 +196,7 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 50,
         "padding_bottom": 40
       }
@@ -253,6 +257,7 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 50,
         "padding_bottom": 40
       }
@@ -281,6 +286,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "shopify://products/mens-bib-short-no-pocket-black",
             "button_type": "btn--primary",
@@ -338,6 +344,7 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 50,
         "padding_bottom": 40
       }
@@ -424,6 +431,7 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 50,
         "padding_bottom": 40
       }
@@ -458,12 +466,12 @@
   "order": [
     "main",
     "section_hero_Ay6Tni",
-    "section_rich_text_dgpcbP",
-    "section_collection_n7jT6i",
     "section_rich_text_VxWf4z",
     "section_collection_fmGhdA",
     "section_rich_text_3Bi7jQ",
     "section_collection_M4Upt9",
+    "section_rich_text_dgpcbP",
+    "section_collection_n7jT6i",
     "section_rich_text_3xqzL8",
     "section_custom_content_C8w7Ch",
     "section_rich_text_e7DJyb",

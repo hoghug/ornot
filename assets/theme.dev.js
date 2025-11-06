@@ -1859,12 +1859,16 @@
                 );
               }
               if (theme.settings.cartType === 'page') {
-                window.location = theme.routes.cart_url;
+                button.classList.remove(classes$i.loading);
+                button.disabled = false; 
+                if (!AMP_API) window.location = theme.routes.cart_url;
               }
               this.getCart();
             } else {
               // Redirect to cart page if "Add to cart" is successful
-              window.location = theme.routes.cart_url;
+              button.classList.remove(classes$i.loading);
+              button.disabled = false; 
+              if (!AMP_API) window.location = theme.routes.cart_url;
             }
           })
           .catch((error) => {

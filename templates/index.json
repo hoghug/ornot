@@ -34,6 +34,7 @@
         "color_scheme": "scheme-1",
         "show_text_background": false,
         "color": "#ffffff",
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "heading_tag": "automatic"
@@ -54,6 +55,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "",
+            "overlay_type": "disabled",
             "link_text": "shop us-made",
             "link": "shopify://products/mens-house-jersey-fog",
             "button_type": "btn--primary",
@@ -75,6 +77,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "shop womens",
             "link": "shopify://products/womens-house-jersey-nightshady",
             "button_type": "btn--primary",
@@ -133,20 +136,21 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#000000",
+            "overlay_type": "disabled",
             "heading_tag": "automatic"
           }
         },
         "image_PwmxBT": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/coming-soon-sliver_d7f1a1ca-7e06-4201-a014-097a4cfae262.jpg",
+            "image": "shopify://shop_images/web-header-mens-header-1_c30b529d-bfa0-4fbc-acc4-1d1ee4bdc95a.jpg",
             "image_link": "",
-            "title": "Coming Soon",
+            "title": "New!  Bodega hoodie",
             "heading_font_size": "heading-medium",
-            "description": "Sign up for early access",
+            "description": "Made in USA",
             "text_font_size": "body-large",
-            "first_button_text": "Check it out",
-            "first_button_link": "shopify://pages/coming-soon",
+            "first_button_text": "SHop Wasabi",
+            "first_button_link": "shopify://products/mens-bodega-hooded-pullover-olive",
             "first_button_type": "btn--primary",
             "first_button_size": "btn--small",
             "first_button_style": "btn--solid",
@@ -163,6 +167,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#000000",
+            "overlay_type": "disabled",
             "heading_tag": "automatic"
           }
         },
@@ -194,6 +199,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#000000",
+            "overlay_type": "disabled",
             "heading_tag": "automatic"
           }
         },
@@ -225,6 +231,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "heading_tag": "automatic"
           }
         },
@@ -256,6 +263,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#000000",
+            "overlay_type": "disabled",
             "heading_tag": "automatic"
           }
         },
@@ -287,6 +295,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "",
+            "overlay_type": "disabled",
             "heading_tag": "automatic"
           }
         },
@@ -318,6 +327,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "heading_tag": "automatic"
           }
         },
@@ -349,6 +359,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "",
+            "overlay_type": "disabled",
             "heading_tag": "automatic"
           }
         },
@@ -380,6 +391,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#212121",
+            "overlay_type": "disabled",
             "heading_tag": "automatic"
           }
         },
@@ -411,6 +423,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "",
+            "overlay_type": "disabled",
             "heading_tag": "automatic"
           }
         },
@@ -440,6 +453,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "",
+            "overlay_type": "disabled",
             "heading_tag": "automatic"
           }
         },
@@ -471,6 +485,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "heading_tag": "automatic"
           }
         }
@@ -518,6 +533,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "",
+            "overlay_type": "disabled",
             "link_text": "View Cargo Bibs",
             "link": "shopify://collections/cargo-bib-shorts",
             "button_type": "btn--white",
@@ -539,6 +555,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "",
+            "overlay_type": "disabled",
             "link_text": "Shop Shorts",
             "link": "https://www.ornotbike.com/collections/shorts-and-pants",
             "button_type": "btn--white",
@@ -654,6 +671,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -744,6 +762,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Ornot_HandlebarBag_Mini_Avocado_UltraGrid_06.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "BAGS for your bike",
             "heading_font_size": "heading-x-small",
@@ -764,6 +783,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Azul-thermal-jersey-mens-7.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "Made in USA",
             "heading_font_size": "heading-x-small",
@@ -784,6 +804,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Ornot_Mens_Micro_Grid_Olive_09_c4860cd3-53eb-4f9d-98d6-11ad0346da36.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "Deadstock + Recycled Materials",
             "heading_font_size": "heading-x-small",
@@ -831,7 +852,8 @@
           "settings": {
             "title": "COming soon",
             "heading_font_size": "heading-medium",
-            "heading_tag": "automatic"
+            "heading_tag": "automatic",
+            "padding_bottom": 8
           }
         },
         "text_9GttDQ": {
@@ -839,7 +861,8 @@
           "disabled": true,
           "settings": {
             "text": "<p>Tell your brand's story through images.</p>",
-            "text_font_size": "body-large"
+            "text_font_size": "body-large",
+            "padding_bottom": 8
           }
         },
         "button_qp8hL7": {
@@ -847,10 +870,12 @@
           "settings": {
             "link_text": "check it out",
             "link": "shopify://pages/coming-soon",
-            "button_type": "btn--white",
+            "button_type": "btn--black",
             "button_size": "btn--small",
             "button_style": "btn--solid",
-            "show_arrow": false
+            "show_arrow": false,
+            "full_width": false,
+            "padding_bottom": 8
           }
         }
       },
@@ -859,20 +884,20 @@
         "text_9GttDQ",
         "button_qp8hL7"
       ],
-      "disabled": true,
       "name": "Image banner",
       "settings": {
-        "image_1": "shopify://shop_images/coming-soon-sliver.jpg",
+        "image_1": "shopify://shop_images/fall-coming-soon.jpg",
         "link": "shopify://pages/coming-soon",
         "width": "wrapper--full",
         "height": "image-height",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
-        "mobile_image": "shopify://shop_images/coming-soon-1x1_9c7929d8-a96e-48ba-a5b6-8785076d8a4d.jpg",
+        "mobile_image": "shopify://shop_images/merino-grid-1x1.jpg",
         "mobile_height": "image-height--mobile",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "color_scheme": "scheme-10",
+        "flex_align_mobile": "align--bottom-center-mobile",
+        "color_scheme": "scheme-1",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -886,7 +911,8 @@
           "settings": {
             "title": "Wear it on your bike",
             "heading_font_size": "heading-small",
-            "heading_tag": "automatic"
+            "heading_tag": "automatic",
+            "padding_bottom": 8
           }
         },
         "text_LwAfam": {
@@ -894,7 +920,8 @@
           "disabled": true,
           "settings": {
             "text": "<p>Tell your brand's story through images.</p>",
-            "text_font_size": "body-large"
+            "text_font_size": "body-large",
+            "padding_bottom": 8
           }
         },
         "button_Wd7B8g": {
@@ -905,7 +932,9 @@
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
-            "show_arrow": false
+            "show_arrow": false,
+            "full_width": false,
+            "padding_bottom": 8
           }
         }
       },
@@ -914,6 +943,7 @@
         "text_LwAfam",
         "button_Wd7B8g"
       ],
+      "disabled": true,
       "name": "Image banner",
       "settings": {
         "image_1": "shopify://shop_images/mc-jacket-sliver.jpg",
@@ -927,6 +957,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "scheme-2",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -935,10 +966,32 @@
     "section_columns_MmC8NU": {
       "type": "section-columns",
       "blocks": {
+        "image_t6AVtW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20251024_OrNot_0921_v2.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Micro Climate Jacket",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Lightweight and packable to block wind and shed light rain. Available in <a href=\"/products/micro-climate-jacket-stone-blue\" target=\"_blank\" title=\"Men's Micro Climate Jacket - Stone Blue\">Men's</a> & <a href=\"/products/womens-micro-climate-jacket-stone-blue\" target=\"_blank\" title=\"Women's Micro Climate Jacket - Stone Blue\">Women's</a></p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_url": "https://www.ornotbike.com/collections/micro-climate-outerwear?srsltid=AfmBOortogh3i2m9taNmq40ew-aeCRCKkR_3TYf1IDxYAKWRdIQ3vKfU",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
         "image_LCNyAz": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Side_view_of_Ornot_Men_s_Cargo_Bib_Shorts_in_black.jpg",
+            "image": "shopify://shop_images/mens-olive-cargo-bib.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "Cargo Bib",
             "heading_font_size": "heading-x-small",
@@ -958,11 +1011,12 @@
         "image_HyJgNj": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ornot_Womens_LongSleeve_ParkJersey_Fog_09.jpg",
+            "image": "shopify://shop_images/Ornot_Mens_MissionPants_Black_Update_02.jpg",
+            "image_width": 100,
             "image_shape": "normal",
-            "title": "Park Jersey",
+            "title": "Mission Pant",
             "heading_font_size": "heading-x-small",
-            "text": "<p>Performance fit with ultra-soft recycled fabric and UPF 30. Available in <a href=\"/products/mens-long-sleeve-park-jersey-fog-long\" target=\"_blank\" title=\"Men's Long Sleeve Park Jersey - Fog\">Men's</a> & <a href=\"/products/womens-long-sleeve-park-jersey-fog-long\" target=\"_blank\" title=\"Women's Long Sleeve Park Jersey - Fog\">Women's</a></p>",
+            "text": "<p>Made in the USA - <a href=\"/products/mens-lightweight-mission-pants-fog\" target=\"_blank\" title=\"Men's Lightweight Mission Pants - Fog\">Lightweight</a> & <a href=\"/products/mission-pants-coffee\" target=\"_blank\" title=\"Men's Mission Pants - Coffee\">Regular Weight </a></p>",
             "text_font_size": "body-small",
             "button_text": "",
             "button_url": "https://www.ornotbike.com/collections/park-jerseys-all",
@@ -974,32 +1028,12 @@
             "mobile_image_aspect_ratio": 1,
             "heading_tag": "automatic"
           }
-        },
-        "image_t6AVtW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_MicroClimate_StoneBlue_02_zip_fix.jpg",
-            "image_shape": "normal",
-            "title": "Micro Climate Jacket",
-            "heading_font_size": "heading-x-small",
-            "text": "<p>Lightweight and packable to block wind and shed light rain. Available in <a href=\"/products/micro-climate-jacket-stone-blue\" target=\"_blank\" title=\"Men's Micro Climate Jacket - Stone Blue\">Men's</a> & <a href=\"/products/womens-micro-climate-jacket-stone-blue\" target=\"_blank\" title=\"Women's Micro Climate Jacket - Stone Blue\">Women's</a></p>",
-            "text_font_size": "body-small",
-            "button_text": "",
-            "button_url": "https://www.ornotbike.com/collections/micro-climate-outerwear?srsltid=AfmBOortogh3i2m9taNmq40ew-aeCRCKkR_3TYf1IDxYAKWRdIQ3vKfU",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
         }
       },
       "block_order": [
+        "image_t6AVtW",
         "image_LCNyAz",
-        "image_HyJgNj",
-        "image_t6AVtW"
+        "image_HyJgNj"
       ],
       "name": "Text columns with images",
       "settings": {
@@ -1026,7 +1060,8 @@
           "settings": {
             "title": "Wear it on your bike, ornot",
             "heading_font_size": "heading-small",
-            "heading_tag": "automatic"
+            "heading_tag": "automatic",
+            "padding_bottom": 8
           }
         },
         "text_aUgA4J": {
@@ -1034,7 +1069,8 @@
           "disabled": true,
           "settings": {
             "text": "<p>Tell your brand's story through images.</p>",
-            "text_font_size": "body-large"
+            "text_font_size": "body-large",
+            "padding_bottom": 8
           }
         },
         "button_Xwqd9H": {
@@ -1045,7 +1081,9 @@
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
-            "show_arrow": false
+            "show_arrow": false,
+            "full_width": false,
+            "padding_bottom": 8
           }
         }
       },
@@ -1054,6 +1092,7 @@
         "text_aUgA4J",
         "button_Xwqd9H"
       ],
+      "disabled": true,
       "name": "Image banner",
       "settings": {
         "image_1": "shopify://shop_images/wear-it-on-your-bike-ornot_87faca5c-e31a-4a3a-bbfd-3b0eb61a2f2a.jpg",
@@ -1067,6 +1106,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "scheme-2",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -1079,6 +1119,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Ornot_Mens_MissionPant_Navy_6.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "Mission Pant",
             "heading_font_size": "heading-x-small",
@@ -1099,6 +1140,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Ornot_LW_Mission_Shorts_Olive_06.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "Mission Short",
             "heading_font_size": "heading-x-small",
@@ -1119,6 +1161,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Ornot_Mens_MerinoGridPullover_Charcoal_01.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "GRAVEL SWEATER",
             "heading_font_size": "heading-x-small",
@@ -1141,6 +1184,7 @@
         "image_andfBj",
         "image_EQh7xH"
       ],
+      "disabled": true,
       "name": "Text columns with images",
       "settings": {
         "title": "",
@@ -1173,6 +1217,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "",
+            "overlay_type": "disabled",
             "link_text": "View hoodies",
             "link": "shopify://products/mens-uv-hooded-trail-shirt-olive",
             "button_type": "btn--white",
@@ -1194,6 +1239,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "",
+            "overlay_type": "disabled",
             "link_text": "Shop BAGS",
             "link": "https://www.ornotbike.com/pages/handlebar-bags",
             "button_type": "btn--white",
@@ -1232,6 +1278,7 @@
             "featured_collection": "",
             "show_image": true,
             "align_with_product_images": false,
+            "overlay_type": "disabled",
             "description": "",
             "color": "",
             "link_text": "View products",
@@ -1250,6 +1297,7 @@
             "show_image": true,
             "align_with_product_images": false,
             "image": "shopify://shop_images/uv-hoodie_6d59d672-c914-410c-b6ec-a947068026f7.jpg",
+            "overlay_type": "disabled",
             "description": "",
             "color": "#ffffff",
             "link_text": "FEATURED",
@@ -1353,6 +1401,7 @@
         "heading_font_size": "heading-large",
         "show_dots": false,
         "products_per_row": "2",
+        "enable_slider": false,
         "button_type": "btn--primary",
         "button_size": "",
         "button_style": "btn--solid",
@@ -1404,6 +1453,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -1550,6 +1600,7 @@
             "text": "",
             "text_font_size": "body-medium",
             "flex_align": "align--middle-center",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -1641,6 +1692,33 @@
         "padding_bottom": 32,
         "heading_tag": "automatic"
       }
+    },
+    "section_collection_CDnGCr": {
+      "type": "section-collection",
+      "name": "Featured collection",
+      "settings": {
+        "featured_collection": "early-winter-2025",
+        "heading": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 4,
+        "rows": 3,
+        "width": "wrapper",
+        "layout_mobile": "2",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
     }
   },
   "order": [
@@ -1665,6 +1743,7 @@
     "section_collection_TLgjVH",
     "section_collections_list_dWJRH6",
     "section_products_image_cpRGjD",
-    "section_collections_list_aJV6hH"
+    "section_collections_list_aJV6hH",
+    "section_collection_CDnGCr"
   ]
 }

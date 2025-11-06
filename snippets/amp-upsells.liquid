@@ -1,41 +1,36 @@
 <script>
-document.addEventListener(
-"click",
-function (event) {
-event.stopImmediatePropagation(event);
-const button = event.target.closest("form[action='/cart/add'] button.btn--primary, form[action='/cart/add'] button.btn--primary *");
-if (button) {
-    console.log("clicked")
-    try {
-        setTimeout(function () {
-        window.AMP_API.OPEN_CART()
-        }, 600);
+document.addEventListener("click", function (event) {
+    event.stopImmediatePropagation(event);
+    const button = event.target.closest("form[action='/cart/add'] button.btn--primary, form[action='/cart/add'] button.btn--primary *");
+        if (button) {
+            console.log("clicked")
+            try {
+                setTimeout(function () {
+                window.AMP_API.OPEN_CART()
+                }, 600);
 
-    } catch (err) {
-    console.error(err);
-    }
-}
-},
-false
-);
-
-document.addEventListener("DOMContentLoaded", (event) => {
-  window.AMP_CART_UPDATED = function (cart) {
-    const cartLinkBubbleNum = document.querySelectorAll(".navlink--cart--icon .header__cart__status")[1];
-    if (cartLinkBubbleNum) {
-      cartLinkBubbleNum.innerText = cart.item_count;
-    }
-
-    setTimeout(()=>{
-        if (cart.item_count > 0) {
-        console.log("total count pass", cart.item_count)
-        cartLinkBubbleNum.style.display = "block !important";
-        } else {
-        console.log("total count", cart.item_count)
-        cartLinkBubbleNum.style.display = 'inline-flex';
-        cartLinkBubbleNum.style.justifyContent = 'center';
+            } catch (err) {
+            console.error(err);
+            }
         }
-    },500)
+    },
+    false
+);  
+
+window.AMP_CART_UPDATED = function(cart) {
+  const cartCountEl = document.querySelector(".header__cart__status");
+
+  if (!cartCountEl) return;
+
+  cartCountEl.setAttribute("data-cart-count", cart.item_count);
+
+  cartCountEl.innerText = cart.item_count;
+
+  if (cart.item_count > 0) {
+    cartCountEl.style.display = 'inline-flex';
+    cartCountEl.style.justifyContent = 'center';
+  } else {
+    cartCountEl.style.display = 'none';
   }
-});
+};
 </script>
