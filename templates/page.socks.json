@@ -35,7 +35,8 @@
           "settings": {
             "title": "NORDIC COLLECTION",
             "heading_font_size": "heading-x-large",
-            "heading_tag": "automatic"
+            "heading_tag": "automatic",
+            "padding_bottom": 8
           }
         },
         "text_8ViWnz": {
@@ -43,7 +44,8 @@
           "disabled": true,
           "settings": {
             "text": "<p>Call it a comeback, Ornot.</p>",
-            "text_font_size": "body-large"
+            "text_font_size": "body-large",
+            "padding_bottom": 8
           }
         }
       },
@@ -63,6 +65,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -75,12 +78,13 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/wolly.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "Winter Merino",
-            "heading_font_size": "heading-medium",
-            "text": "<p>Made in the USA from domestically sourced RWS-certified Wool.</p>",
+            "heading_font_size": "heading-small",
+            "text": "<p>Made in the USA from domestically sourced RWS-certified Wool. <a href=\"/collections/s-winter-sock\" title=\"s - winter sock\">Shop Winter Socks</a></p>",
             "text_font_size": "body-small",
-            "button_text": "SHOP WINTER SOCKS",
+            "button_text": "",
             "button_url": "shopify://collections/s-winter-sock",
             "button_type": "btn--black",
             "button_size": "btn--small",
@@ -95,12 +99,13 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/wool-socks.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "LIGHTWEIGHT MERINO",
-            "heading_font_size": "heading-medium",
-            "text": "<p>Breathable and made in the USA from domestically sourced RWS-certified Wool.</p>",
+            "heading_font_size": "heading-small",
+            "text": "<p>Breathable and made in the USA from domestically sourced RWS-certified Wool. <a href=\"/collections/s-merino-socks\" title=\"s - merino socks\">Shop Merino Socks</a></p>",
             "text_font_size": "body-small",
-            "button_text": "SHOP MERINO SOCKS",
+            "button_text": "",
             "button_url": "shopify://collections/s-merino-socks",
             "button_type": "btn--black",
             "button_size": "btn--small",
@@ -115,12 +120,13 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/syntheric.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "lightweight",
-            "heading_font_size": "heading-medium",
-            "text": "<p>Breathable, moisture-wicking & made in the USA from recycled water bottles.</p>",
+            "heading_font_size": "heading-small",
+            "text": "<p>Breathable, moisture-wicking & made in the USA from recycled water bottles. <a href=\"/collections/s-synthetic-socks\" title=\"s - synthetic socks\">Shop Lightweight Socks</a></p>",
             "text_font_size": "body-small",
-            "button_text": "SHOP Lightweight SOCKS",
+            "button_text": "",
             "button_url": "shopify://collections/s-synthetic-socks",
             "button_type": "btn--black",
             "button_size": "btn--small",
@@ -152,6 +158,17 @@
         "padding_top": 30,
         "padding_bottom": 50,
         "heading_tag": "automatic"
+      }
+    },
+    "section_divider_tpWdjU": {
+      "type": "section-divider",
+      "name": "Divider",
+      "settings": {
+        "show_line": true,
+        "width": "wrapper--full-padded",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "section_collection_4XQkB4": {
@@ -207,6 +224,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -283,17 +301,6 @@
         "heading_tag": "automatic"
       }
     },
-    "section_divider_tpWdjU": {
-      "type": "section-divider",
-      "name": "Divider",
-      "settings": {
-        "show_line": true,
-        "width": "wrapper--full-padded",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "section_divider_8NVGBj": {
       "type": "section-divider",
       "name": "Divider",
@@ -346,6 +353,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -367,6 +375,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -409,6 +418,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -430,6 +440,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -472,6 +483,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -493,6 +505,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -535,6 +548,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -556,6 +570,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",

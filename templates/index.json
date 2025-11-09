@@ -782,7 +782,7 @@
         "image_P8hXWH": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Azul-thermal-jersey-mens-7.jpg",
+            "image": "shopify://shop_images/mens_merino_grid_nightshady__8_ee9112a5-b067-42bf-9936-6d1920e01190.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "Made in USA",
@@ -790,7 +790,7 @@
             "text": "<p>Yep, we make clothing in the USA - Check out our <a href=\"/collections/mens-made-in-usa\" target=\"_blank\" title=\"Men's Made in USA\">Men's</a> & <a href=\"/collections/womens-made-in-usa\" target=\"_blank\" title=\"Women's Made in USA\">Women's</a> American-made products.</p>",
             "text_font_size": "body-small",
             "button_text": "",
-            "button_url": "shopify://products/mens-grid-thermal-jersey-azul",
+            "button_url": "shopify://products/mens-merino-grid-thermal-jersey-nightshady",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -803,7 +803,7 @@
         "image_TKUwAx": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_Micro_Grid_Olive_09_c4860cd3-53eb-4f9d-98d6-11ad0346da36.jpg",
+            "image": "shopify://shop_images/Ornot_Mars_MicroClimate_Vest_14_0a927868-8d3b-4913-a548-485af6b4f0ab.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "Deadstock + Recycled Materials",
@@ -886,13 +886,13 @@
       ],
       "name": "Image banner",
       "settings": {
-        "image_1": "shopify://shop_images/fall-coming-soon.jpg",
+        "image_1": "shopify://shop_images/web-header-mens-header-1_35cf1b79-9e62-4e48-8e37-283bed2e1493.jpg",
         "link": "shopify://pages/coming-soon",
         "width": "wrapper--full",
         "height": "image-height",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
-        "mobile_image": "shopify://shop_images/merino-grid-1x1.jpg",
+        "mobile_image": "shopify://shop_images/blue-merino-grid.jpg",
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--bottom-center-mobile",
         "color_scheme": "scheme-1",
@@ -1711,13 +1711,121 @@
         "show_arrow": false,
         "layout_desktop": "grid",
         "grid": 4,
-        "rows": 3,
-        "width": "wrapper",
+        "rows": 8,
+        "width": "wrapper--full-padded",
         "layout_mobile": "2",
         "color_scheme": "",
         "padding_top": 50,
         "padding_bottom": 50,
         "heading_tag": "automatic"
+      }
+    },
+    "section_collection_links_spotlight_h9R93L": {
+      "type": "section-collection-links-spotlight",
+      "blocks": {
+        "collection_wf869J": {
+          "type": "collection",
+          "settings": {
+            "collection": "new-winter-release-2025",
+            "image": "shopify://shop_images/20251024_OrNot_0921_v2.jpg",
+            "title": "MENS WINTER",
+            "heading_font_size": "heading-medium",
+            "button_text": "Shop now",
+            "button_link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "button_show_arrow": false,
+            "background_color": ""
+          }
+        },
+        "collection_Xa3f9Y": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/womens-nightshady-merino-LS-jersey-studio-8.jpg",
+            "title": "WOMEN'S WINTER",
+            "heading_font_size": "heading-medium",
+            "button_text": "Shop now",
+            "button_link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "button_show_arrow": false,
+            "background_color": ""
+          }
+        },
+        "collection_EQ9fFj": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/Large_coyote_bar_bag.jpg",
+            "title": "BAGS & ACCESSORIES",
+            "heading_font_size": "heading-small",
+            "button_text": "Shop now",
+            "button_link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "button_show_arrow": false,
+            "background_color": ""
+          }
+        },
+        "collection_EWTaff": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/Ornot_Mens_MissionPants_Black_Update_02.jpg",
+            "title": "ON YOUR BIKE, ORNOT",
+            "heading_font_size": "heading-small",
+            "button_text": "Shop now",
+            "button_link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "button_show_arrow": false,
+            "background_color": ""
+          }
+        },
+        "collection_iF4DE8": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "button_text": "Shop now",
+            "button_link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "button_show_arrow": false,
+            "background_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_wf869J",
+        "collection_Xa3f9Y",
+        "collection_EQ9fFj",
+        "collection_EWTaff",
+        "collection_iF4DE8"
+      ],
+      "disabled": true,
+      "name": "Collection links: spotlight",
+      "settings": {
+        "title": "WINTER COLLECTIONS",
+        "heading_font_size": "heading-x-large",
+        "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+        "text_font_size": "body-medium",
+        "layout": "",
+        "width": "wrapper--full",
+        "height": "screen-height-one-third",
+        "mobile_height": "screen-height-one-half--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
@@ -1744,6 +1852,7 @@
     "section_collections_list_dWJRH6",
     "section_products_image_cpRGjD",
     "section_collections_list_aJV6hH",
-    "section_collection_CDnGCr"
+    "section_collection_CDnGCr",
+    "section_collection_links_spotlight_h9R93L"
   ]
 }

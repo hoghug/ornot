@@ -29,13 +29,13 @@
     "section_hero_Ay6Tni": {
       "type": "section-hero",
       "settings": {
-        "image_1": "shopify://shop_images/web-headers-mens-cargo-bibs.jpg",
+        "image_1": "shopify://shop_images/web-header-mens-midnightblue_cargo.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
-        "mobile_image": "shopify://shop_images/web-headers-mens-cargo-bibs.jpg",
+        "mobile_image": "shopify://shop_images/web-header-mens-midnightblue_cargo.jpg",
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
@@ -79,66 +79,6 @@
         "overlay_type": "disabled",
         "padding_top": 50,
         "padding_bottom": 50
-      }
-    },
-    "section_rich_text_dgpcbP": {
-      "type": "section-rich-text",
-      "blocks": {
-        "heading_QjAAAD": {
-          "type": "heading",
-          "settings": {
-            "title": "WORK BIB SHORTS",
-            "heading_font_size": "heading-medium",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_XEJBYK": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our work bib shorts are designed with recycled bluesign®-approved fabric, and a 'Goldilocks' chamois pad. The blend of value and performance makes these bibs the perfect weekday workhorse so you can get straight to it. A single cargo pocket on the right leg lets you bring all your snacks, Ornot.</p>",
-            "text_font_size": "body-large",
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_QjAAAD",
-        "text_XEJBYK"
-      ],
-      "settings": {
-        "align_text": "text-left",
-        "width": "wrapper",
-        "color_scheme": "",
-        "overlay_type": "disabled",
-        "padding_top": 50,
-        "padding_bottom": 40
-      }
-    },
-    "section_collection_n7jT6i": {
-      "type": "section-collection",
-      "settings": {
-        "featured_collection": "mens-work-bib-short",
-        "heading": "",
-        "heading_font_size": "heading-medium",
-        "description": "",
-        "text_font_size": "body-medium",
-        "layout": "inline",
-        "link_text": "",
-        "link_url": "",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "layout_desktop": "grid",
-        "grid": 2,
-        "rows": 4,
-        "width": "wrapper--full-padded",
-        "layout_mobile": "2",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "heading_tag": "automatic"
       }
     },
     "section_collection_fmGhdA": {
@@ -219,6 +159,66 @@
         "layout_desktop": "grid",
         "grid": 4,
         "rows": 1,
+        "width": "wrapper--full-padded",
+        "layout_mobile": "2",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_rich_text_dgpcbP": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_QjAAAD": {
+          "type": "heading",
+          "settings": {
+            "title": "WORK BIB SHORTS",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_XEJBYK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our work bib shorts are designed with recycled bluesign®-approved fabric, and a 'Goldilocks' chamois pad. The blend of value and performance makes these bibs the perfect weekday workhorse so you can get straight to it. A single cargo pocket on the right leg lets you bring all your snacks, Ornot.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_QjAAAD",
+        "text_XEJBYK"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 50,
+        "padding_bottom": 40
+      }
+    },
+    "section_collection_n7jT6i": {
+      "type": "section-collection",
+      "settings": {
+        "featured_collection": "mens-work-bib-short",
+        "heading": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 2,
+        "rows": 4,
         "width": "wrapper--full-padded",
         "layout_mobile": "2",
         "color_scheme": "",

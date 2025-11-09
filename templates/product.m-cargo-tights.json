@@ -459,6 +459,7 @@
     },
     "section_hero_tiMVb7": {
       "type": "section-hero",
+      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/mens-espresso-tights.jpg",
         "link": "",
@@ -480,7 +481,7 @@
     "section_hero_AXLMwy": {
       "type": "section-hero",
       "settings": {
-        "image_1": "shopify://shop_images/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.png",
+        "image_1": "shopify://shop_images/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.gif",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
