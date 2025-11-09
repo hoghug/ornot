@@ -13662,6 +13662,7 @@ body:has([data-header-transparent]):has(.main-content > .shopify-section.section
 .price--on-sale .price-item--regular {
   text-decoration: line-through;
   color: var(--text-a80);
+  font-weight: 400;
 }
 
 .price-item--sale {
