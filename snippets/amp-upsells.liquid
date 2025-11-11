@@ -1,5 +1,20 @@
 <script>
 
+const updateCartBubbleCount = (count) => {
+  const cartCountEls = document.querySelectorAll(".header__cart__status");
+  for (const cc of cartCountEls) {
+    cc.setAttribute("data-cart-count", count);
+    cc.innerText = count;
+
+    if (count > 0) {
+      cc.style.display = 'inline-flex';
+      cc.style.justifyContent = 'center';
+    } else {
+      cc.style.display = 'none';
+    }
+  }  
+};
+
 const updateTickerBarFreeShippingMessage = (cart) => {
   const tickerBar = document.querySelector('ticker-bar');
   if (!tickerBar) return;
@@ -50,22 +65,7 @@ document.addEventListener("click", function (event) {
 );  
 
 window.AMP_CART_UPDATED = function(cart) {
-  const cartCountEl = document.querySelector(".header__cart__status");
-
-  if (!cartCountEl) return;
-
-  cartCountEl.setAttribute("data-cart-count", cart.item_count);
-
-  cartCountEl.innerText = cart.item_count;
-
-  if (cart.item_count > 0) {
-    cartCountEl.style.display = 'inline-flex';
-    cartCountEl.style.justifyContent = 'center';
-  } else {
-    cartCountEl.style.display = 'none';
-  }
-
   updateTickerBarFreeShippingMessage(cart);
-  
+  updateCartBubbleCount(cart.item_count);
 };
 </script>
