@@ -29,17 +29,18 @@
     "section_hero_Ay6Tni": {
       "type": "section-hero",
       "settings": {
-        "image_1": "shopify://shop_images/mens-parl.jpg",
+        "image_1": "shopify://shop_images/MENS_merino_nightshady.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
-        "mobile_image": "shopify://shop_images/mens-parl.jpg",
+        "mobile_image": "shopify://shop_images/MENS_merino_nightshady.jpg",
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -74,6 +75,7 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 50,
         "padding_bottom": 50
       }
@@ -96,93 +98,8 @@
         "layout_desktop": "grid",
         "grid": 3,
         "rows": 5,
-        "width": "wrapper--full-padded",
-        "layout_mobile": "slider",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "heading_tag": "automatic"
-      }
-    },
-    "section_collection_ANrF8T": {
-      "type": "section-collection",
-      "settings": {
-        "featured_collection": "mens-house-jerseys",
-        "heading": "",
-        "heading_font_size": "heading-medium",
-        "description": "",
-        "text_font_size": "body-medium",
-        "layout": "inline",
-        "link_text": "",
-        "link_url": "",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "layout_desktop": "grid",
-        "grid": 3,
-        "rows": 2,
-        "width": "wrapper--full-padded",
-        "layout_mobile": "slider",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "heading_tag": "automatic"
-      }
-    },
-    "section_rich_text_DNYxJb": {
-      "type": "section-rich-text",
-      "blocks": {
-        "heading_K3DPFD": {
-          "type": "heading",
-          "settings": {
-            "title": "PARK JERSEYS",
-            "heading_font_size": "heading-medium",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_93An9M": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our Park Jerseys are designed to deliver excellent moisture management, supportive compression, and the confidence that you’re looking good, whether racing in a crit or to the coffee shop. Available in bright & bold, or understated & clean. You could call it performance fit, Ornot. <a href=\"/pages/jersey-comparison\" target=\"_blank\" title=\"Ornot Bike Jersey Comparison\">Compare jerseys here.</a></p>",
-            "text_font_size": "body-large",
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_K3DPFD",
-        "text_93An9M"
-      ],
-      "settings": {
-        "align_text": "text-left",
         "width": "wrapper",
-        "color_scheme": "",
-        "padding_top": 50,
-        "padding_bottom": 40
-      }
-    },
-    "section_collection_MkANnE": {
-      "type": "section-collection",
-      "settings": {
-        "featured_collection": "mens-park-jerseys-all-2025",
-        "heading": "",
-        "heading_font_size": "heading-medium",
-        "description": "",
-        "text_font_size": "body-medium",
-        "layout": "inline",
-        "link_text": "",
-        "link_url": "",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "layout_desktop": "grid",
-        "grid": 4,
-        "rows": 3,
-        "width": "wrapper--full-padded",
-        "layout_mobile": "slider",
+        "layout_mobile": "2",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0,
@@ -218,8 +135,95 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 50,
         "padding_bottom": 40
+      }
+    },
+    "section_collection_ANrF8T": {
+      "type": "section-collection",
+      "settings": {
+        "featured_collection": "mens-house-jerseys",
+        "heading": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 3,
+        "rows": 2,
+        "width": "wrapper",
+        "layout_mobile": "2",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_rich_text_DNYxJb": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_K3DPFD": {
+          "type": "heading",
+          "settings": {
+            "title": "PARK JERSEYS",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_93An9M": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Park Jerseys are designed to deliver excellent moisture management, supportive compression, and the confidence that you’re looking good, whether racing in a crit or to the coffee shop. Available in bright & bold, or understated & clean. You could call it performance fit, Ornot. <a href=\"/pages/jersey-comparison\" target=\"_blank\" title=\"Ornot Bike Jersey Comparison\">Compare jerseys here.</a></p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_K3DPFD",
+        "text_93An9M"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 50,
+        "padding_bottom": 40
+      }
+    },
+    "section_collection_MkANnE": {
+      "type": "section-collection",
+      "settings": {
+        "featured_collection": "mens-park-jerseys-all-2025",
+        "heading": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 4,
+        "rows": 3,
+        "width": "wrapper",
+        "layout_mobile": "2",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
       }
     },
     "section_rich_text_3xqzL8": {
@@ -251,6 +255,7 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 50,
         "padding_bottom": 40
       }
@@ -273,8 +278,8 @@
         "layout_desktop": "grid",
         "grid": 4,
         "rows": 4,
-        "width": "wrapper--full-padded",
-        "layout_mobile": "slider",
+        "width": "wrapper",
+        "layout_mobile": "2",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0,
@@ -310,6 +315,7 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 50,
         "padding_bottom": 40
       }
@@ -332,8 +338,8 @@
         "layout_desktop": "grid",
         "grid": 4,
         "rows": 4,
-        "width": "wrapper--full-padded",
-        "layout_mobile": "slider",
+        "width": "wrapper",
+        "layout_mobile": "2",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0,
@@ -370,6 +376,7 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 50,
         "padding_bottom": 40
       }
@@ -431,6 +438,7 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 50,
         "padding_bottom": 40
       }
@@ -492,6 +500,7 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 50,
         "padding_bottom": 40
       }

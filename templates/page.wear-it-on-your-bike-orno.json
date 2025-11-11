@@ -40,6 +40,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -74,6 +75,7 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 50,
         "padding_bottom": 50
       }
@@ -115,6 +117,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -156,6 +159,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -241,6 +245,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -273,7 +278,7 @@
         "image_iwMazp": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/mens-gravel-sweater.jpg",
+            "image": "shopify://shop_images/wasabi-Bodega-hoodie-4.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -282,6 +287,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",

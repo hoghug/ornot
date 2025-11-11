@@ -301,7 +301,7 @@
         "text_LRJExf": {
           "type": "text",
           "settings": {
-            "text": "<p>FLEXIBLE DRESSING OPTIONS. WEAR THEM WITH A THERMAL JERSEY, JACKET, OR COZY PULLOVER.</p>",
+            "text": "<p>Flexible dressing options. wear them with a thermal jersey, jacket, or cozy pullover.</p>",
             "text_font_size": "body-large",
             "padding_bottom": 8
           }
@@ -311,6 +311,7 @@
         "heading_tLQGN8",
         "text_LRJExf"
       ],
+      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/mens-lw-cargo-bib-tights-web-banner_a5e71ea3-c4b7-4cb4-84d9-890d38c9ebbc.jpg",
         "link": "",
@@ -332,7 +333,71 @@
     "section_custom_content_pt4G9f": {
       "type": "section-custom-content",
       "blocks": {
+        "image_cfVng8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Mens-LW-cargo-Tight-olive-5.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
         "text_kWxAGm": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "4 POCKETS, MANY OPTIONS",
+            "heading_font_size": "heading-large",
+            "text": "<p>flexible dressing options. wear them with a thermal jersey, jacket, or cozy pullover.</p><p></p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "https://www.bicycling.com/bikes-gear/a62389074/gear-of-the-year-2024/",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_cfVng8",
+        "text_kWxAGm"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_yj6BxU": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_g4VYQK": {
           "type": "text",
           "settings": {
             "subheading": "",
@@ -354,10 +419,10 @@
             "heading_tag": "automatic"
           }
         },
-        "image_cfVng8": {
+        "image_eE6nBA": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/LW-Tights-BM-1x1-M-BLKjpg_8269ceb6-19a0-4092-8b61-23975501e118.jpg",
+            "image": "shopify://shop_images/mens-lw-tight-espresso_e1034072-5617-4fcf-8cd1-ac7a07d76d98.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -378,8 +443,8 @@
         }
       },
       "block_order": [
-        "text_kWxAGm",
-        "image_cfVng8"
+        "text_g4VYQK",
+        "image_eE6nBA"
       ],
       "settings": {
         "borders": false,
@@ -399,7 +464,7 @@
         "image_LYC9qC": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/olive-lw-cargo-bib-tight.jpg",
+            "image": "shopify://shop_images/Mens-LW-cargo-Tight-olive-4.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -422,9 +487,9 @@
           "type": "text",
           "settings": {
             "subheading": "",
-            "title": "YOU COULD WEAR A JERSEY, ORNOT",
+            "title": "DESIGNED FOR EVERYDAY",
             "heading_font_size": "heading-large",
-            "text": "<p>These bibs perform just like \"normal\" bibs with no pockets. The great thing about cargo bibs is the flexibility they provide. Flexibility to spread your items throughout more pockets, or to skip a regular jersey in favor of a trail shirt or pull-over. Ever fumble with your phone or wallet when getting coffee? Simply slide them in the left or right cargo pockets. </p><p></p><p></p><p>We admit that we were cargo bib skeptics in the beginning, especially because we are all about the bar bag. But after spending time with these, paired with a bar bag... we are sold. </p>",
+            "text": "<p>These Lightweight Tights are our secret hack for ever-changing conditions and overgrown trails. They're also good for people who \"run hot.\" As our Gen Z marketing associate puts it:<br/><br/><em>These bibs are straight dialed. Light enough for long climbs without cooking, tough enough for that sketchy gravel detour, and with pockets big enough for snacks, tools, or that cool-looking rock you found.</em></p>",
             "text_font_size": "body-medium",
             "button_text": "",
             "button_url": "",
@@ -466,7 +531,7 @@
             "subheading": "",
             "title": "SUSTAINABILITY",
             "heading_font_size": "heading-large",
-            "text": "<p>When designing these cargo bibs, we sourced as much recycled content as possible. The face fabric is a recycled bluesign®-approved knit and the endurance pad is made using recycled content. The shorts are sewn in a facility powered by sustainable energy via rooftop solar panels. </p><p></p><p>Every product we make is Climate Neutral Certified. This means that we measure, reduce, and remove all of our carbon emissions. Learn more about it <a href=\"https://www.ornotbike.com/pages/climate-neutral\" title=\"https://www.ornotbike.com/pages/climate-neutral\">here</a>.</p>",
+            "text": "<p>Constructed from recycled, bluesign®-approved materials and sewn in a solar-powered facility. As a member of <a href=\"https://www.ornotbike.com/pages/1-for-the-planet\" target=\"_blank\" title=\"1% For the Planet\">1% for the Planet</a>, we give back to approved nonprofit organizations committed to protecting the air we breathe, the water we drink, and the world we play in.</p>",
             "text_font_size": "body-medium",
             "button_text": "",
             "button_url": "",
@@ -485,7 +550,7 @@
         "image_Mw7iUH": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_CargoTights_Espresso_10.jpg",
+            "image": "shopify://shop_images/MENS-LW-cargo-tights-brown-4.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -523,6 +588,7 @@
     },
     "section_hero_tiMVb7": {
       "type": "section-hero",
+      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/mens-lw-tights.jpg",
         "link": "",
@@ -625,6 +691,7 @@
     "section_hero_8nY6LC",
     "section_hero_HA9yBc",
     "section_custom_content_pt4G9f",
+    "section_custom_content_yj6BxU",
     "section_custom_content_kgVBJE",
     "section_custom_content_3Hy8cr",
     "section_hero_tiMVb7",

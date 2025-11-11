@@ -301,7 +301,7 @@
         "text_MAmadU": {
           "type": "text",
           "settings": {
-            "text": "<p>THESE BIBS ARE BATHROOM BREAK READY. YOU COULD HANG YOUR TOP UP IN THE BATHROOM, ORNOT.</p>",
+            "text": "<p>these bibs are bathroom break ready. you could hang your top up in the bathroom, ornot.</p>",
             "text_font_size": "body-x-large",
             "padding_bottom": 8
           }
@@ -311,6 +311,7 @@
         "heading_8KDAxD",
         "text_MAmadU"
       ],
+      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/w-summer-tights-sliver.jpg",
         "link": "",
@@ -327,6 +328,70 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
+      }
+    },
+    "section_custom_content_mKNHmY": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_6digpT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/W_LW_Cargo_tights_3.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_tiV7Ry": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "Drop Tail!",
+            "heading_font_size": "heading-large",
+            "text": "<p>These bibs are bathroom break ready. you could hang your top up in the bathroom, ornot.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "#fafafa",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_6digpT",
+        "text_tiV7Ry"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "section_custom_content_LXG6mA": {
@@ -357,7 +422,7 @@
         "image_rxjBGw": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/LW-Tights-BM-1x1-Black.jpg",
+            "image": "shopify://shop_images/W_LW_Cargo_tights_2.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -393,13 +458,13 @@
         "padding_bottom": 0
       }
     },
-    "section_custom_content_mKNHmY": {
+    "section_custom_content_Nh6gHw": {
       "type": "section-custom-content",
       "blocks": {
-        "image_6digpT": {
+        "image_CzPDxY": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/square_caetie_molly.jpg",
+            "image": "shopify://shop_images/WLW-Tights-olive-3.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -418,13 +483,13 @@
             "heading_tag": "automatic"
           }
         },
-        "text_tiV7Ry": {
+        "text_kPmCn3": {
           "type": "text",
           "settings": {
             "subheading": "",
             "title": "SUSTAINABILITY",
             "heading_font_size": "heading-large",
-            "text": "<p>When designing these tights, we sourced as much recycled content as possible. The face fabric is a recycled bluesign®-approved knit and the endurance pad is made using recycled content. The shorts are sewn in a facility powered by sustainable energy via rooftop solar panels. </p><p>Every product we make is Climate Neutral Certified. This means that we measure, reduce, and remove all of our carbon emissions. Learn more about it <a href=\"https://www.ornotbike.com/pages/climate-neutral\" title=\"https://www.ornotbike.com/pages/climate-neutral\">here</a>.</p>",
+            "text": "<p>Constructed from recycled, bluesign®-approved materials and sewn in a solar-powered facility. As a member of <a href=\"https://www.ornotbike.com/pages/1-for-the-planet\" target=\"_blank\" title=\"1% For the Planet\">1% for the Planet</a>, we give back to approved nonprofit organizations committed to protecting the air we breathe, the water we drink, and the world we play in.</p>",
             "text_font_size": "body-medium",
             "button_text": "",
             "button_url": "",
@@ -442,8 +507,8 @@
         }
       },
       "block_order": [
-        "image_6digpT",
-        "text_tiV7Ry"
+        "image_CzPDxY",
+        "text_kPmCn3"
       ],
       "settings": {
         "borders": false,
@@ -540,8 +605,9 @@
     "main",
     "section_hero_GidLRG",
     "section_hero_caAf89",
-    "section_custom_content_LXG6mA",
     "section_custom_content_mKNHmY",
+    "section_custom_content_LXG6mA",
+    "section_custom_content_Nh6gHw",
     "section_hero_AXLMwy",
     "1706135782d1067a10",
     "related"

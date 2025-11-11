@@ -301,8 +301,8 @@
         "text_LRJExf": {
           "type": "text",
           "settings": {
-            "text": "<p>FLEXIBLE DRESSING OPTIONS. WEAR THEM WITH A THERMAL JERSEY, JACKET, OR COZY PULLOVER.</p>",
-            "text_font_size": "body-x-large",
+            "text": "<p>BUILT FOR COLD RIDES, OUR THERMAL CARGO BIB TIGHTS COMBINE WARMTH, FLEXIBILITY, AND STORAGE. FOUR POCKETS KEEP ESSENTIALS CLOSE SO YOU CAN SKIP THE BAR BAG, ORNOT.</p>",
+            "text_font_size": "body-large",
             "padding_bottom": 8
           }
         }
@@ -311,6 +311,7 @@
         "heading_tLQGN8",
         "text_LRJExf"
       ],
+      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/mens-cargo-bib-tights-web-banner.jpg",
         "link": "",
@@ -329,13 +330,13 @@
         "show_placeholder": true
       }
     },
-    "section_custom_content_kgVBJE": {
+    "section_custom_content_3Hy8cr": {
       "type": "section-custom-content",
       "blocks": {
-        "image_LYC9qC": {
+        "image_Mw7iUH": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/TNUT9972_ecdit.jpg",
+            "image": "shopify://shop_images/mens_thermal_tights_slate_5.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -354,13 +355,13 @@
             "heading_tag": "automatic"
           }
         },
-        "text_JddKwq": {
+        "text_DaTmMk": {
           "type": "text",
           "settings": {
             "subheading": "",
-            "title": "YOU COULD WEAR A JERSEY, ORNOT",
+            "title": "4 POCKETS, MANY OPTIONS",
             "heading_font_size": "heading-large",
-            "text": "<p>These bibs perform just like \"normal\" bibs with no pockets. The great thing about cargo bibs is the flexibility they provide. Flexibility to spread your items throughout more pockets, or to skip a regular jersey in favor of a trail shirt or pull-over. Ever fumble with your phone or wallet when getting coffee? Simply slide them in the left or right cargo pockets. </p><p></p><p></p><p>We admit that we were cargo bib skeptics in the beginning, especially because we are all about the bar bag. But after spending time with these, paired with a bar bag... we are sold. </p>",
+            "text": "<p>Built for cold rides, our thermal cargo bib tights combine warmth, flexibility, and storage. four pockets keep essentials close so you can skip the bar bag, ornot.</p>",
             "text_font_size": "body-medium",
             "button_text": "",
             "button_url": "",
@@ -378,8 +379,72 @@
         }
       },
       "block_order": [
-        "image_LYC9qC",
-        "text_JddKwq"
+        "image_Mw7iUH",
+        "text_DaTmMk"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_kgVBJE": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_JddKwq": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "DESIGNED FOR COLD CONDITIONS",
+            "heading_font_size": "heading-large",
+            "text": "<p>Thermal fleece-lined fabric delivers warmth and comfort without bulk. Pair these tights with our <a href=\"/products/mens-merino-grid-thermal-jersey-charcoal\" target=\"_blank\" title=\"Men's Merino Grid Thermal Jersey - Charcoal\">Merino Grid Jersey</a> for midweight warmth, or add a <a href=\"/products/micro-climate-jacket-stone-blue\" target=\"_blank\" title=\"Men's Micro Climate Jacket - Stone Blue\">Micro Climate</a> or <a href=\"/products/mens-magic-shell-jacket-mars\" target=\"_blank\" title=\"Men's Magic Shell Jacket - Mars\">Magic Shell</a> jacket on top for full winter protection.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
+        "image_LYC9qC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20251024_OrNot_0423_2b355fa5-0fd7-4cee-a61c-12b4d41fe8fa.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_JddKwq",
+        "image_LYC9qC"
       ],
       "settings": {
         "borders": false,
@@ -393,35 +458,13 @@
         "padding_bottom": 0
       }
     },
-    "section_custom_content_3Hy8cr": {
+    "section_custom_content_agYepq": {
       "type": "section-custom-content",
       "blocks": {
-        "text_DaTmMk": {
-          "type": "text",
-          "settings": {
-            "subheading": "",
-            "title": "SUSTAINABILITY",
-            "heading_font_size": "heading-large",
-            "text": "<p>When designing these cargo bibs, we sourced as much recycled content as possible. The face fabric is a recycled bluesign®-approved knit and the endurance pad is made using recycled content. The shorts are sewn in a facility powered by sustainable energy via rooftop solar panels. </p><p></p><p>Every product we make is Climate Neutral Certified. This means that we measure, reduce, and remove all of our carbon emissions. Learn more about it <a href=\"https://www.ornotbike.com/pages/climate-neutral\" title=\"https://www.ornotbike.com/pages/climate-neutral\">here</a>.</p>",
-            "text_font_size": "body-medium",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "",
-            "color": "",
-            "heading_tag": "automatic"
-          }
-        },
-        "image_Mw7iUH": {
+        "image_AyNqUy": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_CargoTights_Espresso_10.jpg",
+            "image": "shopify://shop_images/20251024_OrNot_1350_v2_5_3302d164-5962-4fe4-afd9-c7167740be85.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -439,11 +482,33 @@
             "show_arrow": false,
             "heading_tag": "automatic"
           }
+        },
+        "text_8FffHV": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "RESPONSIBLY MADE",
+            "heading_font_size": "heading-large",
+            "text": "<p>Constructed from recycled, bluesign®-approved materials and sewn in a solar-powered facility. As a member of <a href=\"/pages/1-for-the-planet\" target=\"_blank\" title=\"1% For the Planet\">1% for the Planet</a>, we give back to approved nonprofit organizations committed to protecting the air we breathe, the water we drink, and the world we play in.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
         }
       },
       "block_order": [
-        "text_DaTmMk",
-        "image_Mw7iUH"
+        "image_AyNqUy",
+        "text_8FffHV"
       ],
       "settings": {
         "borders": false,
@@ -561,8 +626,9 @@
     "main",
     "section_hero_8nY6LC",
     "section_hero_HA9yBc",
-    "section_custom_content_kgVBJE",
     "section_custom_content_3Hy8cr",
+    "section_custom_content_kgVBJE",
+    "section_custom_content_agYepq",
     "section_hero_tiMVb7",
     "section_hero_AXLMwy",
     "1706135782d1067a10",

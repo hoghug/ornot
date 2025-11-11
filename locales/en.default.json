@@ -458,7 +458,7 @@
       "on_sale": "Sale",
       "save_badge_html": "Save {{ discount }}",
       "save_badge_up_to_html": "Save up to {{ discount }}",
-      "final_sale": "EXCHANGES/STORE CREDIT ONLY",
+      "final_sale": "FINAL SALE",
       "unavailable": "Unavailable",
       "value_unavailable": "{{ option_value }} - Unavailable",
       "variant_sold_out_or_unavailable": "Variant sold out or unavailable",
