@@ -197,7 +197,6 @@
           "settings": {
             "upsell_product": "",
             "upsell_product_list": [
-              "womens-grid-thermal-jersey-slate",
               "womens-merino-grid-thermal-jersey-off-white",
               "handlebar-bag-mini-ultragrid-avacado"
             ],
@@ -336,7 +335,7 @@
         "image_9XmxtT": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/womens-plum-tights-w-color-edits-v2-droptail.jpg",
+            "image": "shopify://shop_images/W_thermal_tights_slate_4.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -422,7 +421,7 @@
         "image_LYC9qC": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/TNUT9972_edit.jpg",
+            "image": "shopify://shop_images/womens-nightshady-merino-LS-jersey-studio-7.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -464,7 +463,7 @@
         "image_rxjBGw": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/TNUT9972_edits.jpg",
+            "image": "shopify://shop_images/W_thermal_tights_slate_5.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",

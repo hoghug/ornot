@@ -35,7 +35,8 @@
           "settings": {
             "title": "MISSION PANTS & SHORTS",
             "heading_font_size": "heading-x-large",
-            "heading_tag": "automatic"
+            "heading_tag": "automatic",
+            "padding_bottom": 8
           }
         },
         "text_dyUnhp": {
@@ -43,7 +44,8 @@
           "disabled": true,
           "settings": {
             "text": "<p>Tell your brand's story through images.</p>",
-            "text_font_size": "body-large"
+            "text_font_size": "body-large",
+            "padding_bottom": 8
           }
         }
       },
@@ -64,6 +66,7 @@
         "flex_align_mobile": "align--bottom-left-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -75,7 +78,7 @@
         "image_FBkMrU": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ornot_LW_Mission_Pants_NightShady_Hero-1_bd4e9fee-31cf-4e29-a720-f2e8694363da.jpg",
+            "image": "shopify://shop_images/mission-pants-folded.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -84,6 +87,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -154,6 +158,7 @@
             "show_image": true,
             "align_with_product_images": false,
             "image": "shopify://shop_images/mesa-mission-pant-4x5.jpg",
+            "overlay_type": "disabled",
             "description": "",
             "color": "",
             "link_text": "shop pants",
@@ -209,6 +214,7 @@
             "show_image": true,
             "align_with_product_images": false,
             "image": "shopify://shop_images/lw-mission-pants-4x5.jpg",
+            "overlay_type": "disabled",
             "description": "",
             "color": "",
             "link_text": "shop lightweight",
@@ -233,7 +239,7 @@
         "layout": "inline",
         "layout_desktop": "grid",
         "product_limit": 12,
-        "grid": 3,
+        "grid": 4,
         "rows": 3,
         "layout_mobile": "2",
         "color_scheme": "",
@@ -265,6 +271,7 @@
         "color_scheme": "",
         "show_text_background": false,
         "color": "#ffffff",
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "heading_tag": "automatic"
@@ -281,6 +288,7 @@
             "show_image": true,
             "align_with_product_images": false,
             "image": "shopify://shop_images/mission-shorts-4x5_a302d9b2-9499-4417-bb9e-51834a5c9269.jpg",
+            "overlay_type": "disabled",
             "description": "",
             "color": "",
             "link_text": "shop shorts",
@@ -336,6 +344,7 @@
             "show_image": true,
             "align_with_product_images": false,
             "image": "shopify://shop_images/mission-shorts-4x5.jpg",
+            "overlay_type": "disabled",
             "description": "",
             "color": "",
             "link_text": "shop shorts",
@@ -384,6 +393,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -465,6 +475,7 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 40,
         "padding_bottom": 0
       }
@@ -527,6 +538,7 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 20,
         "padding_bottom": 8
       }
@@ -579,6 +591,7 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 20,
         "padding_bottom": 10
       }
@@ -625,6 +638,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "Lightweight",
             "link": "shopify://collections/s-lw-mission-pants",
             "button_type": "btn--white",
@@ -646,6 +660,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "Regular weight",
             "link": "shopify://collections/s-mission-pants",
             "button_type": "btn--black",
@@ -688,6 +703,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -709,6 +725,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -757,6 +774,7 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 20,
         "padding_bottom": 10
       }

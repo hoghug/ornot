@@ -333,7 +333,7 @@
             "text": "<p><strong>This one keeps coming back because it's so good</strong>. Built with Polartec® Power Wool™, this jersey has everything you love about extra-fine merino wool (antimicrobial, wicking, keeps you warm even when wet). The grid structure helps trap air pockets to keep you warm under a layer but quickly breathes and dumps heat when worn on its own. <strong>Bonus</strong>- Merino Wool is capable of wicking moisture in the vapor state, this keeps you more comfortable and less sweaty. </p>",
             "text_font_size": "body-small",
             "button_text": "MERINO GRID",
-            "button_url": "https://www.ornotbike.com/search?options%5Bprefix%5D=last&q=MERINO+GRID",
+            "button_url": "https://www.ornotbike.com/products/mens-merino-grid-thermal-jersey-zissou",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -373,6 +373,7 @@
         "text_Jikqa8",
         "image_EARKyB"
       ],
+      "disabled": true,
       "settings": {
         "borders": false,
         "gutters": false,
@@ -391,7 +392,7 @@
         "image_rDfE8k": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/MENS-LW-cargo-tights-brown-4.jpg",
+            "image": "shopify://shop_images/super-thermal-tight.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -413,10 +414,10 @@
         "text_JKDkzQ": {
           "type": "text",
           "settings": {
-            "subheading": "Arriving November",
-            "title": "Lightweight / thermal / super thermal tights",
+            "subheading": "Arriving December",
+            "title": "super thermal tights",
             "heading_font_size": "heading-medium",
-            "text": "<p>New for 2025/26 are \"super thermal\" cargo tights. Made with a wind-blocking and insulated front panel, these are designed for winter temperatures (20-40°F). Available in December.</p><p>Not interested in braving the deep-freezing winter? Our standard <strong>thermal cargo tights</strong> and <strong>lightweight tights</strong> are coming back with new colors. </p>",
+            "text": "<p>New for 2025/26 are \"super thermal\" cargo tights. Made with a wind-blocking and insulated front panel, these are designed for winter temperatures (20-40°F). Available in December.</p><p>Not interested in braving the deep-freezing winter? Our standard <a href=\"/products/mens-thermal-cargo-bib-tight-slate\" target=\"_blank\" title=\"Men's Thermal Cargo Bib Tight - Slate\"><strong>thermal cargo tights</strong></a> and <a href=\"/products/mens-lightweight-cargo-bib-tight-obsidian\" target=\"_blank\" title=\"Men's Lightweight Cargo Bib Tight - Obsidian\"><strong>lightweight tights</strong></a> are in stock now.</p>",
             "text_font_size": "body-small",
             "button_text": "Tights",
             "button_url": "https://www.ornotbike.com/search?options%5Bprefix%5D=last&q=bib+tights",
@@ -455,7 +456,7 @@
         "text_MTXQhY": {
           "type": "text",
           "settings": {
-            "subheading": "Arriving December",
+            "subheading": "Arriving November 28th",
             "title": "Magic Shell!",
             "heading_font_size": "heading-large",
             "text": "<p>We made a small run of these in Mars (orange) last year, and they <strong>sold out</strong> quickly. This year we're bringing them back with a proper production run. Curious about our famous magic shell? Check it out below</p>",

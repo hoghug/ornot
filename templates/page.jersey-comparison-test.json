@@ -33,8 +33,9 @@
           "type": "heading",
           "settings": {
             "title": "JERSEY COMPARISON",
-            "heading_font_size": "heading-x-large",
-            "heading_tag": "automatic"
+            "heading_font_size": "heading-medium",
+            "heading_tag": "automatic",
+            "padding_bottom": 8
           }
         }
       },
@@ -42,17 +43,18 @@
         "heading_rYaTXe"
       ],
       "settings": {
-        "image_1": "shopify://shop_images/Untitled-8_e2753459-0f18-423b-ac2a-027c2db4730c.jpg",
+        "image_1": "shopify://shop_images/fall-coming-soon.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "four-fifty-height-hero",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
-        "mobile_image": "shopify://shop_images/Untitled-8_e2753459-0f18-423b-ac2a-027c2db4730c.jpg",
+        "mobile_image": "shopify://shop_images/fall-coming-soon.jpg",
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -80,7 +82,7 @@
         "text_cH8XcT": {
           "type": "text",
           "settings": {
-            "text": "<p>Our long-sleeve lineup covers the full range, from the lightweight <a href=\"/products/mens-long-sleeve-park-jersey-fog-long\" target=\"_blank\" title=\"Men's Long Sleeve Park Jersey - Fog\">Park Jersey</a> to the breathable, mid-weight <a href=\"/products/mens-long-sleeve-micro-grid-jersey-charcoal\" target=\"_blank\" title=\"Men's Long Sleeve Micro Grid Jersey - Charcoal\">Micro Grid</a> and up to the ultra-warm <a href=\"/products/winter-merino-jersey-burgundy\" target=\"_blank\" title=\"Men's Super Thermal Merino Jersey - Burgundy\">Super Thermal</a>. Whether you run hot or are always cold, there’s a long-sleeve jersey ready for your ride. Layer responsibly, Ornot. <a href=\"/pages/showroom\" target=\"_blank\" title=\"Ornot Showroom / Events\">Visit our showroom</a> to try for yourself.</p>",
+            "text": "<p>Our long-sleeve lineup covers the full range, from the lightweight <a href=\"/products/mens-long-sleeve-park-jersey-fog-long\" target=\"_blank\" title=\"Men's Long Sleeve Park Jersey - Fog\">Park Jersey</a> to the breathable, mid-weight <a href=\"/products/mens-long-sleeve-micro-grid-jersey-charcoal\" target=\"_blank\" title=\"Men's Long Sleeve Micro Grid Jersey - Charcoal\">Micro Grid</a> and up to the cold-weather specialists, the <a href=\"/products/mens-merino-grid-thermal-jersey-zissou\" title=\"Men's Merino Grid Thermal Jersey - Zissou\">Merino Grid</a> and <a href=\"/products/mens-grid-thermal-jersey-burgundy\" title=\"Men's Grid Thermal Jersey - Burgundy\">Grid Thermal</a>. Whether you run hot or are always cold, there’s a long-sleeve jersey ready for your ride. Layer responsibly, Ornot. <a href=\"/pages/showroom\" target=\"_blank\" title=\"Ornot Showroom / Events\">Visit our showroom</a> to try for yourself.</p>",
             "text_font_size": "body-large",
             "padding_bottom": 16
           }
@@ -93,10 +95,202 @@
       ],
       "settings": {
         "align_text": "text-left",
-        "width": "wrapper--full-padded",
+        "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 56,
         "padding_bottom": 0
+      }
+    },
+    "section_columns_3UNeqa": {
+      "type": "section-columns",
+      "blocks": {
+        "image_8G7whN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mens_merino_zissou_9.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Merino Grid",
+            "heading_font_size": "heading-small",
+            "text": "<p>A midweight jersey with a merino wool interior that stays warm even when damp, perfect for cold-weather riding. US Made!</p><p><a href=\"/products/mens-merino-grid-thermal-jersey-zissou\" title=\"Men's Merino Grid Thermal Jersey - Zissou\">Shop Mens</a></p><p><a href=\"/products/womens-merino-grid-thermal-jersey-nightshady\" title=\"Women's Merino Grid Thermal Jersey - Nightshady\">Shop Womens</a></p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_qxWVqM": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/mens-waffle-studio-mint-5.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Waffle Grid",
+            "heading_font_size": "heading-small",
+            "text": "<p>The most comfortable jersey ever. It’s <strong>super soft, impressively stretchy</strong>, and built for cool-weather riding.</p><p><a href=\"/collections/s-mens-waffle-thermal\" title=\"S - Mens Waffle Thermal\">Shop mens -&gt;</a></p><p><a href=\"/collections/s-womens-waffle-thermal\" title=\"s - womens waffle thermal\">Shop Womens -&gt;</a></p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_UKbjJx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/grid-thermal-burg-6.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Grid Thermal",
+            "heading_font_size": "heading-small",
+            "text": "<p>A fleece-lined jersey that balances insulation and breathability, ideal for layering in variable temps. US Made!</p><p><a href=\"/products/mens-grid-thermal-jersey-burgundy\" title=\"Men's Grid Thermal Jersey - Burgundy\">Shop Mens</a></p><p><a href=\"/products/womens-grid-thermal-jersey-burgundy\" title=\"Women's Grid Thermal Jersey - Burgundy\">Shop Womens</a></p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_7YQmw7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Womens_LS_Micro_Grid_Charcoal_01.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Micro Grid",
+            "heading_font_size": "heading-small",
+            "text": "<p>A breathable long sleeve with a gridded interior for light insulation and excellent layering versatility. US Made!</p><p><a href=\"/products/mens-long-sleeve-micro-grid-jersey-charcoal\" title=\"Men's Long Sleeve Micro Grid Jersey - Charcoal\">Shop Mens</a></p><p><a href=\"/products/womens-long-sleeve-micro-grid-jersey-charcoal\" title=\"Women's Long Sleeve Micro Grid Jersey - Charcoal\">Shop Womens</a></p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_hYeN3j": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20251008_OrNot_2435_edit-1.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "House Jersey",
+            "heading_font_size": "heading-small",
+            "text": "<p>A versatile, US-made jersey with all-day comfort and a unique dyed-and-sublimated pattern for any ride.</p><p><a href=\"/products/mens-ls-house-jersey-fog-12-years\" title=\"Men's LS House Jersey - Fog 12 years\">Shop Mens</a></p><p><a href=\"/products/womens-ls-house-jersey-fog-12-years\" title=\"Women's LS House Jersey - Fog 12 years\">Shop Womens </a></p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_PcLTtW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Womens_LongSleeve_ParkJersey_ClementSorbet_09.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Park Jersey",
+            "heading_font_size": "heading-small",
+            "text": "<p>A lightweight, close-fitting jersey built for high-output rides in cooler conditions.</p><p><a href=\"/products/mens-long-sleeve-park-jersey-clement-key-long\" title=\"Men's Long Sleeve Park Jersey - Clement Key\">Shop Mens</a></p><p><a href=\"/products/womens-long-sleeve-park-jersey-clement-key-long\" title=\"Women's Long Sleeve Park Jersey - Clement Key\">Shop Womens </a></p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_8G7whN",
+        "image_qxWVqM",
+        "image_UKbjJx",
+        "image_7YQmw7",
+        "image_hYeN3j",
+        "image_PcLTtW"
+      ],
+      "name": "Text columns with images",
+      "settings": {
+        "title": "",
+        "heading_font_size": "heading-large",
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_hero_zxLCPV": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_NUEFt6": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "JERSEY COMPARISON",
+            "heading_font_size": "heading-x-large",
+            "heading_tag": "automatic",
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading_NUEFt6"
+      ],
+      "settings": {
+        "image_1": "shopify://shop_images/web-header-mens-header-1_315f360b-cbbc-46d2-b974-59dcab0514d3.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "four-fifty-height-hero",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/long-sleeve-jerseys.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
       }
     },
     "section_rich_text_DWwT6d": {
@@ -134,8 +328,9 @@
       ],
       "settings": {
         "align_text": "text-left",
-        "width": "wrapper--full-padded",
+        "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 66,
         "padding_bottom": 0
       }
@@ -147,10 +342,11 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Ornot_Womens_ParkJersey_ClementChroma_01.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "Park Jersey",
             "heading_font_size": "heading-small",
-            "text": "<p>A performance-fit jersey made from ultra-soft recycled fabric with UPF 30 protection for fast days and long rides.</p><p><a href=\"/products/mens-park-jersey-clement-chroma\" title=\"Men's Park Jersey - Clement Chroma\">Shop Mens -&gt;</a></p><p><a href=\"/products/womens-park-jersey-clement-chroma\" title=\"Women's Park Jersey - Clement Chroma\">Shop Womens -&gt;</a></p>",
+            "text": "<p>A performance-fit jersey made from ultra-soft recycled fabric with UPF 30 protection for fast days and long rides.</p><p><a href=\"/products/mens-park-jersey-clement-chroma\" title=\"Men's Park Jersey - Clement Chroma\">Shop Mens</a></p><p><a href=\"/products/womens-park-jersey-clement-chroma\" title=\"Women's Park Jersey - Clement Chroma\">Shop Womens</a></p>",
             "text_font_size": "body-medium",
             "button_text": "",
             "button_url": "",
@@ -167,10 +363,11 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Ornot_Mens_House_Jersey_Fog_01_085deb36-66fc-45ea-b04c-8d6e2d4bf37a.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "House Jersey",
             "heading_font_size": "heading-small",
-            "text": "<p>A versatile, US-made jersey with all-day comfort and a unique dyed-and-sublimated pattern for any ride.</p><p><a href=\"/products/mens-house-jersey-fog\" title=\"Men's House Jersey - Fog\">Shop Mens -&gt;</a></p><p><a href=\"/products/womens-house-jersey-fog-1\" title=\"Women's House Jersey - Fog\">Shop Womens -&gt;</a></p>",
+            "text": "<p>A versatile, US-made jersey with all-day comfort and a unique dyed-and-sublimated pattern for any ride.</p><p><a href=\"/products/mens-house-jersey-fog\" title=\"Men's House Jersey - Fog\">Shop Mens</a></p><p><a href=\"/products/womens-house-jersey-fog-1\" title=\"Women's House Jersey - Fog\">Shop Womens</a></p>",
             "text_font_size": "body-medium",
             "button_text": "",
             "button_url": "",
@@ -186,11 +383,12 @@
         "image_6pmdaE": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ornot_Womens_Micro_Grid_Olive_02_4cffe4d7-40e6-4ea0-a8a6-336c98bddd2d.jpg",
+            "image": "shopify://shop_images/Ornot_Mens_Micro_Grid_Charcoal_09.jpg",
+            "image_width": 100,
             "image_shape": "normal",
             "title": "Micro Grid",
             "heading_font_size": "heading-small",
-            "text": "<p>A light jersey with a gridded structure designed to keep you cool in the heat and warm under a jacket. US Made!</p><p><a href=\"/products/mens-micro-grid-jersey-charcoal\" title=\"Men's Micro Grid Jersey - Charcoal\">Shop Mens -&gt;</a></p><p><a href=\"/products/womens-short-sleeve-micro-grid-jersey-olive\" title=\"Women's Micro Grid Jersey - Olive\">Shop Womens -&gt;</a></p>",
+            "text": "<p>A light jersey with a gridded structure designed to keep you cool in the heat and warm under a jacket. US Made!</p><p><a href=\"/products/mens-micro-grid-jersey-charcoal\" title=\"Men's Micro Grid Jersey - Charcoal\">Shop Mens</a></p><p></p>",
             "text_font_size": "body-medium",
             "button_text": "",
             "button_url": "",
@@ -215,7 +413,7 @@
         "heading_font_size": "heading-large",
         "align_heading": "text-left",
         "align_text": "text-left",
-        "width": "wrapper--full-padded",
+        "width": "wrapper",
         "align_columns": "flex-align-top",
         "layout": "slider",
         "grid": 3,
@@ -226,181 +424,21 @@
         "heading_tag": "automatic"
       }
     },
-    "section_hero_zxLCPV": {
-      "type": "section-hero",
-      "blocks": {
-        "heading_NUEFt6": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "title": "JERSEY COMPARISON",
-            "heading_font_size": "heading-x-large",
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "heading_NUEFt6"
-      ],
-      "settings": {
-        "image_1": "shopify://shop_images/long-sleeve-jerseys.jpg",
-        "link": "",
-        "width": "wrapper--full",
-        "height": "four-fifty-height-hero",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "content_width": 50,
-        "mobile_image": "shopify://shop_images/long-sleeve-jerseys.jpg",
-        "mobile_height": "image-height--mobile",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "color_scheme": "scheme-2",
-        "show_text_background": false,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "show_placeholder": true
-      }
-    },
-    "section_columns_3UNeqa": {
-      "type": "section-columns",
-      "blocks": {
-        "image_PcLTtW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_LongSleeve_ParkJersey_ClementSorbet_01.jpg",
-            "image_shape": "normal",
-            "title": "Park Jersey",
-            "heading_font_size": "heading-small",
-            "text": "<p>A lightweight, close-fitting jersey built for high-output rides in cooler conditions.</p><p><a href=\"/products/mens-long-sleeve-park-jersey-clement-sorbet-long\" title=\"Men's Long Sleeve Park Jersey - Clement Sorbet\">Shop mens -&gt;</a></p><p><a href=\"/products/womens-long-sleeve-park-jersey-clement-sorbet-long\" title=\"Women's Long Sleeve Park Jersey - Clement Sorbet\">Shop Womens -&gt;</a></p>",
-            "text_font_size": "body-medium",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        },
-        "image_7YQmw7": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_LS_Micro_Grid_Charcoal_01.jpg",
-            "image_shape": "normal",
-            "title": "Micro Grid",
-            "heading_font_size": "heading-small",
-            "text": "<p>A breathable long sleeve with a gridded interior for light insulation and excellent layering versatility. US Made!</p><p><a href=\"/products/mens-long-sleeve-micro-grid-jersey-charcoal\" title=\"Men's Long Sleeve Micro Grid Jersey - Charcoal\">Shop mens -&gt;</a></p><p><a href=\"/products/womens-long-sleeve-micro-grid-jersey-charcoal\" title=\"Women's Long Sleeve Micro Grid Jersey - Charcoal\">Shop Womens -&gt;</a></p>",
-            "text_font_size": "body-medium",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        },
-        "image_8G7whN": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Ornot_Womens_MerinoGrid_OffWhite_01_1fd713c1-0177-4d73-a2d2-7e3be34f5390.jpg",
-            "image_shape": "normal",
-            "title": "Merino Grid",
-            "heading_font_size": "heading-small",
-            "text": "<p>A midweight jersey with a merino wool interior that stays warm even when damp, perfect for cold-weather riding. US Made!</p><p><a href=\"/products/mens-merino-grid-thermal-jersey-khaki\" title=\"Men's Merino Grid Thermal Jersey - Coyote\">Shop mens -&gt;</a></p><p><a href=\"/products/womens-merino-grid-thermal-jersey-off-white\" title=\"Women's Merino Grid Thermal Jersey - Oat\">Shop Womens -&gt;</a></p>",
-            "text_font_size": "body-medium",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        },
-        "image_UKbjJx": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_GridThermal_Zephyr_01.jpg",
-            "image_shape": "normal",
-            "title": "Grid Thermal",
-            "heading_font_size": "heading-small",
-            "text": "<p>A fleece-lined jersey that balances insulation and breathability, ideal for layering in variable temps. US Made!</p><p><a href=\"/products/mens-grid-thermal-jersey-zephyr\" title=\"Men's Grid Thermal Jersey - Zephyr\">Shop Mens -&gt;</a></p><p><a href=\"/products/womens-grid-thermal-jersey-zephyr\" title=\"Women's Grid Thermal Jersey - Zephyr\">Shop Womens -&gt;</a></p>",
-            "text_font_size": "body-medium",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        },
-        "image_qxWVqM": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Ornot_SuperThermal_Burgundy_Womens_01.jpg",
-            "image_shape": "normal",
-            "title": "Super Thermal",
-            "heading_font_size": "heading-small",
-            "text": "<p>Our warmest jersey, made with dense thermal fleece and a relaxed fit for deep winter riding comfort. US Made!</p><p><a href=\"/products/winter-merino-jersey-burgundy\" title=\"Men's Super Thermal Merino Jersey - Burgundy\">Shop mens -&gt;</a></p><p><a href=\"/products/womens-super-thermal-merino-jersey-burgundy\" title=\"Women's Super Thermal Merino Jersey - Burgundy\">Shop Womens -&gt;</a></p>",
-            "text_font_size": "body-medium",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "image_PcLTtW",
-        "image_7YQmw7",
-        "image_8G7whN",
-        "image_UKbjJx",
-        "image_qxWVqM"
-      ],
-      "name": "Text columns with images",
-      "settings": {
-        "title": "",
-        "heading_font_size": "heading-large",
-        "align_heading": "text-left",
-        "align_text": "text-left",
-        "width": "wrapper--full-padded",
-        "align_columns": "flex-align-top",
-        "layout": "grid",
-        "grid": 3,
-        "layout_mobile": "slider",
-        "color_scheme": "",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "heading_tag": "automatic"
-      }
-    },
     "section_hero_NVWqea": {
       "type": "section-hero",
       "settings": {
-        "image_1": "shopify://shop_images/temp_scale_jerseys-_Recovered_-01.jpg",
+        "image_1": "shopify://shop_images/temp_scale_jerseys_desktop_OCT_2025.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
-        "mobile_image": "shopify://shop_images/temp_scale_jerseys-_Recovered_-02.jpg",
+        "mobile_image": "shopify://shop_images/temp_scale_jerseys_OCT_2025.jpg",
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -516,14 +554,14 @@
         "width": "wrapper",
         "color_scheme": "",
         "icon_color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "section_hero_y4DmBk": {
       "type": "section-hero",
       "settings": {
-        "image_1": "shopify://shop_images/mens-parl.jpg",
+        "image_1": "shopify://shop_images/web-header-mens-header-1_fdedad8f-00fa-45ea-ba93-f56779f40e24.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "four-fifty-height-hero",
@@ -534,6 +572,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "scheme-2",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -576,6 +615,7 @@
         "align_text": "text-left",
         "width": "wrapper--full-padded",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 36,
         "padding_bottom": 30
       }
@@ -645,6 +685,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -687,6 +728,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -773,6 +815,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -809,16 +852,17 @@
             "title": "First collection",
             "featured_collection": "layers",
             "show_image": true,
-            "align_with_product_images": true,
-            "image": "shopify://shop_images/thermal-cargo-bib-shorts-1x1.jpg",
+            "align_with_product_images": false,
+            "image": "shopify://shop_images/shop-mens_dc258cc4-ab38-4fa0-b037-82d8e77144e1.jpg",
+            "overlay_type": "disabled",
             "description": "",
             "color": "",
-            "link_text": "see all the layers",
+            "link_text": "",
             "link": "",
-            "button_type": "btn--white",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
+            "button_type": "btn--black",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true
           }
         },
         "collection_EEmDFV": {
@@ -829,6 +873,7 @@
             "featured_collection": "",
             "show_image": true,
             "align_with_product_images": false,
+            "overlay_type": "disabled",
             "description": "",
             "color": "",
             "link_text": "View products",
@@ -855,7 +900,7 @@
         "layout_desktop": "grid",
         "product_limit": 8,
         "grid": 4,
-        "rows": 2,
+        "rows": 3,
         "layout_mobile": "2",
         "color_scheme": "",
         "padding_top": 0,
@@ -901,6 +946,7 @@
         "align_text": "text-left",
         "width": "wrapper--full-padded",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 36,
         "padding_bottom": 30
       }
@@ -941,6 +987,7 @@
         "heading_font_size": "heading-large",
         "show_dots": false,
         "products_per_row": "1",
+        "enable_slider": false,
         "button_type": "btn--white",
         "button_size": "btn--small",
         "button_style": "btn--solid",
@@ -991,6 +1038,7 @@
         "heading_font_size": "heading-large",
         "show_dots": false,
         "products_per_row": "1",
+        "enable_slider": false,
         "button_type": "btn--white",
         "button_size": "btn--small",
         "button_style": "btn--solid",
