@@ -752,6 +752,9 @@
             {%- endif -%}
 
             <div class="product-item__price" data-product-price>
+              {% if settings.wg_collection_show_retail_price and customer and customer.tags contains settings.wg_customer_tag %}
+                <div class="wg__retail-price">{{ settings.wg_collection_retail_price_label }} {{ product.price_min | money }}</div>
+              {% endif %}
               {%- render 'product-grid-price', product: product, current_variant: current_variant -%}
             </div>
           </div>

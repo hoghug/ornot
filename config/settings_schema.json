@@ -1493,5 +1493,41 @@
         "info": "Use comma to separate the collections"
       }
     ]
+  },
+  {
+    "name": "Wholesale Gorilla Mods",
+    "settings": [
+      {
+        "type": "text",
+        "id": "wg_customer_tag",
+        "label": "Wholesale Gorilla Customer Tag",
+        "default": "wg_wholesale",
+        "info": "The BASE customer tag that identifies wholesale customers."
+      },
+      {
+        "type": "checkbox",
+        "id": "wg_product_show_retail_price",
+        "label": "Show retail price on Product pages",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "wg_product_retail_price_label",
+        "label": "Label to retail price on Product pages",
+        "default": "MSRP:"
+      },
+      {
+        "type": "checkbox",
+        "id": "wg_collection_show_retail_price",
+        "label": "Show retail in Collection pages",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "wg_collection_retail_price_label",
+        "label": "Label to retail price on Collection pages",
+        "default": "MSRP:"
+      }
+    ]
   }
 ]
