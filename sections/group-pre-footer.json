@@ -11,6 +11,67 @@
   "type": "custom.pre_footer",
   "name": "Pre-footer",
   "sections": {
+    "section_hero_aCAcUj": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_MHpeqL": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "NEW PARK JERSEYS",
+            "heading_font_size": "heading-medium",
+            "heading_tag": "automatic",
+            "padding_bottom": 8
+          }
+        },
+        "text_dxNtjX": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Tell your brand's story through images.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 8
+          }
+        },
+        "button_7K64Mw": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text": "SHOP NOW",
+            "link": "shopify://collections/park-jerseys-all",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "full_width": false,
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading_MHpeqL",
+        "text_dxNtjX",
+        "button_7K64Mw"
+      ],
+      "name": "Image banner",
+      "settings": {
+        "image_1": "shopify://shop_images/universal-footer-bf-2025.gif",
+        "link": "https://www.ornotbike.com/collections/new-arrivals-all",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 38,
+        "mobile_image": "shopify://shop_images/universal-footer.gif",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
     "section-newsletter": {
       "type": "section-newsletter",
       "blocks": {
@@ -72,70 +133,10 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "section_hero_aCAcUj": {
-      "type": "section-hero",
-      "blocks": {
-        "heading_MHpeqL": {
-          "type": "heading",
-          "settings": {
-            "title": "NEW PARK JERSEYS",
-            "heading_font_size": "heading-medium",
-            "heading_tag": "automatic",
-            "padding_bottom": 8
-          }
-        },
-        "text_dxNtjX": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Tell your brand's story through images.</p>",
-            "text_font_size": "body-large",
-            "padding_bottom": 8
-          }
-        },
-        "button_7K64Mw": {
-          "type": "button",
-          "settings": {
-            "link_text": "SHOP NOW",
-            "link": "shopify://collections/park-jerseys-all",
-            "button_type": "btn--white",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "full_width": false,
-            "padding_bottom": 8
-          }
-        }
-      },
-      "block_order": [
-        "heading_MHpeqL",
-        "text_dxNtjX",
-        "button_7K64Mw"
-      ],
-      "disabled": true,
-      "name": "Image banner",
-      "settings": {
-        "image_1": "shopify://shop_images/Ornot_Womens_ParkJersey_BlackStripes_09_756e67fe-cb21-475f-8be0-d45620531f0d.jpg",
-        "link": "",
-        "width": "wrapper--full",
-        "height": "four-fifty-height-hero",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "content_width": 38,
-        "mobile_image": "shopify://shop_images/Ornot_Womens_LongSleeve_ParkJersey_Fog_09.jpg",
-        "mobile_height": "screen-height-one-half--mobile",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "color_scheme": "scheme-2",
-        "show_text_background": false,
-        "overlay_type": "disabled",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "show_placeholder": true
-      }
     }
   },
   "order": [
-    "section-newsletter",
-    "section_hero_aCAcUj"
+    "section_hero_aCAcUj",
+    "section-newsletter"
   ]
 }

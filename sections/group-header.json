@@ -14,24 +14,11 @@
     "announcement": {
       "type": "announcement",
       "blocks": {
-        "message_R9RT6x": {
-          "type": "message",
-          "settings": {
-            "show_wheel": false,
-            "message": "YOU'RE  ||amount|| AWAY FROM FREE USA SHIPPING",
-            "target_url_enabled": false,
-            "target_url": "",
-            "target_referrer_enabled": false,
-            "target_referrer": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
         "text_aNKTYF": {
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>Having trouble checking out? We’re fixing it ASAP. Thanks for your patience!</p>",
+            "text": "<p>25% off Sitewide - 48 Hours Only - Code auto applied</p>",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,
@@ -44,9 +31,35 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<h5>GRAVEL SWEATERS // <strong>BACK IN STOCK</strong></h5>",
+            "text": "<h5><a href=\"https://www.ornotbike.com/collections/new-arrivals-all\" title=\"https://www.ornotbike.com/collections/new-arrivals-all\">BLACK FRIDAY SITEWIDE SALE   // 15% - 35% OFF   // Add to cart </a></h5>",
             "target_url_enabled": false,
-            "target_url": "shopify://products/mens-merino-gravel-sweater-charcoal",
+            "target_url": "shopify://collections/new-arrivals-all",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_hHYWBw": {
+          "type": "text",
+          "settings": {
+            "text": "<h5><a href=\"https://www.ornotbike.com/collections/new-arrivals-all\" title=\"https://www.ornotbike.com/collections/new-arrivals-all\">Black friday - 15% off everything, including sale items // discount in cart</a></h5>",
+            "target_url_enabled": false,
+            "target_url": "shopify://collections/new-arrivals-all",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "message_R9RT6x": {
+          "type": "message",
+          "disabled": true,
+          "settings": {
+            "show_wheel": false,
+            "message": "YOU'RE  ||amount|| AWAY FROM FREE USA SHIPPING",
+            "target_url_enabled": false,
+            "target_url": "",
             "target_referrer_enabled": false,
             "target_referrer": "",
             "target_device_enabled": false,
@@ -68,23 +81,24 @@
         }
       },
       "block_order": [
-        "message_R9RT6x",
         "text_aNKTYF",
         "text_J9HfXH",
+        "text_hHYWBw",
+        "message_R9RT6x",
         "text_LAtpY6"
       ],
       "settings": {
         "show_border": true,
-        "layout": "slider",
-        "slider_speed": 7,
+        "layout": "marquee",
+        "slider_speed": 10,
         "text_alignment": "center",
         "show_arrows": false,
-        "marquee_speed": 100,
-        "message_spacing": 10,
+        "marquee_speed": 50,
+        "message_spacing": 75,
         "text_font_size": "body-small",
-        "color_scheme": "",
+        "color_scheme": "scheme-5",
         "border_color": "",
-        "padding_top": 0,
+        "padding_top": 5,
         "padding_bottom": 0
       }
     },
@@ -112,10 +126,78 @@
             "padding_top": 0,
             "padding_bottom": 0
           }
+        },
+        "image_waQLzQ": {
+          "type": "image",
+          "settings": {
+            "position": "1",
+            "image": "shopify://shop_images/bf-nav-desktop.gif",
+            "aspect_ratio": 0.8,
+            "wide_image": false,
+            "overlay_type": "text",
+            "title": "",
+            "heading_font_size": "heading-medium",
+            "link_text": "",
+            "text_font_size": "body-medium",
+            "link": "https://www.ornotbike.com/collections/new-arrivals-all",
+            "text_color": ""
+          }
+        },
+        "image_eTxGVM": {
+          "type": "image",
+          "settings": {
+            "position": "2",
+            "image": "shopify://shop_images/bf-nav-desktop.gif",
+            "aspect_ratio": 0.8,
+            "wide_image": false,
+            "overlay_type": "text",
+            "title": "",
+            "heading_font_size": "heading-medium",
+            "link_text": "",
+            "text_font_size": "body-medium",
+            "link": "https://www.ornotbike.com/collections/new-arrivals-all",
+            "text_color": ""
+          }
+        },
+        "image_qM4qEM": {
+          "type": "image",
+          "settings": {
+            "position": "3",
+            "image": "shopify://shop_images/bf-nav-desktop.gif",
+            "aspect_ratio": 0.9,
+            "wide_image": false,
+            "overlay_type": "text",
+            "title": "",
+            "heading_font_size": "heading-medium",
+            "link_text": "",
+            "text_font_size": "body-medium",
+            "link": "https://www.ornotbike.com/collections/new-arrivals-all",
+            "text_color": ""
+          }
+        },
+        "image_yBmftb": {
+          "type": "image",
+          "settings": {
+            "position": "5",
+            "image": "shopify://shop_images/bf-nav-desktop.gif",
+            "aspect_ratio": 1,
+            "wide_image": false,
+            "overlay_type": "text",
+            "title": "",
+            "heading_font_size": "heading-medium",
+            "link_text": "",
+            "text_font_size": "body-medium",
+            "link": "https://www.ornotbike.com/collections/new-arrivals-all",
+            "text_color": ""
+          }
         }
       },
       "block_order": [
-        "toolbar"
+        "toolbar",
+        "image_waQLzQ",
+        "image_eTxGVM",
+        "image_qM4qEM",
+        "image_yBmftb"
       ],
       "custom_css": [
         ".header__menu .dropdown__family a.navlink--grandchild {font-weight: normal; padding: 3px 0;}",
@@ -164,6 +246,17 @@
     "mobile_menu_XTLn3p": {
       "type": "mobile-menu",
       "blocks": {
+        "image_Dan4Rn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mobile-nav-bf.gif",
+            "image_url": "https://www.ornotbike.com/collections/new-arrivals-all",
+            "image_alignment": "center",
+            "image_width": 100,
+            "pin_to_bottom": false,
+            "padding_bottom": 0
+          }
+        },
         "menu_DkPqpk": {
           "type": "menu",
           "settings": {
@@ -177,9 +270,11 @@
         }
       },
       "block_order": [
+        "image_Dan4Rn",
         "menu_DkPqpk"
       ],
       "settings": {
+        "logo": "shopify://shop_images/testornot-myshopify-com-logo_5d5580a8-d42e-43cf-b96b-52ac16aa332b.png",
         "logo_max_limit": 120,
         "color_scheme": ""
       }
