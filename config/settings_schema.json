@@ -1505,6 +1505,18 @@
         "info": "The BASE customer tag that identifies wholesale customers."
       },
       {
+        "type": "select",
+        "id": "wg_retail_price_to_display",
+        "label" : "Retail price to display",
+        "default": "price_min",
+        "options": [
+          { "value": "price_min", "label": "Price Min" },
+          { "value": "price_max", "label": "Price Max" },
+          { "value": "compare_at_price_min", "label": "Compare at Price Min" },
+          { "value": "compare_at_price_max", "label": "Compare at Price Max" }
+        ]
+      },
+      {
         "type": "checkbox",
         "id": "wg_product_show_retail_price",
         "label": "Show retail price on Product pages",
