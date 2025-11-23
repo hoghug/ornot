@@ -753,7 +753,14 @@
 
             <div class="product-item__price" data-product-price>
               {% if settings.wg_collection_show_retail_price and customer and customer.tags contains settings.wg_customer_tag %}
-                <div class="wg__retail-price {% if settings.wg_strikethrough_retail_price %}strikethrough{% endif %}">{{ settings.wg_collection_retail_price_label }} {{ product[settings.wg_retail_price_to_display] | money }}</div>
+                <div class="wg__retail-price {% if settings.wg_strikethrough_retail_price %}strikethrough{% endif %}">
+                  {% liquid  
+                    assign retail_price = product[settings.wg_retail_price_to_display] 
+                    if retail_price == blank or retail_price == 0
+                      assign retail_price = product.price_max
+                    endif
+                  %}
+                  {{ settings.wg_collection_retail_price_label }} {{ retail_price | money }}</div>
               {% endif %}
               {%- render 'product-grid-price', product: product, current_variant: current_variant -%}
             </div>

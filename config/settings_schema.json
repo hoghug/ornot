@@ -1543,14 +1543,8 @@
       {
         "type": "checkbox",
         "id": "wg_strikethrough_retail_price",
-        "label": "Show strikethrough on retail price",
+        "label": "Strikethrough retail price",
         "default": true
-      },
-      {
-        "type": "text",
-        "id": "wg_quickview_retail_price_label",
-        "label": "Label to retail price in Quick View",
-        "default": "MSRP:"
       }
     ]
   }
