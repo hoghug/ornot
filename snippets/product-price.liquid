@@ -11,7 +11,7 @@
 >
   <div class="product__price__wrap">
     {% if settings.wg_product_show_retail_price and customer and customer.tags contains settings.wg_customer_tag %}
-      <div class="wg__retail-price">{{ settings.wg_product_retail_price_label }} {{ product[settings.wg_retail_price_to_display] | money }}</div>
+      <div class="wg__retail-price {% if settings.wg_strikethrough_retail_price %}strikethrough{% endif %}">{{ settings.wg_product_retail_price_label }} {{ product[settings.wg_retail_price_to_display] | money }}</div>
     {% endif %}
     <div id="Price-{{ section_id }}" role="status" {{ block.shopify_attributes }}>
       {%- render 'price',
