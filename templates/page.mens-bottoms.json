@@ -98,9 +98,69 @@
         "show_arrow": false,
         "layout_desktop": "grid",
         "grid": 3,
+        "rows": 2,
+        "width": "wrapper",
+        "layout_mobile": "1",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_rich_text_DNYxJb": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_K3DPFD": {
+          "type": "heading",
+          "settings": {
+            "title": "LIGHTWEIGHT CARGO BIB TIGHTS",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_93An9M": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our lightweight cargo bib tights are perfect for temperatures between 48-70° and ideal for mild weather or for those who tend to “run hot.” Four pockets ensure you bring everything you need, and nothing you don't. Winner: Gear of the year, Bicycling Magazine, 2024.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_K3DPFD",
+        "text_93An9M"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 50,
+        "padding_bottom": 40
+      }
+    },
+    "section_collection_MkANnE": {
+      "type": "section-collection",
+      "settings": {
+        "featured_collection": "mens-lightweight-cargo-bib-tight",
+        "heading": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 3,
         "rows": 1,
         "width": "wrapper",
-        "layout_mobile": "2",
+        "layout_mobile": "1",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0,
@@ -401,66 +461,6 @@
         "padding_bottom": 0,
         "heading_tag": "automatic"
       }
-    },
-    "section_rich_text_DNYxJb": {
-      "type": "section-rich-text",
-      "blocks": {
-        "heading_K3DPFD": {
-          "type": "heading",
-          "settings": {
-            "title": "LIGHTWEIGHT CARGO BIB TIGHTS",
-            "heading_font_size": "heading-medium",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_93An9M": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our lightweight cargo bib tights are perfect for temperatures between 48-70° and ideal for mild weather or for those who tend to “run hot.” Four pockets ensure you bring everything you need, and nothing you don't. Winner: Gear of the year, Bicycling Magazine, 2024.</p>",
-            "text_font_size": "body-large",
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_K3DPFD",
-        "text_93An9M"
-      ],
-      "settings": {
-        "align_text": "text-left",
-        "width": "wrapper",
-        "color_scheme": "",
-        "overlay_type": "disabled",
-        "padding_top": 50,
-        "padding_bottom": 40
-      }
-    },
-    "section_collection_MkANnE": {
-      "type": "section-collection",
-      "settings": {
-        "featured_collection": "mens-lightweight-cargo-bib-tight",
-        "heading": "",
-        "heading_font_size": "heading-medium",
-        "description": "",
-        "text_font_size": "body-medium",
-        "layout": "inline",
-        "link_text": "",
-        "link_url": "",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "layout_desktop": "grid",
-        "grid": 3,
-        "rows": 2,
-        "width": "wrapper",
-        "layout_mobile": "2",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "heading_tag": "automatic"
-      }
     }
   },
   "order": [
@@ -468,6 +468,8 @@
     "section_hero_Ay6Tni",
     "section_rich_text_VxWf4z",
     "section_collection_fmGhdA",
+    "section_rich_text_DNYxJb",
+    "section_collection_MkANnE",
     "section_rich_text_3Bi7jQ",
     "section_collection_M4Upt9",
     "section_rich_text_dgpcbP",
@@ -476,8 +478,6 @@
     "section_custom_content_C8w7Ch",
     "section_rich_text_e7DJyb",
     "section_collection_m3KLnB",
-    "section_collection_DWdhaf",
-    "section_rich_text_DNYxJb",
-    "section_collection_MkANnE"
+    "section_collection_DWdhaf"
   ]
 }

@@ -83,7 +83,7 @@
     "section_collection_fmGhdA": {
       "type": "section-collection",
       "settings": {
-        "featured_collection": "s-womens-droptail-thermal-tight-new",
+        "featured_collection": "womens-thermal-cargo-bib-tights",
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -96,10 +96,70 @@
         "button_style": "btn--solid",
         "show_arrow": false,
         "layout_desktop": "grid",
-        "grid": 4,
-        "rows": 5,
+        "grid": 3,
+        "rows": 6,
         "width": "wrapper",
-        "layout_mobile": "2",
+        "layout_mobile": "1",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_rich_text_ALLBWm": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_Kwdb3N": {
+          "type": "heading",
+          "settings": {
+            "title": "LIGHTWEIGHT DROPTAIL BIB TIGHTS",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_zn9GAc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our lightweight cargo bib tights are perfect for temperatures between 48-70° and ideal for mild weather or for those who tend to “run hot.” Our dense endurance pad, ensures comfort no matter the length of the ride. Winner: Gear of the year, Bicycling Magazine, 2024.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_Kwdb3N",
+        "text_zn9GAc"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 50,
+        "padding_bottom": 40
+      }
+    },
+    "section_collection_DXyY74": {
+      "type": "section-collection",
+      "settings": {
+        "featured_collection": "womens-lightweight-droptail-bib-tight",
+        "heading": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 2,
+        "rows": 2,
+        "width": "wrapper",
+        "layout_mobile": "1",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0,
@@ -159,7 +219,7 @@
         "grid": 4,
         "rows": 3,
         "width": "wrapper",
-        "layout_mobile": "2",
+        "layout_mobile": "1",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0,
@@ -274,66 +334,6 @@
         "rows": 1,
         "width": "wrapper--full-padded",
         "layout_mobile": "slider",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "heading_tag": "automatic"
-      }
-    },
-    "section_rich_text_ALLBWm": {
-      "type": "section-rich-text",
-      "blocks": {
-        "heading_Kwdb3N": {
-          "type": "heading",
-          "settings": {
-            "title": "LIGHTWEIGHT DROPTAIL BIB TIGHTS",
-            "heading_font_size": "heading-medium",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_zn9GAc": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our lightweight cargo bib tights are perfect for temperatures between 48-70° and ideal for mild weather or for those who tend to “run hot.” Our dense endurance pad, ensures comfort no matter the length of the ride. Winner: Gear of the year, Bicycling Magazine, 2024.</p>",
-            "text_font_size": "body-large",
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_Kwdb3N",
-        "text_zn9GAc"
-      ],
-      "settings": {
-        "align_text": "text-left",
-        "width": "wrapper",
-        "color_scheme": "",
-        "overlay_type": "disabled",
-        "padding_top": 50,
-        "padding_bottom": 40
-      }
-    },
-    "section_collection_DXyY74": {
-      "type": "section-collection",
-      "settings": {
-        "featured_collection": "womens-lightweight-droptail-bib-tight",
-        "heading": "",
-        "heading_font_size": "heading-medium",
-        "description": "",
-        "text_font_size": "body-medium",
-        "layout": "inline",
-        "link_text": "",
-        "link_url": "",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "layout_desktop": "grid",
-        "grid": 3,
-        "rows": 2,
-        "width": "wrapper",
-        "layout_mobile": "2",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0,
@@ -469,13 +469,13 @@
     "section_hero_Ay6Tni",
     "section_rich_text_VxWf4z",
     "section_collection_fmGhdA",
+    "section_rich_text_ALLBWm",
+    "section_collection_DXyY74",
     "section_rich_text_L7BPVR",
     "section_collection_jwmDf4",
     "section_rich_text_3xqzL8",
     "section_custom_content_figGgT",
     "section_collection_DWdhaf",
-    "section_rich_text_ALLBWm",
-    "section_collection_DXyY74",
     "section_rich_text_e7DJyb",
     "section_collection_m3KLnB",
     "section_rich_text_Cjnen8",

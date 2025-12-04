@@ -23,6 +23,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -45,6 +46,7 @@
       "block_order": [
         "text_rb4xMA"
       ],
+      "disabled": true,
       "settings": {
         "slider_speed": 7,
         "text_alignment": "center",
@@ -84,13 +86,15 @@
         "junip_product_reviews_ugc_junip_product_summary_46cMCr": {
           "type": "shopify://apps/junip/blocks/junip-product-summary/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
           "settings": {
-            "product": "{{product}}"
+            "product": "{{product}}",
+            "alignment": ""
           }
         },
         "price": {
           "type": "price",
           "settings": {
             "text_font_size": "body-x-large",
+            "show_shipping_policy": false,
             "padding_bottom": 16
           }
         },
@@ -99,6 +103,8 @@
           "settings": {
             "siblings_collection": "{{ product.metafields.theme.siblings.value }}",
             "sibling_color": "{{ product.metafields.theme.sibling_color.value }}",
+            "option_font_size": "body-medium",
+            "value_font_size": "body-x-small",
             "padding_bottom": 16
           }
         },
@@ -107,6 +113,8 @@
           "settings": {
             "info_page": "",
             "size_chart_style": "text",
+            "option_font_size": "body-medium",
+            "value_font_size": "body-x-small",
             "padding_bottom": 16
           }
         },
@@ -133,8 +141,11 @@
           "settings": {
             "show_quantity": false,
             "button_type": "btn--primary",
+            "button_size": "",
             "button_style": "btn--solid",
+            "show_dynamic_checkout": false,
             "button_type_dynamic": "btn--secondary",
+            "button_size_dynamic": "btn--large",
             "button_style_dynamic": "btn--solid",
             "show_gift_card_recipient": false,
             "padding_bottom": 32
@@ -143,44 +154,72 @@
         "accordion_HBMzfW": {
           "type": "accordion",
           "settings": {
+            "style": "collapsible",
             "show_description": true,
             "show_read_more": false,
             "default_open": true,
             "heading": "DESCRIPTION",
+            "heading_font_size": "body-medium",
             "text": "",
+            "text_font_size": "body-medium",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "",
             "padding_bottom": 0
           }
         },
         "accordion_LMYrwc": {
           "type": "accordion",
           "settings": {
+            "style": "collapsible",
             "show_description": false,
             "show_read_more": false,
             "default_open": false,
             "heading": "FEATURES",
+            "heading_font_size": "body-medium",
             "text": "<p>{{ product.metafields.custom.product_features | metafield_tag }}</p>",
+            "text_font_size": "body-medium",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "",
             "padding_bottom": 0
           }
         },
         "accordion_GbHdeE": {
           "type": "accordion",
           "settings": {
+            "style": "collapsible",
             "show_description": false,
             "show_read_more": false,
             "default_open": false,
             "heading": "SHIPPING, EXCHANGES, AND RETURNS",
+            "heading_font_size": "body-medium",
             "text": "<p>· Most orders will ship within 48 hours from our warehouse located in San Diego. Orders are processed Monday - Friday during normal business hours.</p><p>· Free (and easy) exchanges, we want you in the correct size.</p><p>· 30-day return window.</p><p>· Sale items are eligible for exchanges and store credit only.</p>",
+            "text_font_size": "body-medium",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "",
             "padding_bottom": 0
           }
         },
         "accordion_hwAK7J": {
           "type": "accordion",
           "settings": {
+            "style": "collapsible",
             "show_description": false,
             "show_read_more": false,
             "default_open": false,
             "heading": "1 YEAR WARRANTY",
+            "heading_font_size": "body-medium",
             "text": "<p>· Our clothing is made by hand and made to last. We stand by our construction and fabrics and offer a 1-year warranty against manufacturing defects. The most sustainable clothing is the kind that lasts many seasons. Need a repair? Questions? <a href=\"mailto:info@ornotbike.com\">Email us</a>, we’re pretty good at typing.</p><p>· Crash Replacement Assistance - We offer a discounted replacement if you happen to fall and destroy your clothing. (We recommend that you don’t use this)</p>",
+            "text_font_size": "body-medium",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "",
             "padding_bottom": 0
           }
         },
@@ -198,6 +237,7 @@
             "autoplay": false,
             "autoplay_speed": 8,
             "bg_color": "",
+            "padding_top": 16,
             "padding_bottom": 16
           }
         },
@@ -277,6 +317,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -297,6 +338,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -369,6 +411,7 @@
         "color_scheme": "",
         "show_text_background": false,
         "color": "#ffffff",
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "heading_tag": "automatic"
@@ -422,6 +465,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -463,6 +507,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -521,6 +566,7 @@
             "featured_collection": "cross-sell-seat-bags",
             "show_image": false,
             "align_with_product_images": false,
+            "overlay_type": "disabled",
             "description": "",
             "color": "#ffffff",
             "link_text": "",
@@ -568,6 +614,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -610,6 +657,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -650,6 +698,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -702,6 +751,10 @@
         "enable_tabs": true,
         "heading_alignment": "text-center",
         "heading_font_size": "heading-small",
+        "limit": 4,
+        "layout_desktop": "slider",
+        "grid": 4,
+        "rows": 3,
         "layout_mobile": "slider",
         "color_scheme": "",
         "padding_top": 30,

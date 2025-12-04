@@ -80,198 +80,6 @@
         "padding_bottom": 50
       }
     },
-    "section_custom_content_pAKcAp": {
-      "type": "section-custom-content",
-      "blocks": {
-        "text_VE6c8Q": {
-          "type": "text",
-          "settings": {
-            "subheading": "",
-            "title": "RIDING SHIRTS",
-            "heading_font_size": "heading-medium",
-            "text": "<p>Everyone has a favorite shirt and we aim to make yours. Our shirts are made with recycled and natural fibers with a purposely minimal timeless look. These function flawlessly on your commute or at the office. Made in California. </p>",
-            "text_font_size": "body-medium",
-            "button_text": "View RIDING Shirts",
-            "button_url": "shopify://collections/mens-riding-shirts",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "",
-            "color": "",
-            "heading_tag": "automatic"
-          }
-        },
-        "image_YRjYCm": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Ornot_MarinoRidingShirt_Squares-4.jpg",
-            "title": "",
-            "heading_font_size": "heading-large",
-            "text": "",
-            "text_font_size": "body-medium",
-            "flex_align": "align--middle-center",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "overlay_type": "disabled",
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "text_VE6c8Q",
-        "image_YRjYCm"
-      ],
-      "settings": {
-        "borders": false,
-        "gutters": false,
-        "width": "wrapper--full",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "reverse_blocks": true,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_custom_content_e6qUcG": {
-      "type": "section-custom-content",
-      "blocks": {
-        "image_CbkMbG": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_MissionShorts_MidnightBlue_07_c51364db-e463-4ba7-99d7-20c6c3c91bd8.jpg",
-            "title": "",
-            "heading_font_size": "heading-large",
-            "text": "",
-            "text_font_size": "body-medium",
-            "flex_align": "align--middle-center",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "overlay_type": "disabled",
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_RNp9NN": {
-          "type": "text",
-          "settings": {
-            "subheading": "",
-            "title": "MISSION PANTS, SHORTS & BOXERS",
-            "heading_font_size": "heading-medium",
-            "text": "<p>Our Mission Pants & Shorts feature a slim fit and versatile style. The technical construction includes a gusseted under panel for ease of flexibility while on your most athletic adventures. Both pair well with our lightweight and merino boxer briefs. Wear em on your bike or at the pub. </p>",
-            "text_font_size": "body-medium",
-            "button_text": "View Shorts, Pants & Boxers",
-            "button_url": "shopify://collections/shorts-and-pants",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "",
-            "color": "",
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "image_CbkMbG",
-        "text_RNp9NN"
-      ],
-      "settings": {
-        "borders": false,
-        "gutters": false,
-        "width": "wrapper--full",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "reverse_blocks": false,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_custom_content_nVDKRf": {
-      "type": "section-custom-content",
-      "blocks": {
-        "text_nQ9nGz": {
-          "type": "text",
-          "settings": {
-            "subheading": "",
-            "title": "UV TRAIL SHIRT",
-            "heading_font_size": "heading-medium",
-            "text": "<p>Designed for long days spent outside, the UV Hoodie is a go-to for gravel rides and coastal downtime. Sewn in California from lightweight, recycled fabric, it balances performance with environmental responsibility. UPF 30 sun protection, a bike-specific fit, and quick-drying breathability keep you cool and comfortable from sun up to sun down. </p>",
-            "text_font_size": "body-medium",
-            "button_text": "View UV Trail Shirts",
-            "button_url": "shopify://collections/m-uv-trail-shirt-uv-hoodie",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "",
-            "color": "",
-            "heading_tag": "automatic"
-          }
-        },
-        "image_E3HQKH": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/ORNT0025.jpg",
-            "title": "",
-            "heading_font_size": "heading-large",
-            "text": "",
-            "text_font_size": "body-medium",
-            "flex_align": "align--middle-center",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "overlay_type": "disabled",
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "text_nQ9nGz",
-        "image_E3HQKH"
-      ],
-      "settings": {
-        "borders": false,
-        "gutters": false,
-        "width": "wrapper--full",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "reverse_blocks": true,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "section_custom_content_aNhXR3": {
       "type": "section-custom-content",
       "blocks": {
@@ -336,6 +144,199 @@
         "padding_bottom": 0
       }
     },
+    "section_custom_content_e6qUcG": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_RNp9NN": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "MISSION PANTS, SHORTS & BOXERS",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Our Mission Pants & Shorts feature a slim fit and versatile style. The technical construction includes a gusseted under panel for ease of flexibility while on your most athletic adventures. Both pair well with our lightweight and merino boxer briefs. Wear em on your bike or at the pub. </p>",
+            "text_font_size": "body-medium",
+            "button_text": "View Shorts, Pants & Boxers",
+            "button_url": "shopify://collections/shorts-and-pants",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
+        "image_CbkMbG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_MissionPant_Navy_5.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_RNp9NN",
+        "image_CbkMbG"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_pAKcAp": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_YRjYCm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_MerinoRidingShirt_Emerald_07.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_VE6c8Q": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "RIDING SHIRTS",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Everyone has a favorite shirt and we aim to make yours. Our shirts are made with recycled and natural fibers with a purposely minimal timeless look. These function flawlessly on your commute or at the office. Made in California. </p>",
+            "text_font_size": "body-medium",
+            "button_text": "View RIDING Shirts",
+            "button_url": "shopify://collections/mens-riding-shirts",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_YRjYCm",
+        "text_VE6c8Q"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_nVDKRf": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_nQ9nGz": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "UV TRAIL SHIRT",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Designed for long days spent outside, the UV Hoodie is a go-to for gravel rides and coastal downtime. Sewn in California from lightweight, recycled fabric, it balances performance with environmental responsibility. UPF 30 sun protection, a bike-specific fit, and quick-drying breathability keep you cool and comfortable from sun up to sun down. </p>",
+            "text_font_size": "body-medium",
+            "button_text": "View UV Trail Shirts",
+            "button_url": "shopify://collections/m-uv-trail-shirt-uv-hoodie",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
+        "image_E3HQKH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ORNT0025.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_nQ9nGz",
+        "image_E3HQKH"
+      ],
+      "disabled": true,
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_collection_fmGhdA": {
       "type": "section-collection",
       "settings": {
@@ -367,10 +368,10 @@
     "main",
     "section_hero_Ay6Tni",
     "section_rich_text_VxWf4z",
-    "section_custom_content_pAKcAp",
-    "section_custom_content_e6qUcG",
-    "section_custom_content_nVDKRf",
     "section_custom_content_aNhXR3",
+    "section_custom_content_e6qUcG",
+    "section_custom_content_pAKcAp",
+    "section_custom_content_nVDKRf",
     "section_collection_fmGhdA"
   ]
 }

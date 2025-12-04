@@ -23,6 +23,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -62,6 +63,7 @@
           "type": "price",
           "settings": {
             "text_font_size": "body-x-large",
+            "show_shipping_policy": false,
             "padding_bottom": 16
           }
         },
@@ -70,6 +72,8 @@
           "settings": {
             "siblings_collection": "{{ product.metafields.theme.siblings.value }}",
             "sibling_color": "{{ product.metafields.theme.sibling_color.value }}",
+            "option_font_size": "body-medium",
+            "value_font_size": "body-x-small",
             "padding_bottom": 16
           }
         },
@@ -78,6 +82,8 @@
           "settings": {
             "info_page": "",
             "size_chart_style": "text",
+            "option_font_size": "body-medium",
+            "value_font_size": "body-x-small",
             "padding_bottom": 16
           }
         },
@@ -104,8 +110,11 @@
           "settings": {
             "show_quantity": false,
             "button_type": "btn--primary",
+            "button_size": "",
             "button_style": "btn--solid",
+            "show_dynamic_checkout": false,
             "button_type_dynamic": "btn--secondary",
+            "button_size_dynamic": "btn--large",
             "button_style_dynamic": "btn--solid",
             "show_gift_card_recipient": false,
             "padding_bottom": 32
@@ -114,44 +123,72 @@
         "accordion_MqBD3b": {
           "type": "accordion",
           "settings": {
+            "style": "collapsible",
             "show_description": true,
             "show_read_more": false,
             "default_open": true,
             "heading": "DESCRIPTION",
+            "heading_font_size": "body-medium",
             "text": "",
+            "text_font_size": "body-medium",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "",
             "padding_bottom": 0
           }
         },
         "accordion_MfjKnt": {
           "type": "accordion",
           "settings": {
+            "style": "collapsible",
             "show_description": false,
             "show_read_more": false,
             "default_open": false,
             "heading": "FEATURES",
+            "heading_font_size": "body-medium",
             "text": "<p>{{ product.metafields.custom.product_features | metafield_tag }}</p>",
+            "text_font_size": "body-medium",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "",
             "padding_bottom": 0
           }
         },
         "accordion_TyR9yW": {
           "type": "accordion",
           "settings": {
+            "style": "collapsible",
             "show_description": false,
             "show_read_more": true,
             "default_open": false,
             "heading": "SHIPPING, EXCHANGES, AND RETURNS",
+            "heading_font_size": "body-medium",
             "text": "<p>· Most orders will ship within 48 hours from our warehouse located in San Diego. Orders are processed Monday - Friday during normal business hours.</p><p>· Free (and easy) exchanges, we want you in the correct size.</p><p>· 30-day return window.</p><p>· Sale items are eligible for exchanges and store credit only.</p>",
+            "text_font_size": "body-medium",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "",
             "padding_bottom": 0
           }
         },
         "accordion_ccRD8B": {
           "type": "accordion",
           "settings": {
+            "style": "collapsible",
             "show_description": false,
             "show_read_more": false,
             "default_open": false,
             "heading": "1 YEAR WARRANTY",
+            "heading_font_size": "body-medium",
             "text": "<p>· Our clothing is made by hand and made to last. We stand by our construction and fabrics and offer a 1-year warranty against manufacturing defects. The most sustainable clothing is the kind that lasts many seasons. Need a repair? Questions? <a href=\"mailto:info@ornotbike.com\">Email us</a>, we’re pretty good at typing.</p><p>· Crash Replacement Assistance - We offer a discounted replacement if you happen to fall and destroy your clothing. (We recommend that you don’t use this)</p>",
+            "text_font_size": "body-medium",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "",
             "padding_bottom": 0
           }
         },
@@ -169,6 +206,7 @@
             "autoplay": false,
             "autoplay_speed": 8,
             "bg_color": "",
+            "padding_top": 16,
             "padding_bottom": 16
           }
         },
@@ -231,17 +269,18 @@
     "section_hero_AXLMwy": {
       "type": "section-hero",
       "settings": {
-        "image_1": "shopify://shop_images/temp_scale_jerseys-_Recovered_-01.jpg",
+        "image_1": "shopify://shop_images/temp_scale_jerseys-DESKTOP-nov-2025.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
-        "mobile_image": "shopify://shop_images/temp_scale_jerseys-_Recovered_-02.jpg",
+        "mobile_image": "shopify://shop_images/temp_scale_jerseys-2025.jpg",
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -261,6 +300,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -269,17 +309,18 @@
     "section_hero_hQcQ8U": {
       "type": "section-hero",
       "settings": {
-        "image_1": "shopify://shop_images/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.png",
+        "image_1": "shopify://shop_images/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.gif",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
-        "mobile_image": "shopify://shop_images/CN_1FTP_BannerMobile.png",
+        "mobile_image": "shopify://shop_images/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.gif",
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -329,6 +370,10 @@
         "enable_tabs": true,
         "heading_alignment": "text-center",
         "heading_font_size": "heading-small",
+        "limit": 4,
+        "layout_desktop": "slider",
+        "grid": 4,
+        "rows": 3,
         "layout_mobile": "slider",
         "color_scheme": "",
         "padding_top": 30,
