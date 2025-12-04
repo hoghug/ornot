@@ -269,13 +269,13 @@
     "section_hero_AXLMwy": {
       "type": "section-hero",
       "settings": {
-        "image_1": "shopify://shop_images/temp_scale_jerseys_desktop_OCT_2025.jpg",
+        "image_1": "shopify://shop_images/temp_scale_jerseys-DESKTOP-nov-2025.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
-        "mobile_image": "shopify://shop_images/temp_scale_jerseys_OCT_2025.jpg",
+        "mobile_image": "shopify://shop_images/temp_scale_jerseys-2025.jpg",
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",

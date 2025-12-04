@@ -1,4 +1,4 @@
-{% comment %}wsgThemeId:183891132708{% endcomment %}
+{% comment %}wsgThemeId:183541367076{% endcomment %}
 {% comment %}
   ========
   WARNING!
@@ -61,7 +61,7 @@
 
     // update button classes
     const button = document.querySelectorAll(".wsg-button-fix");
-    let buttonClass = "xxButtonClassesHerexx";
+    let buttonClass = "btn btn--primary";
     buttonClass = buttonClass.split(" ");
     for (let i = 0; i < button.length; i++) {
       button[i].classList.add(... buttonClass);
@@ -200,7 +200,7 @@
   .wsg-ws-only .button {
     margin: 0;
   }
-    #wsg-login input.wsg-submit-copy,
+  #wsg-login input.wsg-submit-copy,
   #wsg-account-create input.wsg-submit-copy,
   #wsg-signup-container #wsg-submit  {
     border: 1px solid #00b5e2 !important; 
@@ -228,5 +228,8 @@
 }
 .wg__retail-price.strikethrough {
   text-decoration: line-through;
+
+.amp-cart__cart-line-price {
+  direction: ltr !important;
 }
 </style>

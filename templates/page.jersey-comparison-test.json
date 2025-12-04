@@ -128,14 +128,13 @@
         },
         "image_qxWVqM": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/mens-waffle-studio-mint-5.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "Waffle Grid",
             "heading_font_size": "heading-small",
-            "text": "<p>The most comfortable jersey ever. It’s <strong>super soft, impressively stretchy</strong>, and built for cool-weather riding.</p><p><a href=\"/collections/s-mens-waffle-thermal\" title=\"S - Mens Waffle Thermal\">Shop mens -&gt;</a></p><p><a href=\"/collections/s-womens-waffle-thermal\" title=\"s - womens waffle thermal\">Shop Womens -&gt;</a></p>",
+            "text": "<p>The most comfortable jersey ever. It’s <strong>super soft, impressively stretchy</strong>, and built for cool-weather riding.</p><p><a href=\"/products/mens-waffle-grid-thermal-jersey-mint\" title=\"Men's Waffle Grid Thermal Jersey - Mint\">Shop Mens</a></p><p><a href=\"/products/womens-waffle-grid-thermal-jersey-mint\" title=\"Women's Waffle Grid Thermal Jersey - Mint\">Shop Womens</a></p>",
             "text_font_size": "body-medium",
             "button_text": "",
             "button_url": "",
@@ -427,13 +426,13 @@
     "section_hero_NVWqea": {
       "type": "section-hero",
       "settings": {
-        "image_1": "shopify://shop_images/temp_scale_jerseys_desktop_OCT_2025.jpg",
+        "image_1": "shopify://shop_images/temp_scale_jerseys-DESKTOP-nov-2025.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
-        "mobile_image": "shopify://shop_images/temp_scale_jerseys_OCT_2025.jpg",
+        "mobile_image": "shopify://shop_images/temp_scale_jerseys-2025.jpg",
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",

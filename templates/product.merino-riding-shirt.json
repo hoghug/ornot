@@ -23,6 +23,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -54,13 +55,15 @@
         "junip_product_reviews_ugc_junip_product_summary_46cMCr": {
           "type": "shopify://apps/junip/blocks/junip-product-summary/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
           "settings": {
-            "product": "{{product}}"
+            "product": "{{product}}",
+            "alignment": ""
           }
         },
         "price": {
           "type": "price",
           "settings": {
             "text_font_size": "body-x-large",
+            "show_shipping_policy": false,
             "padding_bottom": 16
           }
         },
@@ -69,6 +72,8 @@
           "settings": {
             "siblings_collection": "{{ product.metafields.theme.siblings.value }}",
             "sibling_color": "{{ product.metafields.theme.sibling_color.value }}",
+            "option_font_size": "body-medium",
+            "value_font_size": "body-x-small",
             "padding_bottom": 16
           }
         },
@@ -77,6 +82,8 @@
           "settings": {
             "info_page": "",
             "size_chart_style": "text",
+            "option_font_size": "body-medium",
+            "value_font_size": "body-x-small",
             "padding_bottom": 16
           }
         },
@@ -103,8 +110,11 @@
           "settings": {
             "show_quantity": false,
             "button_type": "btn--primary",
+            "button_size": "",
             "button_style": "btn--solid",
+            "show_dynamic_checkout": false,
             "button_type_dynamic": "btn--secondary",
+            "button_size_dynamic": "btn--large",
             "button_style_dynamic": "btn--solid",
             "show_gift_card_recipient": false,
             "padding_bottom": 32
@@ -113,44 +123,72 @@
         "accordion_BJG76K": {
           "type": "accordion",
           "settings": {
+            "style": "collapsible",
             "show_description": true,
             "show_read_more": false,
             "default_open": true,
             "heading": "DESCRIPTION",
+            "heading_font_size": "body-medium",
             "text": "",
+            "text_font_size": "body-medium",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "",
             "padding_bottom": 0
           }
         },
         "accordion_cHLQLT": {
           "type": "accordion",
           "settings": {
+            "style": "collapsible",
             "show_description": false,
             "show_read_more": false,
             "default_open": false,
             "heading": "FEATURES",
+            "heading_font_size": "body-medium",
             "text": "<p>{{ product.metafields.custom.product_features | metafield_tag }}</p>",
+            "text_font_size": "body-medium",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "",
             "padding_bottom": 0
           }
         },
         "accordion_6LtDKd": {
           "type": "accordion",
           "settings": {
+            "style": "collapsible",
             "show_description": false,
             "show_read_more": false,
             "default_open": false,
             "heading": "SHIPPING, EXCHANGES, AND RETURNS",
+            "heading_font_size": "body-medium",
             "text": "<p>· Most orders will ship within 48 hours from our warehouse located in San Diego. Orders are processed Monday - Friday during normal business hours.</p><p>· Free (and easy) exchanges, we want you in the correct size.</p><p>· 30-day return window.</p><p>· Sale items are eligible for exchanges and store credit only.</p>",
+            "text_font_size": "body-medium",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "",
             "padding_bottom": 0
           }
         },
         "accordion_zXkcf9": {
           "type": "accordion",
           "settings": {
+            "style": "collapsible",
             "show_description": false,
             "show_read_more": false,
             "default_open": false,
             "heading": "1 YEAR WARRANTY",
+            "heading_font_size": "body-medium",
             "text": "<p>· Our clothing is made by hand and made to last. We stand by our construction and fabrics and offer a 1-year warranty against manufacturing defects. The most sustainable clothing is the kind that lasts many seasons. Need a repair? Questions? <a href=\"mailto:info@ornotbike.com\">Email us</a>, we’re pretty good at typing.</p><p>· Crash Replacement Assistance - We offer a discounted replacement if you happen to fall and destroy your clothing. (We recommend that you don’t use this)</p>",
+            "text_font_size": "body-medium",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "",
             "padding_bottom": 0
           }
         },
@@ -168,6 +206,7 @@
             "autoplay": false,
             "autoplay_speed": 8,
             "bg_color": "",
+            "padding_top": 16,
             "padding_bottom": 16
           }
         },
@@ -217,7 +256,7 @@
         "product_sticky_enable": true,
         "variant_image_scroll": true,
         "show_cart_bar": false,
-        "enable_zoom": false,
+        "enable_zoom": true,
         "enable_video_looping": true,
         "image_layout": "grid-1",
         "image_size": "normal",
@@ -235,7 +274,8 @@
           "disabled": true,
           "settings": {
             "text": "<p>stuffffffffffff</p>",
-            "text_font_size": "body-large"
+            "text_font_size": "body-large",
+            "padding_bottom": 8
           }
         }
       },
@@ -254,6 +294,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -267,14 +308,16 @@
           "settings": {
             "title": "DOMESTIC MANUFACTURING",
             "heading_font_size": "heading-x-large",
-            "heading_tag": "automatic"
+            "heading_tag": "automatic",
+            "padding_bottom": 8
           }
         },
         "text_MJgGPX": {
           "type": "text",
           "settings": {
             "text": "<p>CUT & SEWN IN OAKLAND, CA FROM RECYCLED BLUESIGN®-APPROVED FABRIC</p>",
-            "text_font_size": "body-large"
+            "text_font_size": "body-large",
+            "padding_bottom": 8
           }
         }
       },
@@ -295,6 +338,7 @@
         "flex_align_mobile": "align--middle-right-mobile",
         "color_scheme": "scheme-2",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -375,14 +419,16 @@
           "settings": {
             "title": "\"UTILITARIAN, BOMB-PROOF APPAREL THAT LASTS & LASTS & LASTS, REGARDLESS OF USE.\"",
             "heading_font_size": "heading-x-large",
-            "heading_tag": "automatic"
+            "heading_tag": "automatic",
+            "padding_bottom": 8
           }
         },
         "text_VMnhcn": {
           "type": "text",
           "settings": {
             "text": "<p>Tell your brand's story through images.</p>",
-            "text_font_size": "body-large"
+            "text_font_size": "body-large",
+            "padding_bottom": 8
           }
         },
         "button_andkp7": {
@@ -393,7 +439,9 @@
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
-            "show_arrow": false
+            "show_arrow": false,
+            "full_width": false,
+            "padding_bottom": 8
           }
         }
       },
@@ -415,6 +463,7 @@
         "flex_align_mobile": "align--middle-left-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -444,6 +493,7 @@
         "color_scheme": "",
         "show_text_background": false,
         "color": "",
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "heading_tag": "automatic"
@@ -453,7 +503,7 @@
       "type": "section-custom-code",
       "name": "Custom code",
       "settings": {
-        "code": "<div style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;\">\n  <iframe \n    src=\"https://www.youtube.com/embed/pUUffPnOzpE?rel=0&modestbranding=1&showinfo=0&controls=1\" \n    title=\"Ornot Video\"\n    frameborder=\"0\" \n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" \n    allowfullscreen \n    loading=\"lazy\"\n    style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\">\n  </iframe>\n</div>",
+        "code": "<div style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;\">\n  <iframe \n    src=\"https://www.youtube.com/embed/pUUffPnOzpE?rel=0&modestbranding=1&showinfo=0&controls=1&autoplay=1&mute=1\" \n    title=\"Ornot Video\"\n    frameborder=\"0\" \n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" \n    allowfullscreen \n    loading=\"lazy\"\n    style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\">\n  </iframe>\n</div>",
         "width": "wrapper--full",
         "color_scheme": "",
         "padding_top": 0,
@@ -475,6 +525,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -560,6 +611,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -601,6 +653,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -686,6 +739,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -726,6 +780,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -778,6 +833,10 @@
         "enable_tabs": true,
         "heading_alignment": "text-center",
         "heading_font_size": "heading-small",
+        "limit": 4,
+        "layout_desktop": "slider",
+        "grid": 4,
+        "rows": 3,
         "layout_mobile": "slider",
         "color_scheme": "",
         "padding_top": 30,
