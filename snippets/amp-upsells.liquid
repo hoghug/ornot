@@ -23,13 +23,16 @@ const updateTickerBarFreeShippingMessage = (cart) => {
   if (!freeShippingEle) return;
 
   const freeShippingLimit = parseInt(freeShippingEle.dataset.freeShippingLimit)
-  const leftToSpendMessage = freeShippingEle.querySelector('[data-left-to-spend]');
+  const allLeftToSpendMsgs = tickerBar.querySelectorAll('[data-left-to-spend]');
 
-  
   if (freeShippingEle.dataset.freeShipping === 'true') {
     if (!cart || !cart.total_price) {
       freeShippingEle.classList.remove('is-success');
-      leftToSpendMessage.innerText = `$${freeShippingLimit}`;
+      allLeftToSpendMsgs.forEach(el => {
+        if (el) {
+          el.innerText = `$${freeShippingLimit}`;
+        }
+      });
       return;
     }
     
@@ -40,7 +43,11 @@ const updateTickerBarFreeShippingMessage = (cart) => {
       freeShippingEle.classList.add('is-success');
     } else {
       freeShippingEle.classList.remove('is-success');
-      leftToSpendMessage.innerText = `$${leftToSpend.toFixed(2).replace('.00', '')}`;
+      allLeftToSpendMsgs.forEach(el => {
+        if (el) {
+          el.innerText = `$${leftToSpend.toFixed(2).replace('.00', '')}`;
+        }
+      });
     }
   }
   

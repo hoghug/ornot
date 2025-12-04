@@ -1508,7 +1508,7 @@
         "type": "select",
         "id": "wg_retail_price_to_display",
         "label" : "Retail price to display",
-        "default": "price_min",
+        "default": "compare_at_price_max",
         "options": [
           { "value": "price_min", "label": "Price Min" },
           { "value": "price_max", "label": "Price Max" },
