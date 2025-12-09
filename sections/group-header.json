@@ -16,9 +16,8 @@
       "blocks": {
         "text_aNKTYF": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p>25% off Sitewide - 48 Hours Only - Code auto applied</p>",
+            "text": "<h5>ORDER BY 12/15 FOR DELIVERY BY 12/24</h5>",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,

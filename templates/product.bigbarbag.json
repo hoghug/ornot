@@ -46,7 +46,6 @@
       "block_order": [
         "text_A8Td9R"
       ],
-      "disabled": true,
       "settings": {
         "slider_speed": 7,
         "text_alignment": "center",
@@ -293,9 +292,9 @@
         "product_sticky_enable": true,
         "variant_image_scroll": true,
         "show_cart_bar": false,
-        "enable_zoom": false,
+        "enable_zoom": true,
         "enable_video_looping": true,
-        "image_layout": "thumbnails",
+        "image_layout": "grid-1",
         "image_size": "normal",
         "mobile_image_style": "thumbs",
         "color_scheme": "",
