@@ -46,7 +46,6 @@
       "block_order": [
         "text_PGpT3P"
       ],
-      "disabled": true,
       "settings": {
         "slider_speed": 7,
         "text_alignment": "center",
@@ -287,9 +286,9 @@
         "product_sticky_enable": true,
         "variant_image_scroll": true,
         "show_cart_bar": false,
-        "enable_zoom": false,
+        "enable_zoom": true,
         "enable_video_looping": true,
-        "image_layout": "thumbnails",
+        "image_layout": "grid-1",
         "image_size": "normal",
         "mobile_image_style": "thumbs",
         "color_scheme": "",
@@ -582,6 +581,7 @@
         "text_zXjBRp",
         "image_rxjBGw"
       ],
+      "disabled": true,
       "settings": {
         "borders": false,
         "gutters": false,
@@ -596,6 +596,7 @@
     },
     "section_hero_AXLMwy": {
       "type": "section-hero",
+      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.png",
         "link": "",
