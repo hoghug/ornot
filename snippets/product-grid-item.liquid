@@ -429,6 +429,12 @@
       assign sold_badge_text = 'products.product.sold_out' | t
       assign sold_badge_class = badge_class | append: ' sold-box'
     else
+
+      if settings.show_custom_label and product_tags contains '_label_'
+        assign custom_label_text = product_tags | split: '_label_'
+        assign custom_label_text = custom_label_text[1] | split: ',' | first | replace: '_', ' '
+      endif
+      
       if settings.show_custom_badge
         if product.metafields.theme.badge != blank and product.metafields.theme.badge.type == 'single_line_text_field'
           assign custom_badge_text = product.metafields.theme.badge.value
@@ -514,6 +520,10 @@
       
       if custom_badge_text != blank
         render 'product-badge', badge_class: custom_badge_class, badge_text: custom_badge_text, aos_delay: aos_delay, aos_duration: aos_duration, aos_anchor: aos_anchor
+      endif
+
+      if custom_label_text != blank
+        render 'product-badge', badge_class: 'card__label', badge_text: custom_label_text, aos_delay: aos_delay, aos_duration: aos_duration, aos_anchor: aos_anchor
       endif
 
       if new_badge_text != blank and preorder == false

@@ -47,6 +47,7 @@ select option{
 .badge--sale,
 .badge--new,
 .product__badge,
+.card__label,
 .card__badge,
 .price__badge,
 .tag,
@@ -102,6 +103,7 @@ select option{
 /* Common alternates across Broadcast versions/presets */
 .product-card__badge,
 .product__badge,
+.card__label,
 .card__badge,
 .price__badge,
 
@@ -125,6 +127,7 @@ select option{
 /* Ensure nested spans/small/etc inside the badge inherit the same face */
 .product-card__badge *,
 .product__badge *,
+.card__label *,
 .card__badge *,
 .price__badge * {
   font-family: "Trade Gothic","Helvetica Neue",Helvetica,Arial,sans-serif !important;
@@ -216,6 +219,7 @@ select, select option {
 /* BADGES (product-card badges, price badges) */
 .product-card__badge > span,
 .product__badge > span,
+.card__label > span,
 .card__badge > span,
 .price__badge > span,
 [class*="badge"] > span {
@@ -248,6 +252,7 @@ a.button > span,
 /* If any of these elements lack a <span>, fall back to nudging the text container itself */
 .product-card__badge:not(:has(> span)),
 .product__badge:not(:has(> span)),
+.card__label:not(:has(> span)),
 .card__badge:not(:has(> span)),
 .price__badge:not(:has(> span)),
 [class*="badge"]:not(:has(> span)),
@@ -268,6 +273,7 @@ a.button:not(:has(> span)),
 }
 /* Try these common Broadcast badge text hooks */
 .card__badge .badge__text,
+.card__label .badge__text,
 .product__badge .badge__text,
 .product-card__badge .badge__text {
   position: relative;

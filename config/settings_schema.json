@@ -1287,6 +1287,35 @@
       },
       {
         "type": "header",
+        "content": "Custom Minimal label",
+        "info": "Add tag '_label_Custom Text' to a product in order to show the label"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_custom_label",
+        "label": "Show custom badge",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "label_font_size",
+        "visible_if": "{{ settings.show_custom_label }}",
+        "label": "Text Size",
+        "min": 10,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "default": 12
+      },
+      {
+        "type": "color",
+        "id": "label_text_color",
+        "visible_if": "{{ settings.show_custom_label }}",
+        "label": "Text Color",
+        "default": "#666666"
+      },
+      {
+        "type": "header",
         "content": "Sold badge"
       },
       {

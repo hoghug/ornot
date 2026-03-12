@@ -12126,7 +12126,7 @@ main-search .input-holder {
   }
 }
 
-.badge-box {
+.badge-box, .card__label {
   --padding-vertical: 0.438rem;
   --text: var(--COLOR-BADGE-TEXT);
   --bg: var(--COLOR-BADGE-BG);
@@ -12147,6 +12147,12 @@ main-search .input-holder {
   color: var(--text);
   background: var(--bg);
 }
+
+.card__label {
+--bg: none !important;
+color: var(--COLOR-CARD-LABEL-TEXT);
+font-size: var(--FONT-SIZE-CARD-LABEL);
+}
 @media only screen and (max-width: 749px) {
   .badge-box {
     --padding-vertical: 6px;
@@ -12161,6 +12167,9 @@ main-search .input-holder {
 
 .badge-box-container {
   padding: 5px;
+}
+.badge-box-container:has(.card__label) {
+  padding: 5px 0 !important;
 }
 .badge-box-container.align--top-left, .badge-box-container.align--bottom-left {
   align-items: flex-start;
@@ -24768,6 +24777,7 @@ a.btn {
 .tag,
 .label,
 .product__badge,
+.card__label,
 .card__badge,
 .facets__label,
 .price__badge {
