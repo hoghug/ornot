@@ -34,7 +34,8 @@
           "settings": {
             "title": "WORK HERE",
             "heading_font_size": "heading-x-large",
-            "heading_tag": "automatic"
+            "heading_tag": "automatic",
+            "padding_bottom": 8
           }
         }
       },
@@ -53,6 +54,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "scheme-2",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -73,7 +75,7 @@
         "text_cGxqMm": {
           "type": "text",
           "settings": {
-            "text": "<p>We make some of the best cycling apparel, accessories, and cycling adjacent clothing available. And we do it all with a smile while having a good time right here in San Francisco. Want to join us? Check the openings below. (Stay tuned for a digital designer position posting near the end of 2025)</p>",
+            "text": "<p>We make some of the best cycling apparel, accessories, and cycling adjacent clothing available. And we do it all with a smile while having a good time right here in San Francisco. Want to join us? Check the openings below. </p>",
             "text_font_size": "body-medium",
             "padding_bottom": 16
           }
@@ -87,6 +89,7 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 46,
         "padding_bottom": 26
       }
@@ -104,7 +107,7 @@
         "heading_8nwBDT": {
           "type": "heading",
           "settings": {
-            "title": "Director of Operations",
+            "title": "Digital brand designer",
             "heading_font_size": "heading-medium",
             "padding_bottom": 16,
             "heading_tag": "automatic"
@@ -113,7 +116,7 @@
         "text_jYUQPk": {
           "type": "text",
           "settings": {
-            "text": "<p>This is a big opportunity. Come and run the show, Ornot. </p>",
+            "text": "<p>Come make the logos bigger, ornot.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 16
           }
@@ -122,7 +125,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "Learn more",
-            "button_url": "https://www.ornotbike.com/pages/general-manager",
+            "button_url": "shopify://pages/graphic-designer-digital",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -137,7 +140,6 @@
         "text_jYUQPk",
         "buttons_zxMdtB"
       ],
-      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/TNUT7099.jpg",
         "image_width": "one-half",
@@ -276,6 +278,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -297,6 +300,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -338,6 +342,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -359,6 +364,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",

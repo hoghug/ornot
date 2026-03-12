@@ -20,6 +20,7 @@
     "nav_font_size": 20,
     "type_nav_caps": true,
     "type_base_font": "trade_gothic_n4",
+    "base_font_size": 16,
     "type_subheading_font": "trade_gothic_n7",
     "type_header_font": "trade_gothic_n7",
     "heading_letter_spacing": 0,
@@ -45,8 +46,9 @@
     "share_pinterest": false,
     "enable_infinity_scroll": true,
     "product_grid_font_size": "body-large",
-    "product_grid_center": true,
+    "product_grid_center": false,
     "overlay_text": false,
+    "show_recently_viewed_indicator": false,
     "product_grid_aspect_ratio": 1,
     "quickview_enable": false,
     "show_siblings": true,
@@ -59,6 +61,7 @@
     "swatch_style": "circle",
     "sibling_style": "image",
     "swatch_color_list": "Black: #000000\nWhite: #fafafa\nBlank: blank.png\nobsidian: #000000\nindigo: #272a3d",
+    "badge_font_size": "body-x-small",
     "badge_alignment": "align--top-left",
     "sale_tags_enable": false,
     "sale_bg_color": "#00b5e2",
@@ -154,6 +157,11 @@
           "embed_bg_color": "#000000",
           "embed_text_color": "#000000"
         }
+      },
+      "17676059084223943535": {
+        "type": "shopify://apps/triplewhale/blocks/triple_pixel_snippet/483d496b-3f1a-4609-aea7-8eee3b6b7a2a",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
@@ -208,7 +216,7 @@
           "accent": "#00b5e2",
           "lines_and_border": "#00b5e2",
           "overlay": "#00b5e2",
-          "links": "#00b5e2"
+          "links": "#ffffff"
         }
       },
       "scheme-4": {

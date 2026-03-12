@@ -1,0 +1,568 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_custom_content_gCrCwU": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_8pGUiD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/tights.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_xRizdP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RNT7851.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_8pGUiD",
+        "image_xRizdP"
+      ],
+      "name": "Custom section",
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_hero_Ay6Tni": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_rYaTXe": {
+          "type": "heading",
+          "settings": {
+            "title": "BIB TIGHTS COMPARISON",
+            "heading_font_size": "heading-medium",
+            "heading_tag": "automatic",
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading_rYaTXe"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_1": "shopify://shop_images/web-header-mens-header-lw-bib.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "four-fifty-height-hero",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/web-header-mens-header-1_f8cc376c-0759-44fd-9610-3f8922b216ec.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "scheme-1",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_rich_text_F6PYz8": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_yq98ND": {
+          "type": "heading",
+          "settings": {
+            "title": "WHICH TIGHT IS RIGHT FOR YOU?",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "heading_yq98ND"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 66,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_code_xgnkQF": {
+      "type": "section-custom-code",
+      "name": "Custom code",
+      "settings": {
+        "code": "<div style=\"\n  position: relative;\n  padding-bottom: 56.25%;\n  height: 0;\n  overflow: hidden;\n  width: 100vw;\n  left: 50%;\n  margin-left: -50vw;\n\">\n  <iframe \n    src=\"https://www.youtube.com/embed/irzcLhJEvIw?rel=0&modestbranding=1&showinfo=0&controls=1&autoplay=1&mute=1\"\n    title=\"Ornot Video\"\n    frameborder=\"0\"\n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n    allowfullscreen\n    loading=\"lazy\"\n    style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\">\n  </iframe>\n</div>",
+        "width": "wrapper--full",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_rich_text_C4cNXF": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_EnqEQM": {
+          "type": "heading",
+          "settings": {
+            "title": "LIGHTWEIGHT CARGO BIB TIGHTS",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "subheading_pRkWcK": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Lightweight | 48–70°F | Summer weight fabric",
+            "padding_bottom": 16
+          }
+        },
+        "text_cH8XcT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Built for chilly mornings and shoulder season rides when you want knee coverage without the hassle of <a href=\"https://www.ornotbike.com/collections/warmers/products/seamless-leg-warmers\" target=\"_blank\" title=\"https://www.ornotbike.com/collections/warmers/products/seamless-leg-warmers\">leg warmers</a>. Made with the same summer weight fabric as our bib shorts, they are breathable, flexible, and ideal for riders who run warm or want light UV protection on mild, sunny days.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_EnqEQM",
+        "subheading_pRkWcK",
+        "text_cH8XcT"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 56,
+        "padding_bottom": 0
+      }
+    },
+    "section_collection_hkGnPK": {
+      "type": "section-collection",
+      "name": "Featured collection",
+      "settings": {
+        "featured_collection": "lightweight-cargo-bib-tights-2026",
+        "heading": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 3,
+        "rows": 2,
+        "width": "wrapper",
+        "layout_mobile": "1",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_rich_text_DWwT6d": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_VkAYbw": {
+          "type": "heading",
+          "settings": {
+            "title": "THERMAL CARGO BIB TIGHTS",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "subheading_AMxQNB": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Thermal | 38–60°F | Fleece lined",
+            "padding_bottom": 16
+          }
+        },
+        "text_zVhxi7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our most versatile winter tight, designed to handle a wide range of cold weather conditions. The brushed fleece fabric adds warmth without bulk, making these the best single pair to own for everyday winter riding, from city miles to long climbs.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_VkAYbw",
+        "subheading_AMxQNB",
+        "text_zVhxi7"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 66,
+        "padding_bottom": 0
+      }
+    },
+    "section_collection_X6iRtF": {
+      "type": "section-collection",
+      "name": "Featured collection",
+      "settings": {
+        "featured_collection": "thermal-cargo-tights-2026",
+        "heading": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 3,
+        "rows": 3,
+        "width": "wrapper",
+        "layout_mobile": "1",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_rich_text_tpxxyd": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_ABQGG9": {
+          "type": "heading",
+          "settings": {
+            "title": "SUPERTHERMAL CARGO BIB TIGHTS",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "subheading_MEEhyG": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Super Thermal | 20–50°F | Wind and water protection",
+            "padding_bottom": 16
+          }
+        },
+        "text_677eax": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Designed for the coldest, wettest, and windiest days when riding still matters. A wind and water blocking front panel paired with a breathable rear keeps you warm without overheating, making these the no excuses choice for deep winter conditions.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_ABQGG9",
+        "subheading_MEEhyG",
+        "text_677eax"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 66,
+        "padding_bottom": 0
+      }
+    },
+    "section_collection_reKw6F": {
+      "type": "section-collection",
+      "name": "Featured collection",
+      "settings": {
+        "featured_collection": "super-thermal-cargo-tights-2026",
+        "heading": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 2,
+        "rows": 3,
+        "width": "wrapper",
+        "layout_mobile": "1",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_accordion_group_drc44y": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading_RzMp3U": {
+          "type": "heading",
+          "settings": {
+            "title": "FAQ"
+          }
+        },
+        "question_rTVREe": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "How do your Bib Tights fit?",
+            "content": "<p>Our tights fit true to size. We have a robust and detailed size chart on the product page to help you get dialed in. If you're in between sizes, we recommend sizing down because a more fitted bottom gives you the best chance at comfort.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_KwGFf3": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Do all of your Bib Tights have cargo pockets?",
+            "content": "<p>Yes! More room for snacks, cameras, cool rocks you find, etc</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_xhY9wb": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Do the Women’s Bib Tights use a Droptail design?",
+            "content": "<p>They do. It's cold out, keep your layers on.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_4dLHtf": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Are all of your Bib Tights made with recycled fabric?",
+            "content": "<p>Yes! All of ‘em.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_DpKjjK": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "How should I care for my Bib Tights?",
+            "content": "<p>The sooner the better; wash your gear soon after wearing to avoid the fabric breaking down from the enzymes in sweat.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_bUAFXw": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "What is the difference between lightweight and thermal tights?",
+            "content": "<p>The lightweight tights use the same fabric weight as our Summer Bib Shorts. They are great for cool mornings, chilly rides, and offer UV protection. The Thermal Tights are made with a brushed fleece fabric that keeps you warm while also breathing when the gradient rises or when you're racing your friend to the coffee shop. They both have the same fit, and both have pockets.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_QUPKM6": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "What is DWR?",
+            "content": "<p>DWR stands for Durable Water Repellent, a fabric treatment that helps water bead up and roll off instead of soaking in. We use a C0 DWR, which is a PFAS free alternative that avoids harmful forever chemicals while still shedding road spray and light rain, better for you, better for the places we ride.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_NXRDD9": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Are these tights PFAS free?",
+            "content": "<p>Yes. These tights use a C0 DWR treatment, meaning they are PFAS free and do not rely on harmful forever chemicals. It is a more responsible way to stay dry, without cutting corners on performance.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_RzMp3U",
+        "question_rTVREe",
+        "question_KwGFf3",
+        "question_xhY9wb",
+        "question_4dLHtf",
+        "question_DpKjjK",
+        "question_bUAFXw",
+        "question_QUPKM6",
+        "question_NXRDD9"
+      ],
+      "name": "Accordion group",
+      "settings": {
+        "heading_font_size": "heading-medium",
+        "question_font_size": "heading-small",
+        "width": "wrapper",
+        "columns": "2",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_look_T4riaz": {
+      "type": "section-look",
+      "blocks": {
+        "product_cDC6pG": {
+          "type": "product",
+          "settings": {
+            "product": "micro-climate-vest-mars",
+            "show_product_card": true,
+            "position_x": 48,
+            "position_y": 31
+          }
+        },
+        "product_zA8rBK": {
+          "type": "product",
+          "settings": {
+            "product": "womens-long-sleeve-micro-grid-jersey-azure",
+            "show_product_card": true,
+            "position_x": 36,
+            "position_y": 37
+          }
+        }
+      },
+      "block_order": [
+        "product_cDC6pG",
+        "product_zA8rBK"
+      ],
+      "disabled": true,
+      "name": "Shop the look",
+      "settings": {
+        "image": "shopify://shop_images/Ornot_Mars_MicroClimate_Vest_12_f533b99f-8dc6-4e21-a2cf-2819759eb1ef.jpg",
+        "layout": "",
+        "title": "For Sunny Days  days",
+        "heading": "",
+        "heading_font_size": "heading-large",
+        "show_dots": false,
+        "products_per_row": "1",
+        "enable_slider": false,
+        "button_type": "btn--white",
+        "button_size": "btn--small",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "enable_aspect_ratio": true,
+        "image_aspect_ratio": 1,
+        "color_scheme": "",
+        "dot_color": "",
+        "dot_background": "",
+        "padding_top": 13,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_custom_content_gCrCwU",
+    "section_hero_Ay6Tni",
+    "section_rich_text_F6PYz8",
+    "section_custom_code_xgnkQF",
+    "section_rich_text_C4cNXF",
+    "section_collection_hkGnPK",
+    "section_rich_text_DWwT6d",
+    "section_collection_X6iRtF",
+    "section_rich_text_tpxxyd",
+    "section_collection_reKw6F",
+    "section_accordion_group_drc44y",
+    "section_look_T4riaz"
+  ]
+}

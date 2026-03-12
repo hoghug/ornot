@@ -29,13 +29,13 @@
     "section_hero_Ay6Tni": {
       "type": "section-hero",
       "settings": {
-        "image_1": "shopify://shop_images/MENS_merino_nightshady.jpg",
+        "image_1": "shopify://shop_images/womens-micro-grid-jersey.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
-        "mobile_image": "shopify://shop_images/MENS_merino_nightshady.jpg",
+        "mobile_image": "shopify://shop_images/womens-jerseys-sliver.jpg",
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
@@ -44,66 +44,6 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
-      }
-    },
-    "section_rich_text_VxWf4z": {
-      "type": "section-rich-text",
-      "blocks": {
-        "heading_YC6Hpy": {
-          "type": "heading",
-          "settings": {
-            "title": "THERMAL JERSEYS",
-            "heading_font_size": "heading-medium",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_TrgPjM": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our Thermal Jerseys are made to keep you cozy in temperatures ranging from 45° - 70°F when worn alone, add a jacket and you can drop the temp by another 10-ish °F. Our Thermal Jerseys are made in the USA.</p>",
-            "text_font_size": "body-large",
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_YC6Hpy",
-        "text_TrgPjM"
-      ],
-      "settings": {
-        "align_text": "text-left",
-        "width": "wrapper",
-        "color_scheme": "",
-        "overlay_type": "disabled",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "section_collection_fmGhdA": {
-      "type": "section-collection",
-      "settings": {
-        "featured_collection": "womens-thermal-jerseys",
-        "heading": "",
-        "heading_font_size": "heading-medium",
-        "description": "",
-        "text_font_size": "body-medium",
-        "layout": "inline",
-        "link_text": "",
-        "link_url": "",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "layout_desktop": "grid",
-        "grid": 3,
-        "rows": 5,
-        "width": "wrapper",
-        "layout_mobile": "2",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "heading_tag": "automatic"
       }
     },
     "section_rich_text_yQHQaA": {
@@ -156,7 +96,7 @@
         "button_style": "btn--solid",
         "show_arrow": false,
         "layout_desktop": "grid",
-        "grid": 3,
+        "grid": 4,
         "rows": 2,
         "width": "wrapper",
         "layout_mobile": "2",
@@ -226,66 +166,6 @@
         "heading_tag": "automatic"
       }
     },
-    "section_rich_text_dgpcbP": {
-      "type": "section-rich-text",
-      "blocks": {
-        "heading_QjAAAD": {
-          "type": "heading",
-          "settings": {
-            "title": "RIDING SHIRTS",
-            "heading_font_size": "heading-medium",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_pxUKzt": {
-          "type": "text",
-          "settings": {
-            "text": "<p>These feature a relaxed fit, tailored specifically for riding. The single rear pocket is perfect for stashing your sunglasses after sunset or a small snack. Pair these with our Cargo Bib Shorts and a handlebar bag and you'll have enough room for any adventure.</p>",
-            "text_font_size": "body-large",
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_QjAAAD",
-        "text_pxUKzt"
-      ],
-      "settings": {
-        "align_text": "text-left",
-        "width": "wrapper",
-        "color_scheme": "",
-        "overlay_type": "disabled",
-        "padding_top": 50,
-        "padding_bottom": 40
-      }
-    },
-    "section_collection_7C9NER": {
-      "type": "section-collection",
-      "settings": {
-        "featured_collection": "womens-riding-shirts",
-        "heading": "",
-        "heading_font_size": "heading-medium",
-        "description": "",
-        "text_font_size": "body-medium",
-        "layout": "inline",
-        "link_text": "",
-        "link_url": "",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "layout_desktop": "grid",
-        "grid": 4,
-        "rows": 4,
-        "width": "wrapper",
-        "layout_mobile": "2",
-        "color_scheme": "",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "heading_tag": "automatic"
-      }
-    },
     "section_rich_text_3xqzL8": {
       "type": "section-rich-text",
       "blocks": {
@@ -343,6 +223,126 @@
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_rich_text_VxWf4z": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_YC6Hpy": {
+          "type": "heading",
+          "settings": {
+            "title": "THERMAL JERSEYS",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_TrgPjM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Thermal Jerseys are made to keep you cozy in temperatures ranging from 45° - 70°F when worn alone, add a jacket and you can drop the temp by another 10-ish °F. Our Thermal Jerseys are made in the USA.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_YC6Hpy",
+        "text_TrgPjM"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_collection_fmGhdA": {
+      "type": "section-collection",
+      "settings": {
+        "featured_collection": "womens-thermal-jerseys",
+        "heading": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 4,
+        "rows": 5,
+        "width": "wrapper",
+        "layout_mobile": "2",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_rich_text_dgpcbP": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_QjAAAD": {
+          "type": "heading",
+          "settings": {
+            "title": "RIDING SHIRTS",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_pxUKzt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>These feature a relaxed fit, tailored specifically for riding. The single rear pocket is perfect for stashing your sunglasses after sunset or a small snack. Pair these with our Cargo Bib Shorts and a handlebar bag and you'll have enough room for any adventure.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_QjAAAD",
+        "text_pxUKzt"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 50,
+        "padding_bottom": 40
+      }
+    },
+    "section_collection_7C9NER": {
+      "type": "section-collection",
+      "settings": {
+        "featured_collection": "womens-riding-shirts",
+        "heading": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 4,
+        "rows": 4,
+        "width": "wrapper",
+        "layout_mobile": "2",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
         "heading_tag": "automatic"
       }
     },
@@ -596,16 +596,16 @@
   "order": [
     "main",
     "section_hero_Ay6Tni",
-    "section_rich_text_VxWf4z",
-    "section_collection_fmGhdA",
     "section_rich_text_yQHQaA",
     "section_collection_k6Jfy3",
     "section_rich_text_ALLBWm",
     "section_collection_DXyY74",
-    "section_rich_text_dgpcbP",
-    "section_collection_7C9NER",
     "section_rich_text_3xqzL8",
     "section_collection_DWdhaf",
+    "section_rich_text_VxWf4z",
+    "section_collection_fmGhdA",
+    "section_rich_text_dgpcbP",
+    "section_collection_7C9NER",
     "section_rich_text_e7DJyb",
     "section_collection_m3KLnB",
     "section_rich_text_A6tAMb",

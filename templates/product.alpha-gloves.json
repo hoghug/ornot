@@ -29,6 +29,17 @@
         "show_placeholder": true
       }
     },
+    "section_custom_code_8zDHJz": {
+      "type": "section-custom-code",
+      "name": "Custom code",
+      "settings": {
+        "code": "<script>\n  // Make sure Klaviyo array exists\n  window._learnq = window._learnq || [];\n\n  (function() {\n    // ---- helper to send the event to Klaviyo\n    function sendAddedToCart(item) {\n      if (!item) return;\n\n      // Try to normalize fields across Shopify responses\n      var img = '';\n      if (item.image) {\n        img = (typeof item.image === 'string') ? item.image : (item.image.src || '');\n      }\n\n      var props = {\n        ProductName: item.product_title || item.title || '',\n        ProductID: item.variant_id || item.id || '',\n        SKU: item.sku || '',\n        Categories: item.product_type || item.type || '',\n        Brand: item.vendor || '',\n        ImageURL: img || '',\n        URL: location.href,\n        Price: (typeof item.price === 'number') ? item.price / 100 : undefined, // cents->currency\n        Quantity: item.quantity || 1\n      };\n\n      // Fire Klaviyo custom metric\n      _learnq.push(['track', 'Added to Cart', props]);\n\n      // Optional enrichment for product profile views\n      _learnq.push(['trackViewedItem', {\n        Title: props.ProductName,\n        ItemId: props.ProductID,\n        Categories: props.Categories ? [props.Categories] : [],\n        ImageUrl: props.ImageURL,\n        Url: props.URL,\n        Metadata: { Brand: props.Brand, Price: props.Price }\n      }]);\n    }\n\n    // ---- Patch fetch so we catch AJAX adds (Broadcast uses this)\n    var originalFetch = window.fetch;\n    window.fetch = function() {\n      var args = arguments;\n      return originalFetch.apply(this, args).then(function(res) {\n        try {\n          var url = (args[0] && args[0].toString()) || '';\n          if (url.indexOf('/cart/add') > -1 || url.indexOf('/cart/update') > -1) {\n            res.clone().json().then(function(data) {\n              // /cart/add.js usually returns the added line-item object\n              // Some themes wrap it as { items: [ ... ] }\n              if (data && Array.isArray(data.items) && data.items.length) {\n                // if it's a cart object (update), best-guess the last item\n                sendAddedToCart(data.items[data.items.length - 1]);\n              } else if (data && (data.id || data.variant_id || data.product_title || data.title)) {\n                sendAddedToCart(data);\n              }\n            }).catch(function(){});\n          }\n        } catch (e) {}\n        return res;\n      });\n    };\n\n    // ---- Patch XMLHttpRequest as a fallback (some themes still use XHR)\n    var _open = XMLHttpRequest.prototype.open;\n    XMLHttpRequest.prototype.open = function(method, url) {\n      this.__kl_atc = url && (url.indexOf('/cart/add') > -1 || url.indexOf('/cart/update') > -1);\n      return _open.apply(this, arguments);\n    };\n    var _send = XMLHttpRequest.prototype.send;\n    XMLHttpRequest.prototype.send = function() {\n      var xhr = this;\n      xhr.addEventListener('load', function() {\n        if (!xhr.__kl_atc) return;\n        try {\n          var data = JSON.parse(xhr.responseText);\n          if (data && Array.isArray(data.items) && data.items.length) {\n            sendAddedToCart(data.items[data.items.length - 1]);\n          } else if (data && (data.id || data.variant_id || data.product_title || data.title)) {\n            sendAddedToCart(data);\n          }\n        } catch(e) {}\n      });\n      return _send.apply(this, arguments);\n    };\n  })();\n</script>",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "main": {
       "type": "product",
       "blocks": {
@@ -40,7 +51,7 @@
             "padding_bottom": 8
           }
         },
-        "text_jkjjH8": {
+        "text_aCVqmj": {
           "type": "text",
           "settings": {
             "title": "",
@@ -87,13 +98,7 @@
             "padding_bottom": 16
           }
         },
-        "pickup": {
-          "type": "pickup",
-          "settings": {
-            "padding_bottom": 32
-          }
-        },
-        "text_N7bPBW": {
+        "text_rUQBrk": {
           "type": "text",
           "settings": {
             "title": "{{ product.metafields.custom.extra_product_text.value }}",
@@ -120,7 +125,7 @@
             "padding_bottom": 32
           }
         },
-        "accordion_MqBD3b": {
+        "accordion_E3FAbY": {
           "type": "accordion",
           "settings": {
             "style": "collapsible",
@@ -138,7 +143,7 @@
             "padding_bottom": 0
           }
         },
-        "accordion_MfjKnt": {
+        "accordion_xzTzzU": {
           "type": "accordion",
           "settings": {
             "style": "collapsible",
@@ -156,16 +161,16 @@
             "padding_bottom": 0
           }
         },
-        "accordion_TyR9yW": {
+        "accordion_ARNrpD": {
           "type": "accordion",
           "settings": {
             "style": "collapsible",
             "show_description": false,
-            "show_read_more": true,
+            "show_read_more": false,
             "default_open": false,
             "heading": "SHIPPING, EXCHANGES, AND RETURNS",
             "heading_font_size": "body-medium",
-            "text": "<p>· Most orders will ship within 48 hours from our warehouse located in San Diego. Orders are processed Monday - Friday during normal business hours.</p><p>· Free (and easy) exchanges, we want you in the correct size.</p><p>· 30-day return window.</p><p>· Sale items are eligible for exchanges and store credit only.</p>",
+            "text": "<p>· Most orders will ship within 48 hours from our warehouse located in San Diego. Orders are processed Monday - Friday during normal business hours. </p><p>· Free (and easy) exchanges, we want you in the correct size.</p><p>· 30-day return window.</p><p>· Sale items are eligible for exchanges and store credit only.</p>",
             "text_font_size": "body-medium",
             "show_icon": false,
             "icon_name": "icon-award",
@@ -174,7 +179,7 @@
             "padding_bottom": 0
           }
         },
-        "accordion_ccRD8B": {
+        "accordion_FbypEj": {
           "type": "accordion",
           "settings": {
             "style": "collapsible",
@@ -183,13 +188,13 @@
             "default_open": false,
             "heading": "1 YEAR WARRANTY",
             "heading_font_size": "body-medium",
-            "text": "<p>· Our clothing is made by hand and made to last. We stand by our construction and fabrics and offer a 1-year warranty against manufacturing defects. The most sustainable clothing is the kind that lasts many seasons. Need a repair? Questions? <a href=\"mailto:info@ornotbike.com\">Email us</a>, we’re pretty good at typing.</p><p>· Crash Replacement Assistance - We offer a discounted replacement if you happen to fall and destroy your clothing. (We recommend that you don’t use this)</p>",
+            "text": "<p>· Our clothing is made by hand and made to last. We stand by our construction and fabrics and offer a 1-year warranty against manufacturing defects. The most sustainable clothing is the kind that lasts many seasons. Need a repair? Questions? <a href=\"mailto:info@ornotbike.com\" title=\"mailto:info@ornotbike.com\">Email us</a>, we’re pretty good at typing.</p><p>· Crash Replacement Assistance - We offer a discounted replacement if you happen to fall and destroy your clothing. (We recommend that you don’t use this)</p>",
             "text_font_size": "body-medium",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
             "icon_color": "",
-            "padding_bottom": 0
+            "padding_bottom": 10
           }
         },
         "upsell": {
@@ -197,61 +202,49 @@
           "settings": {
             "upsell_product": "",
             "upsell_product_list": [
-              "mens-micro-climate-jacket-azul",
-              "handlebar-bag-mini-ultragrid-avacado",
-              "mens-thermal-cargo-bib-tight-midnight-blue"
+              "mission-pants-coffee",
+              "handlebar-bag-mini-ecopak-white",
+              "mens-merino-gravel-sweater-zissou"
             ],
             "show_available_upsell_only": true,
             "layout": "stacked",
             "autoplay": false,
             "autoplay_speed": 8,
-            "bg_color": "",
+            "bg_color": "rgba(0,0,0,0)",
             "padding_top": 16,
             "padding_bottom": 16
           }
         },
-        "divider_1": {
-          "type": "divider",
-          "disabled": true,
+        "upsell_by_amp_embedded_product_nAD6PW": {
+          "type": "shopify://apps/upsell-by-amp/blocks/embedded-product/04a7ddf7-3a4c-4228-9a44-33ba2380f058",
           "settings": {
-            "show_line": true,
-            "padding_bottom": 16
-          }
-        },
-        "features_p9gq4m": {
-          "type": "features",
-          "disabled": true,
-          "settings": {
-            "icon_name": "icon-award",
-            "icon_size": 20,
-            "title": "Feature",
-            "text_font_size": "body-medium",
-            "text": "<p>This content type will accept <strong>rich text</strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.</p>",
-            "bg_color": "#f7f9fa",
-            "color": "#212121",
-            "padding_bottom": 16
+            "override_url": ""
           }
         }
       },
       "block_order": [
         "title",
-        "text_jkjjH8",
+        "text_aCVqmj",
         "junip_product_reviews_ugc_junip_product_summary_46cMCr",
         "price",
         "siblings_6N6EiR",
         "variants",
-        "pickup",
-        "text_N7bPBW",
+        "text_rUQBrk",
         "buttons",
-        "accordion_MqBD3b",
-        "accordion_MfjKnt",
-        "accordion_TyR9yW",
-        "accordion_ccRD8B",
+        "accordion_E3FAbY",
+        "accordion_xzTzzU",
+        "accordion_ARNrpD",
+        "accordion_FbypEj",
         "upsell",
-        "divider_1",
-        "features_p9gq4m"
+        "upsell_by_amp_embedded_product_nAD6PW"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".product-upsell__holder__title {font-weight: bold; text-transform: uppercase;}",
+        ".product-upsell__title {font-weight: bold; font-size: calc(var(--font-3) * var(--FONT-ADJUST-BODY)); color: #00b5e2;}",
+        ".product-upsell__price {font-weight: bold; font-size: calc(var(--font-2) * var(--FONT-ADJUST-BODY)); color: #00b5e2;}",
+        ".product-upsell__variant-title {display: none;}",
+        "shopify-payment-terms {display: none !important;}"
+      ],
       "settings": {
         "product_sticky_enable": true,
         "variant_image_scroll": true,
@@ -266,24 +259,80 @@
         "padding_bottom": 30
       }
     },
-    "section_hero_AXLMwy": {
-      "type": "section-hero",
+    "section_accordion_group_fwTX7P": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading_qeqP8b": {
+          "type": "heading",
+          "settings": {
+            "title": "FAQ"
+          }
+        },
+        "question_DJYJfa": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "What temperature range are these for?",
+            "content": "<p>Some people wear gloves any time it’s below 65°, while others don’t wear gloves until the mercury drops below 40°. Sensitivity to cold weather varies dramatically, and we encourage you to buy based on personal preference. We’ve comfortably used these gloves between 28° and 50°</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_WkbKnQ": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "What size am I?",
+            "content": "<p>These gloves run true to size. Check the size chart, measure your hand, and order confidently.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_pcaKRE": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "How do I clean my gloves?",
+            "content": "<p>Wash in cool water, hang to dry</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_LLjTN7": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Are these waterproof?",
+            "content": "<p>No, but they are nice and warm. They also keep your hands dry thanks to the Polartec Alpha lining. Why? Because Alpha allows moisture vapor to escape.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_qeqP8b",
+        "question_DJYJfa",
+        "question_WkbKnQ",
+        "question_pcaKRE",
+        "question_LLjTN7"
+      ],
+      "name": "Accordion group",
       "settings": {
-        "image_1": "shopify://shop_images/temp_scale_jerseys-feb-2026-01.jpg",
-        "link": "",
-        "width": "wrapper--full",
-        "height": "image-height",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "content_width": 50,
-        "mobile_image": "shopify://shop_images/temp_scale_jerseys-feb-2026-02.jpg",
-        "mobile_height": "image-height--mobile",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "color_scheme": "",
-        "show_text_background": false,
-        "overlay_type": "disabled",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "show_placeholder": true
+        "heading_font_size": "heading-medium",
+        "question_font_size": "heading-small",
+        "width": "wrapper",
+        "columns": "2",
+        "color_scheme": "scheme-4",
+        "padding_top": 50,
+        "padding_bottom": 50
       }
     },
     "section_hero_8nY6LC": {
@@ -306,16 +355,17 @@
         "show_placeholder": true
       }
     },
-    "section_hero_hQcQ8U": {
+    "section_hero_NN4xAd": {
       "type": "section-hero",
+      "disabled": true,
       "settings": {
-        "image_1": "shopify://shop_images/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.gif",
+        "image_1": "shopify://shop_images/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.png",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
-        "mobile_image": "shopify://shop_images/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.gif",
+        "mobile_image": "shopify://shop_images/CN_1FTP_BannerMobile.png",
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
@@ -334,8 +384,7 @@
           "settings": {
             "product": "{{product}}",
             "title": "",
-            "alignment": "",
-            "sortOrder": "mostRecent"
+            "alignment": ""
           }
         }
       },
@@ -366,7 +415,10 @@
         "related",
         "recent"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".product-item--swatches {padding: 0px 10px 0px 10px;}",
+        ".product-item--centered {padding: 0px 10px 0px 10px;}"
+      ],
       "settings": {
         "enable_tabs": true,
         "heading_alignment": "text-center",
@@ -384,10 +436,11 @@
   },
   "order": [
     "section_hero_t4phQQ",
+    "section_custom_code_8zDHJz",
     "main",
-    "section_hero_AXLMwy",
+    "section_accordion_group_fwTX7P",
     "section_hero_8nY6LC",
-    "section_hero_hQcQ8U",
+    "section_hero_NN4xAd",
     "1706135782d1067a10",
     "related"
   ]

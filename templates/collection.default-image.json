@@ -52,7 +52,6 @@
         "button_bTQmKQ"
       ],
       "settings": {
-        "image_1": "{{ collection.metafields.custom.banner_image.value }}",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",

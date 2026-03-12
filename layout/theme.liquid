@@ -1,10 +1,12 @@
 <!doctype html>
 <html class="no-touch supports-no-cookies" lang="{{ request.locale.iso_code }}">
-  <head>
+<head>
     {%- render 'head' -%}
 
     {{ content_for_header }}
-
+{% if template.name == 'collection' and collection.metafields.seo.noindex == true %}
+  <meta name="robots" content="noindex,nofollow">
+{% endif %}
     <link rel="preload" as="font" href="{{ 'TradeGothic-Regular.woff2' | file_url }}" type="font/woff2" crossorigin>
     <link rel="preload" as="font" href="{{ 'TradeGothicLTPro-Bold.woff2' | file_url }}" type="font/woff2" crossorigin>
 
@@ -14,6 +16,14 @@
     <script type="text/javascript" async="true" src="https://scripts.juniphq.com/v1/junip_shopify.js"></script>
 
   {% render 'wsg-custom' %}
+
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "rr8sdpfv14");
+</script>
 </head>
 
   <body

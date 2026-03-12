@@ -24813,3 +24813,40 @@ a.btn {
   opacity: 0;
   transform: translateY(-50%) rotate(90deg);
 }
+/* ===================================================================
+   ORNOT FIXES - ADJUSTED TEXT POSITION
+   =================================================================== */
+
+/* 1. FIX: Notify Me When Available button - match variant button centering */
+.klaviyo-bis-trigger,
+a.btn--primary.klaviyo-bis-trigger {
+  padding-top: 16px !important;
+  padding-bottom: 12px !important;
+  line-height: 1.4 !important;
+}
+
+/* 2. FIX: "RESTOCK IN OCTOBER 2026." - make bold */
+.product__heading.strong.body-medium {
+  font-weight: 700 !important;
+}
+
+/* 3. FIX: "OOPS! SOLD OUT FOR NOW." - make bold */
+.product__description strong {
+  font-weight: 700 !important;
+}
+
+/* Backup fix in case description has specific class */
+.rte strong,
+.product-single__description strong {
+  font-weight: 700 !important;
+}
+
+/* 4. FIX: Announcement bar scrolling text - make bold */
+.announcement__text,
+.announcement__text *,
+.announcement__slide,
+.announcement__slide *,
+.announcement__text h4,
+.announcement__text strong {
+  font-weight: 700 !important;
+}

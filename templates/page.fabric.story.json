@@ -52,7 +52,7 @@
         "button_7zPFTX"
       ],
       "settings": {
-        "image_2": "shopify://shop_images/biz-as-usual_d6af2c35-3800-4ec0-a537-0fe994213c54.jpg",
+        "image_2": "shopify://shop_images/ls-jersey-sliver.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "four-fifty-height-hero",
@@ -67,6 +67,23 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
       }
     },
     "section_announcement_G3DD43": {
@@ -96,7 +113,7 @@
         "text_Ezcit3": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>// </strong>RESEARCH + DEVELOPMENT<strong>  //</strong></p>",
+            "text": "<p><strong>// </strong>FABRICS + SOURCING<strong>  //</strong></p>",
             "text_font_size": "body-medium",
             "color": "",
             "target_device_enabled": false,
@@ -157,69 +174,61 @@
         "padding_bottom": 0
       }
     },
-    "section_text_with_products_A4XmWX": {
-      "type": "section-text-with-products",
+    "section_rich_text_tmUj9w": {
+      "type": "section-rich-text",
       "blocks": {
-        "image_eDKCEk": {
-          "type": "image",
-          "disabled": true,
+        "subheading_RR4emL": {
+          "type": "subheading",
           "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_MissionShorts_MidnightBlue_07_740ea98a-f293-4f4c-9409-e96dec2c6faa.jpg",
-            "image_position": 5,
-            "aspect_ratio": 1,
-            "width": 80,
-            "mobile_aspect_ratio": 1,
-            "mobile_width": 60
+            "subheading": "/ / / / / / / / / / / /",
+            "padding_bottom": 16
           }
         },
-        "collection_UCbM9R": {
-          "type": "collection",
+        "heading_pBTzHX": {
+          "type": "heading",
+          "settings": {
+            "title": "FABRIC SOURCING",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_cBDBzK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every product begins with the materials. We choose fabrics that meet our performance standards while avoiding harmful chemistry and unnecessary impact. When the right fabric doesn’t exist, we develop it.</p><p>Designing for durability, both in performance and in style, is one of the most sustainable choices we can make, and we consider cost per wear from the start. We prioritize bluesign®-approved fabrics, use PFAS-free DWR, and give unused materials a second life through our <a href=\"/pages/fabric-story-polartec\" title=\"Fabric Story: Polartec\">Special Projects</a> collection.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_9AFJXY": {
+          "type": "buttons",
           "disabled": true,
           "settings": {
-            "collection": "",
-            "image": "shopify://shop_images/Ornot_Bottle_Clement_1.jpg",
-            "image_position": 7,
-            "aspect_ratio": 1,
-            "width": 80,
-            "mobile_aspect_ratio": 1,
-            "mobile_width": 60
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
           }
         }
       },
       "block_order": [
-        "image_eDKCEk",
-        "collection_UCbM9R"
+        "subheading_RR4emL",
+        "heading_pBTzHX",
+        "text_cBDBzK",
+        "buttons_9AFJXY"
       ],
-      "disabled": true,
+      "name": "Rich text",
       "settings": {
-        "subheading": "",
-        "heading": "MADE IN THE USA FROM  DEADSTOCK FABRIC",
-        "image_border_radius": 20,
-        "width": "wrapper",
-        "text_font_size_px_desktop": 40,
-        "text_align_desktop": "text-left",
-        "text_font_size_px_mobile": 24,
-        "text_align_mobile": "text-left--mobile",
-        "color_scheme": "scheme-1",
-        "padding_top": 30,
-        "padding_bottom": 0
-      }
-    },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "subheading": "",
-        "show_title": true,
-        "heading_font_size": "heading-large",
-        "show_content": true,
-        "text_font_size": "body-medium",
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "heading_tag": "automatic"
+        "overlay_type": "disabled",
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "section_custom_content_AyDzny": {
@@ -229,7 +238,7 @@
           "type": "text",
           "settings": {
             "subheading": "Re-Introducing:",
-            "title": "SPECIAL PROJECTS",
+            "title": "TEST",
             "heading_font_size": "heading-large",
             "text": "<p>One of the most sustainable things we can do? <strong>Use what already exists.</strong> That’s the concept behind Special Projects—limited-run garments made from premium deadstock fabrics, cut and sewn in California. When they're gone, they're gone. </p><p>Some of our most beloved pieces (remember that decadent merino? Or the original microgrid?) were born this way. It’s a sustainability win, a creative constraint, and a chance to make something out of something forgotten. </p>",
             "text_font_size": "body-small",
@@ -274,6 +283,7 @@
         "text_Jikqa8",
         "image_EARKyB"
       ],
+      "disabled": true,
       "settings": {
         "borders": false,
         "gutters": false,
@@ -281,70 +291,6 @@
         "height": "image-height",
         "mobile_height": "image-height--mobile",
         "reverse_blocks": false,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_custom_content_jkJ6gB": {
-      "type": "section-custom-content",
-      "blocks": {
-        "image_rDfE8k": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/DARK-TEAL.jpg",
-            "title": "",
-            "heading_font_size": "heading-large",
-            "text": "",
-            "text_font_size": "body-medium",
-            "flex_align": "align--middle-center",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "",
-            "overlay_type": "disabled",
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_JKDkzQ": {
-          "type": "text",
-          "settings": {
-            "subheading": "/ˈdɛd.stɑk/",
-            "title": "DEADSTOCK FABRIC",
-            "heading_font_size": "heading-large",
-            "text": "<p>Deadstock is fabric that was overproduced, abandoned, or never made it to the cutting table. Sometimes a color runs off-spec, and that fabric becomes “deadstock.” Instead of letting it sit in a warehouse or worse, a landfill, <strong>we turn it into something new.</strong> The catch? We only get one shot. One opportunity.</p><p>Deadstock isn’t just leftover fabric—it’s an invitation to make something unforgettable. That’s why we collaborate with <strong>Polartec®</strong>, the pioneers who redefined performance textiles and never stopped innovating.</p>",
-            "text_font_size": "body-small",
-            "button_text": "Latest Special Projects",
-            "button_url": "shopify://collections/special-projects",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "",
-            "color": "",
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "image_rDfE8k",
-        "text_JKDkzQ"
-      ],
-      "settings": {
-        "borders": false,
-        "gutters": false,
-        "width": "wrapper--full",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "reverse_blocks": true,
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -467,6 +413,7 @@
         "text_LrcwAR",
         "image_dWqaUz"
       ],
+      "disabled": true,
       "settings": {
         "borders": false,
         "gutters": false,
@@ -479,208 +426,21 @@
         "padding_bottom": 0
       }
     },
-    "section_slideshow_nested_FrJMfr": {
-      "type": "section-slideshow-nested",
-      "blocks": {
-        "slide_image_LbcYAN": {
-          "type": "_slide-image",
-          "settings": {
-            "image": "shopify://shop_images/Ornot_SS_Mens_MicroGrid_Squares-3.jpg",
-            "link": "",
-            "flex_align_desktop": "align--middle-left-desktop",
-            "flex_align_mobile": "align--middle-center-mobile",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "overlay_type": "disabled"
-          },
-          "blocks": {
-            "heading_6k3zD9": {
-              "type": "heading",
-              "settings": {
-                "text": "Past Projects",
-                "heading_font_size": "heading-large",
-                "heading_tag": "automatic",
-                "padding_bottom": 8
-              },
-              "blocks": {}
-            },
-            "text_EMVac3": {
-              "type": "text",
-              "settings": {
-                "text": "Original Micro Grid Jersey",
-                "text_font_size": "body-large",
-                "padding_bottom": 8
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "heading_6k3zD9",
-            "text_EMVac3"
-          ]
-        },
-        "slide_image_xqYfV3": {
-          "type": "_slide-image",
-          "settings": {
-            "image": "shopify://shop_images/GOLD_1.jpg",
-            "link": "",
-            "flex_align_desktop": "align--middle-left-desktop",
-            "flex_align_mobile": "align--middle-center-mobile",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "overlay_type": "disabled"
-          },
-          "blocks": {
-            "heading_VqYNfk": {
-              "type": "heading",
-              "settings": {
-                "text": "Past Projects",
-                "heading_font_size": "heading-large",
-                "heading_tag": "automatic",
-                "padding_bottom": 8
-              },
-              "blocks": {}
-            },
-            "text_iF8djM": {
-              "type": "text",
-              "settings": {
-                "text": "Decadent Merino Pullover",
-                "text_font_size": "body-large",
-                "padding_bottom": 8
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "heading_VqYNfk",
-            "text_iF8djM"
-          ]
-        },
-        "slide_image_nBUnYq": {
-          "type": "_slide-image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Ornot_Distressed_Decadent_05.jpg",
-            "link": "",
-            "flex_align_desktop": "align--middle-left-desktop",
-            "flex_align_mobile": "align--middle-center-mobile",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "overlay_type": "disabled"
-          },
-          "blocks": {
-            "heading_iVfnid": {
-              "type": "heading",
-              "settings": {
-                "text": "Past Projects",
-                "heading_font_size": "heading-large",
-                "heading_tag": "automatic",
-                "padding_bottom": 8
-              },
-              "blocks": {}
-            },
-            "text_wfChaa": {
-              "type": "text",
-              "settings": {
-                "text": "Decadent Merino Pullover",
-                "text_font_size": "body-large",
-                "padding_bottom": 8
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "heading_iVfnid",
-            "text_wfChaa"
-          ]
-        },
-        "slide_image_4kXpjK": {
-          "type": "_slide-image",
-          "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_Alpha_Daily_Vest_Gray_09_252f57eb-c142-4c92-9cf6-a6cdd23b78dd.jpg",
-            "link": "",
-            "flex_align_desktop": "align--middle-left-desktop",
-            "flex_align_mobile": "align--middle-center-mobile",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "overlay_type": "disabled"
-          },
-          "blocks": {
-            "heading_kmhbQJ": {
-              "type": "heading",
-              "settings": {
-                "text": "Past Projects",
-                "heading_font_size": "heading-large",
-                "heading_tag": "automatic",
-                "padding_bottom": 8
-              },
-              "blocks": {}
-            },
-            "text_WzfXQ8": {
-              "type": "text",
-              "settings": {
-                "text": "Alpha Daily Vest",
-                "text_font_size": "body-large",
-                "padding_bottom": 8
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "heading_kmhbQJ",
-            "text_WzfXQ8"
-          ]
-        }
-      },
-      "block_order": [
-        "slide_image_LbcYAN",
-        "slide_image_xqYfV3",
-        "slide_image_nBUnYq",
-        "slide_image_4kXpjK"
-      ],
-      "name": "Slideshow (Nested)",
-      "settings": {
-        "transition": "slide",
-        "show_arrows": true,
-        "autoplay": true,
-        "autoplay_speed": 4,
-        "width": "wrapper--full",
-        "height": "screen-height-two-thirds",
-        "mobile_height": "screen-height-three-quarters--mobile",
-        "color_scheme": "scheme-4",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_custom_code_9eMerq": {
-      "type": "section-custom-code",
-      "settings": {
-        "code": "",
-        "width": "wrapper",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "section_columns_FnTytU": {
       "type": "section-columns",
       "blocks": {
-        "image_nVeNVc": {
+        "image_LHcaHM": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ornot_Lightweight_Base_Layer_DarkOlive_07.jpg",
+            "image": "shopify://shop_images/Ornot_Womens_AlphaRiding_Orange_08.jpg",
             "image_width": 100,
             "image_shape": "normal",
-            "title": "Delta",
+            "title": "ALPHA",
             "heading_font_size": "heading-small",
-            "text": "<p>Polartec Delta works <em>with</em> your body’s natural cooling system—so you stay cool, dry, and ready to keep pedaling. We wear these year-round, but they really shine during <em>“</em>San Francisco summer.”</p>",
+            "text": "<p>Polartec Alpha is built for warmth without the weight. It regulates heat like a pro, adapting to changing conditions and stop-and-go efforts. We wear these all winter—because staying warm shouldn’t mean overheating.</p>",
             "text_font_size": "body-small",
             "button_text": "See Products",
-            "button_url": "",
+            "button_url": "shopify://collections/fabric-story-alpha",
             "button_type": "btn--secondary",
             "button_size": "btn--small",
             "button_style": "btn--text",
@@ -690,18 +450,18 @@
             "heading_tag": "automatic"
           }
         },
-        "image_4nFPma": {
+        "image_D9VjHc": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ornot_BaseLayer_Merino_Gravel_04.jpg",
+            "image": "shopify://shop_images/Ornot_Womens_Micro_Climate_Jacket_Obsidian_10_06952a62-61f1-41d9-91d5-6e2348beff91.jpg",
             "image_width": 100,
             "image_shape": "normal",
-            "title": "Power Wool",
+            "title": "Micro Climate",
             "heading_font_size": "heading-small",
-            "text": "<p>Power Wool blends Merino’s natural magic with high-tech synthetics to handle wild temp swings like a pro. We wear these on most rides—because layering should be easy, Ornot.</p><p><strong>Products</strong>: <a href=\"/products/merino-base-layer-gravel\" title=\"Merino Base Layer - Gravel\">Merino base layer,</a> Grid thermal jersey, crewneck, decadent cap</p>",
+            "text": "<p>Custom stretch-woven nylon with lofted insulation, to trap heat, while also allowing moisture to escape, but not enter. This fabric is water-resistant and quick drying without a membrane or a coating that can wash off.</p>",
             "text_font_size": "body-small",
-            "button_text": "See Products",
-            "button_url": "",
+            "button_text": "See products",
+            "button_url": "shopify://collections/fabric-story-micro-climate",
             "button_type": "btn--secondary",
             "button_size": "btn--small",
             "button_style": "btn--text",
@@ -714,14 +474,80 @@
         "image_cwtx4V": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_Micro_Grid_Olive_07_7b3432cb-2ff6-47c2-8f3d-73975acb0b79.jpg",
+            "image": "shopify://shop_images/Mens_LS_micro_grid_glacier_freeze_studio_7.jpg",
             "image_width": 100,
             "image_shape": "normal",
-            "title": "Power Grid",
+            "title": "Micro Grid",
             "heading_font_size": "heading-small",
-            "text": "<p>Power Grid’s lightweight grid design moves air between your skin and the jersey, keeping you cool when things heat up. It’s our signature, award-winning jersey—because breathable should actually <em>mean</em> breathable.</p>",
+            "text": "<p>Micro Grid’s lightweight grid design moves air between your skin and the jersey, keeping you cool when things heat up. It’s our signature, award-winning jersey—because breathable should actually <em>mean</em> breathable.</p>",
             "text_font_size": "body-small",
             "button_text": "See products",
+            "button_url": "shopify://collections/fabric-story-micro-grid",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_4nFPma": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/soft-_-cozy-merino-grid-interior_9bfd7200-96b7-4bdc-8280-902916822d34.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Merino Wool",
+            "heading_font_size": "heading-small",
+            "text": "<p>We blend Merino’s natural magic with high-tech synthetics to handle wild temp swings like a pro. We wear Merino on cold rides—because layering should be easy, Ornot.</p>",
+            "text_font_size": "body-small",
+            "button_text": "See Products",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_j9FUq7": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_MerinoRidingShirt_Emerald_01.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Nuyarn® Merino",
+            "heading_font_size": "heading-small",
+            "text": "<p>Nuyarn® Merino is lighter, stronger, and faster drying than traditionally spun Merino. The result is natural warmth and odor resistance with added durability and shape retention, so you can ride longer and wash it less.</p>",
+            "text_font_size": "body-small",
+            "button_text": "See Products",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_nVeNVc": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Lightweight_Base_Layer_DarkOlive_07.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Delta",
+            "heading_font_size": "heading-small",
+            "text": "<p>Polartec Delta works <em>with</em> your body’s natural cooling system—so you stay cool, dry, and ready to keep pedaling. We wear these year-round, but they really shine during <em>“</em>San Francisco summer.”</p>",
+            "text_font_size": "body-small",
+            "button_text": "See Products",
             "button_url": "",
             "button_type": "btn--secondary",
             "button_size": "btn--small",
@@ -756,6 +582,7 @@
         },
         "image_AieWct": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Ornot_Lightweight_Base_Layer_DarkOlive_07_d42759aa-0645-4c2f-b0ad-090ebe8b4b11.jpg",
             "image_width": 100,
@@ -777,6 +604,7 @@
         },
         "image_rqH79r": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/MensquiltedpulloverWhite_6.jpg",
             "image_width": 100,
@@ -798,6 +626,7 @@
         },
         "image_zMwfQA": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Ornot_Mens_MagicShell_Jacket_Mars_09.jpg",
             "image_width": 100,
@@ -819,6 +648,7 @@
         },
         "image_PkWQMt": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Ornot_Watchman_Cap_08.jpg",
             "image_width": 100,
@@ -837,41 +667,21 @@
             "mobile_image_aspect_ratio": 1,
             "heading_tag": "automatic"
           }
-        },
-        "image_LHcaHM": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Ornot_Womens_AlphaRiding_Orange_08.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "ALPHA",
-            "heading_font_size": "heading-small",
-            "text": "<p>Polartec Alpha is built for warmth <em>without</em> the swampiness. It regulates heat like a pro, adapting to changing conditions and stop-and-go efforts. We wear these all winter—because staying warm shouldn’t mean overheating.</p>",
-            "text_font_size": "body-small",
-            "button_text": "See Products",
-            "button_url": "",
-            "button_type": "btn--secondary",
-            "button_size": "btn--small",
-            "button_style": "btn--text",
-            "show_arrow": true,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
         }
       },
       "block_order": [
-        "image_nVeNVc",
-        "image_4nFPma",
+        "image_LHcaHM",
+        "image_D9VjHc",
         "image_cwtx4V",
+        "image_4nFPma",
+        "image_j9FUq7",
+        "image_nVeNVc",
         "image_BKXtyf",
         "image_AieWct",
         "image_rqH79r",
         "image_zMwfQA",
-        "image_PkWQMt",
-        "image_LHcaHM"
+        "image_PkWQMt"
       ],
-      "disabled": true,
       "settings": {
         "title": "Our Fabrics:",
         "heading_font_size": "heading-medium",
@@ -888,61 +698,345 @@
         "heading_tag": "automatic"
       }
     },
-    "section_reviews_AEM49y": {
-      "type": "section-reviews",
+    "section_rich_text_6bpTR9": {
+      "type": "section-rich-text",
       "blocks": {
-        "review_ecJzKT": {
-          "type": "review",
+        "subheading_Pk78Uc": {
+          "type": "subheading",
           "settings": {
-            "title": "Matt Quann",
-            "subheading": "Chief Bike Rider",
-            "review_content": "<p>Deadstock’s great because we don't mill new fabric and we start with what already exists. We let the fabric lead—if it feels like it could make a rad ____, we dive into the design from there.</p>",
-            "featured_image": "shopify://shop_images/TNUT6926.jpg",
-            "review_url": ""
+            "subheading": "/ / / / / / / / / / / /",
+            "padding_bottom": 16
           }
         },
-        "review_b3RjAj": {
-          "type": "review",
+        "heading_FCy8jj": {
+          "type": "heading",
           "settings": {
-            "title": "AJ Scheichl",
-            "subheading": "Designer",
-            "review_content": "<p>Deadstock is a design puzzle—only you start at the end and work your way backwards.</p>",
-            "featured_image": "shopify://shop_images/womens-shirts.jpg",
-            "review_url": ""
+            "title": "US MANUFACTURING",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
           }
         },
-        "review_QYg3aB": {
-          "type": "review",
+        "text_GCcpKy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Great products are made all over the world, but we produce as much as possible here in the U.S., with nearly everything sewn in the Bay Area. Close proximity lets us work directly with our sewing partners, maintain quality, and operate responsibly, with clear communication and shared accountability at every step.</p><p>Domestic production reduces emissions, supports skilled jobs, and keeps value circulating in the local economy. It’s more complex and often more expensive than producing overseas, but for us, it’s the right choice.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_ptzHrw": {
+          "type": "buttons",
           "disabled": true,
           "settings": {
-            "title": "Kenneth Powell",
-            "subheading": "Industry Expert",
-            "review_content": "<p>Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.</p>",
-            "featured_image": "shopify://shop_images/Ornot_Womens_MerinoGridPullover_Charcoal_Squares-1.jpg",
-            "review_url": ""
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
           }
         }
       },
       "block_order": [
-        "review_ecJzKT",
-        "review_b3RjAj",
-        "review_QYg3aB"
+        "subheading_Pk78Uc",
+        "heading_FCy8jj",
+        "text_GCcpKy",
+        "buttons_ptzHrw"
       ],
-      "disabled": true,
+      "name": "Rich text",
       "settings": {
-        "show_featured_image": true,
-        "image_aspect_ratio": 1.3,
-        "show_quotation_marks": true,
-        "heading_font_size": "heading-small",
-        "text_align": "text-left",
-        "color_scheme": "scheme-1",
-        "card_bg_color": "#e0e0e0",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "section_slideshow_nested_QLfVga": {
+      "type": "section-slideshow-nested",
+      "blocks": {
+        "slide_image_gpxdWM": {
+          "type": "_slide-image",
+          "settings": {
+            "image": "shopify://shop_images/R0021131.jpg",
+            "link": "",
+            "flex_align_desktop": "align--middle-center-desktop",
+            "flex_align_mobile": "align--middle-center-mobile",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "overlay_type": "disabled"
+          },
+          "blocks": {
+            "heading_gHh9VC": {
+              "type": "heading",
+              "disabled": true,
+              "settings": {
+                "text": "South SF",
+                "heading_font_size": "heading-x-large",
+                "heading_tag": "automatic",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "text_nMrcYE": {
+              "type": "text",
+              "disabled": true,
+              "settings": {
+                "text": "Tell your brand's story through images.",
+                "text_font_size": "body-large",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "button_piG9KY": {
+              "type": "button",
+              "disabled": true,
+              "settings": {
+                "text": "View products",
+                "link": "",
+                "type": "btn--primary",
+                "size": "",
+                "style": "btn--solid",
+                "show_arrow": false,
+                "full_width": false,
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_gHh9VC",
+            "text_nMrcYE",
+            "button_piG9KY"
+          ]
+        },
+        "slide_image_prMhzk": {
+          "type": "_slide-image",
+          "name": "Image",
+          "settings": {
+            "image": "shopify://shop_images/R0021148_94901083-2db9-47d4-936a-fa0b64e81198.jpg",
+            "link": "",
+            "flex_align_desktop": "align--middle-center-desktop",
+            "flex_align_mobile": "align--middle-center-mobile",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "overlay_type": "disabled"
+          },
+          "blocks": {
+            "heading_dxcE6k": {
+              "type": "heading",
+              "disabled": true,
+              "settings": {
+                "text": "Image slide",
+                "heading_font_size": "heading-x-large",
+                "heading_tag": "automatic",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "text_FkNPkW": {
+              "type": "text",
+              "disabled": true,
+              "settings": {
+                "text": "Tell your brand's story through images.",
+                "text_font_size": "body-large",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "button_Cwb7eb": {
+              "type": "button",
+              "disabled": true,
+              "settings": {
+                "text": "View products",
+                "link": "",
+                "type": "btn--primary",
+                "size": "",
+                "style": "btn--solid",
+                "show_arrow": false,
+                "full_width": false,
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_dxcE6k",
+            "text_FkNPkW",
+            "button_Cwb7eb"
+          ]
+        },
+        "slide_image_DFB68t": {
+          "type": "_slide-image",
+          "settings": {
+            "image": "shopify://shop_images/R0021169.jpg",
+            "link": "",
+            "flex_align_desktop": "align--middle-center-desktop",
+            "flex_align_mobile": "align--middle-center-mobile",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "overlay_type": "disabled"
+          },
+          "blocks": {
+            "heading_9MRXEL": {
+              "type": "heading",
+              "disabled": true,
+              "settings": {
+                "text": "East Bay",
+                "heading_font_size": "heading-x-large",
+                "heading_tag": "automatic",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "text_qBXEhN": {
+              "type": "text",
+              "disabled": true,
+              "settings": {
+                "text": "Tell your brand's story through images.",
+                "text_font_size": "body-large",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "button_kGPMFx": {
+              "type": "button",
+              "disabled": true,
+              "settings": {
+                "text": "View products",
+                "link": "",
+                "type": "btn--primary",
+                "size": "",
+                "style": "btn--solid",
+                "show_arrow": false,
+                "full_width": false,
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_9MRXEL",
+            "text_qBXEhN",
+            "button_kGPMFx"
+          ]
+        }
+      },
+      "block_order": [
+        "slide_image_gpxdWM",
+        "slide_image_prMhzk",
+        "slide_image_DFB68t"
+      ],
+      "name": "Slideshow (Nested)",
+      "settings": {
+        "transition": "slide",
+        "show_arrows": true,
+        "autoplay": false,
+        "autoplay_speed": 8,
+        "width": "wrapper--full",
+        "height": "screen-height-two-thirds",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "color_scheme": "scheme-2",
         "padding_top": 0,
         "padding_bottom": 0
       }
     },
+    "section_rich_text_PUEitQ": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_BJgLeK": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "/ / / / / / / / / / / /",
+            "padding_bottom": 16
+          }
+        },
+        "heading_XHVtdE": {
+          "type": "heading",
+          "settings": {
+            "title": "YOUR HOMETOWN BRAND",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_eqzDjb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We wouldn’t be here without our community. The riders who wear our gear, the friends and families who support us, and the people who ask hard questions and expect better. They inspire us, but they also hold us accountable.</p><p>Being a small brand means we feel that connection every day. We’re proud to be part of a community that cares about quality, about longevity, and about the health of the places we ride.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_RGFXxX": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_BJgLeK",
+        "heading_XHVtdE",
+        "text_eqzDjb",
+        "buttons_RGFXxX"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "section_video_iKVyYn": {
+      "type": "section-video",
+      "name": "Video",
+      "settings": {
+        "video": "shopify://files/videos/MCJacketHomepage.mov",
+        "show_video_popup": false,
+        "video_popup_social": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "title": "",
+        "heading_font_size": "heading-large",
+        "text": "",
+        "text_font_size": "body-medium",
+        "flex_align": "align--middle-center",
+        "link_text": "",
+        "link": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "desktop_height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "width": "wrapper--full",
+        "color_scheme": "",
+        "show_text_background": false,
+        "color": "",
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    },
     "section_collection_ABegUK": {
       "type": "section-collection",
+      "disabled": true,
       "settings": {
         "featured_collection": "special-projects",
         "heading": "special projects collection",
@@ -958,7 +1052,7 @@
         "show_arrow": true,
         "layout_desktop": "grid",
         "grid": 4,
-        "rows": 1,
+        "rows": 2,
         "width": "wrapper",
         "layout_mobile": "slider",
         "color_scheme": "",
@@ -966,70 +1060,21 @@
         "padding_bottom": 30,
         "heading_tag": "automatic"
       }
-    },
-    "section_before_after_iTUk3J": {
-      "type": "section-before-after",
-      "blocks": {
-        "heading_CapxCH": {
-          "type": "heading",
-          "settings": {
-            "heading": "Wear it on your bike, ornot",
-            "heading_font_size": "heading-medium",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_jL3eR7": {
-          "type": "text",
-          "settings": {
-            "description": "<p>Our <a href=\"https://www.ornotbike.com/collections/mens_shirts_and_pullovers/products/mens-merino-gravel-sweater-charcoal\" title=\"https://www.ornotbike.com/collections/mens_shirts_and_pullovers/products/mens-merino-gravel-sweater-charcoal\">Gravel Sweater</a> is an everyday essential built with three of our favorite things: a gridded fleecy interior, Merino Wool, and, of course, deadstock fabric.</p>",
-            "text_font_size": "body-medium",
-            "padding_bottom": 16
-          }
-        },
-        "button_8ay8yE": {
-          "type": "button",
-          "settings": {
-            "link_text": "Shop now",
-            "link_url": "shopify://pages/merino-gravel-sweater",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_CapxCH",
-        "text_jL3eR7",
-        "button_8ay8yE"
-      ],
-      "settings": {
-        "image_1": "shopify://shop_images/Ornot_Mens_MerinoGridPullover_Charcoal_Squares-2.jpg",
-        "image_2": "shopify://shop_images/gravel-sweater.jpg",
-        "aspect_ratio": 1,
-        "width": "wrapper",
-        "color_scheme": "scheme-2",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
     }
   },
   "order": [
     "section_hero_jidFMm",
-    "section_announcement_G3DD43",
-    "section_text_with_products_A4XmWX",
     "main",
+    "section_announcement_G3DD43",
+    "section_rich_text_tmUj9w",
     "section_custom_content_AyDzny",
-    "section_custom_content_jkJ6gB",
     "section_custom_content_pxc3kc",
     "section_custom_content_Y4Hh78",
-    "section_slideshow_nested_FrJMfr",
-    "section_custom_code_9eMerq",
     "section_columns_FnTytU",
-    "section_reviews_AEM49y",
-    "section_collection_ABegUK",
-    "section_before_after_iTUk3J"
+    "section_rich_text_6bpTR9",
+    "section_slideshow_nested_QLfVga",
+    "section_rich_text_PUEitQ",
+    "section_video_iKVyYn",
+    "section_collection_ABegUK"
   ]
 }

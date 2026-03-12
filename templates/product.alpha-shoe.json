@@ -51,19 +51,6 @@
             "padding_bottom": 8
           }
         },
-        "text_pLnHwF": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "heading_font_size": "body-medium",
-            "text": "<h4>RACE FIT WITH MINIMAL EXTRA FABRIC.</h4>",
-            "text_font_size": "body-medium",
-            "text_alignment": "text-left",
-            "layout": "left",
-            "padding_bottom": 16
-          }
-        },
         "text_aCVqmj": {
           "type": "text",
           "settings": {
@@ -98,19 +85,6 @@
             "sibling_color": "{{ product.metafields.theme.sibling_color.value }}",
             "option_font_size": "body-medium",
             "value_font_size": "body-x-small",
-            "padding_bottom": 16
-          }
-        },
-        "text_3JteXA": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "heading_font_size": "body-medium",
-            "text": "<h5>*FIT NOTE - RUNS SMALL, CHOOSE ONE SIZE UP FOR RELAXED FIT</h5>",
-            "text_font_size": "body-medium",
-            "text_alignment": "text-left",
-            "layout": "left",
             "padding_bottom": 16
           }
         },
@@ -250,12 +224,10 @@
       },
       "block_order": [
         "title",
-        "text_pLnHwF",
         "text_aCVqmj",
         "junip_product_reviews_ugc_junip_product_summary_46cMCr",
         "price",
         "siblings_6N6EiR",
-        "text_3JteXA",
         "variants",
         "text_rUQBrk",
         "buttons",
@@ -287,57 +259,57 @@
         "padding_bottom": 30
       }
     },
-    "section_accordion_group_Bq7WbK": {
+    "section_accordion_group_fwTX7P": {
       "type": "section-accordion-group",
       "blocks": {
-        "heading_MaUVzj": {
+        "heading_qeqP8b": {
           "type": "heading",
           "settings": {
             "title": "FAQ"
           }
         },
-        "question_JdRbxJ": {
+        "question_DJYJfa": {
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "What size am I?",
-            "content": "<p>These shoe covers are true to size. If you’re between sizes, size up.</p>",
+            "title": "WHAT SIZE AM I?",
+            "content": "<p>These shoe covers are true to size. The fabric is designed to stretch over your shoe and these should not be loose over your shoes. If you're between sizes, size up. Note* zippers on the outside. </p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
             "icon_color": ""
           }
         },
-        "question_Dn39bx": {
+        "question_WkbKnQ": {
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Are these waterproof?",
-            "content": "<p>Our shoe covers are not waterproof, and that is very much by design. It might sound counterintuitive at first, because “waterproof” gets tossed around as the gold standard for anything you put on your feet in the winter. But here’s the thing most riders don’t realize. The biggest source of moisture inside your shoes is not rain, puddles, or road spray. It’s you. Specifically, the warm, humid air your body produces while you ride. That moisture vapor wants to go somewhere, and if it can’t escape, it builds up inside your shoe until everything feels damp, clammy, and eventually cold.</p><p>Polartec Alpha is excellent for one very important reason. It moves this moisture vapor away from your foot and out into the world as quickly as possible. Alpha keeps you warm not by trapping everything inside, but by creating a stable layer of insulation that breathes continuously. Warm air stays where it should, and moisture vapor is free to leave. Which means your feet stay drier, which in turn means your feet stay warmer.</p><p>If we made these shoe covers waterproof, they would no longer be breathable. And ironically, they would still not keep your feet dry. All that moisture vapor from your body would hit the waterproof barrier and have nowhere to go. Over the course of a ride, it would accumulate until it felt like you had dipped your socks in a puddle. Waterproof in theory, swamp foot in practice.</p><p>So we chose a different path. A smart, intentional one. Keep the wind off. Hold onto the heat. Let the moisture out. This creates a far more comfortable microclimate for your feet, especially on long winter rides where staying warm depends on staying dry from the inside out.<br/><br/>When it’s raining, it’s CRUCIAL to wear tights over your shoe covers.</p>",
+            "title": "ARE THESE WATERPROOF?",
+            "content": "<p>Our shoe covers are not waterproof, and that is very much by design. It might sound counterintuitive at first, because \"waterproof\" gets tossed around as the gold standard for anything you put on your feet in the winter. But here's the thing most riders don't realize. The biggest source of moisture inside your shoes is not rain, puddles, or road spray.</p><p>It's you. Specifically, the warm, humid air your body produces while you ride. That moisture vapor wants to go somewhere, and if it can't escape, it builds up inside your shoe until everything feels damp, clammy, and eventually cold.</p><p>Polartec Alpha is excellent for one very important reason. It moves this moisture vapor away from your foot and out into the world as quickly as possible. Alpha keeps you warm not by trapping everything inside, but by creating a stable layer of insulation that breathes continuously.</p><p>Warm air stays where it should, and moisture vapor is free to leave.</p><p>Which means your feet stay drier, which in turn means your feet stay warmer.</p><p>If we made these shoe covers waterproof, they would no longer be breathable. And ironically, they would still not keep your feet dry. All that moisture vapor from your body would hit the waterproof barrier and have nowhere to go. Over the course of a ride, it would accumulate until it felt like you had dipped your socks in a puddle. Waterproof in theory, swamp foot in practice.</p><p>So we chose a different path. A smart, intentional one. Keep the wind off. Hold onto the heat. Let the moisture out. This creates a far more comfortable microclimate for your feet, especially on long winter rides where staying warm depends on staying dry from the inside out.</p><p>When it's raining, it's CRUCIAL to wear tights over your shoe covers.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
             "icon_color": ""
           }
         },
-        "question_P3FALM": {
+        "question_pcaKRE": {
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "What temperature range are these for?",
-            "content": "<p>Sensitivity to cold weather varies dramatically, and we encourage you to buy based on personal preference. We’ve comfortably used these shoe covers between 25° and 50°</p>",
+            "title": "WHAT TEMPERATURE ARE THESE FOR?",
+            "content": "<p>Sensitivity to cold weather varies dramatically, and we encourage you to buy based on personal preference. We've comfortably used these shoe covers between 25° and 50°</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
             "icon_color": ""
           }
         },
-        "question_gAXyJQ": {
+        "question_LLjTN7": {
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Can I walk off-road with these shoe covers?",
-            "content": "<p>Yes, the velcro sole enclosure provides ample space for off-road lugs to connect with the ground. You could hike a bike, Ornot.</p>",
+            "title": "CAN I WALK OFF-ROAD WITH THESE SHOE COVERS?",
+            "content": "<p>Yes, the velcro sole enclosure provides ample space for off-road lugs to connect with the ground. However, these are made for pedaling, not walking. You could hike a bike, Ornot.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -346,13 +318,12 @@
         }
       },
       "block_order": [
-        "heading_MaUVzj",
-        "question_JdRbxJ",
-        "question_Dn39bx",
-        "question_P3FALM",
-        "question_gAXyJQ"
+        "heading_qeqP8b",
+        "question_DJYJfa",
+        "question_WkbKnQ",
+        "question_pcaKRE",
+        "question_LLjTN7"
       ],
-      "disabled": true,
       "name": "Accordion group",
       "settings": {
         "heading_font_size": "heading-medium",
@@ -393,7 +364,7 @@
         "height": "image-height",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
-        "mobile_image": "shopify://shop_images/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.gif",
+        "mobile_image": "shopify://shop_images/CN_1FTP_BannerMobile.png",
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
@@ -412,8 +383,7 @@
           "settings": {
             "product": "{{product}}",
             "title": "",
-            "alignment": "",
-            "sortOrder": "mostRecent"
+            "alignment": ""
           }
         }
       },
@@ -467,7 +437,7 @@
     "section_hero_t4phQQ",
     "section_custom_code_8zDHJz",
     "main",
-    "section_accordion_group_Bq7WbK",
+    "section_accordion_group_fwTX7P",
     "section_hero_8nY6LC",
     "section_hero_NN4xAd",
     "1706135782d1067a10",

@@ -28,6 +28,7 @@
     },
     "section_hero_Ay6Tni": {
       "type": "section-hero",
+      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/MAtt_about_us.jpg",
         "link": "",
@@ -40,6 +41,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -70,10 +72,12 @@
         "heading_YC6Hpy",
         "text_TrgPjM"
       ],
+      "disabled": true,
       "settings": {
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 50,
         "padding_bottom": 50
       }
@@ -81,7 +85,135 @@
     "section_custom_content_e6qUcG": {
       "type": "section-custom-content",
       "blocks": {
+        "text_RNp9NN": {
+          "type": "text",
+          "settings": {
+            "subheading": "normal, ornot",
+            "title": "about us",
+            "heading_font_size": "heading-medium",
+            "text": "<p>We make clean, timeless cycling apparel that performs without demanding attention. Inspired by San Francisco’s ever-changing weather, our pieces are built to layer, adapt, and last, with a focus on quality construction and responsible production. Most of our gear is made in the USA, and while we may like to ride fast sometimes, we are very far from fast fashion.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
         "image_CbkMbG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/matt_email.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_RNp9NN",
+        "image_CbkMbG"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_mPebLn": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_jUXFiY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/tam_gravel.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_7jqhdy": {
+          "type": "text",
+          "settings": {
+            "subheading": "/ / / / / / / / / / / /",
+            "title": "sustainability",
+            "heading_font_size": "heading-medium",
+            "text": "<p>We occasionally ride fast, but we’re far from fast fashion.</p><p>We believe the most sustainable product is one you’ll actually wear for years. That means designing timeless pieces, choosing durable materials, not chasing trends, and producing responsibly. </p>",
+            "text_font_size": "body-medium",
+            "button_text": "learn more",
+            "button_url": "shopify://pages/sustainability",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_jUXFiY",
+        "text_7jqhdy"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_c7DfWW": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_cREctK": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Ornot_Mars_MicroClimate_Vest_14_a14db392-f4fd-4b9c-bf2f-b3e7a25d869f.jpg",
@@ -93,6 +225,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -102,7 +235,7 @@
             "heading_tag": "automatic"
           }
         },
-        "text_RNp9NN": {
+        "text_BYUQRf": {
           "type": "text",
           "settings": {
             "subheading": "",
@@ -126,8 +259,73 @@
         }
       },
       "block_order": [
-        "image_CbkMbG",
-        "text_RNp9NN"
+        "image_cREctK",
+        "text_BYUQRf"
+      ],
+      "disabled": true,
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_xdpH37": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_eneXrw": {
+          "type": "text",
+          "settings": {
+            "subheading": "it starts here",
+            "title": "Fabric + Materials",
+            "heading_font_size": "heading-medium",
+            "text": "<p>We prioritize recycled materials, PFAS-free coatings, and deadstock textiles. Recycled fibers reduce energy use, water consumption, and greenhouse gas emissions compared to virgin materials. Deadstock fabrics give unused materials a second life, rather than letting them sit in warehouses or head to landfills. </p>",
+            "text_font_size": "body-medium",
+            "button_text": "fabric stories",
+            "button_url": "shopify://pages/fabric-stories",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
+        "image_tBK9LT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mars_MicroClimate_Vest_14_a14db392-f4fd-4b9c-bf2f-b3e7a25d869f.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_eneXrw",
+        "image_tBK9LT"
       ],
       "settings": {
         "borders": false,
@@ -178,6 +376,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -192,6 +391,7 @@
         "text_tEn43p",
         "image_iwMazp"
       ],
+      "disabled": true,
       "settings": {
         "borders": false,
         "gutters": false,
@@ -219,6 +419,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -255,6 +456,7 @@
         "image_YRjYCm",
         "text_VE6c8Q"
       ],
+      "disabled": true,
       "settings": {
         "borders": false,
         "gutters": false,
@@ -267,93 +469,9 @@
         "padding_bottom": 0
       }
     },
-    "section_custom_content_nVDKRf": {
-      "type": "section-custom-content",
-      "blocks": {
-        "text_nQ9nGz": {
-          "type": "text",
-          "settings": {
-            "subheading": "",
-            "title": "CLIMATE NEUTRAL CERTIFICATION",
-            "heading_font_size": "heading-medium",
-            "text": "<p>Making things creates carbon, from production to shipping and beyond. We’re excited to move into our fifth year as a Climate Neutral Certified brand.  Not only have we offset our entire carbon footprint since 2019 with certified carbon credits, but we also work aggressively towards minimizing our carbon output with every decision. We could all be part of the solution, Ornot. </p>",
-            "text_font_size": "body-medium",
-            "button_text": "MORE INFO",
-            "button_url": "shopify://pages/climate-neutral",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "",
-            "color": "",
-            "heading_tag": "automatic"
-          }
-        },
-        "image_E3HQKH": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1percent_for_the_planet_web_square_ff849a2e-e443-4992-99e1-2dd38098128a.jpg",
-            "title": "",
-            "heading_font_size": "heading-large",
-            "text": "",
-            "text_font_size": "body-medium",
-            "flex_align": "align--middle-center",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "text_nQ9nGz",
-        "image_E3HQKH"
-      ],
-      "settings": {
-        "borders": false,
-        "gutters": false,
-        "width": "wrapper--full",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "reverse_blocks": true,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "section_custom_content_T3PCAY": {
       "type": "section-custom-content",
       "blocks": {
-        "image_tbFwbB": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1percent_for_the_planet_web_square.jpg",
-            "title": "",
-            "heading_font_size": "heading-large",
-            "text": "",
-            "text_font_size": "body-medium",
-            "flex_align": "align--middle-center",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "heading_tag": "automatic"
-          }
-        },
         "text_NjWfAa": {
           "type": "text",
           "settings": {
@@ -375,11 +493,162 @@
             "color": "",
             "heading_tag": "automatic"
           }
+        },
+        "image_tbFwbB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1percent_for_the_planet_web_square.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
         }
       },
       "block_order": [
-        "image_tbFwbB",
-        "text_NjWfAa"
+        "text_NjWfAa",
+        "image_tbFwbB"
+      ],
+      "disabled": true,
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_nxibQd": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_qy8GY3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/rainbow-bridge.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_c8KtYG": {
+          "type": "text",
+          "settings": {
+            "subheading": "/ / / / / / / / / / /",
+            "title": "1% FOR THE PLANET",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Every Ornot purchase sends 1% to nonprofits protecting clean air, clean water, and the places we ride through 1% for the Planet.</p><p>For us, that’s a real commitment. As a small, independent company, we build responsibility into everything we do, from recycled fabrics to California manufacturing to compostable packaging. When you choose Ornot, you’re helping protect the places that make riding worth it.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "WHY ONE PERCENT?",
+            "button_url": "shopify://pages/1-for-the-planet",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_qy8GY3",
+        "text_c8KtYG"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_nVDKRf": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_nQ9nGz": {
+          "type": "text",
+          "settings": {
+            "subheading": "san francisco, ca",
+            "title": "VISIT US",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Our showroom sits on the best block for cyclists in San Francisco, a natural starting point for rides into Marin and an easy place to land afterward with a coffee. <strong>Did we mention Arsicault?</strong></p><p>We also stock a few of our favorite brands, including <a href=\"https://www.spurcycle.com/\" target=\"_blank\" title=\"https://www.spurcycle.com/\">Spurcycle</a>, <a href=\"https://ultradynamico.com/\" target=\"_blank\" title=\"https://ultradynamico.com/\">Ultradynamico</a>, <a href=\"https://quoc.cc/en-us\" target=\"_blank\" title=\"https://quoc.cc/en-us\">QUOC</a>, and <a href=\"https://www.hummingbirdfuels.com/\" target=\"_blank\" title=\"https://www.hummingbirdfuels.com/\">Hummingbird</a>, so you’re covered for whatever the ride throws your way, Ornot.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "59 clement st",
+            "button_url": "https://maps.app.goo.gl/4gRYpJ1ToK3UL2ym8",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
+        "image_E3HQKH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/AfterCakeOrnot_Jan28-27.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_nQ9nGz",
+        "image_E3HQKH"
       ],
       "settings": {
         "borders": false,
@@ -396,6 +665,28 @@
     "section_custom_content_QQcdbA": {
       "type": "section-custom-content",
       "blocks": {
+        "image_UkUJVj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/packaging-_1.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
         "text_p4i3d3": {
           "type": "text",
           "settings": {
@@ -417,11 +708,32 @@
             "color": "",
             "heading_tag": "automatic"
           }
-        },
-        "image_UkUJVj": {
+        }
+      },
+      "block_order": [
+        "image_UkUJVj",
+        "text_p4i3d3"
+      ],
+      "disabled": true,
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_6YCeWg": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_JpTA4C": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/packaging-_1.jpg",
+            "image": "shopify://shop_images/AfterCakeOrnot_Jan14-2.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -430,6 +742,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -438,11 +751,33 @@
             "show_arrow": false,
             "heading_tag": "automatic"
           }
+        },
+        "text_H7mH4n": {
+          "type": "text",
+          "settings": {
+            "subheading": "aftercake, ornot",
+            "title": "we ride bikes",
+            "heading_font_size": "heading-medium",
+            "text": "<p>We lead a city ride from the shop Tuesday mornings at 8:30am. This is a mixed terrain ride at a pretty chill pace with total ride duration right around 1.5 hrs. Everyone is welcome and most bikes will do fine, although you should be comfortable on some dirt and gravel paths. <a href=\"https://www.strava.com/activities/7420088633\" target=\"_blank\">Here is an example</a> of a typical After Cake ride. </p>",
+            "text_font_size": "body-medium",
+            "button_text": "join us on strava",
+            "button_url": "https://www.strava.com/clubs/183693",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
         }
       },
       "block_order": [
-        "text_p4i3d3",
-        "image_UkUJVj"
+        "image_JpTA4C",
+        "text_H7mH4n"
       ],
       "settings": {
         "borders": false,
@@ -459,27 +794,6 @@
     "section_custom_content_UhFELJ": {
       "type": "section-custom-content",
       "blocks": {
-        "image_Vd4T4f": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/AfterCakeOrnot_Dec20-3.jpg",
-            "title": "",
-            "heading_font_size": "heading-large",
-            "text": "",
-            "text_font_size": "body-medium",
-            "flex_align": "align--middle-center",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "heading_tag": "automatic"
-          }
-        },
         "text_TefGWH": {
           "type": "text",
           "settings": {
@@ -501,12 +815,35 @@
             "color": "",
             "heading_tag": "automatic"
           }
+        },
+        "image_Vd4T4f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/AfterCakeOrnot_Dec20-3.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
         }
       },
       "block_order": [
-        "image_Vd4T4f",
-        "text_TefGWH"
+        "text_TefGWH",
+        "image_Vd4T4f"
       ],
+      "disabled": true,
       "settings": {
         "borders": false,
         "gutters": false,
@@ -527,14 +864,16 @@
           "settings": {
             "title": "FREE SHIPPING / FREE EXCHANGES",
             "heading_font_size": "heading-large",
-            "heading_tag": "automatic"
+            "heading_tag": "automatic",
+            "padding_bottom": 8
           }
         },
         "text_nxrAdc": {
           "type": "text",
           "settings": {
             "text": "<p>Free shipping on orders over $150 / $450 international. Free domestic exchanges. </p>",
-            "text_font_size": "body-x-large"
+            "text_font_size": "body-x-large",
+            "padding_bottom": 8
           }
         }
       },
@@ -542,6 +881,7 @@
         "heading_N6rMLN",
         "text_nxrAdc"
       ],
+      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/why_ornot_01_3500x_c15f0c62-e213-4c42-b761-982349665af4.webp",
         "link": "",
@@ -554,6 +894,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "scheme-2",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -567,14 +908,16 @@
           "settings": {
             "title": "WE STAND BY OUR PRODUCTS",
             "heading_font_size": "heading-large",
-            "heading_tag": "automatic"
+            "heading_tag": "automatic",
+            "padding_bottom": 8
           }
         },
         "text_BXWU3g": {
           "type": "text",
           "settings": {
             "text": "<p>1 year warranty against manufacturing defects and crash assistance program.</p>",
-            "text_font_size": "body-x-large"
+            "text_font_size": "body-x-large",
+            "padding_bottom": 8
           }
         }
       },
@@ -582,6 +925,7 @@
         "heading_m96y6Y",
         "text_BXWU3g"
       ],
+      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/we_stand_by_our_products.jpg",
         "link": "",
@@ -594,6 +938,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "scheme-2",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -607,14 +952,16 @@
           "settings": {
             "title": "COME AND VISIT US",
             "heading_font_size": "heading-large",
-            "heading_tag": "automatic"
+            "heading_tag": "automatic",
+            "padding_bottom": 8
           }
         },
         "text_mB66qb": {
           "type": "text",
           "settings": {
             "text": "<p>59 Clement Street, SF, CA - (628) 256-2250</p>",
-            "text_font_size": "body-x-large"
+            "text_font_size": "body-x-large",
+            "padding_bottom": 8
           }
         },
         "button_kPNmDG": {
@@ -625,7 +972,9 @@
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
-            "show_arrow": false
+            "show_arrow": false,
+            "full_width": false,
+            "padding_bottom": 8
           }
         }
       },
@@ -634,6 +983,7 @@
         "text_mB66qb",
         "button_kPNmDG"
       ],
+      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/TNUT6199-crop.jpg",
         "link": "",
@@ -646,6 +996,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "scheme-2",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -667,16 +1018,19 @@
       "block_order": [
         "heading_3JjnD8"
       ],
+      "disabled": true,
       "settings": {
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 50,
         "padding_bottom": 40
       }
     },
     "section_collection_fmGhdA": {
       "type": "section-collection",
+      "disabled": true,
       "settings": {
         "featured_collection": "mens-best-sellers",
         "heading": "",
@@ -748,11 +1102,16 @@
     "section_hero_Ay6Tni",
     "section_rich_text_VxWf4z",
     "section_custom_content_e6qUcG",
+    "section_custom_content_mPebLn",
+    "section_custom_content_c7DfWW",
+    "section_custom_content_xdpH37",
     "section_custom_content_aNhXR3",
     "section_custom_content_pAKcAp",
-    "section_custom_content_nVDKRf",
     "section_custom_content_T3PCAY",
+    "section_custom_content_nxibQd",
+    "section_custom_content_nVDKRf",
     "section_custom_content_QQcdbA",
+    "section_custom_content_6YCeWg",
     "section_custom_content_UhFELJ",
     "section_hero_NVWqea",
     "section_hero_gwQKjh",

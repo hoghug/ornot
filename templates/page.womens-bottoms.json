@@ -29,13 +29,13 @@
     "section_hero_Ay6Tni": {
       "type": "section-hero",
       "settings": {
-        "image_1": "shopify://shop_images/womens-slate-tights-header.jpg",
+        "image_1": "shopify://shop_images/women_s-all-sliver.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
-        "mobile_image": "shopify://shop_images/womens-slate-tights-header.jpg",
+        "mobile_image": "shopify://shop_images/women_s-all-sliver.jpg",
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
@@ -44,6 +44,66 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
+      }
+    },
+    "section_rich_text_L7BPVR": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_bYCenq": {
+          "type": "heading",
+          "settings": {
+            "title": "Droptail CARGO BIB SHORTS",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_gGzXdc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our best-selling cargo bib shorts feature a super luxurious compressive fabric that deftly balances comfort and performance. Designed for all types of riding and built with droptail functionality so you can go all day. The best just got better.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_bYCenq",
+        "text_gGzXdc"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 50,
+        "padding_bottom": 40
+      }
+    },
+    "section_collection_jwmDf4": {
+      "type": "section-collection",
+      "settings": {
+        "featured_collection": "womens-droptail-cargo-bib-short",
+        "heading": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 4,
+        "rows": 3,
+        "width": "wrapper",
+        "layout_mobile": "1",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
       }
     },
     "section_rich_text_VxWf4z": {
@@ -166,66 +226,6 @@
         "heading_tag": "automatic"
       }
     },
-    "section_rich_text_L7BPVR": {
-      "type": "section-rich-text",
-      "blocks": {
-        "heading_bYCenq": {
-          "type": "heading",
-          "settings": {
-            "title": "Droptail CARGO BIB SHORTS",
-            "heading_font_size": "heading-medium",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_gGzXdc": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our best-selling cargo bib shorts feature a super luxurious compressive fabric that deftly balances comfort and performance. Designed for all types of riding and built with droptail functionality so you can go all day. The best just got better.</p>",
-            "text_font_size": "body-large",
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_bYCenq",
-        "text_gGzXdc"
-      ],
-      "settings": {
-        "align_text": "text-left",
-        "width": "wrapper",
-        "color_scheme": "",
-        "overlay_type": "disabled",
-        "padding_top": 50,
-        "padding_bottom": 40
-      }
-    },
-    "section_collection_jwmDf4": {
-      "type": "section-collection",
-      "settings": {
-        "featured_collection": "womens-droptail-cargo-bib-short",
-        "heading": "",
-        "heading_font_size": "heading-medium",
-        "description": "",
-        "text_font_size": "body-medium",
-        "layout": "inline",
-        "link_text": "",
-        "link_url": "",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "layout_desktop": "grid",
-        "grid": 4,
-        "rows": 3,
-        "width": "wrapper",
-        "layout_mobile": "1",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "heading_tag": "automatic"
-      }
-    },
     "section_rich_text_3xqzL8": {
       "type": "section-rich-text",
       "blocks": {
@@ -251,6 +251,7 @@
         "heading_3JjnD8",
         "text_kV6rLP"
       ],
+      "disabled": true,
       "name": "NOT CARGO",
       "settings": {
         "align_text": "text-left",
@@ -300,6 +301,7 @@
         "product_4T7JCe",
         "image_cHY8Rt"
       ],
+      "disabled": true,
       "name": "Custom content",
       "settings": {
         "borders": false,
@@ -467,12 +469,12 @@
   "order": [
     "main",
     "section_hero_Ay6Tni",
-    "section_rich_text_VxWf4z",
-    "section_collection_fmGhdA",
-    "section_rich_text_ALLBWm",
-    "section_collection_DXyY74",
     "section_rich_text_L7BPVR",
     "section_collection_jwmDf4",
+    "section_rich_text_ALLBWm",
+    "section_collection_DXyY74",
+    "section_rich_text_VxWf4z",
+    "section_collection_fmGhdA",
     "section_rich_text_3xqzL8",
     "section_custom_content_figGgT",
     "section_collection_DWdhaf",

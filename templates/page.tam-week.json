@@ -41,6 +41,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -100,7 +101,7 @@
         "video_popup_social": "",
         "title": "Tam Week",
         "heading_font_size": "heading-x-large",
-        "text": "<p>5 DAYS // 1 MOUNTAIN // JULY 7-11</p>",
+        "text": "<p>5 DAYS // 1 MOUNTAIN // JULY 6-10, 2026</p>",
         "text_font_size": "body-medium",
         "flex_align": "align--middle-center",
         "link_text": "",
@@ -115,6 +116,7 @@
         "color_scheme": "scheme-2",
         "show_text_background": false,
         "color": "",
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "heading_tag": "automatic"
@@ -135,6 +137,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -155,6 +158,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -170,7 +174,7 @@
             "subheading": "",
             "title": "WHAT'S TAM WEEK?",
             "heading_font_size": "heading-medium",
-            "text": "<p>TAM WEEK is a 5-day cycling challenge from <strong>July 7–11</strong>, inviting Bay Area riders to summit Mt. Tamalpais as many times as they’d like.Inspired by <a href=\"https://www.instagram.com/mosaiccycles/\" target=\"_blank\" title=\"https://www.instagram.com/mosaiccycles/\">Mosaic's</a> Flag Week, we encourage you to climb to the \"top\" of West Peak to challenge mind, body, and win prizes. Ride anytime, any route, any bike—to <a href=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\" target=\"_blank\" title=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\">West Peak</a> (not East Peak)</p>",
+            "text": "<p>TAM WEEK is a 5-day cycling challenge from <strong>July 6–10, 2026</strong>, inviting Bay Area riders to summit Mt. Tamalpais as many times as they’d like.Inspired by <a href=\"https://www.instagram.com/mosaiccycles/\" target=\"_blank\" title=\"https://www.instagram.com/mosaiccycles/\">Mosaic's</a> Flag Week, we encourage you to climb to the \"top\" of West Peak to challenge mind, body, and win prizes. Ride anytime, any route, any bike—to <a href=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\" target=\"_blank\" title=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\">West Peak</a> (not East Peak)</p>",
             "text_font_size": "body-medium",
             "button_text": "",
             "button_url": "",
@@ -191,6 +195,7 @@
         "image_dQnYpG",
         "text_hXerzK"
       ],
+      "disabled": true,
       "settings": {
         "borders": false,
         "gutters": false,
@@ -240,6 +245,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -254,6 +260,7 @@
         "text_9k47Rf",
         "image_beizHx"
       ],
+      "disabled": true,
       "settings": {
         "borders": false,
         "gutters": false,
@@ -281,6 +288,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -317,6 +325,7 @@
         "image_Ucr7eK",
         "text_hCGdGT"
       ],
+      "disabled": true,
       "settings": {
         "borders": false,
         "gutters": false,
@@ -366,6 +375,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "",
+            "overlay_type": "disabled",
             "link_text": "",
             "link": "",
             "button_type": "btn--primary",
@@ -500,6 +510,7 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 100,
         "padding_bottom": 100
       }
@@ -564,6 +575,7 @@
         "text_TqHqkB",
         "text_EdgY98"
       ],
+      "disabled": true,
       "custom_css": [
         ".accordion__title {font-size-adjust: 1.75 !important;}"
       ],
@@ -633,6 +645,7 @@
         "icon_LGNNfP",
         "icon_3jqfCJ"
       ],
+      "disabled": true,
       "name": "Text columns with icons",
       "settings": {
         "title": "ROUTES TO THE 'TOP'",
@@ -702,6 +715,7 @@
         "icon_MJLAgB",
         "icon_G38jyb"
       ],
+      "disabled": true,
       "name": "Text columns with icons",
       "settings": {
         "title": "",
@@ -735,6 +749,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true

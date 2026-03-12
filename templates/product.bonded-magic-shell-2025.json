@@ -311,6 +311,7 @@
         "heading_PQR349",
         "text_tRPGRG"
       ],
+      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/MAGIC-SHELL-web-sliver-1.jpg",
         "link": "",
@@ -381,6 +382,7 @@
         "text_JddKwq",
         "image_LYC9qC"
       ],
+      "disabled": true,
       "settings": {
         "borders": false,
         "gutters": false,

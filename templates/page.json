@@ -9,6 +9,84 @@
  */
 {
   "sections": {
+    "section_hero_6WkFkD": {
+      "type": "section-hero",
+      "disabled": true,
+      "name": "Image banner",
+      "settings": {
+        "image_1": "shopify://shop_images/Untitled-2_ab040625-ec81-4ad0-9e34-02247001464d.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_hero_9Rn7VT": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_yKgWdr": {
+          "type": "heading",
+          "settings": {
+            "title": "",
+            "heading_font_size": "heading-x-large",
+            "heading_tag": "automatic",
+            "padding_bottom": 8
+          }
+        },
+        "text_xm9RHJ": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_font_size": "body-large",
+            "padding_bottom": 8
+          }
+        },
+        "button_pWMpXj": {
+          "type": "button",
+          "settings": {
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "full_width": false,
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading_yKgWdr",
+        "text_xm9RHJ",
+        "button_pWMpXj"
+      ],
+      "disabled": true,
+      "name": "Image banner",
+      "settings": {
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -37,6 +115,8 @@
     }
   },
   "order": [
+    "section_hero_6WkFkD",
+    "section_hero_9Rn7VT",
     "main",
     "section_custom_code_9eMerq"
   ]

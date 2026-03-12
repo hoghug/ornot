@@ -1,5 +1,20 @@
 <script>
 
+const updateCartBubbleCount = (count) => {
+  const cartCountEls = document.querySelectorAll(".header__cart__status");
+  for (const cc of cartCountEls) {
+    cc.setAttribute("data-cart-count", count);
+    cc.innerText = count;
+
+    if (count > 0) {
+      cc.style.display = 'inline-flex';
+      cc.style.justifyContent = 'center';
+    } else {
+      cc.style.display = 'none';
+    }
+  }  
+};
+
 const updateTickerBarFreeShippingMessage = (cart) => {
   const tickerBar = document.querySelector('ticker-bar');
   if (!tickerBar) return;
@@ -8,13 +23,16 @@ const updateTickerBarFreeShippingMessage = (cart) => {
   if (!freeShippingEle) return;
 
   const freeShippingLimit = parseInt(freeShippingEle.dataset.freeShippingLimit)
-  const leftToSpendMessage = freeShippingEle.querySelector('[data-left-to-spend]');
+  const allLeftToSpendMsgs = tickerBar.querySelectorAll('[data-left-to-spend]');
 
-  
   if (freeShippingEle.dataset.freeShipping === 'true') {
     if (!cart || !cart.total_price) {
       freeShippingEle.classList.remove('is-success');
-      leftToSpendMessage.innerText = `$${freeShippingLimit}`;
+      allLeftToSpendMsgs.forEach(el => {
+        if (el) {
+          el.innerText = `$${freeShippingLimit}`;
+        }
+      });
       return;
     }
     
@@ -25,7 +43,11 @@ const updateTickerBarFreeShippingMessage = (cart) => {
       freeShippingEle.classList.add('is-success');
     } else {
       freeShippingEle.classList.remove('is-success');
-      leftToSpendMessage.innerText = `$${leftToSpend.toFixed(2).replace('.00', '')}`;
+      allLeftToSpendMsgs.forEach(el => {
+        if (el) {
+          el.innerText = `$${leftToSpend.toFixed(2).replace('.00', '')}`;
+        }
+      });
     }
   }
   
@@ -50,22 +72,7 @@ document.addEventListener("click", function (event) {
 );  
 
 window.AMP_CART_UPDATED = function(cart) {
-  const cartCountEl = document.querySelector(".header__cart__status");
-
-  if (!cartCountEl) return;
-
-  cartCountEl.setAttribute("data-cart-count", cart.item_count);
-
-  cartCountEl.innerText = cart.item_count;
-
-  if (cart.item_count > 0) {
-    cartCountEl.style.display = 'inline-flex';
-    cartCountEl.style.justifyContent = 'center';
-  } else {
-    cartCountEl.style.display = 'none';
-  }
-
   updateTickerBarFreeShippingMessage(cart);
-  
+  updateCartBubbleCount(cart.item_count);
 };
 </script>

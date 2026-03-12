@@ -11,14 +11,111 @@
   "type": "custom.pre_footer",
   "name": "Pre-footer",
   "sections": {
-    "section_divider_HcUXh7": {
-      "type": "section-divider",
-      "name": "Divider",
+    "section_collection_links_spotlight_JBV4cW": {
+      "type": "section-collection-links-spotlight",
+      "blocks": {
+        "collection_mydX4h": {
+          "type": "collection",
+          "settings": {
+            "collection": "ornot-gifts-under-50",
+            "image": "shopify://shop_images/Ornot_handlebar_bag_mini_coyote_1_87b397ee-17ee-4841-af92-26f9c7ba4ac4.jpg",
+            "title": "Gifts Under $55",
+            "heading_font_size": "heading-small",
+            "button_text": "SHop under $55",
+            "button_link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "button_show_arrow": false,
+            "background_color": ""
+          }
+        },
+        "collection_4K4fqK": {
+          "type": "collection",
+          "settings": {
+            "collection": "gifts-under-155",
+            "image": "shopify://shop_images/mens_alpha_vest_blue_2.jpg",
+            "title": "Gifts Under $155",
+            "heading_font_size": "heading-small",
+            "button_text": "SHop under $155",
+            "button_link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "button_show_arrow": false,
+            "background_color": "#e0e0e0"
+          }
+        },
+        "collection_mQcrFj": {
+          "type": "collection",
+          "settings": {
+            "collection": "gifts-under-250",
+            "image": "shopify://shop_images/mens-lw-tight-espresso_e1034072-5617-4fcf-8cd1-ac7a07d76d98.jpg",
+            "title": "Gifts Under $250",
+            "heading_font_size": "heading-small",
+            "button_text": "SHop under $250",
+            "button_link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "button_show_arrow": false,
+            "background_color": "#e0e0e0"
+          }
+        },
+        "collection_b8BJ4x": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "button_text": "Shop now",
+            "button_link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "button_show_arrow": false,
+            "background_color": ""
+          }
+        },
+        "collection_tH6nbN": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "button_text": "Shop now",
+            "button_link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "button_show_arrow": false,
+            "background_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_mydX4h",
+        "collection_4K4fqK",
+        "collection_mQcrFj",
+        "collection_b8BJ4x",
+        "collection_tH6nbN"
+      ],
+      "disabled": true,
+      "name": "Collection links: spotlight",
       "settings": {
-        "show_line": true,
+        "title": "Holiday Gift Guide",
+        "heading_font_size": "heading-large",
+        "text": "",
+        "text_font_size": "body-medium",
+        "layout": "",
         "width": "wrapper--full",
-        "color_scheme": "",
-        "padding_top": 25,
+        "height": "four-fifty-height-hero",
+        "mobile_height": "screen-height-one-half--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "scheme-4",
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
@@ -74,7 +171,7 @@
         "heading_MHpeqL": {
           "type": "heading",
           "settings": {
-            "title": "15% off sitewide",
+            "title": "New Colors!",
             "heading_font_size": "heading-medium",
             "heading_tag": "automatic",
             "padding_bottom": 0
@@ -83,7 +180,7 @@
         "text_dxNtjX": {
           "type": "text",
           "settings": {
-            "text": "<p>Applies to items already on sale<br/>Discount auto-applied in cart</p>",
+            "text": "<p>Micro Climate Jackets</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 0
           }
@@ -101,21 +198,40 @@
             "full_width": false,
             "padding_bottom": 8
           }
+        },
+        "group_buttons_krniUG": {
+          "type": "group-buttons",
+          "settings": {
+            "button_text": "Mens",
+            "button_url": "shopify://collections/all",
+            "button_type": "btn--white",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "button_secondary_text": "Womens",
+            "button_secondary_url": "shopify://products/womens-micro-climate-jacket-oat",
+            "button_secondary_type": "btn--white",
+            "button_secondary_size": "btn--small",
+            "button_secondary_style": "btn--solid",
+            "show_secondary_arrow": false,
+            "padding_bottom": 8
+          }
         }
       },
       "block_order": [
         "heading_MHpeqL",
         "text_dxNtjX",
-        "button_7K64Mw"
+        "button_7K64Mw",
+        "group_buttons_krniUG"
       ],
       "disabled": true,
       "name": "Image banner",
       "settings": {
-        "image_1": "shopify://shop_images/gray-background.gif",
+        "image_1": "shopify://shop_images/womens-oat-mc-jacket-sliver_c97f96bf-b30d-4959-b76c-42781d6eba4c.jpg",
         "link": "https://www.ornotbike.com/collections/new-arrivals-all",
         "width": "wrapper--full",
         "height": "image-height",
-        "flex_align_desktop": "align--middle-center-desktop",
+        "flex_align_desktop": "align--middle-right-desktop",
         "content_width": 38,
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
@@ -125,6 +241,37 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
+      }
+    },
+    "section_video_bRGiNF": {
+      "type": "section-video",
+      "disabled": true,
+      "name": "Video",
+      "settings": {
+        "video": "shopify://files/videos/MicroClimateSloCitorenSliver.mov",
+        "show_video_popup": false,
+        "video_popup_social": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "title": "Micro Climate Jacket",
+        "heading_font_size": "heading-large",
+        "text": "<p>foggy coastal mornings • windy ridgeline crosswinds • sun-baked inland valleys • shaded redwood descents • cold canyon air • urban heat pockets between buildings • damp bayfront headwinds • exposed fire road climbs • marine layer chill • high-elevation temperature drops • misty drizzle that never quite becomes rain • afternoon sun breaking through fog • bridge crossings with full crosswind • tree-covered singletrack that stays cold all day • concrete corridors that radiate heat</p>",
+        "text_font_size": "body-x-small",
+        "flex_align": "align--middle-right",
+        "link_text": "shop new colors",
+        "link": "shopify://collections/new-arrivals-all",
+        "button_type": "btn--white",
+        "button_size": "btn--small",
+        "button_style": "btn--text",
+        "show_arrow": false,
+        "desktop_height": "image-height",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "width": "wrapper--full",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "color": "",
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
       }
     },
     "section-newsletter": {
@@ -191,9 +338,10 @@
     }
   },
   "order": [
-    "section_divider_HcUXh7",
+    "section_collection_links_spotlight_JBV4cW",
     "section_tab_collections_yYGgBk",
     "section_hero_aCAcUj",
+    "section_video_bRGiNF",
     "section-newsletter"
   ]
 }

@@ -29,7 +29,7 @@
     "section_hero_Ay6Tni": {
       "type": "section-hero",
       "settings": {
-        "image_1": "shopify://shop_images/wear-it-on-your-bike-ornot_87faca5c-e31a-4a3a-bbfd-3b0eb61a2f2a.jpg",
+        "image_1": "shopify://shop_images/mission-pant-slate.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
@@ -77,7 +77,81 @@
         "color_scheme": "",
         "overlay_type": "disabled",
         "padding_top": 50,
-        "padding_bottom": 50
+        "padding_bottom": 40
+      }
+    },
+    "section_collections_list_NpYgbD": {
+      "type": "section-collections-list",
+      "blocks": {
+        "collection_overlay_nVNcBa": {
+          "type": "collection_overlay",
+          "settings": {
+            "collection": "mens_shirts_and_pullovers",
+            "collection_image": "shopify://shop_images/stone-blue-power-air-3.jpg",
+            "title": "Pullovers",
+            "heading_font_size": "heading-x-small",
+            "text_alignment": "align--bottom-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "text"
+          }
+        },
+        "collection_overlay_BiikFx": {
+          "type": "collection_overlay",
+          "settings": {
+            "collection": "shorts-and-pants",
+            "collection_image": "shopify://shop_images/chris-mission-pants-van.jpg",
+            "title": "Mission bottoms",
+            "heading_font_size": "heading-x-small",
+            "text_alignment": "align--bottom-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "text"
+          }
+        },
+        "collection_overlay_9qKkUb": {
+          "type": "collection_overlay",
+          "settings": {
+            "collection": "mens-riding-shirts",
+            "collection_image": "shopify://shop_images/bodega_wasabi_lifestyle_3.jpg",
+            "title": "Riding Shirts",
+            "heading_font_size": "heading-x-small",
+            "text_alignment": "align--bottom-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "text"
+          }
+        }
+      },
+      "block_order": [
+        "collection_overlay_nVNcBa",
+        "collection_overlay_BiikFx",
+        "collection_overlay_9qKkUb"
+      ],
+      "name": "Collection list",
+      "settings": {
+        "title": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "button_text": "",
+        "button_url": "shopify://collections",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "aspect_ratio": 1.4,
+        "width": "wrapper--full-padded",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 20,
+        "heading_tag": "automatic"
       }
     },
     "section_custom_content_aNhXR3": {
@@ -86,7 +160,7 @@
         "image_iwMazp": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/wasabi-Bodega-hoodie-4.jpg",
+            "image": "shopify://shop_images/teal-micro-grid-sweater-studio-4.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -97,7 +171,7 @@
             "color": "#ffffff",
             "overlay_type": "disabled",
             "link_text": "",
-            "link": "",
+            "link": "shopify://products/mens-power-air-hooded-pullover-mosswood",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -115,10 +189,10 @@
             "text_font_size": "body-medium",
             "button_text": "View Pullovers",
             "button_url": "shopify://collections/mens_shirts_and_pullovers",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
+            "button_type": "btn--black",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
             "show_social_links": false,
             "text_columns": 1,
             "align_text": "text-left",
@@ -157,10 +231,10 @@
             "text_font_size": "body-medium",
             "button_text": "View Shorts, Pants & Boxers",
             "button_url": "shopify://collections/shorts-and-pants",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
+            "button_type": "btn--black",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
             "show_social_links": false,
             "text_columns": 1,
             "align_text": "text-left",
@@ -172,7 +246,7 @@
         "image_CbkMbG": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_MissionPant_Navy_5.jpg",
+            "image": "shopify://shop_images/Ornot_LW_Mission_Pants_Olive_11.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -214,7 +288,7 @@
         "image_YRjYCm": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_MerinoRidingShirt_Emerald_07.jpg",
+            "image": "shopify://shop_images/bodega-1.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -243,10 +317,10 @@
             "text_font_size": "body-medium",
             "button_text": "View RIDING Shirts",
             "button_url": "shopify://collections/mens-riding-shirts",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
+            "button_type": "btn--black",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
             "show_social_links": false,
             "text_columns": 1,
             "align_text": "text-left",
@@ -354,12 +428,12 @@
         "show_arrow": false,
         "layout_desktop": "grid",
         "grid": 4,
-        "rows": 8,
+        "rows": 6,
         "width": "wrapper--full-padded",
         "layout_mobile": "slider",
         "color_scheme": "",
         "padding_top": 20,
-        "padding_bottom": 0,
+        "padding_bottom": 24,
         "heading_tag": "automatic"
       }
     }
@@ -368,6 +442,7 @@
     "main",
     "section_hero_Ay6Tni",
     "section_rich_text_VxWf4z",
+    "section_collections_list_NpYgbD",
     "section_custom_content_aNhXR3",
     "section_custom_content_e6qUcG",
     "section_custom_content_pAKcAp",

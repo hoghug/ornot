@@ -52,7 +52,7 @@
         "button_7zPFTX"
       ],
       "settings": {
-        "image_2": "shopify://shop_images/mc-jacket-sliver_27f73eb2-7e55-46b3-b6e8-538c3a053a60.jpg",
+        "image_2": "shopify://shop_images/sunset-bridge.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "four-fifty-height-hero",
@@ -162,6 +162,7 @@
         "message_a6qTHC",
         "text_rg7tUF"
       ],
+      "disabled": true,
       "name": "Scrolling text",
       "settings": {
         "slider_speed": 7,
@@ -248,10 +249,10 @@
           "type": "text",
           "settings": {
             "subheading": "/ / / / / / / / / / / /",
-            "title": "SUSTAINABILITY",
+            "title": "ROAD",
             "heading_font_size": "heading-large",
-            "text": "<p>We occasionally ride fast, but we’re far from fast fashion.</p><p>We believe the most sustainable product is one you’ll actually wear for years. That means designing timeless pieces, choosing durable materials, not chasing trends, and producing responsibly. It also means making thoughtful decisions about where and how our gear is made.</p>",
-            "text_font_size": "body-medium",
+            "text": "<p>Built for sustained output and limited pocket space, road riders favor close-fitting layers that breathe well and pack small. As the weather warms, the system stays minimal and highly adjustable.</p><p></p><ul><li><strong>Hot:</strong> bib shorts + lightweight performance jersey</li><li><strong>Temperate:</strong> performance jersey with arm warmers or a packable vest</li><li><strong>Chilly mornings / descents:</strong> lightweight base layer + breathable thermal or grid jersey + packable shell</li></ul>",
+            "text_font_size": "body-small",
             "button_text": "",
             "button_url": "shopify://collections/special-projects",
             "button_type": "btn--primary",
@@ -269,7 +270,7 @@
         "image_xVHcGy": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Luc_OrnotBike_8_TamSlammed.jpg",
+            "image": "shopify://shop_images/TNUT4130.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -305,13 +306,39 @@
         "padding_bottom": 0
       }
     },
+    "section_collection_ABegUK": {
+      "type": "section-collection",
+      "settings": {
+        "featured_collection": "for-the-roadie",
+        "heading": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "Shop collection",
+        "link_url": "",
+        "button_type": "btn--black",
+        "button_size": "",
+        "button_style": "btn--text",
+        "show_arrow": true,
+        "layout_desktop": "grid",
+        "grid": 4,
+        "rows": 1,
+        "width": "wrapper",
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 30,
+        "heading_tag": "automatic"
+      }
+    },
     "section_custom_content_GbUURc": {
       "type": "section-custom-content",
       "blocks": {
         "image_UEfpJW": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/womens-Oat-MC-Jacket-studio-6_53fdae73-3b77-4150-a239-b92e591395d3.jpg",
+            "image": "shopify://shop_images/TNUT9723.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -333,10 +360,10 @@
         "text_dpa9B3": {
           "type": "text",
           "settings": {
-            "subheading": "our commitment",
-            "title": "CLEAN DESIGN",
+            "subheading": "/ / / / / / / / / / / /",
+            "title": "Gravel + Weekender",
             "heading_font_size": "heading-large",
-            "text": "<p>When Ornot began in 2013, cycling was dominated by massive logos and team replica kits. Ornot set out to offer well-designed cycling clothing with minimal branding, made in California, at a fair price. Over a decade later, our original ethos is as relevant as ever:</p><h5><strong>You could be a rolling billboard, Ornot.</strong></h5>",
+            "text": "<p>Longer days and mixed terrain call for versatile layers that can handle sun, wind, and variable pace. Spring and summer rides often mean carrying one extra layer for changing conditions.</p><p></p><ul><li><strong>Hot:</strong> cargo or storage bottoms + breathable jersey or sun layer</li><li><strong>Temperate:</strong> long sleeve sun or grid jersey + packable vest or light jacket</li><li><strong>Cool starts:</strong> lightweight base layer + thermal midlayer + stashable shell</li></ul>",
             "text_font_size": "body-small",
             "button_text": "",
             "button_url": "shopify://collections/special-projects",
@@ -357,7 +384,6 @@
         "image_UEfpJW",
         "text_dpa9B3"
       ],
-      "disabled": true,
       "settings": {
         "borders": false,
         "gutters": false,
@@ -370,68 +396,30 @@
         "padding_bottom": 0
       }
     },
-    "section_custom_content_LGTLaj": {
-      "type": "section-custom-content",
-      "blocks": {
-        "image_VhjiEH": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/womens-Oat-MC-Jacket-studio-6_53fdae73-3b77-4150-a239-b92e591395d3.jpg",
-            "title": "",
-            "heading_font_size": "heading-large",
-            "text": "",
-            "text_font_size": "body-medium",
-            "flex_align": "align--middle-center",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "",
-            "overlay_type": "disabled",
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_aJP9iD": {
-          "type": "text",
-          "settings": {
-            "subheading": "our commitment",
-            "title": "YEARS, NOT SEASONS",
-            "heading_font_size": "heading-large",
-            "text": "<p>Durability is one of the most effective sustainability strategies.</p><p>We design garments to withstand years of riding, washing, and everyday wear. Timeless fits, refined construction, and performance fabrics mean your clothing doesn’t go out of style or fall apart after a season. And when wear does happen, we believe in repair over replacement. Call it cost-per-wear, Ornot.</p>",
-            "text_font_size": "body-medium",
-            "button_text": "",
-            "button_url": "shopify://collections/special-projects",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "",
-            "color": "",
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "image_VhjiEH",
-        "text_aJP9iD"
-      ],
+    "section_collection_GmdLYA": {
+      "type": "section-collection",
       "settings": {
-        "borders": false,
-        "gutters": false,
-        "width": "wrapper--full",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "reverse_blocks": true,
+        "featured_collection": "for-the-gravel-adventure",
+        "heading": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "Shop collection",
+        "link_url": "",
+        "button_type": "btn--black",
+        "button_size": "",
+        "button_style": "btn--text",
+        "show_arrow": true,
+        "layout_desktop": "grid",
+        "grid": 4,
+        "rows": 1,
+        "width": "wrapper",
+        "layout_mobile": "slider",
         "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 50,
+        "padding_bottom": 30,
+        "heading_tag": "automatic"
       }
     },
     "section_custom_content_jkJ6gB": {
@@ -440,12 +428,12 @@
         "text_JKDkzQ": {
           "type": "text",
           "settings": {
-            "subheading": "S.o.p.",
-            "title": "Fabric + Material",
+            "subheading": "/ / / / / / / / / / / /",
+            "title": "CASUAL + ALT",
             "heading_font_size": "heading-large",
-            "text": "<p>We design with certified recycled and natural fibers, and our Special Projects collection makes use of deadstock fabrics and materials. We prioritize Bluesign and Oeko-Tex certified textiles, and all of our DWR coatings are PFAS-free. </p><p>Even our packaging is intentional, using recycled, compostable, or upcycled materials made from ocean-harvested plastic, and it’s designed to be reused when returning or exchanging items.</p>",
+            "text": "<p>More crossover and less race-focused, this rider prioritizes comfort and everyday versatility. Systems stay relaxed but still benefit from smart layering, especially during cooler starts and foggy Bay mornings.</p><p></p><ul><li><strong>Hot:</strong> merino tee or UV layer + mission shorts</li><li><strong>Temperate:</strong> casual long sleeve or tee + lightweight vest + mission shorts or pants</li><li><strong>Cool mornings:</strong> merino base or tee + light pullover + packable jacket or vest</li></ul>",
             "text_font_size": "body-small",
-            "button_text": "fabric stories",
+            "button_text": "",
             "button_url": "shopify://pages/fabric-stories",
             "button_type": "btn--primary",
             "button_size": "",
@@ -462,7 +450,7 @@
         "image_rDfE8k": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Mens_LS_micro_grid_glacier_freeze_studio_7.jpg",
+            "image": "shopify://shop_images/TNUT7309.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -486,7 +474,6 @@
         "text_JKDkzQ",
         "image_rDfE8k"
       ],
-      "disabled": true,
       "settings": {
         "borders": false,
         "gutters": false,
@@ -499,68 +486,86 @@
         "padding_bottom": 0
       }
     },
-    "section_custom_content_tEKddj": {
-      "type": "section-custom-content",
+    "section_collection_PfXJ6H": {
+      "type": "section-collection",
+      "settings": {
+        "featured_collection": "casual",
+        "heading": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "Shop collection",
+        "link_url": "",
+        "button_type": "btn--black",
+        "button_size": "",
+        "button_style": "btn--text",
+        "show_arrow": true,
+        "layout_desktop": "grid",
+        "grid": 4,
+        "rows": 1,
+        "width": "wrapper",
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 30,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_rich_text_GWNCDA": {
+      "type": "section-rich-text",
       "blocks": {
-        "text_9BwrqE": {
-          "type": "text",
+        "subheading_nW3EdR": {
+          "type": "subheading",
           "settings": {
-            "subheading": "IT STARTS HERE",
-            "title": "Fabric + Materials",
+            "subheading": "JACK FROM VERMONT",
+            "padding_bottom": 16
+          }
+        },
+        "heading_kHaQbH": {
+          "type": "heading",
+          "settings": {
+            "title": "THE RIDER'S POV",
             "heading_font_size": "heading-large",
-            "text": "<p>We prioritize recycled materials, and deadstock textiles. Recycled fibers reduce energy use, water consumption, and greenhouse gas emissions compared to virgin materials. Deadstock fabrics give unused materials a second life, rather than letting them sit in warehouses or head to landfills. All of our fabrics are Bluesign or Oeko-Tex certified, and all of our DWR coatings are PFAS-free.</p>",
-            "text_font_size": "body-medium",
-            "button_text": "fabric stories",
-            "button_url": "shopify://pages/fabric-stories",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "",
-            "color": "",
+            "padding_bottom": 16,
             "heading_tag": "automatic"
           }
         },
-        "image_MRkJ9b": {
-          "type": "image",
+        "text_Pk87iU": {
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Mens_LS_micro_grid_glacier_freeze_studio_7.jpg",
-            "title": "",
-            "heading_font_size": "heading-large",
-            "text": "",
+            "text": "<p>I run warm and almost always prefer lighter layers next to skin with something packable on top. After four years riding year-round in Vermont, and now dealing with the Bay’s microclimates. I’ve learned that starting slightly cool works best. Most days I keep it simple: breathable layer next to skin, light insulation if needed, and a vest or shell I can stash mid-ride. It’s a system that works from foggy summer mornings to long spring climbs.</p>",
             "text_font_size": "body-medium",
-            "flex_align": "align--middle-center",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "",
-            "overlay_type": "disabled",
-            "link_text": "",
-            "link": "",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_HFcnFV": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
             "show_arrow": false,
-            "heading_tag": "automatic"
+            "padding_bottom": 16
           }
         }
       },
       "block_order": [
-        "text_9BwrqE",
-        "image_MRkJ9b"
+        "subheading_nW3EdR",
+        "heading_kHaQbH",
+        "text_Pk87iU",
+        "buttons_HFcnFV"
       ],
+      "name": "Rich text",
       "settings": {
-        "borders": false,
-        "gutters": false,
-        "width": "wrapper--full",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "reverse_blocks": false,
+        "align_text": "text-left",
+        "width": "wrapper",
         "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "overlay_type": "disabled",
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "section_columns_YYdbEB": {
@@ -635,6 +640,7 @@
         "image_Te3eQV",
         "image_aGEgrc"
       ],
+      "disabled": true,
       "name": "Text columns with images",
       "settings": {
         "title": "CERTIFICATIONS",
@@ -680,11 +686,11 @@
         "text_HHxrFc": {
           "type": "text",
           "settings": {
-            "subheading": "domestic production",
+            "subheading": "keeping it local",
             "title": "MADE IN USA",
             "heading_font_size": "heading-large",
             "text": "<p>We prioritize U.S. manufacturing because proximity brings accountability. Working closely with our sewing partners allows us to maintain quality, move quickly, and build real relationships with the people who make our products possible. </p><p>While great products are made all over the world, producing domestically aligns with how we want to operate, investing in skilled labor, strengthening the local economy, and supporting a more responsible production system. It’s not a tagline. It’s a commitment we continue to stand behind.</p>",
-            "text_font_size": "body-medium",
+            "text_font_size": "body-small",
             "button_text": "",
             "button_url": "shopify://pages/1-for-the-planet",
             "button_type": "btn--primary",
@@ -704,6 +710,7 @@
         "image_dXf3nb",
         "text_HHxrFc"
       ],
+      "disabled": true,
       "settings": {
         "borders": false,
         "gutters": false,
@@ -716,19 +723,19 @@
         "padding_bottom": 0
       }
     },
-    "section_custom_content_M6NfKe": {
+    "section_custom_content_kGBwNP": {
       "type": "section-custom-content",
       "blocks": {
-        "text_9qYiNQ": {
+        "text_7WWgCH": {
           "type": "text",
           "settings": {
-            "subheading": "real responsibility",
-            "title": "small  runs",
+            "subheading": "RESEARCH + DEVELOPMENT",
+            "title": "SPECIAL PROJECTS",
             "heading_font_size": "heading-large",
-            "text": "<p>We produce in measured batches to avoid excess inventory and unnecessary waste. Sometimes, products sell out. That’s the trade-off. That's real responsibility in action. </p><p>We’re not perfect, but we’re committed to making better choices for the places we ride and the people who support us.</p>",
-            "text_font_size": "body-medium",
-            "button_text": "",
-            "button_url": "shopify://pages/1-for-the-planet",
+            "text": "<p>One of the most sustainable things we can do? <strong>Use what already exists.</strong> That’s the concept behind Special Projects—limited-run garments made from premium deadstock fabrics, cut and sewn in California. When they're gone, they're gone.</p><p>Some of our most beloved pieces (remember that decadent merino? Or the original microgrid?) were born this way. It’s a sustainability win, a creative constraint, and a chance to make something out of something forgotten.</p><p>Check out the latest Special Projects before they disappear (literally):</p>",
+            "text_font_size": "body-small",
+            "button_text": "discover more",
+            "button_url": "shopify://pages/special-projects",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -741,48 +748,6 @@
             "heading_tag": "automatic"
           }
         },
-        "image_3WibTK": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/R0021147.jpg",
-            "title": "",
-            "heading_font_size": "heading-large",
-            "text": "",
-            "text_font_size": "body-medium",
-            "flex_align": "align--middle-center",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "",
-            "overlay_type": "disabled",
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "text_9qYiNQ",
-        "image_3WibTK"
-      ],
-      "settings": {
-        "borders": false,
-        "gutters": false,
-        "width": "wrapper--full",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "reverse_blocks": false,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_custom_content_kGBwNP": {
-      "type": "section-custom-content",
-      "blocks": {
         "image_zLjGb7": {
           "type": "image",
           "settings": {
@@ -804,98 +769,13 @@
             "show_arrow": false,
             "heading_tag": "automatic"
           }
-        },
-        "text_7WWgCH": {
-          "type": "text",
-          "settings": {
-            "subheading": "RESEARCH + DEVELOPMENT",
-            "title": "SPECIAL PROJECTS",
-            "heading_font_size": "heading-large",
-            "text": "<p>One of the most sustainable things we can do? <strong>Use what already exists.</strong> That’s the concept behind Special Projects—limited-run garments made from premium deadstock fabrics, cut and sewn in California. When they're gone, they're gone. It’s one of the most direct ways we can reduce waste while continuing to experiment with new designs.</p>",
-            "text_font_size": "body-medium",
-            "button_text": "discover more",
-            "button_url": "shopify://pages/special-projects",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "",
-            "color": "",
-            "heading_tag": "automatic"
-          }
         }
       },
       "block_order": [
-        "image_zLjGb7",
-        "text_7WWgCH"
+        "text_7WWgCH",
+        "image_zLjGb7"
       ],
-      "settings": {
-        "borders": false,
-        "gutters": false,
-        "width": "wrapper--full",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "reverse_blocks": true,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_custom_content_FpQ6D7": {
-      "type": "section-custom-content",
-      "blocks": {
-        "text_nWgT6r": {
-          "type": "text",
-          "settings": {
-            "subheading": "what's old is new again",
-            "title": "RIGHT TO REPAIR",
-            "heading_font_size": "heading-large",
-            "text": "<p>We build our gear to last for years, and we stand behind it with a <strong>one-year warranty</strong> against manufacturer defects. Wear happens, and when it does, we believe in the right to repair.</p><p>Our repair program addresses common issues so products stay in use, not in landfills. Repairing almost always has a lower environmental impact than replacing. By backing what we make and supporting repairs, we reduce waste and honor the value of well-made clothing.</p>",
-            "text_font_size": "body-medium",
-            "button_text": "start a repair",
-            "button_url": "shopify://pages/contact",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "",
-            "color": "",
-            "heading_tag": "automatic"
-          }
-        },
-        "image_AhtbqX": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Mens_MOSSWOOD_power_air_1.jpg",
-            "title": "",
-            "heading_font_size": "heading-large",
-            "text": "",
-            "text_font_size": "body-medium",
-            "flex_align": "align--middle-center",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "",
-            "overlay_type": "disabled",
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "text_nWgT6r",
-        "image_AhtbqX"
-      ],
+      "disabled": true,
       "settings": {
         "borders": false,
         "gutters": false,
@@ -939,7 +819,7 @@
             "subheading": "/ / / / / / / / / / / /",
             "title": "1% For The Planet",
             "heading_font_size": "heading-large",
-            "text": "<p>Every Ornot purchase sends 1% to nonprofits protecting clean air, clean water, and the places we ride through 1% for the Planet.</p><p>For us, that’s a real commitment. As a small, independent company, we build responsibility into everything we do, from recycled fabrics to California manufacturing to compostable packaging. When you choose Ornot, you’re helping protect the places that make riding worth it.</p>",
+            "text": "<p>Every purchase you make with us sends 1% to nonprofits protecting clean air, clean water, and the places we ride. Through 1% for the Planet, your support goes directly to the organizations making the most impact.</p><p>For us, 1% of revenue is a real commitment. We’re a small, independent company without outside investors, but we believe giving back is part of doing business the right way. From recycled fabrics to California manufacturing to compostable packaging, responsibility guides everything we do.</p><p>By choosing Ornot, you’re joining a global movement where small choices create big change. Together we can protect the planet — and keep it a place worth riding.</p>",
             "text_font_size": "body-small",
             "button_text": "why one percent?",
             "button_url": "shopify://pages/1-for-the-planet",
@@ -960,6 +840,7 @@
         "image_nQ4zcf",
         "text_LFLBf3"
       ],
+      "disabled": true,
       "settings": {
         "borders": false,
         "gutters": false,
@@ -967,6 +848,71 @@
         "height": "image-height",
         "mobile_height": "image-height--mobile",
         "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_FpQ6D7": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_nWgT6r": {
+          "type": "text",
+          "settings": {
+            "subheading": "what's old is new again",
+            "title": "RIGHT TO REPAIR",
+            "heading_font_size": "heading-large",
+            "text": "<p>Durability is one of the most effective sustainability strategies there is. We build our gear to last for years, and we stand behind it with a <strong>one-year warranty</strong> against manufacturer defects. Wear happens, and when it does, we believe in the right to repair.</p><p>Our repair program addresses common issues so products stay in use, not in landfills. Repairing almost always has a lower environmental impact than replacing. By backing what we make and supporting repairs, we reduce waste and honor the value of well-made clothing.</p>",
+            "text_font_size": "body-small",
+            "button_text": "start a repair",
+            "button_url": "shopify://pages/1-for-the-planet",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
+        "image_AhtbqX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Mens_MOSSWOOD_power_air_1.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_nWgT6r",
+        "image_AhtbqX"
+      ],
+      "disabled": true,
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -1036,33 +982,6 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "section_collection_ABegUK": {
-      "type": "section-collection",
-      "disabled": true,
-      "settings": {
-        "featured_collection": "special-projects",
-        "heading": "special projects collection",
-        "heading_font_size": "heading-medium",
-        "description": "",
-        "text_font_size": "body-medium",
-        "layout": "inline",
-        "link_text": "Shop collection",
-        "link_url": "",
-        "button_type": "btn--black",
-        "button_size": "",
-        "button_style": "btn--text",
-        "show_arrow": true,
-        "layout_desktop": "grid",
-        "grid": 4,
-        "rows": 2,
-        "width": "wrapper",
-        "layout_mobile": "slider",
-        "color_scheme": "",
-        "padding_top": 50,
-        "padding_bottom": 30,
-        "heading_tag": "automatic"
-      }
     }
   },
   "order": [
@@ -1071,17 +990,17 @@
     "section_announcement_G3DD43",
     "section_custom_content_AyDzny",
     "section_custom_content_eWg9RV",
+    "section_collection_ABegUK",
     "section_custom_content_GbUURc",
-    "section_custom_content_LGTLaj",
+    "section_collection_GmdLYA",
     "section_custom_content_jkJ6gB",
-    "section_custom_content_tEKddj",
+    "section_collection_PfXJ6H",
+    "section_rich_text_GWNCDA",
     "section_columns_YYdbEB",
     "section_custom_content_EAyLY9",
-    "section_custom_content_M6NfKe",
     "section_custom_content_kGBwNP",
-    "section_custom_content_FpQ6D7",
     "section_custom_content_zkTYdX",
-    "section_custom_content_xT6XCn",
-    "section_collection_ABegUK"
+    "section_custom_content_FpQ6D7",
+    "section_custom_content_xT6XCn"
   ]
 }

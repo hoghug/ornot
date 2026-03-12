@@ -40,7 +40,33 @@
             "padding_bottom": 8
           }
         },
-        "text_hFPkN8": {
+        "text_3847GQ": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "heading_font_size": "body-medium",
+            "text": "<p>{{ product.metafields.custom.tagline | metafield_tag }}</p>",
+            "text_font_size": "body-medium",
+            "text_alignment": "text-left",
+            "layout": "left",
+            "padding_bottom": 16
+          }
+        },
+        "text_XxBGNp": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "heading_font_size": "body-medium",
+            "text": "<h4>Race fit with minimal extra fabric. </h4>",
+            "text_font_size": "body-medium",
+            "text_alignment": "text-left",
+            "layout": "left",
+            "padding_bottom": 16
+          }
+        },
+        "text_cU6EU8": {
           "type": "text",
           "settings": {
             "title": "",
@@ -77,6 +103,19 @@
             "padding_bottom": 16
           }
         },
+        "text_396aTN": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "heading_font_size": "body-medium",
+            "text": "<h5>*Fit note - runs small, choose one size up for relaxed fit</h5>",
+            "text_font_size": "body-medium",
+            "text_alignment": "text-left",
+            "layout": "left",
+            "padding_bottom": 16
+          }
+        },
         "variants": {
           "type": "variants",
           "settings": {
@@ -99,10 +138,10 @@
             "title": "{{ product.metafields.custom.extra_product_text.value }}",
             "heading_font_size": "body-medium",
             "text": "",
-            "text_font_size": "body-medium",
+            "text_font_size": "body-small",
             "text_alignment": "text-left",
             "layout": "left",
-            "padding_bottom": 16
+            "padding_bottom": 0
           }
         },
         "buttons": {
@@ -235,10 +274,13 @@
       },
       "block_order": [
         "title",
-        "text_hFPkN8",
+        "text_3847GQ",
+        "text_XxBGNp",
+        "text_cU6EU8",
         "junip_product_reviews_ugc_junip_product_summary_46cMCr",
         "price",
         "siblings_6N6EiR",
+        "text_396aTN",
         "variants",
         "pickup",
         "text_FUCgjf",
@@ -256,7 +298,7 @@
         "product_sticky_enable": true,
         "variant_image_scroll": true,
         "show_cart_bar": false,
-        "enable_zoom": false,
+        "enable_zoom": true,
         "enable_video_looping": true,
         "image_layout": "grid-1",
         "image_size": "normal",
@@ -268,6 +310,20 @@
     },
     "section_hero_8nY6LC": {
       "type": "section-hero",
+      "blocks": {
+        "text_TGeQXj": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>stuffffffffffff</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "text_TGeQXj"
+      ],
       "settings": {
         "image_1": "{{ product.metafields.custom.web_size_chart.value }}",
         "link": "",
@@ -284,6 +340,18 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
+      }
+    },
+    "section_custom_code_hyAF3X": {
+      "type": "section-custom-code",
+      "disabled": true,
+      "name": "Custom code",
+      "settings": {
+        "code": "<div style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;\">\n  <iframe \n    src=\"https://www.youtube.com/embed/FHtaCzzIVCY?rel=0&modestbranding=1&showinfo=0&controls=1&autoplay=1&mute=1\" \n    title=\"Ornot Video\"\n    frameborder=\"0\" \n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" \n    allowfullscreen \n    loading=\"lazy\"\n    style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\">\n  </iframe>\n</div>",
+        "width": "wrapper--full",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "section_hero_ckxTLf": {
@@ -311,6 +379,7 @@
         "heading_bjqtT8",
         "text_MJgGPX"
       ],
+      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/blue_shorts_sliver_d4bbe0cf-cb7e-499c-a08b-414cec4cfba6.jpg",
         "link": "",
@@ -327,17 +396,6 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
-      }
-    },
-    "section_custom_code_YXPx6A": {
-      "type": "section-custom-code",
-      "name": "Custom code",
-      "settings": {
-        "code": "<div style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;\">\n  <iframe \n    src=\"https://www.youtube.com/embed/vj7TrENXnvM?rel=0&modestbranding=1&showinfo=0&controls=1&autoplay=1&mute=1\" \n    title=\"Ornot Video\"\n    frameborder=\"0\" \n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" \n    allowfullscreen \n    loading=\"lazy\"\n    style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\">\n  </iframe>\n</div>",
-        "width": "wrapper--full",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "section_announcement_g8hJqr": {
@@ -393,6 +451,7 @@
         "message_CyHrfF",
         "text_mRdEXY"
       ],
+      "disabled": true,
       "settings": {
         "slider_speed": 7,
         "text_alignment": "center",
@@ -464,91 +523,400 @@
         "show_placeholder": true
       }
     },
-    "section_double_q9FR9m": {
-      "type": "section-double",
+    "section_custom_content_WA9AVr": {
+      "type": "section-custom-content",
       "blocks": {
-        "subheading_4NYmqX": {
-          "type": "subheading",
+        "text_B8LGyy": {
+          "type": "text",
           "settings": {
-            "subheading": "choose your weight",
-            "padding_bottom": 16
-          }
-        },
-        "heading_BEfnwj": {
-          "type": "heading",
-          "settings": {
-            "title": "Original vs Lightweight",
+            "subheading": "Made in usa",
+            "title": "Special projects",
             "heading_font_size": "heading-large",
-            "padding_bottom": 16,
+            "text": "<p>One of the most sustainable things we can do? Use what already exists. That’s the concept behind Special Projects—limited-run garments made from premium deadstock fabrics, cut and sewn in California. When they're gone, they're gone.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "View Products",
+            "button_url": "shopify://collections/special-projects",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
             "heading_tag": "automatic"
           }
         },
-        "text_DhLdBT": {
-          "type": "text",
+        "image_zgYwjx": {
+          "type": "image",
           "settings": {
-            "text": "<p><strong>TWO WEIGHTS. SAME MISSION. </strong>Both made in the USA with recycled, bluesign®-approved fabric and ou same tailored fit. </p><p><strong>LIGHTWEIGHT(148gsm): </strong>Super breathable, super stretchy. Designed for warmer days, travel, and moving around. Feels like wearing nothing—but way more functional.</p><p><strong>REGULAR WEIGHT (220gsm): </strong>Our classic. More structure, more durability, still plenty of stretch. Ideal for everyday wear, cooler temps, and any active pursuit.</p><p>Pick based on the forecast. Ornot.</p>",
+            "image": "shopify://shop_images/FabricStoryOrnot_6a05c762-5fa9-4df8-a39d-3098bda5abbf.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
             "text_font_size": "body-medium",
-            "padding_bottom": 16
-          }
-        },
-        "buttons_HqQgpe": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Shop Lightweight",
-            "button_url": "shopify://collections/lightweight-mission-shorts-and-pants",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
-            "show_arrow": true,
-            "padding_bottom": 16
-          }
-        },
-        "buttons_X8bfAY": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Shop Regular weight",
-            "button_url": "shopify://collections/regularweight-mission-shorts-and-pants",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": true,
-            "padding_bottom": 16
+            "show_arrow": false,
+            "heading_tag": "automatic"
           }
         }
       },
       "block_order": [
-        "subheading_4NYmqX",
-        "heading_BEfnwj",
-        "text_DhLdBT",
-        "buttons_HqQgpe",
-        "buttons_X8bfAY"
+        "text_B8LGyy",
+        "image_zgYwjx"
       ],
-      "name": "Image with text",
+      "name": "Custom section",
       "settings": {
-        "image_1": "shopify://shop_images/Ornot_LW_Mission_Shorts_StoneBlue_Stretchy_3679f036-2c94-41f5-8cd3-8b1892f5b675.jpg",
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "layout": "",
+        "borders": false,
+        "gutters": false,
         "width": "wrapper--full",
         "height": "image-height",
         "mobile_height": "screen-height-one-half--mobile",
         "reverse_blocks": false,
         "color_scheme": "",
         "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_video_J8acjN": {
+      "type": "section-video",
+      "disabled": true,
+      "settings": {
+        "show_video_popup": false,
+        "video_popup_social": "",
+        "title": "",
+        "heading_font_size": "heading-large",
+        "text": "",
+        "text_font_size": "body-medium",
+        "flex_align": "align--middle-center",
+        "link_text": "",
+        "link": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "desktop_height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "width": "wrapper--full",
+        "color_scheme": "",
+        "show_text_background": false,
+        "color": "",
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_custom_code_pJNGta": {
+      "type": "section-custom-code",
+      "disabled": true,
+      "settings": {
+        "code": "<div style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;\">\n  <iframe \n    src=\"https://www.youtube.com/embed/pUUffPnOzpE?rel=0&modestbranding=1&showinfo=0&controls=1\" \n    title=\"Ornot Video\"\n    frameborder=\"0\" \n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" \n    allowfullscreen \n    loading=\"lazy\"\n    style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\">\n  </iframe>\n</div>",
+        "width": "wrapper--full",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_hero_qJHAjK": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_GyDHrB": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image banner",
+            "heading_font_size": "heading-x-large",
+            "heading_tag": "automatic",
+            "padding_bottom": 8
+          }
+        },
+        "text_6L6CB8": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Tell your brand's story through images.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 8
+          }
+        },
+        "button_PxExwq": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "full_width": false,
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading_GyDHrB",
+        "text_6L6CB8",
+        "button_PxExwq"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_1": "shopify://shop_images/park-vs-house-jersey.jpg",
+        "link": "shopify://products/mens-house-jersey-olive",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/GRAVEL-VS-HOUSE-1x1.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
       }
     },
-    "section_custom_content_kgVBJE": {
+    "section_columns_fcn6BT": {
+      "type": "section-columns",
+      "blocks": {
+        "image_rqRbPM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/R0021148_94901083-2db9-47d4-936a-fa0b64e81198.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Made in USA",
+            "heading_font_size": "heading-small",
+            "text": "<p>Everything in our Special Projects Collection is made in California. Working closely with our sewing partners helps us maintain quality, move quickly, and build real relationships with the people who bring these pieces to life.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_nCBHTr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/R0021131.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Deadstock Fabric",
+            "heading_font_size": "heading-small",
+            "text": "<p>Deadstock is fabric that was overproduced, abandoned, or never made it to the cutting table. Instead of letting it sit in a warehouse, we turn it into something new. The catch? We only get one shot.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_LgjCMC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_Alpha_Daily_Vest_Gray_12.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Very Limited",
+            "heading_font_size": "heading-small",
+            "text": "<p>Deadstock, by definition, is limited. We may love a color or texture, but when the fabric is gone, it's gone. Each piece is an invitation to create something unique, and a chance to own a small part of Ornot history. </p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_rqRbPM",
+        "image_nCBHTr",
+        "image_LgjCMC"
+      ],
+      "settings": {
+        "title": "",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "width": "wrapper--full-padded",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 34,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_custom_content_z7hMKV": {
       "type": "section-custom-content",
       "blocks": {
-        "text_JddKwq": {
+        "image_J3UN3C": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/coming-soon-1x1_9c7929d8-a96e-48ba-a5b6-8785076d8a4d.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_ywttmE": {
           "type": "text",
           "settings": {
             "subheading": "",
-            "title": "WEAR THEM ON YOUR BIKE, ORNOT",
+            "title": "Ornot + Polartec",
             "heading_font_size": "heading-large",
-            "text": "<p>Featuring a full panel gusset and 4-way stretch fabric, these shorts are perfect for traveling the country, shreddy dirt sessions, or obligatory Sunday yard work.</p>",
+            "text": "<p>Great minds think alike—and by great minds, we mean anyone who sees the potential in leftover fabric. Polartec has been pioneering recycled textiles for years, which makes them a natural fit for our Special Projects. Whether it’s upcycling deadstock or reinventing performance fabrics, we’re both on a mission to make more out of what’s already here. As our partnership grows, so does our lineup of smarter, more responsible gear. Ride in it, geek out over it, or both.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_J3UN3C",
+        "text_ywttmE"
+      ],
+      "name": "Custom section",
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "screen-height-one-half--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_cFKw9W": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_rTePcY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/FabricStoryOrnot.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_kmtgEK": {
+          "type": "text",
+          "settings": {
+            "subheading": "in detail",
+            "title": "SPECIAL PROJECTS",
+            "heading_font_size": "heading-large",
+            "text": "<p>One of the most sustainable things we can do? <strong>Use what already exists.</strong> That’s the concept behind Special Projects—limited-run garments made from premium deadstock fabrics, cut and sewn in California. When they're gone, they're gone.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_rTePcY",
+        "text_kmtgEK"
+      ],
+      "disabled": true,
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_8KemLT": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_wrQcng": {
+          "type": "text",
+          "settings": {
+            "subheading": "/ˈdɛd.stɑk/",
+            "title": "DEADSTOCK FABRIC",
+            "heading_font_size": "heading-large",
+            "text": "<p>Deadstock is fabric that was overproduced, abandoned, or never made it to the cutting table. Sometimes a color runs off-spec, and that fabric becomes “deadstock.” Instead of letting it sit in a warehouse or worse, a landfill, <strong>we turn it into something new.</strong> The catch? We only get one shot. One opportunity.</p><p>Deadstock isn’t just leftover fabric—it’s an invitation to make something unforgettable. That’s why we collaborate with <strong>Polartec®</strong>, the pioneers who redefined performance textiles and never stopped innovating.</p>",
             "text_font_size": "body-medium",
             "button_text": "",
             "button_url": "",
@@ -564,10 +932,10 @@
             "heading_tag": "automatic"
           }
         },
-        "image_LYC9qC": {
+        "image_iYmNWa": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/TNUT2827.jpg",
+            "image": "shopify://shop_images/alpha-sweater-1x1.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -588,9 +956,10 @@
         }
       },
       "block_order": [
-        "text_JddKwq",
-        "image_LYC9qC"
+        "text_wrQcng",
+        "image_iYmNWa"
       ],
+      "disabled": true,
       "settings": {
         "borders": false,
         "gutters": false,
@@ -603,6 +972,196 @@
         "padding_bottom": 0
       }
     },
+    "section_custom_content_kgVBJE": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_LYC9qC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pie-ride.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_JddKwq": {
+          "type": "text",
+          "settings": {
+            "subheading": "in partnership",
+            "title": "ORNOT + POLARTEC",
+            "heading_font_size": "heading-large",
+            "text": "<p>Great minds think alike—and by great minds, we mean anyone who sees the potential in leftover fabric. Polartec has been pioneering recycled textiles for years, which makes them a natural fit for our Special Projects. Whether it’s upcycling deadstock or reinventing performance fabrics, we’re both on a mission to <strong>make more out of what’s already here.</strong></p><p>As our partnership grows, so does our lineup of smarter, more responsible gear. Ride in it, geek out over it, or both.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_LYC9qC",
+        "text_JddKwq"
+      ],
+      "disabled": true,
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_hero_9CXNe9": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_PVYw79": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image banner",
+            "heading_font_size": "heading-x-large",
+            "heading_tag": "automatic",
+            "padding_bottom": 8
+          }
+        },
+        "text_4VixLy": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Tell your brand's story through images.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 8
+          }
+        },
+        "button_QB8YUQ": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "full_width": false,
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading_PVYw79",
+        "text_4VixLy",
+        "button_QB8YUQ"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_1": "shopify://shop_images/clement-sliver.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_custom_content_RBLtRR": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_7iBLEH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TNUT9833_464f69a9-2190-4e61-a5dd-494fb8dcd841.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_CXKRMc": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "BETTER. STRONGER.",
+            "heading_font_size": "heading-large",
+            "text": "<p>Traditional Merino? Twisted, scratchy, and quick to wear out. Nuyarn’s twist-free, two-ply tech uses longer fibers for Merino that’s <strong>8.8x more durable</strong> and way less prone to holes. Martindale test approved.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_7iBLEH",
+        "text_CXKRMc"
+      ],
+      "disabled": true,
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_custom_content_3Hy8cr": {
       "type": "section-custom-content",
       "blocks": {
@@ -610,9 +1169,9 @@
           "type": "text",
           "settings": {
             "subheading": "",
-            "title": "ORIGINAL VS LIGHTWEIGHT",
+            "title": "A DIRECT CORRELATION",
             "heading_font_size": "heading-large",
-            "text": "<p>It started back in 2019 with our <a href=\"https://www.ornotbike.com/products/mission-short-slate\" title=\"https://www.ornotbike.com/products/mission-short-slate\">original weight Mission Shorts</a>. These robust shorts were built for every adventure imaginable, on and off the bike. In 2022, we went lighter and stretchier with the introduction of our <a href=\"https://www.ornotbike.com/products/lightweight-mission-short-obsidian\" title=\"https://www.ornotbike.com/products/lightweight-mission-short-obsidian\">Lightweight Mission Shorts</a>. Just as at home on the bike as they are cooling down in a creek, these quick-drying shorts are perfect for hot summer days. Both shorts are cut and sewn in Oakland, CA from recycled bluesign®-approved fabric.</p>",
+            "text": "<p>Elasticity isn’t just a nice-to-have in cycling apparel—it’s essential for comfort and unrestricted movement on the bike. Thanks to Nuyarn’s patented spinning technique, wool's natural stretchiness is preserved and amplified. </p>",
             "text_font_size": "body-medium",
             "button_text": "",
             "button_url": "",
@@ -631,7 +1190,7 @@
         "image_Mw7iUH": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ornot_LW_Mission_Shorts_StoneBlue_Stretchy.jpg",
+            "image": "shopify://shop_images/merino-riding-shirt.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -662,70 +1221,6 @@
         "width": "wrapper--full",
         "height": "image-height",
         "mobile_height": "image-height--mobile",
-        "reverse_blocks": true,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_custom_content_RBLtRR": {
-      "type": "section-custom-content",
-      "blocks": {
-        "image_7iBLEH": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/truemarmalade_LW.jpg",
-            "title": "",
-            "heading_font_size": "heading-large",
-            "text": "",
-            "text_font_size": "body-medium",
-            "flex_align": "align--middle-center",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "overlay_type": "disabled",
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_CXKRMc": {
-          "type": "text",
-          "settings": {
-            "subheading": "",
-            "title": "do they last?",
-            "heading_font_size": "heading-large",
-            "text": "<p>Or friend <a href=\"https://www.instagram.com/truemarmalade\" target=\"_blank\" title=\"Erik's instagram\">@truemarmalade</a> (Erik Binggeser<strong>) </strong>has been ride testing our shorts across the country on his very loaded Omnium cargo bike. After 6,000 they're still going strong (this photo was taken in mexico after a rather long haul, yes, that's salt).</p>",
-            "text_font_size": "body-medium",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "",
-            "color": "",
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "image_7iBLEH",
-        "text_CXKRMc"
-      ],
-      "settings": {
-        "borders": false,
-        "gutters": false,
-        "width": "wrapper--full",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
         "reverse_blocks": false,
         "color_scheme": "",
         "padding_top": 0,
@@ -735,8 +1230,7 @@
     "section_hero_AXLMwy": {
       "type": "section-hero",
       "settings": {
-        "image_1": "shopify://shop_images/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.png",
-        "image_2": "shopify://shop_images/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.gif",
+        "image_1": "shopify://shop_images/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.gif",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
@@ -761,7 +1255,8 @@
           "settings": {
             "product": "{{product}}",
             "title": "",
-            "alignment": ""
+            "alignment": "",
+            "sortOrder": "mostRecent"
           }
         }
       },
@@ -815,14 +1310,22 @@
     "section_hero_t4phQQ",
     "main",
     "section_hero_8nY6LC",
+    "section_custom_code_hyAF3X",
     "section_hero_ckxTLf",
-    "section_custom_code_YXPx6A",
     "section_announcement_g8hJqr",
     "section_hero_A9Bhjc",
-    "section_double_q9FR9m",
+    "section_custom_content_WA9AVr",
+    "section_video_J8acjN",
+    "section_custom_code_pJNGta",
+    "section_hero_qJHAjK",
+    "section_columns_fcn6BT",
+    "section_custom_content_z7hMKV",
+    "section_custom_content_cFKw9W",
+    "section_custom_content_8KemLT",
     "section_custom_content_kgVBJE",
-    "section_custom_content_3Hy8cr",
+    "section_hero_9CXNe9",
     "section_custom_content_RBLtRR",
+    "section_custom_content_3Hy8cr",
     "section_hero_AXLMwy",
     "1706135782d1067a10",
     "related"
