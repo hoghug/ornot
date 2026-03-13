@@ -1204,6 +1204,46 @@
         ]
       },
       {
+        "type": "range",
+        "id": "badge_padding_x",
+        "label": "Badge padding horizontal",
+        "default": 8,
+        "min": 4,
+        "max": 20,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "badge_padding_y",
+        "label": "Badge padding vertical",
+        "default": 8,
+        "min": 4,
+        "max": 20,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "badge_container_padding_x",
+        "label": "Badge Container padding horizontal",
+        "default": 5,
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "badge_container_padding_y",
+        "label": "Badge Container padding vertical",
+        "default": 5,
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "unit": "px"
+      },
+      {
         "type": "select",
         "id": "badge_alignment",
         "label": "Alignment",
@@ -1297,22 +1337,18 @@
         "default": true
       },
       {
-        "type": "range",
-        "id": "label_font_size",
-        "visible_if": "{{ settings.show_custom_label }}",
-        "label": "Text Size",
-        "min": 10,
-        "max": 24,
-        "step": 1,
-        "unit": "px",
-        "default": 12
-      },
-      {
         "type": "color",
         "id": "label_text_color",
         "visible_if": "{{ settings.show_custom_label }}",
         "label": "Text Color",
-        "default": "#666666"
+        "default": "#131313"
+      },
+      {
+        "type": "color",
+        "id": "label_bg_color",
+        "visible_if": "{{ settings.show_custom_label }}",
+        "label": "Background Color",
+        "default": "#ffffff"
       },
       {
         "type": "header",

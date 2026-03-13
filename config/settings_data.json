@@ -2017,8 +2017,6 @@
       ".product-information p.product__grid__title,.product-item__title {text-transform: uppercase; font-weight: bold; font-size: 18px; font-family: var(---font-stack-heading); letter-spacing: 0.06px;}",
       ".product-information .price span.new-price {color: #00b5e2; font-family: var(---font-stack-heading); font-weight: bold; font-size: 16px; letter-spacing: 0.06px;}",
       "@media only screen and (min-width: 990px) {.product-grid {grid-template-columns: var(--grid); display: grid; gap: var(--gap); padding-top: 1px; padding-left: 1px; }}",
-      ".badge-box {font-size: 16px;}",
-      ".sale-box {font-size: 16px;}",
       " /* all */.image__hero__frame,.lazy-image,.image__fill {background: none !important;}",
       ".lazy-image--backfill.is-loading:after {display: none !important;}"
     ]

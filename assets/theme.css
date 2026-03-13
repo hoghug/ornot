@@ -12127,7 +12127,7 @@ main-search .input-holder {
 }
 
 .badge-box, .card__label {
-  --padding-vertical: 0.438rem;
+  /* --padding-vertical: 0.438rem; */
   --text: var(--COLOR-BADGE-TEXT);
   --bg: var(--COLOR-BADGE-BG);
   font-size: var(--FONT-SIZE-BADGE);
@@ -12137,7 +12137,7 @@ main-search .input-holder {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: var(--LETTER-SPACING-BODY);
-  padding: var(--padding-vertical) 15px;
+  padding: var(--PADDING-Y-BADGE) var(--PADDING-X-BADGE);
   width: auto;
   max-width: 100%;
   white-space: nowrap;
@@ -12149,13 +12149,12 @@ main-search .input-holder {
 }
 
 .card__label {
---bg: none !important;
+--bg: var(--COLOR-CARD-LABEL-BG);
 color: var(--COLOR-CARD-LABEL-TEXT);
-font-size: var(--FONT-SIZE-CARD-LABEL);
 }
 @media only screen and (max-width: 749px) {
   .badge-box {
-    --padding-vertical: 6px;
+    /* --padding-vertical: 6px; */
   }
 }
 .badge--small .badge-box {
@@ -12166,11 +12165,11 @@ font-size: var(--FONT-SIZE-CARD-LABEL);
 }
 
 .badge-box-container {
-  padding: 5px;
+  padding: var(--PADDING-Y-BADGE-CONTAINER) var(--PADDING-X-BADGE-CONTAINER);
 }
-.badge-box-container:has(.card__label) {
+/* .badge-box-container:has(.card__label) {
   padding: 5px 0 !important;
-}
+} */
 .badge-box-container.align--top-left, .badge-box-container.align--bottom-left {
   align-items: flex-start;
   right: auto;
