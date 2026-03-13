@@ -1,0 +1,29 @@
+{%- liquid
+  assign text_color = entry.text_color.value | default: '#ffffff'
+-%}
+
+<div class="in-grid-content grid-item product-item--swatches">
+  <div class="in-grid-content__inner">
+
+    {%- if entry.video.value != blank -%}
+      {{- entry.video.value | video_tag: autoplay: true, loop: true, muted: true, controls: false, class: 'in-grid-content__media' -}}
+    {%- elsif entry.image.value != blank -%}
+      {{- entry.image.value | image_url: width: 600 | image_tag: class: 'in-grid-content__media', loading: 'lazy' -}}
+    {%- endif -%}
+
+    {%- if entry.title.value != blank -%}
+      <div class="in-grid-content__content">
+        <p class="in-grid-content__title" style="color: {{ text_color }};">{{ entry.title.value }}</p>
+      </div>
+    {%- endif -%}
+
+    {%- if entry.link.value != blank -%}
+      <a href="{{ entry.link.value.url }}" class="in-grid-content__link" style="color: {{ text_color }};">
+        <span class="in-grid-content__link-text">
+          {{- entry.link.value.text -}}
+        </span>
+      </a>
+    {%- endif -%}
+
+  </div>
+</div>

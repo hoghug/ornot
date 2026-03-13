@@ -12423,6 +12423,54 @@ color: var(--COLOR-CARD-LABEL-TEXT);
   position: relative;
   overflow: hidden;
 }
+.in-grid-content__inner {
+  padding-top: var(--PRODUCT-GRID-ASPECT-RATIO);
+  height: 0;
+  position: relative;
+  overflow: hidden;
+}
+.in-grid-content__media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.in-grid-content__content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  pointer-events: none;
+}
+.in-grid-content__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: var(--font-body-large);
+  font-family: var(---font-stack-heading);
+  letter-spacing: 0.06px;
+}
+.in-grid-content__link {
+  position: absolute;
+  bottom: 1.75rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+.in-grid-content__link-text {
+  font-size: var(--font-body-small);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06px;
+  padding-bottom: 5px;
+  display: inline-block;
+  border-bottom: 2px solid currentColor;
+}
 .product-item__image:not(.image--empty) {
   background: var(--bg);
 }

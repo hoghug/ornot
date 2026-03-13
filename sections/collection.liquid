@@ -230,6 +230,8 @@
             id="AjaxinateLoop" data-ajaxinate-id="{{ section.id }}"
           {% endif %}
         >
+          {%- assign in_grid_items = collection.metafields.custom.in_grid_content.value -%}
+          {%- assign rendered_in_grid_positions = ',' -%}
           {%- if collection.products_count > 0 -%}
             {%- if featured_images_array.size > 0 -%}
               {%- liquid
@@ -263,6 +265,18 @@
                   assign counter_grid = counter_grid | plus: 1
                   assign items_on_row_remaining = items_on_row_remaining | minus: 1
 
+                  if in_grid_items
+                    assign current_product_index = forloop.index
+                    for in_grid_item in in_grid_items
+                      assign in_grid_pos = in_grid_item.position.value | plus: 0
+                      if in_grid_pos == current_product_index
+                        render 'collection-in-grid-content', entry: in_grid_item
+                        assign pos_key = in_grid_pos | prepend: ',' | append: ','
+                        assign rendered_in_grid_positions = rendered_in_grid_positions | append: pos_key
+                      endif
+                    endfor
+                  endif
+
                   if collection
                     render 'product-grid-item', product: product, index: forloop.index, sizes: image_sizes
                   endif
@@ -273,12 +287,32 @@
               {%- for product in collection.products -%}
                 {%- assign grid_int = section.settings.grid | times: 1 -%}
                 {%- assign animation_delay = forloop.index0 | modulo: grid_int | times: 1 -%}
+                {%- if in_grid_items -%}
+                  {%- assign current_product_index = forloop.index -%}
+                  {%- for in_grid_item in in_grid_items -%}
+                    {%- assign in_grid_pos = in_grid_item.position.value | plus: 0 -%}
+                    {%- if in_grid_pos == current_product_index -%}
+                      {%- render 'collection-in-grid-content', entry: in_grid_item -%}
+                      {%- assign pos_key = in_grid_pos | prepend: ',' | append: ',' -%}
+                      {%- assign rendered_in_grid_positions = rendered_in_grid_positions | append: pos_key -%}
+                    {%- endif -%}
+                  {%- endfor -%}
+                {%- endif -%}
                 {%- render 'product-grid-item',
                   product: product,
                   animation_delay: animation_delay,
                   index: forloop.index,
                   sizes: image_sizes
                 -%}
+              {%- endfor -%}
+            {%- endif -%}
+            {%- if in_grid_items -%}
+              {%- for in_grid_item in in_grid_items -%}
+                {%- assign in_grid_pos = in_grid_item.position.value | plus: 0 -%}
+                {%- assign pos_key = in_grid_pos | prepend: ',' | append: ',' -%}
+                {%- unless rendered_in_grid_positions contains pos_key -%}
+                  {%- render 'collection-in-grid-content', entry: in_grid_item -%}
+                {%- endunless -%}
               {%- endfor -%}
             {%- endif -%}
           {%- else -%}
