@@ -12455,21 +12455,22 @@ color: var(--COLOR-CARD-LABEL-TEXT);
 }
 .in-grid-content__link {
   position: absolute;
-  bottom: 1.75rem;
-  left: 0;
-  right: 0;
+  inset: 0;
   text-align: center;
   text-decoration: none;
   display: block;
 }
 .in-grid-content__link-text {
+  bottom: 1rem;
+  left: 50%;
+  translate: -50% 0;
   font-size: var(--font-body-small);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06px;
-  padding-bottom: 5px;
   display: inline-block;
   border-bottom: 2px solid currentColor;
+  position: absolute;
 }
 .product-item__image:not(.image--empty) {
   background: var(--bg);
