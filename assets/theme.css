@@ -12146,6 +12146,7 @@ main-search .input-holder {
   border-radius: var(--btn-radius);
   color: var(--text);
   background: var(--bg);
+  text-box-trim: trim-both;
 }
 
 .card__label {
