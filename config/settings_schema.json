@@ -1327,13 +1327,13 @@
       },
       {
         "type": "header",
-        "content": "Custom Minimal label",
+        "content": "Custom alt label",
         "info": "Add tag '_label_Custom Text' to a product in order to show the label"
       },
       {
         "type": "checkbox",
         "id": "show_custom_label",
-        "label": "Show custom badge",
+        "label": "Show alt label",
         "default": true
       },
       {
@@ -1342,6 +1342,14 @@
         "visible_if": "{{ settings.show_custom_label }}",
         "label": "Text Color",
         "default": "#131313"
+      },
+      {
+        "type": "checkbox",
+        "id": "label_bg_transparent",
+        "visible_if": "{{ settings.show_custom_label }}",
+        "label": "Background Transparent",
+        "info": "Supersedes BG Color",
+        "default": false
       },
       {
         "type": "color",

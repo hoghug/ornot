@@ -346,7 +346,11 @@
     --PADDING-Y-BADGE-CONTAINER: {{ settings.badge_container_padding_y | append: 'px' }};
 
     --COLOR-CARD-LABEL-TEXT: {{ settings.label_text_color }};
-    --COLOR-CARD-LABEL-BG: {{ settings.label_bg_color }};
+    {% if settings.label_bg_transparent %}
+      --COLOR-CARD-LABEL-BG: transparent;
+    {% else %}
+      --COLOR-CARD-LABEL-BG: {{ settings.label_bg_color }};
+    {% endif %}
 
     --COLOR-SOLD-BG: {{ settings.sold_out_bg_color }};
     --COLOR-SOLD-TEXT: {{ settings.sold_out_text_color }};
