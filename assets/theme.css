@@ -12436,6 +12436,12 @@ color: var(--COLOR-CARD-LABEL-TEXT);
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: all 0.3s ease;
+}
+.in-grid-content:hover .in-grid-content__media {
+  /* filter: blur(2px); */
+  filter: saturate(0)
+  /* transform: scale(1.02); */
 }
 .in-grid-content__content {
   position: absolute;
