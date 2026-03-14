@@ -17,6 +17,37 @@
 {% endcomment %}
 
 {%- liquid
+  assign plp_card = product.metafields.custom.plp_card_content.value
+
+  assign card_gender = ''
+  if product.title contains "Women's"
+    assign card_gender = "Women's"
+  elsif product.title contains "Men's"
+    assign card_gender = "Men's"
+  endif
+
+  if plp_card != blank
+    assign card_title   = plp_card.title
+    assign card_type    = plp_card.type
+    assign card_color   = plp_card.color
+    assign card_special = plp_card.special
+  else
+    assign title_after_gender = product.title | split: "Women's" | last | split: "Men's" | last | lstrip
+    assign parts = title_after_gender | split: ' - '
+    assign card_color = parts | last
+    assign card_title = title_after_gender | remove: ' - ' | remove: card_color | rstrip
+    assign card_type = product.type
+    assign card_special = ''
+  endif
+
+  if card_gender != blank
+    assign card_subtitle = card_gender | append: ' ' | append: card_type | append: ' - ' | append: card_color | strip
+  else
+    assign card_subtitle = card_color
+  endif
+-%}
+
+{%- liquid
   assign current_variant = product.first_available_variant
   assign product_url = product.url | within: collection | split: '?_pos' | first
   assign attributes = attributes | default: ''
@@ -391,7 +422,10 @@
 
         {%- if settings.collection_swatch_style == 'text' or settings.collection_swatch_style == 'text-slider' -%}
           <span class="product-item__swatches__count">
-            <span data-sibling-count>{{ count }} {{ count | pluralize: count_string_one, count_string_other }}</span>
+            <span data-sibling-count>{{ count }} {{ count | pluralize: count_string_one, count_string_other }}</span> 
+            {%- if card_special != blank -%}
+              <span class="product-item__special"> // {{ card_special }}</span>
+            {%- endif -%}
           </span>
         {%- endif -%}
       </product-item-siblings>
@@ -740,7 +774,8 @@
     >
       <div class="product-item__info {{ settings.product_grid_font_size }}">
         <a class="product-link" href="{{ product_url }}" data-product-link="{{ product_url }}">
-          <p class="product-item__title">{{ product.title | strip_html | escape }}</p>
+          <p class="product-item__subtitle">{{ card_subtitle | upcase }}</p>
+          <p class="product-item__title">{{ card_title | upcase }}</p>
 
           <div class="product-item__price__holder{% if has_siblings %} has-siblings{% endif %}">
             {%- if any_sibling_cutline or product_item_cutline != blank -%}
@@ -790,6 +825,9 @@
                 {{- count }}
                 {{- count | pluralize: count_string_one, count_string_other -}}
               </span>
+              {%- if card_special != blank -%}
+                <span class="product-item__special"> // {{ card_special }}</span>
+              {%- endif -%}
             </span>
           </div>
         {%- endif -%}
