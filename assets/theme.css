@@ -12093,6 +12093,7 @@ main-search .input-holder {
 }
 
 .product-item {
+  padding: 0px 10px 0px 10px;
   position: relative;
   scroll-snap-align: start;
 }
