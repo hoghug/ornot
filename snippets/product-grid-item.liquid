@@ -29,13 +29,19 @@
   assign parts = title_after_gender | split: ' - '
   assign card_color = parts | last
   assign card_title = title_after_gender | remove: ' - ' | remove: card_color | rstrip
-  assign card_type = product.metafields.custom.collection_card_product_type | default: product.type
+  assign card_prod_type = product.metafields.custom.collection_card_product_type | default: product.type
   assign card_tagline = product.metafields.custom.collection_card_product_tagline
 
   if card_gender != blank
-    assign card_subtitle = card_gender | append: ' ' | append: card_type | append: ' - ' | append: card_color | strip
+    assign card_subtitle = card_gender | append: ' ' | append: card_prod_type | append: ' - ' | append: card_color | strip
+  elsif card_title == blank
+    assign card_title = product.title
   else
-    assign card_subtitle = card_color
+    if card_prod_type == card_title
+      assign card_subtitle = card_color
+    else
+      assign card_subtitle = card_prod_type | append: ' - ' | append: card_color
+    endif
   endif
 -%}
 
