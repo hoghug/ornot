@@ -17,7 +17,6 @@
 {% endcomment %}
 
 {%- liquid
-  assign plp_card = product.metafields.custom.plp_card_content.value
 
   assign card_gender = ''
   if product.title contains "Women's"
@@ -26,19 +25,12 @@
     assign card_gender = "Men's"
   endif
 
-  if plp_card != blank
-    assign card_title   = plp_card.title
-    assign card_type    = plp_card.type
-    assign card_color   = plp_card.color
-    assign card_special = plp_card.special
-  else
-    assign title_after_gender = product.title | split: "Women's" | last | split: "Men's" | last | lstrip
-    assign parts = title_after_gender | split: ' - '
-    assign card_color = parts | last
-    assign card_title = title_after_gender | remove: ' - ' | remove: card_color | rstrip
-    assign card_type = product.type
-    assign card_special = ''
-  endif
+  assign title_after_gender = product.title | split: "Women's" | last | split: "Men's" | last | lstrip
+  assign parts = title_after_gender | split: ' - '
+  assign card_color = parts | last
+  assign card_title = title_after_gender | remove: ' - ' | remove: card_color | rstrip
+  assign card_type = product.metafields.custom.collection_card_product_type | default: product.type
+  assign card_tagline = product.metafields.custom.collection_card_product_tagline
 
   if card_gender != blank
     assign card_subtitle = card_gender | append: ' ' | append: card_type | append: ' - ' | append: card_color | strip
@@ -423,8 +415,8 @@
         {%- if settings.collection_swatch_style == 'text' or settings.collection_swatch_style == 'text-slider' -%}
           <span class="product-item__swatches__count">
             <span data-sibling-count>{{ count }} {{ count | pluralize: count_string_one, count_string_other }}</span> 
-            {%- if card_special != blank -%}
-              <span class="product-item__special"> // {{ card_special }}</span>
+            {%- if card_tagline != blank -%}
+              <span class="product-item__special"> // {{ card_tagline }}</span>
             {%- endif -%}
           </span>
         {%- endif -%}
