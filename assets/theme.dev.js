@@ -156,7 +156,7 @@
           break;
       }
 
-      return formatString.replace(placeholderRegex, value);
+      return formatString.replace(placeholderRegex, value).replace(/\$\s+/, '$').replace(/\.00(?!\d)/, '');
     };
 
     window.theme.debounce = function (fn, time) {
@@ -6835,10 +6835,12 @@
           });
         }
 
+        const cleanPrice = (p) => p.replace(/\$\s+/, '$').replace(/\.00(?!\d)/, '');
+
         if (siblingCompareAtPrice) {
-          this.productPrice.innerHTML = `<span class="price sale"><span class="new-price">${siblingPrice}</span> <span class="old-price">${siblingCompareAtPrice}</span></span>`;
+          this.productPrice.innerHTML = `<span class="price sale">${cleanPrice(siblingPrice)} <span class="old-price">${cleanPrice(siblingCompareAtPrice)}</span></span>`;
         } else {
-          this.productPrice.innerHTML = `<span class="price">${siblingPrice}</span>`;
+          this.productPrice.innerHTML = `<span class="price">${cleanPrice(siblingPrice)}</span>`;
         }
 
         if (this.productCutline) {
