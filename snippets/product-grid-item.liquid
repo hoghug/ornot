@@ -1,4 +1,4 @@
-{% comment %}
+{% doc %}
   Renders list of products in grid layout
 
   Accepts:
@@ -14,7 +14,7 @@
 
   Usage:
   {% render 'product-grid-item', product: product, index: index, sizes: image_sizes, attributes: '', modifier_class: '' %}
-{% endcomment %}
+{% enddoc %}
 
 {%- liquid
 
@@ -25,23 +25,39 @@
     assign card_gender = "Men's"
   endif
 
-  assign title_after_gender = product.title | split: "Women's" | last | split: "Men's" | last | lstrip
-  assign parts = title_after_gender | split: ' - '
-  assign card_color = parts | last
-  assign card_title = title_after_gender | remove: ' - ' | remove: card_color | rstrip
-  assign card_prod_type = product.metafields.custom.collection_card_product_type | default: product.type
-  assign card_tagline = product.metafields.custom.collection_card_product_tagline
-
-  if card_gender != blank
-    assign card_subtitle = card_gender | append: ' ' | append: card_prod_type | append: ' - ' | append: card_color | strip
-  elsif card_title == blank
-    assign card_title = product.title
+  if product.metafields.custom.collection_card_title != blank
+    assign card_title = product.metafields.custom.collection_card_title.value
   else
-    if card_prod_type == card_title
-      assign card_subtitle = card_color
+    assign title_after_gender = product.title | split: "Women's" | last | split: "Men's" | last | lstrip
+    assign parts = title_after_gender | split: ' - '
+    assign card_color = parts | last
+    assign card_title = title_after_gender | remove: ' - ' | remove: card_color | rstrip
+  endif
+  
+  if product.metafields.custom.collection_card_product_type != blank
+    assign card_prod_type = product.metafields.custom.collection_card_product_type.value
+  else
+    assign card_prod_type = product.type | remove_first: 'W '
+  endif
+
+  if product.metafields.custom.collection_card_subtitle != blank
+    assign card_subtitle = product.metafields.custom.collection_card_subtitle.value
+  else
+    if card_gender != blank
+      assign card_subtitle = card_gender | append: ' ' | append: card_prod_type | append: ' - ' | append: card_color | strip
+    elsif card_title == blank
+      assign card_title = product.title
     else
-      assign card_subtitle = card_prod_type | append: ' - ' | append: card_color
+      if card_prod_type == card_title
+        assign card_subtitle = card_color
+      else
+        assign card_subtitle = card_prod_type | append: ' - ' | append: card_color
+      endif
     endif
+  endif
+  
+  if product.metafields.custom.collection_card_tagline != blank
+    assign card_tagline = product.metafields.custom.collection_card_tagline.value
   endif
 -%}
 

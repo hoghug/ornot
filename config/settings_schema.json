@@ -1190,6 +1190,10 @@
     "name": "Badges",
     "settings": [
       {
+        "type": "header",
+        "content": "Badge Basic Styles"
+      },
+      {
         "type": "select",
         "id": "badge_font_size",
         "label": "Badge text size",
@@ -1224,12 +1228,16 @@
         "unit": "px"
       },
       {
+        "type": "header",
+        "content": "Badge Positioning"
+      },
+      {
         "type": "range",
         "id": "badge_container_padding_x",
         "label": "Badge Container padding horizontal",
         "default": 5,
         "min": 0,
-        "max": 20,
+        "max": 30,
         "step": 1,
         "unit": "px"
       },
@@ -1239,7 +1247,7 @@
         "label": "Badge Container padding vertical",
         "default": 5,
         "min": 0,
-        "max": 20,
+        "max": 30,
         "step": 1,
         "unit": "px"
       },
