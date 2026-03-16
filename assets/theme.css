@@ -3048,7 +3048,7 @@ body.grid-compact .grid-outer {
   --outer: 0px;
   --outer-offset: 0px;
   --gutter: 0px;
-  --gap: 0px;
+  --gap: 15px 0px;
 }
 .collection-list .grid-outer {
   padding-top: var(--outer);
@@ -12313,7 +12313,7 @@ color: var(--COLOR-CARD-LABEL-TEXT);
   left: 0;
   right: 0;
   display: block;
-  padding: 8px calc(var(--inner) / 2);
+  padding: 6px calc(var(--inner) / 2);
   font-size: var(--font-body-small);
   color: var(--text-light);
   font-style: italic;
@@ -12415,6 +12415,7 @@ color: var(--COLOR-CARD-LABEL-TEXT);
   --link-hover: var(--text-a80);
   display: block;
   height: 100%;
+  text-box-trim: trim-both;
 }
 
 .product-item__image {
@@ -12724,6 +12725,7 @@ color: var(--COLOR-CARD-LABEL-TEXT);
   color: inherit;
   margin: 0;
   transition: color 0.3s;
+  text-box-trim: trim-end;
 }
 @media only screen and (max-width: 749px) {
   .product-item__title {
@@ -12813,8 +12815,9 @@ color: var(--COLOR-CARD-LABEL-TEXT);
 }
 
 .product-information .price {
-  font-size: inherit;
+  font-size: var(--font-body-small);
   color: var(--text-lt-gray);
+  text-box-trim: trim-both;
 }
 @media only screen and (max-width: 749px) {
   .product-information .price {
