@@ -334,6 +334,8 @@
   :root {
     --scrollbar-width: 0px;
 
+    --GRID-ROW-GAP: {{ settings.grid_row_gap | append: 'px' }};
+
     /* === Product grid badges ===*/
     --COLOR-SALE-BG: {{ settings.saving_bg_color | default: settings.sale_bg_color }};
     --COLOR-SALE-TEXT: {{ settings.saving_text_color | default: settings.sale_text_color }};

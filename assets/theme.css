@@ -3048,7 +3048,7 @@ body.grid-compact .grid-outer {
   --outer: 0px;
   --outer-offset: 0px;
   --gutter: 0px;
-  --gap: 15px 0px;
+  --gap: var(--GRID-ROW-GAP) 0px;
 }
 .collection-list .grid-outer {
   padding-top: var(--outer);
