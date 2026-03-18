@@ -131,7 +131,7 @@
           "type": "image",
           "settings": {
             "position": "1",
-            "image": "shopify://shop_images/Alpha_daily_vest_studio_7.jpg",
+            "image": "shopify://shop_images/cram-alpha-pullover.jpg",
             "aspect_ratio": 1,
             "wide_image": false,
             "overlay_type": "disabled",
@@ -139,7 +139,7 @@
             "heading_font_size": "heading-x-small",
             "link_text": "",
             "text_font_size": "body-x-small",
-            "link": "shopify://products/mens-alpha-daily-vest-updated",
+            "link": "shopify://products/alpha-sweater-oat",
             "text_color": "#ffffff"
           }
         },
@@ -303,8 +303,8 @@
         "image_Dan4Rn": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Alpha_daily_vest_studio_8.jpg",
-            "image_url": "shopify://products/mens-alpha-daily-vest-updated",
+            "image": "shopify://shop_images/alpha-sweater-oat-bibs-studio1-4.jpg",
+            "image_url": "shopify://products/alpha-sweater-oat",
             "image_alignment": "center",
             "image_width": 100,
             "pin_to_bottom": true,

@@ -471,6 +471,27 @@
             "heading_tag": "automatic"
           }
         },
+        "image_BKXtyf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_LW_Mission_Pants_Olive_05_0f3db5f4-1fd8-4626-b937-ab55df6f9a61.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Recycled Stretch-Woven",
+            "heading_font_size": "heading-small",
+            "text": "<p>Our signature stretch-woven fabric is built for movement without the weight. It stretches, breathes, and handles whatever the day throws at you, on the bike or off. We wear it all the time, because your pants and shorts should keep up.</p>",
+            "text_font_size": "body-small",
+            "button_text": "Learn more",
+            "button_url": "shopify://collections/fabric-story-mission-pants-shorts-recycled-stretch-woven",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
         "image_cwtx4V": {
           "type": "image",
           "settings": {
@@ -548,28 +569,6 @@
             "text": "<p>Polartec Delta works <em>with</em> your body’s natural cooling system—so you stay cool, dry, and ready to keep pedaling. We wear these year-round, but they really shine during <em>“</em>San Francisco summer.”</p>",
             "text_font_size": "body-small",
             "button_text": "See Products",
-            "button_url": "",
-            "button_type": "btn--secondary",
-            "button_size": "btn--small",
-            "button_style": "btn--text",
-            "show_arrow": true,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        },
-        "image_BKXtyf": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Ornot_BaseLayer_Merino_Gravel_04.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "Power Grid Fleece",
-            "heading_font_size": "heading-small",
-            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
-            "text_font_size": "body-small",
-            "button_text": "Learn more",
             "button_url": "",
             "button_type": "btn--secondary",
             "button_size": "btn--small",
@@ -672,11 +671,11 @@
       "block_order": [
         "image_LHcaHM",
         "image_D9VjHc",
+        "image_BKXtyf",
         "image_cwtx4V",
         "image_4nFPma",
         "image_j9FUq7",
         "image_nVeNVc",
-        "image_BKXtyf",
         "image_AieWct",
         "image_rqH79r",
         "image_zMwfQA",

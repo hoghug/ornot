@@ -26,130 +26,13 @@
         "heading_tag": "automatic"
       }
     },
-    "section_custom_content_8GDcfi": {
-      "type": "section-custom-content",
-      "blocks": {
-        "image_fzCQTV": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/SampleSaleRack-home.jpg",
-            "title": "",
-            "heading_font_size": "heading-large",
-            "text": "",
-            "text_font_size": "body-medium",
-            "flex_align": "align--middle-center",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "overlay_type": "disabled",
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_bDheeR": {
-          "type": "text",
-          "settings": {
-            "subheading": "",
-            "title": "IN-store Sample sale",
-            "heading_font_size": "heading-large",
-            "text": "<p>It's time for another sample sale. This is where we offer up Men's and Women's (all sizes) pre-production samples, photo samples, never produced items, cosmetic blemished pieces, repairs, and warehouse overstocks, all between 40% - 70% off.</p><p>Mark your calendar for <strong>Saturday, May 18th</strong> and make a plan to be here <a href=\"https://www.ornotbike.com/pages/showroom\">(55 Clement St)</a><strong>.</strong> Our Sample Sale will begin at 9am.</p><p>Come and get it, Ornot.</p>",
-            "text_font_size": "body-medium",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "",
-            "color": "",
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "image_fzCQTV",
-        "text_bDheeR"
-      ],
-      "disabled": true,
-      "settings": {
-        "borders": false,
-        "gutters": false,
-        "width": "wrapper--full",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "reverse_blocks": true,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_video_BWB69P": {
-      "type": "section-video",
-      "name": "Video",
-      "settings": {
-        "video": "shopify://files/videos/TAMWEEKPROMOFINALFINAL.mov",
-        "show_video_popup": false,
-        "video_popup": "shopify://files/videos/TAMWEEKPROMOFINALFINAL.mov",
-        "video_popup_social": "",
-        "title": "Tam Week",
-        "heading_font_size": "heading-x-large",
-        "text": "<p>5 DAYS // 1 MOUNTAIN // JULY 6-10, 2026</p>",
-        "text_font_size": "body-medium",
-        "flex_align": "align--middle-center",
-        "link_text": "",
-        "link": "",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "desktop_height": "screen-height-two-thirds",
-        "mobile_height": "screen-height-two-thirds--mobile",
-        "width": "wrapper--full",
-        "color_scheme": "scheme-2",
-        "show_text_background": false,
-        "color": "",
-        "overlay_type": "disabled",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "heading_tag": "automatic"
-      }
-    },
-    "section_hero_4jfiPM": {
-      "type": "section-hero",
-      "disabled": true,
-      "settings": {
-        "image_1": "shopify://shop_images/TNUT6199-crop.jpg",
-        "link": "",
-        "width": "wrapper--full",
-        "height": "image-height",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "content_width": 50,
-        "mobile_image": "shopify://shop_images/TNUT6199-crop.jpg",
-        "mobile_height": "image-height--mobile",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "color_scheme": "",
-        "show_text_background": false,
-        "overlay_type": "disabled",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "show_placeholder": true
-      }
-    },
     "section_custom_content_FHpFEc": {
       "type": "section-custom-content",
       "blocks": {
         "image_dQnYpG": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/TNUT5342_0df5107e-1f9e-44c8-839c-e8f00b82a3fe.jpg",
+            "image": "shopify://shop_images/tam-week-2026-logo.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -171,10 +54,10 @@
         "text_hXerzK": {
           "type": "text",
           "settings": {
-            "subheading": "",
+            "subheading": "5 days // 1 mountain // july 6-10, 2026",
             "title": "WHAT'S TAM WEEK?",
             "heading_font_size": "heading-medium",
-            "text": "<p>TAM WEEK is a 5-day cycling challenge from <strong>July 6–10, 2026</strong>, inviting Bay Area riders to summit Mt. Tamalpais as many times as they’d like.Inspired by <a href=\"https://www.instagram.com/mosaiccycles/\" target=\"_blank\" title=\"https://www.instagram.com/mosaiccycles/\">Mosaic's</a> Flag Week, we encourage you to climb to the \"top\" of West Peak to challenge mind, body, and win prizes. Ride anytime, any route, any bike—to <a href=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\" target=\"_blank\" title=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\">West Peak</a> (not East Peak)</p>",
+            "text": "<p>Tam Week is a 5-day cycling challenge from <strong>July 6–10, 2026</strong>, inviting Bay Area riders to summit Mt. Tamalpais as many times as they’d like. We encourage you to climb to the \"top\" of West Peak to challenge mind, body, and win prizes. Ride anytime, any route, any bike—to <a href=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\" target=\"_blank\" title=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\">West Peak</a> (not East Peak). More to come!</p>",
             "text_font_size": "body-medium",
             "button_text": "",
             "button_url": "",
@@ -195,17 +78,47 @@
         "image_dQnYpG",
         "text_hXerzK"
       ],
-      "disabled": true,
       "settings": {
         "borders": false,
         "gutters": false,
         "width": "wrapper--full",
         "height": "image-height",
         "mobile_height": "image-height--mobile",
-        "reverse_blocks": true,
+        "reverse_blocks": false,
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "section_video_BWB69P": {
+      "type": "section-video",
+      "name": "Video",
+      "settings": {
+        "video": "shopify://files/videos/TAMWEEKLP3.mov",
+        "show_video_popup": false,
+        "video_popup": "shopify://files/videos/TAMWEEKPROMOFINALFINAL.mov",
+        "video_popup_social": "",
+        "title": "",
+        "heading_font_size": "heading-x-large",
+        "text": "",
+        "text_font_size": "body-medium",
+        "flex_align": "align--bottom-center",
+        "link_text": "",
+        "link": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "desktop_height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "width": "wrapper--full",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "color": "",
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
       }
     },
     "section_custom_content_WYi9ez": {
@@ -758,10 +671,8 @@
   },
   "order": [
     "main",
-    "section_custom_content_8GDcfi",
-    "section_video_BWB69P",
-    "section_hero_4jfiPM",
     "section_custom_content_FHpFEc",
+    "section_video_BWB69P",
     "section_custom_content_WYi9ez",
     "section_custom_content_TGmxaP",
     "section_custom_content_QjqKfm",

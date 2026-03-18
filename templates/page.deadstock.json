@@ -52,13 +52,13 @@
         "button_7zPFTX"
       ],
       "settings": {
-        "image_2": "shopify://shop_images/biz-as-usual_d6af2c35-3800-4ec0-a537-0fe994213c54.jpg",
+        "image_2": "shopify://shop_images/alpha-sweater-sliver.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "four-fifty-height-hero",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 68,
-        "mobile_image": "shopify://shop_images/biz-as-usual_d6af2c35-3800-4ec0-a537-0fe994213c54.jpg",
+        "mobile_image": "shopify://shop_images/alpha-sweater-sliver.jpg",
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "scheme-2",
@@ -1010,7 +1010,7 @@
         "image_2": "shopify://shop_images/gravel-sweater.jpg",
         "aspect_ratio": 1,
         "width": "wrapper",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "padding_top": 50,
         "padding_bottom": 50
       }

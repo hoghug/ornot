@@ -529,7 +529,7 @@
         "text_B8LGyy": {
           "type": "text",
           "settings": {
-            "subheading": "Made in usa",
+            "subheading": "/ / / / / / / / / / / /",
             "title": "Special projects",
             "heading_font_size": "heading-large",
             "text": "<p>One of the most sustainable things we can do? Use what already exists. That’s the concept behind Special Projects—limited-run garments made from premium deadstock fabrics, cut and sewn in California. When they're gone, they're gone.</p>",
@@ -582,7 +582,7 @@
         "width": "wrapper--full",
         "height": "image-height",
         "mobile_height": "screen-height-one-half--mobile",
-        "reverse_blocks": false,
+        "reverse_blocks": true,
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -742,7 +742,7 @@
             "image_shape": "normal",
             "title": "Very Limited",
             "heading_font_size": "heading-small",
-            "text": "<p>Deadstock, by definition, is limited. We may love a color or texture, but when the fabric is gone, it's gone. Each piece is an invitation to create something unique, and a chance to own a small part of Ornot history. </p>",
+            "text": "<p>Deadstock, by definition, is limited. We may love a color or texture, but when the fabric is gone, it's gone. Each piece is an invitation to create something unique, and your chance to own a small part of history, Ornot.</p>",
             "text_font_size": "body-medium",
             "button_text": "",
             "button_url": "",

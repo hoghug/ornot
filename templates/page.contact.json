@@ -34,7 +34,8 @@
           "settings": {
             "title": "YOU CONTACT, WE RESPOND",
             "heading_font_size": "heading-x-large",
-            "heading_tag": "automatic"
+            "heading_tag": "automatic",
+            "padding_bottom": 8
           }
         }
       },
@@ -53,6 +54,7 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "scheme-2",
         "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -73,7 +75,7 @@
         "text_cGxqMm": {
           "type": "text",
           "settings": {
-            "text": "<p>Coming to San Francisco? <a href=\"https://www.ornotbike.com/pages/showroom\">Visit us</a> in the <a href=\"https://www.ornotbike.com/pages/showroom\">Inner Richmond</a>. Looking to rent a bike while in town? We recommend <a href=\"https://shop.sportsbasement.com/blogs/stores/san-francisco-presidio\">Sports Basement</a>. Do you like pastries? Our store is right around the corner from the best croissant in SF at <a href=\"https://arsicault-bakery.com/home\" target=\"_blank\">Arsicault</a>. </p><p>Need sizing help? Be sure to include your height / weight and any applicable info (broad shoulders). Need to adjust an order you just made? Send it! </p><p>Alternatively you can also give us a phone call during store hours. (628) 256-2250</p>",
+            "text": "<p>Coming to San Francisco? <a href=\"https://www.ornotbike.com/pages/showroom\">Visit us</a> in the <a href=\"https://www.ornotbike.com/pages/showroom\">Inner Richmond</a>. Looking to rent a bike while in town? We recommend <a href=\"https://shop.sportsbasement.com/blogs/stores/san-francisco-presidio\">Sports Basement</a>. Do you like pastries? Our store is right around the corner from the best croissant in SF at <a href=\"https://arsicault-bakery.com/home\" target=\"_blank\">Arsicault</a>. </p><p>Need sizing help? Be sure to include your height / weight and any applicable info (broad shoulders). Need to adjust an order you just made? Send it! </p>",
             "text_font_size": "body-large",
             "padding_bottom": 16
           }
@@ -87,6 +89,7 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 46,
         "padding_bottom": 26
       }
