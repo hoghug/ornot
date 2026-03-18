@@ -570,18 +570,6 @@
         "default": "classic"
       },
       {
-        "visible_if": "{{ settings.grid_style == 'compact' }}",
-        "type": "range",
-        "id": "grid_row_gap",
-        "label": "Grid row gap",
-        "default": 15,
-        "min": 0,
-        "max": 30,
-        "step": 1,
-        "unit": "px",
-        "info": "Sets the gap between rows in the grid layout."
-      },
-      {
         "type": "header",
         "content": "Appearance"
       },
@@ -880,6 +868,22 @@
         "id": "show_recently_viewed_indicator",
         "label": "Show recently viewed indicator",
         "default": false
+      },
+      {
+        "type": "header",
+        "content": "Spacing"
+      },
+      {
+        "visible_if": "{{ settings.grid_style == 'compact' }}",
+        "type": "range",
+        "id": "grid_row_gap",
+        "label": "Grid row gap",
+        "default": 15,
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "unit": "px",
+        "info": "Sets the gap between rows in the grid layout."
       },
       {
         "type": "header",
