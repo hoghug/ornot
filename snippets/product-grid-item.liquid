@@ -437,8 +437,8 @@
         {%- if settings.collection_swatch_style == 'text' or settings.collection_swatch_style == 'text-slider' -%}
           <span class="product-item__swatches__count">
             <span data-sibling-count>{{ count }} {{ count | pluralize: count_string_one, count_string_other }}</span> 
-            {%- if card_tagline != blank -%}
-              <span class="product-item__special"> // {{ card_tagline }}</span>
+            {%- if card_tagline -%}
+              <span class="product-item__tagline"> // {{ card_tagline }}</span>
             {%- endif -%}
           </span>
         {%- endif -%}
@@ -839,8 +839,8 @@
                 {{- count }}
                 {{- count | pluralize: count_string_one, count_string_other -}}
               </span>
-              {%- if card_special != blank -%}
-                <span class="product-item__special"> // {{ card_special }}</span>
+              {%- if card_tagline -%}
+                <span class="product-item__tagline"> // {{ card_tagline }}</span>
               {%- endif -%}
             </span>
           </div>

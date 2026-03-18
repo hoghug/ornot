@@ -12316,7 +12316,6 @@ color: var(--COLOR-CARD-LABEL-TEXT);
   padding: 6px calc(var(--inner) / 2);
   font-size: var(--font-body-small);
   color: var(--text-light);
-  font-style: italic;
   transition: opacity 0.3s ease, visibility 0.3s;
 }
 .product-item__swatches__holder--slider .product-item__swatches__count, .product-item__swatches__holder--text-slider .product-item__swatches__count {
