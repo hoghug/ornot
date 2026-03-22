@@ -12301,11 +12301,6 @@ color: var(--COLOR-CARD-LABEL-TEXT);
   font-size: 0;
   z-index: 2;
 }
-@media only screen and (max-width: 749px) {
-  .product-item__swatches__holder {
-    margin: 0 -12px;
-  }
-}
 
 .product-item__swatches__count {
   position: absolute;
