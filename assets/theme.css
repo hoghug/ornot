@@ -6778,6 +6778,10 @@ body:not(.is-loaded) .header__desktop {
   position: relative;
   margin-bottom: 2px;
 }
+.parent .navlink--child span {
+  font-size: 15px;
+  letter-spacing: 0.3px;
+}
 .navlink--toplevel span:first-of-type::after,
 .parent .navlink--child span:first-of-type::after,
 .grandparent .navlink--grandchild span:first-of-type::after {
