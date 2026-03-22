@@ -90,6 +90,113 @@
         "padding_bottom": 0
       }
     },
+    "section_custom_content_WYi9ez": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_9k47Rf": {
+          "type": "text",
+          "settings": {
+            "subheading": "/ / / / / / / / / / / /",
+            "title": "HOW IT WORKS",
+            "heading_font_size": "heading-medium",
+            "text": "<ul><li>Pick up a punch card</li><li>Ride any route to <a href=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\" target=\"_blank\" title=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\">West Peak</a> (not East Peak) </li><li>Find the hole punch </li><li>Log your ride(s) on Strava or RWGPS</li><li>Celebrate at the after party</li></ul><p><em>*Ascents must start sub 200 ft. of elevation. Only </em><em><strong>one ascent per day</strong></em><em> counts towards your Tam Week total*</em></p>",
+            "text_font_size": "body-medium",
+            "button_text": "Join us on strava",
+            "button_url": "https://www.strava.com/clubs/183693",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
+        "image_beizHx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/tam_road.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_9k47Rf",
+        "image_beizHx"
+      ],
+      "name": "how it works - early",
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_announcement_WJPAR9": {
+      "type": "section-announcement",
+      "blocks": {
+        "text_fLEqLK": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>More info to come!</h3>",
+            "text_font_size": "body-small",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_VgtipT": {
+          "type": "text",
+          "settings": {
+            "text": "<h5><strong>//  Follow </strong><a href=\"https://www.instagram.com/ornotbike\" target=\"_blank\" title=\"https://www.instagram.com/ornotbike\"><strong>@ornotbike</strong></a><strong> for the latest updates  //</strong></h5>",
+            "text_font_size": "body-small",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text_fLEqLK",
+        "text_VgtipT"
+      ],
+      "name": "Scrolling text",
+      "settings": {
+        "slider_speed": 7,
+        "text_alignment": "center",
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "message_spacing": 10,
+        "show_border": false,
+        "layout": "marquee",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_video_BWB69P": {
       "type": "section-video",
       "name": "Video",
@@ -121,10 +228,10 @@
         "heading_tag": "automatic"
       }
     },
-    "section_custom_content_WYi9ez": {
+    "section_custom_content_yzNfAy": {
       "type": "section-custom-content",
       "blocks": {
-        "text_9k47Rf": {
+        "text_YQ9RcY": {
           "type": "text",
           "settings": {
             "subheading": "",
@@ -146,7 +253,7 @@
             "heading_tag": "automatic"
           }
         },
-        "image_beizHx": {
+        "image_cR9BGy": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/tam_punch_card.jpg",
@@ -170,10 +277,11 @@
         }
       },
       "block_order": [
-        "text_9k47Rf",
-        "image_beizHx"
+        "text_YQ9RcY",
+        "image_cR9BGy"
       ],
       "disabled": true,
+      "name": "how it works - launch",
       "settings": {
         "borders": false,
         "gutters": false,
@@ -672,8 +780,10 @@
   "order": [
     "main",
     "section_custom_content_FHpFEc",
-    "section_video_BWB69P",
     "section_custom_content_WYi9ez",
+    "section_announcement_WJPAR9",
+    "section_video_BWB69P",
+    "section_custom_content_yzNfAy",
     "section_custom_content_TGmxaP",
     "section_custom_content_QjqKfm",
     "section_before_after_rEeAhP",

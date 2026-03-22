@@ -146,17 +146,17 @@
         "image_qmcjhj": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/mission-pant-slate.jpg",
-            "image_link": "https://www.ornotbike.com/products/mission-pants-slate",
-            "title": "You Could Wear It On Your Bike, Ornot",
+            "image": "shopify://shop_images/use-what-exists.jpg",
+            "image_link": "https://www.ornotbike.com/pages/special-projects",
+            "title": "Using what already exists",
             "heading_font_size": "heading-x-small",
-            "description": "Mission Pants // Back in Stock",
+            "description": "Made with Deadstock Fabrics + Materials",
             "text_font_size": "body-small",
-            "first_button_text": "Shop Mission Pant",
-            "first_button_link": "https://www.ornotbike.com/products/mission-pants-slate",
+            "first_button_text": "Learn more about special projects",
+            "first_button_link": "https://www.ornotbike.com/pages/special-projects",
             "first_button_type": "btn--black",
             "first_button_size": "btn--small",
-            "first_button_style": "btn--solid",
+            "first_button_style": "btn--text",
             "first_button_show_arrow": false,
             "second_button_text": "",
             "second_button_link": "",
@@ -165,8 +165,8 @@
             "second_button_style": "btn--solid",
             "second_button_show_arrow": false,
             "flex_align_desktop": "align--middle-center-desktop",
-            "mobile_image": "shopify://shop_images/mission-pant-slate.jpg",
-            "flex_align_mobile": "align--middle-center-mobile",
+            "mobile_image": "shopify://shop_images/Untitled-2_58d2416c-ad88-4e81-a120-437d1cc1eb36.jpg",
+            "flex_align_mobile": "align--top-center-mobile",
             "show_text_background": false,
             "bg_color": "",
             "color": "#000000",
@@ -541,7 +541,6 @@
         "image_Yd8Kq6",
         "image_94BXee"
       ],
-      "disabled": true,
       "settings": {
         "transition": "slide",
         "show_arrows": true,
@@ -720,6 +719,7 @@
         "buttons_DCJPgq",
         "buttons_HWhG64"
       ],
+      "disabled": true,
       "name": "Image with text",
       "settings": {
         "image_1": "shopify://shop_images/alpha-sweater-oat-bibs-studio1-4.jpg",
@@ -1061,9 +1061,9 @@
         "collection_overlay_NRDNDm": {
           "type": "collection_overlay",
           "settings": {
-            "collection": "s-lw-mission-pants",
-            "collection_image": "shopify://shop_images/Ornot_LW_Mission_Pants_NightShady_Squares-2.jpg",
-            "title": "LIGHTWEIGHT MISSION PANT",
+            "collection": "mission-shorts",
+            "collection_image": "shopify://shop_images/mission-shorts-4x5.jpg",
+            "title": "MISSION shorts",
             "heading_font_size": "heading-x-small",
             "text_alignment": "align--bottom-center",
             "show_text_background": false,
@@ -1075,9 +1075,9 @@
         "collection_overlay_h74g4R": {
           "type": "collection_overlay",
           "settings": {
-            "collection": "socks",
-            "collection_image": "shopify://shop_images/Black-merino-stripe-socks-layflat.jpg",
-            "title": "Sock Options",
+            "collection": "fabric-story-micro-grid",
+            "collection_image": "shopify://shop_images/teal-micro-grid-sweater-studio-4.jpg",
+            "title": "Micro Grid",
             "heading_font_size": "heading-x-small",
             "text_alignment": "align--bottom-center",
             "show_text_background": false,
@@ -1090,7 +1090,7 @@
           "type": "collection_overlay",
           "settings": {
             "collection": "new-arrivals-all",
-            "collection_image": "shopify://shop_images/womens-oat.jpg",
+            "collection_image": "shopify://shop_images/rich-oat-mc-jacket.jpg",
             "title": "New Arrivals",
             "heading_font_size": "heading-x-small",
             "text_alignment": "align--bottom-center",
@@ -1143,6 +1143,7 @@
       "block_order": [
         "featured_post_jwb4tY"
       ],
+      "disabled": true,
       "name": "Featured blog posts",
       "settings": {
         "show_author": false,
@@ -1168,7 +1169,7 @@
         "image_ztnLzG": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/teal-micro-grid-sweater-studio-4.jpg",
+            "image": "shopify://shop_images/Mens-bodega-azul-studio-3.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "MEN'S NEW",
@@ -1189,7 +1190,7 @@
         "image_P8hXWH": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Jersey---Glacier-Freeze-studio-6.jpg",
+            "image": "shopify://shop_images/micro-climate-jacket-micro-grid-jersey_11861297-6ae7-43ae-8647-9bf31d60242d.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "Women's new",
@@ -1231,7 +1232,7 @@
         "image_9HPzet": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/stone-blue-power-air-3.jpg",
+            "image": "shopify://shop_images/Alpha_daily_vest_studio_8.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "Wear it on your bike, ornot",
@@ -1279,14 +1280,14 @@
         "subheading_HrWULn": {
           "type": "subheading",
           "settings": {
-            "subheading": "Alpha Merino Daily Vest",
+            "subheading": "Long Sleeve jersey",
             "padding_bottom": 16
           }
         },
         "heading_MDjFdt": {
           "type": "heading",
           "settings": {
-            "title": "Fully Vested, ornot",
+            "title": "Micro grid",
             "heading_font_size": "heading-x-large",
             "padding_bottom": 0,
             "heading_tag": "automatic"
@@ -1295,7 +1296,7 @@
         "text_zaB36V": {
           "type": "text",
           "settings": {
-            "text": "<p>Made in the USA <br/>Polartec® Alpha® Merino interior</p>",
+            "text": "<p>· Sewn by hand in California<br/>· Extremely wicking and breathable<br/>· Identical fabric weight to a summer jersey</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 16
           }
@@ -1303,8 +1304,8 @@
         "buttons_pJMiHM": {
           "type": "buttons",
           "settings": {
-            "button_text": "Invest today",
-            "button_url": "shopify://products/mens-alpha-daily-vest-updated",
+            "button_text": "Shop now",
+            "button_url": "shopify://products/womens-micro-grid-jersey-glacier-freeze-copy",
             "button_type": "btn--primary",
             "button_size": "btn--small",
             "button_style": "btn--solid",
@@ -1335,7 +1336,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "image_1": "shopify://shop_images/Alpha_daily_vest_studio_8.jpg",
+        "image_1": "shopify://shop_images/Jersey---Glacier-Freeze-studio-5.jpg",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "layout": "is-reversed",
@@ -1807,7 +1808,7 @@
         "image_NgkYxh": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Sunshine-micro-grid-gravel-sweater-studio-2.jpg",
+            "image": "shopify://shop_images/cram-alpha-pullover.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "Deadstock + Recycled Materials",
@@ -1815,7 +1816,7 @@
             "text": "<p>We source deadstock fabrics whenever possible. Check out our responsibly-made products <a href=\"/pages/fabric-story-polartec\" target=\"_blank\" title=\"Fabric Story: Polartec\">here.</a></p>",
             "text_font_size": "body-small",
             "button_text": "",
-            "button_url": "shopify://products/mens-bodega-hooded-pullover-black",
+            "button_url": "shopify://products/alpha-sweater-oat",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -1828,7 +1829,7 @@
         "image_UqUEzT": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/bloom-white-lay-flat.jpg",
+            "image": "shopify://shop_images/celeste-socks-flatlay.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "Made in USA",
@@ -1836,7 +1837,7 @@
             "text": "<p>Yep, we make clothing in the USA - Check out our <a href=\"/collections/mens-made-in-usa\" target=\"_blank\" title=\"Men's Made in USA\">Men's</a> & <a href=\"/collections/womens-made-in-usa\" target=\"_blank\" title=\"Women's Made in USA\">Women's</a> American-made products.</p>",
             "text_font_size": "body-small",
             "button_text": "",
-            "button_url": "https://www.ornotbike.com/pages/socks",
+            "button_url": "shopify://products/max-sock-celeste",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -1849,15 +1850,15 @@
         "image_Fg7hdb": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/donut-bar-bag.jpg",
+            "image": "shopify://shop_images/Ornot_SeatBag_Avocado_UltraGrid_01.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "BAGS for your bike",
             "heading_font_size": "heading-x-small",
-            "text": "<p>You could bring donut holes, Ornot. <br/>See our bags <a href=\"https://www.ornotbike.com/pages/handlebar-bags\" target=\"_blank\" title=\"https://www.ornotbike.com/pages/handlebar-bags\">here.</a></p>",
+            "text": "<p>For carrying stuff.<br/>See our bags <a href=\"https://www.ornotbike.com/pages/handlebar-bags\" target=\"_blank\" title=\"https://www.ornotbike.com/pages/handlebar-bags\">here.</a></p>",
             "text_font_size": "body-small",
             "button_text": "",
-            "button_url": "shopify://products/handlebar-bag-ecopak-coyote",
+            "button_url": "shopify://products/seat-bag-ultragrid-avacado",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",

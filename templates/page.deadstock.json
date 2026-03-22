@@ -482,6 +482,44 @@
     "section_slideshow_nested_FrJMfr": {
       "type": "section-slideshow-nested",
       "blocks": {
+        "slide_image_4kXpjK": {
+          "type": "_slide-image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_Alpha_Daily_Vest_Gray_09_252f57eb-c142-4c92-9cf6-a6cdd23b78dd.jpg",
+            "link": "",
+            "flex_align_desktop": "align--middle-left-desktop",
+            "flex_align_mobile": "align--middle-center-mobile",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled"
+          },
+          "blocks": {
+            "heading_kmhbQJ": {
+              "type": "heading",
+              "settings": {
+                "text": "Past Projects",
+                "heading_font_size": "heading-large",
+                "heading_tag": "automatic",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "text_WzfXQ8": {
+              "type": "text",
+              "settings": {
+                "text": "Alpha Daily Vest",
+                "text_font_size": "body-large",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_kmhbQJ",
+            "text_WzfXQ8"
+          ]
+        },
         "slide_image_LbcYAN": {
           "type": "_slide-image",
           "settings": {
@@ -596,51 +634,13 @@
             "heading_iVfnid",
             "text_wfChaa"
           ]
-        },
-        "slide_image_4kXpjK": {
-          "type": "_slide-image",
-          "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_Alpha_Daily_Vest_Gray_09_252f57eb-c142-4c92-9cf6-a6cdd23b78dd.jpg",
-            "link": "",
-            "flex_align_desktop": "align--middle-left-desktop",
-            "flex_align_mobile": "align--middle-center-mobile",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "overlay_type": "disabled"
-          },
-          "blocks": {
-            "heading_kmhbQJ": {
-              "type": "heading",
-              "settings": {
-                "text": "Past Projects",
-                "heading_font_size": "heading-large",
-                "heading_tag": "automatic",
-                "padding_bottom": 8
-              },
-              "blocks": {}
-            },
-            "text_WzfXQ8": {
-              "type": "text",
-              "settings": {
-                "text": "Alpha Daily Vest",
-                "text_font_size": "body-large",
-                "padding_bottom": 8
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "heading_kmhbQJ",
-            "text_WzfXQ8"
-          ]
         }
       },
       "block_order": [
+        "slide_image_4kXpjK",
         "slide_image_LbcYAN",
         "slide_image_xqYfV3",
-        "slide_image_nBUnYq",
-        "slide_image_4kXpjK"
+        "slide_image_nBUnYq"
       ],
       "name": "Slideshow (Nested)",
       "settings": {

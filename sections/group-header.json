@@ -302,6 +302,7 @@
       "blocks": {
         "image_Dan4Rn": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/alpha-sweater-oat-bibs-studio1-4.jpg",
             "image_url": "shopify://products/alpha-sweater-oat",
