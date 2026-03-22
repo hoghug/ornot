@@ -8672,8 +8672,6 @@ header-search-popdown.is-open .search-popdown {
 
 .sliderow__back-button + .sliderow__title {
   cursor: pointer;
-  font-family: var(--FONT-STACK-NAV);
-  font-style: var(--FONT-STYLE-NAV);
   font-weight: var(--FONT-WEIGHT-NAV-BOLD);
   letter-spacing: var(--LETTER-SPACING-NAV);
   padding: 0 calc(var(--inner) + 30px);
