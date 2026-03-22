@@ -7677,7 +7677,7 @@ body:not(.is-loaded) .announcement__wrapper {
 .announcement__text h6,
 .announcement__text .blog-section .article__image .article__tags,
 .blog-section .article__image .announcement__text .article__tags {
-  font-family: inherit;
+  font-family: var(--FONT-STACK-HEADING);
   margin: 0;
 }
 
