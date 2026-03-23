@@ -3048,7 +3048,7 @@ body.grid-compact .grid-outer {
   --outer: 0px;
   --outer-offset: 0px;
   --gutter: 0px;
-  --gap: var(--GRID-ROW-GAP) 0px;
+  --gap: 0px;
 }
 .collection-list .grid-outer {
   padding-top: var(--outer);
@@ -18432,6 +18432,7 @@ body.has-line-design.grid-compact .collection__products .grid,
 
 .collection__products .grid-outer {
   padding: var(--gutter) var(--outer);
+  --gap: var(--GRID-ROW-GAP) 0px !important;
 }
 
 .collection__nav {
