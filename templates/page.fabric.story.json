@@ -429,18 +429,18 @@
     "section_columns_FnTytU": {
       "type": "section-columns",
       "blocks": {
-        "image_LHcaHM": {
+        "image_AieWct": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ornot_Womens_AlphaRiding_Orange_08.jpg",
+            "image": "shopify://shop_images/mens-house-jersey-studio-lav-6.jpg",
             "image_width": 100,
             "image_shape": "normal",
-            "title": "ALPHA",
+            "title": "Recycled UV Micro Mesh",
             "heading_font_size": "heading-small",
-            "text": "<p>Polartec Alpha is built for warmth without the weight. It regulates heat like a pro, adapting to changing conditions and stop-and-go efforts. We wear these all winter—because staying warm shouldn’t mean overheating.</p>",
+            "text": "<p>Recycled UV micro-mesh fabric designed for hot days on the bike. It's ultra lightweight, dries quickly, and provides UPF 30 protection. Produced using recycled fibers and Bluesign®-approved processes.</p>",
             "text_font_size": "body-small",
-            "button_text": "See Products",
-            "button_url": "shopify://collections/fabric-story-alpha",
+            "button_text": "see products",
+            "button_url": "shopify://collections/fabric-story-recycled-uv-micro-mesh",
             "button_type": "btn--secondary",
             "button_size": "btn--small",
             "button_style": "btn--text",
@@ -495,7 +495,7 @@
         "image_cwtx4V": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Mens_LS_micro_grid_glacier_freeze_studio_7.jpg",
+            "image": "shopify://shop_images/Ornot_Mens_Micro_Grid_Americano_10.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "Micro Grid",
@@ -504,6 +504,27 @@
             "text_font_size": "body-small",
             "button_text": "See products",
             "button_url": "shopify://collections/fabric-story-micro-grid",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_LHcaHM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/alpha_header_phone.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "ALPHA",
+            "heading_font_size": "heading-small",
+            "text": "<p>Polartec Alpha is built for warmth without the weight. It regulates heat like a pro, adapting to changing conditions and stop-and-go efforts. We wear these all winter—because staying warm shouldn’t mean overheating.</p>",
+            "text_font_size": "body-small",
+            "button_text": "See Products",
+            "button_url": "shopify://collections/fabric-story-alpha",
             "button_type": "btn--secondary",
             "button_size": "btn--small",
             "button_style": "btn--text",
@@ -569,28 +590,6 @@
             "text": "<p>Polartec Delta works <em>with</em> your body’s natural cooling system—so you stay cool, dry, and ready to keep pedaling. We wear these year-round, but they really shine during <em>“</em>San Francisco summer.”</p>",
             "text_font_size": "body-small",
             "button_text": "See Products",
-            "button_url": "",
-            "button_type": "btn--secondary",
-            "button_size": "btn--small",
-            "button_style": "btn--text",
-            "show_arrow": true,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        },
-        "image_AieWct": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Ornot_Lightweight_Base_Layer_DarkOlive_07_d42759aa-0645-4c2f-b0ad-090ebe8b4b11.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "Power Dry",
-            "heading_font_size": "heading-small",
-            "text": "<p>Power Dry’s fast-wicking, quick-drying fabric keeps sweat in check and odor at bay—so you can push hard without smelling like it. We wear these on the bike, off the bike, and sometimes way too many days in a row.</p>",
-            "text_font_size": "body-small",
-            "button_text": "Learn more",
             "button_url": "",
             "button_type": "btn--secondary",
             "button_size": "btn--small",
@@ -669,14 +668,14 @@
         }
       },
       "block_order": [
-        "image_LHcaHM",
+        "image_AieWct",
         "image_D9VjHc",
         "image_BKXtyf",
         "image_cwtx4V",
+        "image_LHcaHM",
         "image_4nFPma",
         "image_j9FUq7",
         "image_nVeNVc",
-        "image_AieWct",
         "image_rqH79r",
         "image_zMwfQA",
         "image_PkWQMt"
