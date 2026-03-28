@@ -12799,7 +12799,7 @@ color: var(--COLOR-CARD-LABEL-TEXT);
 }
 @media only screen and (max-width: 749px) {
   .product-item__info {
-    padding: 12px;
+    padding: 12px 0;
   }
 }
 
