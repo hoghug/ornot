@@ -12150,6 +12150,7 @@ main-search .input-holder {
   color: var(--text);
   background: var(--bg);
   text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
 }
 
 .card__label {
@@ -12412,6 +12413,7 @@ color: var(--COLOR-CARD-LABEL-TEXT);
   display: block;
   height: 100%;
   text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
 }
 
 .product-item__image {
@@ -12814,6 +12816,7 @@ color: var(--COLOR-CARD-LABEL-TEXT);
   font-size: var(--font-body-small);
   color: var(--text-lt-gray);
   text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
 }
 @media only screen and (max-width: 749px) {
   .product-information .price {

@@ -214,7 +214,7 @@ select, select option {
   font-weight: 700 !important;
 }
 /* === Trade Gothic baseline nudge (text only, box size unchanged) === */
-:root { --tg-nudge: 2px; } /* try 2; if still high, change to 3 */
+:root { --tg-nudge: 0; } /* try 2; if still high, change to 3 */
 
 /* BADGES (product-card badges, price badges) */
 .product-card__badge > span,
@@ -280,7 +280,7 @@ a.button:not(:has(> span)),
   top: 3px;
 }
 /* Badge text baseline tweak (box stays put) */
-:root { --badge-text-nudge: 3px; } /* adjust to 2–4px to taste */
+:root { --badge-text-nudge: 0; } /* adjust to 2–4px to taste */
 
 .badge-box .badge-text{
   position: relative;
@@ -301,7 +301,7 @@ a.button:not(:has(> span)),
   font-family: "Trade Gothic","Helvetica Neue",Helvetica,Arial,sans-serif !important;
   font-weight: 700 !important;
 }
-:root { --badge-text-nudge: 3px; } /* already added earlier; leaving here for clarity */
+:root { --badge-text-nudge: 0; } /* already added earlier; leaving here for clarity */
 
 /* If SALE uses a price badge container */
 .price__badge > .badge-text,
@@ -344,7 +344,7 @@ a.button:not(:has(> span)),
 }
 
 /* Align SALE like your other badges (only the text, not the box) */
-:root { --badge-text-nudge: 3px; }
+:root { --badge-text-nudge: 0; }
 
 [class*="badge"][class*="sale" i] > .badge-text,
 .price__badge > .badge-text,
