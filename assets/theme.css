@@ -14459,10 +14459,21 @@ model-viewer,
 }
 
 /* STACKED Option Title + Option Values  */
+.product__siblings--stacked fieldset > div,
 .selector-wrapper--stacked .product-form__input > * {
   grid-template-columns: 1fr;
 }
-
+.product__siblings--stacked .radio__legend__label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 4px;
+}
+.product__siblings--stacked .radio__legend__option-name:after {
+  content: ':';
+}
+.product__siblings--stacked .radio__legend__value {
+  padding-top: 0;
+}
 .selector-wrapper--stacked legend small {
   display: none;
 }

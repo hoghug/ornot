@@ -6,6 +6,7 @@
   assign sibs_collection = collections[block.settings.siblings_collection].products
   assign sibling_color = block.settings.sibling_color | default: product.metafields.theme.sibling_color.value | default: product.metafields.theme.sibling_colour.value | default: product.metafields.theme.siblings_color.value | default: product.metafields.theme.siblings_colour.value | default: product.metafields.theme.siblings_colors.value | default: product.metafields.theme.siblings_colours.value
   assign hide_labels_class = ''
+  assign layout_class = block.settings.layout | prepend: 'product__siblings--'
 
   if metafields
     assign sibs_collection = product.metafields.theme.sibling_products.value | default: collections[product.metafields.theme.siblings.value].products
@@ -27,7 +28,7 @@
 
 {%- if show_siblings -%}
   <div
-    class="product__block{% if settings.show_lines %} product__block--lines{% endif %} product__siblings{{ hide_labels_class }} block-padding"
+    class="product__block {{ layout_class }}{% if settings.show_lines %} product__block--lines{% endif %} product__siblings{{ hide_labels_class }} block-padding"
     {{ block_style }}
     {% if animation_name %}
       data-animation="{{ animation_name }}"
