@@ -133,7 +133,18 @@
           {% liquid
             assign size_translation = 'general.size_chart.size' | t
             if block.settings.abbr_size_values and option.name == size_translation
-              echo value | strip | downcase | replace: 'small', 'SM' | replace: 'medium', 'MD' | replace: 'large', 'LG'
+              assign abbr_output = value
+              assign abbr_pairs = block.settings.abbr_size_names | split: ','
+              assign value_lower = value | strip | downcase
+              for pair in abbr_pairs
+                assign pair_parts = pair | split: ':'
+                assign pair_key = pair_parts[0] | strip | downcase
+                assign pair_val = pair_parts[1] | strip
+                if value_lower == pair_key
+                  assign abbr_output = pair_val
+                endif
+              endfor
+              echo abbr_output
             else
               echo value
             endif

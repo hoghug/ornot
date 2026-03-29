@@ -21,7 +21,6 @@
   assign uniq_id = 'product-' | append: product.id | append: '-' | append: product.handle
   assign size_style = block.settings.size_chart_style
   assign layout_class = block.settings.layout | prepend: 'selector-wrapper--'
-  assign abbr_size_values = block.settings.abbr_size_values
 
   if block.settings.info_page != blank
     assign size_translation = 'general.size_chart.size' | t
