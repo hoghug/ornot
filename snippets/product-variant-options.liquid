@@ -128,7 +128,17 @@
           </div>
         {%- endif -%}
 
-        <span class="option-title">{{ value }}</span>
+        <span class="option-title">
+          {% comment %} {{ option.name }},{{ size_translation }} {% endcomment %}
+          {% liquid
+            assign size_translation = 'general.size_chart.size' | t
+            if block.settings.abbr_size_values and option.name == size_translation
+              echo value | strip | downcase | replace: 'small', 'SM' | replace: 'medium', 'MD' | replace: 'large', 'LG'
+            else
+              echo value
+            endif
+          %}
+        </span>
         <span>{{ label_unavailable }}</span>
       </label>
     </span>
