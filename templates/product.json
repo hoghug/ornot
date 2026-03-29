@@ -151,16 +151,49 @@
             "padding_bottom": 32
           }
         },
+        "text_qzFMVq": {
+          "type": "text",
+          "name": "Subheading",
+          "settings": {
+            "title": "{{ product.metafields.custom.pdp_subheading.value }}",
+            "heading_font_size": "h3",
+            "text": "",
+            "text_font_size": "body-medium",
+            "text_alignment": "text-left",
+            "layout": "left",
+            "padding_bottom": 0
+          }
+        },
         "accordion_E3FAbY": {
           "type": "accordion",
           "settings": {
             "style": "collapsible",
             "show_description": true,
-            "show_read_more": false,
+            "show_read_more": true,
+            "read_more_lines": 4,
             "default_open": true,
             "heading": "DESCRIPTION",
             "heading_font_size": "body-medium",
             "text": "",
+            "text_font_size": "body-medium",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "",
+            "padding_bottom": 0
+          }
+        },
+        "accordion_nWbgQR": {
+          "type": "accordion",
+          "settings": {
+            "style": "collapsible",
+            "show_description": false,
+            "show_read_more": false,
+            "read_more_lines": 4,
+            "default_open": false,
+            "heading": "FIT NOTES",
+            "heading_font_size": "body-medium",
+            "text": "{{ product.metafields.custom.pdp_fit_notes | metafield_tag }}",
             "text_font_size": "body-medium",
             "show_icon": false,
             "icon_name": "icon-award",
@@ -175,6 +208,7 @@
             "style": "collapsible",
             "show_description": false,
             "show_read_more": false,
+            "read_more_lines": 4,
             "default_open": false,
             "heading": "FEATURES",
             "heading_font_size": "body-medium",
@@ -193,6 +227,7 @@
             "style": "collapsible",
             "show_description": false,
             "show_read_more": false,
+            "read_more_lines": 4,
             "default_open": false,
             "heading": "SHIPPING, EXCHANGES, AND RETURNS",
             "heading_font_size": "body-medium",
@@ -211,6 +246,7 @@
             "style": "collapsible",
             "show_description": false,
             "show_read_more": false,
+            "read_more_lines": 4,
             "default_open": false,
             "heading": "1 YEAR WARRANTY",
             "heading_font_size": "body-medium",
@@ -259,7 +295,9 @@
         "variants",
         "text_rUQBrk",
         "buttons",
+        "text_qzFMVq",
         "accordion_E3FAbY",
+        "accordion_nWbgQR",
         "accordion_xzTzzU",
         "accordion_ARNrpD",
         "accordion_FbypEj",
