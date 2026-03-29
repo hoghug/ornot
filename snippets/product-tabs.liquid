@@ -193,7 +193,7 @@
               {% endif %}
             >
               <div class="accordion__content" data-collapsible-content>
-                {%- render 'toggle-ellipsis', content: accordion_content, show_read_more: show_read_more -%}
+                {%- render 'toggle-ellipsis', content: accordion_content, show_read_more: show_read_more, lines: block.settings.read_more_lines -%}
               </div>
             </div>
           </details>

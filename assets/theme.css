@@ -5856,12 +5856,14 @@ parallax-hero {
   }
 }
 toggle-ellipsis {
-  --height: 175px;
   display: block;
   position: relative;
   overflow: hidden;
-  max-height: var(--height);
+  max-height: calc(var(--lines, 4) * 1lh);
   transition: max-height 0.5s ease;
+}
+toggle-ellipsis.is-open {
+  max-height: var(--height);
 }
 
 .toggle-ellipsis__content {

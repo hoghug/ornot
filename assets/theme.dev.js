@@ -7697,15 +7697,14 @@
       }
 
       connectedCallback() {
-        // Make sure the data attribute height value matches the CSS value
-        this.setHeight(this.initialHeight);
+        if (this.initialHeight) this.setHeight(this.initialHeight);
 
         this.trigger.addEventListener('click', () => {
           this.setHeight(this.content.offsetHeight);
           this.classList.add(classes$1.open);
         });
 
-        this.setHeight(this.initialHeight);
+        if (this.initialHeight) this.setHeight(this.initialHeight);
         this.toggleActions();
 
         document.addEventListener('theme:resize', this.toggleActions);

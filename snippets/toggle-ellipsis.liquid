@@ -2,10 +2,11 @@
 {%- liquid
   assign content = content | default: '' | strip
   assign show_read_more = show_read_more | default: false
+  assign lines = lines | default: 4 | times: 2 | minus: 1.2
 -%}
 
 {%- if content != blank and show_read_more -%}
-  <toggle-ellipsis data-height="175">
+  <toggle-ellipsis style="--lines: {{ lines }};">
     <div class="toggle-ellipsis__content" data-content>
       {{ content }}
     </div>

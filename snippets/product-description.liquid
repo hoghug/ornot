@@ -19,7 +19,7 @@
     <div class="product__block product__description rte block-padding" {{ block.shopify_attributes }} {{ block_style }}>
       {%- if product.description != blank and product.description != '<!---->' -%}
         <div class="product__description__content rte">
-          {%- render 'toggle-ellipsis', content: product.description, show_read_more: block.settings.show_read_more -%}
+          {%- render 'toggle-ellipsis', content: product.description, show_read_more: block.settings.show_read_more, lines: block.settings.read_more_lines -%}
         </div>
       {%- endif -%}
     </div>
