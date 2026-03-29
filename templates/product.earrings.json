@@ -57,7 +57,7 @@
           "type": "siblings",
           "settings": {
             "option_font_size": "body-medium",
-            "value_font_size": "body-x-small",
+            "value_font_size": "body-medium",
             "padding_bottom": 16
           }
         },
