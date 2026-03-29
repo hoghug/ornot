@@ -641,6 +641,16 @@
           "default": true
         },
         {
+          "type": "range",
+          "id": "accordion_lines_teaser",
+          "label": "Teaser line limit",
+          "visible_if": "{{ block.settings.show_read_more }}",
+          "min": 1,
+          "max": 10,
+          "step": 1,
+          "default": 4
+        },
+        {
           "type": "checkbox",
           "id": "default_open",
           "label": "Open by default",
@@ -1127,7 +1137,8 @@
             {"value": "body-small", "label": "Small"},
             {"value": "body-medium", "label": "Medium"},
             {"value": "body-large", "label": "Large"},
-            {"value": "body-x-large", "label": "Extra large"}
+            {"value": "body-x-large", "label": "Extra large"},
+            {"value": "h3", "label": "H3"}
           ]
         },
         {
