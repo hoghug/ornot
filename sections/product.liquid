@@ -239,6 +239,40 @@
       "settings": [
         {
           "type": "header",
+          "content": "Layout"
+        },
+        {
+          "type": "select",
+          "id": "layout",
+          "label": "Layout",
+          "info": "Option title + Option values",
+          "default": "stacked",
+          "options": [
+            {"value": "stacked", "label": "Stacked"},
+            {"value": "inline", "label": "Inline"}
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Size Options"
+        },
+        {
+          "type": "checkbox",
+          "id": "abbr_size_values",
+          "label": "Abbreviate Size Values",
+          "info": "Small = SM, Medium = MD, etc...",
+          "default": false
+        },
+        {
+          "visible_if": "{{ block.settings.abbr_size_values }}",
+          "type": "textarea",
+          "id": "abbr_size_names",
+          "label": "Abbreviate Size Values",
+          "info": "Small = SM, Medium = MD, etc...",
+          "default": "Small:SM, Medium:MD, Large:LG"
+        },
+        {
+          "type": "header",
           "content": "Size chart"
         },
         {

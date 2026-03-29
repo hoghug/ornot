@@ -20,6 +20,8 @@
   assign show_size_link_separated = true
   assign uniq_id = 'product-' | append: product.id | append: '-' | append: product.handle
   assign size_style = block.settings.size_chart_style
+  assign layout_class = block.settings.layout | prepend: 'selector-wrapper--'
+  assign abbr_size_values = block.settings.abbr_size_values
 
   if block.settings.info_page != blank
     assign size_translation = 'general.size_chart.size' | t
@@ -243,7 +245,7 @@
             -%}
 
             <div
-              class="selector-wrapper{% if settings.variant_boxes and is_size_option %} selector-wrapper--size{% elsif settings.variant_boxes or is_swatch_option %} selector-wrapper--fullwidth{% endif %}"
+              class="selector-wrapper {{ layout_class }}{% if settings.variant_boxes and is_size_option %} selector-wrapper--size{% elsif settings.variant_boxes or is_swatch_option %} selector-wrapper--fullwidth{% endif %}"
               data-option-position="{{ option.position }}"
             >
               {%- if picker_type == 'swatch' -%}

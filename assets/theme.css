@@ -14458,6 +14458,15 @@ model-viewer,
   margin-left: 0;
 }
 
+/* STACKED Option Title + Option Values  */
+.selector-wrapper--stacked .product-form__input > * {
+  grid-template-columns: 1fr;
+}
+
+.selector-wrapper--stacked legend small {
+  display: none;
+}
+
 .price-per-item__container {
   height: 100%;
 }
