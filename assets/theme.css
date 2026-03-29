@@ -11601,17 +11601,19 @@ main-search .input-holder {
   text-transform: var(--BTN-UPPERCASE);
   position: relative;
   margin: 0;
-  padding: 10px;
+  padding: 14px 8px;
   min-width: calc(var(--BTN-FONT-SIZE) * var(--line-height-normal) + 22px);
   text-align: center;
   color: inherit;
   background-color: transparent;
   border: 1px solid var(--text-a35);
   border-radius: min(var(--RADIUS), 20px);
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
   transition: color 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), background 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), border 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .radio__fieldset .radio__button label:hover, .radio__fieldset .radio__button label:active, .radio__fieldset .radio__button label:focus {
-  border: 1px solid var(--accent);
+  border: 1px solid black;
 }
 .radio__fieldset .radio__button input:disabled + label,
 .radio__fieldset .radio__button input.sold-out + label,
@@ -11638,7 +11640,9 @@ main-search .input-holder {
   border-color: var(--text-a35);
 }
 .radio__fieldset .radio__button input:checked ~ label {
-  border-color: var(--accent);
+  border-color: black;
+  background-color: black;
+  color: white;
 }
 
 .radio__fieldset .radio__buttons {

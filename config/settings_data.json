@@ -2010,7 +2010,6 @@
       ".product-upsell__title {font-weight: bold; font-size: calc(var(--font-3) * var(--FONT-ADJUST-BODY)); color: #00b5e2;}",
       ".product-upsell__price {font-weight: bold; font-size: calc(var(--font-2) * var(--FONT-ADJUST-BODY)); color: #00b5e2;}",
       ".product-upsell__variant-title {display: none;}",
-      ".radio__button input:checked ~ label {background-color: #00b5e2 !important; color: white !important;}",
       "shopify-payment-terms {display: none !important;}",
       " /* product grid */.product-item--swatches {padding: 0px 10px 0px 10px;}",
       ".product-item--centered {padding: 0px 10px 0px 10px;}",
