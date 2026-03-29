@@ -14468,11 +14468,17 @@ model-viewer,
   grid-template-columns: auto 1fr;
   grid-gap: 4px;
 }
+.product__siblings--stacked .radio__legend__option-name {
+  margin-right: 0;
+}
 .product__siblings--stacked .radio__legend__option-name:after {
   content: ':';
 }
 .product__siblings--stacked .radio__legend__value {
-  padding-top: 0;
+  padding-top: 2px;
+  font-weight: 700;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
 }
 .selector-wrapper--stacked legend small {
   display: none;
