@@ -73,7 +73,7 @@
             "siblings_collection": "{{ product.metafields.theme.siblings.value }}",
             "sibling_color": "{{ product.metafields.theme.sibling_color.value }}",
             "option_font_size": "body-medium",
-            "value_font_size": "body-medium",
+            "value_font_size": "body-x-small",
             "padding_bottom": 16
           }
         },
@@ -431,7 +431,7 @@
             "subheading": "",
             "title": "SUSTAINABILITY",
             "heading_font_size": "heading-large",
-            "text": "<p>When designing these cargo bibs, we sourced sustainable and recycled content when possible. The face fabric is a Oeko-Tex certified knit and the endurance chamois is made using recycled content. The shorts are sewn in a facility powered by sustainable energy via rooftop solar panels. </p><p></p><p>Every product we make is Climate Neutral Certified. This means that we measure, reduce, and remove all of our carbon emissions. Learn more about it <a href=\"https://www.ornotbike.com/pages/climate-neutral\" title=\"https://www.ornotbike.com/pages/climate-neutral\">here</a>.</p>",
+            "text": "<p>When designing these cargo bibs, we sourced sustainable and recycled content when possible. The face fabric is a Oeko-Tex certified knit and the endurance chamois is made using recycled content. The shorts are sewn in a facility powered by sustainable energy via rooftop solar panels. </p>",
             "text_font_size": "body-medium",
             "button_text": "",
             "button_url": "",

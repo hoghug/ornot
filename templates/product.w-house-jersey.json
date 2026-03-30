@@ -73,7 +73,7 @@
             "siblings_collection": "{{ product.metafields.theme.siblings.value }}",
             "sibling_color": "{{ product.metafields.theme.sibling_color.value }}",
             "option_font_size": "body-medium",
-            "value_font_size": "body-medium",
+            "value_font_size": "body-x-small",
             "padding_bottom": 16
           }
         },
@@ -197,7 +197,7 @@
           "settings": {
             "upsell_product": "",
             "upsell_product_list": [
-              "womens-cargo-bib-short-black",
+              "womens-cargo-bib-short-black-2025",
               "barber-sock-arctic",
               "delta-sleeveless-base-layer"
             ],
@@ -300,7 +300,7 @@
     "section_hero_AhU7Vj": {
       "type": "section-hero",
       "settings": {
-        "image_1": "shopify://shop_images/Ornot_Handlebar_Bag_Mini_Black_Hero-2_56e12357-076b-47ff-8592-27b44fe02414.jpg",
+        "image_1": "shopify://shop_images/house-jersey-2026-sliver.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
@@ -331,7 +331,7 @@
         "product_NzfqLH": {
           "type": "product",
           "settings": {
-            "product": "womens-droptail-cargo-bib-short-midnight-blue",
+            "product": "womens-droptail-cargo-bib-short-midnight-blue-2025",
             "show_product_card": false,
             "position_x": 45,
             "position_y": 60
@@ -352,6 +352,7 @@
         "product_NzfqLH",
         "product_ahWBLz"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/TNUT6937.jpg",
         "layout": "",
@@ -381,7 +382,7 @@
         "image_mfrqjp": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/TNUT7011.jpg",
+            "image": "shopify://shop_images/womens-lifestyle-house-lav-1.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -403,7 +404,7 @@
         "image_mtQtRR": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/TNUT7411.jpg",
+            "image": "shopify://shop_images/taxi-house-jerseys.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -439,8 +440,73 @@
         "padding_bottom": 0
       }
     },
+    "section_custom_content_HVBgMK": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_8qiW79": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/b_W-house-jersey-lav-aj.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_RrQQqr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/house-jersey-lifestyle-golden-boys.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_8qiW79",
+        "image_RrQQqr"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_hero_NN4xAd": {
       "type": "section-hero",
+      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.png",
         "link": "",
@@ -526,6 +592,7 @@
     "section_hero_AhU7Vj",
     "section_look_BHgXBb",
     "section_custom_content_7PiMYK",
+    "section_custom_content_HVBgMK",
     "section_hero_NN4xAd",
     "1706135782d1067a10",
     "related"

@@ -99,7 +99,7 @@
             "siblings_collection": "{{ product.metafields.theme.siblings.value }}",
             "sibling_color": "{{ product.metafields.theme.sibling_color.value }}",
             "option_font_size": "body-medium",
-            "value_font_size": "body-medium",
+            "value_font_size": "body-x-small",
             "padding_bottom": 16
           }
         },
@@ -575,6 +575,7 @@
         "text_B8LGyy",
         "image_zgYwjx"
       ],
+      "disabled": true,
       "name": "Custom section",
       "settings": {
         "borders": false,
@@ -689,18 +690,107 @@
         "show_placeholder": true
       }
     },
+    "section_accordion_group_dAJetV": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading_QW44cT": {
+          "type": "heading",
+          "settings": {
+            "title": "FAQ"
+          }
+        },
+        "question_LqfH3K": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "What are cargo bib shorts used for?",
+            "content": "<p>The cargo pockets spread your essentials across the bibs instead of overloading jersey pockets. Two on each leg and two on the back improve weight distribution and let you ride with just a tee when you want to skip the jersey entirely.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_Lttkci": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "How do Ornot cargo bibs fit?",
+            "content": "<p>Our Cargo Bib Shorts feature a performance fit with moderate compression. They are supportive enough for long rides without the restrictive feel of race bibs. They’re nice for short rides, too. If you're between sizes, size down for a more compressive fit. It will keep the pad in place better and give you a more comfortable ride.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_pjLqd3": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Are cargo bib shorts good for gravel riding?",
+            "content": "<p>Yes. The added pockets make it easy to carry food and essentials, while the supportive fit and durable fabrics are well suited to long gravel rides and mixed terrain. Pssst - they work great on the road, too.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_qjmeHW": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Why Cargo Bib Shorts over Bike Shorts?",
+            "content": "<p>Bib shorts use shoulder straps instead of a waistband, which keeps everything in place while you ride and avoids that tight feeling around your midsection. The fit stays more stable, the chamois doesn’t shift around, and pressure is spread more evenly over long days in the saddle. They also tend to breathe better up top, which is why most riders end up reaching for bib shorts when comfort really matters.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_a3paL4": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "What makes Ornot Cargo Bib Shorts comfortable for long rides?",
+            "content": "<p>Our Cargo Bib Shorts are designed for all-day comfort, with a high-density chamois, compressive fabrics, and pockets that keep your snacks secure. The result is a bib that performs on long road rides, gravel routes, and everything in between.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_QW44cT",
+        "question_LqfH3K",
+        "question_Lttkci",
+        "question_pjLqd3",
+        "question_qjmeHW",
+        "question_a3paL4"
+      ],
+      "name": "Accordion group",
+      "settings": {
+        "heading_font_size": "heading-medium",
+        "question_font_size": "heading-small",
+        "width": "wrapper",
+        "columns": "1",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
     "section_columns_fcn6BT": {
       "type": "section-columns",
       "blocks": {
         "image_rqRbPM": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/R0021148_94901083-2db9-47d4-936a-fa0b64e81198.jpg",
+            "image": "shopify://shop_images/mens-slate-cargo-bibs-studio-2.jpg",
             "image_width": 100,
             "image_shape": "normal",
-            "title": "Made in USA",
+            "title": "updated cargo pockets",
             "heading_font_size": "heading-small",
-            "text": "<p>Everything in our Special Projects Collection is made in California. Working closely with our sewing partners helps us maintain quality, move quickly, and build real relationships with the people who bring these pieces to life.</p>",
+            "text": "<p>Updated pockets use the same durable fabric as the bibs themselves, along with a low-profile bonded hem. This translates to pockets that are nearly invisible when empty and far more resistant to snags.</p>",
             "text_font_size": "body-medium",
             "button_text": "",
             "button_url": "",
@@ -716,12 +806,12 @@
         "image_nCBHTr": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/R0021131.jpg",
+            "image": "shopify://shop_images/mens-cargo-bib-chamoix-2026.jpg",
             "image_width": 100,
             "image_shape": "normal",
-            "title": "Deadstock Fabric",
+            "title": "high-density endurance chamois",
             "heading_font_size": "heading-small",
-            "text": "<p>Deadstock is fabric that was overproduced, abandoned, or never made it to the cutting table. Instead of letting it sit in a warehouse, we turn it into something new. The catch? We only get one shot.</p>",
+            "text": "<p>Our endurance chamois maintains the shape riders love, now paired with increased stretch in the bib fabric so the pad stays stable while the shorts move naturally with your body, improving comfort on long rides.</p>",
             "text_font_size": "body-medium",
             "button_text": "",
             "button_url": "",
@@ -737,12 +827,12 @@
         "image_LgjCMC": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_Alpha_Daily_Vest_Gray_12.jpg",
+            "image": "shopify://shop_images/updated-cargo-bib-strap_83aabea6-75c4-44ad-940b-4ed4a777dfbd.jpg",
             "image_width": 100,
             "image_shape": "normal",
-            "title": "Very Limited",
+            "title": "durable + breathable straps",
             "heading_font_size": "heading-small",
-            "text": "<p>Deadstock, by definition, is limited. We may love a color or texture, but when the fabric is gone, it's gone. Each piece is an invitation to create something unique, and your chance to own a small part of history, Ornot.</p>",
+            "text": "<p>Redesigned bib straps feature a more durable construction and subtle channeling that reduces fabric contact and promotes airflow, helping regulate temperature and moisture during long rides in the heat.</p>",
             "text_font_size": "body-medium",
             "button_text": "",
             "button_url": "",
@@ -775,6 +865,250 @@
         "padding_top": 34,
         "padding_bottom": 50,
         "heading_tag": "automatic"
+      }
+    },
+    "section_double_6YBbxA": {
+      "type": "section-double",
+      "blocks": {
+        "subheading_7HGMXU": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "",
+            "padding_bottom": 16
+          }
+        },
+        "heading_EAcVPp": {
+          "type": "heading",
+          "settings": {
+            "title": "Six Years of Refinement",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_mEJtMk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cut with a performance fit and moderate compression designed for long rides without feeling overbuilt. </p><p>Over six years, these bibs have been shaped by steady testing and feedback from riders who spend long days in the saddle, which is probably why they’ve become the pair many people buy again and again. The straps sit flat and out of the way, and the leg grippers hold everything in place without squeezing. </p><p>The goal was simple: a cargo bib short that just works, ride after ride.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_HER6LC": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_7HGMXU",
+        "heading_EAcVPp",
+        "text_mEJtMk",
+        "buttons_HER6LC"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image_1": "shopify://shop_images/mens-cargo-bibs-studio.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "layout": "",
+        "width": "wrapper--full",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_double_zkBMMn": {
+      "type": "section-double",
+      "blocks": {
+        "subheading_pmqkmh": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "this product is made with",
+            "padding_bottom": 16
+          }
+        },
+        "heading_bVzhNT": {
+          "type": "heading",
+          "settings": {
+            "title": "All-Day Compression Knit",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_NLYLhd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our All Day Compression fabric is built for long rides where support and comfort need to hold up hour after hour. It feels smooth and supportive without being restrictive, with a soft, matte finish and a close-to-body fit that stays comfortable across a wide range of conditions. </p><p>The dense-knit compression wicks moisture efficiently, dries quickly, and maintains its shape ride after ride.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_T3H9Mg": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_pmqkmh",
+        "heading_bVzhNT",
+        "text_NLYLhd",
+        "buttons_T3H9Mg"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image_1": "shopify://shop_images/mens-slate-cargo-bibs-studio-1.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "layout": "is-reversed",
+        "width": "wrapper--full",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_double_ztPwUg": {
+      "type": "section-double",
+      "blocks": {
+        "subheading_My7pVg": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "",
+            "padding_bottom": 16
+          }
+        },
+        "heading_KYqhGD": {
+          "type": "heading",
+          "settings": {
+            "title": "four pockets. no jersey required.",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_MjXHzE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>These bibs perform just like \"normal\" bibs with no pockets. The great thing about cargo bibs is the flexibility they provide. Flexibility to spread your items throughout more pockets, or to skip a regular jersey in favor of a trail shirt or pull-over. Ever fumble with your phone or wallet when getting coffee? Simply slide them into the left or right cargo pockets.</p><p>We admit we were cargo bib skeptics at first, especially since we are all about the bar bag. But after spending time with these, paired with a bar bag... we are sold. - Check out our <a href=\"https://www.ornotbike.com/pages/best-cargo-bib-shorts-2026\" target=\"_blank\" title=\"The Best Cargo Bib Shorts in 2026\">Best Cargo Bib Shorts 2026 Guide</a>.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_KEJJ7j": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_My7pVg",
+        "heading_KYqhGD",
+        "text_MjXHzE",
+        "buttons_KEJJ7j"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image_1": "shopify://shop_images/Ornot_MarinoRidingShirt_Squares-17.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "layout": "",
+        "width": "wrapper--full",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_rich_text_wRtMQW": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_6ybdaJ": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "updated for 2026",
+            "padding_bottom": 16
+          }
+        },
+        "heading_TzaAYk": {
+          "type": "heading",
+          "settings": {
+            "title": "Ornot Cargo Bib Shorts are high-performance cycling bib shorts built for long road and gravel rides. You could ride all day, Ornot.",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_c6kbRN": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Ornot Cargo Bib Shorts are high-performance cycling bib shorts with four cargo pockets built for long road and gravel rides. Updated for 2026, they feature recycled compression fabric, updated cargo pockets, and improved airflow straps for all-day comfort.</p>",
+            "text_font_size": "body-x-large",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_7YYgQp": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_6ybdaJ",
+        "heading_TzaAYk",
+        "text_c6kbRN",
+        "buttons_7YYgQp"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "section_custom_content_z7hMKV": {
@@ -829,6 +1163,7 @@
         "image_J3UN3C",
         "text_ywttmE"
       ],
+      "disabled": true,
       "name": "Custom section",
       "settings": {
         "borders": false,
@@ -837,201 +1172,6 @@
         "height": "image-height",
         "mobile_height": "screen-height-one-half--mobile",
         "reverse_blocks": false,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_custom_content_cFKw9W": {
-      "type": "section-custom-content",
-      "blocks": {
-        "image_rTePcY": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/FabricStoryOrnot.jpg",
-            "title": "",
-            "heading_font_size": "heading-large",
-            "text": "",
-            "text_font_size": "body-medium",
-            "flex_align": "align--middle-center",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "overlay_type": "disabled",
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_kmtgEK": {
-          "type": "text",
-          "settings": {
-            "subheading": "in detail",
-            "title": "SPECIAL PROJECTS",
-            "heading_font_size": "heading-large",
-            "text": "<p>One of the most sustainable things we can do? <strong>Use what already exists.</strong> That’s the concept behind Special Projects—limited-run garments made from premium deadstock fabrics, cut and sewn in California. When they're gone, they're gone.</p>",
-            "text_font_size": "body-medium",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "",
-            "color": "",
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "image_rTePcY",
-        "text_kmtgEK"
-      ],
-      "disabled": true,
-      "settings": {
-        "borders": false,
-        "gutters": false,
-        "width": "wrapper--full",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "reverse_blocks": true,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_custom_content_8KemLT": {
-      "type": "section-custom-content",
-      "blocks": {
-        "text_wrQcng": {
-          "type": "text",
-          "settings": {
-            "subheading": "/ˈdɛd.stɑk/",
-            "title": "DEADSTOCK FABRIC",
-            "heading_font_size": "heading-large",
-            "text": "<p>Deadstock is fabric that was overproduced, abandoned, or never made it to the cutting table. Sometimes a color runs off-spec, and that fabric becomes “deadstock.” Instead of letting it sit in a warehouse or worse, a landfill, <strong>we turn it into something new.</strong> The catch? We only get one shot. One opportunity.</p><p>Deadstock isn’t just leftover fabric—it’s an invitation to make something unforgettable. That’s why we collaborate with <strong>Polartec®</strong>, the pioneers who redefined performance textiles and never stopped innovating.</p>",
-            "text_font_size": "body-medium",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "",
-            "color": "",
-            "heading_tag": "automatic"
-          }
-        },
-        "image_iYmNWa": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/alpha-sweater-1x1.jpg",
-            "title": "",
-            "heading_font_size": "heading-large",
-            "text": "",
-            "text_font_size": "body-medium",
-            "flex_align": "align--middle-center",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "overlay_type": "disabled",
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "text_wrQcng",
-        "image_iYmNWa"
-      ],
-      "disabled": true,
-      "settings": {
-        "borders": false,
-        "gutters": false,
-        "width": "wrapper--full",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "reverse_blocks": false,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_custom_content_kgVBJE": {
-      "type": "section-custom-content",
-      "blocks": {
-        "image_LYC9qC": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/pie-ride.jpg",
-            "title": "",
-            "heading_font_size": "heading-large",
-            "text": "",
-            "text_font_size": "body-medium",
-            "flex_align": "align--middle-center",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "overlay_type": "disabled",
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_JddKwq": {
-          "type": "text",
-          "settings": {
-            "subheading": "in partnership",
-            "title": "ORNOT + POLARTEC",
-            "heading_font_size": "heading-large",
-            "text": "<p>Great minds think alike—and by great minds, we mean anyone who sees the potential in leftover fabric. Polartec has been pioneering recycled textiles for years, which makes them a natural fit for our Special Projects. Whether it’s upcycling deadstock or reinventing performance fabrics, we’re both on a mission to <strong>make more out of what’s already here.</strong></p><p>As our partnership grows, so does our lineup of smarter, more responsible gear. Ride in it, geek out over it, or both.</p>",
-            "text_font_size": "body-medium",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "",
-            "color": "",
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "image_LYC9qC",
-        "text_JddKwq"
-      ],
-      "disabled": true,
-      "settings": {
-        "borders": false,
-        "gutters": false,
-        "width": "wrapper--full",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "reverse_blocks": true,
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -1079,9 +1219,8 @@
         "text_4VixLy",
         "button_QB8YUQ"
       ],
-      "disabled": true,
       "settings": {
-        "image_1": "shopify://shop_images/clement-sliver.jpg",
+        "image_1": "shopify://shop_images/cargo-bibs-sliver.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
@@ -1097,138 +1236,65 @@
         "show_placeholder": true
       }
     },
-    "section_custom_content_RBLtRR": {
-      "type": "section-custom-content",
+    "section_rich_text_dcHN6G": {
+      "type": "section-rich-text",
       "blocks": {
-        "image_7iBLEH": {
-          "type": "image",
+        "subheading_3eQQFq": {
+          "type": "subheading",
           "settings": {
-            "image": "shopify://shop_images/TNUT9833_464f69a9-2190-4e61-a5dd-494fb8dcd841.jpg",
-            "title": "",
+            "subheading": "/ / / / / / / / / / / /",
+            "padding_bottom": 16
+          }
+        },
+        "heading_HCt78z": {
+          "type": "heading",
+          "settings": {
+            "title": "Why Ornot?",
             "heading_font_size": "heading-large",
-            "text": "",
-            "text_font_size": "body-medium",
-            "flex_align": "align--middle-center",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "overlay_type": "disabled",
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
+            "padding_bottom": 16,
             "heading_tag": "automatic"
           }
         },
-        "text_CXKRMc": {
+        "text_PwaTGX": {
           "type": "text",
           "settings": {
-            "subheading": "",
-            "title": "BETTER. STRONGER.",
-            "heading_font_size": "heading-large",
-            "text": "<p>Traditional Merino? Twisted, scratchy, and quick to wear out. Nuyarn’s twist-free, two-ply tech uses longer fibers for Merino that’s <strong>8.8x more durable</strong> and way less prone to holes. Martindale test approved.</p>",
+            "text": "<p>Ornot designs cycling apparel inspired by San Francisco’s microclimates, focusing on breathability, durability, and minimal branding. Many garments are made in the USA using recycled fabrics and responsible production.</p><p>Designed in San Francisco and made using recycled performance fabrics, Ornot cycling bib shorts prioritize durability, minimal branding, and all-day riding comfort.</p>",
             "text_font_size": "body-medium",
-            "button_text": "",
-            "button_url": "",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_EWCRWW": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "shopify://pages/why-ornot",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
             "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "",
-            "color": "",
-            "heading_tag": "automatic"
+            "padding_bottom": 16
           }
         }
       },
       "block_order": [
-        "image_7iBLEH",
-        "text_CXKRMc"
+        "subheading_3eQQFq",
+        "heading_HCt78z",
+        "text_PwaTGX",
+        "buttons_EWCRWW"
       ],
-      "disabled": true,
+      "name": "Rich text",
       "settings": {
-        "borders": false,
-        "gutters": false,
-        "width": "wrapper--full",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "reverse_blocks": true,
+        "align_text": "text-left",
+        "width": "wrapper",
         "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_custom_content_3Hy8cr": {
-      "type": "section-custom-content",
-      "blocks": {
-        "text_DaTmMk": {
-          "type": "text",
-          "settings": {
-            "subheading": "",
-            "title": "A DIRECT CORRELATION",
-            "heading_font_size": "heading-large",
-            "text": "<p>Elasticity isn’t just a nice-to-have in cycling apparel—it’s essential for comfort and unrestricted movement on the bike. Thanks to Nuyarn’s patented spinning technique, wool's natural stretchiness is preserved and amplified. </p>",
-            "text_font_size": "body-medium",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "",
-            "color": "",
-            "heading_tag": "automatic"
-          }
-        },
-        "image_Mw7iUH": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/merino-riding-shirt.jpg",
-            "title": "",
-            "heading_font_size": "heading-large",
-            "text": "",
-            "text_font_size": "body-medium",
-            "flex_align": "align--middle-center",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "overlay_type": "disabled",
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "text_DaTmMk",
-        "image_Mw7iUH"
-      ],
-      "disabled": true,
-      "settings": {
-        "borders": false,
-        "gutters": false,
-        "width": "wrapper--full",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "reverse_blocks": false,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "overlay_type": "disabled",
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "section_hero_AXLMwy": {
       "type": "section-hero",
+      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.gif",
         "link": "",
@@ -1318,14 +1384,15 @@
     "section_video_J8acjN",
     "section_custom_code_pJNGta",
     "section_hero_qJHAjK",
+    "section_accordion_group_dAJetV",
     "section_columns_fcn6BT",
+    "section_double_6YBbxA",
+    "section_double_zkBMMn",
+    "section_double_ztPwUg",
+    "section_rich_text_wRtMQW",
     "section_custom_content_z7hMKV",
-    "section_custom_content_cFKw9W",
-    "section_custom_content_8KemLT",
-    "section_custom_content_kgVBJE",
     "section_hero_9CXNe9",
-    "section_custom_content_RBLtRR",
-    "section_custom_content_3Hy8cr",
+    "section_rich_text_dcHN6G",
     "section_hero_AXLMwy",
     "1706135782d1067a10",
     "related"
