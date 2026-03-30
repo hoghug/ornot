@@ -61,7 +61,7 @@
         "text_Mwm4iA": {
           "type": "text",
           "settings": {
-            "text": "<p>Our House Jersey, a USA-made staple since 2013, just got even better. Cut and sewn in California from Italian-made, Oeko-Tex approved recycled fabric, this lightweight micro-mesh jersey offers all the quick-drying performance and UPF 30+ protection you could ask for.</p>",
+            "text": "<p>Our House Jersey, a USA-made staple since 2013, just got even better. Cut and sewn in California from recycled <a href=\"https://www.ornotbike.com/collections/fabric-story-recycled-uv-micro-mesh\" target=\"_blank\" title=\"https://www.ornotbike.com/collections/fabric-story-recycled-uv-micro-mesh\">UV-micro-mesh</a> fabric, this lightweight jersey delivers quick-drying performance and UPF 30+ protection.</p>",
             "text_font_size": "body-large",
             "padding_bottom": 16
           }

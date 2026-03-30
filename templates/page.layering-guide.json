@@ -69,6 +69,62 @@
         "show_placeholder": true
       }
     },
+    "section_rich_text_wxGeri": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_fQwTTY": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "/ / / / / / / / / / / /",
+            "padding_bottom": 16
+          }
+        },
+        "heading_8J46PM": {
+          "type": "heading",
+          "settings": {
+            "title": "layering guide",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_iGyaQw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Riding through microclimates demands layers that can breathe on the move, especially in spring and summer when conditions can shift mid-ride. At Ornot, we think in three parts: a next-to-skin layer to manage moisture, a breathable midlayer for light insulation, and a lightweight outer layer for wind or fog. The goal is simple: start slightly cool, adjust with effort, and stay comfortable as the ride warms up.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_eCxDNU": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_fQwTTY",
+        "heading_8J46PM",
+        "text_iGyaQw",
+        "buttons_eCxDNU"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -986,6 +1042,7 @@
   },
   "order": [
     "section_hero_jidFMm",
+    "section_rich_text_wxGeri",
     "main",
     "section_announcement_G3DD43",
     "section_custom_content_AyDzny",

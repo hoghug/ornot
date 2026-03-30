@@ -437,7 +437,7 @@
             "image_shape": "normal",
             "title": "Recycled UV Micro Mesh",
             "heading_font_size": "heading-small",
-            "text": "<p>Recycled UV micro-mesh fabric designed for hot days on the bike. It's ultra lightweight, dries quickly, and provides UPF 30 protection. Produced using recycled fibers and Bluesign®-approved processes.</p>",
+            "text": "<p>Recycled UV micro-mesh fabric designed for hot days on the bike. It's ultra lightweight, dries quickly, and provides UPF 30 sun protection. Produced using recycled fibers and Oeko-tex-approved materials.</p>",
             "text_font_size": "body-small",
             "button_text": "see products",
             "button_url": "shopify://collections/fabric-story-recycled-uv-micro-mesh",
@@ -450,10 +450,31 @@
             "heading_tag": "automatic"
           }
         },
+        "image_rqH79r": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/womens-cargo-bib-slate-studio-1.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "All Day Compression Knit",
+            "heading_font_size": "heading-small",
+            "text": "<p>All Day Compression is a dense knit fabric developed to provide soft, supportive stretch that stays comfortable all day. The 195gsm construction wicks moisture, dries quickly, and maintains its shape ride after ride.</p>",
+            "text_font_size": "body-small",
+            "button_text": "see products",
+            "button_url": "shopify://collections/fabric-story-all-day-compression-knit",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
         "image_D9VjHc": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ornot_Womens_Micro_Climate_Jacket_Obsidian_10_06952a62-61f1-41d9-91d5-6e2348beff91.jpg",
+            "image": "shopify://shop_images/Ornot_Mens_Micro_Climate_Vest_Obsidian_07.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "Micro Climate",
@@ -495,7 +516,7 @@
         "image_cwtx4V": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_Micro_Grid_Americano_10.jpg",
+            "image": "shopify://shop_images/Ornot_Mens_Micro_Grid_Zissou_09_da2d9f98-8c35-44f6-802a-7417773f15a1.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "Micro Grid",
@@ -516,7 +537,7 @@
         "image_LHcaHM": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/alpha_header_phone.jpg",
+            "image": "shopify://shop_images/Alpha-Sweater-cream-mission-pants-studio-7.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "ALPHA",
@@ -600,28 +621,6 @@
             "heading_tag": "automatic"
           }
         },
-        "image_rqH79r": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/MensquiltedpulloverWhite_6.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "Power Air",
-            "heading_font_size": "heading-small",
-            "text": "<p>Power Air traps warmth <em>and</em> fiber fragments—so you stay cozy while keeping microplastics in check. Why does that matter? Traditional fleece sheds tiny plastic fibers with every wash, which end up in our water, our food, and yep, even us. Power Air cuts that shedding by up to 85%, so you can stay warm without warming the planet. We wear these Every. Single. Day. (Seriously, try to take it off. Bet you can't.)</p>",
-            "text_font_size": "body-small",
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--secondary",
-            "button_size": "btn--small",
-            "button_style": "btn--text",
-            "show_arrow": true,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        },
         "image_zMwfQA": {
           "type": "image",
           "disabled": true,
@@ -669,6 +668,7 @@
       },
       "block_order": [
         "image_AieWct",
+        "image_rqH79r",
         "image_D9VjHc",
         "image_BKXtyf",
         "image_cwtx4V",
@@ -676,7 +676,6 @@
         "image_4nFPma",
         "image_j9FUq7",
         "image_nVeNVc",
-        "image_rqH79r",
         "image_zMwfQA",
         "image_PkWQMt"
       ],

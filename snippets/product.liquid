@@ -11,7 +11,6 @@
   assign featured_media = current_variant.featured_media | default: product.featured_media
   assign featured_media_aspect_ratio = featured_media.aspect_ratio | default: 1
   assign is_title_linked = true
-  
   if template.name == 'product' and featured_product == false
     assign is_title_linked = false
   endif
@@ -442,7 +441,7 @@
                     -%}
 
                   {%- when 'description' -%}
-                    {%- render 'product-description', product: product, block: block, block_style: block_style, read_more_lines: block.settings.read_more_lines -%}
+                    {%- render 'product-description', product: product, block: block, block_style: block_style -%}
 
                   {%- when 'tab_richtext' -%}
                     {%- render 'product-description', product: product, block: block, block_style: block_style -%}

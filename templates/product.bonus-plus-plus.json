@@ -73,7 +73,7 @@
             "siblings_collection": "{{ product.metafields.theme.siblings.value }}",
             "sibling_color": "{{ product.metafields.theme.sibling_color.value }}",
             "option_font_size": "body-medium",
-            "value_font_size": "body-medium",
+            "value_font_size": "body-x-small",
             "padding_bottom": 16
           }
         },
@@ -210,7 +210,7 @@
           "settings": {
             "upsell_product": "",
             "upsell_product_list": [
-              "cargo-bib-short-black",
+              "cargo-bib-short-black-2025",
               "delta-sleeveless-base-layer",
               "max-sock-wht"
             ],

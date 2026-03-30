@@ -73,7 +73,7 @@
             "siblings_collection": "{{ product.metafields.theme.siblings.value }}",
             "sibling_color": "{{ product.metafields.theme.sibling_color.value }}",
             "option_font_size": "body-medium",
-            "value_font_size": "body-medium",
+            "value_font_size": "body-x-small",
             "padding_bottom": 16
           }
         },
@@ -199,7 +199,7 @@
             "upsell_product_list": [
               "barber-sock-arctic",
               "delta-sleeveless-base-layer",
-              "cargo-bib-short-black"
+              "cargo-bib-short-black-2025"
             ],
             "show_available_upsell_only": true,
             "layout": "stacked",
@@ -266,17 +266,6 @@
         "padding_bottom": 30
       }
     },
-    "section_custom_code_tW44i6": {
-      "type": "section-custom-code",
-      "name": "Custom code",
-      "settings": {
-        "code": "<div style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;\">\n  <iframe \n    src=\"https://www.youtube.com/embed/ESaFaFxj1C0?rel=0&modestbranding=1&showinfo=0&controls=1&autoplay=1&mute=1\" \n    title=\"Ornot Video\"\n    frameborder=\"0\" \n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" \n    allowfullscreen \n    loading=\"lazy\"\n    style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\">\n  </iframe>\n</div>",
-        "width": "wrapper--full",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "section_hero_8nY6LC": {
       "type": "section-hero",
       "settings": {
@@ -297,10 +286,21 @@
         "show_placeholder": true
       }
     },
+    "section_custom_code_tW44i6": {
+      "type": "section-custom-code",
+      "name": "Custom code",
+      "settings": {
+        "code": "<div style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;\">\n  <iframe \n    src=\"https://www.youtube.com/embed/ESaFaFxj1C0?rel=0&modestbranding=1&showinfo=0&controls=1&autoplay=1&mute=1\" \n    title=\"Ornot Video\"\n    frameborder=\"0\" \n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" \n    allowfullscreen \n    loading=\"lazy\"\n    style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\">\n  </iframe>\n</div>",
+        "width": "wrapper--full",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_hero_fkwiK3": {
       "type": "section-hero",
       "settings": {
-        "image_1": "shopify://shop_images/Ornot_Handlebar_Bag_Mini_Black_Hero-2_56e12357-076b-47ff-8592-27b44fe02414.jpg",
+        "image_1": "shopify://shop_images/house-jersey-2026-sliver.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
@@ -322,7 +322,7 @@
         "image_jddAwN": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/TNUT7099.jpg",
+            "image": "shopify://shop_images/mens-lifestyle-stone-blue-house.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -344,7 +344,7 @@
         "image_9dKWbL": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/TNUT7298.jpg",
+            "image": "shopify://shop_images/taxi-house-jerseys.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -374,7 +374,136 @@
         "width": "wrapper--full",
         "height": "image-height",
         "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_3jqbJL": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_bNeVkd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mens-house-jersey-dylan-b_w.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_JdKHEm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/house-jersey-lifestyle-golden-boys.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_bNeVkd",
+        "image_JdKHEm"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
         "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_K9NUjb": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_rdAQmL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/stone-blue-house-jeresy-lifestyle.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_W87HcJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/house-jersey-pizza.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_rdAQmL",
+        "image_W87HcJ"
+      ],
+      "disabled": true,
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -382,6 +511,7 @@
     },
     "section_hero_fWLfW6": {
       "type": "section-hero",
+      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/house-jersy.jpg",
         "link": "",
@@ -414,7 +544,7 @@
         "product_bDHnxU": {
           "type": "product",
           "settings": {
-            "product": "cargo-bib-short-black",
+            "product": "cargo-bib-short-black-2025",
             "show_product_card": false,
             "position_x": 42,
             "position_y": 32
@@ -435,6 +565,7 @@
         "product_bDHnxU",
         "product_7Ubahd"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/TNUT6716.jpg",
         "layout": "",
@@ -460,6 +591,7 @@
     },
     "section_hero_fACEde": {
       "type": "section-hero",
+      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/park-vs-house-jersey.jpg",
         "link": "shopify://products/mens-park-jersey-clement-chroma",
@@ -480,6 +612,7 @@
     },
     "section_hero_NN4xAd": {
       "type": "section-hero",
+      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/CN_1FTP_BannerWeb_346fee52-148e-4982-a0b6-51252518fbbb.png",
         "link": "",
@@ -506,7 +639,8 @@
           "settings": {
             "product": "{{product}}",
             "title": "",
-            "alignment": ""
+            "alignment": "",
+            "sortOrder": "mostRecent"
           }
         }
       },
@@ -559,10 +693,12 @@
   "order": [
     "section_hero_t4phQQ",
     "main",
-    "section_custom_code_tW44i6",
     "section_hero_8nY6LC",
+    "section_custom_code_tW44i6",
     "section_hero_fkwiK3",
     "section_custom_content_FwXhNm",
+    "section_custom_content_3jqbJL",
+    "section_custom_content_K9NUjb",
     "section_hero_fWLfW6",
     "section_look_qEzp8n",
     "section_hero_fACEde",

@@ -29,7 +29,7 @@
     "section_hero_Ay6Tni": {
       "type": "section-hero",
       "settings": {
-        "image_1": "shopify://shop_images/ls-jersey-sliver.jpg",
+        "image_1": "shopify://shop_images/ben-looks-lav-jersy-sliver.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
@@ -61,7 +61,7 @@
         "text_thAhBC": {
           "type": "text",
           "settings": {
-            "text": "<p>Our House Jersey, a USA-made staple since 2013, just got even better. Cut and sewn in California from Italian-made, Oeko-Tex approved, recycled fabric, this lightweight micro-mesh jersey offers all the quick-drying performance and UPF 30+ protection you could ask for. <a href=\"/pages/jersey-comparison\" target=\"_blank\" title=\"Ornot Bike Jersey Comparison\">Compare Jerseys here.</a></p>",
+            "text": "<p>Our House Jersey, a USA-made staple since 2013, just got even better. Cut and sewn in California from recycled <a href=\"https://www.ornotbike.com/collections/fabric-story-recycled-uv-micro-mesh\" target=\"_blank\" title=\"https://www.ornotbike.com/collections/fabric-story-recycled-uv-micro-mesh\">UV-micro-mesh</a> fabric, this lightweight jersey delivers quick-drying performance and UPF 30+ protection. <a href=\"/pages/jersey-comparison\" target=\"_blank\" title=\"Ornot Bike Jersey Comparison\">Compare Jerseys here.</a></p>",
             "text_font_size": "body-large",
             "padding_bottom": 16
           }
@@ -96,10 +96,10 @@
         "button_style": "btn--solid",
         "show_arrow": false,
         "layout_desktop": "grid",
-        "grid": 4,
+        "grid": 2,
         "rows": 2,
         "width": "wrapper",
-        "layout_mobile": "2",
+        "layout_mobile": "1",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0,
@@ -156,10 +156,10 @@
         "button_style": "btn--solid",
         "show_arrow": false,
         "layout_desktop": "grid",
-        "grid": 4,
+        "grid": 2,
         "rows": 4,
         "width": "wrapper",
-        "layout_mobile": "2",
+        "layout_mobile": "1",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0,

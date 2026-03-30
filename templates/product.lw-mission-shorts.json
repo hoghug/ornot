@@ -73,7 +73,7 @@
             "siblings_collection": "{{ product.metafields.theme.siblings.value }}",
             "sibling_color": "{{ product.metafields.theme.sibling_color.value }}",
             "option_font_size": "body-medium",
-            "value_font_size": "body-medium",
+            "value_font_size": "body-x-small",
             "padding_bottom": 16
           }
         },

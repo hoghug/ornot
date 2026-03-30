@@ -147,7 +147,7 @@
           "type": "image",
           "settings": {
             "position": "2",
-            "image": "shopify://shop_images/micro-climate-jacket-micro-grid-jersey_11861297-6ae7-43ae-8647-9bf31d60242d.jpg",
+            "image": "shopify://shop_images/aj_studio_looks_lav_house_oat_mc_jacket_5dcf4e8a-fbfb-4bb1-befa-ac5ca213417e.jpg",
             "aspect_ratio": 1,
             "wide_image": false,
             "overlay_type": "disabled",
@@ -155,7 +155,7 @@
             "heading_font_size": "heading-medium",
             "link_text": "",
             "text_font_size": "body-x-small",
-            "link": "shopify://products/womens-micro-climate-jacket-citron",
+            "link": "shopify://products/womens-house-jersey-lavender",
             "text_color": ""
           }
         },
