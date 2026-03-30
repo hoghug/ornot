@@ -130,8 +130,9 @@
 
         <span class="option-title">
           {% liquid
-            assign size_translation = 'general.size_chart.size' | t
-            if settings.abbr_size_values and option.name == size_translation
+            assign size_translation = 'general.size_chart.size' | t | downcase
+            assign option_name = option.name | downcase
+            if settings.abbr_size_values and option_name == size_translation
               assign abbr_output = value
               assign abbr_pairs = settings.abbr_size_names | split: ','
               assign value_lower = value | strip | downcase
