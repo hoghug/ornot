@@ -1012,6 +1012,38 @@
         "default": "classic"
       },
       {
+        "type": "select",
+        "id": "field_layout",
+        "label": "Label + input layout",
+        "default": "stacked",
+        "options": [
+          {"value": "stacked", "label": "Stacked"},
+          {"value": "inline", "label": "Inline"}
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Size Options"
+      },
+      {
+        "type": "checkbox",
+        "id": "abbr_size_values",
+        "label": "Abbreviate Size Values",
+        "info": "Small = SM, Medium = MD, etc...",
+        "default": true
+      },
+      {
+        "visible_if": "{{ settings.abbr_size_values }}",
+        "type": "textarea",
+        "id": "abbr_size_names",
+        "label": "Abbreviate Size Values",
+        "default": "Small:SM,Medium:MD,Large:LG"
+      },
+      {
+        "type": "header",
+        "content": "Variant options"
+      },
+      {
         "type": "checkbox",
         "id": "show_lines",
         "label": "Show lines",

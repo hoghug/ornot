@@ -129,12 +129,11 @@
         {%- endif -%}
 
         <span class="option-title">
-          {% comment %} {{ option.name }},{{ size_translation }} {% endcomment %}
           {% liquid
             assign size_translation = 'general.size_chart.size' | t
-            if block.settings.abbr_size_values and option.name == size_translation
+            if settings.abbr_size_values and option.name == size_translation
               assign abbr_output = value
-              assign abbr_pairs = block.settings.abbr_size_names | split: ','
+              assign abbr_pairs = settings.abbr_size_names | split: ','
               assign value_lower = value | strip | downcase
               for pair in abbr_pairs
                 assign pair_parts = pair | split: ':'

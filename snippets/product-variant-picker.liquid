@@ -20,7 +20,7 @@
   assign show_size_link_separated = true
   assign uniq_id = 'product-' | append: product.id | append: '-' | append: product.handle
   assign size_style = block.settings.size_chart_style
-  assign layout_class = block.settings.layout | prepend: 'selector-wrapper--'
+  assign layout_class = settings.field_layout | prepend: 'selector-wrapper--'
 
   if block.settings.info_page != blank
     assign size_translation = 'general.size_chart.size' | t
