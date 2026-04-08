@@ -225,6 +225,8 @@ select, select option {
 [class*="badge"] > span {
   position: relative;
   top: var(--tg-nudge);
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
 }
 
 /* VARIANTS (pills/radios/checkboxes/select buttons/swatches) */
@@ -237,6 +239,8 @@ input[type="checkbox"] + label > span,
 .swatch__label > span {
   position: relative;
   top: var(--tg-nudge);
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
 }
 
 /* BUTTONS (incl. dynamic checkout) */
@@ -247,6 +251,8 @@ a.button > span,
 .shopify-payment-button__button > span {
   position: relative;
   top: var(--tg-nudge);
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
 }
 
 /* If any of these elements lack a <span>, fall back to nudging the text container itself */
@@ -270,6 +276,8 @@ a.button:not(:has(> span)),
 .shopify-payment-button__button:not(:has(> span)) {
   position: relative;
   top: var(--tg-nudge);
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
 }
 /* Try these common Broadcast badge text hooks */
 .card__badge .badge__text,
@@ -277,7 +285,7 @@ a.button:not(:has(> span)),
 .product__badge .badge__text,
 .product-card__badge .badge__text {
   position: relative;
-  top: 3px;
+  /* top: 3px; */
 }
 /* Badge text baseline tweak (box stays put) */
 :root { --badge-text-nudge: 0; } /* adjust to 2–4px to taste */
