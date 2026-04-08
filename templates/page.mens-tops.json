@@ -96,7 +96,7 @@
         "button_style": "btn--solid",
         "show_arrow": false,
         "layout_desktop": "grid",
-        "grid": 2,
+        "grid": 3,
         "rows": 2,
         "width": "wrapper",
         "layout_mobile": "1",

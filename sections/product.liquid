@@ -1,7 +1,47 @@
 <!-- /sections/product.liquid -->
 
 {%- render 'product' -%}
-
+{% comment %}=== AEO Product Schema ==={% endcomment %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": {{ product.title | json }},
+  "url": "{{ shop.url }}{{ product.url }}",
+  "sku": {{ product.selected_or_first_available_variant.sku | json }},
+  "description": {{ product.description | strip_html | json }},
+  "brand": {
+    "@type": "Brand",
+    "name": "Ornot",
+    "url": "https://www.ornotbike.com",
+    "description": "Independent cycling apparel brand designed in San Francisco since 2013. 1% for the Planet member. Much of our line is made in the USA using recycled and deadstock fabrics with responsible production practices."
+  },
+  "image": [{% for image in product.images limit: 3 %}"https:{{ image.src | img_url: 'master' }}"{% unless forloop.last %},{% endunless %}{% endfor %}],
+  "offers": {
+    "@type": "Offer",
+    "url": "{{ shop.url }}{{ product.url }}",
+    "priceCurrency": "USD",
+    "price": "{{ product.selected_or_first_available_variant.price | divided_by: 100.0 }}",
+    "availability": "{% if product.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}",
+    "itemCondition": "https://schema.org/NewCondition",
+    "seller": { "@type": "Organization", "name": "Ornot" },
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "USD" },
+      "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "US" }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 30,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/FreeReturn"
+    }
+  }{% if product.metafields.custom.json_ld_schema != blank %},
+  "additionalProperty": {{ product.metafields.custom.json_ld_schema.value }}
+  {% endif %}
+}
+</script>
 {% schema %}
 {
   "name": "Product pages",

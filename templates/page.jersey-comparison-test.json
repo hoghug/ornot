@@ -60,6 +60,172 @@
         "show_placeholder": true
       }
     },
+    "section_rich_text_DWwT6d": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_VkAYbw": {
+          "type": "heading",
+          "settings": {
+            "title": "Short Sleeve Jerseys",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "subheading_AMxQNB": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "FOR EVERY MICRO-CLIMATE",
+            "padding_bottom": 16
+          }
+        },
+        "text_zVhxi7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our short-sleeve jerseys accommodate every Bay-Area microclimate: the race-weight <a href=\"/products/mens-park-jersey-clement-key-short\" target=\"_blank\" title=\"Men's Park Jersey - Clement Key\">Park Jersey</a> keeps you aero and cool, the versatile <a href=\"/products/mens-house-jersey-olive\" target=\"_blank\" title=\"Men's House Jersey - Olive\">House Jersey</a> wicks hard for all-day road or gravel, and the Polartec-powered <a href=\"/products/mens-micro-grid-jersey-charcoal\" target=\"_blank\" title=\"Men's Micro Grid Jersey - Charcoal\">Micro Grid Jersey</a> balances warmth and breathability when coastal fog rolls in. Each jersey features recycled fabrics, UPF protection, smart pocket layouts, and minimal branding.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_VkAYbw",
+        "subheading_AMxQNB",
+        "text_zVhxi7"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 66,
+        "padding_bottom": 0
+      }
+    },
+    "section_columns_xA4N7P": {
+      "type": "section-columns",
+      "blocks": {
+        "image_nayxm8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mens-house-jersey-studio-lav-1.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "House Jersey",
+            "heading_font_size": "heading-small",
+            "text": "<p>A versatile, US-made jersey with all-day comfort and a unique dyed-and-sublimated pattern for any ride.</p><p><a href=\"/products/mens-house-jersey-fog\" title=\"Men's House Jersey - Fog\">Shop Mens</a></p><p><a href=\"/products/womens-house-jersey-fog-1\" title=\"Women's House Jersey - Fog\">Shop Womens</a></p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_wQtiid": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_ParkJersey_ClementCyan_01.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Park Jersey",
+            "heading_font_size": "heading-small",
+            "text": "<p>A performance-fit jersey made from ultra-soft recycled fabric with UPF 30 protection for fast days and long rides.</p><p><a href=\"/products/mens-park-jersey-clement-chroma\" title=\"Men's Park Jersey - Clement Chroma\">Shop Mens</a></p><p><a href=\"/products/womens-park-jersey-clement-chroma\" title=\"Women's Park Jersey - Clement Chroma\">Shop Womens</a></p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_6pmdaE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_Micro_Grid_Charcoal_01.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Micro Grid",
+            "heading_font_size": "heading-small",
+            "text": "<p>A light jersey with a gridded structure designed to keep you cool in the heat and warm under a jacket. US Made!</p><p><a href=\"/products/mens-micro-grid-jersey-charcoal\" title=\"Men's Micro Grid Jersey - Charcoal\">Shop Mens</a></p><p></p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_nayxm8",
+        "image_wQtiid",
+        "image_6pmdaE"
+      ],
+      "name": "Text columns with images",
+      "settings": {
+        "title": "",
+        "heading_font_size": "heading-large",
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "align_columns": "flex-align-top",
+        "layout": "slider",
+        "grid": 3,
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 25,
+        "padding_bottom": 70,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_hero_zxLCPV": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_NUEFt6": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "JERSEY COMPARISON",
+            "heading_font_size": "heading-x-large",
+            "heading_tag": "automatic",
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading_NUEFt6"
+      ],
+      "settings": {
+        "image_1": "shopify://shop_images/nightshady-micro-grid-sliver.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "four-fifty-height-hero",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/long-sleeve-jerseys.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
     "section_rich_text_C4cNXF": {
       "type": "section-rich-text",
       "blocks": {
@@ -108,7 +274,7 @@
         "image_8G7whN": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/mens_merino_zissou_9.jpg",
+            "image": "shopify://shop_images/mens_merino_zissou_1.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "Merino Grid",
@@ -149,6 +315,7 @@
         },
         "image_UKbjJx": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/grid-thermal-burg-6.jpg",
             "image_width": 100,
@@ -171,7 +338,7 @@
         "image_7YQmw7": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ornot_Womens_LS_Micro_Grid_Charcoal_01.jpg",
+            "image": "shopify://shop_images/Men_s-Long-Sleeve-Micro-Grid-Jersey--nightshady_1.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "Micro Grid",
@@ -192,7 +359,7 @@
         "image_hYeN3j": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/20251008_OrNot_2435_edit-1.jpg",
+            "image": "shopify://shop_images/womens-house-LS-fog-studio-2.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "House Jersey",
@@ -254,172 +421,6 @@
         "color_scheme": "",
         "padding_top": 50,
         "padding_bottom": 50,
-        "heading_tag": "automatic"
-      }
-    },
-    "section_hero_zxLCPV": {
-      "type": "section-hero",
-      "blocks": {
-        "heading_NUEFt6": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "title": "JERSEY COMPARISON",
-            "heading_font_size": "heading-x-large",
-            "heading_tag": "automatic",
-            "padding_bottom": 8
-          }
-        }
-      },
-      "block_order": [
-        "heading_NUEFt6"
-      ],
-      "settings": {
-        "image_1": "shopify://shop_images/web-header-mens-header-1_315f360b-cbbc-46d2-b974-59dcab0514d3.jpg",
-        "link": "",
-        "width": "wrapper--full",
-        "height": "four-fifty-height-hero",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "content_width": 50,
-        "mobile_image": "shopify://shop_images/long-sleeve-jerseys.jpg",
-        "mobile_height": "image-height--mobile",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "color_scheme": "scheme-2",
-        "show_text_background": false,
-        "overlay_type": "disabled",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "show_placeholder": true
-      }
-    },
-    "section_rich_text_DWwT6d": {
-      "type": "section-rich-text",
-      "blocks": {
-        "heading_VkAYbw": {
-          "type": "heading",
-          "settings": {
-            "title": "Short Sleeve Jerseys",
-            "heading_font_size": "heading-large",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
-        "subheading_AMxQNB": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "FOR EVERY MICRO-CLIMATE",
-            "padding_bottom": 16
-          }
-        },
-        "text_zVhxi7": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our short-sleeve jerseys accommodate every Bay-Area microclimate: the race-weight <a href=\"/products/mens-park-jersey-clement-key-short\" target=\"_blank\" title=\"Men's Park Jersey - Clement Key\">Park Jersey</a> keeps you aero and cool, the versatile <a href=\"/products/mens-house-jersey-olive\" target=\"_blank\" title=\"Men's House Jersey - Olive\">House Jersey</a> wicks hard for all-day road or gravel, and the Polartec-powered <a href=\"/products/mens-micro-grid-jersey-charcoal\" target=\"_blank\" title=\"Men's Micro Grid Jersey - Charcoal\">Micro Grid Jersey</a> balances warmth and breathability when coastal fog rolls in. Each jersey features recycled fabrics, UPF protection, smart pocket layouts, and minimal branding.</p>",
-            "text_font_size": "body-large",
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_VkAYbw",
-        "subheading_AMxQNB",
-        "text_zVhxi7"
-      ],
-      "settings": {
-        "align_text": "text-left",
-        "width": "wrapper",
-        "color_scheme": "",
-        "overlay_type": "disabled",
-        "padding_top": 66,
-        "padding_bottom": 0
-      }
-    },
-    "section_columns_xA4N7P": {
-      "type": "section-columns",
-      "blocks": {
-        "image_wQtiid": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Ornot_Womens_ParkJersey_ClementChroma_01.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "Park Jersey",
-            "heading_font_size": "heading-small",
-            "text": "<p>A performance-fit jersey made from ultra-soft recycled fabric with UPF 30 protection for fast days and long rides.</p><p><a href=\"/products/mens-park-jersey-clement-chroma\" title=\"Men's Park Jersey - Clement Chroma\">Shop Mens</a></p><p><a href=\"/products/womens-park-jersey-clement-chroma\" title=\"Women's Park Jersey - Clement Chroma\">Shop Womens</a></p>",
-            "text_font_size": "body-medium",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        },
-        "image_nayxm8": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_House_Jersey_Fog_01_085deb36-66fc-45ea-b04c-8d6e2d4bf37a.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "House Jersey",
-            "heading_font_size": "heading-small",
-            "text": "<p>A versatile, US-made jersey with all-day comfort and a unique dyed-and-sublimated pattern for any ride.</p><p><a href=\"/products/mens-house-jersey-fog\" title=\"Men's House Jersey - Fog\">Shop Mens</a></p><p><a href=\"/products/womens-house-jersey-fog-1\" title=\"Women's House Jersey - Fog\">Shop Womens</a></p>",
-            "text_font_size": "body-medium",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        },
-        "image_6pmdaE": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_Micro_Grid_Charcoal_09.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "Micro Grid",
-            "heading_font_size": "heading-small",
-            "text": "<p>A light jersey with a gridded structure designed to keep you cool in the heat and warm under a jacket. US Made!</p><p><a href=\"/products/mens-micro-grid-jersey-charcoal\" title=\"Men's Micro Grid Jersey - Charcoal\">Shop Mens</a></p><p></p>",
-            "text_font_size": "body-medium",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "image_wQtiid",
-        "image_nayxm8",
-        "image_6pmdaE"
-      ],
-      "name": "Text columns with images",
-      "settings": {
-        "title": "",
-        "heading_font_size": "heading-large",
-        "align_heading": "text-left",
-        "align_text": "text-left",
-        "width": "wrapper",
-        "align_columns": "flex-align-top",
-        "layout": "slider",
-        "grid": 3,
-        "layout_mobile": "slider",
-        "color_scheme": "",
-        "padding_top": 25,
-        "padding_bottom": 70,
         "heading_tag": "automatic"
       }
     },
@@ -1056,11 +1057,11 @@
   "order": [
     "main",
     "section_hero_Ay6Tni",
-    "section_rich_text_C4cNXF",
-    "section_columns_3UNeqa",
-    "section_hero_zxLCPV",
     "section_rich_text_DWwT6d",
     "section_columns_xA4N7P",
+    "section_hero_zxLCPV",
+    "section_rich_text_C4cNXF",
+    "section_columns_3UNeqa",
     "section_hero_NVWqea",
     "section_accordion_yHF3Qt",
     "section_hero_y4DmBk",

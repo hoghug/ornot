@@ -1169,7 +1169,7 @@
         "image_ztnLzG": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Mens-stone-blue-house-studio-5.jpg",
+            "image": "shopify://shop_images/mens-LS-house-fog-studio-4.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "MEN'S NEW",
@@ -1211,7 +1211,7 @@
         "image_TKUwAx": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/musettte_-lav_house_aj_1ac378f2-fbb7-4950-bef6-464a6f6af906.jpg",
+            "image": "shopify://shop_images/Ultra_grid_black_bar_bag_studio_6.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "Bags + Accessories",
@@ -1280,14 +1280,14 @@
         "subheading_HrWULn": {
           "type": "subheading",
           "settings": {
-            "subheading": "wind Vest",
+            "subheading": "Lightweight packable wind Vest",
             "padding_bottom": 16
           }
         },
         "heading_MDjFdt": {
           "type": "heading",
           "settings": {
-            "title": "Lightweight",
+            "title": "For the nerds",
             "heading_font_size": "heading-x-large",
             "padding_bottom": 0,
             "heading_tag": "automatic"
@@ -1296,7 +1296,7 @@
         "text_zaB36V": {
           "type": "text",
           "settings": {
-            "text": "<p>· Lightweight, packable wind protection<br/>· Recycled Oeko-Tex-approved fabric<br/>· Only 75 grams! (size Med)</p>",
+            "text": "<p>· Weighs less than 16 Nerd Clusters<br/>· Recycled Oeko-Tex-approved fabric<br/>· You could bring it everywhere, Ornot</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 16
           }
@@ -1305,7 +1305,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "Shop now",
-            "button_url": "shopify://products/mens-lightweight-vest-emily",
+            "button_url": "shopify://products/mens-lightweight-vest-interlace",
             "button_type": "btn--primary",
             "button_size": "btn--small",
             "button_style": "btn--solid",
@@ -1336,7 +1336,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "image_1": "shopify://shop_images/ben-emily-vest-lav-house.jpg",
+        "image_1": "shopify://shop_images/LWVestNerd_2.4.1.jpg",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "layout": "is-reversed",

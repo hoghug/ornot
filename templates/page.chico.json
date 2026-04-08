@@ -1,0 +1,1148 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section_hero_jidFMm": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_347FkQ": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Business As Usual. ORNOT",
+            "heading_font_size": "heading-x-large",
+            "heading_tag": "automatic",
+            "padding_bottom": 8
+          }
+        },
+        "text_GKEXzd": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><strong>MADE IN THE USA FROM  DEADSTOCK FABRIC  //'DED,STAK//</strong></p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 8
+          }
+        },
+        "button_7zPFTX": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "full_width": false,
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading_347FkQ",
+        "text_GKEXzd",
+        "button_7zPFTX"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_2": "shopify://shop_images/ls-jersey-sliver.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "four-fifty-height-hero",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 68,
+        "mobile_image": "shopify://shop_images/biz-as-usual_d6af2c35-3800-4ec0-a537-0fe994213c54.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_rich_text_tmUj9w": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_RR4emL": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "/ / / / / / / / / / / /",
+            "padding_bottom": 16
+          }
+        },
+        "heading_pBTzHX": {
+          "type": "heading",
+          "settings": {
+            "title": "The City Collection",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_cBDBzK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every product begins with the materials. We choose fabrics that meet our performance standards while avoiding harmful chemistry and unnecessary impact. When the right fabric doesn’t exist, we develop it.</p><p>Designing for durability, both in performance and in style, is one of the most sustainable choices we can make, and we consider cost per wear from the start. We prioritize bluesign®-approved fabrics, use PFAS-free DWR, and give unused materials a second life through our <a href=\"/pages/fabric-story-polartec\" title=\"Fabric Story: Polartec\">Special Projects</a> collection.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_9AFJXY": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_RR4emL",
+        "heading_pBTzHX",
+        "text_cBDBzK",
+        "buttons_9AFJXY"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "section_custom_content_AyDzny": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_EARKyB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Chico-415-house-jersey-THE-CITY-COLLECTION.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_Jikqa8": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "SAN FRANCISCO",
+            "heading_font_size": "heading-large",
+            "text": "<p>Since day one, our clothing has been inspired by San Francisco’s unique topography, ever-changing weather, and unique subcultures. The City Collection is a celebration of our hometown. Don't miss out.</p><p><strong>Arriving 4-15</strong></p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_EARKyB",
+        "text_Jikqa8"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_announcement_G3DD43": {
+      "type": "section-announcement",
+      "blocks": {
+        "text_pgmXii": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><strong>// SPECIAL PROJECTS //</strong></p>",
+            "text_font_size": "body-medium",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_VAGebK": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_font_size": "body-small",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_Ezcit3": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>// </strong>THE CITY COLLECTION<strong>  //</strong></p>",
+            "text_font_size": "body-medium",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_x6mpMH": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_font_size": "body-small",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "message_a6qTHC": {
+          "type": "message",
+          "name": "CUT & SEWN IN CALIFORNIA ",
+          "settings": {
+            "show_wheel": false,
+            "message": "ARRIVING 4-15",
+            "text_font_size": "body-small",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_rg7tUF": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_font_size": "body-small",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text_pgmXii",
+        "text_VAGebK",
+        "text_Ezcit3",
+        "text_x6mpMH",
+        "message_a6qTHC",
+        "text_rg7tUF"
+      ],
+      "name": "Scrolling text",
+      "settings": {
+        "slider_speed": 7,
+        "text_alignment": "center",
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "message_spacing": 10,
+        "show_border": false,
+        "layout": "marquee",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_pxc3kc": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_MTXQhY": {
+          "type": "text",
+          "settings": {
+            "subheading": "Thursday 4/16 - 6pm",
+            "title": "LAUNCH PARTY",
+            "heading_font_size": "heading-large",
+            "text": "<p>We’re throwing a party on <strong>Thursday, 4/16. </strong>We’ll have the entire City Collection in store including jerseys, t-shirts, skate decks, and more. RSVP below. All are welcome.</p>",
+            "text_font_size": "body-small",
+            "button_text": "RSVP",
+            "button_url": "https://partiful.com/e/n70D4lKiwznzBocE4PAa",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
+        "image_ejCFH6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Chico-415-house-jersey-studio-womens-2.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_MTXQhY",
+        "image_ejCFH6"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_dHMWfP": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_DPMVkf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/city-collection-hero.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_TjWJnQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/chico-415-knolling-web_cb48d0b3-a96c-48ce-af6c-c500feb7e849.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_DPMVkf",
+        "image_TjWJnQ"
+      ],
+      "disabled": true,
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_Y4Hh78": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_LrcwAR": {
+          "type": "text",
+          "settings": {
+            "subheading": "IN PARTNERSHIP",
+            "title": "ORNOT + POLARTEC",
+            "heading_font_size": "heading-large",
+            "text": "<p>Polartec and the outdoors go together like bikes and snacks—so teaming up was a no-brainer.</p><p>With a shared commitment to sustainability, we're turning recycled and deadstock fabrics into high-performance gear, offsetting emissions, and keeping plastic out of landfills.</p><p>Polartec has a history of firsts—Soda-Bottle Green fleece, softshell revolutions, and fabrics that shed fewer microfibers. Now? Waterproofing made partly from plants. Science!</p><p>As our partnership grows, so does our lineup of smarter, more responsible gear. Ride in it, geek out over it, or both.</p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
+        "image_dWqaUz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pie-ride.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_LrcwAR",
+        "image_dWqaUz"
+      ],
+      "disabled": true,
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_columns_FnTytU": {
+      "type": "section-columns",
+      "blocks": {
+        "image_AieWct": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mens-house-jersey-studio-lav-6.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Recycled UV Micro Mesh",
+            "heading_font_size": "heading-small",
+            "text": "<p>Recycled UV micro-mesh fabric designed for hot days on the bike. It's ultra lightweight, dries quickly, and provides UPF 30 sun protection. Produced using recycled fibers and Oeko-tex-approved materials.</p>",
+            "text_font_size": "body-small",
+            "button_text": "see products",
+            "button_url": "shopify://collections/fabric-story-recycled-uv-micro-mesh",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_rqH79r": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/womens-cargo-bib-slate-studio-1.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "All Day Compression Knit",
+            "heading_font_size": "heading-small",
+            "text": "<p>All Day Compression is a dense knit fabric developed to provide soft, supportive stretch that stays comfortable all day. The 195gsm construction wicks moisture, dries quickly, and maintains its shape ride after ride.</p>",
+            "text_font_size": "body-small",
+            "button_text": "see products",
+            "button_url": "shopify://collections/fabric-story-all-day-compression-knit",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_D9VjHc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_Micro_Climate_Vest_Obsidian_07.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Micro Climate",
+            "heading_font_size": "heading-small",
+            "text": "<p>Custom stretch-woven nylon with lofted insulation, to trap heat, while also allowing moisture to escape, but not enter. This fabric is water-resistant and quick drying without a membrane or a coating that can wash off.</p>",
+            "text_font_size": "body-small",
+            "button_text": "See products",
+            "button_url": "shopify://collections/fabric-story-micro-climate",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_BKXtyf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_LW_Mission_Pants_Olive_05_0f3db5f4-1fd8-4626-b937-ab55df6f9a61.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Recycled Stretch-Woven",
+            "heading_font_size": "heading-small",
+            "text": "<p>Our signature stretch-woven fabric is built for movement without the weight. It stretches, breathes, and handles whatever the day throws at you, on the bike or off. We wear it all the time, because your pants and shorts should keep up.</p>",
+            "text_font_size": "body-small",
+            "button_text": "Learn more",
+            "button_url": "shopify://collections/fabric-story-mission-pants-shorts-recycled-stretch-woven",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_cwtx4V": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_Micro_Grid_Zissou_09_da2d9f98-8c35-44f6-802a-7417773f15a1.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Micro Grid",
+            "heading_font_size": "heading-small",
+            "text": "<p>Micro Grid’s lightweight grid design moves air between your skin and the jersey, keeping you cool when things heat up. It’s our signature, award-winning jersey—because breathable should actually <em>mean</em> breathable.</p>",
+            "text_font_size": "body-small",
+            "button_text": "See products",
+            "button_url": "shopify://collections/fabric-story-micro-grid",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_LHcaHM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Alpha-Sweater-cream-mission-pants-studio-7.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "ALPHA",
+            "heading_font_size": "heading-small",
+            "text": "<p>Polartec Alpha is built for warmth without the weight. It regulates heat like a pro, adapting to changing conditions and stop-and-go efforts. We wear these all winter—because staying warm shouldn’t mean overheating.</p>",
+            "text_font_size": "body-small",
+            "button_text": "See Products",
+            "button_url": "shopify://collections/fabric-story-alpha",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_4nFPma": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/soft-_-cozy-merino-grid-interior_9bfd7200-96b7-4bdc-8280-902916822d34.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Merino Wool",
+            "heading_font_size": "heading-small",
+            "text": "<p>We blend Merino’s natural magic with high-tech synthetics to handle wild temp swings like a pro. We wear Merino on cold rides—because layering should be easy, Ornot.</p>",
+            "text_font_size": "body-small",
+            "button_text": "See Products",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_j9FUq7": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_MerinoRidingShirt_Emerald_01.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Nuyarn® Merino",
+            "heading_font_size": "heading-small",
+            "text": "<p>Nuyarn® Merino is lighter, stronger, and faster drying than traditionally spun Merino. The result is natural warmth and odor resistance with added durability and shape retention, so you can ride longer and wash it less.</p>",
+            "text_font_size": "body-small",
+            "button_text": "See Products",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_nVeNVc": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Lightweight_Base_Layer_DarkOlive_07.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Delta",
+            "heading_font_size": "heading-small",
+            "text": "<p>Polartec Delta works <em>with</em> your body’s natural cooling system—so you stay cool, dry, and ready to keep pedaling. We wear these year-round, but they really shine during <em>“</em>San Francisco summer.”</p>",
+            "text_font_size": "body-small",
+            "button_text": "See Products",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_zMwfQA": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_MagicShell_Jacket_Mars_09.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Power Shield Pro",
+            "heading_font_size": "heading-small",
+            "text": "<p>Power Shield’s ultra-breathable, waterproof membrane keeps the rain out <em>and </em> lets sweat escape—because nobody likes a personal sauna. Every time we wear these, we’re reminded that staying dry <em>and</em> comfortable is actually possible.</p>",
+            "text_font_size": "body-small",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_PkWQMt": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Watchman_Cap_08.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Thermal Pro",
+            "heading_font_size": "heading-small",
+            "text": "<p>Watchman cap</p>",
+            "text_font_size": "body-small",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_AieWct",
+        "image_rqH79r",
+        "image_D9VjHc",
+        "image_BKXtyf",
+        "image_cwtx4V",
+        "image_LHcaHM",
+        "image_4nFPma",
+        "image_j9FUq7",
+        "image_nVeNVc",
+        "image_zMwfQA",
+        "image_PkWQMt"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Our Fabrics:",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "width": "wrapper--full-padded",
+        "align_columns": "flex-align-top",
+        "layout": "slider",
+        "grid": 6,
+        "layout_mobile": "slider",
+        "color_scheme": "scheme-1",
+        "padding_top": 50,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_rich_text_6bpTR9": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_Pk78Uc": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "/ / / / / / / / / / / /",
+            "padding_bottom": 16
+          }
+        },
+        "heading_FCy8jj": {
+          "type": "heading",
+          "settings": {
+            "title": "US MANUFACTURING",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_GCcpKy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Great products are made all over the world, but we produce as much as possible here in the U.S., with nearly everything sewn in the Bay Area. Close proximity lets us work directly with our sewing partners, maintain quality, and operate responsibly, with clear communication and shared accountability at every step.</p><p>Domestic production reduces emissions, supports skilled jobs, and keeps value circulating in the local economy. It’s more complex and often more expensive than producing overseas, but for us, it’s the right choice.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_ptzHrw": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_Pk78Uc",
+        "heading_FCy8jj",
+        "text_GCcpKy",
+        "buttons_ptzHrw"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "section_slideshow_nested_QLfVga": {
+      "type": "section-slideshow-nested",
+      "blocks": {
+        "slide_image_gpxdWM": {
+          "type": "_slide-image",
+          "settings": {
+            "image": "shopify://shop_images/R0021131.jpg",
+            "link": "",
+            "flex_align_desktop": "align--middle-center-desktop",
+            "flex_align_mobile": "align--middle-center-mobile",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "overlay_type": "disabled"
+          },
+          "blocks": {
+            "heading_gHh9VC": {
+              "type": "heading",
+              "disabled": true,
+              "settings": {
+                "text": "South SF",
+                "heading_font_size": "heading-x-large",
+                "heading_tag": "automatic",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "text_nMrcYE": {
+              "type": "text",
+              "disabled": true,
+              "settings": {
+                "text": "Tell your brand's story through images.",
+                "text_font_size": "body-large",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "button_piG9KY": {
+              "type": "button",
+              "disabled": true,
+              "settings": {
+                "text": "View products",
+                "link": "",
+                "type": "btn--primary",
+                "size": "",
+                "style": "btn--solid",
+                "show_arrow": false,
+                "full_width": false,
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_gHh9VC",
+            "text_nMrcYE",
+            "button_piG9KY"
+          ]
+        },
+        "slide_image_prMhzk": {
+          "type": "_slide-image",
+          "name": "Image",
+          "settings": {
+            "image": "shopify://shop_images/R0021148_94901083-2db9-47d4-936a-fa0b64e81198.jpg",
+            "link": "",
+            "flex_align_desktop": "align--middle-center-desktop",
+            "flex_align_mobile": "align--middle-center-mobile",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "overlay_type": "disabled"
+          },
+          "blocks": {
+            "heading_dxcE6k": {
+              "type": "heading",
+              "disabled": true,
+              "settings": {
+                "text": "Image slide",
+                "heading_font_size": "heading-x-large",
+                "heading_tag": "automatic",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "text_FkNPkW": {
+              "type": "text",
+              "disabled": true,
+              "settings": {
+                "text": "Tell your brand's story through images.",
+                "text_font_size": "body-large",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "button_Cwb7eb": {
+              "type": "button",
+              "disabled": true,
+              "settings": {
+                "text": "View products",
+                "link": "",
+                "type": "btn--primary",
+                "size": "",
+                "style": "btn--solid",
+                "show_arrow": false,
+                "full_width": false,
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_dxcE6k",
+            "text_FkNPkW",
+            "button_Cwb7eb"
+          ]
+        },
+        "slide_image_DFB68t": {
+          "type": "_slide-image",
+          "settings": {
+            "image": "shopify://shop_images/R0021169.jpg",
+            "link": "",
+            "flex_align_desktop": "align--middle-center-desktop",
+            "flex_align_mobile": "align--middle-center-mobile",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "overlay_type": "disabled"
+          },
+          "blocks": {
+            "heading_9MRXEL": {
+              "type": "heading",
+              "disabled": true,
+              "settings": {
+                "text": "East Bay",
+                "heading_font_size": "heading-x-large",
+                "heading_tag": "automatic",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "text_qBXEhN": {
+              "type": "text",
+              "disabled": true,
+              "settings": {
+                "text": "Tell your brand's story through images.",
+                "text_font_size": "body-large",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "button_kGPMFx": {
+              "type": "button",
+              "disabled": true,
+              "settings": {
+                "text": "View products",
+                "link": "",
+                "type": "btn--primary",
+                "size": "",
+                "style": "btn--solid",
+                "show_arrow": false,
+                "full_width": false,
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_9MRXEL",
+            "text_qBXEhN",
+            "button_kGPMFx"
+          ]
+        }
+      },
+      "block_order": [
+        "slide_image_gpxdWM",
+        "slide_image_prMhzk",
+        "slide_image_DFB68t"
+      ],
+      "disabled": true,
+      "name": "Slideshow (Nested)",
+      "settings": {
+        "transition": "slide",
+        "show_arrows": true,
+        "autoplay": false,
+        "autoplay_speed": 8,
+        "width": "wrapper--full",
+        "height": "screen-height-two-thirds",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "color_scheme": "scheme-2",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_rich_text_PUEitQ": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_BJgLeK": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "/ / / / / / / / / / / /",
+            "padding_bottom": 16
+          }
+        },
+        "heading_XHVtdE": {
+          "type": "heading",
+          "settings": {
+            "title": "YOUR HOMETOWN BRAND",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_eqzDjb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We wouldn’t be here without our community. The riders who wear our gear, the friends and families who support us, and the people who ask hard questions and expect better. They inspire us, but they also hold us accountable.</p><p>Being a small brand means we feel that connection every day. We’re proud to be part of a community that cares about quality, about longevity, and about the health of the places we ride.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_RGFXxX": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_BJgLeK",
+        "heading_XHVtdE",
+        "text_eqzDjb",
+        "buttons_RGFXxX"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "section_video_iKVyYn": {
+      "type": "section-video",
+      "disabled": true,
+      "name": "Video",
+      "settings": {
+        "video": "shopify://files/videos/MCJacketHomepage.mov",
+        "show_video_popup": false,
+        "video_popup_social": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "title": "",
+        "heading_font_size": "heading-large",
+        "text": "",
+        "text_font_size": "body-medium",
+        "flex_align": "align--middle-center",
+        "link_text": "",
+        "link": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "desktop_height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "width": "wrapper--full",
+        "color_scheme": "",
+        "show_text_background": false,
+        "color": "",
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_collection_ABegUK": {
+      "type": "section-collection",
+      "disabled": true,
+      "settings": {
+        "featured_collection": "special-projects",
+        "heading": "special projects collection",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "Shop collection",
+        "link_url": "",
+        "button_type": "btn--black",
+        "button_size": "",
+        "button_style": "btn--text",
+        "show_arrow": true,
+        "layout_desktop": "grid",
+        "grid": 4,
+        "rows": 2,
+        "width": "wrapper",
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 30,
+        "heading_tag": "automatic"
+      }
+    }
+  },
+  "order": [
+    "section_hero_jidFMm",
+    "main",
+    "section_rich_text_tmUj9w",
+    "section_custom_content_AyDzny",
+    "section_announcement_G3DD43",
+    "section_custom_content_pxc3kc",
+    "section_custom_content_dHMWfP",
+    "section_custom_content_Y4Hh78",
+    "section_columns_FnTytU",
+    "section_rich_text_6bpTR9",
+    "section_slideshow_nested_QLfVga",
+    "section_rich_text_PUEitQ",
+    "section_video_iKVyYn",
+    "section_collection_ABegUK"
+  ]
+}
