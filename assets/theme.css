@@ -14567,10 +14567,10 @@ model-viewer,
 
 /*================ Add to cart ================*/
 .product__submit .btn span.btn__text, .product__submit .shopify-payment-button .shopify-payment-button__button--unbranded span.btn__text, .shopify-payment-button .product__submit .shopify-payment-button__button--unbranded span.btn__text, .product__submit #challenge .shopify-challenge__button span.btn__text, #challenge .product__submit .shopify-challenge__button span.btn__text {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 .product__submit .btn__price::before {
   content: "•";
