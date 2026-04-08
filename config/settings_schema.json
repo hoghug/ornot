@@ -542,7 +542,7 @@
         "step": 1,
         "unit": "px",
         "label": "Medium",
-        "default": 17
+        "default": 16
       },
       {
         "type": "range",
@@ -552,7 +552,7 @@
         "step": 1,
         "unit": "px",
         "label": "Large",
-        "default": 21
+        "default": 22
       }
     ]
   },
