@@ -825,7 +825,11 @@
             </div>
           </div>
 
-          
+          {%- unless has_siblings -%}
+            {%- if card_tagline -%}
+              <div class="product-item__tagline">{{ card_tagline }}</div>
+            {%- endif -%}
+          {%- endunless -%}
         </a>
 
         {%- if siblings_html != blank -%}

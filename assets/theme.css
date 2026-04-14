@@ -12322,6 +12322,10 @@ color: var(--COLOR-CARD-LABEL-TEXT);
   color: var(--text-light);
   transition: opacity 0.3s ease, visibility 0.3s;
 }
+.product-item__tagline {
+  font-size: var(--font-body-x-small);
+  color: var(--text-light);
+}
 .product-item__swatches__holder--slider .product-item__swatches__count, .product-item__swatches__holder--text-slider .product-item__swatches__count {
   cursor: pointer;
 }
