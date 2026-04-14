@@ -107,13 +107,74 @@
         "heading_8nwBDT": {
           "type": "heading",
           "settings": {
+            "title": "Part-Time Showroom Coordinator",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_HbJFyV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Come geek out on cycling kit with strangers all day, ornot.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_zxMdtB": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "shopify://pages/part-time-showroom",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_8BKPAw",
+        "heading_8nwBDT",
+        "text_HbJFyV",
+        "buttons_zxMdtB"
+      ],
+      "settings": {
+        "image_1": "shopify://shop_images/AfterCakeOrnot_Jan28-27.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "layout": "is-reversed",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "screen-height-one-half--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_double_8zRE9F": {
+      "type": "section-double",
+      "blocks": {
+        "subheading_Bwcgec": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "",
+            "padding_bottom": 16
+          }
+        },
+        "heading_xBBQVt": {
+          "type": "heading",
+          "settings": {
             "title": "Digital brand designer",
             "heading_font_size": "heading-medium",
             "padding_bottom": 16,
             "heading_tag": "automatic"
           }
         },
-        "text_jYUQPk": {
+        "text_pTfkHm": {
           "type": "text",
           "settings": {
             "text": "<p>Come make the logos bigger, ornot.</p>",
@@ -121,7 +182,7 @@
             "padding_bottom": 16
           }
         },
-        "buttons_zxMdtB": {
+        "buttons_enKnEN": {
           "type": "buttons",
           "settings": {
             "button_text": "Learn more",
@@ -135,10 +196,10 @@
         }
       },
       "block_order": [
-        "subheading_8BKPAw",
-        "heading_8nwBDT",
-        "text_jYUQPk",
-        "buttons_zxMdtB"
+        "subheading_Bwcgec",
+        "heading_xBBQVt",
+        "text_pTfkHm",
+        "buttons_enKnEN"
       ],
       "settings": {
         "image_1": "shopify://shop_images/TNUT7099.jpg",
@@ -397,6 +458,7 @@
     "section_hero_MmediH",
     "section_rich_text_h83y7h",
     "section_double_r3LyT8",
+    "section_double_8zRE9F",
     "section_double_L9jbwQ",
     "section_double_VkYNGp",
     "section_custom_content_V7JYH6",

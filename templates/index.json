@@ -9,6 +9,55 @@
  */
 {
   "sections": {
+    "section_hero_video_HFdghp": {
+      "type": "section-hero-video",
+      "blocks": {
+        "button_MyqYfE": {
+          "type": "button",
+          "settings": {
+            "link_text": "SHOP US-Made House Jerseys",
+            "link": "shopify://collections/house-jersey-in-stock",
+            "button_type": "btn--white",
+            "button_size": "btn--small",
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "full_width": false,
+            "padding_bottom": 50
+          }
+        },
+        "text_rVdLHn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Tell your brand's story through images.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "button_MyqYfE",
+        "text_rVdLHn"
+      ],
+      "name": "Banner with video",
+      "settings": {
+        "image_1": "shopify://shop_images/HOSUE-sliver.jpg",
+        "link": "shopify://collections/house-jersey-in-stock",
+        "video": "shopify://files/videos/Ornot March 2026 .mp4",
+        "video_width": 35,
+        "aspect_ratio": 1.5,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 72,
+        "mobile_image": "shopify://shop_images/white-background.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--top-center-mobile",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
     "section_video_4HFyWn": {
       "type": "section-video",
       "disabled": true,
@@ -640,6 +689,117 @@
         "color_scheme": ""
       }
     },
+    "section_columns_iY3tBX": {
+      "type": "section-columns",
+      "blocks": {
+        "image_ztnLzG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LW-vest-blue-stripe-3.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "MEN'S",
+            "heading_font_size": "heading-x-small",
+            "text": "",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_url": "shopify://collections/mens",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_P8hXWH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Womens_MC_Jacket_Citron_Studio_3.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Women's",
+            "heading_font_size": "heading-x-small",
+            "text": "",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_url": "shopify://collections/everything-womens-ornot",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_TKUwAx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ultra_grid_black_bar_bag_studio_6.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Bags + Accessories",
+            "heading_font_size": "heading-x-small",
+            "text": "",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_url": "https://www.ornotbike.com/pages/handlebar-bags",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_9HPzet": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/teal-micro-grid-sweater-studio-4.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Wear it on your bike, ornot",
+            "heading_font_size": "heading-x-small",
+            "text": "",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_url": "https://www.ornotbike.com/pages/wearitonyourbikeornot",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_ztnLzG",
+        "image_P8hXWH",
+        "image_TKUwAx",
+        "image_9HPzet"
+      ],
+      "name": "Text columns with images",
+      "settings": {
+        "title": "",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "width": "wrapper--full-padded",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 4,
+        "layout_mobile": "2",
+        "color_scheme": "",
+        "padding_top": 30,
+        "padding_bottom": 20,
+        "heading_tag": "automatic"
+      }
+    },
     "section_collections_list_exW4Ud": {
       "type": "section-collections-list",
       "blocks": {
@@ -675,13 +835,13 @@
           "type": "collection_overlay",
           "settings": {
             "collection": "womens-droptail-cargo-bib-short",
-            "collection_image": "shopify://shop_images/womens-midnight-blue-cargo-bibs.jpg",
+            "collection_image": "shopify://shop_images/womens-cargo-bib-slate-studio-7.jpg",
             "title": "Womens cargo bibs",
             "heading_font_size": "heading-x-small",
             "text_alignment": "align--bottom-center",
             "show_text_background": false,
             "bg_color": "#00b5e2",
-            "color": "#000000",
+            "color": "#ffffff",
             "overlay_type": "text"
           }
         }
@@ -711,6 +871,612 @@
         "color_scheme": "scheme-1",
         "padding_top": 15,
         "padding_bottom": 15,
+        "heading_tag": "automatic"
+      }
+    },
+    "featured_posts_aWeRDj": {
+      "type": "featured-posts",
+      "blocks": {
+        "featured_post_jwb4tY": {
+          "type": "featured_post",
+          "settings": {
+            "featured_post": "news/sponsored-ornot-miguel-ovalles",
+            "subheading": "Featured post"
+          }
+        }
+      },
+      "block_order": [
+        "featured_post_jwb4tY"
+      ],
+      "disabled": true,
+      "name": "Featured blog posts",
+      "settings": {
+        "show_author": false,
+        "show_date": false,
+        "heading_font_size": "heading-large",
+        "show_button": true,
+        "button_text": "Read more",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--text",
+        "show_arrow": false,
+        "width": "wrapper--full",
+        "height": "five-fifty-height-hero",
+        "mobile_height": "screen-height-one-half--mobile",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_double_fwaVy9": {
+      "type": "section-double",
+      "blocks": {
+        "subheading_HrWULn": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Lightweight packable wind Vest",
+            "padding_bottom": 16
+          }
+        },
+        "heading_MDjFdt": {
+          "type": "heading",
+          "settings": {
+            "title": "For the nerds",
+            "heading_font_size": "heading-x-large",
+            "padding_bottom": 0,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_zaB36V": {
+          "type": "text",
+          "settings": {
+            "text": "<p>· Weighs less than 16 Nerd Clusters<br/>· Recycled Oeko-Tex-approved fabric<br/>· You could bring it everywhere, Ornot</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_pJMiHM": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Shop now",
+            "button_url": "shopify://products/mens-lightweight-vest-interlace",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        },
+        "buttons_XFUrxR": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_text": "womens sale",
+            "button_url": "shopify://collections/womens-sale-2",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_HrWULn",
+        "heading_MDjFdt",
+        "text_zaB36V",
+        "buttons_pJMiHM",
+        "buttons_XFUrxR"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image_1": "shopify://shop_images/LWVestNerd_2.4.1.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "layout": "is-reversed",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "scheme-4",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_hero_video_atUTUm": {
+      "type": "section-hero-video",
+      "blocks": {
+        "heading_nWdkKd": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Micro Grid jersey",
+            "heading_font_size": "heading-x-large",
+            "heading_tag": "automatic",
+            "padding_bottom": 10
+          }
+        },
+        "group_buttons_eCa3Ak": {
+          "type": "group-buttons",
+          "settings": {
+            "button_text": "mens",
+            "button_url": "shopify://products/mens-micro-grid-jersey-glacier-freeze",
+            "button_type": "btn--black",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "button_secondary_text": "womens",
+            "button_secondary_url": "shopify://products/womens-micro-grid-jersey-glacier-freeze-copy",
+            "button_secondary_type": "btn--black",
+            "button_secondary_size": "btn--small",
+            "button_secondary_style": "btn--text",
+            "show_secondary_arrow": false,
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading_nWdkKd",
+        "group_buttons_eCa3Ak"
+      ],
+      "disabled": true,
+      "name": "Banner with video",
+      "settings": {
+        "image_1": "shopify://shop_images/mc-jackets-green-hills-land-scape.jpg",
+        "link": "",
+        "video": "shopify://files/videos/MGJerseyFinalFinalsat.mov",
+        "video_width": 25,
+        "aspect_ratio": 1,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 100,
+        "mobile_image": "shopify://shop_images/mc-jackets-green-hills-land-scape.jpg",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 26,
+        "show_placeholder": true
+      }
+    },
+    "section_double_E7jpGH": {
+      "type": "section-double",
+      "blocks": {
+        "subheading_RUAGGB": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "shoe covers",
+            "padding_bottom": 16
+          }
+        },
+        "heading_LhYLqT": {
+          "type": "heading",
+          "settings": {
+            "title": "Alpha Everywhere",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_8iNRgY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Polartec® Alpha™ insulation to keep you warm & dry<br/>Wind and water-resistant exterior fabric</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_MrPU3p": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Shop shoe covers",
+            "button_url": "shopify://products/alpha-shoe-cover-black",
+            "button_type": "btn--black",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_RUAGGB",
+        "heading_LhYLqT",
+        "text_8iNRgY",
+        "buttons_MrPU3p"
+      ],
+      "disabled": true,
+      "name": "Image with text",
+      "settings": {
+        "image_1": "shopify://shop_images/Layer4_c386dbe7-4f62-4ac3-95f5-df3ee4c5b20f.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "layout": "is-reversed",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "scheme-4",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_hero_UqUjym": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_Q8gtVq": {
+          "type": "heading",
+          "settings": {
+            "title": "",
+            "heading_font_size": "heading-small",
+            "heading_tag": "automatic",
+            "padding_bottom": 8
+          }
+        },
+        "text_LwAfam": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Tell your brand's story through images.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 8
+          }
+        },
+        "button_Wd7B8g": {
+          "type": "button",
+          "settings": {
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "full_width": false,
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading_Q8gtVq",
+        "text_LwAfam",
+        "button_Wd7B8g"
+      ],
+      "disabled": true,
+      "name": "Image banner",
+      "settings": {
+        "image_1": "shopify://shop_images/mc-jacket-sliver_27f73eb2-7e55-46b3-b6e8-538c3a053a60.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/mc-jacket-sliver_27f73eb2-7e55-46b3-b6e8-538c3a053a60.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_columns_BpMLB3": {
+      "type": "section-columns",
+      "blocks": {
+        "image_W4nLPQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_MissionPant_Navy_6.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Mission Pant",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Made in the USA - <a href=\"/products/mens-lightweight-mission-pants-fog\" target=\"_blank\" title=\"Men's Lightweight Mission Pants - Fog\">Lightweight</a> & <a href=\"/products/mission-pants-coffee\" target=\"_blank\" title=\"Men's Mission Pants - Coffee\">Regular Weight </a></p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_url": "shopify://products/mens-mission-pants-midnight-blue",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_andfBj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_LW_Mission_Shorts_Olive_06.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Mission Short",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Also Made in the USA - Available in <a href=\"/products/lightweight-mission-short-obsidian\" target=\"_blank\" title=\"Men's Lightweight Mission Short - Obsidian\">Lightweight</a> & <a href=\"/products/mission-short-slate\" target=\"_blank\" title=\"Men's Mission Short - Slate\">Regular</a></p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_url": "shopify://products/mission-short-obsidian",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_EQh7xH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_MerinoGridPullover_Charcoal_01.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "GRAVEL SWEATER",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>This one is Made in USA, too. Available in <a href=\"/products/mens-merino-gravel-sweater-charcoal\" target=\"_blank\" title=\"Men's Merino Gravel Sweater - Charcoal\">Mens</a> & <a href=\"/products/womens-merino-gravel-sweater-charcoal\" target=\"_blank\" title=\"Women's Merino Gravel Sweater - Charcoal\">Womens </a></p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_url": "shopify://products/mens-merino-gravel-sweater-charcoal",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_W4nLPQ",
+        "image_andfBj",
+        "image_EQh7xH"
+      ],
+      "disabled": true,
+      "name": "Text columns with images",
+      "settings": {
+        "title": "",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "width": "wrapper--full-padded",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_collections_list_dWJRH6": {
+      "type": "section-collections-list",
+      "blocks": {
+        "collection_LWzCP7": {
+          "type": "collection",
+          "settings": {
+            "collection": "mission-pants",
+            "collection_image": "shopify://shop_images/Side_view_of_Ornot_Men_s_Cargo_Bib_Shorts_in_black.jpg",
+            "title": "Cargo Bib"
+          }
+        },
+        "collection_TjFnqj": {
+          "type": "collection",
+          "settings": {
+            "collection": "mission-shorts",
+            "collection_image": "shopify://shop_images/Ornot_Womens_MicroClimateJacket_Azul_06.jpg",
+            "title": "Micro Climate Jacket"
+          }
+        },
+        "collection_wFd9Rz": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens_shirts_and_pullovers",
+            "collection_image": "shopify://shop_images/Ornot_Womens_ParkJersey_ClementChroma_10.jpg",
+            "title": "Jerseys"
+          }
+        },
+        "collection_c6Un4P": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "mens-riding-shirts",
+            "collection_image": "shopify://shop_images/Ornot_Mens_UVHooded_StoneBlue_08.jpg",
+            "title": "Riding Shirts"
+          }
+        }
+      },
+      "block_order": [
+        "collection_LWzCP7",
+        "collection_TjFnqj",
+        "collection_wFd9Rz",
+        "collection_c6Un4P"
+      ],
+      "disabled": true,
+      "name": "Collection list",
+      "settings": {
+        "title": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "button_text": "",
+        "button_url": "shopify://collections",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "aspect_ratio": 1,
+        "width": "wrapper--full",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "2",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 32,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_divider_gmGEWJ": {
+      "type": "section-divider",
+      "name": "Divider",
+      "settings": {
+        "show_line": true,
+        "width": "wrapper--full-padded",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 21
+      }
+    },
+    "section_hero_ChdyzN": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_HqAjCB": {
+          "type": "heading",
+          "settings": {
+            "title": "Made in usa",
+            "heading_font_size": "heading-large",
+            "heading_tag": "automatic",
+            "padding_bottom": 8
+          }
+        },
+        "text_kiwnLf": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Mission Pants </p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 8
+          }
+        },
+        "button_fpPCyz": {
+          "type": "button",
+          "settings": {
+            "link_text": "SHop Mission Pants",
+            "link": "shopify://products/mens-mission-pants-midnight-blue",
+            "button_type": "btn--white",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "full_width": false,
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading_HqAjCB",
+        "text_kiwnLf",
+        "button_fpPCyz"
+      ],
+      "name": "Image banner",
+      "settings": {
+        "image_1": "shopify://shop_images/Ornot_MissionPants_Navy_Hero-1.jpg",
+        "link": "https://www.ornotbike.com/pages/mission-pants",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/Ornot_MissionPants_Navy_Squares-3.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_columns_k3bppz": {
+      "type": "section-columns",
+      "blocks": {
+        "image_NgkYxh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cram-alpha-pullover.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Deadstock + Recycled Materials",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>We source deadstock fabrics whenever possible. Check out our responsibly-made products <a href=\"/pages/fabric-story-polartec\" target=\"_blank\" title=\"Fabric Story: Polartec\">here.</a></p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_url": "shopify://products/alpha-sweater-oat",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_UqUEzT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/celeste-socks-flatlay.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Made in USA",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Yep, we make clothing in the USA - Check out our <a href=\"/collections/mens-made-in-usa\" target=\"_blank\" title=\"Men's Made in USA\">Men's</a> & <a href=\"/collections/womens-made-in-usa\" target=\"_blank\" title=\"Women's Made in USA\">Women's</a> American-made products.</p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_url": "shopify://products/max-sock-celeste",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_Fg7hdb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_SeatBag_Avocado_UltraGrid_01.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "BAGS for your bike",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>For carrying stuff.<br/>See our bags <a href=\"https://www.ornotbike.com/pages/handlebar-bags\" target=\"_blank\" title=\"https://www.ornotbike.com/pages/handlebar-bags\">here.</a></p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_url": "shopify://products/seat-bag-ultragrid-avacado",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_NgkYxh",
+        "image_UqUEzT",
+        "image_Fg7hdb"
+      ],
+      "name": "Text columns with images",
+      "settings": {
+        "title": "",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "1",
+        "color_scheme": "",
+        "padding_top": 30,
+        "padding_bottom": 20,
         "heading_tag": "automatic"
       }
     },
@@ -1128,822 +1894,10 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "featured_posts_aWeRDj": {
-      "type": "featured-posts",
-      "blocks": {
-        "featured_post_jwb4tY": {
-          "type": "featured_post",
-          "settings": {
-            "featured_post": "news/sponsored-ornot-miguel-ovalles",
-            "subheading": "Featured post"
-          }
-        }
-      },
-      "block_order": [
-        "featured_post_jwb4tY"
-      ],
-      "disabled": true,
-      "name": "Featured blog posts",
-      "settings": {
-        "show_author": false,
-        "show_date": false,
-        "heading_font_size": "heading-large",
-        "show_button": true,
-        "button_text": "Read more",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--text",
-        "show_arrow": false,
-        "width": "wrapper--full",
-        "height": "five-fifty-height-hero",
-        "mobile_height": "screen-height-one-half--mobile",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_columns_iY3tBX": {
-      "type": "section-columns",
-      "blocks": {
-        "image_ztnLzG": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/mens-LS-house-fog-studio-4.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "MEN'S NEW",
-            "heading_font_size": "heading-x-small",
-            "text": "",
-            "text_font_size": "body-small",
-            "button_text": "",
-            "button_url": "shopify://collections/mens",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        },
-        "image_P8hXWH": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/aj-fits-midnight-blue-bibcs-citron-mc-jacket_482c70af-a11a-4287-9242-58a3b1c508f9.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "Women's new",
-            "heading_font_size": "heading-x-small",
-            "text": "",
-            "text_font_size": "body-small",
-            "button_text": "",
-            "button_url": "shopify://collections/everything-womens-ornot",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        },
-        "image_TKUwAx": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Ultra_grid_black_bar_bag_studio_6.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "Bags + Accessories",
-            "heading_font_size": "heading-x-small",
-            "text": "",
-            "text_font_size": "body-small",
-            "button_text": "",
-            "button_url": "https://www.ornotbike.com/pages/handlebar-bags",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        },
-        "image_9HPzet": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/teal-micro-grid-sweater-studio-4.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "Wear it on your bike, ornot",
-            "heading_font_size": "heading-x-small",
-            "text": "",
-            "text_font_size": "body-small",
-            "button_text": "",
-            "button_url": "https://www.ornotbike.com/pages/wearitonyourbikeornot",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "image_ztnLzG",
-        "image_P8hXWH",
-        "image_TKUwAx",
-        "image_9HPzet"
-      ],
-      "name": "Text columns with images",
-      "settings": {
-        "title": "",
-        "heading_font_size": "heading-medium",
-        "align_heading": "text-left",
-        "align_text": "text-left",
-        "width": "wrapper--full-padded",
-        "align_columns": "flex-align-top",
-        "layout": "grid",
-        "grid": 4,
-        "layout_mobile": "2",
-        "color_scheme": "",
-        "padding_top": 30,
-        "padding_bottom": 20,
-        "heading_tag": "automatic"
-      }
-    },
-    "section_double_fwaVy9": {
-      "type": "section-double",
-      "blocks": {
-        "subheading_HrWULn": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Lightweight packable wind Vest",
-            "padding_bottom": 16
-          }
-        },
-        "heading_MDjFdt": {
-          "type": "heading",
-          "settings": {
-            "title": "For the nerds",
-            "heading_font_size": "heading-x-large",
-            "padding_bottom": 0,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_zaB36V": {
-          "type": "text",
-          "settings": {
-            "text": "<p>· Weighs less than 16 Nerd Clusters<br/>· Recycled Oeko-Tex-approved fabric<br/>· You could bring it everywhere, Ornot</p>",
-            "text_font_size": "body-medium",
-            "padding_bottom": 16
-          }
-        },
-        "buttons_pJMiHM": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Shop now",
-            "button_url": "shopify://products/mens-lightweight-vest-interlace",
-            "button_type": "btn--primary",
-            "button_size": "btn--small",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        },
-        "buttons_XFUrxR": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_text": "womens sale",
-            "button_url": "shopify://collections/womens-sale-2",
-            "button_type": "btn--primary",
-            "button_size": "btn--small",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "subheading_HrWULn",
-        "heading_MDjFdt",
-        "text_zaB36V",
-        "buttons_pJMiHM",
-        "buttons_XFUrxR"
-      ],
-      "name": "Image with text",
-      "settings": {
-        "image_1": "shopify://shop_images/LWVestNerd_2.4.1.jpg",
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "layout": "is-reversed",
-        "width": "wrapper--full",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "reverse_blocks": false,
-        "color_scheme": "scheme-4",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "show_placeholder": true
-      }
-    },
-    "section_hero_video_atUTUm": {
-      "type": "section-hero-video",
-      "blocks": {
-        "heading_nWdkKd": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "title": "Micro Grid jersey",
-            "heading_font_size": "heading-x-large",
-            "heading_tag": "automatic",
-            "padding_bottom": 10
-          }
-        },
-        "group_buttons_eCa3Ak": {
-          "type": "group-buttons",
-          "settings": {
-            "button_text": "mens",
-            "button_url": "shopify://products/mens-micro-grid-jersey-glacier-freeze",
-            "button_type": "btn--black",
-            "button_size": "btn--small",
-            "button_style": "btn--text",
-            "show_arrow": false,
-            "button_secondary_text": "womens",
-            "button_secondary_url": "shopify://products/womens-micro-grid-jersey-glacier-freeze-copy",
-            "button_secondary_type": "btn--black",
-            "button_secondary_size": "btn--small",
-            "button_secondary_style": "btn--text",
-            "show_secondary_arrow": false,
-            "padding_bottom": 0
-          }
-        }
-      },
-      "block_order": [
-        "heading_nWdkKd",
-        "group_buttons_eCa3Ak"
-      ],
-      "disabled": true,
-      "name": "Banner with video",
-      "settings": {
-        "image_1": "shopify://shop_images/mc-jackets-green-hills-land-scape.jpg",
-        "link": "",
-        "video": "shopify://files/videos/MGJerseyFinalFinalsat.mov",
-        "video_width": 25,
-        "aspect_ratio": 1,
-        "width": "wrapper--full",
-        "height": "image-height",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "content_width": 100,
-        "mobile_image": "shopify://shop_images/mc-jackets-green-hills-land-scape.jpg",
-        "mobile_height": "screen-height-three-quarters--mobile",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 26,
-        "show_placeholder": true
-      }
-    },
-    "section_double_E7jpGH": {
-      "type": "section-double",
-      "blocks": {
-        "subheading_RUAGGB": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "shoe covers",
-            "padding_bottom": 16
-          }
-        },
-        "heading_LhYLqT": {
-          "type": "heading",
-          "settings": {
-            "title": "Alpha Everywhere",
-            "heading_font_size": "heading-large",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_8iNRgY": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Polartec® Alpha™ insulation to keep you warm & dry<br/>Wind and water-resistant exterior fabric</p>",
-            "text_font_size": "body-medium",
-            "padding_bottom": 16
-          }
-        },
-        "buttons_MrPU3p": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Shop shoe covers",
-            "button_url": "shopify://products/alpha-shoe-cover-black",
-            "button_type": "btn--black",
-            "button_size": "btn--small",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "subheading_RUAGGB",
-        "heading_LhYLqT",
-        "text_8iNRgY",
-        "buttons_MrPU3p"
-      ],
-      "disabled": true,
-      "name": "Image with text",
-      "settings": {
-        "image_1": "shopify://shop_images/Layer4_c386dbe7-4f62-4ac3-95f5-df3ee4c5b20f.jpg",
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "layout": "is-reversed",
-        "width": "wrapper--full",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "reverse_blocks": false,
-        "color_scheme": "scheme-4",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "show_placeholder": true
-      }
-    },
-    "section_hero_UqUjym": {
-      "type": "section-hero",
-      "blocks": {
-        "heading_Q8gtVq": {
-          "type": "heading",
-          "settings": {
-            "title": "",
-            "heading_font_size": "heading-small",
-            "heading_tag": "automatic",
-            "padding_bottom": 8
-          }
-        },
-        "text_LwAfam": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Tell your brand's story through images.</p>",
-            "text_font_size": "body-large",
-            "padding_bottom": 8
-          }
-        },
-        "button_Wd7B8g": {
-          "type": "button",
-          "settings": {
-            "link_text": "",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "full_width": false,
-            "padding_bottom": 8
-          }
-        }
-      },
-      "block_order": [
-        "heading_Q8gtVq",
-        "text_LwAfam",
-        "button_Wd7B8g"
-      ],
-      "disabled": true,
-      "name": "Image banner",
-      "settings": {
-        "image_1": "shopify://shop_images/mc-jacket-sliver_27f73eb2-7e55-46b3-b6e8-538c3a053a60.jpg",
-        "link": "",
-        "width": "wrapper--full",
-        "height": "image-height",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "content_width": 50,
-        "mobile_image": "shopify://shop_images/mc-jacket-sliver_27f73eb2-7e55-46b3-b6e8-538c3a053a60.jpg",
-        "mobile_height": "image-height--mobile",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "color_scheme": "scheme-2",
-        "show_text_background": false,
-        "overlay_type": "disabled",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "show_placeholder": true
-      }
-    },
-    "section_columns_BpMLB3": {
-      "type": "section-columns",
-      "blocks": {
-        "image_W4nLPQ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_MissionPant_Navy_6.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "Mission Pant",
-            "heading_font_size": "heading-x-small",
-            "text": "<p>Made in the USA - <a href=\"/products/mens-lightweight-mission-pants-fog\" target=\"_blank\" title=\"Men's Lightweight Mission Pants - Fog\">Lightweight</a> & <a href=\"/products/mission-pants-coffee\" target=\"_blank\" title=\"Men's Mission Pants - Coffee\">Regular Weight </a></p>",
-            "text_font_size": "body-small",
-            "button_text": "",
-            "button_url": "shopify://products/mens-mission-pants-midnight-blue",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        },
-        "image_andfBj": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Ornot_LW_Mission_Shorts_Olive_06.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "Mission Short",
-            "heading_font_size": "heading-x-small",
-            "text": "<p>Also Made in the USA - Available in <a href=\"/products/lightweight-mission-short-obsidian\" target=\"_blank\" title=\"Men's Lightweight Mission Short - Obsidian\">Lightweight</a> & <a href=\"/products/mission-short-slate\" target=\"_blank\" title=\"Men's Mission Short - Slate\">Regular</a></p>",
-            "text_font_size": "body-small",
-            "button_text": "",
-            "button_url": "shopify://products/mission-short-obsidian",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        },
-        "image_EQh7xH": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_MerinoGridPullover_Charcoal_01.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "GRAVEL SWEATER",
-            "heading_font_size": "heading-x-small",
-            "text": "<p>This one is Made in USA, too. Available in <a href=\"/products/mens-merino-gravel-sweater-charcoal\" target=\"_blank\" title=\"Men's Merino Gravel Sweater - Charcoal\">Mens</a> & <a href=\"/products/womens-merino-gravel-sweater-charcoal\" target=\"_blank\" title=\"Women's Merino Gravel Sweater - Charcoal\">Womens </a></p>",
-            "text_font_size": "body-small",
-            "button_text": "",
-            "button_url": "shopify://products/mens-merino-gravel-sweater-charcoal",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "image_W4nLPQ",
-        "image_andfBj",
-        "image_EQh7xH"
-      ],
-      "disabled": true,
-      "name": "Text columns with images",
-      "settings": {
-        "title": "",
-        "heading_font_size": "heading-medium",
-        "align_heading": "text-left",
-        "align_text": "text-left",
-        "width": "wrapper--full-padded",
-        "align_columns": "flex-align-top",
-        "layout": "grid",
-        "grid": 3,
-        "layout_mobile": "slider",
-        "color_scheme": "",
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "heading_tag": "automatic"
-      }
-    },
-    "section_collections_list_dWJRH6": {
-      "type": "section-collections-list",
-      "blocks": {
-        "collection_LWzCP7": {
-          "type": "collection",
-          "settings": {
-            "collection": "mission-pants",
-            "collection_image": "shopify://shop_images/Side_view_of_Ornot_Men_s_Cargo_Bib_Shorts_in_black.jpg",
-            "title": "Cargo Bib"
-          }
-        },
-        "collection_TjFnqj": {
-          "type": "collection",
-          "settings": {
-            "collection": "mission-shorts",
-            "collection_image": "shopify://shop_images/Ornot_Womens_MicroClimateJacket_Azul_06.jpg",
-            "title": "Micro Climate Jacket"
-          }
-        },
-        "collection_wFd9Rz": {
-          "type": "collection",
-          "settings": {
-            "collection": "mens_shirts_and_pullovers",
-            "collection_image": "shopify://shop_images/Ornot_Womens_ParkJersey_ClementChroma_10.jpg",
-            "title": "Jerseys"
-          }
-        },
-        "collection_c6Un4P": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "collection": "mens-riding-shirts",
-            "collection_image": "shopify://shop_images/Ornot_Mens_UVHooded_StoneBlue_08.jpg",
-            "title": "Riding Shirts"
-          }
-        }
-      },
-      "block_order": [
-        "collection_LWzCP7",
-        "collection_TjFnqj",
-        "collection_wFd9Rz",
-        "collection_c6Un4P"
-      ],
-      "disabled": true,
-      "name": "Collection list",
-      "settings": {
-        "title": "",
-        "heading_font_size": "heading-medium",
-        "description": "",
-        "text_font_size": "body-medium",
-        "button_text": "",
-        "button_url": "shopify://collections",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "aspect_ratio": 1,
-        "width": "wrapper--full",
-        "layout": "grid",
-        "grid": 3,
-        "layout_mobile": "2",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 32,
-        "heading_tag": "automatic"
-      }
-    },
-    "section_reviews_TAeAjf": {
-      "type": "section-reviews",
-      "blocks": {
-        "review_TQk8it": {
-          "type": "review",
-          "settings": {
-            "title": "Michael P.",
-            "subheading": "\"light & packable, & cuts all the wind!\"",
-            "review_content": "<h4>Men's <br/>Micro Climate Jacket </h4><h4><br/></h4><h4><strong><br/></strong></h4>",
-            "featured_image": "shopify://shop_images/rich-oat-mc-jacket.jpg",
-            "review_url": "shopify://products/mens-micro-climate-jacket-oat"
-          }
-        },
-        "review_gdNwQB": {
-          "type": "review",
-          "settings": {
-            "title": "Jana S.",
-            "subheading": "\"Indispensable\"",
-            "review_content": "<h4>Women's <br/>Micro Climate Jacket </h4>",
-            "featured_image": "shopify://shop_images/womens-oat.jpg",
-            "review_url": "shopify://products/womens-micro-climate-jacket-oat"
-          }
-        },
-        "review_XXcJc3": {
-          "type": "review",
-          "disabled": true,
-          "settings": {
-            "title": "Kenneth Powell",
-            "subheading": "Industry Expert",
-            "review_content": "<p>Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.</p>",
-            "review_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "review_TQk8it",
-        "review_gdNwQB",
-        "review_XXcJc3"
-      ],
-      "disabled": true,
-      "name": "Testimonials",
-      "settings": {
-        "show_featured_image": true,
-        "image_aspect_ratio": 0.5,
-        "show_quotation_marks": false,
-        "heading_font_size": "heading-large",
-        "text_align": "text-left",
-        "color_scheme": "",
-        "card_bg_color": "#e0e0e0",
-        "padding_top": 10,
-        "padding_bottom": 25
-      }
-    },
-    "section_hero_ChdyzN": {
-      "type": "section-hero",
-      "blocks": {
-        "heading_HqAjCB": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "title": "Image banner",
-            "heading_font_size": "heading-x-large",
-            "heading_tag": "automatic",
-            "padding_bottom": 8
-          }
-        },
-        "text_kiwnLf": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Tell your brand's story through images.</p>",
-            "text_font_size": "body-large",
-            "padding_bottom": 8
-          }
-        },
-        "button_fpPCyz": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "link_text": "View products",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "full_width": false,
-            "padding_bottom": 8
-          }
-        }
-      },
-      "block_order": [
-        "heading_HqAjCB",
-        "text_kiwnLf",
-        "button_fpPCyz"
-      ],
-      "disabled": true,
-      "name": "Image banner",
-      "settings": {
-        "image_1": "shopify://shop_images/mc-jackets-green-hills-land-scape.jpg",
-        "link": "shopify://collections/new-arrivals-all",
-        "width": "wrapper--full",
-        "height": "image-height",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "content_width": 50,
-        "mobile_image": "shopify://shop_images/mc-jackets-green-hills-land-scape.jpg",
-        "mobile_height": "image-height--mobile",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "color_scheme": "",
-        "show_text_background": false,
-        "overlay_type": "disabled",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "show_placeholder": true
-      }
-    },
-    "section_columns_k3bppz": {
-      "type": "section-columns",
-      "blocks": {
-        "image_NgkYxh": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/cram-alpha-pullover.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "Deadstock + Recycled Materials",
-            "heading_font_size": "heading-x-small",
-            "text": "<p>We source deadstock fabrics whenever possible. Check out our responsibly-made products <a href=\"/pages/fabric-story-polartec\" target=\"_blank\" title=\"Fabric Story: Polartec\">here.</a></p>",
-            "text_font_size": "body-small",
-            "button_text": "",
-            "button_url": "shopify://products/alpha-sweater-oat",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        },
-        "image_UqUEzT": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/celeste-socks-flatlay.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "Made in USA",
-            "heading_font_size": "heading-x-small",
-            "text": "<p>Yep, we make clothing in the USA - Check out our <a href=\"/collections/mens-made-in-usa\" target=\"_blank\" title=\"Men's Made in USA\">Men's</a> & <a href=\"/collections/womens-made-in-usa\" target=\"_blank\" title=\"Women's Made in USA\">Women's</a> American-made products.</p>",
-            "text_font_size": "body-small",
-            "button_text": "",
-            "button_url": "shopify://products/max-sock-celeste",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        },
-        "image_Fg7hdb": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Ornot_SeatBag_Avocado_UltraGrid_01.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "BAGS for your bike",
-            "heading_font_size": "heading-x-small",
-            "text": "<p>For carrying stuff.<br/>See our bags <a href=\"https://www.ornotbike.com/pages/handlebar-bags\" target=\"_blank\" title=\"https://www.ornotbike.com/pages/handlebar-bags\">here.</a></p>",
-            "text_font_size": "body-small",
-            "button_text": "",
-            "button_url": "shopify://products/seat-bag-ultragrid-avacado",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "image_NgkYxh",
-        "image_UqUEzT",
-        "image_Fg7hdb"
-      ],
-      "name": "Text columns with images",
-      "settings": {
-        "title": "",
-        "heading_font_size": "heading-medium",
-        "align_heading": "text-left",
-        "align_text": "text-left",
-        "width": "wrapper",
-        "align_columns": "flex-align-top",
-        "layout": "grid",
-        "grid": 3,
-        "layout_mobile": "1",
-        "color_scheme": "",
-        "padding_top": 30,
-        "padding_bottom": 20,
-        "heading_tag": "automatic"
-      }
-    },
-    "section_hero_bQCm39": {
-      "type": "section-hero",
-      "blocks": {
-        "text_m73QKC": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Tell your brand's story through images.</p>",
-            "text_font_size": "body-large",
-            "padding_bottom": 8
-          }
-        },
-        "button_3MXmHR": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "link_text": "View products",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "full_width": false,
-            "padding_bottom": 8
-          }
-        }
-      },
-      "block_order": [
-        "text_m73QKC",
-        "button_3MXmHR"
-      ],
-      "disabled": true,
-      "name": "Image banner",
-      "settings": {
-        "image_1": "shopify://shop_images/mc-jacket-sliver_27f73eb2-7e55-46b3-b6e8-538c3a053a60.jpg",
-        "link": "shopify://collections/new-arrivals-all",
-        "width": "wrapper--full",
-        "height": "image-height",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "content_width": 50,
-        "mobile_image": "shopify://shop_images/mc-jacket-sliver_27f73eb2-7e55-46b3-b6e8-538c3a053a60.jpg",
-        "mobile_height": "screen-height-three-quarters--mobile",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "color_scheme": "",
-        "show_text_background": false,
-        "overlay_type": "disabled",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "show_placeholder": true
-      }
     }
   },
   "order": [
+    "section_hero_video_HFdghp",
     "section_video_4HFyWn",
     "section_video_qTCiHB",
     "section_custom_content_9hP8eP",
@@ -1955,19 +1909,18 @@
     "section_hero_cmXyR9",
     "section_announcement_AwCijQ",
     "section_product_kGCRNL",
-    "section_collections_list_exW4Ud",
-    "slideshow",
-    "featured_posts_aWeRDj",
     "section_columns_iY3tBX",
+    "section_collections_list_exW4Ud",
+    "featured_posts_aWeRDj",
     "section_double_fwaVy9",
     "section_hero_video_atUTUm",
     "section_double_E7jpGH",
     "section_hero_UqUjym",
     "section_columns_BpMLB3",
     "section_collections_list_dWJRH6",
-    "section_reviews_TAeAjf",
+    "section_divider_gmGEWJ",
     "section_hero_ChdyzN",
     "section_columns_k3bppz",
-    "section_hero_bQCm39"
+    "slideshow"
   ]
 }
