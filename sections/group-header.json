@@ -14,19 +14,6 @@
     "announcement": {
       "type": "announcement",
       "blocks": {
-        "text_aNKTYF": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<h5>END OF WINTER SALE // 20% OFF THERMALS  ( ADD TO CART) // <a href=\"/collections/mens-archive\" title=\"Men's Sale (CURRENT)\">Shop Mens sale</a> // <a href=\"/collections/womens-sale-2\" title=\"Women's Sale (CURRENT)\">Shop womens sale </a></h5>",
-            "target_url_enabled": false,
-            "target_url": "shopify://collections/mens-archive",
-            "target_referrer_enabled": false,
-            "target_referrer": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
         "text_J9HfXH": {
           "type": "text",
           "disabled": true,
@@ -70,9 +57,9 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>GIFT CARDS GO WITH EVERYTHING</p>",
+            "text": "<h4>CITY COLLECTION   –   AVAILABLE 4/15 AT 9:15AM PST (updating...)</h4>",
             "target_url_enabled": false,
-            "target_url": "shopify://products/gift-card",
+            "target_url": "",
             "target_referrer_enabled": false,
             "target_referrer": "",
             "target_device_enabled": false,
@@ -81,7 +68,6 @@
         }
       },
       "block_order": [
-        "text_aNKTYF",
         "text_J9HfXH",
         "text_hHYWBw",
         "message_R9RT6x",

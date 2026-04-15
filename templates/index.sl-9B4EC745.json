@@ -84,7 +84,7 @@
             "description": "Wear it on your bike, Ornot.",
             "text_font_size": "body-large",
             "first_button_text": "Shop WOMEN'S",
-            "first_button_link": "shopify://products/womens-merino-riding-shirt-emerald",
+            "first_button_link": "shopify://products/womens-merino-riding-shirt-emerald-2025",
             "first_button_type": "btn--primary",
             "first_button_size": "btn--small",
             "first_button_style": "btn--solid",
@@ -1341,7 +1341,7 @@
           "type": "products",
           "settings": {
             "product_list": [
-              "womens-merino-riding-shirt-emerald",
+              "womens-merino-riding-shirt-emerald-2025",
               "womens-lightweight-mission-short-obsidian",
               "block-sock-prism"
             ],

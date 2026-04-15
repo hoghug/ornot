@@ -136,6 +136,7 @@
         "image_EARKyB",
         "text_Jikqa8"
       ],
+      "disabled": true,
       "settings": {
         "borders": false,
         "gutters": false,
@@ -197,7 +198,7 @@
           "name": "CUT & SEWN IN CALIFORNIA ",
           "settings": {
             "show_wheel": false,
-            "message": "ARRIVING 4-15",
+            "message": "AVAILABLE 4/15 AT 9AM PST",
             "text_font_size": "body-small",
             "target_device_enabled": false,
             "target_device": "mobile"
@@ -222,6 +223,7 @@
         "message_a6qTHC",
         "text_rg7tUF"
       ],
+      "disabled": true,
       "name": "Scrolling text",
       "settings": {
         "slider_speed": 7,
@@ -288,6 +290,7 @@
         "text_MTXQhY",
         "image_ejCFH6"
       ],
+      "disabled": true,
       "settings": {
         "borders": false,
         "gutters": false,
@@ -298,32 +301,6 @@
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "section_collection_ABegUK": {
-      "type": "section-collection",
-      "settings": {
-        "featured_collection": "city-collection",
-        "heading": "For San Francisco",
-        "heading_font_size": "heading-medium",
-        "description": "",
-        "text_font_size": "body-medium",
-        "layout": "inline",
-        "link_text": "",
-        "link_url": "",
-        "button_type": "btn--black",
-        "button_size": "",
-        "button_style": "btn--text",
-        "show_arrow": true,
-        "layout_desktop": "grid",
-        "grid": 4,
-        "rows": 3,
-        "width": "wrapper",
-        "layout_mobile": "2",
-        "color_scheme": "",
-        "padding_top": 50,
-        "padding_bottom": 30,
-        "heading_tag": "automatic"
       }
     },
     "section_hero_jidFMm": {
@@ -368,7 +345,6 @@
         "text_GKEXzd",
         "button_7zPFTX"
       ],
-      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/415-knolling.jpg",
         "link": "",
@@ -416,6 +392,7 @@
         },
         "buttons_hePJU4": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_text": "SHop collection",
             "button_url": "shopify://collections/city-collection",
@@ -433,7 +410,6 @@
         "text_mUcgdN",
         "buttons_hePJU4"
       ],
-      "disabled": true,
       "name": "Rich text",
       "settings": {
         "align_text": "text-left",
@@ -444,9 +420,34 @@
         "padding_bottom": 40
       }
     },
+    "section_collection_ABegUK": {
+      "type": "section-collection",
+      "settings": {
+        "featured_collection": "city-collection",
+        "heading": "For San Francisco",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--black",
+        "button_size": "",
+        "button_style": "btn--text",
+        "show_arrow": true,
+        "layout_desktop": "grid",
+        "grid": 4,
+        "rows": 3,
+        "width": "wrapper",
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 30,
+        "heading_tag": "automatic"
+      }
+    },
     "section_video_iKVyYn": {
       "type": "section-video",
-      "disabled": true,
       "name": "Video",
       "settings": {
         "video": "shopify://files/videos/OrNot_01_ChicoStix_Race_16x9_Full_Final_YouTube4K.mp4",
@@ -486,7 +487,7 @@
             "image_shape": "normal",
             "title": "Chico Brenes (PRO SKATER)",
             "heading_font_size": "heading-small",
-            "text": "<p>Chico is a San Francisco–based pro skateboarder who came up in the EMB era, known for the nollie heel flip, aka the Chico flip. Born in Nicaragua and raised in the Bay, he now splits his time between skating, riding, and good coffee.</p>",
+            "text": "<p>Chico is a San Francisco–based pro skateboarder who came up in the EMB era, known for the nollie heel flip, aka the Chico flip. Born in Nicaragua and raised in the Bay, he now splits his time between surfing, skating, riding, and good coffee.</p>",
             "text_font_size": "body-small",
             "button_text": "",
             "button_url": "shopify://collections/fabric-story-recycled-uv-micro-mesh",
@@ -507,7 +508,7 @@
             "image_shape": "normal",
             "title": "Ferris Plock (PRO ARTIST)",
             "heading_font_size": "heading-small",
-            "text": "<p>Ferris is a San Francisco artist known for layered, character-driven work that shows up everywhere from your local coffee shop to SFMOMA. Based in the Richmond District, he often collaborates with his wife, Kelly Tunstall.</p>",
+            "text": "<p>Ferris is a San Francisco artist known for layered, character-driven work that shows up everywhere from your local coffee shop, to your favorite restaurant, and even SFMOMA. Based in the Richmond District, he often collaborates with his wife, Kelly Tunstall.</p>",
             "text_font_size": "body-small",
             "button_text": "",
             "button_url": "shopify://collections/fabric-story-all-day-compression-knit",
@@ -547,7 +548,6 @@
         "image_rqH79r",
         "image_D9VjHc"
       ],
-      "disabled": true,
       "settings": {
         "title": "",
         "heading_font_size": "heading-medium",
@@ -636,14 +636,14 @@
         "subheading_QddAjU": {
           "type": "subheading",
           "settings": {
-            "subheading": "Screen printed",
+            "subheading": "deadstock decks",
             "padding_bottom": 0
           }
         },
         "heading_Vn3UfY": {
           "type": "heading",
           "settings": {
-            "title": "IN THE CITY",
+            "title": "printed here",
             "heading_font_size": "heading-large",
             "padding_bottom": 0,
             "heading_tag": "automatic"
@@ -652,7 +652,7 @@
         "text_68yK8i": {
           "type": "text",
           "settings": {
-            "text": "<p>Limited to 50 pieces, this hand-screened board by B.V.B and Chico is a nod to the ’90s. Three colors on top, seven on the bottom. That’s 10 pulls per board, all done by hand. In between colors, they were skating B.V.B’s backyard park. </p><p>These won’t be around long.</p>",
+            "text": "<p>Limited to 50 pieces, this hand-screened board by B.V.B and Chico is a nod to the ’90s. Three colors on top, seven on the bottom. That’s 10 pulls per board, all done by hand. Printed on Deadstock Schmitt Stix blanks, these won't be around long.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 16
           }
@@ -661,7 +661,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "See the Decks",
-            "button_url": "",
+            "button_url": "shopify://collections/city-collection",
             "button_type": "btn--black",
             "button_size": "btn--small",
             "button_style": "btn--solid",
@@ -677,7 +677,6 @@
         "text_68yK8i",
         "buttons_7ietEy"
       ],
-      "disabled": true,
       "name": "Image with text",
       "settings": {
         "image_1": "shopify://shop_images/ORNOT-CHICOSTIX-FROM-ANDO-20260223_0044.jpg",
@@ -708,14 +707,14 @@
         "subheading_mhyprA": {
           "type": "subheading",
           "settings": {
-            "subheading": "Cut & sewn",
+            "subheading": "SAN FRANCISCO, CALIF.",
             "padding_bottom": 0
           }
         },
         "heading_VmWHJ3": {
           "type": "heading",
           "settings": {
-            "title": "IN THE Bay",
+            "title": "MADE HERE",
             "heading_font_size": "heading-large",
             "padding_bottom": 0,
             "heading_tag": "automatic"
@@ -724,7 +723,7 @@
         "text_AqhaWX": {
           "type": "text",
           "settings": {
-            "text": "<p>We’ve always focused on US production, and the City Collection is no different. With most pieces made in Oakland, keeping things close to home lets us focus on quality, small runs, and the people behind the work.</p>",
+            "text": "<p>We made everything in this collection as close to San Francisco as possible. The decks were hand-screened in the Sunset, UV Trail shirts were sewn in the Mission, the House Jerseys and Boxers were made in Oakland alongside the cotton tees.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 16
           }
@@ -733,7 +732,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "Shop Collection",
-            "button_url": "",
+            "button_url": "shopify://collections/city-collection",
             "button_type": "btn--black",
             "button_size": "btn--small",
             "button_style": "btn--solid",
@@ -749,7 +748,6 @@
         "text_AqhaWX",
         "buttons_CnJ47c"
       ],
-      "disabled": true,
       "name": "Image with text",
       "settings": {
         "image_1": "shopify://shop_images/Chico-415-house-jersey-studio-womens-4.jpg",
@@ -780,7 +778,7 @@
         "subheading_iWfWXd": {
           "type": "subheading",
           "settings": {
-            "subheading": "Skaters Ride bikes (And Drink Coffee)",
+            "subheading": "SKATE, BIKE, drink COFFEE",
             "padding_bottom": 0
           }
         },
@@ -805,7 +803,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "See the collection",
-            "button_url": "",
+            "button_url": "shopify://collections/city-collection",
             "button_type": "btn--black",
             "button_size": "btn--small",
             "button_style": "btn--solid",
@@ -821,7 +819,6 @@
         "text_QRndey",
         "buttons_VcHTXM"
       ],
-      "disabled": true,
       "name": "Image with text",
       "settings": {
         "image_1": "shopify://shop_images/miles-and-chico-coffee.jpg",
@@ -906,7 +903,6 @@
         "slide_image_JMEGtp",
         "slide_image_jpXDGK"
       ],
-      "disabled": true,
       "name": "Slideshow (Nested)",
       "settings": {
         "transition": "slide",
@@ -928,9 +924,9 @@
     "section_custom_content_AyDzny",
     "section_announcement_G3DD43",
     "section_custom_content_pxc3kc",
-    "section_collection_ABegUK",
     "section_hero_jidFMm",
     "section_rich_text_Xtjzay",
+    "section_collection_ABegUK",
     "section_video_iKVyYn",
     "section_columns_FnTytU",
     "section_rich_text_PUEitQ",

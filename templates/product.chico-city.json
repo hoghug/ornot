@@ -651,34 +651,87 @@
         "padding_bottom": 50
       }
     },
-    "section_video_yiFedd": {
-      "type": "section-video",
-      "name": "Video",
+    "section_rich_text_ayqHKc": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_nDFecM": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "A love letter to the city",
+            "padding_bottom": 16
+          }
+        },
+        "heading_rttLfw": {
+          "type": "heading",
+          "settings": {
+            "title": "Huge thanks to the team that brought the City Collection to life:",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 0,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_FYwrh9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Photography: Ando<br/>Video: Zack Mack<br/>Featuring: Chico Brenes, Miles Silvas, Brian Von Bargen, Ferris Plock & Nick Klein</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_NdfFDJ": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        },
+        "buttons_6HbmX7": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_text": "Shop Collection",
+            "button_url": "shopify://collections/city-collection",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_nDFecM",
+        "heading_rttLfw",
+        "text_FYwrh9",
+        "buttons_NdfFDJ",
+        "buttons_6HbmX7"
+      ],
+      "name": "Rich text",
       "settings": {
-        "video": "shopify://files/videos/OrNot_01_ChicoStix_Race_16x9_Full_Final_YouTube4K.mp4",
-        "show_video_popup": false,
-        "video_popup_social": "",
-        "title": "",
-        "heading_font_size": "heading-large",
-        "text": "",
-        "text_font_size": "body-medium",
-        "flex_align": "align--middle-center",
-        "link_text": "",
-        "link": "",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "desktop_height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-three-quarters--mobile",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 38,
+        "padding_bottom": 30
+      }
+    },
+    "section_custom_code_rjUr3h": {
+      "type": "section-custom-code",
+      "name": "Custom code",
+      "settings": {
+        "code": "<div style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;\">\n  <iframe\n    src=\"https://www.youtube.com/embed/Bzf8b1Ad0V8?rel=0&modestbranding=1&showinfo=0&controls=1&autoplay=1&mute=1\"\n    title=\"Ornot Video\"\n    frameborder=\"0\"\n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n    allowfullscreen\n    loading=\"lazy\"\n    style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\">\n  </iframe>\n</div>",
         "width": "wrapper--full",
         "color_scheme": "",
-        "show_text_background": false,
-        "color": "",
-        "overlay_type": "disabled",
         "padding_top": 0,
-        "padding_bottom": 0,
-        "heading_tag": "automatic"
+        "padding_bottom": 0
       }
     },
     "section_double_6YBbxA": {
@@ -703,7 +756,7 @@
         "text_mEJtMk": {
           "type": "text",
           "settings": {
-            "text": "<p>Living here, you learn pretty quickly how to move with the city. The hills, the fog, the microclimates, nothing is flat or predictable. Whether you’re on a bike, a skateboard, or hopping on a cable car, you adjust as you go. After a while, the terrain starts to shape you. It changes your route, your pace, and how you move through the streets and into the hills.<br/><br/>That shared experience is where this collaboration comes from. Ferris interprets Chico’s relationship to movement through layered artwork that comes to life across a range of Ornot pieces. The SF Collection reflects San Francisco as we know it, shaped by the people who move through it every day.</p>",
+            "text": "<p>Living here, you learn pretty quickly how to move with the city. The hills, the fog, the microclimates, nothing is flat or predictable. Whether you’re on a bike, a skateboard, or hopping on a cable car, you adjust as you go. After a while, the terrain starts to shape you. It changes your route, your pace, and how you move through the streets and into the hills.</p><p>That shared experience is where this collaboration comes from. Ferris interprets Chico’s relationship to movement through layered artwork that comes to life across a range of Ornot pieces. The City Collection reflects San Francisco as we know it, shaped by the people who move through it every day.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 16
           }
@@ -845,14 +898,14 @@
         "subheading_pmqkmh": {
           "type": "subheading",
           "settings": {
-            "subheading": "SCREEN PRINTED",
+            "subheading": "DEADSTOCK DECKS",
             "padding_bottom": 0
           }
         },
         "heading_bVzhNT": {
           "type": "heading",
           "settings": {
-            "title": "In the city",
+            "title": "printed here",
             "heading_font_size": "heading-large",
             "padding_bottom": 0,
             "heading_tag": "automatic"
@@ -861,7 +914,7 @@
         "text_NLYLhd": {
           "type": "text",
           "settings": {
-            "text": "<p>Limited to 50 pieces, this hand-screened board by B.V.B and Chico is a nod to the ’90s. Three colors on top, seven on the bottom. That’s 10 pulls per board, all done by hand. In between colors, they were skating B.V.B’s backyard park. </p><p>These won’t be around long.</p>",
+            "text": "<p>Limited to 50 pieces, this hand-screened board by B.V.B and Chico is a nod to the ’90s. Three colors on top, seven on the bottom. That’s 10 pulls per board, all done by hand. Printed on Deadstock Schmitt Stix blanks, these won't be around long.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 16
           }
@@ -870,7 +923,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "See the decks",
-            "button_url": "",
+            "button_url": "shopify://collections/city-collection",
             "button_type": "btn--black",
             "button_size": "btn--small",
             "button_style": "btn--solid",
@@ -916,14 +969,14 @@
         "subheading_My7pVg": {
           "type": "subheading",
           "settings": {
-            "subheading": "cut and sewn",
+            "subheading": "San Francisco, Calif.",
             "padding_bottom": 0
           }
         },
         "heading_KYqhGD": {
           "type": "heading",
           "settings": {
-            "title": "In the bay",
+            "title": "made here",
             "heading_font_size": "heading-large",
             "padding_bottom": 0,
             "heading_tag": "automatic"
@@ -932,7 +985,7 @@
         "text_MjXHzE": {
           "type": "text",
           "settings": {
-            "text": "<p>We’ve always focused on US production, and the City Collection is no different. With most pieces made in Oakland, keeping things close to home lets us focus on quality, small runs, and the people behind the work.</p>",
+            "text": "<p>We made everything in this collection as close to San Francisco as possible. The decks were hand-screened in the Sunset, UV Trail shirts were sewn in the Mission, the House Jerseys and Boxers were made in Oakland alongside the cotton tees.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 16
           }
@@ -995,7 +1048,7 @@
         "subheading_7rheQq": {
           "type": "subheading",
           "settings": {
-            "subheading": "Skaters Ride bikes (And Drink Coffee)",
+            "subheading": "Skaters, Bikes, Coffee",
             "padding_bottom": 0
           }
         },
@@ -1437,7 +1490,8 @@
     "section_custom_code_pJNGta",
     "section_hero_NWyynT",
     "section_rich_text_wRtMQW",
-    "section_video_yiFedd",
+    "section_rich_text_ayqHKc",
+    "section_custom_code_rjUr3h",
     "section_double_6YBbxA",
     "section_columns_fcn6BT",
     "section_double_zkBMMn",
