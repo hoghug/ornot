@@ -12326,6 +12326,9 @@ color: var(--COLOR-CARD-LABEL-TEXT);
   font-size: var(--font-body-x-small);
   color: var(--text-light);
 }
+div.product-item__tagline {
+  padding:6px 0;
+}
 .product-item__swatches__holder--slider .product-item__swatches__count, .product-item__swatches__holder--text-slider .product-item__swatches__count {
   cursor: pointer;
 }

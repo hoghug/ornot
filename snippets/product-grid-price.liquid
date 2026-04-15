@@ -33,7 +33,10 @@
       <span class="old-price">{{ product_compare_at_price | remove: ' ' }}</span>
     {% endif %}
   {% else %}
-    <span class="sold-out">{{ 'products.product.sold_out' | t }}</span>
+  {{}}
+    {% unless product.tags contains 'external_purchase' %}
+      <span class="sold-out">{{ 'products.product.sold_out' | t }}</span>      
+    {% endunless %}
   {% endif %}
 </span>
 {% if current_variant.unit_price %}
