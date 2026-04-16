@@ -230,7 +230,9 @@
             id="AjaxinateLoop" data-ajaxinate-id="{{ section.id }}"
           {% endif %}
         >
-          {%- assign in_grid_items = collection.metafields.custom.in_grid_content.value -%}
+          {%- if paginate.current_page == 1 -%}
+            {%- assign in_grid_items = collection.metafields.custom.in_grid_content.value -%}
+          {%- endif -%}
           {%- assign rendered_in_grid_positions = ',' -%}
           {%- if collection.products_count > 0 -%}
             {%- if featured_images_array.size > 0 -%}
