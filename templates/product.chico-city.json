@@ -1459,6 +1459,7 @@
       "block_order": [
         "heading_WhPKVU"
       ],
+      "disabled": true,
       "name": "Banner with video",
       "settings": {
         "image_1": "shopify://shop_images/the-city-collection-socks.jpg",

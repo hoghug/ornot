@@ -117,7 +117,7 @@
           "type": "image",
           "settings": {
             "position": "1",
-            "image": "shopify://shop_images/cram-alpha-pullover.jpg",
+            "image": "shopify://shop_images/chico-black-and-white.jpg",
             "aspect_ratio": 1,
             "wide_image": false,
             "overlay_type": "disabled",
@@ -125,7 +125,7 @@
             "heading_font_size": "heading-x-small",
             "link_text": "",
             "text_font_size": "body-x-small",
-            "link": "shopify://products/alpha-sweater-oat",
+            "link": "shopify://collections/city-collection",
             "text_color": "#ffffff"
           }
         },
@@ -133,7 +133,7 @@
           "type": "image",
           "settings": {
             "position": "2",
-            "image": "shopify://shop_images/aj_studio_looks_lav_house_oat_mc_jacket_5dcf4e8a-fbfb-4bb1-befa-ac5ca213417e.jpg",
+            "image": "shopify://shop_images/chico-black-and-white.jpg",
             "aspect_ratio": 1,
             "wide_image": false,
             "overlay_type": "disabled",
@@ -141,7 +141,7 @@
             "heading_font_size": "heading-medium",
             "link_text": "",
             "text_font_size": "body-x-small",
-            "link": "shopify://products/womens-house-jersey-lavender",
+            "link": "shopify://collections/city-collection",
             "text_color": ""
           }
         },
@@ -149,7 +149,7 @@
           "type": "image",
           "settings": {
             "position": "3",
-            "image": "shopify://shop_images/Ultra_grid_black_bar_bag_studio_6.jpg",
+            "image": "shopify://shop_images/chico-black-and-white.jpg",
             "aspect_ratio": 1,
             "wide_image": false,
             "overlay_type": "disabled",
@@ -157,7 +157,7 @@
             "heading_font_size": "heading-x-small",
             "link_text": "",
             "text_font_size": "body-x-small",
-            "link": "shopify://products/handlebar-bag-ultragrid-black",
+            "link": "shopify://collections/city-collection",
             "text_color": "#000000"
           }
         },

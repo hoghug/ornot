@@ -165,6 +165,45 @@
         "heading_tag": "automatic"
       }
     },
+    "section_hero_video_6neEqj": {
+      "type": "section-hero-video",
+      "blocks": {
+        "button_6AAGEb": {
+          "type": "button",
+          "settings": {
+            "link_text": "SHop the City Collection",
+            "link": "shopify://collections/city-collection",
+            "button_type": "btn--white",
+            "button_size": "btn--small",
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "full_width": false,
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "button_6AAGEb"
+      ],
+      "name": "Banner with video",
+      "settings": {
+        "image_1": "shopify://shop_images/the-city-collection-pdp-slivers_a906ce22-dc48-4965-86d7-197688a9ab40.jpg",
+        "link": "shopify://collections/city-collection",
+        "video": "shopify://files/videos/OrNot_01_ChicoStix_Race_9x16_IG_Teaser_NOlogo.mp4",
+        "video_width": 25,
+        "aspect_ratio": 1.5,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 75,
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
     "section_hero_aCAcUj": {
       "type": "section-hero",
       "blocks": {
@@ -340,6 +379,7 @@
   "order": [
     "section_collection_links_spotlight_JBV4cW",
     "section_tab_collections_yYGgBk",
+    "section_hero_video_6neEqj",
     "section_hero_aCAcUj",
     "section_video_bRGiNF",
     "section-newsletter"

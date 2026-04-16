@@ -29,13 +29,13 @@
     "section_hero_Ay6Tni": {
       "type": "section-hero",
       "settings": {
-        "image_1": "shopify://shop_images/lw-tights-brown.jpg",
+        "image_1": "shopify://shop_images/mens-cargo-bibs-sliver.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
-        "mobile_image": "shopify://shop_images/web-header-mens-midnightblue_cargo.jpg",
+        "mobile_image": "shopify://shop_images/mens-cargo-bibs-sliver.jpg",
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
