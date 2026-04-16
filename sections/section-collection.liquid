@@ -237,6 +237,14 @@
       "label": "Collection"
     },
     {
+      "type": "checkbox",
+      "id": "enable_in_grid_content",
+      "label": "Show in-grid content",
+      "info": "Displays promotional content within the product grid, pulled from the collection metafield.",
+      "default": true,
+      "visible_if": "{{ section.settings.layout_desktop == 'grid' }}"
+    },
+    {
       "type": "header",
       "content": "Typography"
     },
@@ -404,14 +412,6 @@
         {"value": "wrapper--full-padded", "label": "Full width padded"},
         {"value": "wrapper", "label": "Normal"}
       ]
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_in_grid_content",
-      "label": "Show in-grid content",
-      "info": "Displays promotional content within the product grid, pulled from the collection metafield.",
-      "default": true,
-      "visible_if": "{{ section.settings.layout_desktop == 'grid' }}"
     },
     {
       "type": "header",
