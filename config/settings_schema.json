@@ -1129,6 +1129,12 @@
         "content": "For specific products or variants use metafields. [Learn more](https://broadcast.presidiocreative.com/products/product-pages/final-sale)"
       },
       {
+        "type": "checkbox",
+        "id": "final_sale_tooltip_enabled",
+        "label": "Show tooltip",
+        "default": false
+      },
+      {
         "type": "richtext",
         "id": "final_sale_tooltip",
         "label": "Content on hover",

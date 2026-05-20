@@ -166,12 +166,14 @@
         {%- if is_on_sale and final_sale -%}
           <div class="product__final-sale-wrap">
             <div class="product__final-sale">{{ 'products.product.final_sale' | t }}</div>
-            <tooltip-component
-              class="product__final-sale-question"
-              data-tooltip="<div style='--text: var(--COLOR-SALE);'>{{ settings.final_sale_tooltip | replace: '"', "'" }}</div>"
-            >
-              {%- render 'icon-question' -%}
-            </tooltip-component>
+            {% if settings.final_sale_tooltip_enabled and settings.final_sale_tooltip != blank %}
+              <tooltip-component
+                class="product__final-sale-question"
+                data-tooltip="<div style='--text: var(--COLOR-SALE);'>{{ settings.final_sale_tooltip | replace: '"', "'" }}</div>"
+              >
+                {%- render 'icon-question' -%}
+              </tooltip-component>
+            {% endif %}
           </div>
         {%- endif -%}
       </div>
