@@ -35,7 +35,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "subheading_option": "breadcrumb",
+            "subheading_option": "none",
             "heading_font_size": "heading-medium",
             "padding_bottom": 8
           }
@@ -72,6 +72,7 @@
           "settings": {
             "siblings_collection": "{{ product.metafields.theme.siblings.value }}",
             "sibling_color": "{{ product.metafields.theme.sibling_color.value }}",
+            "layout": "stacked",
             "option_font_size": "body-medium",
             "value_font_size": "body-x-small",
             "padding_bottom": 16
@@ -126,6 +127,7 @@
             "style": "collapsible",
             "show_description": true,
             "show_read_more": false,
+            "read_more_lines": 4,
             "default_open": true,
             "heading": "DESCRIPTION",
             "heading_font_size": "body-medium",
@@ -144,6 +146,7 @@
             "style": "collapsible",
             "show_description": false,
             "show_read_more": false,
+            "read_more_lines": 4,
             "default_open": false,
             "heading": "FEATURES",
             "heading_font_size": "body-medium",
@@ -162,6 +165,7 @@
             "style": "collapsible",
             "show_description": false,
             "show_read_more": false,
+            "read_more_lines": 4,
             "default_open": false,
             "heading": "SHIPPING, EXCHANGES, AND RETURNS",
             "heading_font_size": "body-medium",
@@ -180,6 +184,7 @@
             "style": "collapsible",
             "show_description": false,
             "show_read_more": false,
+            "read_more_lines": 4,
             "default_open": false,
             "heading": "1 YEAR WARRANTY",
             "heading_font_size": "body-medium",
@@ -761,7 +766,8 @@
           "settings": {
             "product": "{{product}}",
             "title": "",
-            "alignment": ""
+            "alignment": "",
+            "sortOrder": "mostRecent"
           }
         }
       },

@@ -52,13 +52,13 @@
         "button_7zPFTX"
       ],
       "settings": {
-        "image_2": "shopify://shop_images/ls-jersey-sliver.jpg",
+        "image_1": "shopify://shop_images/habenero-delta-sliver.jpg",
         "link": "",
         "width": "wrapper--full",
-        "height": "four-fifty-height-hero",
+        "height": "image-height",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 68,
-        "mobile_image": "shopify://shop_images/biz-as-usual_d6af2c35-3800-4ec0-a537-0fe994213c54.jpg",
+        "mobile_image": "shopify://shop_images/habenero-delta-sliver.jpg",
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "scheme-2",
@@ -160,6 +160,7 @@
         "message_a6qTHC",
         "text_rg7tUF"
       ],
+      "disabled": true,
       "name": "Scrolling text",
       "settings": {
         "slider_speed": 7,
@@ -227,8 +228,8 @@
         "width": "wrapper",
         "color_scheme": "",
         "overlay_type": "disabled",
-        "padding_top": 100,
-        "padding_bottom": 100
+        "padding_top": 60,
+        "padding_bottom": 30
       }
     },
     "section_custom_content_AyDzny": {
@@ -432,6 +433,27 @@
         "image_AieWct": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/womens-patterndelta-habanero-jersey-studio-5.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Polartec® Delta™",
+            "heading_font_size": "heading-small",
+            "text": "<p>Polartec® Delta™ is built for cooling without the compromise. Instead of drying sweat before your body can use it, Delta disperses moisture to amplify your natural evaporative cooling. We reach for it on the hottest days because staying dry shouldn't mean staying hot.</p>",
+            "text_font_size": "body-small",
+            "button_text": "see products",
+            "button_url": "shopify://collections/fabric-story-polartec-delta",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_i8Gn3R": {
+          "type": "image",
+          "settings": {
             "image": "shopify://shop_images/mens-house-jersey-studio-lav-6.jpg",
             "image_width": 100,
             "image_shape": "normal",
@@ -471,18 +493,18 @@
             "heading_tag": "automatic"
           }
         },
-        "image_D9VjHc": {
+        "image_j9FUq7": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_Micro_Climate_Vest_Obsidian_07.jpg",
+            "image": "shopify://shop_images/Ornot_Mens_MerinoRidingShirt_Emerald_01.jpg",
             "image_width": 100,
             "image_shape": "normal",
-            "title": "Micro Climate",
+            "title": "Nuyarn® Merino",
             "heading_font_size": "heading-small",
-            "text": "<p>Custom stretch-woven nylon with lofted insulation, to trap heat, while also allowing moisture to escape, but not enter. This fabric is water-resistant and quick drying without a membrane or a coating that can wash off.</p>",
+            "text": "<p>Nuyarn® Merino is lighter, stronger, and faster drying than traditionally spun Merino. The result is natural warmth and odor resistance with added durability and shape retention, so you can ride longer and wash it less.</p>",
             "text_font_size": "body-small",
-            "button_text": "See products",
-            "button_url": "shopify://collections/fabric-story-micro-climate",
+            "button_text": "See Products",
+            "button_url": "shopify://collections/fabric-story-nuyarn-merino",
             "button_type": "btn--secondary",
             "button_size": "btn--small",
             "button_style": "btn--text",
@@ -534,13 +556,34 @@
             "heading_tag": "automatic"
           }
         },
+        "image_D9VjHc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Mens_Micro_Climate_Vest_Obsidian_07.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Micro Climate",
+            "heading_font_size": "heading-small",
+            "text": "<p>Custom stretch-woven nylon with lofted insulation, to trap heat, while also allowing moisture to escape, but not enter. This fabric is water-resistant and quick drying without a membrane or a coating that can wash off.</p>",
+            "text_font_size": "body-small",
+            "button_text": "See products",
+            "button_url": "shopify://collections/fabric-story-micro-climate",
+            "button_type": "btn--secondary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
         "image_LHcaHM": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Alpha-Sweater-cream-mission-pants-studio-7.jpg",
             "image_width": 100,
             "image_shape": "normal",
-            "title": "ALPHA",
+            "title": "Polartec® ALPHA™",
             "heading_font_size": "heading-small",
             "text": "<p>Polartec Alpha is built for warmth without the weight. It regulates heat like a pro, adapting to changing conditions and stop-and-go efforts. We wear these all winter—because staying warm shouldn’t mean overheating.</p>",
             "text_font_size": "body-small",
@@ -565,28 +608,6 @@
             "title": "Merino Wool",
             "heading_font_size": "heading-small",
             "text": "<p>We blend Merino’s natural magic with high-tech synthetics to handle wild temp swings like a pro. We wear Merino on cold rides—because layering should be easy, Ornot.</p>",
-            "text_font_size": "body-small",
-            "button_text": "See Products",
-            "button_url": "",
-            "button_type": "btn--secondary",
-            "button_size": "btn--small",
-            "button_style": "btn--text",
-            "show_arrow": true,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        },
-        "image_j9FUq7": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Ornot_Mens_MerinoRidingShirt_Emerald_01.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "Nuyarn® Merino",
-            "heading_font_size": "heading-small",
-            "text": "<p>Nuyarn® Merino is lighter, stronger, and faster drying than traditionally spun Merino. The result is natural warmth and odor resistance with added durability and shape retention, so you can ride longer and wash it less.</p>",
             "text_font_size": "body-small",
             "button_text": "See Products",
             "button_url": "",
@@ -668,13 +689,14 @@
       },
       "block_order": [
         "image_AieWct",
+        "image_i8Gn3R",
         "image_rqH79r",
-        "image_D9VjHc",
+        "image_j9FUq7",
         "image_BKXtyf",
         "image_cwtx4V",
+        "image_D9VjHc",
         "image_LHcaHM",
         "image_4nFPma",
-        "image_j9FUq7",
         "image_nVeNVc",
         "image_zMwfQA",
         "image_PkWQMt"
@@ -686,8 +708,8 @@
         "align_text": "text-left",
         "width": "wrapper--full-padded",
         "align_columns": "flex-align-top",
-        "layout": "slider",
-        "grid": 6,
+        "layout": "grid",
+        "grid": 3,
         "layout_mobile": "slider",
         "color_scheme": "scheme-1",
         "padding_top": 50,
@@ -748,8 +770,8 @@
         "width": "wrapper",
         "color_scheme": "",
         "overlay_type": "disabled",
-        "padding_top": 100,
-        "padding_bottom": 100
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "section_slideshow_nested_QLfVga": {
@@ -997,8 +1019,8 @@
         "width": "wrapper",
         "color_scheme": "",
         "overlay_type": "disabled",
-        "padding_top": 100,
-        "padding_bottom": 100
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "section_video_iKVyYn": {
@@ -1036,6 +1058,7 @@
       "disabled": true,
       "settings": {
         "featured_collection": "special-projects",
+        "enable_in_grid_content": true,
         "heading": "special projects collection",
         "heading_font_size": "heading-medium",
         "description": "",

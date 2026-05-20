@@ -425,117 +425,6 @@
         "padding_bottom": 0
       }
     },
-    "section_before_after_rEeAhP": {
-      "type": "section-before-after",
-      "blocks": {
-        "heading_mi4YFn": {
-          "type": "heading",
-          "settings": {
-            "heading": "routes to the 'top'",
-            "heading_font_size": "heading-large",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_d68Vbx": {
-          "type": "text",
-          "settings": {
-            "description": "<h5><a href=\"https://www.strava.com/routes/3372678553593469728\" target=\"_blank\" title=\"https://www.strava.com/routes/3372678553593469728\">Eldridge from MV</a></h5><h5><a href=\"https://www.strava.com/routes/3372679353272503968\" target=\"_blank\" title=\"https://www.strava.com/routes/3372679353272503968\">Through the Lakes</a></h5><h5><a href=\"https://www.strava.com/routes/3372677771783854752\" target=\"_blank\" title=\"https://www.strava.com/routes/3372677771783854752\">Stinson Breakfast Club</a></h5><h5><a href=\"https://www.strava.com/routes/3372677357766686496\" target=\"_blank\" title=\"https://www.strava.com/routes/3372677357766686496\">Railroad All The Way</a></h5><h5><a href=\"https://www.strava.com/routes/3372676060068364064\" target=\"_blank\" title=\"https://www.strava.com/routes/3372676060068364064\">Our Favorite, Ornot</a></h5><h5><a href=\"https://www.strava.com/routes/3372676512470242626\" target=\"_blank\" title=\"https://www.strava.com/routes/3372676512470242626\">Straight Up Road</a></h5>",
-            "text_font_size": "body-medium",
-            "padding_bottom": 16
-          }
-        },
-        "button_NHxeGE": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "link_text": "learn more",
-            "link_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_mi4YFn",
-        "text_d68Vbx",
-        "button_NHxeGE"
-      ],
-      "disabled": true,
-      "name": "Before and after",
-      "settings": {
-        "image_1": "shopify://shop_images/tam_road.jpg",
-        "image_2": "shopify://shop_images/tam_gravel.jpg",
-        "aspect_ratio": 1,
-        "width": "wrapper",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_rich_text_7UcRjA": {
-      "type": "section-rich-text",
-      "blocks": {
-        "subheading_Yc8Hkn": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "subheading": "Introducing",
-            "padding_bottom": 16
-          }
-        },
-        "heading_pE8iM8": {
-          "type": "heading",
-          "settings": {
-            "title": "FAQ",
-            "heading_font_size": "heading-large",
-            "padding_bottom": 0,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_JRWQTh": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "text_font_size": "body-medium",
-            "padding_bottom": 16
-          }
-        },
-        "buttons_kgDN4f": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "subheading_Yc8Hkn",
-        "heading_pE8iM8",
-        "text_JRWQTh",
-        "buttons_kgDN4f"
-      ],
-      "disabled": true,
-      "name": "Rich text",
-      "settings": {
-        "align_text": "text-left",
-        "width": "wrapper",
-        "color_scheme": "",
-        "overlay_type": "disabled",
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
-    },
     "section_accordion_JYX984": {
       "type": "section-accordion",
       "blocks": {
@@ -786,8 +675,6 @@
     "section_custom_content_yzNfAy",
     "section_custom_content_TGmxaP",
     "section_custom_content_QjqKfm",
-    "section_before_after_rEeAhP",
-    "section_rich_text_7UcRjA",
     "section_accordion_JYX984",
     "section_text_row_nFCGbH",
     "section_text_row_WGCKTF",

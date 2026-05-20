@@ -185,6 +185,7 @@
       "block_order": [
         "button_6AAGEb"
       ],
+      "disabled": true,
       "name": "Banner with video",
       "settings": {
         "image_1": "shopify://shop_images/the-city-collection-pdp-slivers_a906ce22-dc48-4965-86d7-197688a9ab40.jpg",

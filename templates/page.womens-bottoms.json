@@ -29,7 +29,7 @@
     "section_hero_Ay6Tni": {
       "type": "section-hero",
       "settings": {
-        "image_1": "shopify://shop_images/women_s-all-sliver.jpg",
+        "image_1": "shopify://shop_images/house-jersey-2026-sliver.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
@@ -61,7 +61,7 @@
         "text_gGzXdc": {
           "type": "text",
           "settings": {
-            "text": "<p>Our best-selling cargo bib shorts feature a super luxurious compressive fabric that deftly balances comfort and performance. Designed for all types of riding and built with droptail functionality so you can go all day. The best just got better.</p>",
+            "text": "<p>Our droptail cargo bibs are already award-winning, but we knew we could do better, so we did. You’ll find the same all-day compression fabric, women’s endurance chamois, and supportive stretch. Now with cargo pockets that sit flat and disappear. Everything you loved, just more refined.</p>",
             "text_font_size": "body-large",
             "padding_bottom": 16
           }
@@ -84,6 +84,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "womens-droptail-cargo-bib-short",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -98,66 +99,6 @@
         "layout_desktop": "grid",
         "grid": 4,
         "rows": 3,
-        "width": "wrapper",
-        "layout_mobile": "1",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "heading_tag": "automatic"
-      }
-    },
-    "section_rich_text_VxWf4z": {
-      "type": "section-rich-text",
-      "blocks": {
-        "heading_YC6Hpy": {
-          "type": "heading",
-          "settings": {
-            "title": "THERMAL DROPTAIL CARGO BIB TIGHTS",
-            "heading_font_size": "heading-medium",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_TrgPjM": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our thermal cargo bib tights are built to keep you cozy in temperatures between 38-60°. These bibs are your new cold-weather riding bestie, designed with bluesign®-approved fleece-lined fabric and drop tail functionality for effortless bathroom breaks.</p>",
-            "text_font_size": "body-large",
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_YC6Hpy",
-        "text_TrgPjM"
-      ],
-      "settings": {
-        "align_text": "text-left",
-        "width": "wrapper",
-        "color_scheme": "",
-        "overlay_type": "disabled",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "section_collection_fmGhdA": {
-      "type": "section-collection",
-      "settings": {
-        "featured_collection": "womens-thermal-cargo-bib-tights",
-        "heading": "",
-        "heading_font_size": "heading-medium",
-        "description": "",
-        "text_font_size": "body-medium",
-        "layout": "inline",
-        "link_text": "",
-        "link_url": "",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "layout_desktop": "grid",
-        "grid": 3,
-        "rows": 6,
         "width": "wrapper",
         "layout_mobile": "1",
         "color_scheme": "",
@@ -204,6 +145,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "womens-lightweight-droptail-bib-tight",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -218,6 +160,67 @@
         "layout_desktop": "grid",
         "grid": 2,
         "rows": 2,
+        "width": "wrapper",
+        "layout_mobile": "1",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_rich_text_VxWf4z": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_YC6Hpy": {
+          "type": "heading",
+          "settings": {
+            "title": "THERMAL DROPTAIL CARGO BIB TIGHTS",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_TrgPjM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our thermal cargo bib tights are built to keep you cozy in temperatures between 38-60°. These bibs are your new cold-weather riding bestie, designed with bluesign®-approved fleece-lined fabric and drop tail functionality for effortless bathroom breaks.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_YC6Hpy",
+        "text_TrgPjM"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_collection_fmGhdA": {
+      "type": "section-collection",
+      "settings": {
+        "featured_collection": "womens-thermal-cargo-bib-tights",
+        "enable_in_grid_content": true,
+        "heading": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 3,
+        "rows": 6,
         "width": "wrapper",
         "layout_mobile": "1",
         "color_scheme": "",
@@ -320,6 +323,7 @@
       "disabled": true,
       "settings": {
         "featured_collection": "womens-not-cargo-droptail-bibs",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -380,6 +384,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "s-womens-droptail-thermal-shorts",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -443,6 +448,7 @@
       "disabled": true,
       "settings": {
         "featured_collection": "womens-work-short",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",

@@ -94,38 +94,38 @@
         "padding_bottom": 26
       }
     },
-    "section_double_r3LyT8": {
+    "section_double_wKDreB": {
       "type": "section-double",
       "blocks": {
-        "subheading_8BKPAw": {
+        "subheading_cKztLG": {
           "type": "subheading",
           "settings": {
             "subheading": "",
             "padding_bottom": 16
           }
         },
-        "heading_8nwBDT": {
+        "heading_VqMFph": {
           "type": "heading",
           "settings": {
-            "title": "Part-Time Showroom Coordinator",
+            "title": "Apparel Production & Development Manager",
             "heading_font_size": "heading-medium",
             "padding_bottom": 16,
             "heading_tag": "automatic"
           }
         },
-        "text_HbJFyV": {
+        "text_KeQVJd": {
           "type": "text",
           "settings": {
-            "text": "<p>Come geek out on cycling kit with strangers all day, ornot.</p>",
+            "text": "<p>Come build the trim library we should have had years ago, Ornot.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 16
           }
         },
-        "buttons_zxMdtB": {
+        "buttons_Xa9JQr": {
           "type": "buttons",
           "settings": {
             "button_text": "Learn more",
-            "button_url": "shopify://pages/part-time-showroom",
+            "button_url": "shopify://pages/production-manager",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -135,13 +135,13 @@
         }
       },
       "block_order": [
-        "subheading_8BKPAw",
-        "heading_8nwBDT",
-        "text_HbJFyV",
-        "buttons_zxMdtB"
+        "subheading_cKztLG",
+        "heading_VqMFph",
+        "text_KeQVJd",
+        "buttons_Xa9JQr"
       ],
       "settings": {
-        "image_1": "shopify://shop_images/AfterCakeOrnot_Jan28-27.jpg",
+        "image_1": "shopify://shop_images/FabricStoryOrnot_6a05c762-5fa9-4df8-a39d-3098bda5abbf.jpg",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "layout": "is-reversed",
@@ -168,7 +168,7 @@
         "heading_xBBQVt": {
           "type": "heading",
           "settings": {
-            "title": "Digital brand designer",
+            "title": "Retail team member",
             "heading_font_size": "heading-medium",
             "padding_bottom": 16,
             "heading_tag": "automatic"
@@ -177,7 +177,7 @@
         "text_pTfkHm": {
           "type": "text",
           "settings": {
-            "text": "<p>Come make the logos bigger, ornot.</p>",
+            "text": "<p>Come geek out on cycling kit with strangers all day, Ornot.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 16
           }
@@ -186,7 +186,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "Learn more",
-            "button_url": "shopify://pages/graphic-designer-digital",
+            "button_url": "shopify://pages/retail-team-member",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -202,7 +202,7 @@
         "buttons_enKnEN"
       ],
       "settings": {
-        "image_1": "shopify://shop_images/TNUT7099.jpg",
+        "image_1": "shopify://shop_images/AfterCakeOrnot_Jan28-27.jpg",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "layout": "",
@@ -216,85 +216,38 @@
         "show_placeholder": true
       }
     },
-    "section_double_L9jbwQ": {
+    "section_double_r3LyT8": {
       "type": "section-double",
       "blocks": {
-        "heading_eci46a": {
-          "type": "heading",
+        "subheading_8BKPAw": {
+          "type": "subheading",
           "settings": {
-            "title": "Full-Time Showroom Manager",
-            "heading_font_size": "heading-large",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_3gFCDk": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Run the show. We're expanding our retail showroom and looking for someone to help take it to the next level. </p>",
-            "text_font_size": "body-medium",
+            "subheading": "",
             "padding_bottom": 16
           }
         },
-        "buttons_BLyrBB": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Learn more",
-            "button_url": "shopify://pages/retail-manager-ornot",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_eci46a",
-        "text_3gFCDk",
-        "buttons_BLyrBB"
-      ],
-      "disabled": true,
-      "settings": {
-        "image_1": "shopify://shop_images/R0018438.jpg",
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "layout": "",
-        "width": "wrapper--full",
-        "height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "reverse_blocks": false,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "show_placeholder": true
-      }
-    },
-    "section_double_VkYNGp": {
-      "type": "section-double",
-      "blocks": {
-        "heading_D6hfCc": {
+        "heading_8nwBDT": {
           "type": "heading",
           "settings": {
             "title": "Part-Time Showroom Coordinator",
-            "heading_font_size": "heading-large",
+            "heading_font_size": "heading-medium",
             "padding_bottom": 16,
             "heading_tag": "automatic"
           }
         },
-        "text_Y9Uj4p": {
+        "text_HbJFyV": {
           "type": "text",
           "settings": {
-            "text": "<p>Looking for a fun part time job that revolves around your passion (hint: your passion is probably bikes).</p>",
+            "text": "<p>Come geek out on cycling kit with strangers all day, Ornot.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 16
           }
         },
-        "buttons_tAy4VN": {
+        "buttons_zxMdtB": {
           "type": "buttons",
           "settings": {
             "button_text": "Learn more",
-            "button_url": "shopify://pages/part-time-showroom",
+            "button_url": "shopify://pages/retail-team-member",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -304,19 +257,20 @@
         }
       },
       "block_order": [
-        "heading_D6hfCc",
-        "text_Y9Uj4p",
-        "buttons_tAy4VN"
+        "subheading_8BKPAw",
+        "heading_8nwBDT",
+        "text_HbJFyV",
+        "buttons_zxMdtB"
       ],
       "disabled": true,
       "settings": {
-        "image_1": "shopify://shop_images/R0016583.jpg",
+        "image_1": "shopify://shop_images/AfterCakeOrnot_Jan28-27.jpg",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "layout": "is-reversed",
         "width": "wrapper--full",
         "height": "image-height",
-        "mobile_height": "image-height--mobile",
+        "mobile_height": "screen-height-one-half--mobile",
         "reverse_blocks": false,
         "color_scheme": "",
         "padding_top": 0,
@@ -457,10 +411,9 @@
     "main",
     "section_hero_MmediH",
     "section_rich_text_h83y7h",
-    "section_double_r3LyT8",
+    "section_double_wKDreB",
     "section_double_8zRE9F",
-    "section_double_L9jbwQ",
-    "section_double_VkYNGp",
+    "section_double_r3LyT8",
     "section_custom_content_V7JYH6",
     "section_custom_content_PtmCWa"
   ]

@@ -117,15 +117,15 @@
           "type": "image",
           "settings": {
             "position": "1",
-            "image": "shopify://shop_images/chico-black-and-white.jpg",
+            "image": "shopify://shop_images/cargo-bib-pocket-close-up.jpg",
             "aspect_ratio": 1,
             "wide_image": false,
             "overlay_type": "disabled",
-            "title": "",
+            "title": "shop 2026 Cargo bibs",
             "heading_font_size": "heading-x-small",
             "link_text": "",
             "text_font_size": "body-x-small",
-            "link": "shopify://collections/city-collection",
+            "link": "shopify://products/cargo-bib-short-black",
             "text_color": "#ffffff"
           }
         },
@@ -133,15 +133,15 @@
           "type": "image",
           "settings": {
             "position": "2",
-            "image": "shopify://shop_images/chico-black-and-white.jpg",
+            "image": "shopify://shop_images/cargo-bibs-2026-lifestyle_c8aaed04-ae9d-46b7-90d5-22598fe9d1b6.jpg",
             "aspect_ratio": 1,
             "wide_image": false,
             "overlay_type": "disabled",
-            "title": "",
-            "heading_font_size": "heading-medium",
+            "title": "Shop Droptail Cargo Bibs",
+            "heading_font_size": "heading-x-small",
             "link_text": "",
             "text_font_size": "body-x-small",
-            "link": "shopify://collections/city-collection",
+            "link": "shopify://products/womens-droptail-cargo-bib-short-midnight-blue",
             "text_color": ""
           }
         },
@@ -149,7 +149,7 @@
           "type": "image",
           "settings": {
             "position": "3",
-            "image": "shopify://shop_images/chico-black-and-white.jpg",
+            "image": "shopify://shop_images/Ultra_grid_black_bar_bag_studio_6.jpg",
             "aspect_ratio": 1,
             "wide_image": false,
             "overlay_type": "disabled",
@@ -157,7 +157,7 @@
             "heading_font_size": "heading-x-small",
             "link_text": "",
             "text_font_size": "body-x-small",
-            "link": "shopify://collections/city-collection",
+            "link": "shopify://products/handlebar-bag-ultragrid-black",
             "text_color": "#000000"
           }
         },

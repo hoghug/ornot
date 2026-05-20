@@ -292,7 +292,7 @@
         "image_rDfE8k": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/DARK-TEAL.jpg",
+            "image": "shopify://shop_images/womens-patterndelta-habanero-jersey-studio-3.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -945,6 +945,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "special-projects",
+        "enable_in_grid_content": true,
         "heading": "special projects collection",
         "heading_font_size": "heading-medium",
         "description": "",

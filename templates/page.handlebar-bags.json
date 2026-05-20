@@ -29,7 +29,7 @@
     "section_hero_VQW3J3": {
       "type": "section-hero",
       "settings": {
-        "image_1": "shopify://shop_images/BAR_BAG_HOMEPAGE_HERO.jpg",
+        "image_1": "shopify://shop_images/Page_header_white_mini_barbag.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
@@ -222,6 +222,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "s-handlebarbag",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -273,6 +274,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "sibling-barbag-mini",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -324,6 +326,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "s-seat-bag",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -375,6 +378,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "s-musettes",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -426,6 +430,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "bag-accessories",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",

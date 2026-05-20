@@ -29,13 +29,13 @@
     "section_hero_Ay6Tni": {
       "type": "section-hero",
       "settings": {
-        "image_1": "shopify://shop_images/mens-cargo-bibs-sliver.jpg",
+        "image_1": "shopify://shop_images/ben-headlands-sliver-cargo-bibs-mc-jacket.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
         "flex_align_desktop": "align--middle-center-desktop",
         "content_width": 50,
-        "mobile_image": "shopify://shop_images/mens-cargo-bibs-sliver.jpg",
+        "mobile_image": "shopify://shop_images/ben-headlands-sliver-cargo-bibs-mc-jacket.jpg",
         "mobile_height": "image-height--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
@@ -61,7 +61,7 @@
         "text_JCifFC": {
           "type": "text",
           "settings": {
-            "text": "<p>Our best-selling cargo bib shorts feature a super luxurious compressive fabric that deftly balances comfort and performance. Designed for all types of riding and built with four pockets so you can stay out there all day. <strong>Voted \"Best Cargo Bibs\"</strong> by the editors of Bicycling Magazine in 2022 and Gear Junkie in 2024.</p>",
+            "text": "<p>Our cargo bibs were already award-winning, but we refined them anyway. For 2026, the cargo pockets now sit flat and disappear, and updated straps prevent pressure points on long rides. The all-day compression fabric, endurance chamois, and supportive stretch are all still here. Everything you loved, just more refined. You could upgrade, Ornot.</p>",
             "text_font_size": "body-large",
             "padding_bottom": 16
           }
@@ -85,6 +85,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "mens-cargo-bib-short",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -100,7 +101,7 @@
         "grid": 4,
         "rows": 2,
         "width": "wrapper",
-        "layout_mobile": "2",
+        "layout_mobile": "1",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0,
@@ -186,8 +187,8 @@
         "borders": false,
         "gutters": false,
         "width": "wrapper--full",
-        "height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-half--mobile",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
         "reverse_blocks": false,
         "color_scheme": "",
         "padding_top": 0,
@@ -209,7 +210,7 @@
         "text_XEJBYK": {
           "type": "text",
           "settings": {
-            "text": "<p>Our work bib shorts are designed with recycled bluesign®-approved fabric, and a 'Goldilocks' chamois pad. The blend of value and performance makes these bibs the perfect weekday workhorse so you can get straight to it. A single cargo pocket on the right leg lets you bring all your snacks, Ornot.</p>",
+            "text": "<p>Our work bib shorts are designed with recycled bluesign®-approved fabric, and a 'Goldilocks' chamois pad. The blend of value and performance makes these bibs the perfect weekday workhorse so you can get straight to it. A single cargo pocket for snacks, Ornot.</p>",
             "text_font_size": "body-large",
             "padding_bottom": 16
           }
@@ -233,6 +234,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "mens-work-bib-short",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -294,6 +296,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "mens-lightweight-cargo-bib-tight",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -355,6 +358,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "mens-thermal-cargo-bib-tights",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -416,6 +420,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "mens-thermal-cargo-bib-shorts",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -443,6 +448,7 @@
       "disabled": true,
       "settings": {
         "featured_collection": "not-cargo-bibs",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",

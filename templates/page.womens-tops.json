@@ -29,7 +29,7 @@
     "section_hero_Ay6Tni": {
       "type": "section-hero",
       "settings": {
-        "image_1": "shopify://shop_images/womens-micro-grid-jersey.jpg",
+        "image_1": "shopify://shop_images/womens-delta-sliver.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
@@ -52,7 +52,7 @@
         "heading_htErdw": {
           "type": "heading",
           "settings": {
-            "title": "HOUSE JERSEYS",
+            "title": "HABANERO DELTA JERSEY",
             "heading_font_size": "heading-medium",
             "padding_bottom": 16,
             "heading_tag": "automatic"
@@ -61,7 +61,7 @@
         "text_Mwm4iA": {
           "type": "text",
           "settings": {
-            "text": "<p>Our House Jersey, a USA-made staple since 2013, just got even better. Cut and sewn in California from recycled <a href=\"https://www.ornotbike.com/collections/fabric-story-recycled-uv-micro-mesh\" target=\"_blank\" title=\"https://www.ornotbike.com/collections/fabric-story-recycled-uv-micro-mesh\">UV-micro-mesh</a> fabric, this lightweight jersey delivers quick-drying performance and UPF 30+ protection.</p>",
+            "text": "<p>Built with Polartec® Delta™ the Habanero a lightweight summer cycling jersey designed to keep you cool. As our friends at Polartec like to say: patented evaporative-cooling fabric technology made for the hottest conditions.</p>",
             "text_font_size": "body-large",
             "padding_bottom": 16
           }
@@ -80,10 +80,58 @@
         "padding_bottom": 40
       }
     },
+    "section_product_D9xNnm": {
+      "type": "section-product",
+      "name": "Featured product",
+      "settings": {
+        "product": "womens-habanero-delta-jersey-cold-blocks",
+        "show_product_card": false,
+        "layout": "is-reversed",
+        "limit": 1,
+        "scrolling_styles": "vertical",
+        "horizontal_scroll": false,
+        "color_scheme": ""
+      }
+    },
+    "section_rich_text_j44cBE": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_pH6x7g": {
+          "type": "heading",
+          "settings": {
+            "title": "HOUSE JERSEYS",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_YPFBYh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our House Jersey, a USA-made staple since 2013, just got even better. Cut and sewn in California from recycled <a href=\"https://www.ornotbike.com/collections/fabric-story-recycled-uv-micro-mesh\" target=\"_blank\" title=\"https://www.ornotbike.com/collections/fabric-story-recycled-uv-micro-mesh\">UV-micro-mesh</a> fabric, this lightweight jersey delivers quick-drying performance and UPF 30+ protection.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_pH6x7g",
+        "text_YPFBYh"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 50,
+        "padding_bottom": 40
+      }
+    },
     "section_collection_k6Jfy3": {
       "type": "section-collection",
       "settings": {
         "featured_collection": "womens-house-jerseys",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -144,6 +192,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "womens-park-jerseys-all-2025",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -163,6 +212,67 @@
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_rich_text_dgpcbP": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_QjAAAD": {
+          "type": "heading",
+          "settings": {
+            "title": "RIDING SHIRTS",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_pxUKzt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>These feature a relaxed fit, tailored specifically for riding. The single rear pocket is perfect for stashing your sunglasses after sunset or a small snack. Pair these with our Cargo Bib Shorts and a handlebar bag and you'll have enough room for any adventure.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_QjAAAD",
+        "text_pxUKzt"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 50,
+        "padding_bottom": 40
+      }
+    },
+    "section_collection_7C9NER": {
+      "type": "section-collection",
+      "settings": {
+        "featured_collection": "womens-riding-shirts",
+        "enable_in_grid_content": true,
+        "heading": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 4,
+        "rows": 4,
+        "width": "wrapper",
+        "layout_mobile": "2",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
         "heading_tag": "automatic"
       }
     },
@@ -204,6 +314,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "womens-micro-grid-jerseys",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -264,6 +375,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "womens-thermal-jerseys",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -283,66 +395,6 @@
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0,
-        "heading_tag": "automatic"
-      }
-    },
-    "section_rich_text_dgpcbP": {
-      "type": "section-rich-text",
-      "blocks": {
-        "heading_QjAAAD": {
-          "type": "heading",
-          "settings": {
-            "title": "RIDING SHIRTS",
-            "heading_font_size": "heading-medium",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
-        "text_pxUKzt": {
-          "type": "text",
-          "settings": {
-            "text": "<p>These feature a relaxed fit, tailored specifically for riding. The single rear pocket is perfect for stashing your sunglasses after sunset or a small snack. Pair these with our Cargo Bib Shorts and a handlebar bag and you'll have enough room for any adventure.</p>",
-            "text_font_size": "body-large",
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading_QjAAAD",
-        "text_pxUKzt"
-      ],
-      "settings": {
-        "align_text": "text-left",
-        "width": "wrapper",
-        "color_scheme": "",
-        "overlay_type": "disabled",
-        "padding_top": 50,
-        "padding_bottom": 40
-      }
-    },
-    "section_collection_7C9NER": {
-      "type": "section-collection",
-      "settings": {
-        "featured_collection": "womens-riding-shirts",
-        "heading": "",
-        "heading_font_size": "heading-medium",
-        "description": "",
-        "text_font_size": "body-medium",
-        "layout": "inline",
-        "link_text": "",
-        "link_url": "",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "layout_desktop": "grid",
-        "grid": 4,
-        "rows": 4,
-        "width": "wrapper",
-        "layout_mobile": "2",
-        "color_scheme": "",
-        "padding_top": 50,
-        "padding_bottom": 50,
         "heading_tag": "automatic"
       }
     },
@@ -386,6 +438,7 @@
       "disabled": true,
       "settings": {
         "featured_collection": "womens-park-jerseys",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -448,6 +501,7 @@
       "disabled": true,
       "settings": {
         "featured_collection": "womens-riding-shirts",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -510,6 +564,7 @@
       "disabled": true,
       "settings": {
         "featured_collection": "womens-lightweight-work-jerseys",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -570,6 +625,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "womens-vests-and-baselayers",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -597,15 +653,17 @@
     "main",
     "section_hero_Ay6Tni",
     "section_rich_text_yQHQaA",
+    "section_product_D9xNnm",
+    "section_rich_text_j44cBE",
     "section_collection_k6Jfy3",
     "section_rich_text_ALLBWm",
     "section_collection_DXyY74",
+    "section_rich_text_dgpcbP",
+    "section_collection_7C9NER",
     "section_rich_text_3xqzL8",
     "section_collection_DWdhaf",
     "section_rich_text_VxWf4z",
     "section_collection_fmGhdA",
-    "section_rich_text_dgpcbP",
-    "section_collection_7C9NER",
     "section_rich_text_e7DJyb",
     "section_collection_m3KLnB",
     "section_rich_text_A6tAMb",

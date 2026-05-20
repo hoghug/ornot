@@ -52,7 +52,7 @@
         "heading_RkJ7Yi": {
           "type": "heading",
           "settings": {
-            "title": "HOUSE JERSEYS",
+            "title": "HABANERO DELTA JERSEYS",
             "heading_font_size": "heading-medium",
             "padding_bottom": 16,
             "heading_tag": "automatic"
@@ -61,7 +61,7 @@
         "text_thAhBC": {
           "type": "text",
           "settings": {
-            "text": "<p>Our House Jersey, a USA-made staple since 2013, just got even better. Cut and sewn in California from recycled <a href=\"https://www.ornotbike.com/collections/fabric-story-recycled-uv-micro-mesh\" target=\"_blank\" title=\"https://www.ornotbike.com/collections/fabric-story-recycled-uv-micro-mesh\">UV-micro-mesh</a> fabric, this lightweight jersey delivers quick-drying performance and UPF 30+ protection. <a href=\"/pages/jersey-comparison\" target=\"_blank\" title=\"Ornot Bike Jersey Comparison\">Compare Jerseys here.</a></p>",
+            "text": "<p>Built with Polartec® Delta™ the Habanero a lightweight summer cycling jersey designed to keep you cool. As our friends at Polartec like to say: patented evaporative-cooling fabric technology made for the hottest conditions.</p>",
             "text_font_size": "body-large",
             "padding_bottom": 16
           }
@@ -83,7 +83,69 @@
     "section_collection_ANrF8T": {
       "type": "section-collection",
       "settings": {
-        "featured_collection": "mens-house-jerseys",
+        "featured_collection": "s-mens-habanero-delta",
+        "enable_in_grid_content": true,
+        "heading": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 2,
+        "rows": 2,
+        "width": "wrapper",
+        "layout_mobile": "1",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_rich_text_mMr4A7": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_wGX8fx": {
+          "type": "heading",
+          "settings": {
+            "title": "HOUSE JERSEYS",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_mJXEYR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our House Jersey, a USA-made staple since 2013, just got even better. Cut and sewn in California from recycled <a href=\"https://www.ornotbike.com/collections/fabric-story-recycled-uv-micro-mesh\" target=\"_blank\" title=\"https://www.ornotbike.com/collections/fabric-story-recycled-uv-micro-mesh\">UV-micro-mesh</a> fabric, this lightweight jersey delivers quick-drying performance and UPF 30+ protection. <a href=\"/pages/jersey-comparison\" target=\"_blank\" title=\"Ornot Bike Jersey Comparison\">Compare Jerseys here.</a></p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_wGX8fx",
+        "text_mJXEYR"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 50,
+        "padding_bottom": 40
+      }
+    },
+    "section_collection_WeFi73": {
+      "type": "section-collection",
+      "settings": {
+        "featured_collection": "s-mens-house-jersey",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -144,6 +206,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "mens-micro-grid-jerseys",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -204,6 +267,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "mens-park-jerseys-all-2025",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -264,6 +328,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "mens-riding-shirts",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -324,6 +389,7 @@
       "type": "section-collection",
       "settings": {
         "featured_collection": "mens-thermal-jerseys-1",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -386,6 +452,7 @@
       "disabled": true,
       "settings": {
         "featured_collection": "mens-vests-and-baselayers",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -448,6 +515,7 @@
       "disabled": true,
       "settings": {
         "featured_collection": "mens-park-jerseys",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -510,6 +578,7 @@
       "disabled": true,
       "settings": {
         "featured_collection": "mens-lightweight-work-jerseys",
+        "enable_in_grid_content": true,
         "heading": "",
         "heading_font_size": "heading-medium",
         "description": "",
@@ -538,6 +607,8 @@
     "section_hero_Ay6Tni",
     "section_rich_text_TeLzD4",
     "section_collection_ANrF8T",
+    "section_rich_text_mMr4A7",
+    "section_collection_WeFi73",
     "section_rich_text_3xqzL8",
     "section_collection_DWdhaf",
     "section_rich_text_DNYxJb",

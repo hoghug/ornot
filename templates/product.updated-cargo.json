@@ -35,7 +35,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "subheading_option": "breadcrumb",
+            "subheading_option": "none",
             "heading_font_size": "heading-medium",
             "padding_bottom": 8
           }

@@ -15,7 +15,8 @@
         "feat": {
           "type": "featured_post",
           "settings": {
-            "featured_post": "news/sponsored-ornot-miguel-ovalles",
+            "featured_post": "news/city-collection-recap-our-collaboration-with-chico-brenes-and-ferris-plock",
+            "image": "shopify://shop_images/city-collection-hero.jpg",
             "subheading": "Featured post"
           }
         }
