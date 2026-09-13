@@ -75,7 +75,7 @@
         "text_cGxqMm": {
           "type": "text",
           "settings": {
-            "text": "<p>Coming to San Francisco? <a href=\"https://www.ornotbike.com/pages/showroom\">Visit us</a> in the <a href=\"https://www.ornotbike.com/pages/showroom\">Inner Richmond</a>. Looking to rent a bike while in town? We recommend <a href=\"https://shop.sportsbasement.com/blogs/stores/san-francisco-presidio\">Sports Basement</a>. Do you like pastries? Our store is right around the corner from the best croissant in SF at <a href=\"https://arsicault-bakery.com/home\" target=\"_blank\">Arsicault</a>. </p><p>Need sizing help? Be sure to include your height / weight and any applicable info (broad shoulders). Need to adjust an order you just made? Send it! </p>",
+            "text": "<p>Coming to San Francisco? <a href=\"https://www.ornotbike.com/pages/showroom\">Visit us</a> in the <a href=\"https://www.ornotbike.com/pages/showroom\">Inner Richmond</a>. Looking to rent a bike while in town? We recommend <a href=\"https://shop.sportsbasement.com/blogs/stores/san-francisco-presidio\">Sports Basement</a>. Do you like pastries? Our store is right around the corner from the best croissant in SF at <a href=\"https://arsicault-bakery.com/home\" target=\"_blank\">Arsicault</a>. </p><p>Need sizing help? Be sure to include your height / weight and any applicable info (broad shoulders). Need to adjust an order you just made? Send it! <br/><br/>Want to get answers now? We're beta testing a real, live <a href=\"https://ornot-ask.vercel.app/ask\" target=\"_blank\" title=\"https://ornot-ask.vercel.app/ask\">CHATBOT</a> that we've been training from years of our knowledge. </p>",
             "text_font_size": "body-large",
             "padding_bottom": 16
           }

@@ -1,0 +1,827 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_hero_zYTfPN": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_4RMP4h": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image banner",
+            "heading_font_size": "heading-x-large",
+            "heading_tag": "automatic",
+            "padding_bottom": 8
+          }
+        },
+        "text_PYTEiz": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Tell your brand's story through images.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 8
+          }
+        },
+        "button_AEBmKC": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "full_width": false,
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading_4RMP4h",
+        "text_PYTEiz",
+        "button_AEBmKC"
+      ],
+      "name": "Image banner",
+      "settings": {
+        "image_1": "shopify://shop_images/Ornot_TamWeek_2026_Sliver_02.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "four-fifty-height-hero",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/Ornot_TamWeek_2026_Website_ModuleImage_01.png",
+        "mobile_height": "screen-height-one-half--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_custom_content_FHpFEc": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_dQnYpG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/tam-week-2026-logo.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_hXerzK": {
+          "type": "text",
+          "settings": {
+            "subheading": "5 days // 1 mountain // july 6-10, 2026",
+            "title": "WHAT'S TAM WEEK?",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Tam Week is a 5-day cycling challenge from <strong>July 6–10, 2026</strong>, inviting Bay Area riders to summit Mt. Tamalpais daily for up to 5 consecutive days. We encourage you to climb to the \"top\" of West Peak to challenge mind, body, and win prizes. Ride anytime, any route, any bike—to <a href=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\" target=\"_blank\" title=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\">West Peak</a> (not East Peak).</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_dQnYpG",
+        "text_hXerzK"
+      ],
+      "disabled": true,
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_WYi9ez": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_9k47Rf": {
+          "type": "text",
+          "settings": {
+            "subheading": "/ / / / / / / / / / / /",
+            "title": "HOW IT WORKS",
+            "heading_font_size": "heading-medium",
+            "text": "<ul><li>Pick up a punch card</li><li>Ride any route to <a href=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\" target=\"_blank\" title=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\">West Peak</a> (not East Peak) </li><li>Find the hole punch </li><li>Log your ride(s) on Strava or RWGPS</li><li>Celebrate at the after party</li></ul><p><em>*Ascents must start sub 200 ft. of elevation. Only </em><em><strong>one ascent per day</strong></em><em> counts towards your Tam Week total*</em></p>",
+            "text_font_size": "body-medium",
+            "button_text": "Join us on strava",
+            "button_url": "https://www.strava.com/clubs/183693",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
+        "image_beizHx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/tam_road.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_9k47Rf",
+        "image_beizHx"
+      ],
+      "disabled": true,
+      "name": "how it works - early",
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_TGmxaP": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_Ucr7eK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_Website_module_TamWeekPrizes.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_hCGdGT": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "THE REWARD",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Beyond enjoying the view atop Tam multiple times a week? We're giving away limited-edition Ornot prizes, plus gear from our friends! <br/><br/>Summit 1 time: 1 raffle ticket</p><p>Summit 2 times: 2 raffle tickets</p><p>Summit 3 times: 3 raffle tickets</p><p>Summit 4 times: 4 raffle tickets </p><p>Summit 5 times: 5 raffle tickets + limited Tam Week Pennant<br/><br/><strong>*must be present at Ornot Friday 7/10 at 7:00pm to claim prizes*</strong></p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_Ucr7eK",
+        "text_hCGdGT"
+      ],
+      "disabled": true,
+      "name": "The Reward",
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_rich_text_8rHaKz": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_Ypnxg9": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Introducing",
+            "padding_bottom": 16
+          }
+        },
+        "heading_x7KW6M": {
+          "type": "heading",
+          "settings": {
+            "title": "SIGN UP",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_NyrtKh": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>To be eligible for prizes, raffle, and special products sign up below:</strong></p>",
+            "text_font_size": "body-x-large",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_bJhwyq": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_Ypnxg9",
+        "heading_x7KW6M",
+        "text_NyrtKh",
+        "buttons_bJhwyq"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_code_hxTRfr": {
+      "type": "section-custom-code",
+      "name": "Custom code",
+      "settings": {
+        "code": "<div class=\"klaviyo-form-SXpKFJ\"></div>",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 22
+      }
+    },
+    "section_custom_content_yzNfAy": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_YQ9RcY": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "HOW IT WORKS",
+            "heading_font_size": "heading-medium",
+            "text": "<ul><li>Pick up a punch card at the <a href=\"https://maps.app.goo.gl/vYhHyeK5jEDxZir49\" target=\"_blank\" title=\"https://maps.app.goo.gl/vYhHyeK5jEDxZir49\">Ornot Showroom</a></li><li>Sign up and enter your info. below</li><li>Ride any route to <a href=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\" target=\"_blank\" title=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\">West Peak</a> (not East Peak) </li><li>Find the hole punch (check <a href=\"https://www.instagram.com/ornotbike/\" target=\"_blank\" title=\"https://www.instagram.com/ornotbike/\">@ornotbike</a> for location)</li><li>Log your ride(s) on Strava or RWGPS</li><li>Celebrate at the after party <strong>Friday night, 7/10  </strong>(<a href=\"https://maps.app.goo.gl/vYhHyeK5jEDxZir49\" target=\"_blank\" title=\"https://maps.app.goo.gl/vYhHyeK5jEDxZir49\">59 Clement St.</a> // Raffle at 7:00pm)</li></ul><p><em>*Ascents must start sub 200 ft. of elevation. Only </em><em><strong>one ascent per day</strong></em><em> counts towards your Tam Week total*</em></p>",
+            "text_font_size": "body-medium",
+            "button_text": "Join us on strava",
+            "button_url": "https://www.strava.com/clubs/183693",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
+        "image_cR9BGy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_TamWeek_2026_PunchCard_Square.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_YQ9RcY",
+        "image_cR9BGy"
+      ],
+      "name": "how it works - launch",
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_video_BWB69P": {
+      "type": "section-video",
+      "disabled": true,
+      "name": "Video",
+      "settings": {
+        "video": "shopify://files/videos/TAMWEEKLP3.mov",
+        "show_video_popup": false,
+        "video_popup": "shopify://files/videos/TAMWEEKPROMOFINALFINAL.mov",
+        "video_popup_social": "",
+        "title": "",
+        "heading_font_size": "heading-x-large",
+        "text": "",
+        "text_font_size": "body-medium",
+        "flex_align": "align--bottom-center",
+        "link_text": "",
+        "link": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "desktop_height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "width": "wrapper--full",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "color": "",
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_accordion_JYX984": {
+      "type": "section-accordion",
+      "blocks": {
+        "text_MQRjJU": {
+          "type": "text",
+          "settings": {
+            "title": "Is this an Ornot only Event?",
+            "heading_font_size": "heading-small",
+            "text": "<p>Not at all! This event is open to everyone, including every brand and crew. You are more than welcome to create your own route on your own time. We have times when you can find us on the mountain, and we’ll post when other groups have rides going on.</p>"
+          }
+        },
+        "text_BCmib7": {
+          "type": "text",
+          "settings": {
+            "title": "Do I have to do all 5 to participate? Is it all or nothing?",
+            "heading_font_size": "heading-small",
+            "text": "<p>1x or 5x, it all counts! Give it a try as many times as you can, but there’s no requirement to do all 5 days. But! The more summits, the more opportunities for prizes.</p>"
+          }
+        },
+        "text_JXjL3w": {
+          "type": "text",
+          "settings": {
+            "title": "How do I punch the card?",
+            "heading_font_size": "heading-small",
+            "text": "<p>We will have hole punches tied to some handrailings at the SUMMIT of West Peak. Follow <a href=\"https://www.instagram.com/ornotbike/\" target=\"_blank\">@ornotbike</a> to see the exact location of the hole punchers. You can get a Punch Card at Ornot (59 Clement St.) or the kick-off ride at 7:00 am in Mill Valley.</p>"
+          }
+        },
+        "text_8dqUk7": {
+          "type": "text",
+          "settings": {
+            "title": "Where is the top of West Peak?",
+            "heading_font_size": "heading-small",
+            "text": "<p>All the routes posted to this page finish at West Peak, and you can follow <a href=\"https://www.instagram.com/ornotbike/\" target=\"_blank\">@ornotbike</a> on Instagram to see the spot. Google <strong>Habitat Restoration: MT. Tamalpais West Peak Gate Glory</strong>. Go through and climb up to the ruins to find the top.</p>"
+          }
+        },
+        "text_TqHqkB": {
+          "type": "text",
+          "settings": {
+            "title": "Can I do the same route every day?",
+            "heading_font_size": "heading-small",
+            "text": "<p>If you wish, you can. We also have some different route options below to inspire you. Road, dirt - it really doesn't matter, as long as it's under your own power.</p>"
+          }
+        },
+        "text_EdgY98": {
+          "type": "text",
+          "settings": {
+            "title": "What counts as an ascent?",
+            "heading_font_size": "heading-small",
+            "text": "<p>We ask everyone to start below 200 ft—say from SF, Mill Valley, Fairfax, Ross, or Stinson—so the full climb is part of the experience. It's a challenge after all.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_MQRjJU",
+        "text_BCmib7",
+        "text_JXjL3w",
+        "text_8dqUk7",
+        "text_TqHqkB",
+        "text_EdgY98"
+      ],
+      "custom_css": [
+        ".accordion__title {font-size-adjust: 1.75 !important;}"
+      ],
+      "name": "Accordion",
+      "settings": {
+        "default_open": true,
+        "title": "FAQ",
+        "heading_font_size": "heading-large",
+        "show_icon": false,
+        "icon_name": "icon-award",
+        "icon_size": 20,
+        "width": "wrapper",
+        "color_scheme": "",
+        "icon_color": "",
+        "padding_top": 10,
+        "padding_bottom": 0
+      }
+    },
+    "section_video_Lp8qc6": {
+      "type": "section-video",
+      "name": "Video",
+      "settings": {
+        "video": "shopify://files/videos/TAMWEEKLP3.mov",
+        "show_video_popup": false,
+        "video_popup": "shopify://files/videos/TAMWEEKPROMOFINALFINAL.mov",
+        "video_popup_social": "",
+        "title": "",
+        "heading_font_size": "heading-x-large",
+        "text": "",
+        "text_font_size": "body-medium",
+        "flex_align": "align--bottom-center",
+        "link_text": "",
+        "link": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "desktop_height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "width": "wrapper--full",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "color": "",
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_text_row_nFCGbH": {
+      "type": "section-text-row",
+      "blocks": {
+        "icon_qLeVUq": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-trophy",
+            "image": "shopify://shop_images/FAVORITE.png",
+            "icon_size": 80,
+            "icon_color": "#ffffff",
+            "title": "OUR FAVORITE, ORNOT",
+            "heading_font_size": "heading-small",
+            "text": "<p><a href=\"https://www.strava.com/routes/3372676060068364064\" target=\"_blank\" title=\"https://www.strava.com/routes/3372676060068364064\">60% of the time, there’s a 100% chance we take this route. It’s the most direct but also the fewest cars. [route]</a></p>",
+            "text_font_size": "body-medium",
+            "heading_tag": "automatic"
+          }
+        },
+        "icon_LGNNfP": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-location",
+            "image": "shopify://shop_images/RRG.png",
+            "icon_size": 80,
+            "icon_color": "#ffffff",
+            "title": "RAILROAD ALL THE WAY",
+            "heading_font_size": "heading-small",
+            "text": "<p><a href=\"https://www.strava.com/routes/3372677357766686496\" target=\"_blank\" title=\"https://www.strava.com/routes/3372677357766686496\">This is the classic dirt route up. Settle into cruise-mode and settle into the dirtiest climb up to West Peak. [route]</a></p>",
+            "text_font_size": "body-medium",
+            "heading_tag": "automatic"
+          }
+        },
+        "icon_3jqfCJ": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-chat",
+            "image": "shopify://shop_images/ROAD.png",
+            "icon_size": 80,
+            "icon_color": "#ffffff",
+            "title": "STRAIGHT UP ROAD",
+            "heading_font_size": "heading-small",
+            "text": "<p><a href=\"https://www.strava.com/routes/3372676512470242626\" target=\"_blank\" title=\"https://www.strava.com/routes/3372676512470242626\">Road rider’s delight. This is the Tam Slam route (or the Google Maps bike directions). Just like a climb in Le Tour, Ornot. [route]</a></p>",
+            "text_font_size": "body-medium",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "icon_qLeVUq",
+        "icon_LGNNfP",
+        "icon_3jqfCJ"
+      ],
+      "name": "Text columns with icons",
+      "settings": {
+        "title": "RECOMMENDED ROUTES",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "icon_alignment": "icon--left",
+        "width": "wrapper--full-padded",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "1",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 10,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_text_row_WGCKTF": {
+      "type": "section-text-row",
+      "blocks": {
+        "icon_qBQ8GH": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-chat",
+            "image": "shopify://shop_images/STINSON_f561941b-4cfc-43b7-a505-57df5839e372.png",
+            "icon_size": 80,
+            "icon_color": "#ffffff",
+            "title": "STINSON BREAKFAST CLUB",
+            "heading_font_size": "heading-small",
+            "text": "<p><a href=\"https://www.strava.com/routes/3372677771783854752\" target=\"_blank\" title=\"https://www.strava.com/routes/3372677771783854752\">This road ride allows you to tackle Tam from the lowest elevation to the highest elevation with the least distance. [route]</a></p>",
+            "text_font_size": "body-medium",
+            "heading_tag": "automatic"
+          }
+        },
+        "icon_MJLAgB": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-location",
+            "image": "shopify://shop_images/ELDRIDGE.png",
+            "icon_size": 80,
+            "icon_color": "#ffffff",
+            "title": "ELDRIDGE FROM MV",
+            "heading_font_size": "heading-small",
+            "text": "<p><a href=\"https://www.strava.com/routes/3372678553593469728\" target=\"_blank\" title=\"https://www.strava.com/routes/3372678553593469728\">This dirt route rips down and through Hoo-Koo-E-Koo Fire Road before heading up Eldridge to the top! [route]</a></p>",
+            "text_font_size": "body-medium",
+            "heading_tag": "automatic"
+          }
+        },
+        "icon_G38jyb": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-trophy",
+            "image": "shopify://shop_images/LAKES.png",
+            "icon_size": 80,
+            "icon_color": "#ffffff",
+            "title": "THROUGH THE LAKES",
+            "heading_font_size": "heading-small",
+            "text": "<p><a href=\"https://www.strava.com/routes/3372679353272503968\" target=\"_blank\" title=\"https://www.strava.com/routes/3372679353272503968\">This lesser traveled dirt route takes you into Ross before climbing up Fish Grade and the north side of Tam. [route]</a></p>",
+            "text_font_size": "body-medium",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "icon_qBQ8GH",
+        "icon_MJLAgB",
+        "icon_G38jyb"
+      ],
+      "name": "Text columns with icons",
+      "settings": {
+        "title": "",
+        "heading_font_size": "heading-large",
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "icon_alignment": "icon--left",
+        "width": "wrapper--full-padded",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "1",
+        "color_scheme": "",
+        "padding_top": 30,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_announcement_WJPAR9": {
+      "type": "section-announcement",
+      "blocks": {
+        "text_fLEqLK": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>More info to come!</h3>",
+            "text_font_size": "body-small",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_VgtipT": {
+          "type": "text",
+          "settings": {
+            "text": "<h5><strong>//  Follow </strong><a href=\"https://www.instagram.com/ornotbike\" target=\"_blank\" title=\"https://www.instagram.com/ornotbike\"><strong>@ornotbike</strong></a><strong> for the latest updates  //</strong></h5>",
+            "text_font_size": "body-small",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text_fLEqLK",
+        "text_VgtipT"
+      ],
+      "disabled": true,
+      "name": "Scrolling text",
+      "settings": {
+        "slider_speed": 7,
+        "text_alignment": "center",
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "message_spacing": 10,
+        "show_border": false,
+        "layout": "marquee",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_tab_collections_fPagLk": {
+      "type": "section-tab-collections",
+      "blocks": {
+        "collection_7GBHnY": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "featured_collection": "tam-week",
+            "show_image": false,
+            "align_with_product_images": false,
+            "overlay_type": "disabled",
+            "description": "",
+            "color": "",
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_7GBHnY"
+      ],
+      "name": "Tab collections",
+      "settings": {
+        "show_product_count": false,
+        "title": "",
+        "heading_font_size": "heading-medium",
+        "text": "",
+        "text_font_size": "body-medium",
+        "layout": "stacked",
+        "layout_desktop": "slider",
+        "product_limit": 6,
+        "grid": 4,
+        "rows": 3,
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_hero_8dKBJM": {
+      "type": "section-hero",
+      "disabled": true,
+      "name": "Image banner",
+      "settings": {
+        "image_1": "shopify://shop_images/tam-week-sponser.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_hero_zYTfPN",
+    "section_custom_content_FHpFEc",
+    "section_custom_content_WYi9ez",
+    "section_custom_content_TGmxaP",
+    "section_rich_text_8rHaKz",
+    "section_custom_code_hxTRfr",
+    "section_custom_content_yzNfAy",
+    "section_video_BWB69P",
+    "section_accordion_JYX984",
+    "section_video_Lp8qc6",
+    "section_text_row_nFCGbH",
+    "section_text_row_WGCKTF",
+    "section_announcement_WJPAR9",
+    "section_tab_collections_fPagLk",
+    "section_hero_8dKBJM"
+  ]
+}

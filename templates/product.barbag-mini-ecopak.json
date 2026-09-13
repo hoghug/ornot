@@ -102,6 +102,7 @@
           "settings": {
             "siblings_collection": "{{ product.metafields.theme.siblings.value }}",
             "sibling_color": "{{ product.metafields.theme.sibling_color.value }}",
+            "layout": "stacked",
             "option_font_size": "body-medium",
             "value_font_size": "body-x-small",
             "padding_bottom": 16
@@ -156,6 +157,7 @@
             "style": "collapsible",
             "show_description": true,
             "show_read_more": false,
+            "read_more_lines": 4,
             "default_open": true,
             "heading": "DESCRIPTION",
             "heading_font_size": "body-medium",
@@ -174,6 +176,7 @@
             "style": "collapsible",
             "show_description": false,
             "show_read_more": false,
+            "read_more_lines": 4,
             "default_open": false,
             "heading": "FEATURES",
             "heading_font_size": "body-medium",
@@ -192,6 +195,7 @@
             "style": "collapsible",
             "show_description": false,
             "show_read_more": false,
+            "read_more_lines": 4,
             "default_open": false,
             "heading": "SHIPPING, EXCHANGES, AND RETURNS",
             "heading_font_size": "body-medium",
@@ -210,6 +214,7 @@
             "style": "collapsible",
             "show_description": false,
             "show_read_more": false,
+            "read_more_lines": 4,
             "default_open": false,
             "heading": "1 YEAR WARRANTY",
             "heading_font_size": "body-medium",
@@ -292,9 +297,9 @@
         "product_sticky_enable": true,
         "variant_image_scroll": true,
         "show_cart_bar": false,
-        "enable_zoom": false,
+        "enable_zoom": true,
         "enable_video_looping": true,
-        "image_layout": "thumbnails",
+        "image_layout": "grid-1",
         "image_size": "normal",
         "mobile_image_style": "thumbs",
         "color_scheme": "",
@@ -712,7 +717,8 @@
           "settings": {
             "product": "{{product}}",
             "title": "",
-            "alignment": ""
+            "alignment": "",
+            "sortOrder": "mostRecent"
           }
         }
       },

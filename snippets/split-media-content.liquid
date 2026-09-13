@@ -1,0 +1,125 @@
+{% comment %}
+  Renders the type stack (subheading, heading, text, buttons) for a block in
+  the Split media banner section, with the block's desktop / mobile type
+  controls applied as classes and CSS variables. Shared by the overlay on
+  Image / Video blocks and by the Text block.
+
+  Accepts:
+  - block: {Object} Block object
+  - animation_anchor: {String} ID of the element that triggers animations
+  - text_class: {String} Class for the rich text ("hero__description" on media, "hero__rte" on a Text block)
+  - compact: {Boolean} Adds hero__content--compact (Text block)
+  - transparent: {Boolean} Adds hero__content--transparent (media overlay)
+  - underlay: {Boolean} Adds backdrop--radial (media overlay with text underlay)
+
+  Usage:
+  {% render 'split-media-content', block: block, animation_anchor: animation_anchor, text_class: 'hero__rte', compact: true %}
+{% endcomment %}
+
+{%- liquid
+  assign subheading = block.settings.subheading
+  assign title = block.settings.title
+  assign text = block.settings.text
+  assign text_class = text_class | default: 'hero__description'
+  assign animation_order = 0
+
+  assign heading_size = block.settings.heading_font_size | default: 'heading-large'
+  assign heading_size_mobile = block.settings.heading_font_size_mobile | default: ''
+  assign text_size = block.settings.text_font_size | default: 'body-medium'
+  assign text_size_mobile = block.settings.text_font_size_mobile | default: ''
+  assign heading_case = block.settings.heading_case | default: 'default'
+
+  assign content_width = block.settings.content_width | default: 100
+  assign content_width_mobile = block.settings.content_width_mobile | default: 100
+  assign type_gap = block.settings.type_gap | default: 16
+  assign type_gap_mobile = block.settings.type_gap_mobile | default: 16
+
+  capture content_classes
+    echo 'hero__content split-media__content'
+    if compact
+      echo ' hero__content--compact'
+    endif
+    if transparent
+      echo ' hero__content--transparent'
+    endif
+    if underlay
+      echo ' backdrop--radial'
+    endif
+    unless heading_case == 'default'
+      echo ' split-media__hc--' | append: heading_case
+    endunless
+  endcapture
+
+  capture content_style
+    echo '--split-media-content-width: ' | append: content_width | append: '%;'
+    echo ' --split-media-content-width-mobile: ' | append: content_width_mobile | append: '%;'
+    echo ' --split-media-gap: ' | append: type_gap | append: 'px;'
+    echo ' --split-media-gap-mobile: ' | append: type_gap_mobile | append: 'px;'
+  endcapture
+
+  capture heading_classes
+    echo 'hero__title ' | append: heading_size
+    if heading_size_mobile != blank
+      echo ' split-media__hm--' | append: heading_size_mobile
+    endif
+  endcapture
+
+  capture text_classes
+    echo text_class | append: ' ' | append: text_size
+    if text_size_mobile != blank
+      echo ' split-media__tm--' | append: text_size_mobile
+    endif
+  endcapture
+-%}
+
+<div class="{{ content_classes }}" style="{{ content_style }}">
+  {%- if subheading != blank -%}
+    {%- assign animation_order = animation_order | plus: 1 -%}
+    <p
+      class="hero__subheading"
+      data-aos="hero"
+      data-aos-anchor="{{ animation_anchor }}"
+      data-aos-order="{{ animation_order }}"
+    >
+      {{ subheading }}
+    </p>
+  {%- endif -%}
+
+  {%- if title != blank -%}
+    {%- liquid
+      assign animation_order = animation_order | plus: 1
+      assign heading_tag = 'h2'
+
+      unless block.settings.heading_tag == 'automatic' or block.settings.heading_tag == blank
+        assign heading_tag = block.settings.heading_tag
+      endunless
+    -%}
+
+    <{{ heading_tag }}
+      class="{{ heading_classes }}"
+      data-aos="hero"
+      data-aos-anchor="{{ animation_anchor }}"
+      data-aos-order="{{ animation_order }}"
+    >
+      {{- title -}}
+    </{{ heading_tag }}>
+  {%- endif -%}
+
+  {%- if text != blank -%}
+    {%- assign animation_order = animation_order | plus: 1 -%}
+    <div
+      class="{{ text_classes }}"
+      data-aos="hero"
+      data-aos-anchor="{{ animation_anchor }}"
+      data-aos-order="{{ animation_order }}"
+    >
+      {{ text }}
+    </div>
+  {%- endif -%}
+
+  {%- render 'split-media-buttons',
+    block: block,
+    animation_anchor: animation_anchor,
+    animation_order: animation_order
+  -%}
+</div>

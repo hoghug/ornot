@@ -1,0 +1,74 @@
+{% comment %}
+  Renders a group of up to two buttons for the Split media banner section.
+
+  Accepts:
+  - block: {Object} Block object
+  - animation_anchor: {String} ID of the element that triggers animations
+  - animation_order: {Number} Animation order of the element preceding the buttons
+
+  Usage:
+  {% render 'split-media-buttons', block: block, animation_anchor: animation_anchor, animation_order: animation_order %}
+{% endcomment %}
+
+{%- liquid
+  assign animation_order = animation_order | default: 0
+  assign button_size = block.settings.button_size
+
+  assign button_1_text = block.settings.button_1_text
+  assign button_1_style = block.settings.button_1_style
+  if button_1_style == 'btn--text' and block.settings.button_1_show_arrow
+    assign button_1_style = button_1_style | append: ' btn--text-no-underline'
+  endif
+
+  assign button_2_text = block.settings.button_2_text
+  assign button_2_style = block.settings.button_2_style
+  if button_2_style == 'btn--text' and block.settings.button_2_show_arrow
+    assign button_2_style = button_2_style | append: ' btn--text-no-underline'
+  endif
+-%}
+
+{%- if button_1_text != blank or button_2_text != blank -%}
+  <div class="hero__button-group">
+    {%- if button_1_text != blank -%}
+      {%- assign animation_order = animation_order | plus: 1 -%}
+      <div
+        class="hero__button"
+        data-aos="hero"
+        data-aos-anchor="{{ animation_anchor }}"
+        data-aos-order="{{ animation_order }}"
+      >
+        <a
+          class="btn {{ button_1_style }} {{ button_size }} {{ block.settings.button_1_type }}"
+          href="{{ block.settings.button_1_url | default: '#!' }}"
+        >
+          <span>{{ button_1_text | escape }}</span>
+
+          {%- if block.settings.button_1_show_arrow -%}
+            {%- render 'icon-nav-arrow-right' -%}
+          {%- endif -%}
+        </a>
+      </div>
+    {%- endif -%}
+
+    {%- if button_2_text != blank -%}
+      {%- assign animation_order = animation_order | plus: 1 -%}
+      <div
+        class="hero__button"
+        data-aos="hero"
+        data-aos-anchor="{{ animation_anchor }}"
+        data-aos-order="{{ animation_order }}"
+      >
+        <a
+          class="btn {{ button_2_style }} {{ button_size }} {{ block.settings.button_2_type }}"
+          href="{{ block.settings.button_2_url | default: '#!' }}"
+        >
+          <span>{{ button_2_text | escape }}</span>
+
+          {%- if block.settings.button_2_show_arrow -%}
+            {%- render 'icon-nav-arrow-right' -%}
+          {%- endif -%}
+        </a>
+      </div>
+    {%- endif -%}
+  </div>
+{%- endif -%}

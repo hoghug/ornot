@@ -78,6 +78,20 @@
             "padding_bottom": 16
           }
         },
+        "icon_fmenFA": {
+          "type": "icon",
+          "disabled": true,
+          "settings": {
+            "icon_name": "icon-award",
+            "image": "shopify://shop_images/citron-circle.gif",
+            "icon_size": 20,
+            "icon_color": "#911ad5",
+            "text": "<p><a href=\"/products/mens-recycled-park-jersey-clement-cyan\" title=\"2025 Men's Park Jersey - Clement Cyan\">Citron </a></p>",
+            "text_font_size": "body-medium",
+            "width": "full",
+            "padding_bottom": 16
+          }
+        },
         "variants": {
           "type": "variants",
           "settings": {
@@ -244,6 +258,7 @@
         "junip_product_reviews_ugc_junip_product_summary_46cMCr",
         "price",
         "siblings_6N6EiR",
+        "icon_fmenFA",
         "variants",
         "text_qkGp4L",
         "pickup",
@@ -300,6 +315,26 @@
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "1706135782d1067a10": {
+      "type": "apps",
+      "blocks": {
+        "junip_product_reviews_ugc_junip_product_review_9ByW79": {
+          "type": "shopify://apps/junip/blocks/junip-product-review/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
+          "settings": {
+            "product": "{{product}}",
+            "title": "",
+            "alignment": "",
+            "sortOrder": "mostRecent"
+          }
+        }
+      },
+      "block_order": [
+        "junip_product_reviews_ugc_junip_product_review_9ByW79"
+      ],
+      "settings": {
+        "include_margins": false
       }
     },
     "section_hero_fkwiK3": {
@@ -636,26 +671,6 @@
         "show_placeholder": true
       }
     },
-    "1706135782d1067a10": {
-      "type": "apps",
-      "blocks": {
-        "junip_product_reviews_ugc_junip_product_review_9ByW79": {
-          "type": "shopify://apps/junip/blocks/junip-product-review/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
-          "settings": {
-            "product": "{{product}}",
-            "title": "",
-            "alignment": "",
-            "sortOrder": "mostRecent"
-          }
-        }
-      },
-      "block_order": [
-        "junip_product_reviews_ugc_junip_product_review_9ByW79"
-      ],
-      "settings": {
-        "include_margins": false
-      }
-    },
     "related": {
       "type": "related",
       "blocks": {
@@ -698,6 +713,7 @@
   "order": [
     "section_hero_t4phQQ",
     "main",
+    "1706135782d1067a10",
     "section_hero_8nY6LC",
     "section_custom_code_tW44i6",
     "section_hero_fkwiK3",
@@ -708,7 +724,6 @@
     "section_look_qEzp8n",
     "section_hero_fACEde",
     "section_hero_NN4xAd",
-    "1706135782d1067a10",
     "related"
   ]
 }

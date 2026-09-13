@@ -72,6 +72,7 @@
           "settings": {
             "siblings_collection": "{{ product.metafields.theme.siblings.value }}",
             "sibling_color": "{{ product.metafields.theme.sibling_color.value }}",
+            "layout": "stacked",
             "option_font_size": "body-medium",
             "value_font_size": "body-x-small",
             "padding_bottom": 16
@@ -126,6 +127,7 @@
             "style": "collapsible",
             "show_description": true,
             "show_read_more": false,
+            "read_more_lines": 4,
             "default_open": true,
             "heading": "DESCRIPTION",
             "heading_font_size": "body-medium",
@@ -144,6 +146,7 @@
             "style": "collapsible",
             "show_description": false,
             "show_read_more": false,
+            "read_more_lines": 4,
             "default_open": false,
             "heading": "FEATURES",
             "heading_font_size": "body-medium",
@@ -162,6 +165,7 @@
             "style": "collapsible",
             "show_description": false,
             "show_read_more": false,
+            "read_more_lines": 4,
             "default_open": false,
             "heading": "SHIPPING, EXCHANGES, AND RETURNS",
             "heading_font_size": "body-medium",
@@ -180,6 +184,7 @@
             "style": "collapsible",
             "show_description": false,
             "show_read_more": false,
+            "read_more_lines": 4,
             "default_open": false,
             "heading": "1 YEAR WARRANTY",
             "heading_font_size": "body-medium",
@@ -266,6 +271,46 @@
         "padding_bottom": 30
       }
     },
+    "1706135782d1067a10": {
+      "type": "apps",
+      "blocks": {
+        "junip_product_reviews_ugc_junip_product_review_9ByW79": {
+          "type": "shopify://apps/junip/blocks/junip-product-review/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
+          "settings": {
+            "product": "{{product}}",
+            "title": "",
+            "alignment": "",
+            "sortOrder": "mostRecent"
+          }
+        }
+      },
+      "block_order": [
+        "junip_product_reviews_ugc_junip_product_review_9ByW79"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "section_hero_8nY6LC": {
+      "type": "section-hero",
+      "settings": {
+        "image_1": "{{ product.metafields.custom.web_size_chart.value }}",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "{{ product.metafields.custom.mobile_size_chart.value }}",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
     "section_double_7AG6HH": {
       "type": "section-double",
       "blocks": {
@@ -336,26 +381,6 @@
         "mobile_height": "screen-height-one-half--mobile",
         "reverse_blocks": false,
         "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "show_placeholder": true
-      }
-    },
-    "section_hero_8nY6LC": {
-      "type": "section-hero",
-      "settings": {
-        "image_1": "{{ product.metafields.custom.web_size_chart.value }}",
-        "link": "",
-        "width": "wrapper--full",
-        "height": "image-height",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "content_width": 50,
-        "mobile_image": "{{ product.metafields.custom.mobile_size_chart.value }}",
-        "mobile_height": "image-height--mobile",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "color_scheme": "",
-        "show_text_background": false,
-        "overlay_type": "disabled",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
@@ -652,25 +677,6 @@
         "show_placeholder": true
       }
     },
-    "1706135782d1067a10": {
-      "type": "apps",
-      "blocks": {
-        "junip_product_reviews_ugc_junip_product_review_9ByW79": {
-          "type": "shopify://apps/junip/blocks/junip-product-review/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
-          "settings": {
-            "product": "{{product}}",
-            "title": "",
-            "alignment": ""
-          }
-        }
-      },
-      "block_order": [
-        "junip_product_reviews_ugc_junip_product_review_9ByW79"
-      ],
-      "settings": {
-        "include_margins": false
-      }
-    },
     "related": {
       "type": "related",
       "blocks": {
@@ -811,8 +817,9 @@
   "order": [
     "section_hero_t4phQQ",
     "main",
-    "section_double_7AG6HH",
+    "1706135782d1067a10",
     "section_hero_8nY6LC",
+    "section_double_7AG6HH",
     "section_hero_ckxTLf",
     "section_custom_code_TCkxFW",
     "section_announcement_k8TgcQ",
@@ -820,7 +827,6 @@
     "section_custom_content_kgVBJE",
     "section_custom_content_3Hy8cr",
     "section_hero_AXLMwy",
-    "1706135782d1067a10",
     "related",
     "section_press_logos_grc3gU",
     "section_reviews_ttQYwn"

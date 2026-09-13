@@ -1,0 +1,60 @@
+{% comment %}
+  Renders a text block for the Split media banner section.
+
+  The type can be positioned and aligned independently on desktop and mobile,
+  and on mobile the block can be forced to half or the full height of the
+  media half it sits under (see the section's --split-media-mobile-height).
+
+  Accepts:
+  - block: {Object} Block object
+  - style: {String} Block inline style
+  - padding_class: {String} "has-padding" when the block background differs from the section background
+  - animation_anchor: {String} ID of the element that triggers animations
+
+  Usage:
+  {% render 'split-media-text', block: block, style: style, padding_class: padding_class, animation_anchor: animation_anchor %}
+{% endcomment %}
+
+{%- liquid
+  assign padding_class = padding_class | default: ''
+
+  assign flex_align = block.settings.flex_align | default: 'align--middle-left'
+  assign flex_align_mobile = block.settings.flex_align_mobile | default: flex_align
+
+  assign align_text = block.settings.align_text | default: 'text-left'
+  assign align_text_mobile = block.settings.align_text_mobile | default: align_text
+
+  assign mobile_block_height = block.settings.mobile_block_height | default: 'auto'
+
+  capture block_classes
+    echo 'brick__block brick__block--text split-media__block'
+    unless mobile_block_height == 'auto'
+      echo ' split-media__block--mobile-' | append: mobile_block_height
+    endunless
+  endcapture
+
+  capture text_wrapper_classes
+    echo 'brick__block__text split-media__text' | append: padding_class
+    echo ' ' | append: flex_align | append: '-desktop'
+    echo ' ' | append: flex_align_mobile | append: '-mobile'
+    echo ' split-media__ta--' | append: align_text | remove: 'text-' | append: '-desktop'
+    echo ' split-media__ta--' | append: align_text_mobile | remove: 'text-' | append: '-mobile'
+  endcapture
+-%}
+
+<div
+  class="{{ block_classes }}"
+  {% if style != blank %}
+    style="{{ style }}"
+  {% endif %}
+  {{ block.shopify_attributes }}
+>
+  <div class="{{ text_wrapper_classes }}">
+    {%- render 'split-media-content',
+      block: block,
+      animation_anchor: animation_anchor,
+      text_class: 'hero__rte',
+      compact: true
+    -%}
+  </div>
+</div>

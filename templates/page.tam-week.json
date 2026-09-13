@@ -57,7 +57,7 @@
             "subheading": "5 days // 1 mountain // july 6-10, 2026",
             "title": "WHAT'S TAM WEEK?",
             "heading_font_size": "heading-medium",
-            "text": "<p>Tam Week is a 5-day cycling challenge from <strong>July 6–10, 2026</strong>, inviting Bay Area riders to summit Mt. Tamalpais as many times as they’d like. We encourage you to climb to the \"top\" of West Peak to challenge mind, body, and win prizes. Ride anytime, any route, any bike—to <a href=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\" target=\"_blank\" title=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\">West Peak</a> (not East Peak). More to come!</p>",
+            "text": "<p>Tam Week is a 5-day cycling challenge from <strong>July 6–10, 2026</strong>, inviting Bay Area riders to summit Mt. Tamalpais daily for up to 5 consecutive days. We encourage you to climb to the \"top\" of West Peak to challenge mind, body, and win prizes. Ride anytime, any route, any bike—to <a href=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\" target=\"_blank\" title=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\">West Peak</a> (not East Peak).</p>",
             "text_font_size": "body-medium",
             "button_text": "",
             "button_url": "",
@@ -142,6 +142,7 @@
         "text_9k47Rf",
         "image_beizHx"
       ],
+      "disabled": true,
       "name": "how it works - early",
       "settings": {
         "borders": false,
@@ -155,79 +156,6 @@
         "padding_bottom": 0
       }
     },
-    "section_announcement_WJPAR9": {
-      "type": "section-announcement",
-      "blocks": {
-        "text_fLEqLK": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>More info to come!</h3>",
-            "text_font_size": "body-small",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "text_VgtipT": {
-          "type": "text",
-          "settings": {
-            "text": "<h5><strong>//  Follow </strong><a href=\"https://www.instagram.com/ornotbike\" target=\"_blank\" title=\"https://www.instagram.com/ornotbike\"><strong>@ornotbike</strong></a><strong> for the latest updates  //</strong></h5>",
-            "text_font_size": "body-small",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        }
-      },
-      "block_order": [
-        "text_fLEqLK",
-        "text_VgtipT"
-      ],
-      "name": "Scrolling text",
-      "settings": {
-        "slider_speed": 7,
-        "text_alignment": "center",
-        "marquee_speed": 100,
-        "direction": "ticker-rtl",
-        "message_spacing": 10,
-        "show_border": false,
-        "layout": "marquee",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_video_BWB69P": {
-      "type": "section-video",
-      "name": "Video",
-      "settings": {
-        "video": "shopify://files/videos/TAMWEEKLP3.mov",
-        "show_video_popup": false,
-        "video_popup": "shopify://files/videos/TAMWEEKPROMOFINALFINAL.mov",
-        "video_popup_social": "",
-        "title": "",
-        "heading_font_size": "heading-x-large",
-        "text": "",
-        "text_font_size": "body-medium",
-        "flex_align": "align--bottom-center",
-        "link_text": "",
-        "link": "",
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "desktop_height": "image-height",
-        "mobile_height": "image-height--mobile",
-        "width": "wrapper--full",
-        "color_scheme": "scheme-2",
-        "show_text_background": false,
-        "color": "",
-        "overlay_type": "disabled",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "heading_tag": "automatic"
-      }
-    },
     "section_custom_content_yzNfAy": {
       "type": "section-custom-content",
       "blocks": {
@@ -237,7 +165,7 @@
             "subheading": "",
             "title": "HOW IT WORKS",
             "heading_font_size": "heading-medium",
-            "text": "<ul><li>Pick up a punch card at the <a href=\"https://maps.app.goo.gl/vYhHyeK5jEDxZir49\" target=\"_blank\" title=\"https://maps.app.goo.gl/vYhHyeK5jEDxZir49\">Ornot Showroom</a></li><li>Ride any route to <a href=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\" target=\"_blank\" title=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\">West Peak</a> (not East Peak) </li><li>Find the hole punch (check <a href=\"https://www.instagram.com/ornotbike/\" target=\"_blank\" title=\"https://www.instagram.com/ornotbike/\">@ornotbike</a> for location)</li><li>Log your ride(s) on Strava or RWGPS</li><li>Celebrate at the after party <strong>Friday night, 7/11  </strong>(<a href=\"https://maps.app.goo.gl/vYhHyeK5jEDxZir49\" target=\"_blank\" title=\"https://maps.app.goo.gl/vYhHyeK5jEDxZir49\">59 Clement St.</a> // Raffle at 6:30pm)</li></ul><p><em>*Ascents must start sub 200 ft. of elevation. Only </em><em><strong>one ascent per day</strong></em><em> counts towards your Tam Week total*</em></p>",
+            "text": "<ul><li>Pick up a punch card at the <a href=\"https://maps.app.goo.gl/vYhHyeK5jEDxZir49\" target=\"_blank\" title=\"https://maps.app.goo.gl/vYhHyeK5jEDxZir49\">Ornot Showroom</a></li><li>Sign up and enter your info. <a href=\"/pages/tam-week-sign-up\" target=\"_blank\" title=\"Tam Week Sign-Up\">HERE</a></li><li>Ride any route to <a href=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\" target=\"_blank\" title=\"https://maps.app.goo.gl/aaxDGLDJGc2dZN7h8\">West Peak</a> (not East Peak) </li><li>Find the hole punch (check <a href=\"https://www.instagram.com/ornotbike/\" target=\"_blank\" title=\"https://www.instagram.com/ornotbike/\">@ornotbike</a> for location)</li><li>Log your ride(s) on Strava or RWGPS</li><li>Celebrate at the after party <strong>Friday night, 7/10  </strong>(<a href=\"https://maps.app.goo.gl/vYhHyeK5jEDxZir49\" target=\"_blank\" title=\"https://maps.app.goo.gl/vYhHyeK5jEDxZir49\">59 Clement St.</a> // Raffle at 7:00pm)</li></ul><p><em>*Ascents must start sub 200 ft. of elevation. Only </em><em><strong>one ascent per day</strong></em><em> counts towards your Tam Week total*</em></p>",
             "text_font_size": "body-medium",
             "button_text": "Join us on strava",
             "button_url": "https://www.strava.com/clubs/183693",
@@ -256,7 +184,7 @@
         "image_cR9BGy": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/tam_punch_card.jpg",
+            "image": "shopify://shop_images/Ornot_TamWeek_2026_PunchCard_Square.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -280,7 +208,6 @@
         "text_YQ9RcY",
         "image_cR9BGy"
       ],
-      "disabled": true,
       "name": "how it works - launch",
       "settings": {
         "borders": false,
@@ -300,7 +227,7 @@
         "image_Ucr7eK": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/tam-week-prizes_fa55684d-b211-4ba3-b574-b09fa873b5b9.jpg",
+            "image": "shopify://shop_images/Ornot_Website_module_TamWeekPrizes.jpg",
             "title": "",
             "heading_font_size": "heading-large",
             "text": "",
@@ -323,9 +250,9 @@
           "type": "text",
           "settings": {
             "subheading": "",
-            "title": "THE REWARD",
+            "title": "THE REWARDS",
             "heading_font_size": "heading-medium",
-            "text": "<p>Beyond enjoying the view atop Tam multiple times a week? We're giving away limited-edition Ornot prizes, plus gear from our friends! </p><ul><li>Tag <a href=\"https://www.instagram.com/ornotbike/\" target=\"_blank\" title=\"https://www.instagram.com/ornotbike/\">@ornotbike</a> in a Reel: Special gift</li><li>Summit 1+ times: Tam Week Poster</li><li>Summit 2 times: Entered into raffle</li><li>Summit 4 times: Limited Tam Socks </li><li>Summit 5 times: <a href=\"https://www.ornotbike.com/products/womens-long-sleeve-park-jersey-clement-sorbet-long\" target=\"_blank\" title=\"https://www.ornotbike.com/products/womens-long-sleeve-park-jersey-clement-sorbet-long\">QOM</a> / <a href=\"https://www.ornotbike.com/products/mens-long-sleeve-park-jersey-clement-sorbet-long\" target=\"_blank\" title=\"https://www.ornotbike.com/products/mens-long-sleeve-park-jersey-clement-sorbet-long\">KOM</a> Park Jersey </li></ul><p><em>*must be present at </em><a href=\"https://maps.app.goo.gl/vYhHyeK5jEDxZir49\" target=\"_blank\" title=\"https://maps.app.goo.gl/vYhHyeK5jEDxZir49\"><em>Ornot</em></a><em> </em><em><strong>Friday</strong></em><em> </em><em><strong>7/11 at</strong></em><em> </em><em><strong>6:30pm</strong></em><em> to claim prizes*</em></p>",
+            "text": "<p>Beyond enjoying the view atop Tam multiple times a week? We're giving away limited-edition Ornot prizes, plus gear from our friends! <br/><br/>Summit 1 time: 1 raffle ticket</p><p>Summit 2 times: 2 raffle tickets</p><p>Summit 3 times: 3 raffle tickets</p><p>Summit 4 times: 4 raffle tickets </p><p>Summit 5 times: 5 raffle tickets + limited Tam Week Pennant<br/><br/><strong>*must be present at Ornot Friday 7/10 at 7:00pm to claim prizes*</strong></p>",
             "text_font_size": "body-medium",
             "button_text": "",
             "button_url": "",
@@ -346,7 +273,7 @@
         "image_Ucr7eK",
         "text_hCGdGT"
       ],
-      "disabled": true,
+      "name": "The Reward",
       "settings": {
         "borders": false,
         "gutters": false,
@@ -359,70 +286,133 @@
         "padding_bottom": 0
       }
     },
-    "section_custom_content_QjqKfm": {
-      "type": "section-custom-content",
+    "section_rich_text_8rHaKz": {
+      "type": "section-rich-text",
       "blocks": {
-        "text_9gnRzm": {
+        "subheading_Ypnxg9": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Introducing",
+            "padding_bottom": 16
+          }
+        },
+        "heading_x7KW6M": {
+          "type": "heading",
+          "settings": {
+            "title": "SIGN UP",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_NyrtKh": {
           "type": "text",
           "settings": {
-            "subheading": "",
-            "title": "routes to the 'top'",
-            "heading_font_size": "heading-large",
-            "text": "<p>Beyond enjoying the view atop Tam multiple times a week? We're giving away limited-edition Ornot prizes, plus gear from our friends! </p><p>Summit 2 times: Entered into raffle</p><p>Summit 4 times: Free pair of Tam Socks </p><p>Summit 5 times: QOM/KOM Park Jersey (coming soon) </p><p>*must be present at Ornot Friday 7/11 at 6:30pm to claim prizes*</p>",
-            "text_font_size": "body-medium",
+            "text": "<p><strong>To be eligible for prizes and the raffle, sign up below:</strong></p>",
+            "text_font_size": "body-x-large",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_bJhwyq": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
             "button_text": "Learn more",
             "button_url": "",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
             "show_arrow": false,
-            "show_social_links": false,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "bg_color": "",
-            "color": "",
-            "heading_tag": "automatic"
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_Ypnxg9",
+        "heading_x7KW6M",
+        "text_NyrtKh",
+        "buttons_bJhwyq"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 52,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_code_hxTRfr": {
+      "type": "section-custom-code",
+      "name": "Custom code",
+      "settings": {
+        "code": "<div class=\"klaviyo-form-SXpKFJ\"></div>",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_hero_zYTfPN": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_4RMP4h": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image banner",
+            "heading_font_size": "heading-x-large",
+            "heading_tag": "automatic",
+            "padding_bottom": 8
           }
         },
-        "image_BbcgTr": {
-          "type": "image",
+        "text_PYTEiz": {
+          "type": "text",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/TNUT6263.jpg",
-            "title": "",
-            "heading_font_size": "heading-large",
-            "text": "",
-            "text_font_size": "body-medium",
-            "flex_align": "align--middle-center",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "",
-            "overlay_type": "disabled",
-            "link_text": "",
+            "text": "<p>Tell your brand's story through images.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 8
+          }
+        },
+        "button_AEBmKC": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text": "View products",
             "link": "",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
             "show_arrow": false,
-            "heading_tag": "automatic"
+            "full_width": false,
+            "padding_bottom": 8
           }
         }
       },
       "block_order": [
-        "text_9gnRzm",
-        "image_BbcgTr"
+        "heading_4RMP4h",
+        "text_PYTEiz",
+        "button_AEBmKC"
       ],
-      "disabled": true,
-      "name": "Custom content",
+      "name": "Image banner",
       "settings": {
-        "borders": false,
-        "gutters": false,
-        "width": "wrapper--full-padded",
-        "height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-half--mobile",
-        "reverse_blocks": false,
+        "image_1": "shopify://shop_images/Ornot_TamWeek_2026_Sliver_02.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "four-fifty-height-hero",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "",
+        "show_text_background": false,
+        "overlay_type": "disabled",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "show_placeholder": true
       }
     },
     "section_accordion_JYX984": {
@@ -485,7 +475,6 @@
         "text_TqHqkB",
         "text_EdgY98"
       ],
-      "disabled": true,
       "custom_css": [
         ".accordion__title {font-size-adjust: 1.75 !important;}"
       ],
@@ -502,6 +491,597 @@
         "icon_color": "",
         "padding_top": 10,
         "padding_bottom": 0
+      }
+    },
+    "section_video_Lp8qc6": {
+      "type": "section-video",
+      "name": "Video",
+      "settings": {
+        "video": "shopify://files/videos/TAMWEEKLP3.mov",
+        "show_video_popup": false,
+        "video_popup": "shopify://files/videos/TAMWEEKPROMOFINALFINAL.mov",
+        "video_popup_social": "",
+        "title": "",
+        "heading_font_size": "heading-x-large",
+        "text": "",
+        "text_font_size": "body-medium",
+        "flex_align": "align--bottom-center",
+        "link_text": "",
+        "link": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "desktop_height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "width": "wrapper--full",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "color": "",
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_rich_text_CkVK6c": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_y3KkKU": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Mon 6:45 AM / Road",
+            "padding_bottom": 16
+          }
+        },
+        "heading_ARFMmL": {
+          "type": "heading",
+          "settings": {
+            "title": "Ornot TAM WEEK Kickoff Ride",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_3VNLWy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Meet in Mill Valley, Road up Tam. Punch cards available before the ride. </p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_QGPhfF": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "More info",
+            "button_url": "https://www.strava.com/clubs/183693/group_events/3503928529356233602/occurrences/FQIWhO6U6tmbuqBhHBTUHxQOFAwUDBRaFAAAHBbAveb65mcAAA==",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_y3KkKU",
+        "heading_ARFMmL",
+        "text_3VNLWy",
+        "buttons_QGPhfF"
+      ],
+      "name": "Monday",
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 58,
+        "padding_bottom": 30
+      }
+    },
+    "section_rich_text_jNVjpY": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_jDh4bg": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Tue 5:15 AM / road",
+            "padding_bottom": 16
+          }
+        },
+        "heading_RJfTWj": {
+          "type": "heading",
+          "settings": {
+            "title": "FAT CAKE X ORNOT",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_VbFEew": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The early bird gets... Bobs donuts in Tam junction. </p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_fpeU3j": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "More info",
+            "button_url": "https://www.strava.com/clubs/183693/group_events/3506822994780598904/occurrences/FQIW8MmN4eG73qphHBTUHxQOFA4UChQeFAAAHBbAlobI52cAAA==",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_jDh4bg",
+        "heading_RJfTWj",
+        "text_VbFEew",
+        "buttons_fpeU3j"
+      ],
+      "name": "Tuesday",
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 30
+      }
+    },
+    "section_rich_text_ywibRT": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_BLrd6r": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Tue 7:00 AM / Dirt",
+            "padding_bottom": 16
+          }
+        },
+        "heading_pAF3NP": {
+          "type": "heading",
+          "settings": {
+            "title": "aftercake - but up tam",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_ta8cVw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Aftercake vibes, but all the way up Tam.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_XringN": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "More info",
+            "button_url": "https://www.strava.com/clubs/183693/group_events/3503930375529202298/occurrences/FQIW9In08ZSHu6BhHBTUHxQOFA4UDhQAFAAAHBaAnIfO52cAAA==",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_BLrd6r",
+        "heading_pAF3NP",
+        "text_ta8cVw",
+        "buttons_XringN"
+      ],
+      "name": "Tuesday aftercake",
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 30
+      }
+    },
+    "section_rich_text_KGiEKm": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_kFt4NB": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Wed 5:15 AM / Road",
+            "padding_bottom": 16
+          }
+        },
+        "heading_NzpNMj": {
+          "type": "heading",
+          "settings": {
+            "title": "Women Led Wednesday",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_48F9DP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For this week's ride, we are opening it up to allies to join Women, trans, femme, and non-binary riders.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_pWDXFG": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "More info",
+            "button_url": "https://www.strava.com/clubs/183693/group_events/3503932155525336866/occurrences/FQIWxLzA8uLuu6BhHBTUHxQOFBAUChQeFAAAHBbAhrma6GcAAA==",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_kFt4NB",
+        "heading_NzpNMj",
+        "text_48F9DP",
+        "buttons_pWDXFG"
+      ],
+      "name": "wed",
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 30
+      }
+    },
+    "section_rich_text_8MVjEh": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_NUFzba": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Wed 6:15 PM / dirt",
+            "padding_bottom": 16
+          }
+        },
+        "heading_ByDKUy": {
+          "type": "heading",
+          "settings": {
+            "title": "PACO'S x ornot",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_FFEMNH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dirt loop leaving from Paco's in Mill Valley. West Peak, and then some. </p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_hngEt8": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "More info",
+            "button_url": "https://www.strava.com/clubs/183693/group_events/3505753795253792930/occurrences/FQIWxMKjwZSg-KZhHBTUHxQOFBAUJBQeFAAAHBbA-InH6GcAAA==",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_NUFzba",
+        "heading_ByDKUy",
+        "text_FFEMNH",
+        "buttons_hngEt8"
+      ],
+      "name": "wed",
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 30
+      }
+    },
+    "section_rich_text_b3G4BL": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_6NfTmJ": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Thu 6:30 AM / Road",
+            "padding_bottom": 16
+          }
+        },
+        "heading_biCzCU": {
+          "type": "heading",
+          "settings": {
+            "title": "Hummingbird Fuels x Ornot",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_eT4AaE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Meet at the bridge for a Hummingbird fueled road ride up Tam. </p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_MBjPA9": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "More info",
+            "button_url": "https://www.strava.com/clubs/183693/group_events/3507572100545253588/occurrences/FQIWqMOQ0bqPs61hHBTUHxQOFBIUDBQ8FAAAHBaAn5Hx6GcAAA==",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_6NfTmJ",
+        "heading_biCzCU",
+        "text_eT4AaE",
+        "buttons_MBjPA9"
+      ],
+      "name": "Thurs",
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 30
+      }
+    },
+    "section_rich_text_mweKWK": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_RARViD": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Thu 5PM / Road",
+            "padding_bottom": 16
+          }
+        },
+        "heading_yijd3F": {
+          "type": "heading",
+          "settings": {
+            "title": "dirt after work",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_BAh7b9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Railroad up to West Peak. Sunset vibes. </p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_YwTW7R": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "More info",
+            "button_url": "https://www.strava.com/clubs/183693/group_events/3503934012992541306/occurrences/FQIW9MmijfLavKBhHBTUHxQOFBIUIhQAFAAAHBaAwJeV6WcAAA==",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_RARViD",
+        "heading_yijd3F",
+        "text_BAh7b9",
+        "buttons_YwTW7R"
+      ],
+      "name": "Thurs",
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 30
+      }
+    },
+    "section_rich_text_8ixeVM": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_TMkAqb": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Fri 6:00 AM / dirt",
+            "padding_bottom": 16
+          }
+        },
+        "heading_yb6zga": {
+          "type": "heading",
+          "settings": {
+            "title": "Morning Dirt ride",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_6HQnGM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Favorite dirt route up Tam. Final day!</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_Lyhdhz": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "More info",
+            "button_url": "https://www.strava.com/clubs/183693/group_events/3503935292370252578/occurrences/FQIWxMz3mq6lvaBhHBTUHxQOFBQUDBQAFAAAHBaAsujB6WcAAA==",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_TMkAqb",
+        "heading_yb6zga",
+        "text_6HQnGM",
+        "buttons_Lyhdhz"
+      ],
+      "name": "Fri",
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 30
+      }
+    },
+    "section_rich_text_h6E7a8": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_kwTxhk": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Fri 8am / dirt",
+            "padding_bottom": 16
+          }
+        },
+        "heading_FGTHFR": {
+          "type": "heading",
+          "settings": {
+            "title": "Slowest known time",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_3PK83L": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You could get a PR, Ornot. - Last day, super chill ride. </p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_t349R8": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "More info",
+            "button_url": "https://www.strava.com/clubs/183693/group_events/3504656102165577060/occurrences/FQIWyPXf14GKhaNhHBTUHxQOFBQUEBQAFAAAHBaAptfI6WcAAA==",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_kwTxhk",
+        "heading_FGTHFR",
+        "text_3PK83L",
+        "buttons_t349R8"
+      ],
+      "name": "Fri",
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 30
+      }
+    },
+    "section_rich_text_M8RNHW": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_BW6GyH": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Fri 5-8 / Party and raffle",
+            "padding_bottom": 16
+          }
+        },
+        "heading_7hHCMm": {
+          "type": "heading",
+          "settings": {
+            "title": "Tam week party",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_QU6ppe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bring your punch card (and your Strava proof) to get your raffle tix (one ticket per ascent, per day). We have prizes from Silca, Ultradynamico, Hunt Wheels, Outershell, Pasta Supply Co., Calling in Sick, and so much more. Check-in starts at 5pm. Raffle at 7pm. Make sure you are Signed up (do it <a href=\"https://www.ornotbike.com/pages/tam-week-sign-up\" target=\"_blank\" title=\"https://www.ornotbike.com/pages/tam-week-sign-up\"><strong>HERE</strong></a>)</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_yVQRfM": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "RSVP",
+            "button_url": "https://partiful.com/e/DPEepPeVxJ5trhtyG3lT?",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_BW6GyH",
+        "heading_7hHCMm",
+        "text_QU6ppe",
+        "buttons_yVQRfM"
+      ],
+      "name": "Fri",
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 30
       }
     },
     "section_text_row_nFCGbH": {
@@ -555,10 +1135,9 @@
         "icon_LGNNfP",
         "icon_3jqfCJ"
       ],
-      "disabled": true,
       "name": "Text columns with icons",
       "settings": {
-        "title": "ROUTES TO THE 'TOP'",
+        "title": "RECOMMENDED ROUTES",
         "heading_font_size": "heading-medium",
         "align_heading": "text-left",
         "align_text": "text-left",
@@ -625,7 +1204,6 @@
         "icon_MJLAgB",
         "icon_G38jyb"
       ],
-      "disabled": true,
       "name": "Text columns with icons",
       "settings": {
         "title": "",
@@ -641,6 +1219,93 @@
         "color_scheme": "",
         "padding_top": 30,
         "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_announcement_WJPAR9": {
+      "type": "section-announcement",
+      "blocks": {
+        "text_fLEqLK": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>More info to come!</h3>",
+            "text_font_size": "body-small",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_VgtipT": {
+          "type": "text",
+          "settings": {
+            "text": "<h5><strong>//  Follow </strong><a href=\"https://www.instagram.com/ornotbike\" target=\"_blank\" title=\"https://www.instagram.com/ornotbike\"><strong>@ornotbike</strong></a><strong> for the latest updates  //</strong></h5>",
+            "text_font_size": "body-small",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text_fLEqLK",
+        "text_VgtipT"
+      ],
+      "disabled": true,
+      "name": "Scrolling text",
+      "settings": {
+        "slider_speed": 7,
+        "text_alignment": "center",
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "message_spacing": 10,
+        "show_border": false,
+        "layout": "marquee",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_tab_collections_fPagLk": {
+      "type": "section-tab-collections",
+      "blocks": {
+        "collection_7GBHnY": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "featured_collection": "tam-week",
+            "show_image": false,
+            "align_with_product_images": false,
+            "overlay_type": "disabled",
+            "description": "",
+            "color": "",
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_7GBHnY"
+      ],
+      "name": "Tab collections",
+      "settings": {
+        "show_product_count": false,
+        "title": "",
+        "heading_font_size": "heading-medium",
+        "text": "",
+        "text_font_size": "body-medium",
+        "layout": "stacked",
+        "layout_desktop": "slider",
+        "product_limit": 6,
+        "grid": 4,
+        "rows": 3,
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 32,
+        "padding_bottom": 32,
         "heading_tag": "automatic"
       }
     },
@@ -670,14 +1335,27 @@
     "main",
     "section_custom_content_FHpFEc",
     "section_custom_content_WYi9ez",
-    "section_announcement_WJPAR9",
-    "section_video_BWB69P",
     "section_custom_content_yzNfAy",
     "section_custom_content_TGmxaP",
-    "section_custom_content_QjqKfm",
+    "section_rich_text_8rHaKz",
+    "section_custom_code_hxTRfr",
+    "section_hero_zYTfPN",
     "section_accordion_JYX984",
+    "section_video_Lp8qc6",
+    "section_rich_text_CkVK6c",
+    "section_rich_text_jNVjpY",
+    "section_rich_text_ywibRT",
+    "section_rich_text_KGiEKm",
+    "section_rich_text_8MVjEh",
+    "section_rich_text_b3G4BL",
+    "section_rich_text_mweKWK",
+    "section_rich_text_8ixeVM",
+    "section_rich_text_h6E7a8",
+    "section_rich_text_M8RNHW",
     "section_text_row_nFCGbH",
     "section_text_row_WGCKTF",
+    "section_announcement_WJPAR9",
+    "section_tab_collections_fPagLk",
     "section_hero_8dKBJM"
   ]
 }

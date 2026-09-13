@@ -1,0 +1,139 @@
+{
+  "sections": {
+    "split_media_demo": {
+      "type": "section-split-media",
+      "blocks": {
+        "vid": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/OrNot_01_ChicoStix_Race_9x16_IG_Teaser.mp4",
+            "title": "SHOP WOMEN'S",
+            "heading_font_size": "heading-medium",
+            "flex_align": "align--middle-center",
+            "button_1_text": "Shop new arrivals",
+            "button_1_url": "/collections/all",
+            "button_1_type": "btn--white",
+            "button_1_style": "btn--solid",
+            "button_2_text": "Watch the film",
+            "button_2_url": "/collections/all",
+            "button_2_type": "btn--white",
+            "button_2_style": "btn--outline",
+            "overlay_type": "text"
+          }
+        },
+        "img": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_NewWomens_MissionShorts-Black_Square_V1.jpg",
+            "flex_align": "align--bottom-center",
+            "button_1_text": "Shop women's",
+            "button_1_url": "/collections/all",
+            "button_1_type": "btn--black",
+            "button_1_style": "btn--solid"
+          }
+        }
+      },
+      "block_order": [
+        "vid",
+        "img"
+      ],
+      "settings": {
+        "width": "wrapper--full",
+        "height": "seven-fifty-height-hero",
+        "mobile_height": "five-fifty-height-hero--mobile",
+        "reverse_desktop": false,
+        "reverse_mobile": false,
+        "gutters": false,
+        "borders": false,
+        "color_scheme": "scheme_1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "split_media_demo_text": {
+      "type": "section-split-media",
+      "blocks": {
+        "vid2": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/OrNot_01_ChicoStix_Race_9x16_IG_Teaser.mp4",
+            "flex_align": "align--middle-center"
+          }
+        },
+        "txt": {
+          "type": "text",
+          "settings": {
+            "subheading": "NEW",
+            "title": "Type block on the right",
+            "text": "<p>Same section, second block set to Text instead of Image. Both buttons show here too.</p>",
+            "align_text": "text-left",
+            "button_1_text": "Shop the collection",
+            "button_1_url": "/collections/all",
+            "button_1_type": "btn--black",
+            "button_1_style": "btn--solid",
+            "button_2_text": "Read the story",
+            "button_2_url": "/collections/all",
+            "button_2_type": "btn--black",
+            "button_2_style": "btn--outline"
+          }
+        }
+      },
+      "block_order": [
+        "vid2",
+        "txt"
+      ],
+      "settings": {
+        "width": "wrapper--full",
+        "height": "five-fifty-height-hero",
+        "mobile_height": "four-fifty-height-hero--mobile",
+        "reverse_desktop": true,
+        "reverse_mobile": false,
+        "gutters": false,
+        "borders": false,
+        "color_scheme": "scheme_1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "split_media_demo_natural": {
+      "type": "section-split-media",
+      "blocks": {
+        "vid3": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/OrNot_01_ChicoStix_Race_9x16_IG_Teaser.mp4",
+            "flex_align": "align--bottom-center"
+          }
+        },
+        "img3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ornot_NewWomens_MissionShorts-Black_Square_V1.jpg",
+            "flex_align": "align--bottom-center"
+          }
+        }
+      },
+      "block_order": [
+        "vid3",
+        "img3"
+      ],
+      "settings": {
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_desktop": false,
+        "reverse_mobile": false,
+        "gutters": false,
+        "borders": false,
+        "color_scheme": "scheme_1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "split_media_demo",
+    "split_media_demo_text",
+    "split_media_demo_natural"
+  ]
+}

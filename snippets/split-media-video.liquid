@@ -1,0 +1,106 @@
+{% comment %}
+  Renders a video block for the Split media banner section.
+
+  The video is muted, autoplaying and looping, with no controls, and is cropped
+  to fill the block (object-fit: cover) so a square video sits flush beside a
+  horizontal image. The poster image shows until the video is ready, and is also
+  the fallback on devices that block autoplay.
+
+  Accepts:
+  - block: {Object} Block object
+  - style: {String} Block inline style
+  - animation_anchor: {String} ID of the element that triggers animations
+
+  Usage:
+  {% render 'split-media-video', block: block, style: style, animation_anchor: animation_anchor %}
+{% endcomment %}
+
+{%- liquid
+  assign video = block.settings.video
+  assign link = block.settings.link
+  assign wrap_in_link = false
+  if link != blank and block.settings.button_1_text == blank and block.settings.button_2_text == blank
+    assign wrap_in_link = true
+  endif
+
+  assign desktop_height = section.settings.height
+  assign mobile_height = section.settings.mobile_height
+  if request.visual_preview_mode
+    assign desktop_height = ''
+  endif
+
+  assign video_aspect_ratio = video.aspect_ratio | default: 1
+  assign image_desktop = block.settings.image | default: video.preview_image
+  assign image_mobile = block.settings.mobile_image
+
+  assign opacity_overlay = false
+  if block.settings.overlay_type == 'opacity'
+    assign opacity_overlay = true
+  endif
+
+  assign wrapper_width = section.settings.width
+
+  capture image_sizes
+    if wrapper_width == 'wrapper--full'
+      echo '(min-width: 750px) 50vw, 100vw'
+    elsif wrapper_width == 'wrapper--full-padded'
+      echo '(min-width: 990px) calc((100vw - 100px) / 2), (min-width: 750px) calc((100vw - 60px) / 2), calc(100vw - 32px)'
+    else
+      echo '(min-width: 990px) calc(1100px / 2), (min-width: 750px) calc((100vw - 60px) / 2), calc(100vw - 32px)'
+    endif
+  endcapture
+
+  capture video_poster
+    render 'image-hero', image_desktop: image_desktop, image_mobile: image_mobile, desktop_height: desktop_height, mobile_height: mobile_height, aspect_ratio: video_aspect_ratio, aspect_ratio_mobile: video_aspect_ratio, sizes: image_sizes
+  endcapture
+-%}
+
+<div
+  class="brick__block split-media__block {{ desktop_height }} {{ mobile_height }}"
+  {% if style != blank %}
+    style="{{ style }}"
+  {% endif %}
+  {{ block.shopify_attributes }}
+>
+  <div class="brick__block__video frame">
+    {%- if wrap_in_link -%}
+      <a class="hero__video frame__item" href="{{ link }}">
+    {%- else -%}
+      <div class="hero__video frame__item">
+    {%- endif -%}
+
+    {%- if video != null -%}
+      <div
+        class="video-background {{ desktop_height }} {{ mobile_height }}"
+        style="--aspect-ratio: {{ video_aspect_ratio }};"
+      >
+        <div class="video__poster">
+          {{ video_poster }}
+        </div>
+        <video-background
+          class="video__player is-loading"
+          data-video-player
+          data-video-id="{{ section.id }}-{{ block.id }}-video-background"
+        >
+          <template data-video-template>
+            {{ video | video_tag: autoplay: true, image_size: '1085x', loop: true, muted: true, controls: false }}
+          </template>
+        </video-background>
+      </div>
+    {%- else -%}
+      {{ video_poster }}
+    {%- endif -%}
+
+    {%- if opacity_overlay -%}
+      <div class="image-overlay"></div>
+    {%- endif -%}
+
+    {%- if wrap_in_link -%}
+      </a>
+    {%- else -%}
+      </div>
+    {%- endif -%}
+
+    {%- render 'split-media-overlay', block: block, animation_anchor: animation_anchor -%}
+  </div>
+</div>

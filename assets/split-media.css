@@ -1,0 +1,88 @@
+/* ===========================================================================
+   Split media banner (sections/section-split-media.liquid)
+   Desktop / mobile type controls: size, position, alignment, width, spacing,
+   and the Text block's mobile "half block" / "full block" heights.
+   =========================================================================== */
+
+/* --- Spacing between subheading / heading / text / buttons ---------------- */
+.split-media__content {
+  --block-padding-bottom: var(--split-media-gap, var(--line));
+}
+
+/* --- Type block width ------------------------------------------------------ */
+.split-media__content {
+  max-width: var(--split-media-content-width, 100%);
+}
+.split-media__text .split-media__content.hero__content--compact {
+  flex-basis: var(--split-media-content-width, 100%);
+}
+
+/* --- Type position inside a Text block ------------------------------------ */
+/* The theme's [class*=align--] rule maps the alignment variables onto
+   align-items / justify-content / text-align. Restate it here so the Text
+   block wrapper wins over the base .brick__block__text { align-items: center }. */
+.split-media__text[class*="align--"] {
+  align-items: var(--alignment-align-items);
+  justify-content: var(--alignment-justify-content);
+  text-align: var(--alignment-text-align);
+}
+
+/* --- Heading letter case --------------------------------------------------- */
+.split-media__hc--uppercase .hero__title { text-transform: uppercase; }
+.split-media__hc--none .hero__title { text-transform: none; }
+
+/* --- Text alignment overrides (independent of position) ------------------- */
+@media only screen and (min-width: 750px) {
+  .split-media__ta--left-desktop   { --alignment-text-align: left; }
+  .split-media__ta--center-desktop { --alignment-text-align: center; }
+  .split-media__ta--right-desktop  { --alignment-text-align: right; }
+
+  .split-media__ta--left-desktop   .hero__button-group { justify-content: flex-start; }
+  .split-media__ta--center-desktop .hero__button-group { justify-content: center; }
+  .split-media__ta--right-desktop  .hero__button-group { justify-content: flex-end; }
+}
+
+@media only screen and (max-width: 749px) {
+  .split-media__ta--left-mobile   { --alignment-text-align: left; }
+  .split-media__ta--center-mobile { --alignment-text-align: center; }
+  .split-media__ta--right-mobile  { --alignment-text-align: right; }
+
+  .split-media__ta--left-mobile   .hero__button-group { justify-content: flex-start; }
+  .split-media__ta--center-mobile .hero__button-group { justify-content: center; }
+  .split-media__ta--right-mobile  .hero__button-group { justify-content: flex-end; }
+}
+
+/* --- Mobile overrides ------------------------------------------------------ */
+@media only screen and (max-width: 749px) {
+  .split-media__content {
+    --block-padding-bottom: var(--split-media-gap-mobile, var(--split-media-gap, var(--line)));
+    max-width: var(--split-media-content-width-mobile, 100%);
+  }
+  .split-media__text .split-media__content.hero__content--compact {
+    flex-basis: var(--split-media-content-width-mobile, 100%);
+  }
+
+  /* Heading size on mobile ("Same as desktop" adds no class) */
+  .split-media__content .hero__title.split-media__hm--heading-mini    { font-size: var(--font-heading-mini); }
+  .split-media__content .hero__title.split-media__hm--heading-x-small { font-size: var(--font-heading-x-small); }
+  .split-media__content .hero__title.split-media__hm--heading-small   { font-size: var(--font-heading-small); }
+  .split-media__content .hero__title.split-media__hm--heading-medium  { font-size: var(--font-heading-medium); }
+  .split-media__content .hero__title.split-media__hm--heading-large   { font-size: var(--font-heading-large); }
+  .split-media__content .hero__title.split-media__hm--heading-x-large { font-size: var(--font-heading-x-large); }
+
+  /* Text size on mobile */
+  .split-media__content .split-media__tm--body-x-small { font-size: var(--font-body-x-small); }
+  .split-media__content .split-media__tm--body-small   { font-size: var(--font-body-small); }
+  .split-media__content .split-media__tm--body-medium  { font-size: var(--font-body-medium); }
+  .split-media__content .split-media__tm--body-large   { font-size: var(--font-body-large); }
+  .split-media__content .split-media__tm--body-x-large { font-size: var(--font-body-x-large); }
+
+  /* Text block height: measured against the media half's mobile height,
+     which the section writes to --split-media-mobile-height. */
+  .split-media__block--mobile-half .split-media__text {
+    min-height: calc(var(--split-media-mobile-height, var(--one-half)) / 2);
+  }
+  .split-media__block--mobile-full .split-media__text {
+    min-height: var(--split-media-mobile-height, var(--one-half));
+  }
+}

@@ -322,7 +322,7 @@
         "text_DUr7jU": {
           "type": "text",
           "settings": {
-            "text": "<p>Our friend <a href=\"https://www.instagram.com/truemarmalade\" target=\"_blank\" title=\"Erik's instagram\">@truemarmalade</a> (Erik Binggeser<strong>) </strong>has been ride testing our Lightweight Mission Shorts across the country on his very loaded Omnium cargo bike. After 6,000 miles they're still going strong (This photo was taken in Mexico after a rather long haul. Yes, that's salt).</p>",
+            "text": "<p>Our friend <a href=\"https://www.instagram.com/truemarmalade\" target=\"_blank\" title=\"Erik's instagram\">@truemarmalade</a> (Erik Binggeser<strong>) </strong>has been ride testing our Lightweight Mission Shorts across the country on his very loaded Omnium cargo bike. After <strong>12,000 miles</strong> they're still going strong (This photo was taken in Mexico after a rather long haul. Yes, that's salt).</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 16
           }
@@ -491,7 +491,7 @@
         "show_product_count": false,
         "title": "Mission Shorts",
         "heading_font_size": "heading-medium",
-        "text": "<p>Ultralight, ultra stretchy, ultra breathable. Recycled bluesign®-approved fabric. Made in USA</p>",
+        "text": "<p>One pair for 20 days on the Tour Divide. Durable recycled bluesign®-approved fabric. Made in USA. 20,000 miles and counting.</p>",
         "text_font_size": "body-medium",
         "layout": "inline",
         "layout_desktop": "grid",

@@ -12,17 +12,16 @@
     "featured": {
       "type": "featured-posts",
       "blocks": {
-        "feat": {
+        "featured_post_WjfpRx": {
           "type": "featured_post",
           "settings": {
-            "featured_post": "news/city-collection-recap-our-collaboration-with-chico-brenes-and-ferris-plock",
-            "image": "shopify://shop_images/city-collection-hero.jpg",
+            "featured_post": "news/tam-week-2-recap-photo-dump",
             "subheading": "Featured post"
           }
         }
       },
       "block_order": [
-        "feat"
+        "featured_post_WjfpRx"
       ],
       "settings": {
         "show_author": false,

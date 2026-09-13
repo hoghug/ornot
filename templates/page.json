@@ -69,9 +69,9 @@
         "text_xm9RHJ",
         "button_pWMpXj"
       ],
-      "disabled": true,
       "name": "Image banner",
       "settings": {
+        "image_1": "shopify://shop_images/ben-headlands-sliver-cargo-bibs-mc-jacket.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "image-height",
@@ -106,7 +106,7 @@
     "section_custom_code_9eMerq": {
       "type": "section-custom-code",
       "settings": {
-        "code": "",
+        "code": "<div class=\"klaviyo-form-SCwNaU\"></div>",
         "width": "wrapper",
         "color_scheme": "",
         "padding_top": 0,

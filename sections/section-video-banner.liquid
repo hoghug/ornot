@@ -1,0 +1,804 @@
+<!-- /sections/section-video-banner.liquid -->
+
+{%- liquid
+  assign s = section.settings
+
+  assign has_video = false
+  if s.video != null or s.mobile_video != null
+    assign has_video = true
+  endif
+
+  case s.content_position
+    when 'top-left'
+      assign align_y = 'flex-start'
+      assign align_x = 'flex-start'
+    when 'top-center'
+      assign align_y = 'flex-start'
+      assign align_x = 'center'
+    when 'top-right'
+      assign align_y = 'flex-start'
+      assign align_x = 'flex-end'
+    when 'middle-left'
+      assign align_y = 'center'
+      assign align_x = 'flex-start'
+    when 'middle-center'
+      assign align_y = 'center'
+      assign align_x = 'center'
+    when 'middle-right'
+      assign align_y = 'center'
+      assign align_x = 'flex-end'
+    when 'bottom-center'
+      assign align_y = 'flex-end'
+      assign align_x = 'center'
+    when 'bottom-right'
+      assign align_y = 'flex-end'
+      assign align_x = 'flex-end'
+    else
+      assign align_y = 'flex-end'
+      assign align_x = 'flex-start'
+  endcase
+
+  case s.content_position_mobile
+    when 'top-left'
+      assign align_y_m = 'flex-start'
+      assign align_x_m = 'flex-start'
+    when 'top-center'
+      assign align_y_m = 'flex-start'
+      assign align_x_m = 'center'
+    when 'middle-left'
+      assign align_y_m = 'center'
+      assign align_x_m = 'flex-start'
+    when 'middle-center'
+      assign align_y_m = 'center'
+      assign align_x_m = 'center'
+    when 'bottom-center'
+      assign align_y_m = 'flex-end'
+      assign align_x_m = 'center'
+    else
+      assign align_y_m = 'flex-end'
+      assign align_x_m = 'flex-start'
+  endcase
+
+  assign text_flex = 'flex-start'
+  if s.text_align == 'center'
+    assign text_flex = 'center'
+  elsif s.text_align == 'right'
+    assign text_flex = 'flex-end'
+  endif
+
+  assign text_flex_m = 'flex-start'
+  if s.text_align_mobile == 'center'
+    assign text_flex_m = 'center'
+  elsif s.text_align_mobile == 'right'
+    assign text_flex_m = 'flex-end'
+  endif
+
+  assign wrapper_classes = 'video-banner ' | append: s.width
+  if s.aspect_desktop == 'full'
+    assign wrapper_classes = wrapper_classes | append: ' video-banner--fullheight-d'
+  endif
+  if s.aspect_mobile == 'full'
+    assign wrapper_classes = wrapper_classes | append: ' video-banner--fullheight-m'
+  endif
+  if s.stack_text_mobile
+    assign wrapper_classes = wrapper_classes | append: ' video-banner--stack-mobile'
+  endif
+  if s.buttons_full_mobile
+    assign wrapper_classes = wrapper_classes | append: ' video-banner--buttons-full'
+  endif
+-%}
+
+{{ 'video-banner.css' | asset_url | stylesheet_tag }}
+{%- if has_video -%}
+  <script src="{{ 'video-banner.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+{%- capture banner_style -%}
+  --PT: {{ s.padding_top }}px;
+  --PB: {{ s.padding_bottom }}px;
+  --vb-align-y: {{ align_y }};
+  --vb-align-x: {{ align_x }};
+  --vb-align-y-m: {{ align_y_m }};
+  --vb-align-x-m: {{ align_x_m }};
+  --vb-text-align: {{ s.text_align }};
+  --vb-text-align-m: {{ s.text_align_mobile }};
+  --vb-text-align-flex: {{ text_flex }};
+  --vb-text-align-flex-m: {{ text_flex_m }};
+  --vb-content-width: {{ s.content_width }}%;
+  {%- unless s.aspect_desktop == 'full' -%}
+    --vb-aspect-d: {{ s.aspect_desktop }};
+  {%- endunless -%}
+  {%- unless s.aspect_mobile == 'full' -%}
+    --vb-aspect-m: {{ s.aspect_mobile }};
+  {%- endunless -%}
+  {%- unless s.text_color.alpha == 0.0 or s.text_color == blank -%}
+    --vb-text: {{ s.text_color }};
+  {%- endunless -%}
+  {%- unless s.stack_bg_color.alpha == 0.0 or s.stack_bg_color == blank -%}
+    --vb-stack-bg: {{ s.stack_bg_color }};
+  {%- endunless -%}
+  {%- unless s.stack_text_color.alpha == 0.0 or s.stack_text_color == blank -%}
+    --vb-stack-text: {{ s.stack_text_color }};
+  {%- endunless -%}
+{%- endcapture -%}
+
+<section
+  id="VideoBanner--{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="video-banner"
+  class="section-padding color-{{ s.color_scheme }}"
+  {% if s.overlay_header %}
+    data-overlay-header
+  {% endif %}
+  style="{{ banner_style }}"
+>
+  <div class="{{ wrapper_classes }}">
+    <div class="video-banner__frame">
+      <div class="video-banner__media">
+        {%- if s.image != blank or s.mobile_image != blank -%}
+          <picture>
+            {%- if s.mobile_image != blank -%}
+              <source
+                media="(max-width: 749px)"
+                srcset="{{ s.mobile_image | image_url: width: 1200 }} 1200w, {{ s.mobile_image | image_url: width: 900 }} 900w, {{ s.mobile_image | image_url: width: 600 }} 600w"
+                sizes="100vw"
+              >
+            {%- endif -%}
+            {%- assign poster = s.image | default: s.mobile_image -%}
+            <img
+              class="video-banner__poster"
+              src="{{ poster | image_url: width: 1600 }}"
+              srcset="{{ poster | image_url: width: 2400 }} 2400w, {{ poster | image_url: width: 1800 }} 1800w, {{ poster | image_url: width: 1200 }} 1200w"
+              sizes="100vw"
+              width="{{ poster.width }}"
+              height="{{ poster.height }}"
+              alt="{{ poster.alt | escape }}"
+              loading="{% if s.eager_load %}eager{% else %}lazy{% endif %}"
+            >
+          </picture>
+        {%- endif -%}
+
+        {%- if has_video -%}
+          <video-banner-media class="video-banner__player">
+            {%- if s.video != null -%}
+              <template data-video="desktop">
+                {{ s.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, image_size: '1600x' }}
+              </template>
+            {%- endif -%}
+            {%- if s.mobile_video != null -%}
+              <template data-video="mobile">
+                {{ s.mobile_video | video_tag: autoplay: true, loop: true, muted: true, controls: false, image_size: '900x' }}
+              </template>
+            {%- endif -%}
+          </video-banner-media>
+        {%- endif -%}
+      </div>
+
+      {%- render 'video-banner-content', section: section -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Video banner (2026)",
+  "class": "section-overlay-header",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Desktop video"
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Video",
+      "info": "MP4 or MOV from Settings > Files. Autoplays muted on a loop, no controls. Keep it 5 to 8 seconds: Shopify re-encodes to a fixed 7.2 Mbps, so a 20 second clip is about 18 MB."
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Poster image",
+      "info": "Shown while the video loads and where autoplay is blocked. 2400 x 1350px .jpg recommended."
+    },
+    {
+      "type": "header",
+      "content": "Mobile video",
+      "info": "Optional. Only one video is ever downloaded: a phone never fetches the desktop file and a desktop never fetches the mobile one. Leave blank to use the desktop video on phones."
+    },
+    {
+      "type": "video",
+      "id": "mobile_video",
+      "label": "Video",
+      "info": "1080 x 1080 square or 1080 x 1350 recommended."
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Poster image",
+      "info": "1200 x 1200px .jpg recommended."
+    },
+    {
+      "type": "header",
+      "content": "Text"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "info": "Small line above the heading, e.g. INTRODUCING"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_font_size",
+      "label": "Heading size",
+      "default": "heading-x-large",
+      "options": [
+        {
+          "value": "heading-mini",
+          "label": "Mini"
+        },
+        {
+          "value": "heading-x-small",
+          "label": "Extra small"
+        },
+        {
+          "value": "heading-small",
+          "label": "Small"
+        },
+        {
+          "value": "heading-medium",
+          "label": "Medium"
+        },
+        {
+          "value": "heading-large",
+          "label": "Large"
+        },
+        {
+          "value": "heading-x-large",
+          "label": "Extra large"
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "select",
+      "id": "text_font_size",
+      "label": "Text size",
+      "default": "body-medium",
+      "options": [
+        {
+          "value": "body-x-small",
+          "label": "Extra small"
+        },
+        {
+          "value": "body-small",
+          "label": "Small"
+        },
+        {
+          "value": "body-medium",
+          "label": "Medium"
+        },
+        {
+          "value": "body-large",
+          "label": "Large"
+        },
+        {
+          "value": "body-x-large",
+          "label": "Extra large"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Buttons"
+    },
+    {
+      "type": "select",
+      "id": "button_size",
+      "label": "Size",
+      "default": "",
+      "options": [
+        {
+          "value": "btn--small",
+          "label": "Small"
+        },
+        {
+          "value": "",
+          "label": "Medium"
+        },
+        {
+          "value": "btn--large",
+          "label": "Large"
+        }
+      ],
+      "info": "Applies to both buttons"
+    },
+    {
+      "type": "header",
+      "content": "Button 1"
+    },
+    {
+      "type": "text",
+      "id": "button_1_text",
+      "label": "Label"
+    },
+    {
+      "type": "url",
+      "id": "button_1_url",
+      "label": "Link"
+    },
+    {
+      "type": "select",
+      "id": "button_1_type",
+      "label": "Color",
+      "default": "btn--primary",
+      "options": [
+        {
+          "value": "btn--black",
+          "label": "Black"
+        },
+        {
+          "value": "btn--white",
+          "label": "White"
+        },
+        {
+          "value": "btn--primary",
+          "label": "Primary"
+        },
+        {
+          "value": "btn--secondary",
+          "label": "Secondary"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_1_style",
+      "label": "Style",
+      "default": "btn--solid",
+      "options": [
+        {
+          "value": "btn--solid",
+          "label": "Solid"
+        },
+        {
+          "value": "btn--outline",
+          "label": "Outline"
+        },
+        {
+          "value": "btn--text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "button_1_show_arrow",
+      "label": "Show arrow",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Button 2"
+    },
+    {
+      "type": "text",
+      "id": "button_2_text",
+      "label": "Label"
+    },
+    {
+      "type": "url",
+      "id": "button_2_url",
+      "label": "Link"
+    },
+    {
+      "type": "select",
+      "id": "button_2_type",
+      "label": "Color",
+      "default": "btn--white",
+      "options": [
+        {
+          "value": "btn--black",
+          "label": "Black"
+        },
+        {
+          "value": "btn--white",
+          "label": "White"
+        },
+        {
+          "value": "btn--primary",
+          "label": "Primary"
+        },
+        {
+          "value": "btn--secondary",
+          "label": "Secondary"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_2_style",
+      "label": "Style",
+      "default": "btn--outline",
+      "options": [
+        {
+          "value": "btn--solid",
+          "label": "Solid"
+        },
+        {
+          "value": "btn--outline",
+          "label": "Outline"
+        },
+        {
+          "value": "btn--text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "button_2_show_arrow",
+      "label": "Show arrow",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Desktop"
+    },
+    {
+      "type": "select",
+      "id": "aspect_desktop",
+      "label": "Shape",
+      "default": "16 / 9",
+      "options": [
+        {
+          "value": "21 / 9",
+          "label": "21:9 ultrawide"
+        },
+        {
+          "value": "16 / 9",
+          "label": "16:9 widescreen"
+        },
+        {
+          "value": "2 / 1",
+          "label": "2:1"
+        },
+        {
+          "value": "3 / 2",
+          "label": "3:2"
+        },
+        {
+          "value": "4 / 3",
+          "label": "4:3"
+        },
+        {
+          "value": "1 / 1",
+          "label": "1:1 square"
+        },
+        {
+          "value": "full",
+          "label": "Full screen height"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "content_position",
+      "label": "Text position",
+      "default": "bottom-left",
+      "options": [
+        {
+          "value": "top-left",
+          "label": "Top left"
+        },
+        {
+          "value": "top-center",
+          "label": "Top center"
+        },
+        {
+          "value": "top-right",
+          "label": "Top right"
+        },
+        {
+          "value": "middle-left",
+          "label": "Middle left"
+        },
+        {
+          "value": "middle-center",
+          "label": "Middle center"
+        },
+        {
+          "value": "middle-right",
+          "label": "Middle right"
+        },
+        {
+          "value": "bottom-left",
+          "label": "Bottom left"
+        },
+        {
+          "value": "bottom-center",
+          "label": "Bottom center"
+        },
+        {
+          "value": "bottom-right",
+          "label": "Bottom right"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Text alignment",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Centered"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "content_width",
+      "label": "Text width",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 50
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "select",
+      "id": "aspect_mobile",
+      "label": "Shape",
+      "default": "1 / 1",
+      "options": [
+        {
+          "value": "1 / 1",
+          "label": "1:1 square"
+        },
+        {
+          "value": "4 / 5",
+          "label": "4:5 portrait"
+        },
+        {
+          "value": "3 / 4",
+          "label": "3:4 portrait"
+        },
+        {
+          "value": "9 / 16",
+          "label": "9:16 full portrait"
+        },
+        {
+          "value": "16 / 9",
+          "label": "16:9 widescreen"
+        },
+        {
+          "value": "full",
+          "label": "Full screen height"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "stack_text_mobile",
+      "label": "Stack text below video",
+      "default": true,
+      "info": "Moves the text out from over the video and into a block underneath it. Use this when the mobile crop leaves no safe area for type."
+    },
+    {
+      "type": "select",
+      "id": "content_position_mobile",
+      "label": "Text position",
+      "default": "bottom-left",
+      "options": [
+        {
+          "value": "top-left",
+          "label": "Top left"
+        },
+        {
+          "value": "top-center",
+          "label": "Top center"
+        },
+        {
+          "value": "middle-left",
+          "label": "Middle left"
+        },
+        {
+          "value": "middle-center",
+          "label": "Middle center"
+        },
+        {
+          "value": "bottom-left",
+          "label": "Bottom left"
+        },
+        {
+          "value": "bottom-center",
+          "label": "Bottom center"
+        }
+      ],
+      "info": "Only applies when the text sits over the video"
+    },
+    {
+      "type": "select",
+      "id": "text_align_mobile",
+      "label": "Text alignment",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Centered"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "buttons_full_mobile",
+      "label": "Full width buttons",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "default": "scheme_1",
+      "label": "Color scheme"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text over video",
+      "default": "#ffffff",
+      "alpha": true
+    },
+    {
+      "type": "color",
+      "id": "stack_text_color",
+      "label": "Text when stacked below",
+      "alpha": true,
+      "info": "Used only when Stack text below video is on. Leave blank to follow the color scheme."
+    },
+    {
+      "type": "color",
+      "id": "stack_bg_color",
+      "label": "Background when stacked below",
+      "alpha": true
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper--full",
+      "options": [
+        {
+          "value": "wrapper--full",
+          "label": "Full width"
+        },
+        {
+          "value": "wrapper--full-padded",
+          "label": "Full width padded"
+        },
+        {
+          "value": "wrapper",
+          "label": "Normal"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Advanced"
+    },
+    {
+      "type": "checkbox",
+      "id": "overlay_header",
+      "label": "Let the header sit over this section",
+      "default": true,
+      "info": "Turn on when this is the first section on the page"
+    },
+    {
+      "type": "checkbox",
+      "id": "eager_load",
+      "label": "Prioritise poster image loading",
+      "default": true,
+      "info": "Turn on when this is the first section on the page, off further down"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Heading SEO tag",
+      "default": "automatic",
+      "options": [
+        {
+          "value": "automatic",
+          "label": "Automatic"
+        },
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "h5",
+          "label": "H5"
+        },
+        {
+          "value": "h6",
+          "label": "H6"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video banner (2026)"
+    }
+  ]
+}
+{% endschema %}

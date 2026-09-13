@@ -107,6 +107,67 @@
         "heading_tag": "automatic"
       }
     },
+    "section_rich_text_Ym9cdU": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_CPwGzJ": {
+          "type": "heading",
+          "settings": {
+            "title": "Women's Mission Shorts",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_r3mL4M": {
+          "type": "text",
+          "settings": {
+            "text": "<p>US-Made Women's Mission Shorts are cut with a high waist and flattering drape at a Goldilocks length. Not too short, not too long, and still *cute</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_CPwGzJ",
+        "text_r3mL4M"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 50,
+        "padding_bottom": 40
+      }
+    },
+    "section_collection_hAMqLX": {
+      "type": "section-collection",
+      "settings": {
+        "featured_collection": "womens-mission-shorts",
+        "enable_in_grid_content": true,
+        "heading": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 2,
+        "rows": 2,
+        "width": "wrapper",
+        "layout_mobile": "1",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    },
     "section_rich_text_ALLBWm": {
       "type": "section-rich-text",
       "blocks": {
@@ -412,8 +473,9 @@
       "blocks": {
         "heading_bFVfr7": {
           "type": "heading",
+          "disabled": true,
           "settings": {
-            "title": "WOMEN’S SHORTS",
+            "title": "WOMEN’S Mission shorts",
             "heading_font_size": "heading-medium",
             "padding_bottom": 16,
             "heading_tag": "automatic"
@@ -421,9 +483,8 @@
         },
         "text_B8VGJq": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p>Our women’s work shorts feature a yoga inspired waistband and a single back pocket for maximum functionality. Constructed with our ride-all-day chamois pad to hit the Golidlocks sweet spot of breathability and comfort.</p>",
+            "text": "",
             "text_font_size": "body-large",
             "padding_bottom": 16
           }
@@ -433,7 +494,6 @@
         "heading_bFVfr7",
         "text_B8VGJq"
       ],
-      "disabled": true,
       "settings": {
         "align_text": "text-left",
         "width": "wrapper",
@@ -477,6 +537,8 @@
     "section_hero_Ay6Tni",
     "section_rich_text_L7BPVR",
     "section_collection_jwmDf4",
+    "section_rich_text_Ym9cdU",
+    "section_collection_hAMqLX",
     "section_rich_text_ALLBWm",
     "section_collection_DXyY74",
     "section_rich_text_VxWf4z",

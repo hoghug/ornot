@@ -1,0 +1,74 @@
+{% comment %}
+  Renders an image block for the Split media banner section.
+
+  Accepts:
+  - block: {Object} Block object
+  - style: {String} Block inline style
+  - animation_anchor: {String} ID of the element that triggers animations
+
+  Usage:
+  {% render 'split-media-image', block: block, style: style, animation_anchor: animation_anchor %}
+{% endcomment %}
+
+{%- liquid
+  assign link = block.settings.link
+  assign wrap_in_link = false
+  if link != blank and block.settings.button_1_text == blank and block.settings.button_2_text == blank
+    assign wrap_in_link = true
+  endif
+
+  assign desktop_height = section.settings.height
+  assign mobile_height = section.settings.mobile_height
+  assign wrapper_width = section.settings.width
+
+  assign opacity_overlay = false
+  if block.settings.overlay_type == 'opacity'
+    assign opacity_overlay = true
+  endif
+
+  capture image_sizes
+    if wrapper_width == 'wrapper--full'
+      echo '(min-width: 750px) 50vw, 100vw'
+    elsif wrapper_width == 'wrapper--full-padded'
+      echo '(min-width: 990px) calc((100vw - 100px) / 2), (min-width: 750px) calc((100vw - 60px) / 2), calc(100vw - 32px)'
+    else
+      echo '(min-width: 990px) calc(1100px / 2), (min-width: 750px) calc((100vw - 60px) / 2), calc(100vw - 32px)'
+    endif
+  endcapture
+-%}
+
+<div
+  class="brick__block split-media__block"
+  {% if style != blank %}
+    style="{{ style }}"
+  {% endif %}
+  {{ block.shopify_attributes }}
+>
+  <div class="brick__block__image frame">
+    {%- if wrap_in_link -%}
+      <a class="frame__item" href="{{ link }}">
+    {%- else -%}
+      <div class="frame__item">
+    {%- endif -%}
+
+    {%- if opacity_overlay -%}
+      <div class="image-overlay"></div>
+    {%- endif -%}
+
+    {%- render 'image-hero',
+      image_desktop: block.settings.image,
+      image_mobile: block.settings.mobile_image,
+      desktop_height: desktop_height,
+      mobile_height: mobile_height,
+      sizes: image_sizes
+    -%}
+
+    {%- if wrap_in_link -%}
+      </a>
+    {%- else -%}
+      </div>
+    {%- endif -%}
+
+    {%- render 'split-media-overlay', block: block, animation_anchor: animation_anchor -%}
+  </div>
+</div>

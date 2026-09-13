@@ -123,10 +123,54 @@
   {%- endif -%}
 </div>
 
+{%- comment -%}
+  FAQPage structured data. Opt-in per section so a page with several accordions
+  only ever emits one FAQPage block, which is what Google and AI answer engines
+  expect. Turn it on for the accordion that holds real customer questions.
+{%- endcomment -%}
+{%- if section.settings.show_faq_schema -%}
+  {%- assign faq_questions = section.blocks | where: 'type', 'question' -%}
+  {%- if faq_questions.size > 0 -%}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {%- for block in faq_questions -%}
+            {%- assign q = block.settings.title | strip_html | strip -%}
+            {%- assign a = block.settings.content | strip_html | strip -%}
+            {%- if q != blank and a != blank -%}
+              {
+                "@type": "Question",
+                "name": {{ q | json }},
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": {{ a | json }}
+                }
+              }{%- unless forloop.last -%},{%- endunless -%}
+            {%- endif -%}
+          {%- endfor -%}
+        ]
+      }
+    </script>
+  {%- endif -%}
+{%- endif -%}
+
 {% schema %}
 {
   "name": "Accordion group",
   "settings": [
+    {
+      "type": "header",
+      "content": "Search"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_faq_schema",
+      "label": "Add FAQ structured data",
+      "default": false,
+      "info": "Outputs FAQPage schema so Google and AI assistants can quote these answers. Turn on for one accordion per page only."
+    },
     {
       "type": "header",
       "content": "Typography"

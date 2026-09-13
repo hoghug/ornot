@@ -1,0 +1,91 @@
+{% comment %}
+  Renders the heading / text / button overlay that sits on top of an image or
+  video block in the Split media banner section.
+
+  Position and text alignment can differ between desktop and mobile: the
+  wrapper gets the theme's responsive alignment classes (align--*-desktop /
+  align--*-mobile) plus split-media__ta--* overrides for text alignment.
+
+  Accepts:
+  - block: {Object} Block object
+  - animation_anchor: {String} ID of the element that triggers animations
+
+  Usage:
+  {% render 'split-media-overlay', block: block, animation_anchor: animation_anchor %}
+{% endcomment %}
+
+{%- liquid
+  assign title = block.settings.title
+  assign subheading = block.settings.subheading
+  assign text = block.settings.text
+  assign button_1_text = block.settings.button_1_text
+  assign button_2_text = block.settings.button_2_text
+
+  assign selected_color_scheme = section.settings.color_scheme | strip
+  assign scheme_bg_color = settings.color_schemes[selected_color_scheme].settings.section_bg
+  assign bg_color = block.settings.bg_color | default: scheme_bg_color
+  assign text_color = block.settings.color
+
+  assign overlay_type = block.settings.overlay_type
+  assign text_underlay = false
+  if overlay_type == 'text'
+    assign text_underlay = true
+  endif
+
+  assign show_text_background = block.settings.show_text_background
+  assign hero_transparent = true
+  if show_text_background and scheme_bg_color.alpha != 0.0 or bg_color.alpha != 0.0
+    assign hero_transparent = false
+  endif
+
+  assign show_header_backdrop = false
+  if hero_transparent and text_underlay
+    assign show_header_backdrop = true
+  endif
+
+  assign flex_align = block.settings.flex_align | default: 'align--middle-center'
+  assign flex_align_mobile = block.settings.flex_align_mobile | default: flex_align
+
+  assign align_text = block.settings.align_text | default: 'follow'
+  assign align_text_mobile = block.settings.align_text_mobile | default: align_text
+
+  capture wrapper_classes
+    echo 'hero__content__wrapper frame__item split-media__wrapper'
+    echo ' ' | append: flex_align | append: '-desktop'
+    echo ' ' | append: flex_align_mobile | append: '-mobile'
+    unless align_text == 'follow'
+      echo ' split-media__ta--' | append: align_text | remove: 'text-' | append: '-desktop'
+    endunless
+    unless align_text_mobile == 'follow'
+      echo ' split-media__ta--' | append: align_text_mobile | remove: 'text-' | append: '-mobile'
+    endunless
+    if show_header_backdrop
+      echo ' backdrop--linear'
+    endif
+  endcapture
+-%}
+
+{%- if subheading != blank or title != blank or text != blank or button_1_text != blank or button_2_text != blank -%}
+  {%- capture overlay_style -%}
+    {%- unless text_color.alpha == 0.0 or text_color == blank -%}
+      --text: {{ text_color }};
+    {%- endunless -%}
+
+    {% if show_header_backdrop %}
+      --header-overlay-color: var(--overlay-bg);
+    {% endif %}
+  {%- endcapture -%}
+
+  <div
+    class="{{ wrapper_classes }}"
+    style="{{ overlay_style }}"
+  >
+    {%- render 'split-media-content',
+      block: block,
+      animation_anchor: animation_anchor,
+      text_class: 'hero__description',
+      transparent: hero_transparent,
+      underlay: text_underlay
+    -%}
+  </div>
+{%- endif -%}

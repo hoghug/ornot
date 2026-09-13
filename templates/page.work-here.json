@@ -201,6 +201,7 @@
         "text_pTfkHm",
         "buttons_enKnEN"
       ],
+      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/AfterCakeOrnot_Jan28-27.jpg",
         "image_width": "one-half",

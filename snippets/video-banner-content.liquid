@@ -1,0 +1,88 @@
+{% comment %}
+  Renders the type and buttons for the Video banner section.
+
+  Rendered ONCE. On mobile the "Stack text below video" option moves this same
+  element into the second grid row via CSS, so the heading is never duplicated
+  in the DOM.
+
+  Deliberately carries no data-aos attributes: theme scroll animations start at
+  opacity 0.001 and depend on JavaScript to reveal them, which can leave hero
+  type invisible if the reveal never fires. This type is painted by CSS alone.
+
+  Accepts:
+  - section: {Object} Section object
+
+  Usage:
+  {% render 'video-banner-content', section: section %}
+{% endcomment %}
+
+{%- liquid
+  assign s = section.settings
+  assign heading_tag = 'h2'
+  unless s.heading_tag == 'automatic' or s.heading_tag == blank
+    assign heading_tag = s.heading_tag
+  endunless
+
+  assign has_buttons = false
+  if s.button_1_text != blank or s.button_2_text != blank
+    assign has_buttons = true
+  endif
+
+  assign button_1_style = s.button_1_style
+  if button_1_style == 'btn--text' and s.button_1_show_arrow
+    assign button_1_style = button_1_style | append: ' btn--text-no-underline'
+  endif
+
+  assign button_2_style = s.button_2_style
+  if button_2_style == 'btn--text' and s.button_2_show_arrow
+    assign button_2_style = button_2_style | append: ' btn--text-no-underline'
+  endif
+-%}
+
+{%- if s.subheading != blank or s.title != blank or s.text != blank or has_buttons -%}
+  <div class="video-banner__content-wrap">
+    <div class="video-banner__content">
+      {%- if s.subheading != blank -%}
+        <p class="video-banner__subheading subheading">{{ s.subheading | escape }}</p>
+      {%- endif -%}
+
+      {%- if s.title != blank -%}
+        <{{ heading_tag }} class="video-banner__title {{ s.heading_font_size }}">
+          {{- s.title | escape -}}
+        </{{ heading_tag }}>
+      {%- endif -%}
+
+      {%- if s.text != blank -%}
+        <div class="video-banner__text {{ s.text_font_size }}">{{ s.text }}</div>
+      {%- endif -%}
+
+      {%- if has_buttons -%}
+        <div class="video-banner__buttons">
+          {%- if s.button_1_text != blank -%}
+            <a
+              class="btn {{ button_1_style }} {{ s.button_size }} {{ s.button_1_type }}"
+              href="{{ s.button_1_url | default: '#!' }}"
+            >
+              <span>{{ s.button_1_text | escape }}</span>
+              {%- if s.button_1_show_arrow -%}
+                {%- render 'icon-nav-arrow-right' -%}
+              {%- endif -%}
+            </a>
+          {%- endif -%}
+
+          {%- if s.button_2_text != blank -%}
+            <a
+              class="btn {{ button_2_style }} {{ s.button_size }} {{ s.button_2_type }}"
+              href="{{ s.button_2_url | default: '#!' }}"
+            >
+              <span>{{ s.button_2_text | escape }}</span>
+              {%- if s.button_2_show_arrow -%}
+                {%- render 'icon-nav-arrow-right' -%}
+              {%- endif -%}
+            </a>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+{%- endif -%}

@@ -74,18 +74,18 @@
     "section_columns_9FmHhN": {
       "type": "section-columns",
       "blocks": {
-        "image_grDCDa": {
+        "image_GBYUnd": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/wolly.jpg",
+            "image": "shopify://shop_images/white_lw_sock.jpg",
             "image_width": 100,
             "image_shape": "normal",
-            "title": "Winter Merino",
+            "title": "lightweight",
             "heading_font_size": "heading-small",
-            "text": "<p>Made in the USA from domestically sourced RWS-certified Wool. <a href=\"/collections/s-winter-sock\" title=\"s - winter sock\">Shop Winter Socks</a></p>",
+            "text": "<p>Breathable, moisture-wicking & made in the USA from recycled water bottles. <a href=\"/collections/s-synthetic-socks\" title=\"s - synthetic socks\">Shop Lightweight Socks</a></p>",
             "text_font_size": "body-small",
             "button_text": "",
-            "button_url": "shopify://collections/s-winter-sock",
+            "button_url": "shopify://collections/s-synthetic-socks",
             "button_type": "btn--black",
             "button_size": "btn--small",
             "button_style": "btn--solid",
@@ -116,18 +116,18 @@
             "heading_tag": "automatic"
           }
         },
-        "image_GBYUnd": {
+        "image_grDCDa": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/white_lw_sock.jpg",
+            "image": "shopify://shop_images/wolly.jpg",
             "image_width": 100,
             "image_shape": "normal",
-            "title": "lightweight",
+            "title": "Winter Merino",
             "heading_font_size": "heading-small",
-            "text": "<p>Breathable, moisture-wicking & made in the USA from recycled water bottles. <a href=\"/collections/s-synthetic-socks\" title=\"s - synthetic socks\">Shop Lightweight Socks</a></p>",
+            "text": "<p>Made in the USA from domestically sourced RWS-certified Wool. <a href=\"/collections/s-winter-sock\" title=\"s - winter sock\">Shop Winter Socks</a></p>",
             "text_font_size": "body-small",
             "button_text": "",
-            "button_url": "shopify://collections/s-synthetic-socks",
+            "button_url": "shopify://collections/s-winter-sock",
             "button_type": "btn--black",
             "button_size": "btn--small",
             "button_style": "btn--solid",
@@ -139,9 +139,9 @@
         }
       },
       "block_order": [
-        "image_grDCDa",
+        "image_GBYUnd",
         "image_RQQnR8",
-        "image_GBYUnd"
+        "image_grDCDa"
       ],
       "name": "Text columns with images",
       "settings": {
@@ -607,12 +607,12 @@
     "section_hero_4jfiPM",
     "section_columns_9FmHhN",
     "section_divider_tpWdjU",
-    "section_collection_4XQkB4",
-    "section_divider_wC3VPA",
-    "section_custom_content_FHpFEc",
-    "section_collection_nKJG8q",
-    "section_divider_8NVGBj",
     "section_collection_bda3Nf",
+    "section_divider_8NVGBj",
+    "section_collection_nKJG8q",
+    "section_divider_wC3VPA",
+    "section_collection_4XQkB4",
+    "section_custom_content_FHpFEc",
     "section_custom_content_WYi9ez",
     "section_custom_content_TGmxaP",
     "section_custom_content_R3i33i",

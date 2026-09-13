@@ -17,6 +17,8 @@
   assign text = block.settings.text
   assign button_text = block.settings.button_text
   assign button_style = block.settings.button_style
+  assign button_text_2 = block.settings.button_text_2
+  assign button_style_2 = block.settings.button_style_2
   assign show_social_links = block.settings.show_social_links
 
   assign selected_color_scheme = section.settings.color_scheme | strip
@@ -30,6 +32,15 @@
 
   if button_style == 'btn--text' and block.settings.show_arrow
     assign button_style = button_style | append: ' btn--text-no-underline'
+  endif
+
+  if button_style_2 == 'btn--text' and block.settings.show_arrow_2
+    assign button_style_2 = button_style_2 | append: ' btn--text-no-underline'
+  endif
+
+  assign buttons_justify = 'flex-start'
+  if block.settings.align_text == 'text-center'
+    assign buttons_justify = 'center'
   endif
 -%}
 
@@ -99,24 +110,24 @@
         </div>
       {%- endif -%}
 
-      {%- if button_text != blank -%}
+      {%- if button_text != blank or button_text_2 != blank -%}
         {%- assign animation_order = animation_order | plus: 1 -%}
         <div
           class="hero__button"
+          {% if button_text != blank and button_text_2 != blank %}
+            style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: {{ buttons_justify }};"
+          {% endif %}
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
           data-aos-order="{{ animation_order }}"
         >
-          <a
-            href="{{ block.settings.button_url | default: '#!' }}"
-            class="btn {{ button_style }} {{ block.settings.button_size }} {{ block.settings.button_type }}"
-          >
-            <span>{{ button_text }}</span>
+          {%- if button_text != blank -%}
+            <a href="{{ block.settings.button_url | default: '#!' }}" class="btn {{ button_style }} {{ block.settings.button_size }} {{ block.settings.button_type }}"><span>{{ button_text }}</span>{%- if block.settings.show_arrow -%}{%- render 'icon-nav-arrow-right' -%}{%- endif -%}</a>
+          {%- endif -%}
 
-            {%- if block.settings.show_arrow -%}
-              {%- render 'icon-nav-arrow-right' -%}
-            {%- endif -%}
-          </a>
+          {%- if button_text_2 != blank -%}
+            <a href="{{ block.settings.button_url_2 | default: '#!' }}" class="btn {{ button_style_2 }} {{ block.settings.button_size_2 }} {{ block.settings.button_type_2 }}"><span>{{ button_text_2 }}</span>{%- if block.settings.show_arrow_2 -%}{%- render 'icon-nav-arrow-right' -%}{%- endif -%}</a>
+          {%- endif -%}
         </div>
       {%- endif -%}
 

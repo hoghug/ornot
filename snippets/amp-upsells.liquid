@@ -1,3 +1,36 @@
+{% comment %}
+  Ornot overrides for the AMP slide cart: sticky checkout footer, and product names in caps.
+
+  AMP renders its footer (subtotal + checkout button) as the last child of
+  .amp-cart-drawer--scrollable, which is the element that scrolls. With enough
+  line items the checkout button scrolls off the bottom and customers cannot
+  see it. Pinning the footer with position:sticky keeps it in view.
+
+  !important is needed because AMP injects its own <style> tags into the end of
+  <body>, after this snippet, so a plain rule loses the cascade tie.
+
+  Background is #f2f2f2, which is exactly AMP's own rgba(0,0,0,0.05) footer tint
+  composited over the drawer's white. It has to be opaque or line items show
+  through as they scroll underneath.
+{% endcomment %}
+<style>
+  .amp-cart-drawer--scrollable > .amp-cart__footer {
+    position: sticky !important;
+    bottom: 0 !important;
+    z-index: 5 !important;
+    background-color: #f2f2f2 !important;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.08) !important;
+  }
+
+  /* Product names in caps, matching .product-item__title everywhere else on the site.
+     Covers both the cart line items and the upsell carousel, since they sit in the
+     same drawer and mixed casing between them reads as a bug. */
+  .amp-cart__cart-line-title,
+  .amp-cart__upsell-item-title {
+    text-transform: uppercase !important;
+  }
+</style>
+
 <script>
 
 const updateCartBubbleCount = (count) => {

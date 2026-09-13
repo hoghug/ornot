@@ -1,0 +1,46 @@
+{
+  "sections": {
+    "vb": {
+      "type": "section-video-banner",
+      "settings": {
+        "video": "shopify://files/videos/TAMWEEKPROMOFINALFINAL.mov",
+        "mobile_video": "shopify://files/videos/OrNot_01_ChicoStix_Race_9x16_IG_Teaser.mp4",
+        "subheading": "INTRODUCING",
+        "title": "LIGHTWEIGHT FULL FINGER GLOVES",
+        "heading_font_size": "heading-x-large",
+        "text": "<p>They're lightweight, minimal, and unpadded for full articulation and UV protection.</p>",
+        "text_font_size": "body-medium",
+        "button_1_text": "SHOP GLOVES",
+        "button_1_url": "/collections/all",
+        "button_1_type": "btn--primary",
+        "button_1_style": "btn--solid",
+        "button_2_text": "WATCH THE FILM",
+        "button_2_url": "/collections/all",
+        "button_2_type": "btn--white",
+        "button_2_style": "btn--outline",
+        "aspect_desktop": "16 / 9",
+        "content_position": "bottom-left",
+        "text_align": "left",
+        "content_width": 50,
+        "aspect_mobile": "1 / 1",
+        "stack_text_mobile": true,
+        "content_position_mobile": "bottom-left",
+        "text_align_mobile": "left",
+        "buttons_full_mobile": false,
+        "color_scheme": "scheme_1",
+        "text_color": "#ffffff",
+        "width": "wrapper--full",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "overlay_header": true,
+        "eager_load": true,
+        "heading_tag": "h1",
+        "image": "shopify://shop_images/Ornot_TamWeek2026_GuruPhotos-13447.jpg",
+        "mobile_image": "shopify://shop_images/Ornot_TamWeek2026_GuruPhotos-Sliver_09.jpg"
+      }
+    }
+  },
+  "order": [
+    "vb"
+  ]
+}

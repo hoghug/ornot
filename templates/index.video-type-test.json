@@ -1,0 +1,36 @@
+{
+  "sections": {
+    "video_type_demo": {
+      "type": "section-video",
+      "settings": {
+        "video": "shopify://files/videos/TAMWEEKPROMOFINALFINAL.mov",
+        "image": "shopify://shop_images/Ornot_TamWeek2026_GuruPhotos-13447.jpg",
+        "mobile_image": "shopify://shop_images/Ornot_TamWeek2026_GuruPhotos-13447.jpg",
+        "title": "LIGHTWEIGHT FULL FINGER GLOVES",
+        "heading_font_size": "heading-x-large",
+        "text": "<p>They're lightweight, minimal, and unpadded for full articulation and UV protection.</p>",
+        "text_font_size": "body-large",
+        "flex_align": "align--bottom-left",
+        "link_text": "SHOP GLOVES",
+        "link": "/collections/all",
+        "button_type": "btn--primary",
+        "button_style": "btn--solid",
+        "button_size": "",
+        "show_arrow": false,
+        "desktop_height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-full--mobile",
+        "width": "wrapper--full",
+        "color": "#ffffff",
+        "overlay_type": "text",
+        "show_text_background": false,
+        "color_scheme": "scheme_1",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "h1"
+      }
+    }
+  },
+  "order": [
+    "video_type_demo"
+  ]
+}

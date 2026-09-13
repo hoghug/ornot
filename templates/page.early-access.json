@@ -1,0 +1,438 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-center",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_hero_MmediH": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_iAXUaz": {
+          "type": "heading",
+          "settings": {
+            "title": "WORK HERE",
+            "heading_font_size": "heading-x-large",
+            "heading_tag": "automatic",
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading_iAXUaz"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_1": "shopify://shop_images/got-questions.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "screen-height-one-third",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 50,
+        "mobile_image": "shopify://shop_images/got-questions.jpg",
+        "mobile_height": "image-height--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_rich_text_h83y7h": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_Y8JDwf": {
+          "type": "heading",
+          "settings": {
+            "title": "GET EARLY ACCESS",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_cGxqMm": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Sign up for texts and be the first to know about exclusive launches, products & collaborations. </p><p>We don't text much.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_Y8JDwf",
+        "text_cGxqMm"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 46,
+        "padding_bottom": 26
+      }
+    },
+    "section_custom_code_XM3rDm": {
+      "type": "section-custom-code",
+      "name": "Custom code",
+      "settings": {
+        "code": "<div class=\"klaviyo-form-SCwNaU\"></div>",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_double_wKDreB": {
+      "type": "section-double",
+      "blocks": {
+        "subheading_cKztLG": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "",
+            "padding_bottom": 16
+          }
+        },
+        "heading_VqMFph": {
+          "type": "heading",
+          "settings": {
+            "title": "Apparel Production & Development Manager",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_KeQVJd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Come build the trim library we should have had years ago, Ornot.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_Xa9JQr": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "shopify://pages/production-manager",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_cKztLG",
+        "heading_VqMFph",
+        "text_KeQVJd",
+        "buttons_Xa9JQr"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_1": "shopify://shop_images/FabricStoryOrnot_6a05c762-5fa9-4df8-a39d-3098bda5abbf.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "layout": "is-reversed",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "screen-height-one-half--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_double_8zRE9F": {
+      "type": "section-double",
+      "blocks": {
+        "subheading_Bwcgec": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "",
+            "padding_bottom": 16
+          }
+        },
+        "heading_xBBQVt": {
+          "type": "heading",
+          "settings": {
+            "title": "Retail team member",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_pTfkHm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Come geek out on cycling kit with strangers all day, Ornot.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_enKnEN": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "shopify://pages/retail-team-member",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_Bwcgec",
+        "heading_xBBQVt",
+        "text_pTfkHm",
+        "buttons_enKnEN"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_1": "shopify://shop_images/AfterCakeOrnot_Jan28-27.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "layout": "",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "screen-height-one-half--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_double_r3LyT8": {
+      "type": "section-double",
+      "blocks": {
+        "subheading_8BKPAw": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "",
+            "padding_bottom": 16
+          }
+        },
+        "heading_8nwBDT": {
+          "type": "heading",
+          "settings": {
+            "title": "Part-Time Showroom Coordinator",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_HbJFyV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Come geek out on cycling kit with strangers all day, Ornot.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_zxMdtB": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "shopify://pages/retail-team-member",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_8BKPAw",
+        "heading_8nwBDT",
+        "text_HbJFyV",
+        "buttons_zxMdtB"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_1": "shopify://shop_images/AfterCakeOrnot_Jan28-27.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "layout": "is-reversed",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "screen-height-one-half--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_custom_content_V7JYH6": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_c4mizA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TNUT6242-Edit.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_BpiqhQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TNUT6262-Edit.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_c4mizA",
+        "image_BpiqhQ"
+      ],
+      "disabled": true,
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_PtmCWa": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_tYFKaG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TNUT6199-crop.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_eK3MYg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/R0019294.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_tYFKaG",
+        "image_eK3MYg"
+      ],
+      "disabled": true,
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_hero_MmediH",
+    "section_rich_text_h83y7h",
+    "section_custom_code_XM3rDm",
+    "section_double_wKDreB",
+    "section_double_8zRE9F",
+    "section_double_r3LyT8",
+    "section_custom_content_V7JYH6",
+    "section_custom_content_PtmCWa"
+  ]
+}

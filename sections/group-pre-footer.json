@@ -211,8 +211,8 @@
         "heading_MHpeqL": {
           "type": "heading",
           "settings": {
-            "title": "New Colors!",
-            "heading_font_size": "heading-medium",
+            "title": "Sale!",
+            "heading_font_size": "heading-x-large",
             "heading_tag": "automatic",
             "padding_bottom": 0
           }
@@ -220,7 +220,7 @@
         "text_dxNtjX": {
           "type": "text",
           "settings": {
-            "text": "<p>Micro Climate Jackets</p>",
+            "text": "<p>Find the hidden gems, Ornot. </p>",
             "text_font_size": "body-medium",
             "padding_bottom": 0
           }
@@ -242,14 +242,14 @@
         "group_buttons_krniUG": {
           "type": "group-buttons",
           "settings": {
-            "button_text": "Mens",
-            "button_url": "shopify://collections/all",
+            "button_text": "shop Men's sale",
+            "button_url": "shopify://collections/mens-archive",
             "button_type": "btn--white",
             "button_size": "btn--small",
             "button_style": "btn--solid",
             "show_arrow": false,
-            "button_secondary_text": "Womens",
-            "button_secondary_url": "shopify://products/womens-micro-climate-jacket-oat",
+            "button_secondary_text": "Shop Womens sale",
+            "button_secondary_url": "shopify://collections/womens-sale-2",
             "button_secondary_type": "btn--white",
             "button_secondary_size": "btn--small",
             "button_secondary_style": "btn--solid",
@@ -267,15 +267,16 @@
       "disabled": true,
       "name": "Image banner",
       "settings": {
-        "image_1": "shopify://shop_images/womens-oat-mc-jacket-sliver_c97f96bf-b30d-4959-b76c-42781d6eba4c.jpg",
+        "image_1": "shopify://shop_images/blue-sliver-wiht-hash-lines.gif",
         "link": "https://www.ornotbike.com/collections/new-arrivals-all",
-        "width": "wrapper--full",
+        "width": "wrapper--full-padded",
         "height": "image-height",
-        "flex_align_desktop": "align--middle-right-desktop",
+        "flex_align_desktop": "align--middle-left-desktop",
         "content_width": 38,
-        "mobile_height": "image-height--mobile",
+        "mobile_image": "shopify://shop_images/ornot-blue.jpg",
+        "mobile_height": "screen-height-one-third--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-5",
         "show_text_background": false,
         "overlay_type": "disabled",
         "padding_top": 0,
@@ -297,7 +298,7 @@
         "text_font_size": "body-x-small",
         "flex_align": "align--middle-right",
         "link_text": "shop new colors",
-        "link": "shopify://collections/new-arrivals-all",
+        "link": "shopify://products/mens-micro-climate-jacket-citron",
         "button_type": "btn--white",
         "button_size": "btn--small",
         "button_style": "btn--text",
@@ -375,6 +376,67 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "section_hero_6feDrA": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_966FTn": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "New Arrivals",
+            "heading_font_size": "heading-x-large",
+            "heading_tag": "automatic",
+            "padding_bottom": 8
+          }
+        },
+        "text_776c4N": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Tell your brand's story through images.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 8
+          }
+        },
+        "button_cmCdQk": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "full_width": false,
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading_966FTn",
+        "text_776c4N",
+        "button_cmCdQk"
+      ],
+      "name": "Image banner",
+      "settings": {
+        "image_1": "shopify://shop_images/Mens_Park_Jersey_Zenith_Sliver_V1_5a24e2c6-1ab2-4887-937f-531aaa876cec.jpg",
+        "link": "shopify://collections/gone-racing-ornot",
+        "width": "wrapper--full",
+        "height": "image-height",
+        "flex_align_desktop": "align--middle-left-desktop",
+        "content_width": 50,
+        "mobile_height": "screen-height-one-third--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      },
+      "disabled": true
     }
   },
   "order": [
@@ -383,6 +445,7 @@
     "section_hero_video_6neEqj",
     "section_hero_aCAcUj",
     "section_video_bRGiNF",
-    "section-newsletter"
+    "section-newsletter",
+    "section_hero_6feDrA"
   ]
 }
