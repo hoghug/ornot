@@ -1,0 +1,461 @@
+{%- liquid
+  assign color_scheme = 'color-' | append: section.settings.color_scheme
+
+  assign heading_tag = 'h1'
+  unless section.settings.heading_tag == 'automatic' or section.settings.heading_tag == blank
+    assign heading_tag = section.settings.heading_tag
+  endunless
+
+  assign text_v = section.settings.text_vertical | default: 'bottom'
+  assign text_h = section.settings.text_horizontal | default: 'right'
+  assign mob_v  = section.settings.mobile_text_vertical | default: 'bottom'
+  assign mob_h  = section.settings.mobile_text_horizontal | default: 'left'
+
+  case text_v
+    when 'top'
+      assign align_y = 'flex-start'
+    when 'center'
+      assign align_y = 'center'
+    else
+      assign align_y = 'flex-end'
+  endcase
+
+  case text_h
+    when 'left'
+      assign align_x = 'flex-start'
+      assign text_align = 'left'
+    when 'center'
+      assign align_x = 'center'
+      assign text_align = 'center'
+    else
+      assign align_x = 'flex-end'
+      assign text_align = 'right'
+  endcase
+
+  case mob_v
+    when 'top'
+      assign align_y_m = 'flex-start'
+    when 'center'
+      assign align_y_m = 'center'
+    else
+      assign align_y_m = 'flex-end'
+  endcase
+
+  case mob_h
+    when 'left'
+      assign align_x_m = 'flex-start'
+      assign text_align_m = 'left'
+    when 'center'
+      assign align_x_m = 'center'
+      assign text_align_m = 'center'
+    else
+      assign align_x_m = 'flex-end'
+      assign text_align_m = 'right'
+  endcase
+
+  assign has_video = false
+  if section.settings.desktop_video != blank or section.settings.mobile_video != blank
+    assign has_video = true
+  endif
+
+  assign desk_w = nil
+  assign desk_h = nil
+  assign mob_w  = nil
+  assign mob_h  = nil
+
+  if section.settings.desktop_image != blank
+    assign desk_w = section.settings.desktop_image.width
+    assign desk_h = section.settings.desktop_image.height
+  elsif section.settings.desktop_video != blank and section.settings.desktop_video.preview_image != blank
+    assign desk_w = section.settings.desktop_video.preview_image.width
+    assign desk_h = section.settings.desktop_video.preview_image.height
+  endif
+
+  if section.settings.mobile_image != blank
+    assign mob_w = section.settings.mobile_image.width
+    assign mob_h = section.settings.mobile_image.height
+  elsif section.settings.mobile_video != blank and section.settings.mobile_video.preview_image != blank
+    assign mob_w = section.settings.mobile_video.preview_image.width
+    assign mob_h = section.settings.mobile_video.preview_image.height
+  elsif desk_w != nil
+    assign mob_w = desk_w
+    assign mob_h = desk_h
+  endif
+-%}
+
+{{ 'hero.css' | asset_url | stylesheet_tag }}
+  {%- if has_video -%}
+    <script src="{{ 'hero-video.js' | asset_url }}" defer="defer"></script>
+  {%- endif -%}
+
+  {%- capture hero_style -%}
+    --PT: {{ section.settings.padding_top_desktop }}px;
+    --PB: {{ section.settings.padding_bottom_desktop }}px;
+    --PT-MOBILE: {{ section.settings.padding_top_mobile }}px;
+    --PB-MOBILE: {{ section.settings.padding_bottom_mobile }}px;
+    --hero-align-y: {{ align_y }};
+    --hero-align-x: {{ align_x }};
+    --hero-align-y-m: {{ align_y_m }};
+    --hero-align-x-m: {{ align_x_m }};
+    --hero-text-align: {{ text_align }};
+    --hero-text-align-m: {{ text_align_m }};
+    --hero-overlay-opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
+    {%- if desk_w and desk_h -%}
+      --hero-aspect-d: {{ desk_w }} / {{ desk_h }};
+    {%- endif -%}
+    {%- if mob_w and mob_h -%}
+      --hero-aspect-m: {{ mob_w }} / {{ mob_h }};
+    {%- endif -%}
+  {%- endcapture -%}
+
+  <div
+    id="Hero--{{ section.id }}"
+    class="hero section-padding {{ color_scheme }}"
+    style="{{ hero_style }}"
+  >
+    <div class="hero__frame">
+      <div class="hero__media">
+        {%- if section.blocks.size == 1 -%}
+          <a href="{{ section.blocks.first.settings.url }}" class="hero__link" aria-hidden="true" tabindex="-1"></a>
+        {%- endif -%}
+
+        {%- if section.settings.desktop_image != blank or section.settings.mobile_image != blank -%}
+          <picture>
+            {%- if section.settings.mobile_image != blank -%}
+              <source
+                media="(max-width: 749px)"
+                srcset="{{ section.settings.mobile_image | image_url: width: 800 }} 800w, {{ section.settings.mobile_image | image_url: width: 600 }} 600w, {{ section.settings.mobile_image | image_url: width: 400 }} 400w"
+                sizes="100vw"
+              >
+            {%- endif -%}
+            {%- assign hero_poster = section.settings.desktop_image | default: section.settings.mobile_image -%}
+            <img
+              class="hero__poster"
+              src="{{ hero_poster | image_url: width: 2000 }}"
+              srcset="{{ hero_poster | image_url: width: 2400 }} 2400w, {{ hero_poster | image_url: width: 2000 }} 2000w, {{ hero_poster | image_url: width: 1600 }} 1600w, {{ hero_poster | image_url: width: 1200 }} 1200w"
+              sizes="100vw"
+              width="{{ hero_poster.width }}"
+              height="{{ hero_poster.height }}"
+              alt="{{ hero_poster.alt | escape }}"
+              loading="eager"
+              fetchpriority="high"
+            >
+          </picture>
+        {%- elsif has_video == false -%}
+          {{ 'lifestyle-1' | placeholder_svg_tag: 'hero__poster' }}
+        {%- endif -%}
+
+        {%- if has_video -%}
+          <hero-video class="hero__player">
+            {%- if section.settings.desktop_video != blank -%}
+              <template data-video="desktop">
+                {{
+                  section.settings.desktop_video
+                  | video_tag: image_size: '2000x', autoplay: true, loop: true, muted: true, controls: false
+                }}
+              </template>
+            {%- endif -%}
+            {%- if section.settings.mobile_video != blank -%}
+              <template data-video="mobile">
+                {{
+                  section.settings.mobile_video
+                  | video_tag: image_size: '800x', autoplay: true, loop: true, muted: true, controls: false
+                }}
+              </template>
+            {%- endif -%}
+          </hero-video>
+        {%- endif -%}
+
+        {%- if section.settings.overlay_opacity > 0 -%}
+          <div class="hero__overlay"></div>
+        {%- endif -%}
+      </div>
+
+      {%- unless section.settings.headline == blank and section.settings.tagline == blank and section.settings.copy == blank -%}
+        <div class="hero__content-wrap">
+          <div class="hero__content">
+            <div class="hero__text-group">
+              {%- if section.settings.tagline != blank -%}
+                <p class="hero__tagline">{{ section.settings.tagline }}</p>
+              {%- endif -%}
+              {%- if section.settings.headline != blank -%}
+                <{{ heading_tag }} class="hero__title h1">
+                  {{- section.settings.headline -}}
+                </{{ heading_tag }}>
+              {%- endif -%}
+              {%- if section.settings.copy != blank -%}
+                <div class="hero__copy">{{ section.settings.copy }}</div>
+              {%- endif -%}
+            </div>
+
+            {%- if section.blocks.size > 0 -%}
+              <div class="hero__buttons">
+                {%- for block in section.blocks -%}
+                  {%- liquid
+                    assign button_style = block.settings.button_style
+                    if button_style == 'btn--text' and block.settings.show_arrow
+                      assign button_style = button_style | append: ' btn--text-no-underline'
+                    endif
+                  -%}
+                  <a
+                    href="{{ block.settings.url }}"
+                    class="btn {{ button_style }} {{ block.settings.button_type }}"
+                    {{ block.shopify_attributes }}
+                    {% if section.settings.headline != blank %}aria-label="{{ block.settings.title }} — {{ section.settings.headline }}"{% endif %}
+                  >
+                    <span>{{ block.settings.title }}</span>
+                    {%- if block.settings.show_arrow -%}
+                      {%- render 'icon-nav-arrow-right' -%}
+                    {%- endif -%}
+                  </a>
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endunless -%}
+
+    </div>
+  </div>
+
+{% schema %}
+{
+  "name": "Updated - Hero",
+  "tag": "section",
+  "settings": [
+    { "type": "header", "content": "Desktop Padding" },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "label": "Top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "label": "Bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    { "type": "header", "content": "Mobile Padding" },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Desktop Media"
+    },
+    {
+      "type": "video",
+      "id": "desktop_video",
+      "label": "Video"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Fallback Image"
+    },
+    {
+      "type": "header",
+      "content": "Mobile Media"
+    },
+    {
+      "type": "video",
+      "id": "mobile_video",
+      "label": "Video"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Fallback Image"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Desktop Text Position"
+    },
+    {
+      "type": "select",
+      "id": "text_vertical",
+      "label": "Vertical",
+      "default": "bottom",
+      "options": [
+        { "value": "top",    "label": "Top" },
+        { "value": "center", "label": "Center" },
+        { "value": "bottom", "label": "Bottom" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "text_horizontal",
+      "label": "Horizontal",
+      "default": "right",
+      "options": [
+        { "value": "left",   "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right",  "label": "Right" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Mobile Text Position"
+    },
+    {
+      "type": "select",
+      "id": "mobile_text_vertical",
+      "label": "Vertical",
+      "default": "bottom",
+      "options": [
+        { "value": "top",    "label": "Top" },
+        { "value": "center", "label": "Center" },
+        { "value": "bottom", "label": "Bottom" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "mobile_text_horizontal",
+      "label": "Horizontal",
+      "default": "left",
+      "options": [
+        { "value": "left",   "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right",  "label": "Right" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Text Content"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Heading Level",
+      "info": "Automatic uses H1. Switch to H2 - H6 if this section is not the first heading on the page.",
+      "default": "automatic",
+      "options": [
+        { "value": "automatic", "label": "Automatic" },
+        { "value": "h1", "label": "H1" },
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" },
+        { "value": "h5", "label": "H5" },
+        { "value": "h6", "label": "H6" }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tagline",
+      "label": "Tagline"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline"
+    },
+    {
+      "type": "richtext",
+      "id": "copy",
+      "label": "Copy"
+    },
+    {
+      "type": "header",
+      "content": "Overlay"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay Opacity",
+      "min": 0,
+      "max": 80,
+      "step": 5,
+      "default": 0,
+      "unit": "%"
+    }
+  ],
+  "max_blocks": 2,
+  "blocks": [
+    {
+      "type": "cta",
+      "name": "CTA",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Label" },
+        { "type": "url",  "id": "url",   "label": "URL" },
+        {
+          "type": "select",
+          "id": "button_type",
+          "label": "Color",
+          "default": "btn--primary",
+          "options": [
+            { "value": "btn--primary",   "label": "Primary" },
+            { "value": "btn--secondary", "label": "Secondary" },
+            { "value": "btn--white",     "label": "White" },
+            { "value": "btn--black",     "label": "Black" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Style",
+          "default": "btn--solid",
+          "options": [
+            { "value": "btn--solid",   "label": "Solid" },
+            { "value": "btn--outline", "label": "Outline" },
+            { "value": "btn--text",    "label": "Text" }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "show_arrow",
+          "label": "Show arrow",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero",
+      "settings": {
+        "tagline": "Tagline",
+        "headline": "Headline",
+        "copy": "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores ipsum</p><p>sunt nisi vitae aperiam, natus temporibus recusandae quae nihil quis laudantium doloremque.</p>",
+        "text_vertical": "bottom",
+        "text_horizontal": "right"
+      }
+    }
+  ]
+}
+{% endschema %}
