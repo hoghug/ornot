@@ -167,7 +167,7 @@
               </template>
             {%- endif -%}
 
-            <div class="hero__controls">
+            <div class="hero__controls hero__controls--d-{{ section.settings.control_position | default: 'bottom-right' }} hero__controls--m-{{ section.settings.control_position_mobile | default: 'bottom-right' }}">
               {%- if section.settings.enable_sound -%}
                 <button type="button" class="hero__control is-muted" data-action="toggle-sound" aria-pressed="false" aria-label="Toggle sound">
                   <span class="hero__control-icon hero__control-icon--muted">{% render 'icon-volume-mute' %}</span>
@@ -236,95 +236,6 @@
   "name": "Updated - Hero",
   "tag": "section",
   "settings": [
-    { "type": "header", "content": "Desktop Padding" },
-    {
-      "type": "range",
-      "id": "padding_top_desktop",
-      "label": "Top",
-      "min": 0,
-      "max": 120,
-      "step": 4,
-      "unit": "px",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom_desktop",
-      "label": "Bottom",
-      "min": 0,
-      "max": 120,
-      "step": 4,
-      "unit": "px",
-      "default": 0
-    },
-    { "type": "header", "content": "Mobile Padding" },
-    {
-      "type": "range",
-      "id": "padding_top_mobile",
-      "label": "Top",
-      "min": 0,
-      "max": 120,
-      "step": 4,
-      "unit": "px",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom_mobile",
-      "label": "Bottom",
-      "min": 0,
-      "max": 120,
-      "step": 4,
-      "unit": "px",
-      "default": 0
-    },
-    {
-      "type": "header",
-      "content": "Desktop Media"
-    },
-    {
-      "type": "video",
-      "id": "desktop_video",
-      "label": "Video"
-    },
-    {
-      "type": "image_picker",
-      "id": "desktop_image",
-      "label": "Fallback Image"
-    },
-    {
-      "type": "header",
-      "content": "Mobile Media"
-    },
-    {
-      "type": "video",
-      "id": "mobile_video",
-      "label": "Video"
-    },
-    {
-      "type": "image_picker",
-      "id": "mobile_image",
-      "label": "Fallback Image"
-    },
-    {
-      "type": "header",
-      "content": "Icons"
-    },
-    {
-      "visible_if": "{{ section.settings.desktop_video != blank or section.settings.mobile_video != blank }}",
-      "type": "checkbox",
-      "id": "enable_sound",
-      "label": "Show sound toggle",
-      "default": false
-    },
-    {
-      "visible_if": "{{ section.settings.desktop_video != blank or section.settings.mobile_video != blank }}",
-      "type": "color",
-      "id": "control_color",
-      "label": "Video control color",
-      "default": "#ffffff",
-      "alpha": true
-    },
     {
       "type": "header",
       "content": "Content"
@@ -334,62 +245,6 @@
       "id": "color_scheme",
       "label": "Color Scheme",
       "default": "scheme-1"
-    },
-    {
-      "type": "header",
-      "content": "Desktop Text Position"
-    },
-    {
-      "type": "select",
-      "id": "text_vertical",
-      "label": "Vertical",
-      "default": "bottom",
-      "options": [
-        { "value": "top",    "label": "Top" },
-        { "value": "center", "label": "Center" },
-        { "value": "bottom", "label": "Bottom" }
-      ]
-    },
-    {
-      "type": "select",
-      "id": "text_horizontal",
-      "label": "Horizontal",
-      "default": "right",
-      "options": [
-        { "value": "left",   "label": "Left" },
-        { "value": "center", "label": "Center" },
-        { "value": "right",  "label": "Right" }
-      ]
-    },
-    {
-      "type": "header",
-      "content": "Mobile Text Position"
-    },
-    {
-      "type": "select",
-      "id": "mobile_text_vertical",
-      "label": "Vertical",
-      "default": "bottom",
-      "options": [
-        { "value": "top",    "label": "Top" },
-        { "value": "center", "label": "Center" },
-        { "value": "bottom", "label": "Bottom" }
-      ]
-    },
-    {
-      "type": "select",
-      "id": "mobile_text_horizontal",
-      "label": "Horizontal",
-      "default": "left",
-      "options": [
-        { "value": "left",   "label": "Left" },
-        { "value": "center", "label": "Center" },
-        { "value": "right",  "label": "Right" }
-      ]
-    },
-    {
-      "type": "header",
-      "content": "Text Content"
     },
     {
       "type": "select",
@@ -423,8 +278,19 @@
       "label": "Copy"
     },
     {
-      "type": "header",
-      "content": "Overlay"
+      "visible_if": "{{ section.settings.desktop_video != blank or section.settings.mobile_video != blank }}",
+      "type": "checkbox",
+      "id": "enable_sound",
+      "label": "Show sound toggle",
+      "default": false
+    },
+    {
+      "visible_if": "{{ section.settings.desktop_video != blank or section.settings.mobile_video != blank }}",
+      "type": "color",
+      "id": "control_color",
+      "label": "Video control color",
+      "default": "#ffffff",
+      "alpha": true
     },
     {
       "type": "range",
@@ -435,6 +301,140 @@
       "step": 5,
       "default": 0,
       "unit": "%"
+    },
+
+    { "type": "header", "content": "Desktop" },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "label": "Padding top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "label": "Padding bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "video",
+      "id": "desktop_video",
+      "label": "Video"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Fallback Image"
+    },
+    {
+      "type": "select",
+      "id": "text_vertical",
+      "label": "Text position - vertical",
+      "default": "bottom",
+      "options": [
+        { "value": "top",    "label": "Top" },
+        { "value": "center", "label": "Center" },
+        { "value": "bottom", "label": "Bottom" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "text_horizontal",
+      "label": "Text position - horizontal",
+      "default": "right",
+      "options": [
+        { "value": "left",   "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right",  "label": "Right" }
+      ]
+    },
+    {
+      "visible_if": "{{ section.settings.desktop_video != blank or section.settings.mobile_video != blank }}",
+      "type": "select",
+      "id": "control_position",
+      "label": "Icon position",
+      "default": "bottom-right",
+      "options": [
+        { "value": "top-left",     "label": "Top left" },
+        { "value": "top-right",    "label": "Top right" },
+        { "value": "bottom-left",  "label": "Bottom left" },
+        { "value": "bottom-right", "label": "Bottom right" }
+      ]
+    },
+
+    { "type": "header", "content": "Mobile" },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "video",
+      "id": "mobile_video",
+      "label": "Video"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Fallback Image"
+    },
+    {
+      "type": "select",
+      "id": "mobile_text_vertical",
+      "label": "Text position - vertical",
+      "default": "bottom",
+      "options": [
+        { "value": "top",    "label": "Top" },
+        { "value": "center", "label": "Center" },
+        { "value": "bottom", "label": "Bottom" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "mobile_text_horizontal",
+      "label": "Text position - horizontal",
+      "default": "left",
+      "options": [
+        { "value": "left",   "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right",  "label": "Right" }
+      ]
+    },
+    {
+      "visible_if": "{{ section.settings.desktop_video != blank or section.settings.mobile_video != blank }}",
+      "type": "select",
+      "id": "control_position_mobile",
+      "label": "Icon position",
+      "default": "bottom-right",
+      "options": [
+        { "value": "top-left",     "label": "Top left" },
+        { "value": "top-right",    "label": "Top right" },
+        { "value": "bottom-left",  "label": "Bottom left" },
+        { "value": "bottom-right", "label": "Bottom right" }
+      ]
     }
   ],
   "max_blocks": 2,

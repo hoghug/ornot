@@ -63,10 +63,52 @@
   --icons: var(--hero-control-color, #fff);
   position: absolute;
   z-index: 3;
-  bottom: 24px;
-  right: 24px;
   display: flex;
   gap: 8px;
+}
+
+@media only screen and (min-width: 750px) {
+  .hero__controls--d-top-left {
+    top: 24px;
+    left: 24px;
+  }
+
+  .hero__controls--d-top-right {
+    top: 24px;
+    right: 24px;
+  }
+
+  .hero__controls--d-bottom-left {
+    bottom: 24px;
+    left: 24px;
+  }
+
+  .hero__controls--d-bottom-right {
+    bottom: 24px;
+    right: 24px;
+  }
+}
+
+@media only screen and (max-width: 749px) {
+  .hero__controls--m-top-left {
+    top: 16px;
+    left: 16px;
+  }
+
+  .hero__controls--m-top-right {
+    top: 16px;
+    right: 16px;
+  }
+
+  .hero__controls--m-bottom-left {
+    bottom: 16px;
+    left: 16px;
+  }
+
+  .hero__controls--m-bottom-right {
+    bottom: 16px;
+    right: 16px;
+  }
 }
 
 .hero__control {
