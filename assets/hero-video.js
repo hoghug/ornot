@@ -18,6 +18,11 @@
       connectedCallback() {
         if (this.hydrated) return;
 
+        this.soundBtn = this.querySelector('[data-action="toggle-sound"]');
+        this.playBtn = this.querySelector('[data-action="toggle-play"]');
+        if (this.soundBtn) this.soundBtn.addEventListener('click', () => this.toggleSound());
+        if (this.playBtn) this.playBtn.addEventListener('click', () => this.togglePlay());
+
         if (window.matchMedia && window.matchMedia(REDUCED).matches) {
           this.cleanup();
           return;
@@ -82,11 +87,47 @@
         if (this.playObserver) this.playObserver.disconnect();
         this.playObserver = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
-            if (entry.isIntersecting) this.video.play().catch(() => {});
+            if (entry.isIntersecting && !this.userPaused) this.video.play().catch(() => {});
             else this.video.pause();
           });
         });
         this.playObserver.observe(this.video);
+
+        this.video.addEventListener('play', () => this.syncPlayState());
+        this.video.addEventListener('pause', () => this.syncPlayState());
+        this.syncPlayState();
+        this.syncSoundState();
+      }
+
+      toggleSound() {
+        if (!this.video) return;
+        this.video.muted = !this.video.muted;
+        this.syncSoundState();
+      }
+
+      togglePlay() {
+        if (!this.video) return;
+        if (this.video.paused) {
+          this.userPaused = false;
+          this.video.play().catch(() => {});
+        } else {
+          this.userPaused = true;
+          this.video.pause();
+        }
+      }
+
+      syncSoundState() {
+        if (!this.soundBtn || !this.video) return;
+        var muted = this.video.muted;
+        this.soundBtn.classList.toggle('is-muted', muted);
+        this.soundBtn.setAttribute('aria-pressed', String(!muted));
+      }
+
+      syncPlayState() {
+        if (!this.playBtn || !this.video) return;
+        var paused = this.video.paused;
+        this.playBtn.classList.toggle('is-paused', paused);
+        this.playBtn.setAttribute('aria-pressed', String(paused));
       }
 
       cleanup() {

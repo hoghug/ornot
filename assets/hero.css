@@ -59,6 +59,47 @@
   opacity: 1;
 }
 
+.hero__controls {
+  --icons: var(--hero-control-color, #fff);
+  position: absolute;
+  z-index: 3;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  gap: 8px;
+}
+
+.hero__control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid var(--hero-control-color, #fff);
+  background: transparent;
+  color: var(--hero-control-color, #fff);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.hero__control:hover {
+  background: color-mix(in srgb, var(--hero-control-color, #fff) 25%, transparent);
+}
+
+.hero__control-icon {
+  display: none;
+  width: 16px;
+  height: 16px;
+}
+
+.hero__control[data-action="toggle-sound"]:not(.is-muted) .hero__control-icon--unmuted,
+.hero__control[data-action="toggle-sound"].is-muted .hero__control-icon--muted,
+.hero__control[data-action="toggle-play"]:not(.is-paused) .hero__control-icon--playing,
+.hero__control[data-action="toggle-play"].is-paused .hero__control-icon--paused {
+  display: block;
+}
+
 .hero__overlay {
   position: absolute;
   inset: 0;

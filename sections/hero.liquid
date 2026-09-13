@@ -100,6 +100,9 @@
     --hero-text-align: {{ text_align }};
     --hero-text-align-m: {{ text_align_m }};
     --hero-overlay-opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
+    {%- unless section.settings.control_color.alpha == 0.0 or section.settings.control_color == blank -%}
+      --hero-control-color: {{ section.settings.control_color }};
+    {%- endunless -%}
     {%- if desk_w and desk_h -%}
       --hero-aspect-d: {{ desk_w }} / {{ desk_h }};
     {%- endif -%}
@@ -163,6 +166,19 @@
                 }}
               </template>
             {%- endif -%}
+
+            <div class="hero__controls">
+              {%- if section.settings.enable_sound -%}
+                <button type="button" class="hero__control is-muted" data-action="toggle-sound" aria-pressed="false" aria-label="Toggle sound">
+                  <span class="hero__control-icon hero__control-icon--muted">{% render 'icon-volume-mute' %}</span>
+                  <span class="hero__control-icon hero__control-icon--unmuted">{% render 'icon-volume' %}</span>
+                </button>
+              {%- endif -%}
+              <button type="button" class="hero__control" data-action="toggle-play" aria-pressed="false" aria-label="Toggle playback">
+                <span class="hero__control-icon hero__control-icon--playing">{% render 'icon-hero-pause' %}</span>
+                <span class="hero__control-icon hero__control-icon--paused">{% render 'icon-hero-play' %}</span>
+              </button>
+            </div>
           </hero-video>
         {%- endif -%}
 
@@ -204,9 +220,6 @@
                     {% if section.settings.headline != blank %}aria-label="{{ block.settings.title }} — {{ section.settings.headline }}"{% endif %}
                   >
                     <span>{{ block.settings.title }}</span>
-                    {%- if block.settings.show_arrow -%}
-                      {%- render 'icon-nav-arrow-right' -%}
-                    {%- endif -%}
                   </a>
                 {%- endfor -%}
               </div>
@@ -292,6 +305,25 @@
       "type": "image_picker",
       "id": "mobile_image",
       "label": "Fallback Image"
+    },
+    {
+      "type": "header",
+      "content": "Icons"
+    },
+    {
+      "visible_if": "{{ section.settings.desktop_video != blank or section.settings.mobile_video != blank }}",
+      "type": "checkbox",
+      "id": "enable_sound",
+      "label": "Show sound toggle",
+      "default": false
+    },
+    {
+      "visible_if": "{{ section.settings.desktop_video != blank or section.settings.mobile_video != blank }}",
+      "type": "color",
+      "id": "control_color",
+      "label": "Video control color",
+      "default": "#ffffff",
+      "alpha": true
     },
     {
       "type": "header",
@@ -435,12 +467,6 @@
             { "value": "btn--outline", "label": "Outline" },
             { "value": "btn--text",    "label": "Text" }
           ]
-        },
-        {
-          "type": "checkbox",
-          "id": "show_arrow",
-          "label": "Show arrow",
-          "default": false
         }
       ]
     }
